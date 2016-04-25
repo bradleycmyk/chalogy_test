@@ -1,0 +1,74 @@
+<div class="wrapper">
+<div class="navigation" role="navigation">
+	<div class="brand"><a ui-sref="home"><img src="http://www.cmykpluswhite.biz/web/images/brand-logo.png" alt="Brand"></a></div>
+	<div class="middle-nav">
+		<ul class="navbar">
+			<div class="row">
+				<div class="col-xs-3"><li class="active" style="width: 50px;"><a ui-sref="about">ABOUT</a></li></div>
+				<div class="col-xs-3"><li style="width: 80px;"><a ui-sref="innovation">INNOVATION</a></li></div>
+				<div class="col-xs-3"><li class="center" style="width: 60px;"><a ui-sref="aurous">AUROUS</a></li></div>
+				<div class="col-xs-3"><li class="dropdown" style="width: 120px;">
+					  <a ui-sref="saturday" class="dropbtn" >SATURDAY SKIN</a>
+					  <div class="dropdown-content">
+					    <a ui-sref="brand">THE BRAND</a>
+					    <a ui-sref="product">THE PRODUCTS</a>
+					  </div>
+					</li>
+				</div>
+		    </div>
+		</ul>
+	</div>
+	<div class="search-field"></div>
+	<div class="search"><button><img src="http://www.cmykpluswhite.biz/web/images/search_icon.png" alt="Brand" height="14px" width="18px"></button></div>
+</div>
+</div>
+<!-- end of navigation --> 
+<!-- end of wrapper --> 
+
+<div class="clear">
+	<div class="container-fluid base">
+		<h1>Hello This is Chalogy</h1>
+		<p>Hope this make you more beautiful</p>
+	</div>
+</div>
+
+
+<div class="container">
+	<h1>More Descriptions</h1>
+	<h2>Pictures</h2>
+	<p>The collection is a recipe for radiant, rested skin—like the perfect Saturday, time slows down and your face lights up.The key to Saturday Skin is the Cha-7 es ComplexTM, an exclusive peptide formula that promotes skin’s natural regeneration process. Rooted in science and derived from natural ingredients, the cutting-edge complex increases collagen and elasticity while reducing melanin production for a flawless, stress- free complexion. The complete collection helps you hit pause on aging and embrace your bare beauty. Free of added color and fragrance, the no-fuss, effortless regimen balances and revitalizes all skin types, leaving you free to soak up your Saturdays and keep on glowing all week long.
+	</p>
+</div>
+
+
+<br><br><br><br><br><br><br><br>
+<!-- controller and factory testing --> 
+<div id="home">
+	<h1>Chalogy</h1>
+  	<p>
+    	***** {{ msgFromScope }}
+  	</p>
+</div>
+
+<hr>
+<div class="product" ng-repeat="product in products">
+	<div class="row">
+		<div class="col-sm-3">
+			<a href="www.cmykpluswhite.com"><img class="product-pictures" ng-src="{{ product.image }}" alt="product picture" /></a>
+		</div>
+		<div class="col-sm-9">
+			<b>Title</b>: {{ product.title }}
+			<br>
+			<strong>Price</strong>: ${{ product.price }}.00
+			<br>
+			<strong>Description</strong>: {{ product.description }}
+		</div>
+	</div>
+	<hr>
+</div>
+
+
+<footer class="container">
+	<hr class="mobile-hide">
+	<p >2016 CHALOGY. ALL RIGHTS RESERVED.</p> 
+</footer>

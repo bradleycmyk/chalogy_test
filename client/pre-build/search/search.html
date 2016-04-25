@@ -1,0 +1,18 @@
+<br><hr>
+<div class="search">
+  <form novalidate name="simple" ng-hide="simple.$submitted" ng-submit="update(text)" >
+    <input class="testing" type="text" ng-model="text" /> &nbsp <button type="submit"> search </button>
+  </form>
+</div>
+
+<br><hr>
+<div class="testing">
+	<button ng-click="showTheForm = !showTheForm">Add a Task</button>
+
+	<form ng-show="showTheForm" ng-submit="update(text)">
+	    <button>Submit</button>
+	    <button type="button" ng-click="showTheForm = false">Cancel</button>
+	</form>
+
+</div>
+
