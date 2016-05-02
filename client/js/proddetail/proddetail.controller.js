@@ -18,19 +18,30 @@ app.controller('ProdDetailCtrl', function($scope, $http, $state, $stateParams, p
 		$scope.tab = setTab;
 	};
 
-	/* jQuery and slick */
-	// $(document).ready(function(){
 
-	//     $('.random-box').slick({
- //        	slidesToShow: 4,
- //  			slidesToScroll: 1,
- //  			autoplay: true,
- //  			autoplaySpeed: 3000,
- //  			arrows: true
- //      	});
+	// carousel ! 
+	// Instantiate the Bootstrap carousel
+	$('.multi-item-carousel').carousel({
+	  interval: false
+	});
 
+	// for every slide in carousel, copy the next slide's item in the slide.
+	// Do the same for the next, next item.
+	// $('.multi-item-carousel .item').each(function(){
+	//   var next = $(this).next();
+	//   if (!next.length) {
+	//     next = $(this).siblings(':first');
+	//   }
+	//   next.children(':first-child').clone().appendTo($(this));
+	  
+	//   if (next.next().length>0) {
+	//     next.next().children(':first-child').clone().appendTo($(this));
+	//   } else {
+	//   	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+	//   }
 	// });
 
+	
 });
 
 

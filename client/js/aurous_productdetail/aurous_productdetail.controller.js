@@ -15,6 +15,12 @@ app.controller('AurousProdDetailCtrl', function($scope, $http, $state, $statePar
 		$scope.recommendations = data;
 	});
 
+	// for carousel autoplay
+	$('#myCarousel').carousel({
+	  interval: 3000,
+	  cycle: true
+	}); 
+
 });
 
 
