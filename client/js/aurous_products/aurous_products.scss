@@ -1,0 +1,69 @@
+.drop_image {
+	width: 776px;
+	height: 928px;
+	position: absolute;
+	top: 180px;
+	left: 0;
+	z-index: -9999;
+}
+
+#water_image {
+	width: 250px;
+	height: 250px;
+	margin-left: 70px;
+	// for footer and spacing 
+	/*margin-bottom: */
+}
+
+.aurous_text {
+	width: 20%;
+	height: auto;
+	margin-left: 60px;
+	margin-top: 40%;
+	text-align: center;	
+}
+
+.aurous_button {
+	border: solid 1px red;
+	text-align: center;
+}
+
+.aurous_product {
+	display: block;
+	position: absolute;
+	left: 38%;
+	width: 62%;
+	top: 310px;
+}
+
+.aurous_listing {
+	margin-right: 6%;
+	width: 40%;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	position: relative;
+	display: inline-block;
+	background-color: black;
+
+}
+
+.aurous_image_hover {
+	width: 100%;
+	height: auto;
+	&:hover {
+		background-color: black;
+    }
+}
+
+.aurous_link {
+	position: relative;
+}
+
+.aurous_description {
+	color: white;
+	position: absolute;
+	top: 40%;
+	left: 10%;
+}
+
+

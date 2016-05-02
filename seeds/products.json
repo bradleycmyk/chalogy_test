@@ -1,15 +1,15 @@
 [
 	{
-		"image": "http://www.images-iherb.com/l/NBC-01023-4.jpg",
+		"image": ["saturday1_1.jpg", "saturday1_3.jpg", "saturday2_2.jpg"],
 		"name": "DAILY DUE", 
-		"title": "ALCOHOL-FREE MOISTURE MIST",
+		"title": ["ALCOHOL-FREE MOISTURE MIST"],
 		"price": 50.00,
 		"size": 50,
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"]
 	},
 	{
-		"image": "http://www.images-iherb.com/l/EUC-63306-1.jpg",
+		"image": ["saturday1_2.jpg", "saturday2_3.jpg", "saturday2_1.jpg"],
 		"name": "FOREVER YOUNG", 
 		"title": "PERFCETING TREATMENT",
 		"price": 50.00,
@@ -18,25 +18,25 @@
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"]
 	},
 	{
-		"image": "http://www.thebodyshop-usa.com/images/packshot/products/large/seaweed-purifying-facial-cleanser_l.jpg",
+		"image": ["saturday1_3.jpg", "saturday2_2.jpg", "saturday2_1.jpg"],
 		"name": "BRIGHT EYES", 
-		"title": "RADIANCE GEL",
+		"title": "RADIANCE GEL MIST",
 		"price": 50.00,
 		"size": 50,
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"]
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty", "forever young"]
 	},
 	{
-		"image": "http://www.thebodyshop.com/images/product/large/22609m_l.jpg",
+		"image": ["saturday2_1.jpg", "saturday1_3.jpg", "saturday2_2.jpg"],
 		"name": "SUN SHIELD", 
 		"title": "BROAD SPECTRUM SPF 30",
 		"price": 50.00,
 		"size": 50,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"description": "Lorem ipsum dolor sit amet, FOREVER consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"]
 	},
 	{
-		"image": "http://www.neutrogena.com/images/products_store/en_us/product_images/6806090_320x385.jpg",
+		"image": ["saturday2_2.jpg", "saturday1_1.jpg", "saturday2_2.jpg"],
 		"name": "SKIN SILK", 
 		"title": "SHEER DAILY MOISTURIZER",
 		"price": 50.00,
@@ -45,7 +45,7 @@
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"]
 	},
 	{
-		"image": "http://www.shespeaks.com/pages/img/review/clean%20and%20clear%20cleanser_06232010224949.jpg",
+		"image": ["saturday2_3.jpg", "saturday1_3.jpg", "saturday2_2.jpg"],
 		"name": "FRESH FACE", 
 		"title": "PURIFYING CLEANSER",
 		"price": 50.00,

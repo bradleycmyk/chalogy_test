@@ -1,0 +1,22 @@
+.random-box {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.box {
+	width: 100px;
+	height: 200px;
+	text-align: center;
+}
+
+button.slick-prev {
+	text-rendering: none;
+  	display: inline-block;
+  	height: 45px;
+}
+
+.slick-slide{
+  	width:100%;
+	margin-right: 15px;
+	margin-left: 15px;
+}

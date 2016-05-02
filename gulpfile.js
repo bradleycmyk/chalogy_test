@@ -20,11 +20,11 @@ gulp.task('default', function() {
     livereload.listen();
     gulp.start('build');
 
-    gulp.watch(['client/pre-build/app.js', 'client/pre-build/**/*.js'], function() {
+    gulp.watch(['client/js/app.js', 'client/js/**/*.js'], function() {
         runSeq('buildJS', 'reload');
     });
 
-    gulp.watch(['client/pre-build/app.scss', 'client/pre-build/**/*.scss'], function() {
+    gulp.watch(['client/js/app.scss', 'client/js/**/*.scss'], function() {
         runSeq('buildCSS', 'reload');
     });
 
@@ -36,12 +36,6 @@ gulp.task('default', function() {
 });
 
 
-// Database seed
-gulp.task('seedDB', function() {
-    run('node seed.js').exec();
-});
-
-
 // Build tasks
 //// Build all
 gulp.task('build', function() {
@@ -49,7 +43,7 @@ gulp.task('build', function() {
 });
 
 gulp.task('buildJS', function() {
-    return gulp.src(['./client/pre-build/app.js', './client/pre-build/**/*.js'])
+    return gulp.src(['./client/js/app.js', './client/js/**/*.js'])
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(babel())
@@ -59,7 +53,7 @@ gulp.task('buildJS', function() {
 });
 
 gulp.task('buildCSS', function() {
-    return gulp.src('./client/pre-build/app.scss')
+    return gulp.src('./client/js/app.scss')
         .pipe(plumber())
         .pipe(sass())
         .pipe(rename('build.css'))

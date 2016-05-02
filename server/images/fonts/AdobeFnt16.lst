@@ -1,0 +1,140 @@
+%!Adobe-FontList 1.16
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:\.DS_Store
+FileLength:6148
+FileModTime:1460997520
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:MillerBanner-Semibold
+FamilyName:MillerBanner
+StyleName:Semibold
+MenuName:MillerBanner Semibold
+StyleBits:0
+WeightClass:600
+WidthClass:5
+AngleClass:0
+FullName:MillerBanner Semibold
+WritingScript:Roman
+OutlineFileName:\MillerBanner-Semibold.ttf
+DataFormat:sfntData
+FileLength:74332
+FileModTime:1412253912
+NameArray:0,Mac,18,MillerBanner Semibold
+NameArray:0,Mac,4,MillerBanner Semibold
+NameArray:0,Win,1,MillerBanner Semibold
+NameArray:0,Win,16,MillerBanner
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:218640
+FileModTime:1426360440
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:WorkSans-Bold
+FamilyName:Work Sans
+StyleName:Bold
+MenuName:Work Sans
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Work Sans Bold
+WritingScript:Roman
+OutlineFileName:\WorkSans-Bold.ttf
+DataFormat:sfntData
+FileLength:143920
+FileModTime:1456912290
+NameArray:0,Win,1,Work Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:WorkSans-Light
+FamilyName:Work Sans
+StyleName:Light
+MenuName:Work Sans Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Work Sans Light
+WritingScript:Roman
+OutlineFileName:\WorkSans-Light.ttf
+DataFormat:sfntData
+FileLength:136980
+FileModTime:1456912290
+NameArray:0,Win,1,Work Sans Light
+NameArray:0,Win,16,Work Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:WorkSans-Medium
+FamilyName:Work Sans
+StyleName:Medium
+MenuName:Work Sans Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Work Sans Medium
+WritingScript:Roman
+OutlineFileName:\WorkSans-Medium.ttf
+DataFormat:sfntData
+FileLength:143036
+FileModTime:1456912290
+NameArray:0,Win,1,Work Sans Medium
+NameArray:0,Win,16,Work Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:WorkSans-Regular
+FamilyName:Work Sans
+StyleName:Regular
+MenuName:Work Sans
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Work Sans
+WritingScript:Roman
+OutlineFileName:\WorkSans-Regular.ttf
+DataFormat:sfntData
+FileLength:135828
+FileModTime:1456912290
+NameArray:0,Win,1,Work Sans
+%EndFont
+

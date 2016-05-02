@@ -1,0 +1,20 @@
+<navbar></navbar>
+<div class="container-fluid clear">
+	<img src="saturday_product.png" alt="Brand"></a>
+</div>
+<br>
+<p class="link">SATURDAY SKIN > THE PRODUCTS </p>
+<br>
+
+<div class="product-list">
+	<div class="product-listing" ng-repeat="product in products">
+		<!-- don't specify ui-sref when passing params --> 
+		<a href="/saturday-skin/products/{{ product.name }}">  
+			<img class="saturday_image" width="250px;" height="400px;" ng-src="{{ product.image[0] }}" alt="product picture" />
+		</a>
+		<h3>{{ product.name }}</h3>
+		<h4>{{ product.title }}</h4>
+		<hr>
+		<p class="price_tag">${{ product.price }}.00</p>
+	</div>
+</div>

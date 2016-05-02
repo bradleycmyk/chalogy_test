@@ -1,0 +1,225 @@
+/* ------------ navigation + dropdown ---------------------> */ 
+
+.navigation {
+  width: 100%;
+  display: block;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: 100px;
+  position: relative;
+  background-color: white;
+  z-index: 9999;
+}
+
+/* for common-nav with logo placed on the left */ 
+.navigation > .brand {
+  padding-top: 35px;
+  padding-bottom: 5px;
+  width: 150px;
+  height: 43px;
+  margin-left: 40px;
+}
+
+.navigation > .middle-nav {
+  max-width: 600px;
+  min-width: 280px;
+  height: 55px; 
+  margin: 0 auto;
+}
+
+/* nav for landing page */ 
+/*.navigation > .brand {
+  padding-top: 35px;
+  padding-left: 15px;
+  width: 150px;
+  height: 43px;
+  margin: 0 auto;
+}
+
+.navigation > .middle-nav {
+  max-width: 540px;
+  min-width: 280px;
+  height: 50px; 
+  margin: 0 auto;
+  padding-top: 45px;
+}*/
+
+
+ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.navbar li {
+  color: black;
+  padding-top: 5px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+ul.navbar li.right {
+  text-align: right;
+}
+
+ul.navbar li.center {
+  text-align: center;
+}
+
+li a {
+  color: black;
+}
+
+li a:not(.active) {
+  /*color: gray;*/
+}
+
+li a:hover:not(.active) {
+    color: red;
+}
+
+.active {
+    font-weight: bold;
+    color: black;
+}
+
+.navigation > .search {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-right: 40px;
+  margin-top: -55px;
+}
+
+// grid 
+.col-1 {
+  width: 24%;
+  display: inline-block;
+}
+
+.col-2 {
+  width: 24%;
+  display: inline-block;
+}
+
+.col-3 {
+  width: 24%;
+  display: inline-block;
+}
+
+.col-4 {
+  width: 24%;
+  display:inline-block;
+}
+
+/* for dropdown */
+.dropbtn {
+    border: none;
+/*    background-color: white;*/
+    max-width: 160px;
+    padding-left: 10px;
+    /*padding-left: 10px;*/
+    text-align: right;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.dropdown {
+    position: relative;
+    z-index: 9999;
+}
+
+ul.navbar li.dropdown {
+  text-align: right;
+  z-index: 9999;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    border-style: solid;
+    border-top: thick;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    text-align: center;
+    z-index: 9999;
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: white; z-index: 9999;}
+/*.dropdown-content a:hover {background-color: rgba(255,225,250,0.3);}*/
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: white;
+    z-index: 9999;
+}
+
+.dropdown:hover .dropbtn {
+    /*background-color: rgba(255,225,250,0.3);*/
+    background-color: white;
+    z-index: 9999;
+}
+
+// drop down end 
+
+// section 4 
+
+@media screen and (max-width: 940px){
+    .navigation > .brand {
+    padding-top: 35px;
+    padding-left: 15px;
+    width: 150px;
+    height: 43px;
+    margin: 0 auto;
+  }
+
+.navigation > .middle-nav {
+    max-width: 540px;
+    min-width: 280px;
+    height: 50px; 
+    margin: 0 auto;
+    padding-top: 45px;
+  }
+}
+
+@media screen and (max-width: 580px){
+  .search {
+    display: none;
+  }
+
+  .dropbtn {
+    border: none;
+    background-color: white;
+    width: 110px;
+    text-align: right;
+    cursor: pointer;
+  } 
+
+  .col-1 {
+    width: 16%;
+  }
+
+  .col-2 {
+    width: 26%;
+  }
+
+  .col-3 {
+    width: 18%;
+  }
+
+  .col-4 {
+    width: 36%; /* 120px; */
+  }
+  .col-4 li {
+
+  }
+}

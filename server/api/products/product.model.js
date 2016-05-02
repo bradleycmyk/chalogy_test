@@ -6,7 +6,7 @@ var crypto = require('crypto'),
 
 var schema = new mongoose.Schema({
     image: {
-        type: String,
+        type: [String],
         required: true,
         default: '/images/placeHolder.jpg'
     },
@@ -36,12 +36,14 @@ var schema = new mongoose.Schema({
     }
 });
 
+// this line add text index to schema for full-text search !! // weighted seems partially working 
+// schema.index({"$**": "text"});
+schema.index({"$**": "text"}, {"weights": { name: 3, title: 2, tag: 2, description: 1 }});
 
 schema.pre('save', function(next) {
     next();
 });
 
-var Product = mongoose.model('Product', schema);
-
+var Product = mongoose.model('products', schema);
 
 module.exports = Product;

@@ -1,0 +1,62 @@
+[
+	{
+		"image": ["aurous1_1.jpg", "aurous2_1.jpg", "aurous2_3.jpg"],
+		"name": "Aurous DAILY DUE", 
+		"title": ["ALCOHOL-FREE MOISTURE MIST"],
+		"price": 50.00,
+		"size": 50,
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "aurous"
+	},
+	{
+		"image": ["aurous1_2.jpg", "aurous2_3.jpg", "aurous2_1.jpg"],
+		"name": "FOREVER YOUNG Aurous", 
+		"title": "PERFCETING TREATMENT",
+		"price": 50.00,
+		"size": 50,
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "aurous"
+	},
+	{
+		"image": ["aurous1_3.jpg", "aurous2_1.jpg", "aurous2_2.jpg"],
+		"name": "BRIGHT Aurous EYES", 
+		"title": "RADIANCE GEL MIST",
+		"price": 50.00,
+		"size": 50,
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty", "forever young"],
+		"category": "aurous"
+	},
+	{
+		"image": ["aurous2_1.jpg", "aurous1_1.jpg", "aurous2_2.jpg"],
+		"name": "SUN Aurous SHIELD", 
+		"title": "BROAD SPECTRUM SPF 30",
+		"price": 50.00,
+		"size": 50,
+		"description": "Lorem ipsum dolor sit amet, FOREVER consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "aurous"
+	},
+	{
+		"image": ["aurous2_2.jpg", "aurous2_1.jpg", "aurous1_1.jpg"],
+		"name": "Aurous SKIN SILK", 
+		"title": "SHEER DAILY Aurous MOISTURIZER",
+		"price": 50.00,
+		"size": 50,
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "aurous"
+	},
+	{
+		"image": ["aurous2_3.jpg", "aurous1_1.jpg", "aurous2_1.jpg"],
+		"name": "FRESH FACE", 
+		"title": "PURIFYING Aurous CLEANSER",
+		"price": 50.00,
+		"size": 50,
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "aurous"
+	}
+]

@@ -1,0 +1,163 @@
+.wrapper.saturday_home {
+  position: relative;
+  /*z-index: -2;*/
+  height: auto;
+}
+
+.wrapper.saturday_home .breadcrumb {
+  padding: 2em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.wrapper.saturday_home .breadcrumb a {
+  color: black;
+  font-family: Arial;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.wrapper.saturday_home .breadcrumb .fa {
+  color: grey;
+}
+
+.dial {
+  display: inline-block;
+  padding: 1.6em 0 0 2em;
+  font-size: 2em;
+  vertical-align: top;
+}
+
+.dial_text {
+  font-family: MillerBanner-Semibold;
+      display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.for {
+  display: block;
+}
+
+.wrapper.saturday_home .sat_skin_title {
+  width: 885px;
+  margin: -17px 0 0 -245px;
+}
+
+.wrapper.saturday_home .korean_tag {
+  position: absolute;
+  top: 15em;
+  left: 48em;
+  transform: rotate(-20deg);
+}
+
+.wrapper.saturday_home .palm_tree {
+  position: absolute;
+  top: 403px;
+  left: 728px;
+  width: 247px;
+}
+
+.wrapper.saturday_home .text_box {
+  margin: -129px 40px 0 0;
+  width: 376px;
+  /*height: 400px;*/
+  float: right;
+}
+
+.wrapper.saturday_home .text_box p {
+  width:  312px;
+  background-color: #FFFFFF;
+  padding: 3em 3em 2em 2em;
+  float: right;
+  margin: 0 0 0 0;
+}
+
+.wrapper.saturday_home .text_box .long_text {
+  font-family: WorkSans;
+}
+
+.wrapper.saturday_home .text_box .tagline {
+  font-family: MillerBanner-Semibold;
+  font-size: 2.5em;
+  clear: both;
+  padding: 0.6em 1.3em 0.6em 0.7em;
+  margin: 0;
+}
+
+.wrapper.saturday_home .text_box .white {
+  background-color: #FFFFFF;
+  display: block;
+  height: 10px;
+  width: 255px;
+  clear: both;
+  margin: 0;
+  float: right;
+}
+
+.wrapper.saturday_home .sat_hero {
+  background-image: url('saturday_hero2.jpg');
+  background-size: 1340px;
+  background-repeat: no-repeat;
+  height: 797px;
+  background-position: -90px -120px;
+  position: relative;
+  z-index: 2;
+}
+
+.saturday_home main {
+  margin: 3em 0 0 4em;
+}
+
+.saturday_home main .leftie {
+  width: 580px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.saturday_home main .leftie h1 {
+  font-family: MillerBanner-Semibold;
+  font-size: 4em;
+  margin: 0;
+  color: rgb(0, 209, 165);
+}
+
+.saturday_home main .leftie p {
+  font-family: WorkSans;
+}
+
+.saturday_home main .leftie a {
+  font-family: WorkSans;
+  font-weight: bold;
+  color: rgb(126, 126, 126);
+  border: 10px solid #E5E5E5;
+  padding: 10px 20px;
+  DISPLAY: BLOCK;
+  width: 160px;
+  margin: 30px 0 0;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+.saturday_home main .rightie {
+  width: 548px;
+  display: inline-block;
+  margin: -50px 0 0 4px;
+}
+
+.saturday_home main .rightie .three_drops {
+  width: 390px;
+  vertical-align: top;
+  z-index: 1;
+  position: absolute;
+  left: 680px;
+}
+
+.saturday_home main .rightie .bottle {
+  z-index: 2;
+  position: relative;
+}

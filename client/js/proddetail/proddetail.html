@@ -1,0 +1,83 @@
+<navbar></navbar>
+<div class="container clear">
+	<p class="link"><a href="saturday-skin">SATURDAY SKIN</a> > <a href="saturday-skin/products">THE PRODUCTS</a> > <span class="bold">{{ product.name }}</span> </p>
+</div>
+
+<div class="product_detail">
+	<div class="row">
+		<div class="col-sm-6">
+			<img class="detail_photo" ng-src="{{ product.image[0] }}" alt="product image" width="315px;" />
+		</div>
+		<div class="col-sm-6">
+			<h3>{{ product.name }}</h3>
+			<h4>{{ product.title }}</h4>
+			${{ product.price }}.00
+			<br>
+			{{ product.description }}
+			<br class="mobile_hide"><br class="mobile_hide">
+			<social-icons></social-icons>
+		</div>
+	</div>
+
+	<!-- buttons -->
+	<div class="row buttons">
+		<div class="col-xs-4" ng-class="{ active:tab === 1}" >
+			<a href ng-click="selectTab(1)">
+				<button>WHO IT"S FOR</button>
+			</a>
+		</div>
+		<div class="col-xs-4" ng-class="{ active:tab === 2}">
+			<a href ng-click="selectTab(2)">
+				<button >HOW TO USE</button>
+			</a>
+		</div>
+		<div class="col-xs-4" ng-class="{ active:tab === 3}">
+			<a href ng-click="selectTab(3)"><button>
+				FANS ALSO LOVE
+			</button></a>
+		</div>
+	</div>
+	<!-- end of button -->
+</div>	
+
+<!-- tab content --> 
+<div class="tab_content">
+	<div class="panel" ng-show="tab === 1">
+		<p class="margin_top">who it's for</p>
+		<p>{{product.description}}</p>
+	</div>
+
+	<div class="panel" ng-show="tab === 2">
+		<p class="margin_top">how to use</p>
+		<!-- video -->
+		<div class="div_web">
+		    <div class='embed-container'>
+		        <iframe src="https://player.vimeo.com/video/162845048?autoplay=1&loop=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+		        </iframe>
+		    </div>
+		</div>
+
+		<div class="div_mobile">
+		    <div class='embed-container'>
+		        <iframe src="https://player.vimeo.com/video/162845048?autoplay=1&loop=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+		        </iframe>
+		    </div>
+		</div>
+	</div>
+
+	<!-- recommendations --> 
+	<div class="panel_fluid" ng-show="tab === 3">
+		<div class="recommendations" ng-repeat="recommendation in recommendations">
+			<a href="/saturday-skin/products/{{ recommendation.name }}"> 
+				<img class="detail_photo" ng-src="{{ recommendation.image[0]}}" width="185px;" alt="{{ recommendation.name }}" />
+			</a>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+

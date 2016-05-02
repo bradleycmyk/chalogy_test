@@ -1,0 +1,24 @@
+.clear {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.saturday_image {
+	width: 100%;
+	height: auto;
+}
+
+.product-listing {
+    margin-left: 1.75%;
+    margin-right: 1.5%;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    width: 30%;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    &:hover {
+        box-shadow: 0 0 4px #fff;
+    }
+}

@@ -1,0 +1,73 @@
+.carousel-inner {
+   margin-bottom: 20px;
+   width: 100%;
+  /* 	width: 500px;
+	height: 460px;*/
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;  
+}
+
+// carousel styling ! 
+.carousel-indicators {
+ 	left: 80% !important;
+ 	width: 50% !important;
+ 	margin-left: 0;
+ 	bottom: -50px !important;
+} 
+
+.carousel-indicators li {
+	margin-left: 22px !important;
+	background-color: gray !important;
+}
+
+.carousel-indicators .active {
+	background-color: black !important;
+}
+
+.carousel_photo {
+	width: 100%;
+	/*width: 500px;*/
+	/*height: 660px;*/
+}
+
+hr.aurous-recommendation {
+	margin-top: 60px;
+ 	border: none;
+  	height: 2px;
+  	background-color: black;
+}
+
+.aurous_recommendedProd {
+	width: 86%;
+	margin: 0 auto;
+	position: relative;
+	/*background: green;*/
+	/*height: 500px;*/
+}
+
+.center {
+	text-align: center;
+}
+
+.aurous_each {
+	margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    width: 20%;
+    /*position: relative;*/
+    display: inline-block;
+    &:hover {
+        box-shadow: 0 0 4px #fff;
+    }
+}
+
+#aurousproduct_image {
+	width: 100%;
+	height: auto;
+}
+
