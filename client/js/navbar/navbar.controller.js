@@ -1,5 +1,4 @@
 app.controller('NavBarController', function($scope, $http, $state, $stateParams) {
-	$scope.msg = "msg from Saturday Brand Controller";
 
 	$("#callingsearch").click(function(){
 		$("#testingsearch").fadeIn(2000).css("display","inline-block").focus();
@@ -26,6 +25,19 @@ app.controller('NavBarController', function($scope, $http, $state, $stateParams)
 			}
 			$("#testingsearch").val("");
 	    };
+	});
+
+	// hide search input when clicking outside it 
+	$(document).mouseup(function (e)
+	{
+	    var container = $("#testingsearch");
+
+	    if (!container.is(e.target) // if the target of the click isn't the container...
+	        && container.has(e.target).length === 0) // ... nor a descendant of the container
+	    {
+	        container.css("display", "none");
+	        $("#callingsearch").css("margin-left", 158);
+	    }
 	});
 
 });

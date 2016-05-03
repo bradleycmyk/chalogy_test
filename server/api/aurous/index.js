@@ -12,7 +12,7 @@ router.get('/', function(req, res, next){
 });
 
 // performing mongoDB full-text search 
-router.get('/:text', function(req, res, next){
+router.get('/search/:text', function(req, res, next){
 	var text = req.params.text;
 	Aurous.find(
         { $text : { $search : req.params.text } }, 

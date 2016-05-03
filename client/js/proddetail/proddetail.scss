@@ -6,7 +6,6 @@
 }
 
 .buttons {
-	/*height: 200px;*/
 	margin-top: 65px;
 }
 
@@ -15,17 +14,13 @@
 	height: auto;
 }
 
-button {
-	border-bottom: 2px solid;
-}
-
 .panel {
 	width: 52.5%;
 	margin: 0 auto;
 }
 
 .panel_fluid {
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -66,8 +61,6 @@ button {
 .div_mobile {
 	display: none;
 }
-
-/* carousel */
 
 
 @media only screen and (max-width: 767px) {

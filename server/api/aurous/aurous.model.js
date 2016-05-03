@@ -29,9 +29,6 @@ var schema = new mongoose.Schema({
     },
     tag: {
         type: [String]
-    },
-    category: {
-        type: String
     }
 });
 

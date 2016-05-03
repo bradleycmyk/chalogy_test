@@ -1,10 +1,5 @@
 <navbar></navbar>
 <hr>
-<!-- <div class="textsearch-wrap">
-	<input id="testsearch" type="text"><div id="callsearch">search</div>
-</div> -->
-<!-- <br><hr> -->
-
 <div class="product" ng-repeat="product in products">
 	<div class="row">
 		<div class="col-sm-3">
@@ -20,4 +15,21 @@
 	</div>
 	<hr>
 </div>
+
+<div class="product" ng-repeat="aurousProduct in aurousProducts">
+	<div class="row">
+		<div class="col-sm-3">
+			<a href="/aurous/products/{{aurousProduct.name}}"><img class="product-pictures" ng-src="{{ aurousProduct.image[0] }}" alt="product picture" /></a>
+		</div>
+		<div class="col-sm-9">
+			<a href="/aurous/products/{{aurousProduct.name}}"><h3>{{ aurousProduct.name }}</h3>
+			<h4>{{ aurousProduct.title }}</h4></a>
+			${{ aurousProduct.price }}.00
+			<br>
+			{{ aurousProduct.description }}
+		</div>
+	</div>
+	<hr>
+</div>
+
 
