@@ -27,10 +27,6 @@ var schema = new mongoose.Schema({
         type: String,
         required: true
     },
-    category: {
-        type: String,
-        required: true
-    },
     tag: {
         type: [String]
     },
@@ -39,7 +35,7 @@ var schema = new mongoose.Schema({
     }
 });
 
-// this line add text index to schema for full-text search !! // weighted seems partially working 
+// this line add text index to schema for full-text search !! // weighted seems partially working
 // schema.index({"$**": "text"});
 schema.index({"$**": "text"}, {"weights": { name: 3, title: 2, tag: 2, description: 1 }});
 

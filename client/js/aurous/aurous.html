@@ -1,42 +1,103 @@
 <navbar></navbar>
 
 <div class="wrapper aurous_home">
-  <div class="aur_hero">
-    <div class="breadcrumb aurous">
-      <a href="#" class="upper">
-        Aurous
-      </a>
+      <div class="aur_hero">
+        <div class="bread_crumb aurous_crumb">
+          <a href="aurous" ui-sref="aurous" class="upper">
+            Aurous
+          </a>
 
-      <i class="fa fa-caret-right" aria-hidden="true"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+            <path class='caret' d="M0 0v8l4-4-4-4z" transform="translate(2)" />
+          </svg>
 
-      <a href="#" class="upper">
-        The Brand
-      </a>
-    </div>
-  </div>
 
-  <main>
-    <div class="leftie">
+          <a href="/aurous/brand" ui-sref="aurous_brand" class="upper">
+            The Brand
+          </a>
+        </div>
 
-    </div>
+        <img src="aurous_logo.png" alt="" class="aur_logo"/>
 
-    <div class="rightie">
-      <h1 class="upper">
-        Make every day a Saturday
-      </h1>
+        <h3 class="upper aur_blurb">
+          Targeted treatments created to change the aging equation
+        </h3>
 
-      <p>
-        The collection is a recipe for radiant, rested skin&mdash;like the perfect Saturday, time slows down and your face lights up.
-      </p>
 
-      <p>
-        The key to Saturday Skin is the Cha-7 es Complex&trade;, an exclusive peptide formula that promotes skin's natural regeneration process. Rooted in science and derived from natural ingredients, the cutting-edge complex increases collagen and elasticity while reducing melanin production for a flawless, stress-free complexion. The complete collection helps you hit pause on aging and embrace your bare beauty. Free of added color and fragrance, the no-fuss, effortless regimen balances and revitalizes all skin types, leaving you free to soak up your Saturdays and keep on glowing all week long.
-      </p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      		<!-- Indicators -->
+			    <ol class="carousel-indicators">
+			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="1"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+			    </ol>
 
-      <a href="#" class="see_all upper">
-        See all products
-      </a>
-    </div>
-  </main>
+			    <!-- Wrapper for slides -->
+			    <div class="carousel-inner" role="listbox">
+			      <div class="item active cara cara_one">
+              <div class="hero_blurb">
+                <h1 class="upper enrich_blurb">
+                  Enriched with </br>
+                  Cha&mdash;7 es complex&trade;</br>
+                   &amp; stem cells
+                </h1>
 
-</div>  <!-- WRAPPER END -->
+                <a href="/aurous/brand" ui-sref="aurous_brand" class="upper read_more">
+                  Read more
+                </a>
+              </div>
+			      </div>
+
+			      <div class="item cara cara_two">
+              <div class="hero_blurb">
+                <h1 class="upper enrich_blurb">
+                  Anti-aging </br>
+                  and nourishing </br>
+                  moisture
+                </h1>
+
+                <a href="/about.html" class="upper read_more">
+                  Read more
+                </a>
+              </div>
+			      </div>
+
+			      <div class="item cara cara_three">
+              <div class="hero_blurb">
+                <h1 class="upper enrich_blurb">
+                  Skincare that </br>
+                  listens to your </br>
+                  biorhythm
+                </h1>
+
+                <a href="/about.html" class="upper read_more">
+                  Read more
+                </a>
+              </div>
+			      </div>
+
+			    </div>
+  			</div>
+      </div>
+
+      <main class="aur_main">
+        <div class="leftie">
+          <img src="kate.jpg" class="kate" alt="" />
+        </div>
+
+        <div class="rightie">
+
+          <h1 class="aur_title">
+            Beauty through Biology
+          </h1>
+
+          <p class='upper aur_long'>
+            We tend to talk abut skincare as a battle &mdash; fighting fine lines; combating dark circles; resisting wrinkles. But what if anti-aging were a truce rather than a war? Aurous helps women make peace with their skin, preserving their youth in favor of fighting aging. The breakthrough skincare line harnesses the power of CHA&mdash;7 ES COMPLEX &trade; to work with women&rsquo;s biology instead of against it, leveraging skin&rsquo;s own regeneration process to promote elasticity and radiance while preventing dullness and wrinkles.
+          </p>
+
+          <a href="/aurous/products" ui-sref="aurous_products" class="upper aur_all">
+            The products
+          </a>
+        </div>
+      </main>
+    </div>  <!-- WRAPPER END -->
