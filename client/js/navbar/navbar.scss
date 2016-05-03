@@ -12,7 +12,6 @@
   z-index: 9999;
 }
 
-/* for common-nav with logo placed on the left */ 
 .navigation > .brand {
   padding-top: 35px;
   padding-bottom: 5px;
@@ -93,7 +92,7 @@ ul.navbar li.center {
 }
 
 li a {
-  color: black;
+  color: black;   
 }
 
 li a:not(.active) {
@@ -121,10 +120,8 @@ li a:hover:not(.active) {
 /* for dropdown */
 .dropbtn {
     border: none;
-/*    background-color: white;*/
     max-width: 160px;
     padding-left: 10px;
-    /*padding-left: 10px;*/
     text-align: right;
     cursor: pointer;
     z-index: 9999;
@@ -138,6 +135,7 @@ li a:hover:not(.active) {
 ul.navbar li.dropdown {
   text-align: right;
   z-index: 9999;
+  height: 35px;
 }
 
 .dropdown-aurouscontent {
@@ -147,7 +145,7 @@ ul.navbar li.dropdown {
   margin-left: -45px;
   min-width: 160px;
   border-style: solid;
-  border-top: 2px solid;
+  /*border-top: 2px solid;*/
   border-left: none;
   border-right: none;
   border-bottom: none;
@@ -159,7 +157,7 @@ ul.navbar li.dropdown {
   display: none;
   position: absolute;
   margin-top: 4px;
-  margin-left: -5px;
+  margin-left: -10px;
   min-width: 160px;
   border-style: solid;
   border-top: 2px solid;
@@ -209,8 +207,7 @@ ul.navbar li.dropdown {
 /** dropdown end **/
 
 
-
-/* search ? ? ? ? ? ? ? ? ? ? */
+/* search */
 .textsearch-test {
   display: inline-block;
   position: relative;

@@ -1,0 +1,39 @@
+#navigation {
+  width: 100%;
+  display: block;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: 90px;
+  margin-top: -15px;
+  margin-bottom: 30px;
+  position: relative;
+  background-color: white;
+  z-index: 9999;
+}
+
+#navigation > .middle-nav {
+  max-width: 600px;
+  min-width: 280px;
+  height: 55px; 
+  margin: 0 auto;
+}
+
+
+#navigation > .search {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-right: 40px;
+  margin-top: -55px;
+}
+
+
+#navigation > .brand {
+  padding-top: 35px;
+  padding-bottom: 5px;
+  padding-left: -5px;
+  width: 140px;
+  height: 43px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}

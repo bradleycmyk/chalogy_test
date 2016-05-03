@@ -5,17 +5,16 @@
 	position: relative;
 }
 
-.buttons {
-	margin-top: 65px;
-}
-
-.detail_photo {
-	max-width: 100%;
-	height: auto;
+.product_detail_buttons {
+	width: 60%;
+	margin: 0 auto;
+	border: none;
+	position: relative;
 }
 
 .panel {
-	width: 52.5%;
+	width: 60%;
+	min-height: 180px;
 	margin: 0 auto;
 }
 
@@ -24,8 +23,33 @@
 	margin: 0 auto;
 }
 
+.buttons {
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+.buttons a {
+	text-align: center;
+	font-family: WorkSans;
+    font-weight: bold;
+    color: rgb(126, 126, 126);
+    border: 10px solid #E5E5E5;
+    padding: 10px 20px;
+    DISPLAY: BLOCK;
+    width: 190px;
+    margin: 10px 0 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.detail_photo {
+	max-width: 100%;
+	height: auto;
+}
+
+
 .margin_top {
-	margin-top: 45px;
+	margin-top: -30px;
 }
 
 .recommendations {

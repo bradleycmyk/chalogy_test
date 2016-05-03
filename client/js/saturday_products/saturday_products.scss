@@ -1,12 +1,35 @@
-.clear {
-	clear: both;
-	margin: 0;
-	padding: 0;
+.sat_image {
+    display: block;
+    background-image: url('saturday_hero2.jpg');
+    background-size: 1340px;
+    background-repeat: no-repeat;
+    height: 155px;
+    background-position: -90px -120px;
+    position: relative;
 }
 
-.saturday_image {
-	width: 100%;
-	height: auto;
+.sat_link {
+    margin-top: 15px;
+    padding-left: 2em;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.sat_link a {
+    color: black;
+    font-family: Arial;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.sat_link > .caret {
+    fill: #A9A9A9;
+}
+
+.product-list {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .product-listing {
@@ -21,4 +44,27 @@
     &:hover {
         box-shadow: 0 0 4px #fff;
     }
+}
+
+.product-name {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: -1px;
+}
+
+.product-title {
+    font-size: 15px;
+}
+
+.price_tag {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.gray-line {
+    width: 140px;
+    height: 5px;
+    background-color: gray;
+    float: left;
+    display: block;
 }
