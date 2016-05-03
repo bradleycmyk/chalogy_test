@@ -14,7 +14,6 @@ router.get('/', function(req, res, next){
 // performing mongoDB full-text search 
 router.get('/search/:text', function(req, res, next){
 	var text = req.params.text;
-	console.log("aurous search !!!!");
 	Aurous.find(
         { $text : { $search : req.params.text } }, 
         { score : { $meta: "textScore" } }

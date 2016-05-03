@@ -11,4 +11,4 @@ app.factory('aurousSearchFactory', function($http) {
     };
 });
 
-// try add route to aurous search 
+
