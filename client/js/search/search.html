@@ -6,12 +6,14 @@
 			<div class="col-sm-3">
 				<a href="/saturday-skin/products/{{product.name}}"><img class="product-pictures" ng-src="{{ product.image[0] }}" alt="product picture" /></a>
 			</div>
+			
 			<div class="col-sm-9">
-				<a href="/saturday-skin/products/{{product.name}}"><h3>{{ product.name }}</h3>
-				<h4>{{ product.title }}</h4></a>
-				${{ product.price }}.00
-				<br>
-				{{ product.description }}
+				<a href="/saturday-skin/products/{{product.name}}"><p class="product-name">{{ product.name }}</p>
+				<p class="product-title">{{ product.title }}</p></a>
+				<div class="gray-line"></div>
+				<p class="price_tag">$ {{ product.price }}.00</p>
+				<span>50mL</span>
+				<p class="product-description">{{ product.description }}</p>
 			</div>
 		</div>
 		<hr>
@@ -23,14 +25,14 @@
 				<a href="/aurous/products/{{aurousProduct.name}}"><img class="product-pictures" ng-src="{{ aurousProduct.image[0] }}" alt="product picture" /></a>
 			</div>
 			<div class="col-sm-9">
-				<a href="/aurous/products/{{aurousProduct.name}}"><h3>{{ aurousProduct.name }}</h3>
-				<h4>{{ aurousProduct.title }}</h4></a>
-				${{ aurousProduct.price }}.00
-				<br>
-				{{ aurousProduct.description }}
+				<a href="/aurous/products/{{aurousProduct.name}}"><p class="product-name">{{ aurousProduct.name }}</p>
+				<p class="product-title">{{ aurousProduct.title }}</p></a>
+				<div class="gray-line"></div>
+				<p class="price_tag">$ {{ aurousProduct.price }}.00</p>
+				<span>50mL</span>
+				<p class="product-description">{{ aurousProduct.description }}</p>
 			</div>
 		</div>
 		<hr>
 	</div>
 </div>
-

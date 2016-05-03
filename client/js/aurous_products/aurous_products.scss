@@ -2,6 +2,19 @@
 	height: 190px;
 	background-color: black;
 	z-index: -9999;
+	/*position: relative;*/
+}
+
+#aurous_text {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: white;
+}
+
+#aurous_logo {
+	margin-left: 70%;
+	margin-top: 40px;
 }
 
 .drop_image {

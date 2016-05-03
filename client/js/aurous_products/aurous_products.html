@@ -5,36 +5,36 @@
 		<img id="aurous_logo" src="aurous_logo.png" alt="Aurous logo" />
 	</div>
 
-	<div class="container_fluid" width="1200px;">
-		<!-- image -->
-		<div class="drop_image">
-			<img id="drop_image" src="drop.png" alt="water drop" />
-		</div>
+	
+	<!-- image -->
+	<div class="drop_image">
+		<img id="drop_image" src="drop.png" alt="water drop" />
+	</div>
 
-		<!-- text -->
-		<div class="aurous_text">
-			<h1>THE BEUATY BEHIND INNOVATION</h1>
-			<button class="aurous_button">READ MORE</button>
-		</div>
+	<!-- text -->
+	<div class="aurous_text">
+		<h1>THE BEUATY BEHIND INNOVATION</h1>
+		<button class="aurous_button">READ MORE</button>
+	</div>
 
-		<!-- image -->
-		<div class="water_image">
-			<img id="water_image" src="water.jpg" alt="water drop" />
-		</div>
+	<!-- image -->
+	<div class="water_image">
+		<img id="water_image" src="water.jpg" alt="water drop" />
+	</div>
 
-		<!-- products --> 
-		<div class="aurous_product">
-			<div class="aurous_listing" ng-repeat="product in products" ng-mouseenter="show = true" ng-mouseleave="show = false">
-				<a class="aurous_link" href="/aurous/products/{{ product.name }}" ng-init="itemsrc= product.image[0] " ng-mouseover="itemsrc= product.image[1]" ng-mouseout="itemsrc= product.image[0] " >
-					<img class="aurous_image_hover" width="330px;" height="480px;" ng-src="{{itemsrc}}" alt="product picture" />
-					<div class="aurous_description" ng-show="show">
-						<p class="aurous_name">{{ product.name }}</p>
-						<p class="aurous_title">{{ product.title }}</p>
-					</div>
-				</a>
-			</div>
+	<!-- products --> 
+	<div class="aurous_product">
+		<div class="aurous_listing" ng-repeat="product in products" ng-mouseenter="show = true" ng-mouseleave="show = false">
+			<a class="aurous_link" href="/aurous/products/{{ product.name }}" ng-init="itemsrc= product.image[0] " ng-mouseover="itemsrc= product.image[1]" ng-mouseout="itemsrc= product.image[0] " >
+				<img class="aurous_image_hover" width="330px;" height="480px;" ng-src="{{itemsrc}}" alt="product picture" />
+				<div class="aurous_description" ng-show="show">
+					<p class="aurous_name">{{ product.name }}</p>
+					<p class="aurous_title">{{ product.title }}</p>
+				</div>
+			</a>
 		</div>
 	</div>
+
 </div>
 
 
