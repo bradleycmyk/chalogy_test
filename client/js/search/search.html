@@ -19,20 +19,8 @@
 		<hr>
 	</div>
 
-	<div class="product" ng-repeat="aurousProduct in aurousProducts">
-		<div class="row">
-			<div class="col-sm-3">
-				<a href="/aurous/products/{{aurousProduct.name}}"><img class="product-pictures" ng-src="{{ aurousProduct.image[0] }}" alt="product picture" /></a>
-			</div>
-			<div class="col-sm-9">
-				<a href="/aurous/products/{{aurousProduct.name}}"><p class="product-name">{{ aurousProduct.name }}</p>
-				<p class="product-title">{{ aurousProduct.title }}</p></a>
-				<div class="gray-line"></div>
-				<p class="price_tag">$ {{ aurousProduct.price }}.00</p>
-				<span>50mL</span>
-				<p class="product-description">{{ aurousProduct.description }}</p>
-			</div>
-		</div>
-		<hr>
+	<div class="alert-msg">
+		<h1>{{ alertmsg }}</h1>
+		<img ng-src="{{ imgurl }}" />
 	</div>
 </div>

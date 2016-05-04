@@ -26,12 +26,23 @@
 	margin-top: 40px;
 }
 
+/*.drop_image {
+	width: 776px;
+	height: 928px;
+	position: absolute;
+	top: 80px;
+	left: -25px;
+	z-index: -1;
+	display: inline-block;
+}*/
+
 .drop_image {
 	width: 776px;
 	height: 928px;
 	position: absolute;
 	top: 80px;
 	left: -25px;
+	background-image: url("drop.png");
 	z-index: -9999;
 	display: inline-block;
 }

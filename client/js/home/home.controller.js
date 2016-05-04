@@ -6,31 +6,57 @@ app.controller('HomeController', function($scope, $http, homeFactory) {
 
 	$(document).ready(function(){
 
-		$('.ribbon-wrapper-blue').delay(600).animate({
+		$('.ribbon-wrapper-blue').delay(100).animate({
 		  left: '+=558px',
 		  top: '+=538px'
-		}, 1500);
+		}, 900);
 
-		$('.ribbon-wrapper-green').delay(2100).animate({
+		$('.ribbon-wrapper-green').delay(1000).animate({
 		  left: '-=800px',
 		  top: '+=441px'
-		}, 1500);
+		}, 900);
 
-		$('.circle-wrapper-red').delay(4100).fadeIn(1200);
+		$('.circle-wrapper-red').delay(2100).fadeIn(1200);
 
-		$('.animator h1').delay(5300).fadeIn(1200);
+		$('.animator h1').delay(3300).fadeIn(1200);
 
-		$('.front_text').delay(6500).fadeIn(1200);
+		$('.front_text').delay(4500).fadeIn(1200);
 
-		$('footer').delay(7700).fadeIn(1200);
+		$('footer').delay(5700).fadeIn(1200);
 
-		$('.wrapper').delay(7700).queue(function(next) {
+		$('.wrapper').delay(5700).queue(function(next) {
 
 		  $(this).css({
 		    'height': 'auto'
 		  });
 		  next();
 		})
+
+		// $('.ribbon-wrapper-blue').delay(600).animate({
+		//   left: '+=558px',
+		//   top: '+=538px'
+		// }, 1500);
+
+		// $('.ribbon-wrapper-green').delay(2100).animate({
+		//   left: '-=800px',
+		//   top: '+=441px'
+		// }, 1500);
+
+		// $('.circle-wrapper-red').delay(4100).fadeIn(1200);
+
+		// $('.animator h1').delay(5300).fadeIn(1200);
+
+		// $('.front_text').delay(6500).fadeIn(1200);
+
+		// $('footer').delay(7700).fadeIn(1200);
+
+		// $('.wrapper').delay(7700).queue(function(next) {
+
+		//   $(this).css({
+		//     'height': 'auto'
+		//   });
+		//   next();
+		// })
 
 		$('.hoover-red, .circle-triangle, .circle-triangle-two').hover(
 		  function() {
