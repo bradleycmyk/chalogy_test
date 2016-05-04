@@ -8,7 +8,7 @@ var schema = new mongoose.Schema({
     image: {
         type: [String],
         required: true,
-        default: '/images/placeHolder.jpg'
+        default: 'drop1.jpg'
     },
     name: {
         type: String,

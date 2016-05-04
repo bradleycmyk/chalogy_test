@@ -65,6 +65,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   background-color: #373737;
   font-family: 'Work Sans', sans-serif;
 }
@@ -113,7 +114,7 @@ a:hover {
 
 .wrapper {
   width: 1200px;
-
+  overflow: hidden;
   /*margin: 55px auto 0;*/
   margin: 0 auto;
   background: white;
