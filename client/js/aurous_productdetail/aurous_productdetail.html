@@ -1,61 +1,71 @@
 <navbar></navbar>
-<div class="aurous-header clear">
-	<p id="aurous_text"><a href="aurous">AUROUS</a> > <a href="aurous/products">THE PRODUCTS</a> > <span class="bold">{{ product.name }}</span></p>
-	<img id="aurous_logo" src="aurous_logo.png" alt="Aurous logo" />
-</div>
+<div class="aurous-body">
+	<div class="aurous-header">
+		<p id="aurous_text">AUROUS  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+	            <path class='caret' d="M0 0v8l4-4-4-4z" transform="translate(2)" />
+	          </svg> THE PRODUCTS <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+	            <path class='caret' d="M0 0v8l4-4-4-4z" transform="translate(2)" /></svg> {{ product.name }} </p>
+		<img id="aurous_logo" src="aurous_logo.png" alt="Aurous logo" />
+	</div>
 
-<br><br><br><br>
-<div class="product_detail">
-	<div class="row">
-		<div class="col-sm-6">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    		<!-- Indicators -->
-			    <ol class="carousel-indicators">
-			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			      <li data-target="#myCarousel" data-slide-to="1"></li>
-			      <li data-target="#myCarousel" data-slide-to="2"></li>
-			    </ol>
+	<div class="aurousproduct_detail">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="aligner">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		    		<!-- Indicators -->
+					    <ol class="carousel-indicators">
+					      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					      <li data-target="#myCarousel" data-slide-to="1"></li>
+					      <li data-target="#myCarousel" data-slide-to="2"></li>
+					    </ol>
 
-			    <!-- Wrapper for slides -->
-			    <div class="carousel-inner" role="listbox">
-			      <div class="item active">
-			        <img class="carousel_photo" ng-src="{{ product.image[0] }}" alt="product1" />
-			      </div>
+					    <!-- Wrapper for slides -->
+					    <div class="carousel-inner" role="listbox">
+					      <div class="item active">
+					        <img class="carousel_photo" ng-src="{{ product.image[0] }}" alt="product1" />
+					      </div>
 
-			      <div class="item">
-			        <img class="carousel_photo" src="{{ product.image[1] }}" alt="product2" />
-			      </div>
-			    
-			      <div class="item">
-			        <img class="carousel_photo" src="{{ product.image[2] }}" alt="product3" />
-			      </div>
-			      
-			    </div>   
+					      <div class="item">
+					        <img class="carousel_photo" src="{{ product.image[1] }}" alt="product2" />
+					      </div>
+					    
+					      <div class="item">
+					        <img class="carousel_photo" src="{{ product.image[2] }}" alt="product3" />
+					      </div>
+					      
+					    </div>   
+					</div>
+				
+					<social-icons></social-icons>
+				</div>
 			</div>
-			<social-icons></social-icons>
-		</div>
 
-		<div class="col-sm-6">
-			<h3>{{ product.name }}</h3>
-			<h4>{{ product.title }}</h4>
-			${{ product.price }}.00
-			<br>
-			{{ product.description }}
-			<br class="mobile_hide"><br class="mobile_hide">
-		
+			<div class="col-sm-6">
+				<div class="aurproduct-desc">
+					<span id="auro-name">{{ product.name }}</span><br>
+					<span id="auro-title">{{ product.title }}</span><br>
+					${{ product.price }}.00
+					<br><br>
+					<p id="auro-desc">{{ product.description }}</p>
+					<br class="mobile_hide"><br class="mobile_hide">
+				</div>
+				<img id="drop-1" src="drop1.png" width="330px;" height="275px;" />
+				<!-- <div class="drop-1"></div> -->
+			</div>
 		</div>
 	</div>
-</div>
 
-<div class="container">
-	<hr class="aurous-recommendation mobile-hide">
-	<h1 class="center">OTHER RECOMMENDED PRODUCTS</h1>
+	<div class="container">
+		<hr class="aurous-recommendation mobile-hide">
+		<h1 class="text-center">OTHER RECOMMENDED PRODUCTS</h1>
 
-	<div class="aurous_recommendedProd">
-		<div class="aurous_each" ng-repeat="recommendation in recommendations | limitTo: 4">
-			<a href="/aurous/products/{{ recommendation.name }}">
-				<img id="aurousproduct_image" ng-src="{{ recommendation.image[0] }}" alt="recommended products" width="250px;" />
-			</a>
-		</div> 
+		<div class="aurous_recommendedProd">
+			<div class="aurous_each" ng-repeat="recommendation in recommendations | limitTo: 4">
+				<a href="/aurous/products/{{ recommendation.name }}">
+					<img id="aurousproduct_image" ng-src="{{ recommendation.image[0] }}" alt="recommended products" width="250px;" />
+				</a>
+			</div> 
+		</div>
 	</div>
 </div>

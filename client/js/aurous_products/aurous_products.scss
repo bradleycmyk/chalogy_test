@@ -1,19 +1,28 @@
 .aurous-header {
 	height: 190px;
 	background-color: black;
-	z-index: -9999;
+	z-index: -9998;
 	/*position: relative;*/
+}
+
+.aurous-body {
+	position: relative;
+	width: 1200px;
+	display: inline-block;
 }
 
 #aurous_text {
 	position: absolute;
 	top: 20px;
-	left: 20px;
+	left: 50px;
 	color: white;
+	display: inline-block;
+	background-color: black;
+	font-family: WorkSans;
 }
 
 #aurous_logo {
-	margin-left: 70%;
+	margin-left: 60%;
 	margin-top: 40px;
 }
 
@@ -21,48 +30,84 @@
 	width: 776px;
 	height: 928px;
 	position: absolute;
-	top: 180px;
-	left: 0;
+	top: 80px;
+	left: -25px;
 	z-index: -9999;
-}
-
-#water_image {
-	width: 250px;
-	height: 250px;
-	margin-left: 70px;
-	// for footer and spacing 
-	/*margin-bottom: */
+	display: inline-block;
 }
 
 .aurous_text {
-	width: 20%;
+	width: 24%;
 	height: auto;
-	margin-left: 60px;
+	margin-left: 70px;
 	margin-top: 40%;
 	text-align: center;	
+	z-index: 22;
+	display: inline-block;
+	font-family: MillerBanner;
+	font-size: 30px;
+	/*font-weight: 100;*/
+	letter-spacing: 4px;
+}
+
+.aurous_text > .readmore {
+	display: block;
+	color: white;
+	border: 1px solid black;
+	width: 135px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 3px 15px;
+	font-family: WorkSans;
+	font-size: 15px;
+	letter-spacing: 1px;
+	font-weight: 100;
+	color: black;
+}
+
+#water_image {
+	width: 300px;
+	height: 300px;
+	margin-left: 95px;
+	margin-top: 30px;
+	z-index: -9999;
+	display: inline-block;
+	// for footer and spacing 
+	margin-bottom: 685px;
 }
 
 .aurous_button {
 	border: solid 1px red;
 	text-align: center;
+	display: inline-block;
 }
 
 .aurous_product {
-	display: block;
+	display: inline-block;
 	position: absolute;
 	left: 38%;
+	top: 203px;
 	width: 62%;
-	top: 310px;
 }
+
+/* for auorus prod detail layout */
+/*.aurous_product {
+	display: inline-block;
+	position: absolute;
+	left: 38%;
+	top: 100px;
+	width: 62%;
+}*/
 
 .aurous_listing {
 	margin-right: 6%;
-	width: 40%;
-	margin-top: 1vh;
+	width: 44%;
+	margin-top: 30px;
 	margin-bottom: 1vh;
 	position: relative;
 	display: inline-block;
-	background-color: black;
+	/*background-color: black;*/
 
 }
 
@@ -74,9 +119,9 @@
     }
 }
 
-.aurous_link {
+/*.aurous_link {
 	position: relative;
-}
+}*/
 
 .aurous_description {
 	color: white;
@@ -84,5 +129,25 @@
 	top: 40%;
 	left: 10%;
 }
+
+.aurous_link {
+    margin-top: 15px;
+    padding-left: 50px;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+}
+
+.aurous_link a {
+    color: white !important;
+    font-family: Arial;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.aurous_link > .caret {
+    fill: #ffffff;
+}
+
 
 

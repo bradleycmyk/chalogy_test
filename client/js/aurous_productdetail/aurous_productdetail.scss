@@ -1,8 +1,65 @@
+#auro-name {
+	width: 200px;
+	text-align: center;
+	font-family: MillerBanner;
+	font-weight: 100;
+	letter-spacing: 4px;
+	font-size: 2.3em;
+	margin-bottom: 20px;
+}
+
+#auro-title {
+	font-family: WorkSans;
+	font-size: 15px;
+	font-weight: 100;
+}
+
+#auro-desc {
+	font-family: WorkSans;
+	font-size: 15px;
+	letter-spacing: 4px;
+}
+
+#drop-1 {
+	margin-top: -20px;
+	margin-left: 25px;
+	z-index: -99;
+
+}
+
+/*.drop-1 {
+	background-image: url('drop1.png');
+	background-size: 100%;
+	width: 400px;
+	height: 300px;
+	z-index: -999;
+}*/
+
+.aurousproduct_detail {
+	width: 100%;
+}
+
+.aurproduct-desc {
+	width: 70%;
+	text-align: center;
+	/*margin-left: -10px;*/
+	margin-top: 70px;
+}
+
+#myCarousel {
+/*	width: 90%;
+	margin: 0 auto;
+	margin-top: -90px;*/
+}
+
+.aligner {
+	width: 76%;
+	margin-top: -90px;
+	margin-left: 90px;
+}
+
 .carousel-inner {
- /*  margin-bottom: 20px;
-   width: 100%;*/
-  /* 	width: 500px;
-	height: 460px;*/
+   margin-bottom: 12px;
 }
 
 .carousel-inner > .item > img,
@@ -13,10 +70,10 @@
 
 // carousel styling ! 
 .carousel-indicators {
- 	left: 80% !important;
+ 	left: 92% !important;
  	width: 50% !important;
  	margin-left: 0;
- 	bottom: -50px !important;
+ 	bottom: -40px !important;
 } 
 
 .carousel-indicators li {
@@ -45,12 +102,15 @@ hr.aurous-recommendation {
 	width: 86%;
 	margin: 0 auto;
 	position: relative;
-	/*background: green;*/
-	/*height: 500px;*/
 }
 
-.center {
+.text-center {
 	text-align: center;
+	font-family: MillerBanner;
+	font-weight: 100;
+	letter-spacing: 4px;
+	font-size: 2.3em;
+	margin-bottom: 20px;
 }
 
 .aurous_each {
