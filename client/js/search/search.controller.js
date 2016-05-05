@@ -18,8 +18,6 @@ app.controller('searchController', function($scope, searchFactory, aurousSearchF
 		})
 	}
 
-
-
 });
 
 
