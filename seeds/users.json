@@ -1,0 +1,12 @@
+[
+	{
+		"email": "cmyk@cmykpluswhite.com",
+		"password": "pluswhite0814",
+		"isAdmin": true
+	},
+	{
+		"email": "test@test.com",
+		"password": "test",
+		"isAdmin": true
+	}
+]

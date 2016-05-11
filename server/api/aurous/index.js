@@ -43,3 +43,13 @@ router.get('/recommendation/:product', function(req, res, next){
 	});
 
 });
+
+// remove item 
+router.post('/remove', function(req, res, next){
+    console.log("yes3");
+    var title = req.body.title;
+    Aurous.findOneAndRemove({ title: title }, function(err, prod){
+        console.log("product removed in aurous product route");
+        res.send(prod);
+    });
+})

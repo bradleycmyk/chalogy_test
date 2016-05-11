@@ -28,3 +28,24 @@ button.slick-prev {
 /*	background-color: green;
 	display: none !important;*/
 }
+
+.responsive-image {
+	width: 1200px;
+	height: 160px;
+}
+
+#responsive {
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
+}
+
+
+/* responsive as a background image */
+/*.responsive-image {
+    width: 100%;
+    height: 160px;
+    background-image: url('responsive-test.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}*/

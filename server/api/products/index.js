@@ -43,3 +43,46 @@ router.get('/recommendation/:product', function(req, res, next){
 	});
 
 });
+
+
+// adding product 
+router.post('/add', function(req, res, next) {
+	console.log("req.body in route: ", req.body);
+	var title = req.body.title;
+	var tags = req.body.tags.split(",");
+	console.log("tags in route: ", tags);
+	Product.findOne({
+        title: title
+    }, function(err, prod) {
+        if (err) return next(err);
+        if (prod === null) {
+            Product.create({
+            	'name': req.body.name,
+                'title': req.body.title,
+                'description': req.body.description,
+                'price': req.body.price,
+                'tag': tags,
+                'size': req.body.size
+            });
+            res.send(title);
+        } else {
+            res.send('Err: That product already exists!');
+        }
+    });
+})
+
+
+// remove product
+router.post('/prodremove', function(req, res, next){
+    console.log("yes3");
+    var title = req.body.title;
+    Product.findOneAndRemove({ title: title }, function(err, prod){
+        console.log("product removed in product route");
+        res.send(prod);
+    });
+})
+
+
+
+
+

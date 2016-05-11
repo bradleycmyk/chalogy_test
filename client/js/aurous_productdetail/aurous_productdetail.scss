@@ -54,10 +54,21 @@
    margin-bottom: 12px;
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    width: 100%;
+
+.carousel-inner > .item > img {
+	width: 102% !important;
     margin: auto;  
+}
+
+.carousel-inner > .item > a > img {
+    width: 102%;
+    margin: auto;  
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 102% !important;
+    height: auto;
 }
 
 // carousel styling ! 

@@ -1,6 +1,24 @@
-var app = angular.module('Chalogy', ['ui.router']);
+var app = angular.module('Chalogy', ['ui.router', 'authHandler']);
 
 // can define controller for navigation bar here + deal with cookies 
+
+app.controller('MainController', function($scope, $rootScope){
+	$scope.loggedIn = sessionStorage.loggedinUser || undefined;
+
+	if(!$scope.loggedIn) {
+		// no change ? 
+	} else {
+		// do something - user is logged in
+	}
+
+	$rootScope.$on('$stateChangeError', function(e, toState, toParams, fromState, fromParams, error){
+
+	    if(error === "Not Authorized"){
+	        $state.go("login");
+	    }
+	});
+	
+})
 
 app.config(function ($urlRouterProvider, $locationProvider) {
    // This turns off hashbang urls (/#about) and changes it to something normal (/about)

@@ -1,18 +1,21 @@
 <navbar></navbar>
 <div class="login-container clear">
-    <hr><br>
-    <form action="/login" method="post">
-        <div>
-            <label>Username:</label>
-            <input type="text" name="username"/>
-        </div>
-        <div>
-            <label>Password:</label>
-            <input type="password" name="password"/>
-        </div>
-        <div>
-            <input type="submit" value="Log In"/>
-        </div>
-    </form>
     <br><hr>
+    <div id="login">
+        <form ng-submit="userLogin(user)">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" ng-model="user.email" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" ng-model="user.password" placeholder="Password">
+                </div>
+            <button type="submit" class="btn btn-default">Login</button>
+        </form> 
+    </div>
+    <br><br>
 </div>
+
+
+

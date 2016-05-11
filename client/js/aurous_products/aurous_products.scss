@@ -1,14 +1,22 @@
-.aurous-header {
+/*.aurous-header {
 	height: 190px;
 	background-color: black;
 	z-index: -9998;
-	/*position: relative;*/
+}
+*/
+.aurous-header {
+	height: 188px;
+	background-image: url('aurous-banner-real.png');
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: contain;
+	/*z-index: -9998;*/
 }
 
 .aurous-body {
 	position: relative;
 	width: 1200px;
-	display: inline-block;
+	/*display: inline-block;*/
 }
 
 #aurous_text {
@@ -43,7 +51,7 @@
 	top: 80px;
 	left: -25px;
 	background-image: url("drop.png");
-	z-index: -9999;
+	z-index: -1;
 	display: inline-block;
 }
 
@@ -134,12 +142,7 @@
 	position: relative;
 }*/
 
-.aurous_description {
-	color: white;
-	position: absolute;
-	top: 40%;
-	left: 10%;
-}
+
 
 .aurous_link {
     margin-top: 15px;
@@ -160,5 +163,24 @@
     fill: #ffffff;
 }
 
+.aurous_description {
+	width: 70%;
+	color: white;
+	position: absolute;
+	top: 40%;
+	left: 20%;
+}
+
+.aurous-name-fromdb {
+	font-size: 30px;
+	font-family: MillerBanner;
+	text-align: center;
+}
+
+.aurous-title-fromdb {
+	font-size: 15px;
+	font-family: WorkSans;
+	text-align: center;
+}
 
 

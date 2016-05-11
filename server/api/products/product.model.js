@@ -7,7 +7,7 @@ var crypto = require('crypto'),
 var schema = new mongoose.Schema({
     image: {
         type: [String],
-        required: true,
+        // required: true,
         default: 'drop1.jpg'
     },
     name: {
@@ -27,9 +27,9 @@ var schema = new mongoose.Schema({
         type: String,
         required: true
     },
-    category: {
-        type: String,
-        required: true
+    size: {
+        type: Number
+        // required: true
     },
     tag: {
         type: [String]

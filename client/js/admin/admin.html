@@ -1,0 +1,105 @@
+<navbar></navbar>
+<div class="container">
+
+<br><br>
+
+    <div id='prodAdd'>
+        <h1 class="center">Add an item:</h1> <br><hr>
+        <form name='addForm' ng-submit='submitItem(product)'>
+            <table>
+                <tr>
+                    <td>
+                        <label for='itemName'>Title of item: </label>
+                    </td>
+                    <td>
+                        <input type='text' name='itemName' ng-model='product.name' required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for='itemName'>sub Title of item: </label>
+                    </td>
+                    <td>
+                        <input type='text' name='itemSubName' ng-model='product.title' required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for='itemDesc'>Description of item: </label>
+                    </td>
+                    <td>
+                        <input type='text' name='itemDesc' ng-model='product.description' required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for='itemPrice'>Price of item: ($)</label>
+                    </td>
+                    <td>
+                        <input type='text' name='itemPrice' ng-model='product.price' required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for='itemSize'>Size of item: (ml)</label>
+                    </td>
+                    <td>
+                        <input type='text' name='itemPrice' ng-model='product.size' required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for='itemKeys'>Keywords of item (separate by commas): </label>
+                    </td>
+                    <td>
+                        <input type='text' name='itemKeys' ng-model='product.tags' required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for='itemFile'>Want a picture?: </label>
+                    </td>
+                    <td>
+                        <input type='text' name='itemFile' ng-model='product.image' />
+                    </td>
+                </tr>
+            </table>
+            <button type='submit'>Add the item!</button>
+        </form>
+        <br><hr>
+    </div>
+
+    <button ng-click="allitems()"> see all items</button>
+
+    <p id="editmsg"> {{ msg }} </p>
+    <div id="editndelete">
+        <div class="product" ng-repeat="product in allproducts">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="/saturday-skin/products/{{product.name}}"><img class="product-pictures" ng-src="{{ product.image[0] }}" alt="product picture" /></a>
+                </div>
+                
+                <div class="col-sm-9">
+                    <a href="/saturday-skin/products/{{product.name}}"><p class="product-name">{{ product.name }}</p>
+                    <p class="product-title">{{ product.title }}</p></a>
+                    <div class="gray-line"></div>
+                    <p class="price_tag">$ {{ product.price }}.00</p>
+                    <span>50mL</span>
+                    <p class="product-description">{{ product.description }}</p>
+                    <button class="editbtn" ng-click='editItem(product.title)'>&#9998;Edit</button>
+                    <button class="editbtn" ng-click='removeAurousItems(product.title)'>&#9998;Remove</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+
+</div>
+<br><br>

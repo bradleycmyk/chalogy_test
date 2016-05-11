@@ -4,7 +4,7 @@
 		<p id="aurous_text">AUROUS  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
 	            <path class='caret' d="M0 0v8l4-4-4-4z" transform="translate(2)" />
 	          </svg> THE PRODUCTS</p>
-		<img id="aurous_logo" src="aurous_logo.png" alt="Aurous logo" />
+		<!-- <img id="aurous_logo" src="aurous_logo.png" alt="Aurous logo" /> -->
 	</div>
 
 	<!-- image -->
@@ -31,8 +31,8 @@
 			<a class="aurous_link" href="/aurous/products/{{ product.name }}" ng-init="itemsrc= product.image[0] " ng-mouseover="itemsrc= product.image[1]" ng-mouseout="itemsrc= product.image[0] " >
 				<img class="aurous_image_hover" width="330px;" height="480px;" ng-src="{{itemsrc}}" alt="product picture" />
 				<div class="aurous_description" ng-show="show">
-					<p class="aurous_name">{{ product.name }}</p>
-					<p class="aurous_title">{{ product.title }}</p>
+					<p class="aurous-name-fromdb">{{ product.name }}</p>
+					<p class="aurous-title-fromdb">{{ product.title }}</p>
 				</div>
 			</a>
 		</div>
