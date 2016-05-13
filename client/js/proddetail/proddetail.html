@@ -1,5 +1,5 @@
 <navbar></navbar>
-<div class="wrapper saturday_home clear">
+<div class="clear">
   	<div class="sat_image"></div>
 
     <div class="sat_link">
@@ -18,18 +18,23 @@
 	<div class="product_detail">
 		<div class="row">
 			<div class="col-sm-6">
-				<img class="detail_photo" ng-src="{{ product.image[0] }}" alt="product image" width="315px;" />
+				<div class="prodimg">
+					<img class="detail_photo" ng-src="{{ product.image[0] }}" alt="product image" width="315px;" />
+				</div>
 			</div>
 			<div class="col-sm-6">
-				<p class="product-name">{{ product.name }}</p>
-				<p class="product-title">{{ product.title }}</p>
-				<div class="gray-line"></div>
-				<p class="price_tag">$ {{ product.price }}.00</p>
-				<br>
-				<span>50mL</span>
-				<p class="product-description">{{ product.description }}</p>
-				<br class="mobile_hide"><br class="mobile_hide">
-				<social-icons></social-icons>
+				<!-- <br><br><br> -->
+				<div class="prod-dsc">
+					<p class="product-name">{{ product.name }}</p>
+					<p class="product-title">{{ product.title }}</p>
+					<div class="gray-line"></div>
+					<p class="price_tag">$ {{ product.price }}.00</p>
+					<br>
+					<span class="product-description">50mL</span>
+					<p class="product-description">{{ product.description }}</p>
+					<br class="mobile_hide"><br class="mobile_hide">
+					<social-icons></social-icons>
+				</div>
 			</div>
 		</div>
 	</div>	

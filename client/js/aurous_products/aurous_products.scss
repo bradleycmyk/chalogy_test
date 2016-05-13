@@ -1,27 +1,21 @@
-/*.aurous-header {
-	height: 190px;
-	background-color: black;
-	z-index: -9998;
+.aurous-body {
+	/*position: relative;*/
+	width: 1200px;
 }
-*/
+
 .aurous-header {
 	height: 188px;
 	background-image: url('aurous-banner-real.png');
 	background-repeat: no-repeat;
 	width: 100%;
-	background-size: contain;
-	/*z-index: -9998;*/
-}
 
-.aurous-body {
-	position: relative;
-	width: 1200px;
-	/*display: inline-block;*/
+	background-size: contain;
+	/*z-index: -9999;*/
 }
 
 #aurous_text {
 	position: absolute;
-	top: 20px;
+	top: -320px;
 	left: 50px;
 	color: white;
 	display: inline-block;
@@ -54,6 +48,7 @@
 	z-index: -1;
 	display: inline-block;
 }
+
 
 .aurous_text {
 	width: 24%;
@@ -108,6 +103,7 @@
 	left: 38%;
 	top: 203px;
 	width: 62%;
+	max-width: 770px;
 }
 
 /* for auorus prod detail layout */

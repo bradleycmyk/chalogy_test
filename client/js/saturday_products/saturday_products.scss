@@ -59,30 +59,39 @@
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: -1px;
+    font-family: WorkSans;
 }
 
 .product-title {
     font-size: 15px;
+    font-family: WorkSans;
 }
 
 .price_tag {
     font-size: 18px;
     padding-top: 10px;
+    font-family: WorkSans;
 }
 
 .gray-line {
-    width: 140px;
+    width: 130px;
     height: 5px;
     background-color: gray;
-    /*float: left;*/
+    float: left;
     margin: 0 auto;
     display: block;
+}
+
+.product-description {
+    font-size: 15px;
+    font-family: WorkSans;
 }
 
 .product-grid {
     max-width: 1150px;
     margin: 0 auto;
 }
+
 .sat-product-image {
     margin: 0 auto;
 }
@@ -94,12 +103,11 @@
     }
 }*/
 
-
 .product-grid-item {
     text-align: center;
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 767px) and (max-width: 992px) {
     .prodcut-grid-item-inner {
         height: 445px;
         margin: 0 auto;
@@ -124,10 +132,14 @@
 
 }
 
-@media (min-width: 748px) {
+@media (max-width: 767px) {
     .prodcut-grid-item-inner {
         height: 350px;
         margin: 0 auto;
         font-size: 13px;
+    }
+
+    .sat_link {
+        margin-top: -50px;
     }
 }

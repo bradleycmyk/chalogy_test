@@ -1,6 +1,6 @@
 [
 	{
-		"image": ["saturday1_1.jpg", "saturday1_3.jpg", "saturday2_2.jpg"],
+		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "DAILY DUE", 
 		"title": ["ALCOHOL-FREE MOISTURE MIST"],
 		"price": 50.00,
@@ -9,7 +9,7 @@
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"]
 	},
 	{
-		"image": ["saturday1_2.jpg", "saturday2_3.jpg", "saturday2_1.jpg"],
+		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "FOREVER YOUNG", 
 		"title": "PERFCETING TREATMENT",
 		"price": 50.00,
@@ -18,7 +18,7 @@
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"]
 	},
 	{
-		"image": ["saturday1_3.jpg", "saturday2_2.jpg", "saturday2_1.jpg"],
+		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "BRIGHT EYES", 
 		"title": "RADIANCE GEL MIST",
 		"price": 50.00,
@@ -27,7 +27,7 @@
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty", "forever young"]
 	},
 	{
-		"image": ["saturday2_1.jpg", "saturday1_3.jpg", "saturday2_2.jpg"],
+		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "SUN SHIELD", 
 		"title": "BROAD SPECTRUM SPF 30",
 		"price": 50.00,
@@ -36,7 +36,7 @@
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"]
 	},
 	{
-		"image": ["saturday2_2.jpg", "saturday1_1.jpg", "saturday2_2.jpg"],
+		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "SKIN SILK", 
 		"title": "SHEER DAILY MOISTURIZER",
 		"price": 50.00,
@@ -45,7 +45,7 @@
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"]
 	},
 	{
-		"image": ["saturday2_3.jpg", "saturday1_3.jpg", "saturday2_2.jpg"],
+		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "FRESH FACE", 
 		"title": "PURIFYING CLEANSER",
 		"price": 50.00,
