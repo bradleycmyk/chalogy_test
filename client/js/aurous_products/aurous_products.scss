@@ -10,18 +10,24 @@
 	width: 100%;
 
 	background-size: contain;
-	/*z-index: -9999;*/
 }
 
-#aurous_text {
-	position: absolute;
-	top: -320px;
-	left: 50px;
-	color: white;
-	display: inline-block;
-	background-color: black;
-	font-family: WorkSans;
-}
+.bread_crumb1.aurous_crumb1 {
+	  display: inline-block;
+	  vertical-align: top;
+	  margin: 20px 50px;
+
+		a{
+		  color: #FFFFFF;
+		  font-family: WorkSans;
+		  font-size: 0.8em;
+		  letter-spacing: 1px;
+		}
+
+		.caret {
+			fill: #A9A9A9;
+		}
+	}
 
 #aurous_logo {
 	margin-left: 60%;
