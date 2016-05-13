@@ -10,19 +10,23 @@
 		<a href="/saturday-skin/products" ui-sref="saturday_products" class="upper">The Products</a>
 	</div>
 
-<!-- 	<div class="product-list">
+	<div class="product-list">
 		<div class="product-listing" ng-repeat="product in products">
-			<a href="/saturday-skin/products/{{ product.name }}">  
-				<img class="saturday_image"  height="350px;" ng-src="{{ product.image[0] }}" alt="product picture" />
-			</a>
-			<p class="product-name">{{ product.name }}</p>
-			<p class="product-title">{{ product.title }}</p>
-			<div class="gray-line"></div>
-			<p class="price_tag">$ {{ product.price }}.00</p>
+			<div class="sat-prod-img">
+				<a href="/saturday-skin/products/{{ product.name }}">  
+					<img class="saturday_image" ng-src="{{ product.image[0] }}" alt="product picture" />
+				</a>
+			</div>
+			<div class="sat-prod-text">
+				<p class="product-name">{{ product.name }}</p>
+				<p class="product-title height-fix">{{ product.title }}</p>
+				<div class="gray-line"></div>
+				<p class="price_tag">$ {{ product.price }}.00</p>
+			</div>
 		</div>
-	</div> -->
+	</div>
 
-	<div class="container">
+	<!-- <div class="container">
 		<div class="product-grid row">
 			<div class="product-grid-item hoverable col-xs-12 col-sm-4" id="sat-prodcut" ng-repeat="product in products">
 				<aritlce class="product-grid-item-inner">
@@ -37,7 +41,7 @@
 				</article>
 			</div>		
 		</div>
-	</div>
+	</div> -->
 
 </div>
 <br>
