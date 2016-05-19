@@ -1,6 +1,6 @@
 'use strict';
 var session = require('express-session');
-var MongoStore = require('connect-mongo')(session);
+// var MongoStore = require('connect-mongo')(session);
 var _ = require('lodash');
 var passport = require('passport');
 var path = require('path');
@@ -22,7 +22,7 @@ module.exports = function (app) {
     app.use(session({
         // secret: app.getValue('env').SESSION_SECRET,
         secret: "cmykpluswhite",
-        store: new MongoStore({mongooseConnection: mongoose.connection}),
+        // store: new MongoStore({mongooseConnection: mongoose.connection}),
         resave: false,
         saveUninitialized: false
     }));
