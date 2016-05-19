@@ -56,6 +56,7 @@
 	font-size: 30px;
 	/*font-weight: 100;*/
 	letter-spacing: 4px;
+	position: relative;
 }
 
 .aurous_text > .readmore {
@@ -80,31 +81,38 @@
 	display: inline-block;
 }
 
-.aurous_product {
+/*.aurous_product {
 	display: inline-block;
 	left: 38%;
 	width: 100%;
 	max-width: 770px;
-}
+}*/
 
 /* for auorus prod detail layout */
-/*.aurous_product {
+.aurous_product {
 	display: inline-block;
 	position: absolute;
 	left: 38%;
-	top: 100px;
+	/*top: 100px;*/
 	width: 62%;
-}*/
+}
 
 .aurous_listing {
 	margin-right: 1%;
 	width: 48%;
-	/*margin-top: 30px;*/
+	margin-top: 18px;
 	margin-bottom: 1vh;
 	position: relative;
 	display: inline-block;
 	/*background-color: black;*/
+}
 
+.aurous_link {
+    margin-top: 15px;
+    padding-left: 5px;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
 }
 
 .aurous_image_hover {
@@ -113,20 +121,6 @@
 	&:hover {
 		background-color: black;
     }
-}
-
-/*.aurous_link {
-	position: relative;
-}*/
-
-
-
-.aurous_link {
-    margin-top: 15px;
-    padding-left: 50px;
-    display: inline-block;
-    vertical-align: top;
-    color: white;
 }
 
 .aurous_link a {
