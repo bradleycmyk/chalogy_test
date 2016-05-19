@@ -47,16 +47,18 @@
 .aurous_text {
 	width: 24%;
 	height: auto;
-	margin-left: 70px;
+	margin-left: 50px;
 	margin-top: 40%;
 	text-align: center;	
 	z-index: 22;
 	display: inline-block;
 	font-family: MillerBanner;
-	font-size: 30px;
-	/*font-weight: 100;*/
 	letter-spacing: 4px;
 	position: relative;
+}
+
+#aurous_beauty {
+	font-size: 30px;
 }
 
 .aurous_text > .readmore {
@@ -71,7 +73,7 @@
 	font-family: WorkSans;
 	font-size: 15px;
 	letter-spacing: 1px;
-	font-weight: 100;
+	font-weight: 900;
 	color: black;
 }
 
@@ -135,11 +137,11 @@
 }
 
 .aurous_description {
-	width: 70%;
+	width: 80%;
 	color: white;
 	position: absolute;
 	top: 40%;
-	left: 20%;
+	left: 8%;
 }
 
 .aurous-name-fromdb {
