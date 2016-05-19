@@ -34,18 +34,8 @@
 	margin-top: 40px;
 }
 
-/*.drop_image {
-	width: 776px;
-	height: 928px;
-	position: absolute;
-	top: 80px;
-	left: -25px;
-	z-index: -1;
-	display: inline-block;
-}*/
-
 .drops {
-	height: 1550px;
+	height: 1551px;
 	background-image: url('drops.png');
 	background-repeat: no-repeat;
 	width: 100%;
@@ -92,10 +82,8 @@
 
 .aurous_product {
 	display: inline-block;
-	position: absolute;
 	left: 38%;
-	top: 203px;
-	width: 62%;
+	width: 100%;
 	max-width: 770px;
 }
 
@@ -109,9 +97,9 @@
 }*/
 
 .aurous_listing {
-	margin-right: 6%;
-	width: 44%;
-	margin-top: 30px;
+	margin-right: 1%;
+	width: 48%;
+	/*margin-top: 30px;*/
 	margin-bottom: 1vh;
 	position: relative;
 	display: inline-block;
