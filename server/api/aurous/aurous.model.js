@@ -23,12 +23,21 @@ var schema = new mongoose.Schema({
         type: Number,
         required: true
     }, // must be dollar.cent
+    size : {
+        type: Number
+    },
     description: {
         type: String,
         required: true
     },
-    tag: {
+    tags: {
         type: [String]
+    },
+    category: {
+        type: String
+    },
+    love : {
+        type: Boolean
     }
 });
 
