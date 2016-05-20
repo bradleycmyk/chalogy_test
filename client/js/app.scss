@@ -2,10 +2,17 @@ html {
 	background-color: white;
 }
 
+a {
+	text-decoration: none !important;
+	color: black;
+}
+
 .body-wrap {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
+
 
 * {
   box-sizing: border-box;

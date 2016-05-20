@@ -5,7 +5,7 @@
   <div class="middle-nav">
     <ul class="navbar">
       <div class="row">
-        <div class="col-xs-31"><li class="active" style="width: 50px;"><a href="/about" ui-sref="about">ABOUT</a></li></div>
+        <div class="col-xs-31"><li style="width: 50px;"><a href="/about" ui-sref="about">ABOUT</a></li></div>
         <div class="col-xs-32"><li style="width: 80px;"><a href="/innovation" ui-sref="innovation">INNOVATION</a></li></div>
         
         <div class="col-xs-33"><li class="dropdown center" style="width: 60px;">
@@ -34,4 +34,41 @@
     <input id="testingsearch" type="text" ng-model="text"><div id="callingsearch"><img src="search.png" width="20px;" height="20px;" /></div>
   </div>
 
+  <!-- mobile (width: 580px) navbar -->
+  <div class="menu-mobile" style="float:left;">
+    <button onclick="myFunction()" class="popup-btn">Menu</button>
+      <div id="mobilePop" class="popup-content" style="left:0;">
+        <a href="/about" ui-sref="about">ABOUT</a>
+        <a href="/innovation" ui-sref="innovation">INNOVATION</a>
+        <a href="aurous" ui-sref="aurous">AUROUS</a>
+        <a href="/aurous/products" ui-sref="aurous_products">AUORUS PRODUCTS</a>
+        <a href="/saturday-skin" ui-sref="saturday_skin">SATURDAY SKIN</a>
+        <a href="/saturday-skin/products" ui-sref="saturday_products">SATURDAY SKIN PRODUCTS</a>
+      </div>  
+  </div>
+
 </div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("mobilePop").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.popup-btn')) {
+
+    var dropdowns = document.getElementsByClassName("popup-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>

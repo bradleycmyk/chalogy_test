@@ -9,7 +9,10 @@
   margin-top: -15px;
   position: relative;
   background-color: white;
-  z-index: 9999;
+}
+
+.menu-mobile {
+  display: none;
 }
 
 .navigation > .brand {
@@ -51,24 +54,6 @@
   display: inline-block;
 }
 
-/* nav for landing page */ 
-/*.navigation > .brand {
-  padding-top: 35px;
-  padding-left: 15px;
-  width: 150px;
-  height: 43px;
-  margin: 0 auto;
-}
-
-.navigation > .middle-nav {
-  max-width: 540px;
-  min-width: 280px;
-  height: 50px; 
-  margin: 0 auto;
-  padding-top: 45px;
-}*/
-
-
 ul {
   width: 100%;
   list-style-type: none;
@@ -93,19 +78,6 @@ ul.navbar li.center {
 
 li a {
   color: black;   
-}
-
-li a:not(.active) {
-  /*color: gray;*/
-}
-
-li a:hover:not(.active) {
-    color: red;
-}
-
-.active {
-    font-weight: bold;
-    color: black;
 }
 
 .navigation > .search {
@@ -145,12 +117,10 @@ ul.navbar li.dropdown {
   margin-left: -45px;
   min-width: 160px;
   border-style: solid;
-  /*border-top: 2px solid;*/
   border-left: none;
   border-right: none;
   border-bottom: none;
   text-align: center;
-  z-index: 9999;
 }
 
 .dropdown-content {
@@ -165,20 +135,19 @@ ul.navbar li.dropdown {
   border-right: none;
   border-bottom: none;
   text-align: center;
-  z-index: 9999;
 }
 
 .dropdown-aurouscontent a {
     color: black;
     padding: 12px 16px;
-    text-decoration: none !important;
+    /*text-decoration: none !important;*/
     display: block;
 }
 
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
-    text-decoration: none !important;
+    /*text-decoration: none !important;*/
     display: block;
 }
 
@@ -199,7 +168,6 @@ ul.navbar li.dropdown {
 }
 
 .dropdown:hover .dropbtn {
-    /*background-color: rgba(255,225,250,0.3);*/
     background-color: white;
     z-index: 9999;
 }
@@ -248,7 +216,12 @@ input:focus{
 /** search end **/
 
 @media screen and (max-width: 940px){
-    .navigation > .brand {
+
+  .navigation {
+    height: 125px;
+  }
+
+  .navigation > .brand {
     padding-top: 35px;
     padding-left: 15px;
     width: 150px;
@@ -266,9 +239,6 @@ input:focus{
 }
 
 @media screen and (max-width: 580px){
-  .search {
-    display: none;
-  }
 
   .dropbtn {
     border: none;
@@ -276,4 +246,51 @@ input:focus{
     text-align: right;
     cursor: pointer;
   } 
+
+  .middle-nav {
+    display: none;
+  }
+
+  .menu-mobile {
+      position: relative;
+      display: inline-block;
+      /*margin-left: 15px;*/
+      margin-top: -6px;
+      padding-left: 15px;
+  }
+
+  .popup-btn {
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .popup-btn:hover, .popup-btn:focus {
+      background-color: blue;
+  }
+
+  .popup-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      /*min-width: 300px;*/
+      width: 100vw;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 9999;
+  }
+
+  .popup-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  .menu-mobile a:hover {background-color: #f1f1f1}
+
+  .show {display:block;}
+
 }
