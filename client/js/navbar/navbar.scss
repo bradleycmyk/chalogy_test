@@ -243,13 +243,6 @@ input:focus{
     height: 90px;
   }
 
-  .dropbtn {
-    border: none;
-    width: 110px;
-    text-align: right;
-    cursor: pointer;
-  } 
-
   .middle-nav {
     display: none;
   }
@@ -257,7 +250,7 @@ input:focus{
   .menu-mobile {
       position: relative;
       display: inline-block;
-      margin-top: -10px;
+      margin-top: -12px;
       padding-left: 10px;
       width: 80px;
       height: 60px;
@@ -293,7 +286,10 @@ input:focus{
   }
 
   .popup-content a {
-      color: white;
+      color: rgba(173, 216, 230, 0.9);
+      font-family: WorkSans;
+      font-weight: 700;
+      letter-spacing: 1px;
       padding: 20px 16px;
       text-decoration: none;
       border-top: 1px solid rgba(173, 216, 230, 0.4);
