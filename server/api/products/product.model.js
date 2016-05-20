@@ -23,6 +23,9 @@ var schema = new mongoose.Schema({
         type: Number,
         required: true
     }, // must be dollar.cent
+    size : {
+        type: Number
+    },
     description: {
         type: String,
         required: true
@@ -31,8 +34,11 @@ var schema = new mongoose.Schema({
         type: Number
         // required: true
     },
-    tag: {
+    tags: {
         type: [String]
+    },
+    category : {
+        type: String
     }
 });
 

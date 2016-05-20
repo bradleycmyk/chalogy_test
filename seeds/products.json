@@ -6,7 +6,8 @@
 		"price": 50.00,
 		"size": 50,
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"]
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "saturday-skin"
 	},
 	{
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
@@ -15,7 +16,8 @@
 		"price": 50.00,
 		"size": 50,
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"]
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "saturday-skin"
 	},
 	{
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
@@ -24,7 +26,8 @@
 		"price": 50.00,
 		"size": 50,
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty", "forever young"]
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty", "forever young"],
+		"category": "saturday-skin"
 	},
 	{
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
@@ -33,7 +36,8 @@
 		"price": 50.00,
 		"size": 50,
 		"description": "Lorem ipsum dolor sit amet, FOREVER consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"]
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "saturday-skin"
 	},
 	{
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
@@ -42,7 +46,8 @@
 		"price": 50.00,
 		"size": 50,
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"]
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "saturday-skin"
 	},
 	{
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
@@ -51,6 +56,7 @@
 		"price": 50.00,
 		"size": 50,
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"]
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "saturday-skin"
 	}
 ]
