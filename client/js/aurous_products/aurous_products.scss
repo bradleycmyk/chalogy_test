@@ -83,26 +83,20 @@
 	display: inline-block;
 }
 
-/*.aurous_product {
-	display: inline-block;
-	left: 38%;
-	width: 100%;
-	max-width: 770px;
-}*/
-
 /* for auorus prod detail layout */
 .aurous_product {
 	display: inline-block;
 	position: absolute;
 	left: 38%;
-	/*top: 100px;*/
 	width: 62%;
+	max-width: 800px;
 }
 
 .aurous_listing {
 	margin-right: 1%;
 	width: 48%;
 	margin-top: 18px;
+	/*margin-top: 1vh;*/
 	margin-bottom: 1vh;
 	position: relative;
 	display: inline-block;
@@ -155,5 +149,126 @@
 	font-family: WorkSans;
 	text-align: center;
 }
+
+
+@media (min-width: 800px) and (max-width: 980px) {
+	.drops {
+		height: 1280px;
+	}
+
+	.aurous_product {
+		margin-top: -45px;
+	}
+
+	.aurous_text {
+		width: 30%;
+		height: auto;
+		margin-left: 35px;
+		margin-top: 30%;
+	}
+
+	#aurous_beauty {
+		font-size: 24px;
+	}
+
+	.aurous_text > .readmore {
+		font-family: WorkSans;
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 663px) and (max-width: 800px) {
+
+	.drops {
+		height: 1000px;
+	}
+
+	.aurous_product {
+		margin-top: -65px;
+	}
+
+	.aurous_text {
+		width: 30%;
+		height: auto;
+		margin-left: 35px;
+		margin-top: 30%;
+	}
+
+	#aurous_beauty {
+		font-size: 24px;
+	}
+
+	.aurous_text > .readmore {
+		font-family: WorkSans;
+		font-size: 12px;
+	}
+
+	.aurous-name-fromdb {
+		font-size: 22px;
+	}
+
+	.aurous-title-fromdb {
+		font-size: 12px;
+	}
+
+}
+
+@media (min-width: 553px) and (max-width: 663px) {
+	.aurous_text {
+		display: block;
+		width: 75%;
+		margin: 0 auto;
+		margin-top: -50px;
+	}
+
+	.aurous_product {
+		display: block;
+		width: 90%;
+		left: 6%;
+	}
+
+	.drops {
+		height: 1400px;
+	}
+
+	.aurous-name-fromdb {
+		font-size: 20px;
+	}
+
+	.aurous-title-fromdb {
+		font-size: 12px;
+	}
+}
+
+}
+
+@media (max-width: 553px) {
+	.aurous_text {
+		display: block;
+		width: 75%;
+		margin: 0 auto;
+		margin-top: -50px;
+	}
+
+	.aurous_product {
+		display: block;
+		width: 90%;
+		left: 6%;
+	}
+
+	.drops {
+		height: 1200px;
+	}
+
+	.aurous-name-fromdb {
+		font-size: 20px;
+	}
+
+	.aurous-title-fromdb {
+		font-size: 12px;
+	}
+}
+
+
 
 
