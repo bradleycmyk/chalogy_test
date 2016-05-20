@@ -2,6 +2,7 @@ app.controller('NavBarController', function($scope, $http, $state, $stateParams)
 
 	$("#callingsearch").click(function(){
 		$("#testingsearch").fadeIn(2000).css("display","inline-block").focus();
+		// $(".brand").hide();
 		$("#callingsearch").css("margin-left", 10);
 
 		var text = $("#testingsearch").val();
@@ -37,6 +38,7 @@ app.controller('NavBarController', function($scope, $http, $state, $stateParams)
 	    {
 	        container.css("display", "none");
 	        $("#callingsearch").css("margin-left", 158);
+	        // $(".brand").show();
 	    }
 	});
 
