@@ -184,7 +184,6 @@ ul.navbar li.dropdown {
   height: 20px;
   margin-right: 5px;
   margin-top: -58px;
-
 }
 
 .testing {
@@ -223,7 +222,7 @@ input:focus{
 
   .navigation > .brand {
     padding-top: 35px;
-    padding-left: 15px;
+    padding-left: 2px;
     width: 150px;
     height: 43px;
     margin: 0 auto;
@@ -240,6 +239,10 @@ input:focus{
 
 @media screen and (max-width: 580px){
 
+  .navigation {
+    height: 90px;
+  }
+
   .dropbtn {
     border: none;
     width: 110px;
@@ -254,43 +257,55 @@ input:focus{
   .menu-mobile {
       position: relative;
       display: inline-block;
-      /*margin-left: 15px;*/
-      margin-top: -6px;
-      padding-left: 15px;
+      margin-top: -10px;
+      padding-left: 10px;
+      width: 80px;
+      height: 60px;
   }
 
   .popup-btn {
-    color: black;
-    padding: 10px;
+    background-color: white;
+    width: 45px;
+    height: 40px;
     font-size: 12px;
     border: none;
     cursor: pointer;
+    background-image: url("menu-22.png");
+    background-repeat: no-repeat;
   }
 
   .popup-btn:hover, .popup-btn:focus {
-      background-color: blue;
+      background-color: white;
+      outline: none;
   }
 
   .popup-content {
       display: none;
       position: absolute;
-      background-color: #f9f9f9;
+      margin-top: 13px;
+      background-color: rgba(25, 28, 59, 0.9);
       /*min-width: 300px;*/
       width: 100vw;
+      height: 100vh;
       overflow: auto;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 9999;
+      text-align: center;
   }
 
   .popup-content a {
-      color: black;
-      padding: 12px 16px;
+      color: white;
+      padding: 20px 16px;
       text-decoration: none;
+      border-top: 1px solid rgba(173, 216, 230, 0.4);
       display: block;
   }
 
   .menu-mobile a:hover {background-color: #f1f1f1}
 
   .show {display:block;}
+
+  .textsearch-test {
+    margin-top: -5px;
+  }
 
 }
