@@ -1,9 +1,10 @@
 app.controller('NavBarController', function($scope, $http, $state, $stateParams) {
 
-	$("#callingsearch").click(function(){
+	$("#callingsearchs").click(function(){
 		$("#testingsearch").fadeIn(2000).css("display","inline-block").focus();
 		// $(".brand").hide();
 		$("#callingsearch").css("margin-left", 10);
+		$("#callingsearchs").css("margin-top", -40);
 
 		var text = $("#testingsearch").val();
 		if (text == ""){
@@ -38,6 +39,7 @@ app.controller('NavBarController', function($scope, $http, $state, $stateParams)
 	    {
 	        container.css("display", "none");
 	        $("#callingsearch").css("margin-left", 158);
+	        $("#callingsearchs").css("margin-top", 4);
 	        // $(".brand").show();
 	    }
 	});

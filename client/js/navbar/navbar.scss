@@ -164,6 +164,7 @@ ul.navbar li.dropdown {
 /** dropdown end **/
 
 
+
 /* search */
 .textsearch-test {
   display: inline-block;
@@ -171,13 +172,8 @@ ul.navbar li.dropdown {
   float: right;
   width: 190px;
   height: 20px;
-  margin-right: 5px;
+  /*margin-right: 5px;*/
   margin-top: -58px;
-}
-
-.testing {
-  border: none;
-  border-bottom: 2px solid;
 }
 
 input:focus{
@@ -185,23 +181,34 @@ input:focus{
 }
 
 #testingsearch {
+  width: 155px;
   border: none;
   border-bottom: 1px solid;
   padding-top: -10px;
   display: none;
 }
 
-#callingsearch {
-  margin-top: 8px;
+/*#callingsearch {
+  margin-top: 15px;
   margin-left: 158px;
   height: 20px;
   width: 20px;
-/*  border: 1px solid;*/
+  text-align: center;
+  display: inline-block;
+}*/
+
+#callingsearchs {
+  margin-top: 4px;
+  /*margin-left: 168px;*/
+  margin-left: 158px;
+  height: 20px;
+  width: 20px;
   text-align: center;
   display: inline-block;
 }
 
 /** search end **/
+
 
 /* up arrow testing */
 a.up-arrow {
