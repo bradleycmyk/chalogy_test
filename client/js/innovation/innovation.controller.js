@@ -3,6 +3,12 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
   	var currentUrl = $window.location.href;
 	$scope.url = currentUrl;
 
+  // for carousel autoplay
+  $('#myCarousel').carousel({
+    interval: 5000,
+    cycle: true
+  });
+
 	// $scope.url = currentUrl.split("5959/")[1];
 	// $scope.url = "www.techcrunch.com";
 
@@ -27,7 +33,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
 	// $('#fb-share-button').click(function() {
 	//     FB.ui({
 	//           method: 'feed',
-	//           link: currentUrl, 
+	//           link: currentUrl,
 	//           // picture: 'The picture url',
 	//           name: "The name who will be displayed on the post",
 	//           description: "The description who will be displayed"
@@ -37,5 +43,4 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
 	//     );
 	// });
 
-}); 
-
+});

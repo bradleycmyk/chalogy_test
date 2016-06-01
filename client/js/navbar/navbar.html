@@ -5,23 +5,23 @@
   <div class="middle-nav">
     <ul class="navbar">
       <div class="row">
-        <div class="col-xs-31"><li style="width: 50px;"><a href="/about" ui-sref="about">ABOUT</a></li></div>
-        <div class="col-xs-32"><li style="width: 80px;"><a href="/innovation" ui-sref="innovation">INNOVATION</a></li></div>
-        
+        <div class="col-xs-31"><li style="width: 50px;"><a href="/about" class="about-nav" ui-sref="about">ABOUT</a></li></div>
+        <div class="col-xs-32"><li style="width: 80px;"><a href="/innovation" class="inn-nav" ui-sref="innovation">INNOVATION</a></li></div>
+
         <div class="col-xs-33"><li class="dropdown center" style="width: 60px;">
-             <a href="aurous" ui-sref="aurous">AUROUS</a>
+             <a href="aurous" ui-sref="aurous" class="aur-nav">AUROUS</a>
              <div class="dropdown-aurouscontent">
-              <a href="/aurous/brand" ui-sref="aurous_brand">THE BRAND</a>
-              <a href="/aurous/products" ui-sref="aurous_products">THE PRODUCTS</a>
+              <a href="/aurous/brand" class="aur-brand-nav"ui-sref="aurous_brand">THE BRAND</a>
+              <a href="/aurous/products" class="aur-prod-nav" ui-sref="aurous_products">THE PRODUCTS</a>
             </div>
           </li>
         </div>
 
         <div class="col-xs-34"><li class="dropdown" style="width: 120px;">
-            <a href="/saturday-skin" ui-sref="saturday_skin" class="dropbtn" >SATURDAY SKIN</a>
+            <a href="/saturday-skin" ui-sref="saturday_skin" class="dropbtn sat-nav" >SATURDAY SKIN</a>
             <div class="dropdown-content">
-              <a href="/saturday-skin/brand" ui-sref="saturday_brand">THE BRAND</a>
-              <a href="/saturday-skin/products" ui-sref="saturday_products">THE PRODUCTS</a>
+              <a href="/saturday-skin/brand" class="sat-brand-nav" ui-sref="saturday_brand">THE BRAND</a>
+              <a href="/saturday-skin/products" class="sat-prod-nav" ui-sref="saturday_products">THE PRODUCTS</a>
             </div>
           </li>
         </div>
@@ -44,14 +44,14 @@
         <a href="/aurous/products" ui-sref="aurous_products">AUORUS PRODUCTS</a>
         <a href="/saturday-skin" ui-sref="saturday_skin">SATURDAY SKIN</a>
         <a href="/saturday-skin/products" ui-sref="saturday_products">SATURDAY SKIN PRODUCTS</a>
-      </div>  
+      </div>
   </div>
 
 </div>
 
 
 <script>
-/* When the user clicks on the button, 
+/* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("mobilePop").classList.toggle("show");

@@ -79,13 +79,15 @@ h4 { font-size: 13px; line-height: 18px; }
 */
 
 a {
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
-a:hover {
-  color: black;
-  opacity: 0.7;
+a:hover,
+a:focus {
+  color: #000000;
+  text-decoration: none;
+  // opacity: 0.7;
 }
 
 .clear {
@@ -134,13 +136,14 @@ a:hover {
 
     .animator {
       width: 100%;
-      height: 955px;
+      height: 1035px;
 
       h1{
         display: none;
         position: absolute;
-        top: 911px;
-        left: 608px;
+        top: 970px;
+        left: 648px;
+        font-size: 26px;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-family: MillerBanner;
@@ -152,29 +155,32 @@ a:hover {
     }
 
     .circle-wrapper-red {
-      width: 830px;
+      width: 850px;
+      height: 850px;
+
+      border-radius: 0 54% 54%;
+
+      overflow: hidden;
+
       /*width: 69.2%;*/
-      height: 830px;
-      margin: 85px 127px;
+      margin: 47px 153px;
       /*margin: 7.08% 10.6%;*/
       display: none;
     }
 
     .circle-red {
-      width: 830px;
+      width: 850px;
       /*width: 100%;*/
-      height: 830px;
+      height: 850px;
 
       z-index: -2000;
-
-      border-radius: 40% 0 0 0;
 
       text-align: center;
 
       background-image: url('eyes.png');
       background-repeat: no-repeat;
-      background-position: 8px 30px;
-      background-size: 790px;
+      background-position: -7px 30px;
+      background-size: 860px;
       /*background-size: 99%;*/
 
       /*transitions*/
@@ -187,7 +193,7 @@ a:hover {
     }
 
     .red-changer {
-      background-size: 820px;
+      background-size: 890px;
       /*background-size: 110%;*/
       /*background-position: -60px -567px;*/
 
@@ -203,20 +209,21 @@ a:hover {
       width: 210px;
 
       position: absolute;
-      top: 467px;
+      top: 477px;
       /*top: 39%;*/
-      left: 530px;
+      left: 575px;
       /*left: 44.2%;*/
     }
 
     .cha_plus {
-      width: 13px;
-
-      position: absolute;
-      top: 490px;
+      top: 498px;
       /*top: 40.8%;*/
-      left: 885px;
+      left: 966px;
       /*left: 73.8%;*/
+    }
+
+    .circle-triangle, .circle-triangle-two {
+      z-index: 3;
     }
 
     .circle-triangle {
@@ -243,25 +250,49 @@ a:hover {
       clip-path: polygon(0 0, 359px 293px,359px 0px);
     }
 
+    .ribbon-cover-blue {
+      width: 604px;
+      height: 812px;
+
+      position: absolute;
+      top: 265px;
+      left: 0;
+
+      overflow: hidden;
+      z-index: 2;
+      // -webkit-transition: all 1s linear;
+      // -o-transition: all 1s linear;
+      // -moz-transition: all 1s linear;
+      // -ms-transition: all 1s linear;
+      // -kthtml-transition: all 1s linear;
+      // transition: all 1s linear;
+      background-color: white;
+      box-shadow: -60px 61px 81px #FFFFFF;
+    }
+
     .ribbon-wrapper-blue {
-      width: 558px;
-      height: 774px;
+      width: 604px;
+      height: 816px;
 
       /*display: none;*/
 
       position: absolute;
-      top: -265px;
-      left: -558px;
+      // top: -265px;
+      // left: -558px;
+
+      top: 265px;
+      left: 0;
 
       overflow: hidden;
+      z-index: 1;
     }
 
     .ribbon-blue {
-      width: 236px;
-      height: 910px;
+      width: 256px;
+      height: 970px;
       position: relative;
       top: -70px;
-      left: 160px;
+      left: 184px;
       background-color: #414141;
       overflow: hidden;
 
@@ -282,12 +313,13 @@ a:hover {
     }
 
     .ribbon-blue:before {
-      width: 559px;
-      height: 761px;
+      width: 603px;
+      height: 814px;
 
       position: absolute;
       top: 79px;
-      left: -164px;
+      left: -184px;
+
       z-index: -1;
 
       content: "";
@@ -295,7 +327,7 @@ a:hover {
       background-image: url("flipped_CHA_largeBottle_TILT_frontView_goldTop_v02_fromAE.png");
       background-repeat: no-repeat;
       background-size: 790px;
-      background-position: -124px 56px;
+      background-position: -67px 106px;
 
       /* Counter-rotations for background image */
       -webkit-transform:  rotate(51deg);
@@ -335,23 +367,41 @@ a:hover {
     }
 
     .aur_plus {
-      width: 13px;
-
-      position: absolute;
-      top: 760px;
-      left: 111px;
+      top: 820px;
+      left: 121px;
 
       transform: rotate(51deg);
+    }
+
+    .ribbon-cover-green {
+      width: 1200px;
+      /*width: 100%;*/
+      height: 441px;
+      position: absolute;
+      // top: -441px;
+      // left: 800px;
+
+      top: 0;
+      left: 0;
+
+      z-index: 3;
+      overflow: hidden;
+      background-color: #FFFFFF;
+      box-shadow: 70px 61px 81px #FFFFFF
     }
 
     .ribbon-wrapper-green {
       width: 1200px;
       /*width: 100%;*/
       height: 441px;
-      overflow: hidden;
       position: absolute;
-      top: -441px;
-      left: 800px;
+      // top: -441px;
+      // left: 800px;
+
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: 2;
       /*display: none;*/
 
       /*-webkit-transition: all 500ms linear;
@@ -447,9 +497,6 @@ a:hover {
     }
 
     .sat_plus {
-      width: 13px;
-
-      position: absolute;
       top: 195px;
       /*top: 77.2%;*/
       left: 1080px;
@@ -457,6 +504,11 @@ a:hover {
 
       transform: rotate(20.1deg);
     }
+  }
+
+  .sat_plus, .aur_plus, .cha_plus {
+    width: 15px;
+    position: absolute;
   }
 
   .front_text {
@@ -472,7 +524,7 @@ a:hover {
       text-align: center;
       line-height: 1.2;
       letter-spacing: 0.2px;
-      font-size: 18px;
+      font-size: 16px;
     }
 
     a {
@@ -489,7 +541,12 @@ a:hover {
       text-decoration: none;
       font-weight: bold;
     }
-}
+
+    a:hover,
+    a:focus {
+      color: #000000;
+    }
+  }
 
 
 .header_page footer {
@@ -627,7 +684,7 @@ a:hover {
   }
 
   .ribbon-blue {
-    width: 236px;
+    width: 256px;
     height: 910px;
     position: relative;
     top: -70px;
@@ -733,6 +790,7 @@ a:hover {
   }
 
    .ribbon-green {
+     border: 1px solid green;
     width: 1277px;
     /*width: 103.625%;*/
     height: 240px;
@@ -835,6 +893,7 @@ a:hover {
     position: absolute;
     top: 890px;
     left: 618px;
+    font-size: 26px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: "Times New Roman";
