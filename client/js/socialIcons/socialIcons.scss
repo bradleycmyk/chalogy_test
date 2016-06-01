@@ -1,9 +1,23 @@
-#share-buttons img {
-	width: 25px;
-	padding-right: 5px;
-	border: 0;
-	box-shadow: 0;
-	display: inline;
+#share-buttons {
+
+	img {
+		width: 25px;
+		padding-right: 5px;
+		border: 0;
+		box-shadow: 0;
+		display: inline;
+
+		//BRADLEY ADDED THIS
+		width: 30px;
+	}
+
+	.pinterest {
+		width: 27px;
+	}
+
+	.email {
+		width: 33px;
+	}
 }
 
 #share-buttons > a {

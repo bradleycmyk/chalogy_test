@@ -99,19 +99,21 @@
 				font-size: 16px;
 				text-transform: uppercase;
 			}
+
+			&::before {
+				content: '';
+				display: block;
+				border-top: 1px solid #000000;
+				border-left: 1px solid #000000;
+				width: 25px;
+				height: 25px;
+				position: absolute;
+				top: -15px;
+				left: -15px;
+			}
 		}
 
-		.tagline-inn::before {
-			content: '';
-			display: block;
-			border-top: 1px solid #000000;
-			border-left: 1px solid #000000;
-			width: 25px;
-			height: 25px;
-			position: absolute;
-			top: -15px;
-			left: -15px;
-		}
+		// .tagline-inn
 	}
 
 	.right-inn {

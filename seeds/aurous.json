@@ -1,7 +1,7 @@
 [
 	{
-		"image": ["aurous01_01.png", "aurous02_01.png", "aurous02_02.png"],
-		"name": "Aurous DAILY DUE", 
+		"image": ["aurous01_01.png", "aurous01_02.png", "aurous01_03.png"],
+		"name": "Aurous DAILY DUE",
 		"title": ["ALCOHOL-FREE MOISTURE MIST"],
 		"price": 50.00,
 		"size": 50,
@@ -11,8 +11,8 @@
 		"love": "true"
 	},
 	{
-		"image": ["aurous01_02.png", "aurous02_02.png", "aurous03_02.png"],
-		"name": "FOREVER YOUNG Aurous", 
+		"image": ["aurous02_01.png", "aurous02_02.png", "aurous01_01.png"],
+		"name": "FOREVER YOUNG Aurous",
 		"title": "PERFCETING TREATMENT",
 		"price": 50.00,
 		"size": 50,
@@ -22,8 +22,8 @@
 		"love": "true"
 	},
 	{
-		"image": ["aurous02_01.png", "aurous02_02.png", "aurous03_01.png"],
-		"name": "BRIGHT Aurous EYES", 
+		"image": ["aurous03_01.png", "aurous01_01.png", "aurous01_01.png"],
+		"name": "BRIGHT Aurous EYES",
 		"title": "RADIANCE GEL MIST",
 		"price": 50.00,
 		"size": 50,
@@ -33,8 +33,8 @@
 		"love": "true"
 	},
 	{
-		"image": ["aurous02_02.png", "aurous03_01.png", "aurous03_02.png"],
-		"name": "SUN Aurous SHIELD", 
+		"image": ["aurous01_01.png", "aurous01_02.png", "aurous01_03.png"],
+		"name": "SUN Aurous SHIELD",
 		"title": "BROAD SPECTRUM SPF 30",
 		"price": 50.00,
 		"size": 50,
@@ -44,8 +44,8 @@
 		"love": "true"
 	},
 	{
-		"image": ["aurous03_01.png", "aurous03_02.png", "aurous02_01.png"],
-		"name": "Aurous SKIN SILK", 
+		"image": ["aurous01_01.png", "aurous01_02.png", "aurous01_03.png"],
+		"name": "Aurous SKIN SILK",
 		"title": "SHEER DAILY Aurous MOISTURIZER",
 		"price": 50.00,
 		"size": 50,
@@ -55,8 +55,8 @@
 		"love": "true"
 	},
 	{
-		"image": ["aurous03_02.png", "aurous03_01.png", "aurous02_02.png"],
-		"name": "FRESH FACE", 
+		"image": ["aurous01_01.png", "aurous01_02.png", "aurous01_03.png"],
+		"name": "FRESH FACE",
 		"title": "PURIFYING Aurous CLEANSER",
 		"price": 50.00,
 		"size": 50,
