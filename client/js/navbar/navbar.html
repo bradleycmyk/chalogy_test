@@ -1,4 +1,5 @@
 <div class="navigation" role="navigation">
+  <div class="page-width">
 
   <div class="brand"><a ui-sref="home"><img src="http://www.cmykpluswhite.biz/web/images/brand-logo.png" alt="Brand"></a></div>
 
@@ -6,9 +7,18 @@
     <ul class="navbar">
       <div class="row">
         <div class="col-xs-31"><li style="width: 50px;"><a href="/about" class="about-nav" ui-sref="about">ABOUT</a></li></div>
-        <div class="col-xs-32"><li style="width: 80px;"><a href="/innovation" class="inn-nav" ui-sref="innovation">INNOVATION</a></li></div>
+        <div class="col-xs-32">
+          <li class="dropdown center" style="width: 80px;">
+            <a href="/innovation" class="inn-nav" ui-sref="innovation">INNOVATION</a>
+            <div class="dropdown-innovationcontent">
+             <a href="/innovation" class="inn-nav"ui-sref="innovation">THE BRAND</a>
+             <a href="/cha-7" class="inn-cha-nav" ui-sref="cha_seven">CHA-7</a>
+           </div>
+          </li>
+        </div>
 
-        <div class="col-xs-33"><li class="dropdown center" style="width: 60px;">
+        <div class="col-xs-33">
+          <li class="dropdown center" style="width: 60px;">
              <a href="aurous" ui-sref="aurous" class="aur-nav">AUROUS</a>
              <div class="dropdown-aurouscontent">
               <a href="/aurous/brand" class="aur-brand-nav"ui-sref="aurous_brand">THE BRAND</a>
@@ -33,6 +43,8 @@
   <div class="textsearch-test">
     <input id="testingsearch" type="text" ng-model="text"><div id="callingsearch"><img src="search.png" width="20px;" height="20px;" /></div>
   </div>
+</div>
+
 
   <!-- mobile (width: 580px) navbar -->
   <div class="menu-mobile" style="float:left;">

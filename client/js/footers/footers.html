@@ -92,6 +92,9 @@
           } else {
             console.log('works');
             $('.subscribe-modal-outer').show();
+            $('body').css({
+              'overflow': 'hidden'
+            })
           }
         }
       });
@@ -99,6 +102,9 @@
 
     $('.exit p').click(function() {
       $('.subscribe-modal-outer').hide();
+      $('body').css({
+        'overflow': 'auto'
+      })
     })
   </script>
   <!--End mc_embed_signup-->

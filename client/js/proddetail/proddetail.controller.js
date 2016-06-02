@@ -11,12 +11,10 @@ app.controller('ProdDetailCtrl', function($scope, $http, $state, $stateParams, p
 		$scope.recommendations = data;
 	});
 
-	// for tab manipulation 
+	// for tab manipulation
 	$scope.tab;
 	$scope.selectTab = function(setTab){
 		$scope.tab = setTab;
 	};
-	
+
 });
-
-
