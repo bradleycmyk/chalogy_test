@@ -2,7 +2,8 @@ app.config(function($stateProvider) {
     $stateProvider.state('innovation', {
         url: '/innovation',
         templateUrl: '/js/innovation/innovation.html',
-        controller: 'InnovationController'
+        controller: 'InnovationController',
+        activeTab: 'innovation'
     //     resolve: {
     //     	security: ['$q', function($q) {
     //     		if($scope.loggedIn) {

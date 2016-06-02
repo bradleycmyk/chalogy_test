@@ -2,6 +2,11 @@ html {
 	background-color: white;
 }
 
+body {
+  font-family: WorkSans;
+  color: #000000;
+}
+
 a {
 	text-decoration: none !important;
 	color: black;
@@ -9,12 +14,11 @@ a {
 
 .body-wrap {
 	max-width: 1200px;
-	margin: 76px auto 0;
+	margin: 0 auto;
+	margin-top: 15px;
+	/*margin: 76px auto 0;*/
 }
 
-body {
-	color: #000000;
-}
 
 .anchor#top {
 	display: block;

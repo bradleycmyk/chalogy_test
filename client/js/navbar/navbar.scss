@@ -6,23 +6,24 @@
   margin-bottom: 0;
   height: 90px;
   margin-top: -15px;
-  position: relative;
-  background-color: white;
+
+
+  background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 9999;
+  box-shadow: 0 4px 4px -4px #BBBBBB;
+  max-width: 1200px;
 }
 
-.shadow {
-  box-shadow: 0px 0px 25px #BBBBBB;
-}
+/*.shadow {
+  box-shadow: 0px 0px 25px 0px #BBBBBB;
+  width: 1200px;
+}*/
 
-.page-width {
+/*.page-width {
   width: 1200px;
   margin: 0 auto;
-}
+}*/
 
 .menu-mobile {
   display: none;
@@ -93,30 +94,44 @@ li a {
   color: black;
 }
 
+li a:hover {
+  background-color: yellow;
+}
+
+.selected {
+  font-weight: 900;
+  background-color: yellow;
+}
+
 a:hover,
 a:focus {
   color: #000000 !important;
   text-decoration: none;
 }
 
+.navigation > .search {}
+
 .navigation > .search, .page-width > .search {
+/*>>>>>>> may-tweaks
   float: right;
   width: 20px;
   height: 20px;
   margin-right: 40px;
-  margin-top: -55px;
+  margin-top: -55px;*/
 }
 
 
 /* for dropdown */
-.dropbtn {
+
+/*.dropbtn {
   border: none;
   max-width: 160px;
   padding-left: 10px;
   text-align: right;
   cursor: pointer;
   z-index: 9999;
-}
+}*/
+
 
 .dropdown {
   position: relative;
@@ -149,10 +164,7 @@ ul.navbar li.dropdown {
   margin-top: 4px;
   margin-left: -45px;
   min-width: 160px;
-  border-style: solid;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
+  border-top: 2px solid;
   text-align: center;
   background-color: #FFFFFF;
 
@@ -164,11 +176,7 @@ ul.navbar li.dropdown {
   margin-top: 4px;
   margin-left: -10px;
   min-width: 160px;
-  border-style: solid;
   border-top: 2px solid;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
   text-align: center;
   background-color: #FFFFFF;
 }
@@ -176,23 +184,23 @@ ul.navbar li.dropdown {
 .dropdown-aurouscontent a, .dropdown-content a, .dropdown-innovationcontent a {
     color: black;
     padding: 12px 16px;
-    /*text-decoration: none !important;*/
     display: block;
 
-    &:hover,
+/*    &:hover,
     &:focus {
       background-color: white; z-index: 9999;
-    }
+    }*/
 }
 
-// .dropdown-content a {
-//     color: black;
-//     padding: 12px 16px;
-//     /*text-decoration: none !important;*/
-//     display: block;
-//
-//
-// }
+
+
+.dropdown:hover .dropdown-aurouscontent {}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
 
 .dropdown-aurouscontent a:hover, .dropdown-content a:hover, .dropdown-innovationcontent a:hover {background-color: white; z-index: 9999;}
 .dropdown-content a:hover {background-color: white; z-index: 9999;}
@@ -200,35 +208,31 @@ ul.navbar li.dropdown {
 
 .dropdown:hover .dropdown-aurouscontent,
 .dropdown:hover .dropdown-content,
-.dropdown:hover .dropdown-innovationcontent,
-.dropdown a:focus .dropdown-aurouscontent,
-.dropdown a:focus .dropdown-content,
-.dropdown a:focus .dropdown-innovationcontent {
+.dropdown:hover .dropdown-innovationcontent {
     display: block;
     background-color: white;
     z-index: 9999;
 }
 
-.dropdown a:focus {
-  .dropdown-aurouscontent, .dropdown-content, .dropdown-innovationcontent {
+.dropdown:hover .dropdown-aurouscontent, .dropdown:hover .dropdown-content, .dropdown:hover .dropdown-innovationcontent {
     display: block;
     background-color: white;
     z-index: 9999;
   }
 }
 
-.dropdown:hover .dropdown-content, .dr {
+.dropdown:hover .dropdown-content {
     display: block;
     background-color: white;
     z-index: 9999;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: white;
     z-index: 9999;
 }
 
 /** dropdown end **/
+
 
 
 /* search */
@@ -238,13 +242,7 @@ ul.navbar li.dropdown {
   float: right;
   width: 190px;
   height: 20px;
-  margin-right: 5px;
   margin-top: -58px;
-}
-
-.testing {
-  border: none;
-  border-bottom: 2px solid;
 }
 
 input:focus{
@@ -252,23 +250,92 @@ input:focus{
 }
 
 #testingsearch {
+  width: 155px;
   border: none;
   border-bottom: 1px solid;
   padding-top: -10px;
   display: none;
 }
 
-#callingsearch {
-  margin-top: 8px;
+
+#callingsearchs {
+  margin-top: 4px;
   margin-left: 158px;
   height: 20px;
   width: 20px;
-/*  border: 1px solid;*/
   text-align: center;
   display: inline-block;
 }
 
 /** search end **/
+
+
+/* up arrow testing */
+a.up-arrow {
+  display: inline-block;
+  position: relative;
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover.up-arrow {
+  font-weight: 900 !important;
+}
+
+a.up-arrow:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 48px;
+  top: 0;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid black;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+a:hover.up-arrow:after {
+  font-weight: 900 !important;
+}
+
+
+@media (min-width: 1205px) and (max-width: 1950px) {
+
+  .navigation > .brand {
+    float: none;
+    margin-left: 0;
+    position: absolute;
+    /*top: 35px;*/
+    left: 40px;
+  }
+
+  .navigation > .middle-nav {
+    width: 600px;
+    min-width: 280px;
+    height: 55px;
+    margin: 0 auto;
+    float: none;
+    position: absolute;
+    top: 43px;
+    left: 293px;
+  }
+
+  .textsearch-test {
+    display: inline-block;
+    float: none;
+    width: 190px;
+    height: 20px;
+    top: 100px;
+    left: 1000px;
+    position: absolute;
+  }
+
+}
+
 
 @media screen and (max-width: 940px){
 
@@ -299,12 +366,13 @@ input:focus{
     height: 90px;
   }
 
-  .dropbtn {
+
+/*  .dropbtn {
     border: none;
     width: 110px;
     text-align: right;
     cursor: pointer;
-  }
+  }*/
 
   .middle-nav {
     display: none;
@@ -313,7 +381,7 @@ input:focus{
   .menu-mobile {
       position: relative;
       display: inline-block;
-      margin-top: -10px;
+      margin-top: -12px;
       padding-left: 10px;
       width: 80px;
       height: 60px;
@@ -349,7 +417,10 @@ input:focus{
   }
 
   .popup-content a {
-      color: white;
+      color: rgba(173, 216, 230, 0.9);
+      font-family: WorkSans;
+      font-weight: 700;
+      letter-spacing: 1px;
       padding: 20px 16px;
       text-decoration: none;
       border-top: 1px solid rgba(173, 216, 230, 0.4);

@@ -83,11 +83,17 @@ a {
   text-decoration: none;
 }
 
+
+/*a:hover {
+  color: black;
+  font-weight: bold;
+}*/
+
 a:hover,
 a:focus {
   color: #000000;
   text-decoration: none;
-  // opacity: 0.7;
+  opacity: 0.7;
 }
 
 .clear {

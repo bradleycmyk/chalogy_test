@@ -10,6 +10,20 @@
 	width: 100%;
 
 	background-size: contain;
+
+}
+
+.fixed {
+	position: fixed;
+	z-index: 2;
+}
+
+.aurous-header-clean {
+	height: 188px;
+	width: 100%;
+	background-image: url('black-background.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .bread_crumb1.aurous_crumb1 {
@@ -95,25 +109,26 @@
 	max-width: 800px;
 
 	//ADDED BY BRADLEY
-	margin: 48px 0 0 40px;
+	/*margin: 48px 0 0 40px;*/
 }
 
 .aurous_listing {
-	// margin-right: 1%;
-	// width: 48%;
-	// margin-top: 18px;
-	// /*margin-top: 1vh;*/
-	// margin-bottom: 1vh;
-	// position: relative;
-	// display: inline-block;
-	// /*background-color: black;*/
+
+	margin-right: 1%;
+	width: 48%;
+	margin-top: 18px;
+	margin-bottom: 1vh;
+	position: relative;
+	display: inline-block;
+
 
 	//ADDED BY BRADLEY
-	width: 336px;
+	/*width: 336px;
   margin: 0 38px 38px 5px;
   position: relative;
   display: inline-block;
-  height: 486px;
+  height: 486px;*/
+
 }
 
 .aurous_link {
@@ -231,7 +246,7 @@
 
 }
 
-@media (min-width: 553px) and (max-width: 663px) {
+@media screen and (max-width: 663px) {
 	.aurous_text {
 		display: block;
 		width: 75%;
@@ -259,7 +274,7 @@
 }
 
 
-@media (max-width: 553px) {
+@media screen and (max-width: 553px) {
 	.aurous_text {
 		display: block;
 		width: 75%;
@@ -283,5 +298,13 @@
 
 	.aurous-title-fromdb {
 		font-size: 12px;
+	}
+
+	.fixed {
+		position: relative;
+	}
+
+	.aurous-header-clean {
+		display: none;
 	}
 }
