@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>Chalogy</title>
 
-    <!-- favicon setting --> 
+    <!-- favicon setting -->
     <link rel="icon" type="image/ico" href="/favicon.ico">
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png"> -->
 
@@ -32,15 +32,26 @@
 </head>
 
 <body ng-app="Chalogy" class="body-wrap" ng-controller="MainController">
+  <a class="anchor" id="top"></a>
     <!-- <navbar></navbar> -->
     <!-- <div ui-view class="container_fluid"></div> -->
-   
+
     <div ui-view></div>
     <footers></footers>
 
+    <div class="subscribe-modal-outer">
+      <div class="inner">
+        <div class="exit">
+          <p>
+            X
+          </p>
+        </div>
+
+        <h3>
+          Be sure to check your email to confirm your subscription!
+        </h3>
+      </div>
+    </div>
 </body>
 
 </html>
-
-
-

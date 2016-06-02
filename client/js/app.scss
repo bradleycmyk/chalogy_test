@@ -13,10 +13,19 @@ a {
 
 .body-wrap {
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 76px auto 0;
 }
 
+body {
+	color: #000000;
+}
 
+.anchor#top {
+	display: block;
+	position: relative;
+	top: -250px;
+	visibility: hidden;
+}
 
 * {
   box-sizing: border-box;
@@ -30,6 +39,184 @@ a {
   }
 }
 
+@mixin greyscale($scale){
+	-webkit-filter: grayscale($scale);
+	filter: grayscale($scale);
+}
+
+@mixin flexbox($align, $is_imp:null) {
+	display: table-cell; // ie9
+  //flexbox
+  display: -webkit-box $is_imp;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox $is_imp;  /* TWEENER - IE 10 */
+  display: -webkit-flex $is_imp; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex $is_imp;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+  //flex-wrap
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  //justify-content
+  -webkit-box-pack: $align;
+  -moz-box-pack: $align;
+  -ms-flex-pack: $align;
+  -webkit-justify-content: $align;
+  justify-content: $align;
+}
+
+//transition
+@mixin transition($who, $time, $func:linear) {
+  -webkit-transition: $who $time $func;
+  -o-transition: $who $time $func;
+  -moz-transition: $who $time $func;
+  -ms-transition: $who $time $func;
+  -kthtml-transition: $who $time $func;
+  transition: $who $time $func;
+}
+
+//transform
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+	   -moz-transform: $transforms;
+      -ms-transform: $transforms;
+	     -o-transform: $transforms;
+          transform: $transforms;
+}
+
+// rotate
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+.block {
+  display: block;
+}
+
+@mixin boxshadow($box-shadows) {
+  -webkit-box-shadow: $box-shadows;
+  -moz-box-shadow: $box-shadows;
+  -ms-box-shadow: $box-shadows;
+  -o-box-shadow: $box-shadows;
+  box-shadow: $box-shadows;
+}
+
+@mixin borderRad($border-radiuss) {
+  -webkit-border-radius: #{$border-radiuss}px;
+  -moz-border-radius: #{$border-radiuss}px;
+  -ms-border-radius: #{$border-radiuss}px;
+  -o-border-radius: #{$border-radiuss}px;
+  border-radius: #{$border-radiuss}px;
+}
+
+// input:-webkit-autofill {
+//   @include boxshadow(0 0 0 1000px #F2F2F2 inset !important);
+// }
+
+/*
+	Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+	CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+	and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+	Inspired from:  http://codepen.io/Rowno/pen/Afykb
+*/
+.carousel-fade .carousel-inner .item {
+	opacity: 0;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+
+// WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+// Need to override the 3.3 new styles for modern browsers & apply opacity
+// CROSS-FADE BOOTSTRAP CAROUSEL
+@media all and (transform-3d), (-webkit-transform-3d) {
+	.carousel-fade .carousel-inner > .item.next,
+	.carousel-fade .carousel-inner > .item.active.right {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+						transform: translate3d(0, 0, 0);
+	}
+
+	.carousel-fade .carousel-inner > .item.prev,
+	.carousel-fade .carousel-inner > .item.active.left {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+						transform: translate3d(0, 0, 0);
+	}
+
+	.carousel-fade .carousel-inner > .item.next.left,
+	.carousel-fade .carousel-inner > .item.prev.right,
+	.carousel-fade .carousel-inner > .item.active {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+						transform: translate3d(0, 0, 0);
+	}
+}
+
+.subscribe-modal-outer {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	overflow: hidden;
+
+	.inner {
+		padding: 20px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: auto;
+
+		p {
+			font-size: 25px;
+			position: absolute;
+			right: 20px;
+			top: 5px;
+			cursor: pointer;
+		}
+
+		h3 {
+			font-size: 36px;
+			color: #000000;
+			width: 100%;
+			border: 1px solid #A2A2A2;
+			text-align: center;
+			height: 78%;
+			padding: 20px;
+			font-family: MillerBanner;
+			font-weight: 100;
+		}
+	}
+}
+
+
 // Add your fractal Sass files below!
 @import 'navbar/navbar';
 @import 'homenavbar/homenavbar';
@@ -40,6 +227,7 @@ a {
 @import 'search/search';
 @import 'about/about';
 @import 'innovation/innovation';
+@import 'cha_seven/cha_seven';
 @import 'aurous/aurous';
 @import 'aurous_brand/aurous_brand';
 @import 'aurous_products/aurous_products';

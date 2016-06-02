@@ -1,19 +1,22 @@
+<div class="shadow">
 <navbar></navbar>
+</div>
+
 <div class="clean-and-clear"></div>
 <div class="clear">
   	<div class="sat_image"></div>
 
     <div class="sat_link">
-		<a href="/saturday-skin" ui-sref="saturday_skin" class="upper">Saturday Skin</a>
-		<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
-			<path class='caret' d="M0 0v8l4-4-4-4z" transform="translate(2)" />
-		</svg>
-		<a href="/saturday-skin/products" ui-sref="saturday_products" class="upper">The Products</a>
-		<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
-			<path class='caret' d="M0 0v8l4-4-4-4z" transform="translate(2)" />
-		</svg>
-		{{ product.name }}
-	</div>
+  		<a href="/saturday-skin" ui-sref="saturday_skin" class="upper">Saturday Skin</a>
+  		<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+  			<path class='caret' d="M0 0v8l4-4-4-4z" transform="translate(2)" />
+  		</svg>
+  		<a href="/saturday-skin/products" ui-sref="saturday_products" class="upper">The Products</a>
+  		<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+  			<path class='caret' d="M0 0v8l4-4-4-4z" transform="translate(2)" />
+  		</svg>
+  		{{ product.name }}
+  	</div>
 
 
 	<div class="product_detail">
@@ -38,7 +41,7 @@
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 
 	<!-- buttons -->
 	<div class="product_detail_buttons">
@@ -62,7 +65,7 @@
 		<!-- end of button -->
 	</div>
 
-	<!-- tab content --> 
+	<!-- tab content -->
 	<div class="tab_content">
 		<div class="panel" ng-show="tab === 1">
 			<p class="margin_top">who it's for</p>
@@ -87,26 +90,16 @@
 			</div>
 		</div>
 
-		<!-- recommendations --> 
+		<!-- recommendations -->
 		<div class="panel_fluid" ng-show="tab === 3">
 			<div class="recommendations" ng-repeat="recommendation in recommendations  | limitTo: 5">
-				<a href="/saturday-skin/products/{{ recommendation.name }}"> 
+				<a href="/saturday-skin/products/{{ recommendation.name }}">
 					<img class="detail_photo" ng-src="{{ recommendation.image[0]}}" width="185px;" alt="{{ recommendation.name }}" />
 				</a>
 			</div>
 		</div>
 	</div>
 
-<!-- carousel prcatice with multiple images --> 
+<!-- carousel prcatice with multiple images -->
 
 </div>
-
-
-
-
-
-
-
-
-
-

@@ -1,20 +1,45 @@
 app.controller('HomeController', function($scope, $http, homeFactory) {
-	
+
 	homeFactory.getSkinCareDb().then(function(data){
 	  	$scope.products = data;
 	})
 
 	$(document).ready(function(){
 
-		$('.ribbon-wrapper-blue').delay(100).animate({
-		  left: '+=558px',
-		  top: '+=538px'
-		}, 900);
+		// $('.ribbon-wrapper-blue').delay(100).animate({
+		//   left: '+=558px',
+		//   top: '+=538px'
+		// }, 900);
 
-		$('.ribbon-wrapper-green').delay(1000).animate({
-		  left: '-=800px',
-		  top: '+=441px'
-		}, 900);
+		// $('.ribbon-cover-blue').css({
+		// 	'left': '558px'
+		// });
+		function uncover(ribbon, delay, direction, amount) {
+			$('.ribbon-cover-' + ribbon).delay(delay).animate({
+				direction: amount
+			}, function() {
+				$('.ribbon-cover-' + ribbon).css({'display': 'none'});
+			});
+		}
+
+		// uncover('blue', 2000, 'left', '+=558px');
+
+		$('.ribbon-cover-green').animate({
+			left: '-=1310px'
+		}, 1000, function() {
+			$('.ribbon-cover-green').css({'display': 'none'});
+		});
+
+		$('.ribbon-cover-blue').delay(1000).animate({
+			left: '+=688px'
+		}, 1000, function() {
+			$('.ribbon-cover-blue').css({'display': 'none'});
+		});
+
+		// $('.ribbon-wrapper-green').delay(1000).animate({
+		//   left: '-=800px',
+		//   top: '+=441px'
+		// }, 900);
 
 		$('.circle-wrapper-red').delay(2100).fadeIn(1200);
 

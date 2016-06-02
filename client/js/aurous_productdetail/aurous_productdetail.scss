@@ -58,12 +58,12 @@
 
 .carousel-inner > .item > img {
 	width: 102% !important;
-    margin: auto;  
+    margin: auto;
 }
 
 .carousel-inner > .item > a > img {
     width: 102%;
-    margin: auto;  
+    margin: auto;
 }
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
@@ -72,13 +72,13 @@
     height: auto;
 }
 
-// carousel styling ! 
+// carousel styling !
 .carousel-indicators {
  	left: 92% !important;
  	width: 50% !important;
  	margin-left: 0;
  	bottom: -40px !important;
-} 
+}
 
 .carousel-indicators li {
 	margin-left: 22px !important;
@@ -87,6 +87,9 @@
 
 .carousel-indicators .active {
 	background-color: black !important;
+	width: 10px !important;
+	height: 10px !important;
+	// margin: 1px 1px 1px 0!important;
 }
 
 .carousel_photo {
