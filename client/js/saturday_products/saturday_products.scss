@@ -145,6 +145,12 @@
 
 }
 
+@media screen and (max-width: 940px){
+    .clean-and-clear {
+        height: 108px;
+    }
+}
+
 @media screen and (max-width: 769px) {
     .prodcut-grid-item-inner {
         height: 350px;
@@ -176,4 +182,10 @@
         display: inline-block;
     }
 
+}
+
+@media screen and (max-width: 580px){
+    .clean-and-clear {
+        height: 75px;
+    }
 }

@@ -10,6 +10,18 @@
 	width: 100%;
 
 	background-size: contain;
+
+	position: fixed;
+	z-index: 9999;
+}
+
+.aurous-header-clean {
+	height: 188px;
+	width: 100%;
+	background-color: black;
+	/*background-image: */
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .bread_crumb1.aurous_crumb1 {

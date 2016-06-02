@@ -24,12 +24,6 @@
   width: 140px;
   height: 43px;
   margin-left: 50px;
-
-/*  float: none;
-  margin-left: 0;
-  position: absolute;
-  top: 35px;
-  left: 40px;*/
 }
 
 .navigation > .middle-nav {
@@ -37,15 +31,6 @@
   min-width: 280px;
   height: 55px; 
   margin: 0 auto;
-
-/*  width: 600px;
-  min-width: 280px;
-  height: 55px; 
-  margin: 0 auto;
-  float: none;
-  position: absolute;
-  top: 40px;
-  left: 300px;*/
 }
 
 .navbar {
@@ -191,14 +176,6 @@ ul.navbar li.dropdown {
   width: 190px;
   height: 20px;
   margin-top: -58px;
-
-/*  display: inline-block;
-  float: none;
-  width: 190px;
-  height: 20px;
-  top: 40px;
-  left: 1000px;
-  position: absolute;*/
 }
 
 input:focus{
@@ -257,8 +234,6 @@ a.up-arrow:after {
 a:hover.up-arrow:after {
   font-weight: 900 !important;
 }
-
-
 
 
 @media (min-width: 1205px) and (max-width: 1950px) {
