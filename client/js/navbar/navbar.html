@@ -1,37 +1,46 @@
 <div class="navigation" role="navigation">
   <div class="page-width">
 
-  <div class="brand"><a ui-sref="home"><img src="http://www.cmykpluswhite.biz/web/images/brand-logo.png" alt="Brand"></a></div>
+  <div class="brand"><a href="/" ui-sref="home"><img src="http://www.cmykpluswhite.biz/web/images/brand-logo.png" alt="Brand"></a></div>
 
   <div class="middle-nav">
-    <ul class="navbar">
+    <ul class="navbar" role="menubar">
       <div class="row">
-        <div class="col-xs-31"><li style="width: 50px;"><a href="/about" class="about-nav" ui-sref="about">ABOUT</a></li></div>
+        <div class="col-xs-31">
+          <li style="width: 50px;" role="menuitem">
+            <a href="/about" class="about-nav" ui-sref="about">
+              ABOUT
+            </a>
+          </li>
+        </div>
+
         <div class="col-xs-32">
-          <li class="dropdown center" style="width: 80px;">
+          <li class="dropdown center" style="width: 80px;" role="menuitem">
             <a href="/innovation" class="inn-nav" ui-sref="innovation">INNOVATION</a>
-            <div class="dropdown-innovationcontent">
-             <a href="/innovation" class="inn-nav"ui-sref="innovation">THE BRAND</a>
-             <a href="/cha-7" class="inn-cha-nav" ui-sref="cha_seven">CHA-7</a>
+
+            <div class="dropdown-innovationcontent" role="menu">
+             <a href="/innovation" class="inn-nav"ui-sref="innovation" role="menuitem">THE BRAND</a>
+             <a href="/cha-7" class="inn-cha-nav" ui-sref="cha_seven" role="menuitem">CHA-7</a>
            </div>
           </li>
         </div>
 
         <div class="col-xs-33">
-          <li class="dropdown center" style="width: 60px;">
+          <li class="dropdown center" style="width: 60px;" role="menuitem">
              <a href="aurous" ui-sref="aurous" class="aur-nav">AUROUS</a>
-             <div class="dropdown-aurouscontent">
-              <a href="/aurous/brand" class="aur-brand-nav"ui-sref="aurous_brand">THE BRAND</a>
-              <a href="/aurous/products" class="aur-prod-nav" ui-sref="aurous_products">THE PRODUCTS</a>
+             <div class="dropdown-aurouscontent" role="menu">
+              <a href="/aurous/brand" class="aur-brand-nav"ui-sref="aurous_brand" role="menuitem">THE BRAND</a>
+              <a href="/aurous/products" class="aur-prod-nav" ui-sref="aurous_products" role="menuitem">THE PRODUCTS</a>
             </div>
           </li>
         </div>
 
-        <div class="col-xs-34"><li class="dropdown" style="width: 120px;">
+        <div class="col-xs-34">
+          <li class="dropdown" style="width: 120px;" role="menuitem">
             <a href="/saturday-skin" ui-sref="saturday_skin" class="dropbtn sat-nav" >SATURDAY SKIN</a>
-            <div class="dropdown-content">
-              <a href="/saturday-skin/brand" class="sat-brand-nav" ui-sref="saturday_brand">THE BRAND</a>
-              <a href="/saturday-skin/products" class="sat-prod-nav" ui-sref="saturday_products">THE PRODUCTS</a>
+            <div class="dropdown-content" role="menu">
+              <a href="/saturday-skin/brand" class="sat-brand-nav" ui-sref="saturday_brand" role="menuitem">THE BRAND</a>
+              <a href="/saturday-skin/products" class="sat-prod-nav" ui-sref="saturday_products" role="menuitem">THE PRODUCTS</a>
             </div>
           </li>
         </div>

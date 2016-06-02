@@ -15,6 +15,14 @@ app.controller('NavBarController', function($scope, $http, $state, $stateParams)
 
 	});
 
+	$('.dropdown a').focus(function() {
+		console.log($(this).siblings());
+		$(this).siblings().show();
+	})
+	.blur(function() {
+		$(this).siblings().hide();
+	})
+
 	$(document).keypress(function(event) {
 	    var keycode = (event.keyCode ? event.keyCode : event.which);
 	    if(keycode == '13') {
@@ -28,7 +36,7 @@ app.controller('NavBarController', function($scope, $http, $state, $stateParams)
 	    };
 	});
 
-	// hide search input when clicking outside it 
+	// hide search input when clicking outside it
 	$(document).mouseup(function (e)
 	{
 	    var container = $("#testingsearch");
@@ -41,5 +49,7 @@ app.controller('NavBarController', function($scope, $http, $state, $stateParams)
 	        // $(".brand").show();
 	    }
 	});
+
+
 
 });

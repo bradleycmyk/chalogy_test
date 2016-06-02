@@ -140,7 +140,7 @@ ul.navbar li.dropdown {
   border-right: none;
   border-bottom: none;
   text-align: center;
-    background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
 .dropdown-aurouscontent {
@@ -154,6 +154,8 @@ ul.navbar li.dropdown {
   border-right: none;
   border-bottom: none;
   text-align: center;
+  background-color: #FFFFFF;
+
 }
 
 .dropdown-content {
@@ -168,7 +170,7 @@ ul.navbar li.dropdown {
   border-right: none;
   border-bottom: none;
   text-align: center;
-
+  background-color: #FFFFFF;
 }
 
 .dropdown-aurouscontent a, .dropdown-content a, .dropdown-innovationcontent a {
@@ -196,13 +198,26 @@ ul.navbar li.dropdown {
 .dropdown-content a:hover {background-color: white; z-index: 9999;}
 /*.dropdown-content a:hover {background-color: rgba(255,225,250,0.3);}*/
 
-.dropdown:hover .dropdown-aurouscontent, .dropdown:hover .dropdown-content, .dropdown:hover .dropdown-innovationcontent {
+.dropdown:hover .dropdown-aurouscontent,
+.dropdown:hover .dropdown-content,
+.dropdown:hover .dropdown-innovationcontent,
+.dropdown a:focus .dropdown-aurouscontent,
+.dropdown a:focus .dropdown-content,
+.dropdown a:focus .dropdown-innovationcontent {
     display: block;
     background-color: white;
     z-index: 9999;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown a:focus {
+  .dropdown-aurouscontent, .dropdown-content, .dropdown-innovationcontent {
+    display: block;
+    background-color: white;
+    z-index: 9999;
+  }
+}
+
+.dropdown:hover .dropdown-content, .dr {
     display: block;
     background-color: white;
     z-index: 9999;

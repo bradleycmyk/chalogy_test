@@ -6,8 +6,17 @@
     <ul class="navbar">
       <div class="row">
         <div class="col-xs-31"><li class="active" style="width: 50px;"><a href="/about" ui-sref="about">ABOUT</a></li></div>
-        <div class="col-xs-32"><li style="width: 80px;"><a href="/innovation" ui-sref="innovation">INNOVATION</a></li></div>
-        
+        <div class="col-xs-32">
+          <li class="dropdown center" style="width: 80px;" role="menuitem">
+            <a href="/innovation" class="inn-nav" ui-sref="innovation">INNOVATION</a>
+
+            <div class="dropdown-innovationcontent" role="menu">
+             <a href="/innovation" class="inn-nav"ui-sref="innovation" role="menuitem">THE BRAND</a>
+             <a href="/cha-7" class="inn-cha-nav" ui-sref="cha_seven" role="menuitem">CHA-7</a>
+           </div>
+          </li>
+        </div>
+
         <div class="col-xs-33"><li class="dropdown center" style="width: 60px;">
              <a href="aurous" ui-sref="aurous">AUROUS</a>
              <div class="dropdown-aurouscontent">
