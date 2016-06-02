@@ -11,15 +11,17 @@
 
 	background-size: contain;
 
+}
+
+.fixed {
 	position: fixed;
-	z-index: 9999;
+	z-index: 2;
 }
 
 .aurous-header-clean {
 	height: 188px;
 	width: 100%;
-	background-color: black;
-	/*background-image: */
+	background-image: url('black-background.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 }
@@ -224,7 +226,7 @@
 
 }
 
-@media (min-width: 553px) and (max-width: 663px) {
+@media screen and (max-width: 663px) {
 	.aurous_text {
 		display: block;
 		width: 75%;
@@ -252,7 +254,7 @@
 }
 
 
-@media (max-width: 553px) {
+@media screen and (max-width: 553px) {
 	.aurous_text {
 		display: block;
 		width: 75%;
@@ -276,6 +278,14 @@
 
 	.aurous-title-fromdb {
 		font-size: 12px;
+	}
+
+	.fixed {
+		position: relative;
+	}
+
+	.aurous-header-clean {
+		display: none;
 	}
 }
 

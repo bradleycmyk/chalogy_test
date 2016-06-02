@@ -7,7 +7,6 @@
   margin-bottom: 0;
   height: 90px;
   margin-top: -15px;
-  /*position: relative;*/
   background-color: rgba(255, 255, 255, 0.9);
 
   position: fixed;
@@ -83,6 +82,15 @@ li a {
   color: black;   
 }
 
+li a:hover {
+  /*background-color: yellow;*/
+}
+
+.selected {
+  font-weight: 900;
+  background-color: yellow;
+}
+
 .navigation > .search {
   float: right;
   width: 20px;
@@ -93,14 +101,6 @@ li a {
 
 
 /* for dropdown */
-.dropbtn {
-    border: none;
-    max-width: 160px;
-    padding-left: 10px;
-    text-align: right;
-    cursor: pointer;
-    z-index: 9999;
-}
 
 .dropdown {
     position: relative;
@@ -160,7 +160,6 @@ ul.navbar li.dropdown {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: white;
     z-index: 9999;
 }
 
