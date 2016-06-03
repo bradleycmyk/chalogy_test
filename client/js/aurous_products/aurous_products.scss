@@ -114,13 +114,20 @@
 
 .aurous_listing {
 
-	margin-right: 1%;
+	margin-right: 3%;
+	width: 47%;
+	margin-top: 18px;
+	margin-bottom: 67%;
+	position: relative;
+	display: inline-block;
+
+/*	margin-right: 1%;
 	width: 48%;
 	margin-top: 18px;
 	margin-bottom: 1vh;
 	position: relative;
 	display: inline-block;
-
+*/
 
 	//ADDED BY BRADLEY
 	/*width: 336px;
@@ -163,7 +170,7 @@
 	width: 80%;
 	color: white;
 	position: absolute;
-	top: 40%;
+	top: 20vh;
 	left: 8%;
 	/*margin: 0 auto;*/
 }
@@ -181,6 +188,21 @@
 	text-align: center;
 	letter-spacing: 0.9px;
 	text-transform: uppercase;
+}
+
+// animation 
+
+#crossfade img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#crossfade img.top:hover {
+  opacity:0;
 }
 
 
@@ -208,6 +230,10 @@
 		font-family: WorkSans;
 		font-size: 12px;
 	}
+
+	.aurous_description {
+		top: 14vh;
+	}
 }
 
 @media (min-width: 663px) and (max-width: 800px) {
@@ -234,6 +260,10 @@
 	.aurous_text > .readmore {
 		font-family: WorkSans;
 		font-size: 12px;
+	}
+
+	.aurous_description {
+		top: 13vh;
 	}
 
 	.aurous-name-fromdb {
@@ -264,12 +294,16 @@
 		height: 1400px;
 	}
 
+	.aurous_description {
+		top: 14vh;
+	}
+
 	.aurous-name-fromdb {
 		font-size: 20px;
 	}
 
 	.aurous-title-fromdb {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 
@@ -279,7 +313,8 @@
 		display: block;
 		width: 75%;
 		margin: 0 auto;
-		margin-top: -50px;
+		margin-top: -80px;
+		margin-bottom: 20px;
 	}
 
 	.aurous_product {
@@ -290,6 +325,10 @@
 
 	.drops {
 		height: 1200px;
+	}
+
+	.aurous_description {
+		top: 12vh;
 	}
 
 	.aurous-name-fromdb {
