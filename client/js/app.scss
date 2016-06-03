@@ -185,7 +185,7 @@ a {
 	overflow: hidden;
 
 	.inner {
-		padding: 20px;
+		padding: 40px;
     background-color: #FFFFFF;
     position: absolute;
     top: 50%;
@@ -194,25 +194,40 @@ a {
     width: 40%;
     height: auto;
 
-		p {
-			font-size: 25px;
-			position: absolute;
-			right: 20px;
-			top: 5px;
-			cursor: pointer;
-			font-family: WorkSans;
+		.exit {
+			p {
+				font-size: 25px;
+				position: absolute;
+				right: 17px;
+				top: 7px;
+				cursor: pointer;
+				font-family: WorkSans;
+			}
 		}
 
-		h3 {
-			font-size: 36px;
-			color: #000000;
-			width: 100%;
+		.modal-content-thing {
 			border: 1px solid #A2A2A2;
-			text-align: center;
-			height: 78%;
 			padding: 20px;
-			font-family: MillerBanner;
-			font-weight: 100;
+
+			h3 {
+				font-size: 36px;
+				color: #000000;
+				width: 100%;
+				text-align: center;
+				height: 78%;
+				// padding: 20px;
+				font-family: MillerBanner;
+				font-weight: 100;
+				text-transform: uppercase;
+			}
+
+			p {
+				font-family: WorkSans;
+				width: 360px;
+				margin: 30px auto 15px;
+				text-align: center;
+				font-size: 16px;
+			}
 		}
 	}
 }
