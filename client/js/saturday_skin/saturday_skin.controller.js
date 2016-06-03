@@ -1,3 +1,6 @@
-app.controller('SaturdayController', function($scope, $http) {
-	$scope.msg = "msg from SaturdayController";
+app.controller('SaturdayController', function($scope, $http, $window, $location) {
+
+	$scope.isActive = function (route) {
+    	return route == $window.location.href.split("5959/")[1];
+  	};
 });

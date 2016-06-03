@@ -51,9 +51,6 @@ app.controller('NavBarController', function($scope, $http, $state, $stateParams)
 	        // $(".brand").show();
 	    }
 	});
-	$('li a').click(function(e){
-		e.preventDefault();
-		$('li a').removeClass('selected');
-		$(this).addClass('selected');
-	});
+	
+	
 });

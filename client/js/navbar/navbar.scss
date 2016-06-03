@@ -94,19 +94,13 @@ li a {
   color: black;
 }
 
-li a:hover {
-  background-color: yellow;
-}
+li.dropdown a:hover {
 
-.selected {
-  font-weight: 900;
-  background-color: yellow;
 }
 
 a:hover,
 a:focus {
-  color: #000000 !important;
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
 .navigation > .search {}
@@ -122,16 +116,6 @@ a:focus {
 
 
 /* for dropdown */
-
-/*.dropbtn {
-  border: none;
-  max-width: 160px;
-  padding-left: 10px;
-  text-align: right;
-  cursor: pointer;
-  z-index: 9999;
-}*/
-
 
 .dropdown {
   position: relative;
@@ -204,7 +188,6 @@ ul.navbar li.dropdown {
 
 .dropdown-aurouscontent a:hover, .dropdown-content a:hover, .dropdown-innovationcontent a:hover {background-color: white; z-index: 9999;}
 .dropdown-content a:hover {background-color: white; z-index: 9999;}
-/*.dropdown-content a:hover {background-color: rgba(255,225,250,0.3);}*/
 
 .dropdown:hover .dropdown-aurouscontent,
 .dropdown:hover .dropdown-content,
@@ -218,8 +201,8 @@ ul.navbar li.dropdown {
     display: block;
     background-color: white;
     z-index: 9999;
-  }
 }
+
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -257,7 +240,6 @@ input:focus{
   display: none;
 }
 
-
 #callingsearchs {
   margin-top: 4px;
   margin-left: 158px;
@@ -280,7 +262,7 @@ a.up-arrow {
 }
 
 a:hover.up-arrow {
-  font-weight: 900 !important;
+  /*font-weight: 900 !important;*/
 }
 
 a.up-arrow:after {
@@ -299,7 +281,13 @@ a.up-arrow:after {
 }
 
 a:hover.up-arrow:after {
-  font-weight: 900 !important;
+  /*font-weight: 900 !important;*/
+}
+
+// bold current page in navbar 
+.selected {
+  font-family: sans-serif;
+  font-weight: 600 !important;
 }
 
 
@@ -309,7 +297,6 @@ a:hover.up-arrow:after {
     float: none;
     margin-left: 0;
     position: absolute;
-    /*top: 35px;*/
     left: 40px;
   }
 
@@ -365,14 +352,6 @@ a:hover.up-arrow:after {
   .navigation {
     height: 90px;
   }
-
-
-/*  .dropbtn {
-    border: none;
-    width: 110px;
-    text-align: right;
-    cursor: pointer;
-  }*/
 
   .middle-nav {
     display: none;
