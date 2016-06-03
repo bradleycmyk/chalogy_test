@@ -215,10 +215,9 @@ ul.navbar li.dropdown {
 }
 
 .dropdown:hover .dropdown-aurouscontent, .dropdown:hover .dropdown-content, .dropdown:hover .dropdown-innovationcontent {
-    display: block;
-    background-color: white;
-    z-index: 9999;
-  }
+  display: block;
+  background-color: white;
+  z-index: 9999;
 }
 
 .dropdown:hover .dropdown-content {

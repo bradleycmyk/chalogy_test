@@ -85,6 +85,10 @@
     }
 }
 
+.product-description, .how-to-use {
+	white-space: pre-wrap;
+}
+
 /* video */
 .embed-container {
 	position: relative;

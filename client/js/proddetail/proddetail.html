@@ -31,10 +31,11 @@
 				<div class="prod-dsc">
 					<p class="product-name">{{ product.name }}</p>
 					<p class="product-title">{{ product.title }}</p>
+          <p class="product-ktitle">{{ product.korean_title }}</p>
 					<div class="gray-line"></div>
 					<p class="price_tag">$ {{ product.price }}.00</p>
 					<br>
-					<span class="product-description">50mL</span>
+					<span class="product-description">{{product.size_ml}}mL/{{product.size_oz}} fl oz</span>
 					<p class="product-description">{{ product.description }}</p>
 					<br class="mobile_hide"><br class="mobile_hide">
 					<social-icons></social-icons>
@@ -69,13 +70,17 @@
 	<div class="tab_content">
 		<div class="panel" ng-show="tab === 1">
 			<p class="margin_top">who it's for</p>
-			<p>{{product.description}}</p>
+			<p>{{product.who}}</p>
 		</div>
 
 		<div class="panel" ng-show="tab === 2">
-			<p class="margin_top">how to use</p>
+			<!-- <p class="margin_top">how to use</p> -->
+      <div class="div_web">
+          <div class='how-to-use'><p>{{product.how}}</p></div>
+      </div>
+
 			<!-- video -->
-			<div class="div_web">
+			<!-- <div class="div_web">
 			    <div class='embed-container'>
 			        <iframe src="https://player.vimeo.com/video/162845048?autoplay=1&loop=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
 			        </iframe>
@@ -87,7 +92,7 @@
 			        <iframe src="https://player.vimeo.com/video/162845048?autoplay=1&loop=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
 			        </iframe>
 			    </div>
-			</div>
+			</div> -->
 		</div>
 
 		<!-- recommendations -->

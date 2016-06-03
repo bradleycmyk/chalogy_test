@@ -15,7 +15,7 @@
 
 .fixed {
 	position: fixed;
-	z-index: 2;
+	z-index: 23;
 }
 
 .aurous-header-clean {
@@ -107,28 +107,15 @@
 	left: 38%;
 	width: 62%;
 	max-width: 800px;
-
-	//ADDED BY BRADLEY
-	/*margin: 48px 0 0 40px;*/
 }
 
 .aurous_listing {
-
 	margin-right: 1%;
 	width: 48%;
 	margin-top: 18px;
 	margin-bottom: 1vh;
 	position: relative;
 	display: inline-block;
-
-
-	//ADDED BY BRADLEY
-	/*width: 336px;
-  margin: 0 38px 38px 5px;
-  position: relative;
-  display: inline-block;
-  height: 486px;*/
-
 }
 
 .aurous_link {
@@ -181,6 +168,10 @@
 	text-align: center;
 	letter-spacing: 0.9px;
 	text-transform: uppercase;
+}
+
+.aurous-ktitle-fromdb {
+	text-align: center;
 }
 
 
