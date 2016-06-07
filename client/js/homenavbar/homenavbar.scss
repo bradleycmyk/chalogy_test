@@ -14,7 +14,6 @@
   max-width: 1200px;
 }
 
-
 .navigation-home > .brand, .page-width > .brand {
   padding-top: 35px;
   padding-bottom: 5px;
@@ -23,7 +22,7 @@
   margin-left: 50px;
 }
 
-.navigation-home > .middle-nav, .page-width > .middle-nav {
+.navigation-home > .middle-nav {
   max-width: 600px;
   min-width: 280px;
   height: 55px;
@@ -32,11 +31,13 @@
 
 .navigation-home > .middle-nav {
   float: none;
-  position: absolute;
   top: 83px;
   left: 293px;
 }
 
+.menu-mobile-home {
+  display: none;
+}
 
 #brand-logo {
   display: block;
@@ -96,5 +97,41 @@
     top: 147px;
     left: 1000px;
     position: absolute;
+  }
+
+}
+
+
+@media screen and (max-width: 940px) {
+
+  .navigation-home > .middle-nav {
+    max-width: 540px;
+  }
+
+  .textsearch-home {
+    margin-top: -100px;
+  }
+
+}
+
+
+@media screen and (max-width: 580px){
+  .navigation-home {
+    height: 95px;
+  }
+
+  .menu-mobile-home {
+      position: relative;
+      display: inline-block;
+      margin-top: -58px;
+      padding-left: 10px;
+      width: 80px;
+      height: 60px;
+  }
+
+  .menu-mobile-home a:hover {background-color: #f1f1f1}
+
+  .clean-and-clear-home {
+    height: 81px;
   }
 }
