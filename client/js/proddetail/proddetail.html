@@ -97,11 +97,17 @@
 
 		<!-- recommendations -->
 		<div class="panel_fluid" ng-show="tab === 3">
-			<div class="recommendations" ng-repeat="recommendation in recommendations  | limitTo: 5">
+      <div class="recommendations" ng-repeat="rec in product.recs">
+          <a href="/saturday-skin/products/{{ rec.name }}">
+            <img class="detail_photo" ng-src="{{ rec.img }}" width="185px;" alt="{{ rec.name }}" />
+          </a>
+      </div>
+
+      <!-- <div class="recommendations" ng-repeat="recommendation in recommendations  | limitTo: 5">
 				<a href="/saturday-skin/products/{{ recommendation.name }}">
 					<img class="detail_photo" ng-src="{{ recommendation.image[0]}}" width="185px;" alt="{{ recommendation.name }}" />
 				</a>
-			</div>
+			</div> -->
 		</div>
 	</div>
 

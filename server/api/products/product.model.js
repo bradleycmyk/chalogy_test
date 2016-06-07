@@ -51,6 +51,9 @@ var schema = new mongoose.Schema({
     },
     category : {
         type: String
+    },
+    recs: {
+      type: [{String: String}]
     }
 });
 
