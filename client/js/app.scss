@@ -95,7 +95,7 @@ a {
 .body-wrap {
 	max-width: 1200px;
 	margin: 0 auto;
-	margin-top: 15px;
+	/*margin-top: 10px;*/
 	/*margin: 76px auto 0;*/
 }
 
@@ -324,6 +324,8 @@ a {
 @import 'about/about';
 @import 'innovation/innovation';
 @import 'cha_seven/cha_seven';
+@import 'chaum/chaum';
+@import 'cha_health_system/cha_health_systems';
 @import 'aurous/aurous';
 @import 'aurous_brand/aurous_brand';
 @import 'aurous_products/aurous_products';
