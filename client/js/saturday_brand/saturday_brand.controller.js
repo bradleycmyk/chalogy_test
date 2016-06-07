@@ -2,5 +2,7 @@ app.controller('SaturdayBrandController', function($scope, $http, $state, $state
 	$scope.isActive = function (route) {
     	return route == $window.location.href.split("5959/")[1];
   	};
+
+  	
 });
 
