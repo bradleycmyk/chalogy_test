@@ -19,12 +19,18 @@ var schema = new mongoose.Schema({
         required: true,
         unique: true
     },
+    korean_title: {
+      type: String
+    },
     price: {
         type: Number,
         required: true
     }, // must be dollar.cent
-    size : {
-        type: Number
+    size_ml : {
+      type: Number
+    },
+    size_oz : {
+      type: Number
     },
     description: {
         type: String,
@@ -34,11 +40,20 @@ var schema = new mongoose.Schema({
     //     type: Number
     //     // required: true
     // },
+    who: {
+      type: String
+    },
+    how: {
+      type: String
+    },
     tags: {
         type: [String]
     },
     category : {
         type: String
+    },
+    recs: {
+      type: [{String: String}]
     }
 });
 

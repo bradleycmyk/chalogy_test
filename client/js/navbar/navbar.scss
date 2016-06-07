@@ -198,9 +198,9 @@ ul.navbar li.dropdown {
 }
 
 .dropdown:hover .dropdown-aurouscontent, .dropdown:hover .dropdown-content, .dropdown:hover .dropdown-innovationcontent {
-    display: block;
-    background-color: white;
-    z-index: 9999;
+  display: block;
+  background-color: white;
+  z-index: 9999;
 }
 
 
@@ -304,7 +304,7 @@ a.up-arrow-about:after {
 
 
 
-// bold current page in navbar 
+// bold current page in navbar
 .selected {
   font-family: sans-serif;
   font-weight: 600 !important;

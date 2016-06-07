@@ -3,90 +3,207 @@
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "Daily Dew",
 		"title": "Hydrating Essence Mist",
+		"korean_title": "하이드레이팅 에센스 미스트",
 		"price": 39.00,
-		"size": 50,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"size_ml": 130,
+		"size_oz": 4.39,
+		"description": "Hit refresh. Concentrated extracts of kiwi and grape quench and nourish, drenching skin in a veil of moisture.\n\nDERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
+		"who": "Replenshing lost moisture\n\nRefreshing moisture over or under makeup throughout the day\n\nPrepping the skin for treatment\n\nMinimizing the appearance of pores\n\nStreamlining your routine with an essence and toner in one",
+		"how": "Use as part of skincare routine in between cleansing and essence step. Can also be used throughout the day over makeup.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
-		"category": "saturday-skin"
+		"category": "saturday-skin",
+		"recs": [
+			{
+				"name": "All Aglow",
+				"img": "sat-product.png"
+			},
+			{
+				"name": "Featherweight",
+				"img": "sat-product.png"
+			}
+		]
 	},
 	{
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "Freeze Frame",
 		"title": "Beauty Essence",
+		"korean_title": "뷰티 에센스",
 		"price": 49.00,
-		"size": 50,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"size_ml": 50,
+		"size_oz": 1.69,
+		"description": "Stop time in its tracks. Pomegranate extract infuses skin with rich moisture, boosting elasticity and firmness.\n\nDERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
+		"who": "Smoother, silkier, more supple skin texture\n\nPlumper, more resilient skin\n\nIncreasing firmness\n\nBoosting skin's hydration\n\nProtecting against environmental damage\n\n24/7 anti-aging benefits\n\nAll-in-one anti-aging, firming and moisture",
+		"how": "Use morning and night. Warm product by emulsifying then press essence into the skin. Use a tapping motion for maximum absorption.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
-		"category": "saturday-skin"
+		"category": "saturday-skin",
+		"recs": [
+			{
+				"name": "All Aglow",
+				"img": "sat-product.png"
+			},
+			{
+				"name": "Quench",
+				"img": "sat-product.png"
+			}
+		]
 	},
 	{
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "Wide Awake",
 		"title": "Brightening Eye Cream",
+		"korean_title": "브라이트닝 아이크림",
 		"price": 45.00,
-		"size": 50,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"size_ml": 30,
+		"size_oz": 1.01,
+		"description": "Brighten up. Date Seed extract illuminates and refreshes the area around the eyes.\n\nDERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
+		"who": "Minimizing dark circles\n\nReducing puffiness\n\nSmoothing the appearance of fine lines and wrinkles",
+		"how": "Apply cream to the tip of the ring finger. Dot in a 'c' formation to the under eye. Use a tapping motion for maximum absorption.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty", "forever young"],
-		"category": "saturday-skin"
+		"category": "saturday-skin",
+		"recs": [
+			{
+				"name": "Freeze Frame",
+				"img": "sat-product.png"
+			},
+			{
+				"name": "Balancing Act",
+				"img": "sat-product.png"
+			}
+		]
 	},
 	{
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "Balancing Act",
 		"title": "Skin-Smoothing Lotion",
+		"korean_title": "스킨 스무딩 로션",
 		"price": 45.00,
-		"size": 50,
-		"description": "Lorem ipsum dolor sit amet, FOREVER consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"size_ml": 120,
+		"size_oz": 4.05,
+		"description": "Find your center. Soothing magnolia vine extracts restore skin’s oil and water balance, hydrating and smoothing  for luminous skin.\n\nDERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
+		"who": "Brightening and smoothing skin\n\nMinimizing the appearance of small lines and wrinkles\n\nRetaining moisture\n\nMinimizing the appearance of pores",
+		"how": "Place moisturizer into the palm of your hand. Using all four fingers apply in an outward circular motion tapping the moisturizer into skin.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
-		"category": "saturday-skin"
+		"category": "saturday-skin",
+		"recs": [
+			{
+				"name": "Wide Awake",
+				"img": "sat-product.png"
+			},
+			{
+				"name": "Rise + Shine",
+				"img": "sat-product.png"
+			}
+		]
 	},
 	{
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "Featherweight",
 		"title": "Daily Moisturizing Cream",
+		"korean_title": "데일리 모이스춰라이징 크림",
 		"price": 55.00,
-		"size": 50,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"size_ml": 50,
+		"size_oz": 1.69,
+		"description": "This lightweight formula still packs a punch. Avocado protein extract strengthens skin’s own moisture barrier, sealing in hydration to protect and soften skin.\n\nDERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
+		"who": "Improving skin's moisture barrier\n\nEnhancing skin's texture and tone\n\nPromoting maximum hydration",
+		"how": "Pump twice to release cream. Swipe it onto fingers and tap cream into your skin in an outward motion.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
-		"category": "saturday-skin"
+		"category": "saturday-skin",
+		"recs": [null, null]
 	},
 	{
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "Rise + Shine",
 		"title": "Purifying Cleanser",
+		"korean_title": "퓨리파잉 클렌저",
 		"price": 28.00,
-		"size": 50,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"size_ml": 120,
+		"size_oz": 4.05,
+		"description": "Make a clean break. Apple and peach extracts whisk away impurities without stripping the skin for a fresh, revitalized complexion.\n\nDERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
+		"who": "Improving skin's resilience\n\nRemoving impurities while preventing dehydration\n\nNourishing while brightening complexion\n\nMinimizing the appearance of pores\n\nGently removing makeup and whisking away impurities",
+		"how": "Rinse face. Squeeze cleanser into the palm of your hand, emulsify, then using a circular motion massage all over face. Rinse off.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
-		"category": "saturday-skin"
+		"category": "saturday-skin",
+		"recs": [
+			{
+				"name": "Daily Dew",
+				"img": "sat-product.png"
+			},
+			{
+				"name": "Wide Awake",
+				"img": "sat-product.png"
+			}
+		]
 	},
 	{
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "All Aglow",
 		"title": "Perfecting Cushion Compact",
+		"korean_title": "퍼펙팅 쿠션 컴팩트",
 		"price": 40.00,
-		"size": 50,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"size_ml": 30,
+		"size_oz": 0.52,
+		"description": "High performance meets weightless coverage. Hydrating, cooling and brightening with a flawless semi-matte finish and an SPF 47/PA++ protection. Airtight cream puff cushion keeps the formula fresh.\n\nDERMATOLOGIST TESTED.",
+		"who": "Light to medium coverage\n\nProtecting skin from harmful UVA and UVB rays\n\nCooling and brightening skin's overall appearance\n\nSkincare and makeup in one\n\nFast and easy application with flawless finish",
+		"how": "Use custom puff to gently tap the cushion, encouraging the foundation to come up. From the outside of the face in, gently press the puff against the skin until the desired amount of coverage is achieved.\n\nHOW TO REFILL THE PRODUCT:\n1. Press the bottom center with both thumbs.\n2. Push the bottom of the container up.\n3. Remove the inner container as it pops up.\n4. Press refill cushion into the compact case.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
-		"category": "saturday-skin"
+		"category": "saturday-skin",
+		"recs": [
+			{
+				"name": "Featherweight",
+				"img": "sat-product.png"
+			},
+			{
+				"name": "Rise + Shine",
+				"img": "sat-product.png"
+			}
+		]
 	},
 	{
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "Spotlight",
 		"title": "Brightening Mask",
+		"korean_title": "브라이트닝 마스크",
 		"price": 30.00,
-		"size": 50,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"size_ml": 25,
+		"size_oz": 0.84,
+		"description": "The future looks bright. Bilberry, licorice and lotus extracts diminish dark spots to uncover natural radiance.\n\nDERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
+		"who": "Diminishing dark spots\n\nBrightening skin's overall appearance\n\nRevitalizing dull, tired skin\n\nSoothing and restoring hydration\n\nPrepping skin for flawless makeup application\n\nProviding 911 skin renewal",
+		"how": "1. First cleanse and tone the face. Unfold mask.\n2. Remove one side of mesh. Apply mask to face. Remove second mesh. Smooth to contours of the face.\n3. Leave on for 20 minutes.\n4. Discard mask and gently tap remaining essence into the skin. Do not wash face.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
-		"category": "saturday-skin"
+		"category": "saturday-skin",
+		"recs": [
+			{
+				"name": "Rise + Shine",
+				"img": "sat-product.png"
+			},
+			{
+				"name": "Daily Dew",
+				"img": "sat-product.png"
+			}
+		]
 	},
 	{
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
 		"name": "Quench",
 		"title": "Intense Hydration Mask",
+		"korean_title": "인텐스 하이드레이션 마스크",
 		"price": 30.00,
-		"size": 50,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet interdum velit in convallis. Quisque pretium velt ut elit vestibulum, at auctor justo molestie. Donec eget lorem a nisi vivierra blandit ac a metus. Vivamus urna orci, dapibus vitae diam at, posuere condimentum erat. Maecenas ultrices at augue eu sodales.",
+		"size_ml": 25,
+		"size_oz": 0.84,
+		"description": "Like a cool drink of water for the skin. Hyaluronic acid replenishes moisture, while watermelon and aloe naturally hydrate and refresh.\n\nDERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
+		"who": "Improving uneven skin tone and texture\n\nRestoring a radiant glow\n\nDeeply hydrating\n\nPrepping skin for flawless makeup application\n\nProviding a 911 moisture infusion",
+		"how": "1. First cleanse and tone the face. Unfold mask.\n2. Remove one side of mesh. Apply mask to face. Remove second mesh. Smooth to contours of the face.\n3. Leave on for 20 minutes.\n4. Discard mask and gently tap remaining essence into the skin. Do not wash face.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
-		"category": "saturday-skin"
+		"category": "saturday-skin",
+		"recs": [
+			{
+				"name": "All Aglow",
+				"img": "sat-product.png"
+			},
+			{
+				"name": "Balancing Act",
+				"img": "sat-product.png"
+			}
+		]
 	}
 ]

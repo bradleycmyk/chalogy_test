@@ -15,7 +15,7 @@
 
 .fixed {
 	position: fixed;
-	z-index: 2;
+	z-index: 23;
 }
 
 .aurous-header-clean {
@@ -76,6 +76,7 @@
 
 #aurous_beauty {
 	font-size: 30px;
+	text-transform: uppercase;
 }
 
 .aurous_text > .readmore {
@@ -107,13 +108,9 @@
 	left: 38%;
 	width: 62%;
 	max-width: 800px;
-
-	//ADDED BY BRADLEY
-	/*margin: 48px 0 0 40px;*/
 }
 
 .aurous_listing {
-
 	margin-right: 3%;
 	width: 47%;
 	margin-top: 18px;
@@ -128,14 +125,6 @@
 	position: relative;
 	display: inline-block;
 */
-
-	//ADDED BY BRADLEY
-	/*width: 336px;
-  margin: 0 38px 38px 5px;
-  position: relative;
-  display: inline-block;
-  height: 486px;*/
-
 }
 
 .aurous_link {
@@ -190,7 +179,11 @@
 	text-transform: uppercase;
 }
 
-// animation 
+
+.aurous-ktitle-fromdb {
+	text-align: center;
+}
+// animation
 
 #crossfade img {
   position:absolute;

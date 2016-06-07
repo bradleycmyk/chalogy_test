@@ -51,6 +51,4 @@ app.controller('NavBarController', function($scope, $http, $state, $stateParams)
 	        // $(".brand").show();
 	    }
 	});
-	
-	
 });
