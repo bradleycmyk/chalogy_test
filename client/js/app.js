@@ -17,6 +17,12 @@ app.controller('MainController', function($scope, $rootScope){
 	        $state.go("login");
 	    }
 	});
+
+	$('li.dropdown a').click(function(e){
+		e.preventDefault();
+		$('li.dropdown a').removeClass('selected');
+		$(this).addClass('selected');
+	});
 	
 })
 

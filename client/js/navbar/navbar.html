@@ -6,48 +6,43 @@
   <div class="middle-nav">
       <ul class="navbar">
 
-        <div class="col-xs-31"><li style="width: 50px;"><a class="about-nav" href="/about" ui-sref="about">ABOUT</a></li></div>
+        <div class="col-xs-31">
+          <li class="dropdown" style="width: 50px;">
+            <a class="about-nav" href="/about" ui-sref="about" ng-class="{selected:isActive('about')}">ABOUT</a>
+            <div class="dropdown-aurouscontent">
+             <a href="/innovation" class="inn-nav up-arrow-about" ui-sref="innovation">The Story</a>
+             <a href="/cha-7" class="inn-cha-nav" ui-sref="cha_seven" ng-class="{selected:isActive('cha-7')}">Chaum</a>
+             <a href="/cha-7" class="inn-cha-nav" ui-sref="cha_seven" ng-class="{selected:isActive('cha-7')}">CHA Health Systems</a>
+           </div>
+          </li>
+        </div>
 
         <div class="col-xs-32">
           <li class="dropdown center" style="width: 80px;">
-            <a href="/innovation" class="inn-nav" ui-sref="innovation">INNOVATION</a>
-              <div class="dropdown-aurouscontent">
-             <a href="/innovation" class="inn-nav up-arrow"ui-sref="innovation" tabindex="1">THE BRAND</a>
-             <a href="/cha-7" class="inn-cha-nav" ui-sref="cha_seven" tabindex="2">CHA-7</a>
+            <a href="/innovation" class="inn-nav" ui-sref="innovation" ng-class="{selected:isActive('innovation')}">INNOVATION</a>
+            <div class="dropdown-aurouscontent">
+             <a href="/innovation" class="inn-nav up-arrow"ui-sref="innovation">THE BRAND</a>
+             <a href="/cha-7" class="inn-cha-nav" ui-sref="cha_seven" ng-class="{selected:isActive('cha-7')}">CHA-7</a>
            </div>
           </li>
         </div>
 
         <div class="col-xs-33">
           <li class="dropdown center" style="width: 60px;">
-             <a href="/aurous" ui-sref="aurous">AUROUS</a>
+             <a href="aurous" ui-sref="aurous" ng-class="{selected:isActive('aurous')}">AUROUS</a>
              <div class="dropdown-aurouscontent">
-              <a href="/aurous" ui-sref="aurous" class="up-arrow" tabindex="1">THE BRAND</a>
-              <a href="/aurous/products" ui-sref="aurous_products" tabindex="2">THE PRODUCTS</a>
-
-
-    <!--     <div class="col-xs-33">
-          <li class="dropdown center" style="width: 60px;">
-             <a href="aurous" ui-sref="aurous" class="aur-nav">AUROUS</a>
-             <div class="dropdown-aurouscontent">
-              <a href="/aurous/brand" class="aur-brand-nav"ui-sref="aurous_brand">THE BRAND</a>
-              <a href="/aurous/products" class="aur-prod-nav" ui-sref="aurous_products">THE PRODUCTS</a> -->
+              <a href="/aurous/brand" ui-sref="aurous_brand" class="up-arrow" ng-class="{selected:isActive('aurous/brand')}">THE BRAND</a>
+              <a href="/aurous/products" ui-sref="aurous_products" ng-class="{selected:isActive('aurous/products')}">THE PRODUCTS</a>
             </div>
           </li>
         </div>
 
       <div class="col-xs-34">
         <li class="dropdown" style="width: 120px;">
-          <a href="/saturday-skin" ui-sref="saturday_skin" >SATURDAY SKIN</a>
+          <a href="/saturday-skin" ui-sref="saturday_skin" ng-class="{selected:isActive('saturday-skin')}" >SATURDAY SKIN</a>
           <div class="dropdown-content">
-            <a href="/saturday-skin" ui-sref="saturday_skin" class="up-arrow">THE BRAND</a>
-            <a href="/saturday-skin/products" ui-sref="saturday_products">THE PRODUCTS</a>
-
-<!--             <a href="/saturday-skin" ui-sref="saturday_skin" class="dropbtn sat-nav" >SATURDAY SKIN</a>
-          <div class="dropdown-content">
-            <a href="/saturday-skin/brand" class="sat-brand-nav" ui-sref="saturday_brand">THE BRAND</a>
-            <a href="/saturday-skin/products" class="sat-prod-nav" ui-sref="saturday_products">THE PRODUCTS</a> -->
-
+            <a href="/saturday-skin/brand" ui-sref="saturday_brand" class="up-arrow" ng-class="{selected:isActive('saturday-skin/brand')}">THE BRAND</a>
+            <a href="/saturday-skin/products" ui-sref="saturday_products" ng-class="{selected:isActive('saturday-skin/products')}">THE PRODUCTS</a>
           </div>
         </li>
       </div>
@@ -58,7 +53,6 @@
     <input id="testingsearch" type="text" ng-model="text"><img id="callingsearchs" src="search.png" width="20px;" height="20px;" />
   </div>
 <!-- </div> -->
-
 
   <!-- mobile (width: 580px) navbar -->
   <div class="menu-mobile" style="float:left;">

@@ -1,4 +1,4 @@
-app.controller('AboutController', function($scope, $http) {
+app.controller('AboutController', function($scope, $http, $window, $location) {
   $(document).ready(function() {
     $(".rooted, .constant, .versatile").click(function() {
       if ($(this).children(".paragraph").css('display') == 'none') {
@@ -9,4 +9,9 @@ app.controller('AboutController', function($scope, $http) {
       }
     });
   })
+
+  $scope.isActive = function (route) {
+    return route == $window.location.href.split("5959/")[1];
+  };
+
 });
