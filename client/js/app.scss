@@ -1,4 +1,6 @@
 //MillerBanner font
+
+//regular
 @font-face {
 	font-family: 'MillerBanner';
 	src: url('fonts/MillerBanner-Roman.ttf');
@@ -6,13 +8,23 @@
 	font-style: normal;
 }
 
+//semibold
 @font-face {
 	font-family: 'MillerBanner';
-	src: url('fonts/MillerBanner-Bold.ttf');
-	font-weight: 900;
+	src: url('fonts/MillerBanner-Semibold.ttf');
+	font-weight: bold;
 	font-style: normal;
 }
 
+//bold
+@font-face {
+	font-family: 'MillerBanner';
+	src: url('fonts/MillerBanner-Bold.ttf');
+	font-weight: bolder;
+	font-style: normal;
+}
+
+//italic
 @font-face {
 	font-family: 'MillerBanner';
 	src: url('fonts/MillerBanner-Italic.ttf');
@@ -20,24 +32,19 @@
 	font-style: italic;
 }
 
+//light-italic
 @font-face {
 	font-family: 'MillerBanner';
 	src: url('fonts/MillerBanner-LightItalic.ttf');
-	font-weight: 100;
+	font-weight: lighter;
 	font-style: italic;
 }
 
-@font-face {
-	font-family: 'MillerBanner';
-	src: url('fonts/MillerBanner-Semibold.ttf');
-	font-weight: 600;
-	font-style: normal;
-}
-
+//semibold-italic
 @font-face {
 	font-family: 'MillerBanner';
 	src: url('fonts/MillerBanner-SemiboldItalic.ttf');
-	font-weight: 600;
+	font-weight: bold;
 	font-style: italic;
 }
 
@@ -60,21 +67,21 @@
 @font-face {
 	font-family: 'WorkSans';
 	src: url('fonts/WorkSans-Bold.ttf');
-	font-weight: 900;
+	font-weight: bolder;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'WorkSans';
 	src: url('fonts/WorkSans-Light.ttf');
-	font-weight: 100;
+	font-weight: lighter;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'WorkSans';
 	src: url('fonts/WorkSans-Medium.ttf');
-	font-weight: 600;
+	font-weight: bold;
 	font-style: normal;
 }
 
