@@ -6,6 +6,7 @@
 .aurous-header {
 	height: 188px;
 	background-image: url('aurous-banner-real.png');
+	/*background-repeat: repeat;  for width < 1200*/
 	background-repeat: no-repeat;
 	width: 100%;
 
@@ -49,11 +50,13 @@
 }
 
 .drops {
-	// height: 1551px;
+	/*height: 1551px;*/
+
 	background-image: url('drops.png');
 	background-repeat: no-repeat;
 	width: 100%;
-
+	max-width: 1200px;
+	margin: 0 auto;
 	background-size: contain;
 
 	//BRADLEY ADDED THIS
@@ -198,6 +201,14 @@
   opacity:0;
 }
 
+
+
+
+@media (min-width: 1205px) and (max-width: 1950px) {
+	.aurous-header {
+		background-repeat: repeat;
+	}
+}
 
 @media (min-width: 800px) and (max-width: 980px) {
 	.drops {
