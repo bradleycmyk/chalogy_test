@@ -12,9 +12,18 @@
     display: block;
     width: 100%;
     height: 155px;
-    background-image: url('sat-skin-banner.png');
+    text-align: center;
+    background-image: url('SS_PinkBar.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+    /*background-color: rgb(250, 214, 218);*/
+}
+
+
+#sat-banner {
+    width: 1200px;
+    margin: 0 auto;
+    display: none;
 }
 
 .sat_link {
@@ -126,9 +135,21 @@
 }
 
 
-@media (min-width: 1205px) and (max-width: 1950px) {
+@media screen and (min-width: 1205px) {
     .sat_image {
-        background-repeat: repeat;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 155px;
+        text-align: center;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: rgb(250, 214, 218);
+    }
+
+    #sat-banner {
+        display: block;
     }
 }
 
