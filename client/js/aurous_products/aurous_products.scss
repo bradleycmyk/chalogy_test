@@ -9,9 +9,7 @@
 	/*background-repeat: repeat;  for width < 1200*/
 	background-repeat: no-repeat;
 	width: 100%;
-
 	background-size: contain;
-
 }
 
 .fixed {
@@ -201,13 +199,26 @@
   opacity:0;
 }
 
+.aurous7-logo {
+	visibility: hidden;
+}
 
 
 
 @media (min-width: 1205px) and (max-width: 1950px) {
 	.aurous-header {
+		background-image: none;
 		background-repeat: repeat;
+		background-color: black;
 	}
+
+	.aurous7-logo {
+		visibility: visible;
+		position: relative;
+		left: 39%;
+		top: 19%;
+	}
+
 }
 
 @media (min-width: 800px) and (max-width: 980px) {
