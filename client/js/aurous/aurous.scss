@@ -1,127 +1,132 @@
 .aur_hero {
   background-color: #000000;
   color: #FFFFFF;
-
 	height: 1070px;
 
-	.bread_crumb.aurous_crumb {
-	  display: inline-block;
-	  vertical-align: top;
-	  margin: 30px 50px;
+  .wrapper {
+    background-color: #000000;
+    overflow: visible;
 
-		a{
-		  color: #FFFFFF;
-		  font-family: WorkSans;
-		  font-size: 0.8em;
-		  letter-spacing: 1px;
-		}
+    .bread_crumb.aurous_crumb {
+      display: inline-block;
+      vertical-align: top;
+      margin: 30px 50px;
 
-		.caret {
-			fill: #A9A9A9;
-		}
-	}
+      a{
+        color: #FFFFFF;
+        font-family: WorkSans;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+      }
 
-	.aur_logo {
-	  float: right;
-	  margin: 30px 320px 60px 0;
-	  width: 280px;
-	}
+      .caret {
+        fill: #A9A9A9;
+      }
+    }
 
-	.aur_blurb {
-	  display: block;
-	  width: 225px;
-	  text-align: center;
-	  font-weight: 100;
-	  font-size: 0.8em;
-	  margin: 40px 0 0 145px;
-	  font-family: WorkSans;
-	  letter-spacing: 2px;
-		line-height: 1.5;
-	}
+    .aur_logo {
+      float: right;
+      margin: 30px 320px 60px 0;
+      width: 280px;
+    }
 
-	.aur_blurb::before {
-	  content: '';
-	  width: 125px;
-	  margin: 0 auto 25px;
-	  border-bottom: 1px solid #AA8A37;
-	  display: block;
-	}
+    .aur_blurb {
+      display: block;
+      width: 225px;
+      text-align: center;
+      font-weight: 100;
+      font-size: 0.8em;
+      margin: 40px 0 0 145px;
+      font-family: WorkSans;
+      letter-spacing: 2px;
+      line-height: 1.5;
+    }
 
-	.hero_blurb {
-	  display: inline-block;
-	  margin: 260px 0 0 20px;
+    .aur_blurb::before {
+      content: '';
+      width: 125px;
+      margin: 0 auto 25px;
+      border-bottom: 1px solid #AA8A37;
+      display: block;
+    }
 
-		.enrich_blurb {
-		  font-family: MillerBanner;
-		  text-align: center;
-		  display: inline-block;
-		  font-weight: 100;
-		  /*margin: 260px 0 0 50px;*/
-		  letter-spacing: 4px;
-		  width: 470px;
-			font-size: 2.3em;
-			color: #FFFFFF;
-		}
+    .hero_blurb {
+      display: inline-block;
+      margin: 260px 0 0 20px;
 
-		.read_more {
-			display: block;
-			color: white;
-			border: 1px solid #AA8A37;
-			width: 135px;
-			text-align: center;
-			margin: 0 auto;
-			padding: 3px 15px;
-			font-family: WorkSans;
-			font-size: 0.8em;
-			letter-spacing: 1px;
-			font-weight: bold
-		}
-	}
+      .enrich_blurb {
+        font-family: MillerBanner;
+        text-align: center;
+        display: inline-block;
+        font-weight: 100;
+        /*margin: 260px 0 0 50px;*/
+        letter-spacing: 4px;
+        width: 470px;
+        font-size: 2.3em;
+        color: #FFFFFF;
+      }
 
-	.cara_one, .cara_two, .cara_three {
-	  height: 760px;
-	  background-repeat: no-repeat;
-	  background-position: 400px 0px;
-	  background-size: 758px;
-	  clear: both;
-	}
+      .read_more {
+        display: block;
+        color: white;
+        border: 1px solid #AA8A37;
+        width: 135px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 3px 15px;
+        font-family: WorkSans;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        font-weight: bold
+      }
+    }
 
-	.cara_one {
-	  background-image: url('aurous_home_tall.jpg');
-	  // display: block;
-	  /*display: none;*/
-	}
+    .cara_one, .cara_two, .cara_three {
+      height: 760px;
+      background-repeat: no-repeat;
+      background-position: 400px 0px;
+      background-size: 758px;
+      clear: both;
+    }
 
-	.cara_two {
-	  background-image: url('aurous_home_squat.jpg');
-	  /*display: block;*/
-	  // display: none;
-	}
+    .cara_one {
+      background-image: url('aurous_home_tall.jpg');
+      // display: block;
+      /*display: none;*/
+    }
 
-	.cara_three {
-	  background-image: url('aurous_home_tube.jpg');
-	  /*display: block;*/
-	  // display: none;
-	}
+    .cara_two {
+      background-image: url('aurous_home_squat.jpg');
+      /*display: block;*/
+      // display: none;
+    }
 
-	.carousel-indicators {
-		width: 102px;
-		margin: 0 0 0 -505px;
-		text-align: center;
+    .cara_three {
+      background-image: url('aurous_home_tube.jpg');
+      /*display: block;*/
+      // display: none;
+    }
 
-		.active {
-			background-color: #EEEEEE !important;
-			border: none;
-      width: 10px;
-      height: 10px;
-      margin: 1px;
-		}
+    .carousel-indicators {
+      width: 102px;
+      margin: 0 0 0 -53%;
+      text-align: center;
+      background-color: #000000;
 
-		li {
-			background-color: #888888 !important;
-			border: none;
-		}
-	}
+      .active {
+        background-color: #EEEEEE !important;
+        border: none;
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+      }
+
+      li {
+        background-color: #888888 !important;
+        border: none;
+      }
+    }
+  }
 }
 
 /*

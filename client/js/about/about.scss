@@ -17,7 +17,7 @@
     h3 {
       font-size: 32px;
       line-height: 33px;
-      margin: 0;
+      margin: 0 0 0 5px;
     }
 
     h2 {
@@ -82,4 +82,29 @@
     vertical-align: top;
     margin: 0 0 0 40px;
   }
+}
+
+.hepts {
+  position: absolute;
+  z-index: 100;
+}
+
+.hept-about-one {
+  top: 283px;
+  right: 0;
+}
+
+.hept-about-two {
+  top: 660px;
+  left: 15px;
+}
+
+.hept-about-three {
+  top: 790px;
+  left: 0;
+}
+
+.hept-about-four {
+  top: 1085px;
+  right: 0;
 }

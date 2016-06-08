@@ -8,6 +8,18 @@ app.controller('AboutController', function($scope, $http, $window, $location) {
         $(this).children(".paragraph").slideUp();
       }
     });
+
+    function parallax(page, speed, top) {
+      var scrolled = $(window).scrollTop();
+      $('.hept-' + page).css('top', (scrolled * speed) + top + 'px');
+    }
+
+    $(window).scroll(function(e) {
+      parallax('about-one', 0.7, 283);
+      parallax('about-two', 0.6, 660);
+      parallax('about-three', 0.5, 790);
+      parallax('about-four', 0.4, 1085);
+    });
   })
 
   $scope.isActive = function (route) {

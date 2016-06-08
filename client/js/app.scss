@@ -97,7 +97,14 @@ body {
 a {
 	text-decoration: none !important;
 	color: black;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: #000000 !important;
+	}
 }
+
 
 .body-wrap {
 	/*max-width: 1950px;*/
