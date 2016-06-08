@@ -125,6 +125,13 @@
     text-align: center;
 }
 
+
+@media (min-width: 1205px) and (max-width: 1950px) {
+    .sat_image {
+        background-repeat: repeat;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .prodcut-grid-item-inner {
         height: 445px;
