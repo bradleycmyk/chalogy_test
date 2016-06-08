@@ -1,16 +1,29 @@
-.aurous-body {
-	/*position: relative;*/
-	/*width: 1200px;*/
-}
-
 .aurous-header {
 	height: 188px;
 	background-image: url('aurous-banner-real.png');
-	/*background-repeat: repeat;  for width < 1200*/
+	/*background-repeat: repeat;  for width > 1200*/
 	background-repeat: no-repeat;
 	width: 100%;
 	background-size: contain;
+	/*max-width: 1200px;*/
+	/*margin: 0 auto;*/
 }
+
+.aurous-header-fix {
+	background-color: black;
+	width: 100%;
+	height: 188px;
+	display: none;
+}
+
+.aurous-banner {
+	height: 188px;
+	width: 1200px;
+	background-image: url('aurous-banner-real.png');
+	background-size: contain;
+	margin: 0 auto;
+}
+
 
 .fixed {
 	position: fixed;
@@ -210,6 +223,11 @@
 		background-image: none;
 		background-repeat: repeat;
 		background-color: black;
+		display: none;
+	}
+
+	.aurous-header-fix {
+		display: block;	
 	}
 
 	.aurous7-logo {
