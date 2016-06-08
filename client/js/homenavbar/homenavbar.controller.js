@@ -1,8 +1,10 @@
 app.controller('HomeNavBarController', function($scope, $http, $state, $stateParams) {
 
-	$("#callingsearch").click(function(){
+	$("#callingsearchs").click(function(){
 		$("#testingsearch").fadeIn(2000).css("display","inline-block").focus();
+		// $(".brand").hide();
 		$("#callingsearch").css("margin-left", 10);
+		$("#callingsearchs").css("margin-top", -40);
 
 		var text = $("#testingsearch").val();
 		if (text == ""){
@@ -13,6 +15,14 @@ app.controller('HomeNavBarController', function($scope, $http, $state, $statePar
 		$("#testingsearch").val("");
 
 	});
+
+	$('.dropdown a').focus(function() {
+		console.log($(this).siblings());
+		$(this).siblings().show();
+	})
+	.blur(function() {
+		$(this).siblings().hide();
+	})
 
 	$(document).keypress(function(event) {
 	    var keycode = (event.keyCode ? event.keyCode : event.which);
@@ -27,7 +37,7 @@ app.controller('HomeNavBarController', function($scope, $http, $state, $statePar
 	    };
 	});
 
-	// hide search input when clicking outside it 
+	// hide search input when clicking outside it
 	$(document).mouseup(function (e)
 	{
 	    var container = $("#testingsearch");
@@ -37,6 +47,8 @@ app.controller('HomeNavBarController', function($scope, $http, $state, $statePar
 	    {
 	        container.css("display", "none");
 	        $("#callingsearch").css("margin-left", 158);
+	        $("#callingsearchs").css("margin-top", 4);
+	        // $(".brand").show();
 	    }
 	});
 
