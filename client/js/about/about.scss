@@ -3,196 +3,83 @@
 }
 
 .about {
-  background-image: url('cream.jpg');
-  background-repeat: no-repeat;
+  width: 900px;
+  margin: 60px auto 0;
+  color: #000000;
 
-  .left-about {
-    display: inline-block;
+  .shhh {
     vertical-align: top;
-    margin: 0 0 0 141px;
-
-    .tagline-about {
-      font-family: 'MillerBanner';
-      color: #FFFFFF;
-      margin: 614px 0 0;
-      position: relative;
-    }
-
-    .tagline-about::before {
-      content: '';
-      display: block;
-      border-top: 1px solid #FFFFFF;
-      border-left: 1px solid #FFFFFF;
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      top: -10px;
-      left: -10px;
-    }
-
-    .science {
-      margin: 148px 0 0 0;
-
-      h2 {
-        font-family: 'MillerBanner';
-        text-transform: uppercase;
-        font-size: 26px;
-      }
-
-      p {
-        font-family: 'WorkSans';
-        font-size: 14px;
-      }
-    }
+    position: relative;
+    z-index: 2;
   }
 
-  .right-about {
-    width: 444px;
-    margin-left: 219px;
-    display: inline-block;
-    vertical-align: top;
-
-    .large-logo {
-      display: inline-block;
-      vertical-align: top;
-      margin: 155px 0 0 -133px;
-      height: 121px;
-      width: 444px;
-      background-color: #A9A9A9;
-    }
-
-    .vision {
-      width: 289px;
-      margin: 126px 0 20px 30px;
-
-      h2 {
-        font-family: 'MillerBanner';
-        text-transform: uppercase;
-        font-size: 26px;
-      }
-
-      p {
-        font-family: WorkSans;
-      }
-    }
-
-    .rectangle_eye {
-      background-color: #A9A9A9;
-      width: 444px;
-      height: 626px;
-      margin: 0 0 0 -133px;
-    }
-  }
-
-  .learn_more {
-    font-family: MinionPro;
-    text-align: center;
-    margin: 44px 0 5px 0;
-    font-size: 20px;
-  }
-
-  .buttons-about {
-    width: 932px;
-    margin: 0 auto 20px;
-    font-size: 0;
-
-    .rooted, .constant {
-      margin: 0 32px 0 0;
-    }
-
-    .rooted, .constant, .versatile {
-      vertical-align: top;
-      display: inline-block;
-
-      h2 {
-        width: 289px;
-        border: 1px solid #000000;
-        font-family: 'MinionPro';
-        text-transform: uppercase;
-        font-size: 26px;
-        text-align: center;
-        margin: 0;
-        padding: 12px 0;
-        cursor: pointer;
-      }
-
-      .arrow-down {
-        height: 18px;
-        width: 18px;
-        display: block;
-        margin: -5px auto 0;
-      }
-    }
-
-    .rootedp.paragraph, .constantp.paragraph {
+  .vision, .science, .beauty {
+    h3 {
+      font-size: 32px;
+      line-height: 33px;
       margin: 0;
     }
 
-    .paragraph {
-      vertical-align: top;
-      display: none;
-      width: 289px;
-
-      p {
-        font-family: "WorkSans";
-        text-align: center;
-        font-size: 15px;
-      }
-    }
-
-    .showing {
-      display: block;
-    }
-  }
-
-  .button-paragraphs-about {
-    width: 932px;
-    margin: 0 auto;
-  }
-
-  .banner-about {
-    width: 100%;
-    background-color: #000000;
-    display: inline-block;
-    margin: 59px 0 36px;
-
     h2 {
-      width: 614px;
-      margin: 24px auto;
-      color: #FFFFFF;
-      font-family: 'MillerBanner';
-      text-align: center;
-    }
-  }
+      font-size: 92px;
+      line-height: 96px;
+      margin: 0;
 
-  .back_to_top {
-    width: 91px;
-    margin: 0 auto 19px;
-
-    a {
-      color: #000000;
-
-      h4 {
-        font-family: "MinionPro";
-        font-size: 20px;
+      &::after {
+        content: '';
+        display: block;
+        border-top: 5px solid black;
+        width: 50px;
+        margin: 0 0 20px;
       }
     }
 
-    a:hover,
-    a:active {
-      color: #000000;
+    h3, h2 {
+      font-family: MillerBanner;
+      font-style: italic;
+      text-transform: uppercase;
+      font-weight: bold;
     }
 
-    h4::before {
-      content: '';
-      display: block;
-      background-image: url('caret-top-8x.png');
-      background-repeat: no-repeat;
-      background-size: 18px;
-      background-position: 0;
-      height: 18px;
-      width: 18px;
-      margin: 0 auto;
+    p {
+      font-family: WorkSans;
+      font-size: 15px;
+
+      span {
+        font-style: italic;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        display: block;
+        margin: 0 0 7px;
+      }
     }
+  }
+
+  .vision {
+    width: 480px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 -600px 34px 34px;
+  }
+
+  .creamy {
+    margin-top: 390px;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+  }
+
+  .science {
+    margin: -130px 0 60px 0;
+    position: relative;
+    z-index: 2;
+    width: 600px;
+  }
+
+  .beauty {
+    width: 460px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 40px;
   }
 }

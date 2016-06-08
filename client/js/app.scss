@@ -1,3 +1,90 @@
+//MillerBanner font
+
+//regular
+@font-face {
+	font-family: 'MillerBanner';
+	src: url('fonts/MillerBanner-Roman.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+//semibold
+@font-face {
+	font-family: 'MillerBanner';
+	src: url('fonts/MillerBanner-Semibold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+//bold
+@font-face {
+	font-family: 'MillerBanner';
+	src: url('fonts/MillerBanner-Bold.ttf');
+	font-weight: bolder;
+	font-style: normal;
+}
+
+//italic
+@font-face {
+	font-family: 'MillerBanner';
+	src: url('fonts/MillerBanner-Italic.ttf');
+	font-weight: normal;
+	font-style: italic;
+}
+
+//light-italic
+@font-face {
+	font-family: 'MillerBanner';
+	src: url('fonts/MillerBanner-LightItalic.ttf');
+	font-weight: lighter;
+	font-style: italic;
+}
+
+//semibold-italic
+@font-face {
+	font-family: 'MillerBanner';
+	src: url('fonts/MillerBanner-SemiboldItalic.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+
+//MinionPro font
+@font-face {
+	font-family: 'MinionPro';
+	src: url('fonts/MinionPro-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+//WorkSans font
+@font-face {
+	font-family: 'WorkSans';
+	src: url('fonts/WorkSans-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'WorkSans';
+	src: url('fonts/WorkSans-Bold.ttf');
+	font-weight: bolder;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'WorkSans';
+	src: url('fonts/WorkSans-Light.ttf');
+	font-weight: lighter;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'WorkSans';
+	src: url('fonts/WorkSans-Medium.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
 html {
 	background-color: white;
 }
@@ -229,6 +316,45 @@ a {
 				font-size: 16px;
 			}
 		}
+	}
+}
+
+.emb {
+  font-family: MillerBanner;
+  font-size: 27px;
+  line-height: 31px;
+}
+
+.back_to_top {
+	width: 95px;
+	margin: 0 auto 19px;
+
+	a {
+		color: #000000;
+
+		h4 {
+			font-family: MillerBanner;
+			font-weight: lighter;
+			font-style: italic;
+			font-size: 20px;
+		}
+	}
+
+	a:hover,
+	a:active {
+		color: #000000;
+	}
+
+	h4::before {
+		content: '';
+		display: block;
+		background-image: url('caret-top-8x.png');
+		background-repeat: no-repeat;
+		background-size: 18px;
+		background-position: 0;
+		height: 18px;
+		width: 18px;
+		margin: 0 auto;
 	}
 }
 
