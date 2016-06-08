@@ -1,4 +1,3 @@
-
 .navigation-home {
   width: 100%;
   display: block;
@@ -16,7 +15,6 @@
   margin-left: auto;
   margin-right: auto;
   /*box-shadow: 0 4px 4px -4px #BBBBBB;*/
-  max-width: 1200px;
 
 }
 
@@ -25,7 +23,7 @@
   max-width: 100%;
 }
 
-.navigation-home > .brand, .page-width > .brand {
+.navigation-home > .brand, .page-width-home > .brand {
   padding-top: 35px;
   padding-bottom: 5px;
   width: 140px;
@@ -33,7 +31,7 @@
   margin-left: 50px;
 }
 
-.navigation-home > .middle-nav {
+.navigation-home > .middle-nav , .page-width-home > .middle-nav {
   max-width: 600px;
   min-width: 280px;
   height: 55px;
@@ -81,6 +79,11 @@
 }
 
 @media (min-width: 1205px) and (max-width: 1950px) {
+
+  .page-width-home {
+    width: 1200px;
+    margin: 0 auto;
+  }
 
   .navigation-home > .brand {
     float: none;
