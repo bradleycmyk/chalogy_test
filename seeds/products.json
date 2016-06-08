@@ -86,7 +86,7 @@
 		"category": "saturday-skin",
 		"recs": [
 			{
-				"name": "Wide Awake",
+				"name": "Featherweight",
 				"img": "sat-product.png"
 			},
 			{
@@ -108,7 +108,16 @@
 		"how": "Pump twice to release cream. Swipe it onto fingers and tap cream into your skin in an outward motion.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
 		"category": "saturday-skin",
-		"recs": [null, null]
+		"recs": [
+			{
+				"name": "Daily Dew",
+				"img": "sat-product.png"
+			},
+			{
+				"name": "Rise + Shine",
+				"img": "sat-product.png"
+			}
+		]
 	},
 	{
 		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
@@ -153,7 +162,7 @@
 				"img": "sat-product.png"
 			},
 			{
-				"name": "Rise + Shine",
+				"name": "Wide Awake",
 				"img": "sat-product.png"
 			}
 		]

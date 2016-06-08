@@ -95,32 +95,6 @@
 	}
 
 	.inn-bottom {
-		.sg-banner {
-			width: 1200px;
-			margin: 0 0 40px;
-			display: inline-block;
-			color: #FFFFFF;
-			background-image: url("MOS-detail_01.jpg");
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center;
-
-			h2 {
-				font-size: 84px;
-				text-align: center;
-
-				.smaller {
-					font-size: 30px;
-				}
-			}
-
-			h3 {
-				color: #FFFFFF;
-				text-align: center;
-				width: 604px;
-				margin: 0 auto 55px;
-			}
-		}
 		.inn-bottom-bottom {
 			width: 830px;
 			margin: 0 auto;
@@ -147,6 +121,44 @@
 					left: -15px;
 				}
 			}
+		}
+	}
+}
+
+.sg-banner {
+	width: 100%;
+	margin: 0 0 40px;
+	display: inline-block;
+	color: #FFFFFF;
+	// background: #A9A9A9; /* For browsers that do not support gradients */
+  // background: -webkit-linear-gradient(left, #000000 ,#A9A9A9); /* For Safari 5.1 to 6.0 */
+  // background: -o-linear-gradient(right, #000000, #A9A9A9); /* For Opera 11.1 to 12.0 */
+  // background: -moz-linear-gradient(right, #000000, #A9A9A9); /* For Firefox 3.6 to 15 */
+  // background: linear-gradient(to right, #000000 ,#A9A9A9); /* Standard syntax */
+
+	background-image: url("MOS-detail_01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	.header-container {
+		width: 1200px;
+		margin: 0 auto;
+		overflow: auto;
+
+		h2 {
+			font-size: 84px;
+			text-align: center;
+
+			.smaller {
+				font-size: 30px;
+			}
+		}
+
+		h3 {
+			color: #FFFFFF;
+			text-align: center;
+			width: 604px;
+			margin: 0 auto 55px;
 		}
 	}
 }
@@ -191,6 +203,36 @@ button.slick-prev {
 	width: 100%;
 	max-width: 1200px;
 	height: auto;
+}
+
+.hepts {
+  position: absolute;
+  z-index: 100;
+}
+
+.hept-inn-one {
+  top: 120px;
+  right: 80px;
+}
+
+.hept-inn-two {
+  top: 215px;
+  right: 0px;
+}
+
+.hept-inn-three {
+	top: 725px;
+	left: 0;
+}
+
+.hept-inn-four {
+  top: 2075px;
+  right: 60px;
+}
+
+.hept-inn-five {
+  top: 2150px;
+  right: 0;
 }
 
 
