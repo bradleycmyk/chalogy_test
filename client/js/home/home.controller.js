@@ -5,15 +5,6 @@ app.controller('HomeController', function($scope, $http, homeFactory) {
 	})
 
 	$(document).ready(function(){
-
-		// $('.ribbon-wrapper-blue').delay(100).animate({
-		//   left: '+=558px',
-		//   top: '+=538px'
-		// }, 900);
-
-		// $('.ribbon-cover-blue').css({
-		// 	'left': '558px'
-		// });
 		function uncover(ribbon, delay, direction, amount) {
 			$('.ribbon-cover-' + ribbon).delay(delay).animate({
 				direction: amount
@@ -21,8 +12,6 @@ app.controller('HomeController', function($scope, $http, homeFactory) {
 				$('.ribbon-cover-' + ribbon).css({'display': 'none'});
 			});
 		}
-
-		// uncover('blue', 2000, 'left', '+=558px');
 
 		$('.ribbon-cover-green').animate({
 			left: '-=1310px'
@@ -36,12 +25,7 @@ app.controller('HomeController', function($scope, $http, homeFactory) {
 			$('.ribbon-cover-blue').css({'display': 'none'});
 		});
 
-		// $('.ribbon-wrapper-green').delay(1000).animate({
-		//   left: '-=800px',
-		//   top: '+=441px'
-		// }, 900);
-
-		$('.circle-wrapper-red').delay(2100).fadeIn(1200);
+		$('.circle-wrapper-red').delay(2300).fadeIn(1200);
 
 		$('.animator h1').delay(3300).fadeIn(1200);
 
@@ -50,7 +34,6 @@ app.controller('HomeController', function($scope, $http, homeFactory) {
 		$('footer').delay(5700).fadeIn(1200);
 
 		$('.wrapper').delay(5700).queue(function(next) {
-
 		  $(this).css({
 		    'height': 'auto'
 		  });
@@ -83,50 +66,19 @@ app.controller('HomeController', function($scope, $http, homeFactory) {
 		//   next();
 		// })
 
-		$('.hoover-red, .circle-triangle, .circle-triangle-two').hover(
-		  function() {
-		    console.log('in');
-		    // $(".chalogy, .cha_plus").stop().animate({
-		    //   "left": "+=22px",
-		    //   "top": "+=22px"
-		    // }, 625);
-		    $(".circle-red").stop().toggleClass("red-changer");
-		  }
-		  // function() {
-		  //   $(".chalogy, .cha_plus").stop(false, false).animate({
-		  //     "left" : "-=22px",
-		  //     "top": "-=22px"
-		  //   }, 625)
-		  //   $(".circle-red").stop().delay(100).removeClass("red-changer");
-		  //
-		  // }
-		)
-
-		// $('.hoover-red, .circle-triangle, .circle-triangle-two').hover(
-		//   function() {
-		//     $(".chalogy, .cha_plus").animate({
-		//       "left": "+=30px",
-		//       "top": "+=30px"
-		//     }, 625)
-		//   },
-		//   function() {
-		//     $(".chalogy, .cha_plus").animate({
-		//       "left" : "-=30px",
-		//       "top": "-=30px"
-		//     }, 625)
-		//   }
-		// );
+		$('.hoover-red, .circle-triangle, .circle-triangle-two').hover(function() {
+	    console.log('in');
+	    $(".circle-red").stop().toggleClass("red-changer");
+	  });
 
 		$('.hoover-blue').hover(function() {
 		  console.log('in');
 		  $(".ribbon-blue").toggleClass("blue-changer");
-		})
+		});
 
 		$('.hoover-green').hover(function() {
 		  console.log('in');
 		  $(".ribbon-green").toggleClass("green-changer");
-		})
-
+		});
 	})
-
 });

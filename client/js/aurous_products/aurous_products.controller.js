@@ -10,5 +10,8 @@ app.controller('AurousProductsController', function($scope, $http, AurousFactory
 	$scope.isActive = function (route) {
     	return route == $window.location.href.split("5959/")[1];
   	};
-});
 
+		$(document).ready(function() {
+			$(window).scrollTop(0);
+		})
+});

@@ -17,44 +17,44 @@
 - Cross Browser Fix
 */
 
-@font-face {
-  font-family: 'MillerBanner';
-  src: url('fonts/MillerBanner-Semibold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'MinionPro';
-  src: url('fonts/MinionPro-Regular.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'WorkSans';
-  src: url('fonts/WorkSans-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'WorkSans';
-  src: url('fonts/WorkSans-Bold.ttf') format('truetype');
-  font-weight: bolder;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'WorkSans';
-  src: url('fonts/WorkSans-Medium.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'WorkSans';
-  src: url('fonts/WorkSans-Light.ttf') format('truetype');
-  font-weight: lighter;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'MillerBanner';
+//   src: url('fonts/MillerBanner-Semibold.ttf') format('truetype');
+// }
+//
+// @font-face {
+//   font-family: 'MinionPro';
+//   src: url('fonts/MinionPro-Regular.otf') format('opentype');
+// }
+//
+// @font-face {
+//   font-family: 'WorkSans';
+//   src: url('fonts/WorkSans-Regular.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+//
+// @font-face {
+//   font-family: 'WorkSans';
+//   src: url('fonts/WorkSans-Bold.ttf') format('truetype');
+//   font-weight: bolder;
+//   font-style: normal;
+// }
+//
+// @font-face {
+//   font-family: 'WorkSans';
+//   src: url('fonts/WorkSans-Medium.ttf') format('truetype');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+//
+//
+// @font-face {
+//   font-family: 'WorkSans';
+//   src: url('fonts/WorkSans-Light.ttf') format('truetype');
+//   font-weight: lighter;
+//   font-style: normal;
+// }
 
 /*html, div {
   padding: 0;
@@ -136,9 +136,6 @@ a:focus {
     position: relative;
     z-index: 90;
     height: 1258px;
-    /*-webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
-    -moz-box-shadow:    0px 0px 8px rgba(0,0,0,0.3);
-    box-shadow:         0px 0px 8px rgba(0,0,0,0.3);*/
 
     .animator {
       width: 100%;
@@ -163,97 +160,84 @@ a:focus {
     .circle-wrapper-red {
       width: 850px;
       height: 850px;
-
       border-radius: 0 54% 54%;
-
       overflow: hidden;
-
-      /*width: 69.2%;*/
       margin: 47px 153px;
-      /*margin: 7.08% 10.6%;*/
       display: none;
-    }
 
-    .circle-red {
-      width: 850px;
-      /*width: 100%;*/
-      height: 850px;
+      // -webkit-transition: all 500ms linear;
+      // -o-transition: all 500ms linear;
+      // -moz-transition: all 500ms linear;
+      // -ms-transition: all 500ms linear;
+      // -kthtml-transition: all 500ms linear;
+      // transition: all 500ms linear;
 
-      z-index: -2000;
+      .circle-red {
+        width: 850px;
+        height: 850px;
+        z-index: -2000;
+        text-align: center;
+        background-image: url('eyes.png');
+        background-repeat: no-repeat;
+        background-position: -7px 30px;
+        background-size: 860px;
 
-      text-align: center;
+        /*transitions*/
+        -webkit-transition: all 1000ms linear;
+        -o-transition: all 1000ms linear;
+        -moz-transition: all 1000ms linear;
+        -ms-transition: all 1000ms linear;
+        -kthtml-transition: all 1000ms linear;
+        transition: all 1000ms linear;
 
-      background-image: url('eyes.png');
-      background-repeat: no-repeat;
-      background-position: -7px 30px;
-      background-size: 860px;
-      /*background-size: 99%;*/
+        .chalogy {
+          width: 210px;
 
-      /*transitions*/
-      -webkit-transition: all 500ms linear;
-      -o-transition: all 500ms linear;
-      -moz-transition: all 500ms linear;
-      -ms-transition: all 500ms linear;
-      -kthtml-transition: all 500ms linear;
-      transition: all 500ms linear;
-    }
+          position: absolute;
+          top: 477px;
+          left: 575px;
+        }
 
-    .red-changer {
-      background-size: 890px;
-      /*background-size: 110%;*/
-      /*background-position: -60px -567px;*/
+        .cha_plus {
+          top: 498px;
+          left: 966px;
+        }
+      }
 
-      -webkit-transition: all 500ms linear;
-      -o-transition: all 500ms linear;
-      -moz-transition: all 500ms linear;
-      -ms-transition: all 500ms linear;
-      -kthtml-transition: all 500ms linear;
-      transition: all 500ms linear;
-    }
+      .circle-red:hover, .circle-triangle:hover, .circle-triangle-two:hover {
+        background-size: 890px 890px;
+        // background-position: -7px 40px;
 
-    .chalogy {
-      width: 210px;
-
-      position: absolute;
-      top: 477px;
-      /*top: 39%;*/
-      left: 575px;
-      /*left: 44.2%;*/
-    }
-
-    .cha_plus {
-      top: 498px;
-      /*top: 40.8%;*/
-      left: 966px;
-      /*left: 73.8%;*/
+        -webkit-transition: all 1000ms;
+        -o-transition: all 1000ms;
+        -moz-transition: all 1000ms;
+        -ms-transition: all 1000ms;
+        -kthtml-transition: all 1000ms;
+        transition: all 1000ms;
+      }
     }
 
     .circle-triangle, .circle-triangle-two {
       z-index: 3;
+      position: absolute;
     }
 
     .circle-triangle {
-      width: 789px;
-      height: 282px;
-
-      position: absolute;
-      top: 159px;
-      left: 135px;
-
-      -webkit-clip-path: polygon(0 232px, 631px 0, 671px 34px, 700px 66px, 740px 126px, 768px 186px, 790px 282px, 63px 282px);
+      width: 852px;
+      height: 308px;
+      top: 133px;
+      left: 150px;
+      -webkit-clip-path: polygon(0 252px, 686px 0, 724px 34px, 753px 66px, 796px 126px, 836px 219px, 851px 308px, 70px 308px);
       clip-path: polygon(0 232px, 631px 0, 671px 34px, 700px 66px, 740px 126px, 768px 186px, 790px 282px, 63px 282px);
     }
 
     .circle-triangle-two {
-      width: 359px;
-      height: 291px;
-
-      position: absolute;
+      width: 383px;
+      height: 311px;
       top: 441px;
-      left: 199px;
-
-      -webkit-clip-path: polygon(0 0, 359px 293px,359px 0px);
-      clip-path: polygon(0 0, 359px 293px,359px 0px);
+      left: 221px;
+      -webkit-clip-path: polygon(0 0, 383px 310px, 383px 0px);
+      clip-path: polygon(0 0, 359px 293px, 359px 0px);
     }
 
     .ribbon-cover-blue {
@@ -266,126 +250,110 @@ a:focus {
 
       overflow: hidden;
       z-index: 2;
-      // -webkit-transition: all 1s linear;
-      // -o-transition: all 1s linear;
-      // -moz-transition: all 1s linear;
-      // -ms-transition: all 1s linear;
-      // -kthtml-transition: all 1s linear;
-      // transition: all 1s linear;
       background-color: white;
       box-shadow: -60px 61px 81px #FFFFFF;
+
     }
 
     .ribbon-wrapper-blue {
       width: 604px;
       height: 816px;
-
-      /*display: none;*/
-
       position: absolute;
-      // top: -265px;
-      // left: -558px;
-
       top: 265px;
       left: 0;
-
       overflow: hidden;
       z-index: 1;
-    }
 
-    .ribbon-blue {
-      width: 256px;
-      height: 970px;
-      position: relative;
-      top: -70px;
-      left: 184px;
-      background-color: #414141;
-      overflow: hidden;
+      .ribbon-blue {
+        width: 256px;
+        height: 970px;
+        position: relative;
+        top: -70px;
+        left: 184px;
+        background-color: #414141;
+        overflow: hidden;
 
-      font: bold 15px Sans-Serif;
-      color: #FFFFFF;
-      text-align: center;
+        font: bold 15px Sans-Serif;
+        color: #FFFFFF;
+        text-align: center;
 
 
-      -webkit-box-shadow: 3px 18px 13px 0px rgb(54, 54, 54);
-      -moz-box-shadow: 3px 18px 13px 0px rgb(54, 54, 54);
-      box-shadow: 3px 18px 13px 0px rgb(54, 54, 54);
+        -webkit-box-shadow: 3px 18px 13px 0px #5C5C5C;
+        -moz-box-shadow: 3px 18px 13px 0px #5C5C5C;
+        box-shadow: 3px 18px 13px 0px #5C5C5C;
 
-      /* Rotations */
-      -webkit-transform: rotate(-51deg);
-      -moz-transform:    rotate(-51deg);
-      -ms-transform:     rotate(-51deg);
-      -o-transform:      rotate(-51deg);
-    }
+        /* Rotations */
+        -webkit-transform: rotate(-51deg);
+        -moz-transform:    rotate(-51deg);
+        -ms-transform:     rotate(-51deg);
+        -o-transform:      rotate(-51deg);
+        transform:         rotate(-51deg);
 
-    .ribbon-blue:before {
-      width: 603px;
-      height: 814px;
+        &:before {
+          width: 603px;
+          height: 814px;
 
-      position: absolute;
-      top: 79px;
-      left: -184px;
+          position: absolute;
+          top: 79px;
+          left: -184px;
+          z-index: -1;
 
-      z-index: -1;
+          content: "";
 
-      content: "";
+          background-image: url("flipped_CHA_largeBottle_TILT_frontView_goldTop_v02_fromAE.png");
+          background-repeat: no-repeat;
+          background-size: 790px;
+          background-position: -67px 106px;
 
-      background-image: url("flipped_CHA_largeBottle_TILT_frontView_goldTop_v02_fromAE.png");
-      background-repeat: no-repeat;
-      background-size: 790px;
-      background-position: -67px 106px;
+          /* Counter-rotations for background image */
+          -webkit-transform:  rotate(51deg);
+          -moz-transform:     rotate(51deg);
+          -ms-transform:      rotate(51deg);
+          -o-transform:       rotate(51deg);
+          transform:          rotate(51deg);
 
-      /* Counter-rotations for background image */
-      -webkit-transform:  rotate(51deg);
-      -moz-transform:     rotate(51deg);
-      -ms-transform:      rotate(51deg);
-      -o-transform:       rotate(51deg);
-      transform:          rotate(51deg);
+          -webkit-transition: all 500ms linear;
+          -o-transition: all 500ms linear;
+          -moz-transition: all 500ms linear;
+          -ms-transition: all 500ms linear;
+          -kthtml-transition: all 500ms linear;
+          transition: all 500ms linear;
+        }
 
-      -webkit-transition: all 500ms linear;
-      -o-transition: all 500ms linear;
-      -moz-transition: all 500ms linear;
-      -ms-transition: all 500ms linear;
-      -kthtml-transition: all 500ms linear;
-      transition: all 500ms linear;
-    }
+        .aurous {
+          width: 155px;
 
-    .blue-changer:before {
-      background-size: 880px;
+          position: absolute;
+          top: 440px;
+          left: 35px;
 
-      -webkit-transition: all 500ms linear;
-      -o-transition: all 500ms linear;
-      -moz-transition: all 500ms linear;
-      -ms-transition: all 500ms linear;
-      -kthtml-transition: all 500ms linear;
-      transition: all 500ms linear;
-      /*background-position: -60px -567px;*/
-    }
+          transform: rotate(51deg);
+        }
 
-    .aurous {
-      width: 155px;
+        .aur_plus {
+          top: 820px;
+          left: 121px;
 
-      position: absolute;
-      top: 440px;
-      left: 35px;
+          transform: rotate(51deg);
+        }
+      }
 
-      transform: rotate(51deg);
-    }
+      .blue-changer:before {
+        transform: scale(1.1) rotate(51deg);
 
-    .aur_plus {
-      top: 820px;
-      left: 121px;
-
-      transform: rotate(51deg);
+        -webkit-transition: all 500ms linear;
+        -o-transition: all 500ms linear;
+        -moz-transition: all 500ms linear;
+        -ms-transition: all 500ms linear;
+        -kthtml-transition: all 500ms linear;
+        transition: all 500ms linear;
+      }
     }
 
     .ribbon-cover-green {
       width: 1200px;
-      /*width: 100%;*/
       height: 441px;
       position: absolute;
-      // top: -441px;
-      // left: 800px;
 
       top: 0;
       left: 0;
@@ -398,117 +366,94 @@ a:focus {
 
     .ribbon-wrapper-green {
       width: 1200px;
-      /*width: 100%;*/
       height: 441px;
       position: absolute;
-      // top: -441px;
-      // left: 800px;
-
       top: 0;
       left: 0;
       overflow: hidden;
       z-index: 2;
-      /*display: none;*/
 
-      /*-webkit-transition: all 500ms linear;
-      -o-transition: all 500ms linear;
-      -moz-transition: all 500ms linear;
-      -ms-transition: all 500ms linear;
-      -kthtml-transition: all 500ms linear;
-      transition: all 500ms linear;*/
-    }
+      .ribbon-green {
+        width: 1277px;
+        height: 240px;
+        position: relative;
+        top: -13px;
+        left: -80px;
+        overflow: hidden;
 
-    .ribbon-green {
-      width: 1277px;
-      /*width: 103.625%;*/
-      height: 240px;
+        font: bold 15px Sans-Serif;
+        color: #333;
+        text-align: center;
 
-      position: relative;
-      top: -13px;
-      left: -80px;
-      /*left: -7.8%;*/
-      overflow: hidden;
+        -webkit-box-shadow: 162px 10px 37px -11px #A0A0A0;
+        -moz-box-shadow: 162px 10px 37px -11px #A0A0A0;
+        box-shadow: 162px 10px 37px -11px #A0A0A0;
 
-      font: bold 15px Sans-Serif;
-      color: #333;
-      text-align: center;
+        /* Rotations */
+        -webkit-transform: rotate(-20.1deg);
+        -moz-transform:    rotate(-20.1deg);
+        -ms-transform:     rotate(-20.1deg);
+        -o-transform:      rotate(-20.1deg);
+        transform:         rotate(-20.1deg);
 
-      -webkit-box-shadow: 114px 18px 17px -18px rgb(54, 54, 54);
-      -moz-box-shadow: 114px 18px 17px -18px rgb(54, 54, 54);
-      box-shadow: 114px 18px 17px -18px rgb(54, 54, 54);
+        &:before {
+          width: 1203px;
+          height: 441px;
 
-      /* Rotations */
-      -webkit-transform: rotate(-20.1deg);
-      -moz-transform:    rotate(-20.1deg);
-      -ms-transform:     rotate(-20.1deg);
-      -o-transform:      rotate(-20.1deg);
-      transform:         rotate(-20.1deg);
-    }
+          position: absolute;
+          top: 20px;
+          left: 38px;
+          z-index: -1;
 
-    .ribbon-green:before {
-      width: 1203px;
-      /*width: 106.625%;*/
-      height: 441px;
+          content: "";
 
-      position: absolute;
-      top: 20px;
-      left: 38px;
-      z-index: -1;
+          background-image: url("flipped_pinkcream.png");
+          background-repeat: no-repeat;
+          background-size: 1198px;
+          background-position: 0px -497px;
 
-      content: "";
+          /* Counter-rotations for background image */
+          -webkit-transform:  rotate(20.1deg);
+          -moz-transform:     rotate(20.1deg);
+          -ms-transform:      rotate(20.1deg);
+          -o-transform:       rotate(20.1deg);
+          transform:          rotate(20.1deg);
 
-      background-image: url("flipped_pinkcream.png");
-      background-repeat: no-repeat;
-      background-size: 1198px;
-      /*background-size: 92.5%;*/
-      background-position: 0px -497px;
-      /*background-position: 1.5% 45%;*/
+          -webkit-transition: all 500ms linear;
+          -o-transition: all 500ms linear;
+          -moz-transition: all 500ms linear;
+          -ms-transition: all 500ms linear;
+          -kthtml-transition: all 500ms linear;
+          transition: all 500ms linear;
+        }
 
+        .saturday {
+          width: 190px;
 
-      /* Counter-rotations for background image */
-      -webkit-transform:  rotate(20.1deg);
-      -moz-transform:     rotate(20.1deg);
-      -ms-transform:      rotate(20.1deg);
-      -o-transform:       rotate(20.1deg);
-      transform:          rotate(20.1deg);
+          position: absolute;
+          top: 50px;
+          left: 285px;
 
-      -webkit-transition: all 500ms linear;
-      -o-transition: all 500ms linear;
-      -moz-transition: all 500ms linear;
-      -ms-transition: all 500ms linear;
-      -kthtml-transition: all 500ms linear;
-      transition: all 500ms linear;
-    }
+          transform: rotate(20.1deg);
+        }
 
-    .green-changer:before {
-      background-size: 1308px;
-      background-position: -60px -567px;
+        .sat_plus {
+          top: 195px;
+          left: 1080px;
+          transform: rotate(20.1deg);
+        }
+      }
 
-      -webkit-transition: all 500ms linear;
-      -o-transition: all 500ms linear;
-      -moz-transition: all 500ms linear;
-      -ms-transition: all 500ms linear;
-      -kthtml-transition: all 500ms linear;
-      transition: all 500ms linear;
-    }
+      .green-changer:before {
+        transform: scale(1.1) rotate(20.1deg);
 
-    .saturday {
-      width: 190px;
-
-      position: absolute;
-      top: 50px;
-      left: 285px;
-
-      transform: rotate(20.1deg);
-    }
-
-    .sat_plus {
-      top: 195px;
-      /*top: 77.2%;*/
-      left: 1080px;
-      /*left: 70.1%;*/
-
-      transform: rotate(20.1deg);
+        -webkit-transition: all 500ms linear;
+        -o-transition: all 500ms linear;
+        -moz-transition: all 500ms linear;
+        -ms-transition: all 500ms linear;
+        -kthtml-transition: all 500ms linear;
+        transition: all 500ms linear;
+      }
     }
   }
 
@@ -523,14 +468,13 @@ a:focus {
 
     p {
       text-transform: uppercase;
-      /*font-family: 'Work Sans';*/
       font-family: WorkSans;
       width: 314px;
       margin: 0 auto;
       text-align: center;
       line-height: 1.2;
       letter-spacing: 0.2px;
-      font-size: 16px;
+      font-size: 15px;
     }
 
     a {
@@ -554,388 +498,387 @@ a:focus {
     }
   }
 
-
 .header_page footer {
   display: none;
 }
 
 
 /*************** Media Query ******************/
-@media only screen and (max-width : 1024px) {
-  .wrapper {
-   /* width: 1200px;
-    height: 1258px;*/
-    /*margin: 115px auto;*/
-    margin: 0 auto;
-
-    position: relative;
-    z-index: 90;
-
-    background: white;
-    overflow: hidden;
-
-    /*-webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
-    -moz-box-shadow:    0px 0px 8px rgba(0,0,0,0.3);
-    box-shadow:         0px 0px 8px rgba(0,0,0,0.3);*/
-  }
-
-  .animator {
-    width: 100%;
-    height: 955px;
-  }
-
-  .circle-wrapper-red {
-    width: 830px;
-    /*width: 69.2%;*/
-    height: 830px;
-    margin: 85px 127px;
-    /*margin: 7.08% 10.6%;*/
-    display: none;
-  }
-
-  .circle-red {
-    width: 830px;
-    /*width: 100%;*/
-    height: 830px;
-
-    z-index: -2000;
-
-    border-radius: 40% 0 0 0;
-
-    text-align: center;
-
-    background-image: url('eyes.png');
-    background-repeat: no-repeat;
-    background-position: 8px 30px;
-    background-size: 790px;
-    /*background-size: 99%;*/
-
-    /*transitions*/
-    -webkit-transition: all 500ms linear;
-    -o-transition: all 500ms linear;
-    -moz-transition: all 500ms linear;
-    -ms-transition: all 500ms linear;
-    -kthtml-transition: all 500ms linear;
-    transition: all 500ms linear;
-  }
-
-  .red-changer {
-    background-size: 820px;
-    /*background-size: 110%;*/
-    /*background-position: -60px -567px;*/
-
-    -webkit-transition: all 500ms linear;
-    -o-transition: all 500ms linear;
-    -moz-transition: all 500ms linear;
-    -ms-transition: all 500ms linear;
-    -kthtml-transition: all 500ms linear;
-    transition: all 500ms linear;
-  }
-
-  .chalogy {
-    width: 210px;
-
-    position: absolute;
-    top: 467px;
-    /*top: 39%;*/
-    left: 530px;
-    /*left: 44.2%;*/
-  }
-
-  .cha_plus {
-    width: 13px;
-
-    position: absolute;
-    top: 490px;
-    /*top: 40.8%;*/
-    left: 885px;
-    /*left: 73.8%;*/
-  }
-
-  .circle-triangle {
-    width: 789px;
-    height: 282px;
-
-    position: absolute;
-    top: 159px;
-    left: 135px;
-
-    -webkit-clip-path: polygon(0 232px, 631px 0, 671px 34px, 700px 66px, 740px 126px, 768px 186px, 790px 282px, 63px 282px);
-    clip-path: polygon(0 232px, 631px 0, 671px 34px, 700px 66px, 740px 126px, 768px 186px, 790px 282px, 63px 282px);
-  }
-
-  .circle-triangle-two {
-    width: 359px;
-    height: 291px;
-
-    position: absolute;
-    top: 441px;
-    left: 199px;
-
-    -webkit-clip-path: polygon(0 0, 359px 293px,359px 0px);
-    clip-path: polygon(0 0, 359px 293px,359px 0px);
-  }
-
-  .ribbon-wrapper-blue {
-    width: 558px;
-    height: 774px;
-
-    /*display: none;*/
-
-    position: absolute;
-    top: -265px;
-    left: -558px;
-
-    overflow: hidden;
-  }
-
-  .ribbon-blue {
-    width: 256px;
-    height: 910px;
-    position: relative;
-    top: -70px;
-    left: 160px;
-    background-color: #414141;
-    overflow: hidden;
-
-    font: bold 15px Sans-Serif;
-    color: #FFFFFF;
-    text-align: center;
-
-
-    -webkit-box-shadow: 3px 18px 13px 0px rgb(54, 54, 54);
-    -moz-box-shadow: 3px 18px 13px 0px rgb(54, 54, 54);
-    box-shadow: 3px 18px 13px 0px rgb(54, 54, 54);
-
-    /* Rotations */
-    -webkit-transform: rotate(-51deg);
-    -moz-transform:    rotate(-51deg);
-    -ms-transform:     rotate(-51deg);
-    -o-transform:      rotate(-51deg);
-  }
-
-  .ribbon-blue:before {
-    width: 559px;
-    height: 761px;
-
-    position: absolute;
-    top: 79px;
-    left: -164px;
-    z-index: -1;
-
-    content: "";
-
-    background-image: url("flipped_CHA_largeBottle_TILT_frontView_goldTop_v02_fromAE.png");
-    background-repeat: no-repeat;
-    background-size: 790px;
-    background-position: -124px 56px;
-
-    /* Counter-rotations for background image */
-    -webkit-transform:  rotate(51deg);
-    -moz-transform:     rotate(51deg);
-    -ms-transform:      rotate(51deg);
-    -o-transform:       rotate(51deg);
-    transform:          rotate(51deg);
-
-    -webkit-transition: all 500ms linear;
-    -o-transition: all 500ms linear;
-    -moz-transition: all 500ms linear;
-    -ms-transition: all 500ms linear;
-    -kthtml-transition: all 500ms linear;
-    transition: all 500ms linear;
-  }
-
-  .blue-changer:before {
-    background-size: 880px;
-
-    -webkit-transition: all 500ms linear;
-    -o-transition: all 500ms linear;
-    -moz-transition: all 500ms linear;
-    -ms-transition: all 500ms linear;
-    -kthtml-transition: all 500ms linear;
-    transition: all 500ms linear;
-    /*background-position: -60px -567px;*/
-  }
-
-  .aurous {
-    width: 155px;
-
-    position: absolute;
-    top: 440px;
-    left: 35px;
-
-    transform: rotate(51deg);
-  }
-
-  .aur_plus {
-    width: 13px;
-
-    position: absolute;
-    top: 760px;
-    left: 111px;
-
-    transform: rotate(51deg);
-  }
-
-  .ribbon-wrapper-green {
-    width: 1200px;
-    /*width: 100%;*/
-    height: 441px;
-    overflow: hidden;
-    position: absolute;
-    top: -441px;
-    left: 800px;
-      /*display: none;*/
-
-    /*-webkit-transition: all 500ms linear;
-    -o-transition: all 500ms linear;
-    -moz-transition: all 500ms linear;
-    -ms-transition: all 500ms linear;
-    -kthtml-transition: all 500ms linear;
-    transition: all 500ms linear;*/
-  }
-
-   .ribbon-green {
-     border: 1px solid green;
-    width: 1277px;
-    /*width: 103.625%;*/
-    height: 240px;
-
-    position: relative;
-    top: -13px;
-    left: -80px;
-    /*left: -7.8%;*/
-    overflow: hidden;
-
-    font: bold 15px Sans-Serif;
-    color: #333;
-    text-align: center;
-
-    -webkit-box-shadow: 114px 18px 17px -18px rgb(54, 54, 54);
-    -moz-box-shadow: 114px 18px 17px -18px rgb(54, 54, 54);
-    box-shadow: 114px 18px 17px -18px rgb(54, 54, 54);
-
-    /* Rotations */
-    -webkit-transform: rotate(-20.1deg);
-    -moz-transform:    rotate(-20.1deg);
-    -ms-transform:     rotate(-20.1deg);
-    -o-transform:      rotate(-20.1deg);
-    transform:         rotate(-20.1deg);
-  }
-
-  .ribbon-green:before {
-    width: 1203px;
-    /*width: 106.625%;*/
-    height: 441px;
-
-    position: absolute;
-    top: 20px;
-    left: 38px;
-    z-index: -1;
-
-    content: "";
-
-    background-image: url("flipped_pinkcream.png");
-    background-repeat: no-repeat;
-    background-size: 1198px;
-    /*background-size: 92.5%;*/
-    background-position: 0px -497px;
-    /*background-position: 1.5% 45%;*/
-
-
-    /* Counter-rotations for background image */
-    -webkit-transform:  rotate(20.1deg);
-    -moz-transform:     rotate(20.1deg);
-    -ms-transform:      rotate(20.1deg);
-    -o-transform:       rotate(20.1deg);
-    transform:          rotate(20.1deg);
-
-    -webkit-transition: all 500ms linear;
-    -o-transition: all 500ms linear;
-    -moz-transition: all 500ms linear;
-    -ms-transition: all 500ms linear;
-    -kthtml-transition: all 500ms linear;
-    transition: all 500ms linear;
-  }
-
-
-  .green-changer:before {
-    background-size: 1308px;
-    background-position: -60px -567px;
-
-    -webkit-transition: all 500ms linear;
-    -o-transition: all 500ms linear;
-    -moz-transition: all 500ms linear;
-    -ms-transition: all 500ms linear;
-    -kthtml-transition: all 500ms linear;
-    transition: all 500ms linear;
-  }
-
-  .saturday {
-    width: 190px;
-
-    position: absolute;
-    top: 50px;
-    left: 285px;
-
-    transform: rotate(20.1deg);
-  }
-
-  .sat_plus {
-    width: 13px;
-
-    position: absolute;
-    top: 195px;
-    /*top: 77.2%;*/
-    left: 1080px;
-    /*left: 70.1%;*/
-
-    transform: rotate(20.1deg);
-  }
-
-
-  .animator h1{
-    display: none;
-    position: absolute;
-    top: 890px;
-    left: 618px;
-    font-size: 26px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: "Times New Roman";
-  }
-
-  .animator h1 span {
-    display: block;
-  }
-
-  .front_text {
-    display: none;
-    margin: 65px 0;
-  }
-
-  .front_text p {
-    text-transform: uppercase;
-    font-family: Arial;
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .front_text a {
-    display: block;
-    text-align: center;
-    border: 1px solid black;
-    width: 61px;
-    margin: 10px auto;
-    padding: 2px 9px;
-    font-size: 1em;
-    text-transform: uppercase;
-    color: black;
-    font-family: Arial;
-    text-decoration: none;
-  }
-}
+// @media only screen and (max-width : 1024px) {
+//   .wrapper {
+//    /* width: 1200px;
+//     height: 1258px;*/
+//     /*margin: 115px auto;*/
+//     margin: 0 auto;
+//
+//     position: relative;
+//     z-index: 90;
+//
+//     background: white;
+//     overflow: hidden;
+//
+//     /*-webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+//     -moz-box-shadow:    0px 0px 8px rgba(0,0,0,0.3);
+//     box-shadow:         0px 0px 8px rgba(0,0,0,0.3);*/
+//   }
+//
+//   .animator {
+//     width: 100%;
+//     height: 955px;
+//   }
+//
+//   .circle-wrapper-red {
+//     width: 830px;
+//     /*width: 69.2%;*/
+//     height: 830px;
+//     margin: 85px 127px;
+//     /*margin: 7.08% 10.6%;*/
+//     display: none;
+//   }
+//
+//   .circle-red {
+//     width: 830px;
+//     /*width: 100%;*/
+//     height: 830px;
+//
+//     z-index: -2000;
+//
+//     border-radius: 40% 0 0 0;
+//
+//     text-align: center;
+//
+//     background-image: url('eyes.png');
+//     background-repeat: no-repeat;
+//     background-position: 8px 30px;
+//     background-size: 790px;
+//     /*background-size: 99%;*/
+//
+//     /*transitions*/
+//     -webkit-transition: all 500ms linear;
+//     -o-transition: all 500ms linear;
+//     -moz-transition: all 500ms linear;
+//     -ms-transition: all 500ms linear;
+//     -kthtml-transition: all 500ms linear;
+//     transition: all 500ms linear;
+//   }
+//
+//   .red-changer {
+//     background-size: 820px;
+//     /*background-size: 110%;*/
+//     /*background-position: -60px -567px;*/
+//
+//     -webkit-transition: all 500ms linear;
+//     -o-transition: all 500ms linear;
+//     -moz-transition: all 500ms linear;
+//     -ms-transition: all 500ms linear;
+//     -kthtml-transition: all 500ms linear;
+//     transition: all 500ms linear;
+//   }
+//
+//   .chalogy {
+//     width: 210px;
+//
+//     position: absolute;
+//     top: 467px;
+//     /*top: 39%;*/
+//     left: 530px;
+//     /*left: 44.2%;*/
+//   }
+//
+//   .cha_plus {
+//     width: 13px;
+//
+//     position: absolute;
+//     top: 490px;
+//     /*top: 40.8%;*/
+//     left: 885px;
+//     /*left: 73.8%;*/
+//   }
+//
+//   .circle-triangle {
+//     width: 789px;
+//     height: 282px;
+//
+//     position: absolute;
+//     top: 159px;
+//     left: 135px;
+//
+//     -webkit-clip-path: polygon(0 232px, 631px 0, 671px 34px, 700px 66px, 740px 126px, 768px 186px, 790px 282px, 63px 282px);
+//     clip-path: polygon(0 232px, 631px 0, 671px 34px, 700px 66px, 740px 126px, 768px 186px, 790px 282px, 63px 282px);
+//   }
+//
+//   .circle-triangle-two {
+//     width: 359px;
+//     height: 291px;
+//
+//     position: absolute;
+//     top: 441px;
+//     left: 199px;
+//
+//     -webkit-clip-path: polygon(0 0, 359px 293px,359px 0px);
+//     clip-path: polygon(0 0, 359px 293px,359px 0px);
+//   }
+//
+//   .ribbon-wrapper-blue {
+//     width: 558px;
+//     height: 774px;
+//
+//     /*display: none;*/
+//
+//     position: absolute;
+//     top: -265px;
+//     left: -558px;
+//
+//     overflow: hidden;
+//   }
+//
+//   .ribbon-blue {
+//     width: 256px;
+//     height: 910px;
+//     position: relative;
+//     top: -70px;
+//     left: 160px;
+//     background-color: #414141;
+//     overflow: hidden;
+//
+//     font: bold 15px Sans-Serif;
+//     color: #FFFFFF;
+//     text-align: center;
+//
+//
+//     -webkit-box-shadow: 3px 18px 13px 0px rgb(54, 54, 54);
+//     -moz-box-shadow: 3px 18px 13px 0px rgb(54, 54, 54);
+//     box-shadow: 3px 18px 13px 0px rgb(54, 54, 54);
+//
+//     /* Rotations */
+//     -webkit-transform: rotate(-51deg);
+//     -moz-transform:    rotate(-51deg);
+//     -ms-transform:     rotate(-51deg);
+//     -o-transform:      rotate(-51deg);
+//   }
+//
+//   .ribbon-blue:before {
+//     width: 559px;
+//     height: 761px;
+//
+//     position: absolute;
+//     top: 79px;
+//     left: -164px;
+//     z-index: -1;
+//
+//     content: "";
+//
+//     background-image: url("flipped_CHA_largeBottle_TILT_frontView_goldTop_v02_fromAE.png");
+//     background-repeat: no-repeat;
+//     background-size: 790px;
+//     background-position: -124px 56px;
+//
+//     /* Counter-rotations for background image */
+//     -webkit-transform:  rotate(51deg);
+//     -moz-transform:     rotate(51deg);
+//     -ms-transform:      rotate(51deg);
+//     -o-transform:       rotate(51deg);
+//     transform:          rotate(51deg);
+//
+//     -webkit-transition: all 500ms linear;
+//     -o-transition: all 500ms linear;
+//     -moz-transition: all 500ms linear;
+//     -ms-transition: all 500ms linear;
+//     -kthtml-transition: all 500ms linear;
+//     transition: all 500ms linear;
+//   }
+//
+//   .blue-changer:before {
+//     background-size: 880px;
+//
+//     -webkit-transition: all 500ms linear;
+//     -o-transition: all 500ms linear;
+//     -moz-transition: all 500ms linear;
+//     -ms-transition: all 500ms linear;
+//     -kthtml-transition: all 500ms linear;
+//     transition: all 500ms linear;
+//     /*background-position: -60px -567px;*/
+//   }
+//
+//   .aurous {
+//     width: 155px;
+//
+//     position: absolute;
+//     top: 440px;
+//     left: 35px;
+//
+//     transform: rotate(51deg);
+//   }
+//
+//   .aur_plus {
+//     width: 13px;
+//
+//     position: absolute;
+//     top: 760px;
+//     left: 111px;
+//
+//     transform: rotate(51deg);
+//   }
+//
+//   .ribbon-wrapper-green {
+//     width: 1200px;
+//     /*width: 100%;*/
+//     height: 441px;
+//     overflow: hidden;
+//     position: absolute;
+//     top: -441px;
+//     left: 800px;
+//       /*display: none;*/
+//
+//     /*-webkit-transition: all 500ms linear;
+//     -o-transition: all 500ms linear;
+//     -moz-transition: all 500ms linear;
+//     -ms-transition: all 500ms linear;
+//     -kthtml-transition: all 500ms linear;
+//     transition: all 500ms linear;*/
+//   }
+//
+//    .ribbon-green {
+//      border: 1px solid green;
+//     width: 1277px;
+//     /*width: 103.625%;*/
+//     height: 240px;
+//
+//     position: relative;
+//     top: -13px;
+//     left: -80px;
+//     /*left: -7.8%;*/
+//     overflow: hidden;
+//
+//     font: bold 15px Sans-Serif;
+//     color: #333;
+//     text-align: center;
+//
+//     -webkit-box-shadow: 114px 18px 17px -18px rgb(54, 54, 54);
+//     -moz-box-shadow: 114px 18px 17px -18px rgb(54, 54, 54);
+//     box-shadow: 114px 18px 17px -18px rgb(54, 54, 54);
+//
+//     /* Rotations */
+//     -webkit-transform: rotate(-20.1deg);
+//     -moz-transform:    rotate(-20.1deg);
+//     -ms-transform:     rotate(-20.1deg);
+//     -o-transform:      rotate(-20.1deg);
+//     transform:         rotate(-20.1deg);
+//   }
+//
+//   .ribbon-green:before {
+//     width: 1203px;
+//     /*width: 106.625%;*/
+//     height: 441px;
+//
+//     position: absolute;
+//     top: 20px;
+//     left: 38px;
+//     z-index: -1;
+//
+//     content: "";
+//
+//     background-image: url("flipped_pinkcream.png");
+//     background-repeat: no-repeat;
+//     background-size: 1198px;
+//     /*background-size: 92.5%;*/
+//     background-position: 0px -497px;
+//     /*background-position: 1.5% 45%;*/
+//
+//
+//     /* Counter-rotations for background image */
+//     -webkit-transform:  rotate(20.1deg);
+//     -moz-transform:     rotate(20.1deg);
+//     -ms-transform:      rotate(20.1deg);
+//     -o-transform:       rotate(20.1deg);
+//     transform:          rotate(20.1deg);
+//
+//     -webkit-transition: all 500ms linear;
+//     -o-transition: all 500ms linear;
+//     -moz-transition: all 500ms linear;
+//     -ms-transition: all 500ms linear;
+//     -kthtml-transition: all 500ms linear;
+//     transition: all 500ms linear;
+//   }
+//
+//
+//   .green-changer:before {
+//     background-size: 1308px;
+//     background-position: -60px -567px;
+//
+//     -webkit-transition: all 500ms linear;
+//     -o-transition: all 500ms linear;
+//     -moz-transition: all 500ms linear;
+//     -ms-transition: all 500ms linear;
+//     -kthtml-transition: all 500ms linear;
+//     transition: all 500ms linear;
+//   }
+//
+//   .saturday {
+//     width: 190px;
+//
+//     position: absolute;
+//     top: 50px;
+//     left: 285px;
+//
+//     transform: rotate(20.1deg);
+//   }
+//
+//   .sat_plus {
+//     width: 13px;
+//
+//     position: absolute;
+//     top: 195px;
+//     /*top: 77.2%;*/
+//     left: 1080px;
+//     /*left: 70.1%;*/
+//
+//     transform: rotate(20.1deg);
+//   }
+//
+//
+//   .animator h1{
+//     display: none;
+//     position: absolute;
+//     top: 890px;
+//     left: 618px;
+//     font-size: 26px;
+//     text-transform: uppercase;
+//     letter-spacing: 1px;
+//     font-family: "Times New Roman";
+//   }
+//
+//   .animator h1 span {
+//     display: block;
+//   }
+//
+//   .front_text {
+//     display: none;
+//     margin: 65px 0;
+//   }
+//
+//   .front_text p {
+//     text-transform: uppercase;
+//     font-family: Arial;
+//     width: 300px;
+//     margin: 0 auto;
+//     text-align: center;
+//   }
+//
+//   .front_text a {
+//     display: block;
+//     text-align: center;
+//     border: 1px solid black;
+//     width: 61px;
+//     margin: 10px auto;
+//     padding: 2px 9px;
+//     font-size: 1em;
+//     text-transform: uppercase;
+//     color: black;
+//     font-family: Arial;
+//     text-decoration: none;
+//   }
+// }
 
 /* Smartphones (landscape) ---------------------------------------------------------------------------------------------------------------- */
 /*@media only screen and (max-width : 768px) {...}*/

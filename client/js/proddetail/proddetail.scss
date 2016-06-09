@@ -9,6 +9,12 @@
 	}
 }
 
+.sat_link {
+	svg {
+    fill: #A9A9A9;
+	}
+}
+
 .product_detail_buttons {
 	width: 60%;
 	margin: 0 auto;
@@ -37,15 +43,20 @@
 .buttons a {
 	text-align: center;
 	font-family: WorkSans;
-    font-weight: bold;
-    color: rgb(126, 126, 126);
-    border: 10px solid #E5E5E5;
-    padding: 10px 20px;
-    DISPLAY: BLOCK;
-    width: 190px;
-    margin: 10px 0 0;
-    font-size: 13px;
-    letter-spacing: 1px;
+  font-weight: bold;
+  color: rgb(126, 126, 126);
+  border: 10px solid #E5E5E5;
+  padding: 10px 20px;
+  DISPLAY: BLOCK;
+  width: 190px;
+  margin: 10px 0 0;
+  font-size: 13px;
+  letter-spacing: 1px;
+
+  &:hover {
+		color: rgb(0, 209, 165);
+    border: 10px solid rgb(0, 209, 165);
+  }
 }
 
 // .green-border {
