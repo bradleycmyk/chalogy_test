@@ -5,9 +5,13 @@ app.controller('SaturdayProductController', function($scope, $http, SaturdayFact
 		$scope.products = data;
 	})
 
-	$scope.isActive = function (route) {
-    	return route == $window.location.href.split("5959/")[1];
-  	};
+	// $scope.isActiveSat = function (route) {
+ //    return ($window.location.href.split("5959/")[1].indexOf(route) > -1);
+ //  };
+
+  $scope.isActive = function (route) {
+      return route == $window.location.href.split("5959/")[1];
+    }
 
   	$(document).ready(function(){
   		if($(window).width() < 1205) {

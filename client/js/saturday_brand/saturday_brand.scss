@@ -1,0 +1,20 @@
+.module {
+  background: white;
+  border: 1px solid #ccc;
+  > p {
+    padding: 0 1rem;
+  }
+}
+
+.stripe-5 {
+  height: 155px;
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    red,
+    red 65%,
+    white 20%,
+    white
+  );
+  background-size: 100% 32px;
+} 
