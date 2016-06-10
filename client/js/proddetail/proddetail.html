@@ -3,19 +3,19 @@
 </div>
 <div class="clean-and-clear"></div>
 
-<div class="sat_image"></div>
+<div class="sat-image-test"></div>
 
 <div class="max-width clear">
     <div class="sat_link">
   		<a href="/saturday-skin" ui-sref="saturday_skin" class="upper">Saturday Skin</a>
-  		<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+  		<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="#808080">
   			<path class='caret' d="M0 0v8l4-4-4-4z" transform="translate(2)" />
   		</svg>
   		<a href="/saturday-skin/products" ui-sref="saturday_products" class="upper">The Products</a>
-  		<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+  		<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="#808080">
   			<path class='caret' d="M0 0v8l4-4-4-4z" transform="translate(2)" />
   		</svg>
-  		{{ product.name }}
+  		<a class="upper">{{ product.name }}</a>
   	</div>
 
 
@@ -33,11 +33,12 @@
 					<p class="product-title">{{ product.title }}</p>
           <p class="product-ktitle">{{ product.korean_title }}</p>
 					<div class="gray-line"></div>
-					<p class="price_tag">$ {{ product.price }}.00</p>
+					<p class="price_tag">${{ product.price }}.00</p>
 					<br>
-					<span class="product-description">{{product.size_ml}}mL/{{product.size_oz}} fl oz</span>
+					<span class="product-description">{{product.size_ml}} ml/{{product.size_oz}} Fl. Oz.</span>
 					<p class="product-description">{{ product.description }}</p>
-					<br class="mobile_hide"><br class="mobile_hide">
+					<p class="product-description font14">{{ product.description2 }}</p>
+					<br class="mobile_hide">
 					<social-icons></social-icons>
 				</div>
 			</div>
@@ -49,7 +50,7 @@
 		<div class="row buttons">
 			<div class="col-xs-4" ng-class="{ active:tab === 1}" >
 				<a href ng-click="selectTab(1)">
-					WHO IT'S FOR
+					IS IDEAL FOR
 				</a>
 			</div>
 			<div class="col-xs-4" ng-class="{ active:tab === 2}">
@@ -68,16 +69,19 @@
 
 	<!-- tab content -->
 	<div class="tab_content">
-		<div class="panel" ng-show="tab === 1">
-			<p class="margin_top">who it's for</p>
-			<p>{{product.who}}</p>
+		<div class="panel" ng-show="tab === 1" >
+			<div ng-repeat="who in product.who">
+				<li class="is-ideal-for"> {{who}}</li>
+			</div>
 		</div>
 
-		<div class="panel" ng-show="tab === 2">
+		<div class="panel number2" ng-show="tab === 2">
 			<!-- <p class="margin_top">how to use</p> -->
-      <div class="div_web">
-          <div class='how-to-use'><p>{{product.how}}</p></div>
-      </div>
+	    <!--   <div class="div_web"> -->
+	          <div class='how-to-use'>
+	          	<p>{{product.how}}</p>
+	          </div>
+	      <!-- </div> -->
 
 			<!-- video -->
 			<!-- <div class="div_web">
@@ -97,11 +101,11 @@
 
 		<!-- recommendations -->
 		<div class="panel_fluid" ng-show="tab === 3">
-      <div class="recommendations" ng-repeat="rec in product.recs">
-          <a href="/saturday-skin/products/{{ rec.name }}">
-            <img class="detail_photo" ng-src="{{ rec.img }}" width="185px;" alt="{{ rec.name }}" />
-          </a>
-      </div>
+	      <div class="recommendations" ng-repeat="rec in product.recs">
+	          <a href="/saturday-skin/products/{{ rec.name }}">
+	            <img class="detail_photo" ng-src="{{ rec.img }}" width="185px;" alt="{{ rec.name }}" />
+	          </a>
+	      </div>
 
       <!-- <div class="recommendations" ng-repeat="recommendation in recommendations  | limitTo: 5">
 				<a href="/saturday-skin/products/{{ recommendation.name }}">

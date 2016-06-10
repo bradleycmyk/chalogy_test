@@ -2,7 +2,7 @@ var app = angular.module('Chalogy', ['ui.router', 'authHandler']);
 
 // can define controller for navigation bar here + deal with cookies 
 
-app.controller('MainController', function($scope, $rootScope){
+app.controller('MainController', function($scope, $rootScope, $window){
 	$scope.loggedIn = sessionStorage.loggedinUser || undefined;
 
 	if(!$scope.loggedIn) {
@@ -18,11 +18,23 @@ app.controller('MainController', function($scope, $rootScope){
 	    }
 	});
 
-	$('li.dropdown a').click(function(e){
-		e.preventDefault();
-		$('li.dropdown a').removeClass('selected');
-		$(this).addClass('selected');
-	});
+	// $('li.dropdown a').click(function(e){
+	// 	e.preventDefault();
+	// 	$('li.dropdown a').removeClass('selected');
+	// 	$(this).addClass('selected');
+	// });
+	$scope.isActiveFor = function (route) {
+	    return ($window.location.href.split("5959/")[1].indexOf(route) > -1);
+	};
+
+	$scope.isAbout = function () {
+		if($window.location.href.split("5959/")[1].indexOf("about") > -1 || window.location.href.split("5959/")[1].indexOf("chaum") > -1 || window.location.href.split("5959/")[1].indexOf("cha-health-systems") > -1  ) {
+			return true;
+		} else {
+			console.log("something is wrong");
+		}
+
+	}
 	
 })
 

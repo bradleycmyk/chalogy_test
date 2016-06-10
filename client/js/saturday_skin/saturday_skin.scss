@@ -2,12 +2,13 @@
   position: relative;
   /*z-index: -2;*/
   height: auto;
+  
   .extender {
-    background: #DBC4CC; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #F1DEE8 , #DBC4CC); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #F1DEE8 , #DBC4CC); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #F1DEE8 , #DBC4CC); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #F1DEE8 , #DBC4CC);
+/*    background: #DBC4CC;  For browsers that do not support gradients 
+    background: -webkit-linear-gradient(left, #F1DEE8 , #DBC4CC);  For Safari 5.1 to 6.0 
+    background: -o-linear-gradient(right, #F1DEE8 , #DBC4CC);  For Opera 11.1 to 12.0 
+    background: -moz-linear-gradient(right, #F1DEE8 , #DBC4CC);  For Firefox 3.6 to 15 
+    background: linear-gradient(to right, #F1DEE8 , #DBC4CC);*/
 
     .wrapper {
       .bread_crumb {

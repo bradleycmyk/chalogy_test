@@ -13,10 +13,11 @@
     width: 100%;
     height: 155px;
     text-align: center;
-    background-image: url('SS_PinkBar.jpg');
+    /*background-image: url('SS_PinkBar.jpg');*/
     background-repeat: no-repeat;
-    background-size: contain;
-    /*background-color: rgb(250, 214, 218);*/
+    /*background-size: contain;*/
+      background-size: 100% 100%;
+    background-color: rgb(250, 214, 218);
 }
 
 
@@ -54,7 +55,10 @@
     margin-left: 1.75%;
     margin-right: 1.5%;
     margin-top: 1vh;
-    margin-bottom: 3vh;
+    /*margin-bottom: 3vh;*/
+    margin-bottom: -1vh;
+    padding: 2%;
+
     width: 30%;
     position: relative;
     display: inline-block;
@@ -71,25 +75,27 @@
 }
 
 .sat-prod-img img {
-    width: 100%;
+    /*width: 100%;*/
+    width: 65%;
     max-width: 170px;
     height: auto;
 }
 
 .sat-prod-text {
-    padding-left: 10%;
+    padding-left: 13%;
 }
 
 .product-name {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: -1px;
     font-family: WorkSans;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .product-title {
-    font-size: 15px;
+    font-size: 14px;
     font-family: WorkSans;
     text-transform: uppercase;
 }
@@ -98,10 +104,11 @@
     margin: 0;
     margin-bottom: 10px;
     margin-top: -10px;
+    font-size: 12px;
 }
 
 .price_tag {
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 10px;
     font-family: WorkSans;
     color: #A2A2A2;
@@ -144,12 +151,13 @@
         text-align: center;
         background-image: none;
         background-repeat: no-repeat;
-        background-size: contain;
+        /*background-size: contain;*/
+        background-size: 100% 100%;
         background-color: rgb(250, 214, 218);
     }
 
     #sat-banner {
-        display: block;
+        /*display: block;*/
     }
 }
 

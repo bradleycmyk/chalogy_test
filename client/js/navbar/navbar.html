@@ -8,7 +8,7 @@
 
           <div class="col-xs-31">
             <li class="dropdown" style="width: 50px;">
-              <a class="about-nav" href="/about" ui-sref="about" ng-class="{selected:isActive('about')}">ABOUT</a>
+              <a class="about-nav" href="/about" ui-sref="about" ng-class="{selected:isAbout()}">ABOUT</a>
               <div class="dropdown-aboutcontent">
                <a href="/about" class="inn-nav up-arrow-about" ui-sref="about" ng-class="{selected:isActive('about')}">The Story</a>
                <a href="/chaum" class="inn-cha-nav" ui-sref="chaum" ng-class="{selected:isActive('chaum')}">Chaum</a>
@@ -25,7 +25,7 @@
 
           <div class="col-xs-33">
             <li class="dropdown center" style="width: 60px;">
-               <a href="aurous" ui-sref="aurous" ng-class="{selected:isActive('aurous')}">AUROUS</a>
+               <a href="aurous" ui-sref="aurous" ng-class="{selected:isActiveFor('aurous')}">AUROUS</a>
                <div class="dropdown-aurouscontent">
                 <a href="/aurous" ui-sref="aurous" class="up-arrow" ng-class="{selected:isActive('aurous')}">THE BRAND</a>
                 <a href="/aurous/products" ui-sref="aurous_products" ng-class="{selected:isActive('aurous/products')}">THE PRODUCTS</a>
@@ -35,7 +35,7 @@
 
         <div class="col-xs-34">
           <li class="dropdown" style="width: 120px;">
-            <a href="/saturday-skin" ui-sref="saturday_skin" ng-class="{selected:isActive('saturday-skin')}" >SATURDAY SKIN</a>
+            <a href="/saturday-skin" ui-sref="saturday_skin" ng-class="{selected:isActiveFor('saturday-skin')}" >SATURDAY SKIN</a>
             <div class="dropdown-content">
               <a href="/saturday-skin" ui-sref="saturday_skin" class="up-arrow" ng-class="{selected:isActive('saturday-skin')}">THE BRAND</a>
               <a href="/saturday-skin/products" ui-sref="saturday_products" ng-class="{selected:isActive('saturday-skin/products')}">THE PRODUCTS</a>
@@ -46,7 +46,7 @@
     </div>
 
      <div class="textsearch-test">
-      <input id="testingsearch" type="text" ng-model="text"><img id="callingsearchs" src="search.png" width="20px;" height="20px;" />
+      <input id="testingsearch" type="text" ng-model="text"><img id="callingsearchs" src="search1.png" width="13px;" height="18px;" />
     </div>
 
   </div>

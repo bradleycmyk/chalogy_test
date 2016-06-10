@@ -36,12 +36,16 @@ var schema = new mongoose.Schema({
         type: String,
         required: true
     },
+    description2: {
+        type: String,
+        required: true
+    },
     // size: {
     //     type: Number
     //     // required: true
     // },
     who: {
-      type: String
+      type: [String]
     },
     how: {
       type: String

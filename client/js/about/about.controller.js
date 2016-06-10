@@ -26,4 +26,8 @@ app.controller('AboutController', function($scope, $http, $window, $location) {
     return route == $window.location.href.split("5959/")[1];
   };
 
+  $scope.isNotActive = function (route) {
+    return route != $window.location.href.split("5959/")[1];
+  };
+
 });
