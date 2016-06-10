@@ -160,7 +160,7 @@ a:focus {
     .circle-wrapper-red {
       width: 850px;
       height: 850px;
-      border-radius: 0 54% 54%;
+      border-radius: 35% 54% 54%;
       overflow: hidden;
       margin: 47px 153px;
       display: none;
@@ -177,19 +177,28 @@ a:focus {
         height: 850px;
         z-index: -2000;
         text-align: center;
-        background-image: url('eyes.png');
-        background-repeat: no-repeat;
-        background-position: -7px 30px;
-        background-size: 860px;
-
         /*transitions*/
-        -webkit-transition: all 1000ms linear;
-        -o-transition: all 1000ms linear;
-        -moz-transition: all 1000ms linear;
-        -ms-transition: all 1000ms linear;
-        -kthtml-transition: all 1000ms linear;
-        transition: all 1000ms linear;
 
+
+        .circle-red-bg {
+          height: 850px;
+          width: 850px;
+          background-image: url('eyes.png');
+          background-repeat: no-repeat;
+          background-position: -7px 30px;
+          background-size: 860px;
+          -webkit-transition: all 1000ms linear;
+          -o-transition: all 1000ms linear;
+          -moz-transition: all 1000ms linear;
+          -ms-transition: all 1000ms linear;
+          -kthtml-transition: all 1000ms linear;
+          transition: all 1000ms linear;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+
+        }
         .chalogy {
           width: 210px;
 
@@ -204,7 +213,7 @@ a:focus {
         }
       }
 
-      .circle-red:hover, .circle-triangle:hover, .circle-triangle-two:hover {
+      .red-changer {
         background-size: 890px 890px;
         // background-position: -7px 40px;
 
@@ -385,9 +394,7 @@ a:focus {
         color: #333;
         text-align: center;
 
-        -webkit-box-shadow: 162px 10px 37px -11px #A0A0A0;
-        -moz-box-shadow: 162px 10px 37px -11px #A0A0A0;
-        box-shadow: 162px 10px 37px -11px #A0A0A0;
+
 
         /* Rotations */
         -webkit-transform: rotate(-20.1deg);
@@ -454,6 +461,27 @@ a:focus {
         -kthtml-transition: all 500ms linear;
         transition: all 500ms linear;
       }
+    }
+
+    .ribbon-shadow-green {
+      width: 1117px;
+      height: 240px;
+      position: absolute;
+      top: -39px;
+      left: 72px;
+      overflow: hidden;
+      font: bold 15px Sans-Serif;
+      color: #333;
+      text-align: center;
+      -webkit-box-shadow: 162px 10px 37px -11px #A0A0A0;
+      -moz-box-shadow: 162px 10px 37px -11px #A0A0A0;
+      box-shadow: -8px 10px 37px -11px #A0A0A0;
+      -webkit-transform: rotate(-20.1deg);
+      -moz-transform: rotate(-20.1deg);
+      -ms-transform: rotate(-20.1deg);
+      -o-transform: rotate(-20.1deg);
+      transform: rotate(-20.1deg);
+      z-index: -10;
     }
   }
 
