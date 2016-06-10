@@ -1,14 +1,7 @@
 .saturday_home {
   position: relative;
   height: auto;
-  
   .extender {
-/*    background: #DBC4CC;  For browsers that do not support gradients 
-    background: -webkit-linear-gradient(left, #F1DEE8 , #DBC4CC);  For Safari 5.1 to 6.0 
-    background: -o-linear-gradient(right, #F1DEE8 , #DBC4CC);  For Opera 11.1 to 12.0 
-    background: -moz-linear-gradient(right, #F1DEE8 , #DBC4CC);  For Firefox 3.6 to 15 
-    background: linear-gradient(to right, #F1DEE8 , #DBC4CC);*/
-
 
     .sat_hero {
 
@@ -31,22 +24,19 @@
 
       .dial {
         vertical-align: top;
+        font-size: 2em;
 
         .dial_text {
           font-family: MillerBanner;
           display: block;
+          -webkit-margin-before: 0.83em;
+          -webkit-margin-after: 0.83em;
+          -webkit-margin-start: 0px;
+          -webkit-margin-end: 0px;
           font-weight: bold;
 
           .for {
             display: block;
-
-            &::after {
-              content: '';
-              display: block;
-              margin: 5px 0;
-              width: 140px;
-              border-top: 8px solid #000000;
-            }
           }
         }
       }
@@ -112,11 +102,6 @@
         margin: 30px 0 0;
         font-size: 0.9em;
         letter-spacing: 1px;
-
-        &:hover {
-          color: rgb(0, 209, 165);
-          border: 10px solid rgb(0, 209, 165);
-        }
       }
     }
 
@@ -135,27 +120,25 @@
 @media screen and (min-width: 1200px) {
   .sat_hero {
     width: 1200px;
-    height: 828px;
     margin: 0 auto;
-    color: #000000;
 
     .dial {
-      // padding: 1.6em 0 0 2em;
+      padding: 1.6em 0 0 2em;
+      font-size: 2em;
       display: inline-block;
-      margin: 35px 0 0 60px;
 
       .dial_text {
-        font-size: 65px;
+        font-size: 1.5em;
       }
     }
 
     .text_box {
-      margin: 505px 60px 0 0;
+      margin: 491px 60px 0 0;
       float: right;
 
       p {
         width:  340px;
-        padding: 50px 35px 21px 20px;
+        padding: 50px 35px 10px 20px;
         float: right;
         margin: 0 0 0 0;
       }
@@ -175,6 +158,9 @@
     }
   }
 
+  .sat_hero {
+    height: 797px;
+  }
 
   main {
     width: 1080px;
@@ -190,7 +176,6 @@
 
       p {
         font-size: 15px;
-        width: 563px;
       }
     }
 
