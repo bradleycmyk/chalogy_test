@@ -44,6 +44,10 @@
 					<path d="M0 0l4 4 4-4h-8z" transform="translate(0 2)" class="arrow-down" />
 				</svg>
 			</div>
+
+			<h4>
+				Click to discover the Cha-7 es complex&trade; components
+			</h4>
 		</div>
 	</div>  <!-- end wrapper -->
 	
@@ -65,14 +69,14 @@
 			<div class="inn-bottom">
 				<div class="inn-bottom-bottom">
 					<div class="video-text-msg v-one">
-						<p id="video-text-1">
-							<span class="video-text-deco">{{ text1[0] }}</span><br>
-							{{ text1[1] }}
-						</p>
-						<div class="line-in-video">
-					    	
+						<div class="line-in-video" id="line-one">
 					        <div class="fading-effect"></div>
 					    </div>
+					    <p id="video-text-1">
+							<span class="video-text-deco">{{ text1[0] }}</span><br>
+							<span class="video-text-deco">{{ text1[1] }}</span><br>
+							{{ text1[2] }}
+						</p>
 					</div>
 				</div>
 			</div>
@@ -95,7 +99,7 @@
 			<div class="inn-bottom">
 				<div class="inn-bottom-bottom">
 					<div class="video-text-msg v-two">
-						<div class="line-in-video">
+						<div class="line-in-video" id="line-two">
 					        <div class="fading-effect"></div>
 					    </div>
 					    <p id="video-text-2">
@@ -124,7 +128,7 @@
 			<div class="inn-bottom">
 				<div class="inn-bottom-bottom">
 					<div class="video-text-msg v-three">
-						<div class="line-in-video">
+						<div class="line-in-video" id="line-three">
 					        <div class="fading-effect"></div>
 					    </div>
 					    <p id="video-text-3">
@@ -156,7 +160,7 @@
 							<span class="video-text-deco">{{ text4[0] }}</span><br>
 							{{ text4[1] }}
 						</p>
-						<div class="line-in-video">
+						<div class="line-in-video" id="line-four">
 					        <div class="fading-effect"></div>
 					    </div>
 					</div>
@@ -185,7 +189,7 @@
 							<span class="video-text-deco">{{ text5[0] }}</span><br>
 							{{ text5[1] }}
 						</p>
-						<div class="line-in-video">
+						<div class="line-in-video" id="line-five">
 					        <div class="fading-effect"></div>
 					    </div>
 					</div>
@@ -213,7 +217,7 @@
 							<span class="video-text-deco">{{ text6[0] }}</span><br>
 							{{ text6[1] }}
 						</p>
-						<div class="line-in-video">
+						<div class="line-in-video" id="line-six">
 					        <div class="fading-effect"></div>
 					    </div>
 					</div>
@@ -240,6 +244,34 @@
 						<p id="video-text-7">
 							<span class="video-text-deco">{{ text7[0] }}</span><br>
 							{{ text7[1] }}
+						</p>
+						<div class="line-in-video" id="line-seven">
+					        <div class="fading-effect"></div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- INN -->
+	</div> <!-- vedio container --> 
+
+	<div class="video-container-brand8">
+		<div class="video-cover max-width">
+			<div class="video-center">
+				<video class="video-play-pause" id="video8" width="975" height="546">
+			        <source id="videosource" src="video/cha_08.mp4" type="video/mp4">
+			        <!-- <source id="videosource2" src="cha7es.ogg" type="video/ogg"> -->
+			            Your browser does not support the video tag.
+			    </video>
+			</div>
+		</div>
+
+		<div class="inn">
+			<div class="inn-bottom">
+				<div class="inn-bottom-bottom">
+					<div class="video-text-msg v-eight">
+						<p id="video-text-8">
+							<span class="video-text-deco">{{ text8[0] }}</span><br>
+							{{ text8[1] }}
 						</p>
 						<div class="line-in-video">
 					        <div class="fading-effect"></div>
@@ -269,6 +301,7 @@
 			<button class="video-button" id="btn5">5</button>
 			<button class="video-button" id="btn6">6</button>
 			<button class="video-button" id="btn7">7</button>
+			<button class="video-button" id="btn8">8</button>
 		</div>
 	</div>
 </div>

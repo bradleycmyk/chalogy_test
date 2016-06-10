@@ -45,10 +45,11 @@ app.controller('AurousBrandController', function($scope, $http, $window, $locati
 	    	$('.video-container-brand5').css({"display":"none"});
 	    	$('.video-container-brand6').css({"display":"none"});
 	    	$('.video-container-brand7').css({"display":"none"});
+	    	$('.video-container-brand8').css({"display":"none"});
 
 	      	$('#video-text-1').addClass('fade-in-effect');
-	      	$('.fading-effect').removeClass('fadingEffect-to-left');
-	      	$('.fading-effect').addClass('fadingEffect');
+	      	$('.fading-effect').removeClass('fadingEffect');
+	      	$('.fading-effect').addClass('fadingEffect-to-left');
 	      	$('.line-in-video').css({ "opacity":"1"});
 	    	$('.video-container-brand1').css({"display":"block"});
 	    	$('#video1').get(0).play();
@@ -62,10 +63,11 @@ app.controller('AurousBrandController', function($scope, $http, $window, $locati
 	    	$('.video-container-brand5').css({"display":"none"});
 	    	$('.video-container-brand6').css({"display":"none"});
 	    	$('.video-container-brand7').css({"display":"none"});
+	    	$('.video-container-brand8').css({"display":"none"});
 
 	      	$('#video-text-2').addClass('fade-in-effect');
-	      	$('.fading-effect').removeClass('fadingEffect');
-	      	$('.fading-effect').addClass('fadingEffect-to-left');
+	      	$('.fading-effect').removeClass('fadingEffect-to-left');
+	      	$('.fading-effect').addClass('fadingEffect');
 	      	$('.line-in-video').css({ "opacity":"1"});
 	    	$('.video-container-brand2').css({"display":"block"});
 	    	$('#video2').get(0).play();
@@ -79,6 +81,7 @@ app.controller('AurousBrandController', function($scope, $http, $window, $locati
 	    	$('.video-container-brand5').css({"display":"none"});
 	    	$('.video-container-brand6').css({"display":"none"});
 	    	$('.video-container-brand7').css({"display":"none"});
+	    	$('.video-container-brand8').css({"display":"none"});
 
 	      	$('#video-text-3').addClass('fade-in-effect');
 	      	$('.fading-effect').removeClass('fadingEffect');
@@ -96,6 +99,7 @@ app.controller('AurousBrandController', function($scope, $http, $window, $locati
 	    	$('.video-container-brand5').css({"display":"none"});
 	      	$('.video-container-brand6').css({"display":"none"});
 	    	$('.video-container-brand7').css({"display":"none"});
+	    	$('.video-container-brand8').css({"display":"none"});
 
 	      	$('#video-text-4').addClass('fade-in-effect');
 	      	$('.fading-effect').removeClass('fadingEffect');
@@ -113,6 +117,7 @@ app.controller('AurousBrandController', function($scope, $http, $window, $locati
 	    	$('.video-container-brand4').css({"display":"none"});
 	    	$('.video-container-brand6').css({"display":"none"});
 	    	$('.video-container-brand7').css({"display":"none"});
+	    	$('.video-container-brand8').css({"display":"none"});
 
 	      	$('#video-text-5').addClass('fade-in-effect');
 	      	$('.fading-effect').removeClass('fadingEffect-to-left');
@@ -131,6 +136,7 @@ app.controller('AurousBrandController', function($scope, $http, $window, $locati
 	    	$('.video-container-brand4').css({"display":"none"});
 	    	$('.video-container-brand5').css({"display":"none"});
 	    	$('.video-container-brand7').css({"display":"none"});
+	    	$('.video-container-brand8').css({"display":"none"});
 
 	      	$('#video-text-6').addClass('fade-in-effect');
 	      	$('.fading-effect').removeClass('fadingEffect-to-left');
@@ -148,6 +154,7 @@ app.controller('AurousBrandController', function($scope, $http, $window, $locati
 	    	$('.video-container-brand4').css({"display":"none"});
 	    	$('.video-container-brand5').css({"display":"none"});
 	    	$('.video-container-brand6').css({"display":"none"});
+	    	$('.video-container-brand8').css({"display":"none"});
 
 	      	$('#video-text-7').addClass('fade-in-effect');
 	      	$('.fading-effect').removeClass('fadingEffect-to-left');
@@ -156,18 +163,34 @@ app.controller('AurousBrandController', function($scope, $http, $window, $locati
 	    	$('.video-container-brand7').css({"display":"block"});
 	    	$('#video7').get(0).play();
 	    });
+
+	    $('#btn8').click(function(){
+	      	$('.line-in-video').css({ "opacity":"0"});
+        	$('.video-container-brand1').css({"display":"none"});
+	    	$('.video-container-brand2').css({"display":"none"});
+	    	$('.video-container-brand3').css({"display":"none"});
+	    	$('.video-container-brand4').css({"display":"none"});
+	    	$('.video-container-brand5').css({"display":"none"});
+	    	$('.video-container-brand6').css({"display":"none"});
+	    	$('.video-container-brand7').css({"display":"none"});
+
+	      	$('#video-text-8').addClass('fade-in-effect');
+	      	$('.fading-effect').removeClass('fadingEffect-to-left');
+	      	$('.fading-effect').addClass('fadingEffect');
+	      	$('.line-in-video').css({ "opacity":"1"});
+	    	$('.video-container-brand8').css({"display":"block"});
+	    	$('#video8').get(0).play();
+	    });
 	
 	})
 
-    
-	$scope.text1 = ["RH-Polypeptide 8 (FGF4)", "Fibroblast proliferation"];
-	$scope.text2 = ["EGF", "Rh-Oligopeptide 1", "Sin barrier reinforcement / Epidermal regeneration"];
-	$scope.text3 = ["sh-Polypeptide 55 (PDGA-AA)","CELL proliferation, Wound healing"];
-	$scope.text4 = ["rh-Polypeptide 1", "Cell proliferation"];
-	$scope.text5 = ["rh-Polypeptide 9 (VEGF)", "Cell protection, Cell proliferation, Wound healing"];
-	$scope.text6 = ["rh-Oligopeptide-2", "Wound healing"];
-	$scope.text7 = ["sh-Polypeptide 45 (GM-CSF)", "Cell activation, Anti inflammatory, Wrinkle improvement"];
-
-
+    $scope.text1 = ["Sh-Polypeptide 55", "(PDGA-AA)", "Stimulates healthier looking skin and enhances skin's nautral rejuvenating power."];
+    $scope.text2 = ["Rh-Oligopeptide-2", "Strengthens skin's own resurfacing ability, promoting youthful, radiant skin."];
+    $scope.text3 = ["sh-Polypeptide 45 (GM-CSF)", "Anti-inflammatory peptide stimulates healthy skin while minimizing the appearance of fine lines and wrinkles."];
+    $scope.text4 = ["RH-Polypeptide 8 (FGF4)", "Promotes healthy skin while boosting firmness and building resiliency."];
+    $scope.text5 = ["EGF Rh-Oligopeptide 1", "Activates revitalization while reinforcing skin's natural barrier to protect the complexion."];
+    $scope.text6 = ["Rh-Polypeptide 9 (VEGF)", "Stimulates youthful rejvenation while protecting the skin and fostering healing."];
+    $scope.text7 = ["Rh-Polypeptide 1", "Stimulates healthy skin growth, promoting younger-looking skin"];
+    $scope.text8 = ["HEllo", "Stimulates healthy skin growth, promoting younger-looking skin"];
 	
 });

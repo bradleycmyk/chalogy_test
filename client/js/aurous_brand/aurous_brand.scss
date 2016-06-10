@@ -2,8 +2,7 @@ video {
     position: absolute;
 }
 
-.video-container-brand1, .video-container-brand2, .video-container-brand3, .video-container-brand4, .video-container-brand5, .video-container-brand6, .video-container-brand7 {
-    margin-top: -50px;
+.video-container-brand1, .video-container-brand2, .video-container-brand3, .video-container-brand4, .video-container-brand5, .video-container-brand6, .video-container-brand7, .video-container-brand8 {
     height: 300px;
 }
 
@@ -81,10 +80,10 @@ video {
 p.fade-in-effect {
     opacity: 0;
     position: relative;
-    -webkit-animation: mymove 4s; /* Chrome, Safari, Opera */
-    -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
-    animation: mymove 4s;
-    animation-delay: 4s;
+    -webkit-animation: mymove 3s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
+    animation: mymove 3s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -99,13 +98,13 @@ p.fade-in-effect {
     to {opacity: 1;}
 }
 
-.video-container-brand2, .video-container-brand3, .video-container-brand4, .video-container-brand5, .video-container-brand6, .video-container-brand7 {
+.video-container-brand2, .video-container-brand3, .video-container-brand4, .video-container-brand5, .video-container-brand6, .video-container-brand7, .video-container-brand8 {
     display: none;
 }
 
 /* video text stylying + positioning -*/ 
 
-#video1, #video2, #video3, #video4, #video5, #video6, #video7{
+#video1, #video2, #video3, #video4, #video5, #video6, #video7, #video8 {
     /* centering absolutely positioned element */
     margin-left: auto;
     margin-right: auto;
@@ -113,28 +112,32 @@ p.fade-in-effect {
     right: 0;
 }
 
-#video-text-1, #video-text-2, #video-text-3, #video-text-4, #video-text-5, #video-text-6, #video-text-7 {
+#video-text-1, #video-text-2, #video-text-3, #video-text-4, #video-text-5, #video-text-6, #video-text-7, #video-text-8 {
     opacity: 0;    
     font-family: MillerBanner;
     font-size: 20px;
     font-style: italic;
 }
 
-#video-text-1, #video-text-5, #video-text-6, #video-text-7 {
+#video-text-5, #video-text-6, #video-text-7 {
     text-align: right;
 }
 
-#video-text-2, #video-text-3, #video-text-4 {
+#video-text-1, #video-text-2, #video-text-3, #video-text-4 {
     text-align: left;
+}
+
+#video-text-2 {
+    padding-left: 87px;
 }
 
 .line-in-video {
     position:relative;
     line-height:0em;
-    margin:0 auto;
+    margin:10px auto;
     background-color: black;
-    width: 100%;
-    height: 2px;
+    /*width: 100%;*/
+    height: 1px;
     opacity: 0;
 }
 
@@ -144,13 +147,24 @@ p.fade-in-effect {
 }
 
 .v-one {
-    margin: 280px 0 13px 617px;
-    width: 255px;
+    margin: 400px 0 13px -12px;
+    width: 361px;
+}
+
+#line-one {
+    width: 316px;
+    margin-left: 0px;
 }
 
 .v-two {
-     margin: 114px 0 13px -30px;
-     width: 380px;
+    margin: 264px 0 13px 607px;
+    width: 277px
+}
+
+#line-two {
+    width: 250px;
+    margin-left: 26px;
+
 }
 
 .v-three {
@@ -178,12 +192,15 @@ p.fade-in-effect {
     width: 364px;
 }
 
+.v-eight {
+
+}
 
 
 
 /* buttons */
 .play-buttons {
-    width: 190px;
+    width: 218px;
     margin: 0 auto;
 }
 
