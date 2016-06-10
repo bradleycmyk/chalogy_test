@@ -24,8 +24,8 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       parallax('inn-one', 0.7, 120);
       parallax('inn-two', 0.6, 215);
       parallax('inn-three', 0.5, 725);
-      parallax('inn-four', 0.1, 2255);
-      parallax('inn-five', 0.05, 2370);
+      // parallax('inn-four', 0.05, 2255);
+      // parallax('inn-five', 0.05, 2370);
     });
   })
 

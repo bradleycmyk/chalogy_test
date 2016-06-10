@@ -1,16 +1,11 @@
-.max-width {
+.inn-width {
 	width: 100% !important;
 }
 
 .inn {
-	margin: 60px auto 0;
+	margin: 0 auto;
 	width: 975px;
 	color: #000000;
-
-	p:not(.emb) {
-		font-family: WorkSans;
-		font-size: 15px;
-	}
 
 	h1, h2, h3, h4 {
 		font-family: MillerBanner;
@@ -18,7 +13,7 @@
 
 	.inn-top {
 		width: 910px;
-		margin: 0 auto;
+		margin: 60px auto 0;
 
 		img {
 			vertical-align: top;
@@ -46,11 +41,15 @@
 
 			.black-box {
 				background-color: #000000;
-				padding: 40px;
+				padding: 40px 0 40px 40px;
 				margin: 55px 0 55px;
 
 				p {
 					color: #FFFFFF;
+				}
+
+				.black-box-p {
+					padding: 0 40px 0 0;
 				}
 
 				.emb {
@@ -100,7 +99,7 @@
 
 	.inn-bottom {
 		.inn-bottom-bottom {
-			width: 830px;
+			width: 870px;
 			margin: 0 auto;
 
 			img {
@@ -109,7 +108,7 @@
 
 			.inn-bottom-right {
 				margin: 15px 0 0 35px;
-				width: 350px;
+				width: 390px;
 				display: inline-block;
 				position: relative;
 
@@ -162,7 +161,7 @@
 
 		img {
 			width: 197px;
-			margin: 0 auto;
+			margin: 0 auto 20px;
 			display: block;
 		}
 
@@ -238,12 +237,12 @@ button.slick-prev {
 }
 
 .hept-inn-four {
-  top: 2075px;
+  top: 2305px;
   right: 60px;
 }
 
 .hept-inn-five {
-  top: 2150px;
+  top: 2380px;
   right: 0;
 }
 
