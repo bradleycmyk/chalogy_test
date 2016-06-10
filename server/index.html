@@ -16,8 +16,13 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> -->
 
 
-    <!-- google font -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:300,600' rel='stylesheet' type='text/css'> -->
+    <!-- Work Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700,600,300' rel='stylesheet' type='text/css'>
+
+    <!-- Miller Banner -->
+    <!-- <link href="//cloud.webtype.com/css/b7208192-a276-4e62-b601-0486b742b6ea.css" rel="stylesheet" type="text/css" /> -->
+
+    <link href="http://cloud.typenetwork.com/projects/70/fontface.css/" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
 
@@ -36,10 +41,18 @@
 </head>
 
 <body ng-app="Chalogy" class="body-wrap" ng-controller="MainController">
- 
-    
+
+
   <a class="anchor" id="top"></a>
     <div ui-view></div>
+
+    <div class="back_to_top">
+      <a href="#top">
+        <h4>
+          Back to top
+        </h4>
+      </a>
+    </div>
     <footers></footers>
 
     <div class="subscribe-modal-outer">
@@ -60,6 +73,7 @@
         </div>
       </div>
     </div>
+
 </body>
 
 </html>

@@ -1,8 +1,8 @@
 .chs {
-  p:not(.emb) {
-    font-family: WorkSans;
-    font-size: 15px;
-  }
+  // p:not(.emb) {
+  //   font-family: WorkSans;
+  //   font-size: 15px;
+  // }
 
   .hero {
     background-image: url('dna2.jpg');
@@ -20,7 +20,7 @@
     }
 
     h4 {
-      font-family: WorkSans;
+    	font-family: 'Work Sans';
       font-weight: normal;
       font-size: 17px;
       font-style: normal;
@@ -28,7 +28,7 @@
     }
 
     h1 {
-      font-family: MillerBanner;
+      // font-family: MillerBanner;
       font-weight: normal;
       font-size: 70px;
       font-style: normal;

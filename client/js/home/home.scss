@@ -149,7 +149,6 @@ a:focus {
         font-size: 26px;
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-family: MillerBanner;
 
         span {
           display: block;
@@ -165,40 +164,46 @@ a:focus {
       margin: 47px 153px;
       display: none;
 
-      // -webkit-transition: all 500ms linear;
-      // -o-transition: all 500ms linear;
-      // -moz-transition: all 500ms linear;
-      // -ms-transition: all 500ms linear;
-      // -kthtml-transition: all 500ms linear;
-      // transition: all 500ms linear;
+      .circle-red-bg {
+        width: 995px;
+        height: 971px;
+        border: 70px solid white;
+        position: absolute;
+        top: 0;
+        left: 80px;
+        border-radius: 29% 50% 53% 50%;
+      }
 
       .circle-red {
         width: 850px;
         height: 850px;
         z-index: -2000;
         text-align: center;
-        /*transitions*/
+        overflow: hidden;
 
+        &::before {
+          width: 860px;
+          height: 860px;
+          display: block;
 
-        .circle-red-bg {
-          height: 850px;
-          width: 850px;
+          position: absolute;
+          z-index: -2001;
+
+          content: '';
+
           background-image: url('eyes.png');
           background-repeat: no-repeat;
           background-position: -7px 30px;
           background-size: 860px;
+
           -webkit-transition: all 1000ms linear;
           -o-transition: all 1000ms linear;
           -moz-transition: all 1000ms linear;
           -ms-transition: all 1000ms linear;
           -kthtml-transition: all 1000ms linear;
           transition: all 1000ms linear;
-
-          &:hover {
-            transform: scale(1.1);
-          }
-
         }
+
         .chalogy {
           width: 210px;
 
@@ -213,16 +218,17 @@ a:focus {
         }
       }
 
-      .red-changer {
-        background-size: 890px 890px;
-        // background-position: -7px 40px;
+      .red-changer::before {
+        transform: scale(1.1);
+        width: 860px;
+        height: 860px;
 
-        -webkit-transition: all 1000ms;
-        -o-transition: all 1000ms;
-        -moz-transition: all 1000ms;
-        -ms-transition: all 1000ms;
-        -kthtml-transition: all 1000ms;
-        transition: all 1000ms;
+        -webkit-transition: all 1000ms linear;
+        -o-transition: all 1000ms linear;
+        -moz-transition: all 1000ms linear;
+        -ms-transition: all 1000ms linear;
+        -kthtml-transition: all 1000ms linear;
+        transition: all 1000ms linear;
       }
     }
 
@@ -234,19 +240,31 @@ a:focus {
     .circle-triangle {
       width: 852px;
       height: 308px;
+
+
       top: 133px;
       left: 150px;
+
       -webkit-clip-path: polygon(0 252px, 686px 0, 724px 34px, 753px 66px, 796px 126px, 836px 219px, 851px 308px, 70px 308px);
       clip-path: polygon(0 232px, 631px 0, 671px 34px, 700px 66px, 740px 126px, 768px 186px, 790px 282px, 63px 282px);
+
+
+
     }
 
     .circle-triangle-two {
-      width: 383px;
-      height: 311px;
+      // width: 383px;
+      // height: 311px;
+
+
+            width: 784px;
+            height: 458px;
       top: 441px;
       left: 221px;
-      -webkit-clip-path: polygon(0 0, 383px 310px, 383px 0px);
-      clip-path: polygon(0 0, 359px 293px, 359px 0px);
+      // -webkit-clip-path: polygon(0 0, 383px 310px, 383px 0px);
+      // clip-path: polygon(0 0, 359px 293px, 359px 0px);
+      -webkit-clip-path: polygon(0 0, 384px 311px, 384px 459px, 457px 446px, 527px 421px, 597px 382px, 667px 324px, 737px 226px, 775px 120px, 784px 0px);
+      clip-path: polygon(0 0, 384px 311px, 384px 459px, 457px 446px, 527px 421px, 597px 382px, 667px 324px, 737px 226px, 775px 120px, 784px 0px);
     }
 
     .ribbon-cover-blue {
@@ -496,7 +514,7 @@ a:focus {
 
     p {
       text-transform: uppercase;
-      font-family: WorkSans;
+      font-family: 'Work Sans';
       width: 314px;
       margin: 0 auto;
       text-align: center;
@@ -515,9 +533,9 @@ a:focus {
       font-size: 1.2em;
       text-transform: uppercase;
       color: black;
-      font-family: WorkSans;
+      font-family: 'Work Sans';
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
     }
 
     a:hover,

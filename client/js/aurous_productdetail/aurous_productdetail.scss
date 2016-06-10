@@ -1,7 +1,7 @@
 #auro-name {
 	width: 200px;
 	text-align: center;
-	font-family: MillerBanner;
+	// font-family: MillerBanner;
 	font-weight: 100;
 	letter-spacing: 4px;
 	font-size: 2.3em;
@@ -10,17 +10,17 @@
 }
 
 #auro-title {
-	font-family: WorkSans;
+	font-family: 'Work Sans';
 	font-size: 15px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
 #auro-desc {
-	font-family: WorkSans;
+	font-family: 'Work Sans';
 	font-size: 15px;
 	letter-spacing: 1px;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 #drop-1 {
@@ -115,7 +115,7 @@ hr.aurous-recommendation {
 
 .text-center {
 	text-align: center;
-	font-family: MillerBanner;
+	// font-family: MillerBanner;
 	font-weight: 100;
 	letter-spacing: 4px;
 	font-size: 2.3em;
