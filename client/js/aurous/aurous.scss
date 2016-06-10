@@ -26,7 +26,7 @@
 
     .aur_logo {
       float: right;
-      margin: 30px 320px 60px 0;
+      margin: 30px 280px 60px 0;
       width: 280px;
     }
 
@@ -35,24 +35,25 @@
       width: 225px;
       text-align: center;
       font-weight: 100;
-      font-size: 0.8em;
+      font-size: 15px;
       margin: 40px 0 0 145px;
       font-family: WorkSans;
       letter-spacing: 2px;
       line-height: 1.5;
+
+      &::before {
+        content: '';
+        width: 125px;
+        margin: 0 auto 20px;
+        border-bottom: 1px solid #AA8A37;
+        display: block;
+      }
     }
 
-    .aur_blurb::before {
-      content: '';
-      width: 125px;
-      margin: 0 auto 25px;
-      border-bottom: 1px solid #AA8A37;
-      display: block;
-    }
 
     .hero_blurb {
       display: inline-block;
-      margin: 260px 0 0 20px;
+      margin: 260px 0 0 15px;
 
       .enrich_blurb {
         font-family: MillerBanner;
@@ -205,21 +206,23 @@
 	  margin: 65px 0 0 45px;
 
 		.aur_title {
+      font-family: MillerBanner;
+      font-size: 30px;
+      width: 380px;
 			text-transform: uppercase;
-			font-family: MillerBanner;
-			width: 380px;
+      letter-spacing: 2px;
 			text-align: center;
-			margin: 0 auto;
-			letter-spacing: 2px;
+			margin: 0 auto 30px;
 		}
 
 		.aur_long {
 			font-family: WorkSans;
 			text-align: center;
-			font-weight: 600;
-			font-size: 0.9em;
+			font-weight: 100;
+			font-size: 15px;
 			line-height: 1.5;
-			letter-spacing: 1px;
+      letter-spacing: 2px;
+      // width: 502px;
 		}
 
 		.aur_all {

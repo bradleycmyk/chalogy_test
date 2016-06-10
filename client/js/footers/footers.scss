@@ -1,7 +1,7 @@
 footer:before {
   content: '';
   display: block;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   border-bottom: 1px solid black;
 }
@@ -19,17 +19,21 @@ footer {
     vertical-align: top;
     margin: 0.5em 0 2em 2em;
 
-    p {
-      display: inline-block;
-    }
+    .top-line {
+      margin: 0 0 0 8px;
 
-    p, a {
-      font-size: 10px;
-    }
+      p {
+        display: inline-block;
+      }
 
-    .terms {
-      color: #000000;
-      margin: 38px;
+      p, a {
+        font-size: 10px;
+      }
+
+      .terms {
+        color: #000000;
+        margin: 38px;
+      }
     }
 
     .icons {
