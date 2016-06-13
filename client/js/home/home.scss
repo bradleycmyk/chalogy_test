@@ -211,10 +211,14 @@ a:focus {
           top: 477px;
           left: 575px;
         }
+        a {
+          z-index: 100;
 
-        .cha_plus {
-          top: 498px;
-          left: 966px;
+          .cha_plus {
+            z-index: 100;
+            top: 498px;
+            left: 966px;
+          }
         }
       }
 
