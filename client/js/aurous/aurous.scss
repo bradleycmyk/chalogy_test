@@ -3,6 +3,10 @@
   color: #FFFFFF;
 	height: 1070px;
 
+  a:hover {
+    color: #FFFFFF !important;
+  }
+
   .wrapper {
     background-color: #000000;
     overflow: visible;
@@ -15,7 +19,8 @@
       a{
         color: #FFFFFF;
         font-family: 'Work Sans';
-        font-size: 0.8em;
+        font-weight: lighter;
+        // font-size: 13px;
         letter-spacing: 1px;
       }
 
@@ -27,43 +32,29 @@
     .aur_logo {
       float: right;
       margin: 30px 280px 60px 0;
-      width: 280px;
     }
 
     .aur_blurb {
       display: block;
-      width: 225px;
       text-align: center;
       font-weight: 100;
-      font-size: 15px;
-      margin: 40px 0 0 145px;
       font-family: 'Work Sans';
-      letter-spacing: 2px;
-      line-height: 1.5;
 
       &::before {
         content: '';
-        width: 125px;
-        margin: 0 auto 20px;
         border-bottom: 1px solid #AA8A37;
         display: block;
       }
     }
 
-
     .hero_blurb {
       display: inline-block;
-      margin: 260px 0 0 15px;
 
       .enrich_blurb {
-        // font-family: MillerBanner;
         text-align: center;
         display: inline-block;
         font-weight: 100;
-        /*margin: 260px 0 0 50px;*/
         letter-spacing: 4px;
-        width: 470px;
-        font-size: 2.3em;
         color: #FFFFFF;
       }
 
@@ -71,14 +62,12 @@
         display: block;
         color: white;
         border: 1px solid #AA8A37;
-        width: 135px;
         text-align: center;
         margin: 0 auto;
         padding: 3px 15px;
-        font-family: WorkSans;
-        font-size: 0.8em;
+        font-family: 'Work Sans';
         letter-spacing: 1px;
-        font-weight: bold
+        font-weight: bold;
       }
     }
 
@@ -201,13 +190,13 @@
 
 	.rightie {
 	  display: inline-block;
-	  width: 487px;
+	  width: 495px;
 	  vertical-align: top;
-	  margin: 65px 0 0 45px;
+	  margin: 65px 0 0;
 
 		.aur_title {
       font-size: 30px;
-      width: 380px;
+      // width: 380px;
 			text-transform: uppercase;
       letter-spacing: 2px;
 			text-align: center;
@@ -217,7 +206,7 @@
 		.aur_long {
 			// font-family: WorkSans;
 			text-align: center;
-			font-weight: 600;
+			font-weight: normal;
 			// font-size: 15px;
 			line-height: 1.5;
       letter-spacing: 2px;
@@ -237,4 +226,117 @@
 			color: #000000;
 		}
 	}
+}
+
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    .bread_crumb.aurous_crumb {
+      margin: 30px 50px;
+
+      a{
+        font-size: 13px;
+      }
+    }
+
+    .aur_logo {
+      width: 280px;
+    }
+
+    .aur_blurb {
+      width: 225px;
+      font-size: 15px;
+      margin: 40px 0 0 145px;
+      letter-spacing: 2px;
+      line-height: 1.5;
+
+      &::before {
+        width: 125px;
+        margin: 0 auto 20px;
+      }
+    }
+
+    .hero_blurb {
+      margin: 260px 0 0 15px;
+
+      .enrich_blurb {
+        letter-spacing: 4px;
+        width: 470px;
+        font-size: 30px;
+      }
+
+      .read_more {
+        width: 151px;
+        margin: 0 auto;
+        padding: 3px 15px;
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+    }
+
+    .cara_one, .cara_two, .cara_three {
+      height: 760px;
+      background-repeat: no-repeat;
+      background-position: 400px 0px;
+      background-size: 758px;
+      clear: both;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .wrapper {
+    .bread_crumb.aurous_crumb {
+      margin: 30px 50px;
+
+      a{
+        font-size: 1.1vw;
+      }
+    }
+
+    .aur_logo {
+      width: 23.4vw;
+    }
+
+    .aur_blurb {
+      width: 18.5vw;
+      font-size: 1.2vw;
+      margin: 40px 0 0 145px;
+      letter-spacing: 2px;
+      line-height: 1.5;
+
+      &::before {
+        width: 53%;
+        margin: 0 auto 20px;
+      }
+    }
+
+    .hero_blurb {
+      margin: 260px 0 0 15px;
+
+      .enrich_blurb {
+        letter-spacing: 4px;
+        width: 470px;
+        font-size: 2.5vw;
+      }
+
+      .read_more {
+        width: 11.9vw;
+        margin: 0 auto;
+        padding: 3px 15px;
+        font-size: 1.2vw;
+        letter-spacing: 1px;
+        font-weight: bold;
+      }
+    }
+
+    .cara_one, .cara_two, .cara_three {
+      height: 760px;
+      background-repeat: no-repeat;
+      background-position: 400px 0px;
+      background-size: 758px;
+      clear: both;
+    }
+  }
 }

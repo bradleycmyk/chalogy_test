@@ -55,6 +55,8 @@
 
 .carousel-inner {
    margin-bottom: 12px;
+	 background-color: black;
+
 }
 
 
@@ -85,6 +87,7 @@
 .carousel-indicators li {
 	margin-left: 22px !important;
 	background-color: gray !important;
+	vertical-align: middle;
 }
 
 .carousel-indicators .active {
@@ -103,8 +106,8 @@
 hr.aurous-recommendation {
 	margin-top: 60px;
  	border: none;
-  	height: 2px;
-  	background-color: black;
+	height: 1px;
+	background-color: black;
 }
 
 .aurous_recommendedProd {

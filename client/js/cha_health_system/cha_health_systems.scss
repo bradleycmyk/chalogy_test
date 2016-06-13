@@ -1,9 +1,4 @@
 .chs {
-  // p:not(.emb) {
-  //   font-family: WorkSans;
-  //   font-size: 15px;
-  // }
-
   .hero {
     background-image: url('dna2.jpg');
     background-size: 1120px auto;
@@ -58,6 +53,11 @@
       margin: 0 80px 0 40px;
       position: relative;
 
+      a {
+        color: #000000;
+        font-weight: 600;
+      }
+
       &::before {
         content: '';
         display: block;
@@ -68,6 +68,22 @@
         position: absolute;
         top: -15px;
         left: -15px;
+      }
+    }
+
+    #myCarousel {
+      width: 410px;
+      display: inline-block;
+
+      .carousel-indicators {
+        width: 100% !important;
+        position: relative;
+        left: 12vw !important;
+        top: 0;
+
+        li {
+          vertical-align: middle;
+        }
       }
     }
   }
