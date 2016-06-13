@@ -22,4 +22,10 @@ app.controller('ProdDetailCtrl', function($scope, $http, $state, $stateParams, p
 	//     return ($window.location.href.split("5959/")[1].indexOf(route) > -1);
 	//  };
 
+	$(document).ready(function(){
+		setTimeout(function() {
+	      $('#white-wrap-d').removeClass('white-wrap')
+	    }, 350);
+	})
+
 });

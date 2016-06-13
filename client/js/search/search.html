@@ -29,7 +29,16 @@
 			<br>
 			<!-- <img ng-src="{{ imgurl }}" /> -->
 			<!-- <iframe class="giphy" src="//giphy.com/embed/UslGBU1GPKc0g?hideSocial=true" width="480" height="267" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe> -->
-			<iframe class="giphy" src="//giphy.com/embed/LJ1XTfxW60Luw?hideSocial=true" width="480" height="330" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+			<div class="row">
+				<div class="col-sm-6" >
+					<iframe class="giphy" src="//giphy.com/embed/LJ1XTfxW60Luw?hideSocial=true" width="480" height="330" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+				</div>
+				<div class="col-sm-6">
+					<li class="left-align">{{ suggestion[0] }}</li>
+					<li class="left-align">{{ suggestion[1] }}</li>
+					<li class="left-align">{{ suggestion[2] }}</li>
+				</div>
+			</div>
 		</div>
 	</div>
 

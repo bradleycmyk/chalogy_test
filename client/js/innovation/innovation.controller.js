@@ -1,8 +1,5 @@
 app.controller('InnovationController', function($scope, $http, $window, $location) {
 
-  	var currentUrl = $window.location.href;
-	$scope.url = currentUrl;
-
   // for carousel autoplay
   $('#myCarousel').carousel({
     interval: 5000,

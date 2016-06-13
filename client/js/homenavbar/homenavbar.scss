@@ -70,12 +70,15 @@
   margin-top: -58px;
 }
 
-
 .clean-and-clear-home {
   width: 100%;
   height: 106px;
   background-color: white;
   clear: both;
+}
+
+#aurous-bottom-home, #sat-skin-bottom-home {
+  margin-bottom: 3px;
 }
 
 @media screen and (min-width: 1205px) {

@@ -82,9 +82,9 @@ video {
 p.fade-in-effect {
     opacity: 0;
     position: relative;
-    -webkit-animation: mymove 3s; /* Chrome, Safari, Opera */
+    -webkit-animation: mymove 4s; /* Chrome, Safari, Opera */
     -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
-    animation: mymove 3s;
+    animation: mymove 4s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
 }
@@ -249,7 +249,7 @@ p.fade-in-effect {
     width: 250px;
     height: 21px;
     margin: 0 auto;
-    padding-left: 14px;
+    padding-left: 8px;
     margin-top: -54px;
     /*background-color: yellow;*/
 }

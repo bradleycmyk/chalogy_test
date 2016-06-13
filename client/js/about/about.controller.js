@@ -1,4 +1,5 @@
 app.controller('AboutController', function($scope, $http, $window, $location) {
+  
   $(document).ready(function() {
     $(".rooted, .constant, .versatile").click(function() {
       if ($(this).children(".paragraph").css('display') == 'none') {
