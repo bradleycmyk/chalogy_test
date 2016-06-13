@@ -207,9 +207,14 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.video-container-brand7').css({"display":"none"});
 
       $('#video-text-8-1').addClass('fade-in-effect');
-      $('.fading-effect').removeClass('fadingEffect-to-left');
-      $('.fading-effect').removeClass('fadingEffect');
-      $('.fading-effect').addClass('fadingEffect-to-top');
+      $('#8-1').addClass('fadingEffect-to-top');
+      $('#8-2').addClass('fadingEffect');
+      $('#8-3').addClass('fadingEffect');
+      $('#8-4').addClass('fadingEffect');
+      $('#8-5').addClass('fadingEffect-to-left');
+      $('#8-6').addClass('fadingEffect-to-left');
+      $('#8-7').addClass('fadingEffect-to-left');
+
       $('.line-in-video').css({ "opacity":"1"});
       $('.video-container-brand8').css({"display":"block"});
       $('#video8').get(0).play();
