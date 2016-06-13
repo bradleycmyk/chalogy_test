@@ -187,6 +187,17 @@ app.controller('AurousBrandController', function($scope, $http, $window, $locati
 	    });
 	
 	})
+	
+	// adding active class to buttons 
+
+	$('.circle').click(function(e) {
+	    e.preventDefault(); //prevent the link from being followed
+	    $('.circle').removeClass('active-btn');
+	    $(this).addClass('active-btn');
+	});
+                     
+
+
 
     $scope.text1 = ["Sh-Polypeptide 55", "(PDGA-AA)", "Stimulates healthier looking skin and enhances skin's nautral rejuvenating power."];
     $scope.text2 = ["Rh-Oligopeptide-2", "Strengthens skin's own resurfacing ability, promoting youthful, radiant skin."];

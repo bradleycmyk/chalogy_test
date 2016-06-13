@@ -246,9 +246,35 @@ p.fade-in-effect {
 
 /* buttons */
 .play-buttons {
-    width: 218px;
+    width: 250px;
+    height: 21px;
     margin: 0 auto;
+    padding-left: 14px;
+    margin-top: -54px;
+    /*background-color: yellow;*/
 }
+
+a.video-button {
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+}
+
+
+.circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('circle-icon.png');
+    background-size: Contain;
+    background-repeat: no-repeat;
+    margin-right: 4px;
+}
+
+.active-btn {
+    background-image: url('heart-icon.png');
+}
+
 
 .click-to-discover {
     font-size: 15px;
