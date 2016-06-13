@@ -24,6 +24,7 @@
       }
     }
 
+
     .dial {
       vertical-align: top;
 
@@ -32,15 +33,31 @@
         display: block;
         font-weight: bold;
 
+
         .for {
           display: block;
+       /*   -webkit-margin-before: 0.83em;
+          -webkit-margin-after: 0.83em;
+          -webkit-margin-start: 0px;
+          -webkit-margin-end: 0px;
+          font-weight: bold;*/
+
 
           &::after {
             content: '';
             display: block;
+<<<<<<< HEAD
             margin: 5px 0;
             width: 54%;
             border-top: 8px solid #000000;
+=======
+
+
+            /*margin: 5px 0;
+            width: 140px;
+            border-top: 8px solid #000000;*/
+
+>>>>>>> ddda1814edbbb1a82b124e9817ad87206695d158
           }
         }
       }
@@ -103,11 +120,6 @@
         margin: 30px 0 0;
         font-size: 0.9em;
         letter-spacing: 1px;
-
-        &:hover {
-          color: rgb(0, 209, 165);
-          border: 10px solid rgb(0, 209, 165);
-        }
       }
     }
 
@@ -126,27 +138,25 @@
 @media screen and (min-width: 1200px) {
   .sat_hero {
     width: 1200px;
-    height: 828px;
     margin: 0 auto;
-    color: #000000;
 
     .dial {
-      // padding: 1.6em 0 0 2em;
+      padding: 1.6em 0 0 2em;
+      font-size: 2em;
       display: inline-block;
-      margin: 35px 0 0 60px;
 
       .dial_text {
-        font-size: 65px;
+        font-size: 1.5em;
       }
     }
 
     .text_box {
-      margin: 505px 60px 0 0;
+      margin: 491px 60px 0 0;
       float: right;
 
       p {
         width:  340px;
-        padding: 50px 35px 21px 20px;
+        padding: 50px 35px 10px 20px;
         float: right;
         margin: 0 0 0 0;
       }
@@ -166,6 +176,9 @@
     }
   }
 
+  .sat_hero {
+    height: 797px;
+  }
 
   main {
     width: 1080px;
@@ -181,7 +194,6 @@
 
       p {
         font-size: 15px;
-        width: 563px;
       }
     }
 

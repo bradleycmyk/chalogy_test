@@ -1,40 +1,46 @@
+video {
+    position: absolute;
+}
+
+.video-container-brand1, .video-container-brand2, .video-container-brand3, .video-container-brand4, .video-container-brand5, .video-container-brand6, .video-container-brand7, .video-container-brand8 {
+    height: 300px;
+}
+
 .video-cover {
-	/*position: relative;*/
+    margin: 0 auto;
 }
 
 .video-center {
-	text-align: center;
+    text-align: center;
 }
-
-.textbox-in-video {
-	position: absolute;
-	left: 1013px;
-	top: 1311px;
-	z-index: 999;
-}
-
-
-.text-in-video {
-    position:relative;
-    line-height:2em;
-    /*overflow:hidden;*/
-    /* for demo purpose */
-    width:300px;
-    margin:0 auto;
-    opacity: 0;
-}
-
 
 .fadingEffect {
     position:absolute;
     top:0; bottom:0; right:0;
     width:100%;
     background:white;
+    /*opacity: 0;*/
 
-    -moz-animation: showHide 2s ease-in alternate infinite; /* Firefox */
+    -moz-animation: show 2s ease-in alternate infinite; /* Firefox */
     -webkit-animation: show 3s ease-in-out ; /* Safari and Chrome */
-    -ms-animation: showHide 2s ease-in alternate infinite; /* IE10 */
-    -o-animation: showHide 2s ease-in alternate infinite; /* Opera */
+    -ms-animation: show 2s ease-in alternate infinite; /* IE10 */
+    -o-animation: show 2s ease-in alternate infinite; /* Opera */
+    animation: show 3s ease-in-out;
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.fadingEffect-to-left {
+    position:absolute;
+    top:0; bottom:0; left:0;
+    width:100%;
+    background:white;
+
+    -moz-animation: show 2s ease-in alternate infinite; /* Firefox */
+    -webkit-animation: show 3s ease-in-out ; /* Safari and Chrome */
+    -ms-animation: show 2s ease-in alternate infinite; /* IE10 */
+    -o-animation: show 2s ease-in alternate infinite; /* Opera */
     animation: show 3s ease-in-out;
     -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
     animation-delay: 2s;
@@ -47,91 +53,245 @@
     60% {width:0%;}
     100% {width:0%;}
 }
-@-moz-keyframes sho { /* FF */
+@-moz-keyframes show { /* FF */
     0% {width:100%}
     40% {width:0%}
     60% {width:0%;}
-    100% {width:100%;}
+    100% {width:0%;}
 }
 @-ms-keyframes show { /* IE10 */
     0% {width:100%}
     40% {width:0%}
     60% {width:0%;}
-    100% {width:100%;}
+    100% {width:0%;}
 }
 @-o-keyframes show { /* Opera */
     0% {width:100%}
     40% {width:0%}
     60% {width:0%;}
-    100% {width:100%;}
+    100% {width:0%;}
 }
-@keyframes showHide {
+@keyframes show {
     0% {width:100%}
     40% {width:0%}
     60% {width:0%;}
-    100% {width:100%;}
+    100% {width:0%;}
 }
 
-/* more animation */
 
-
-.anima {
-    position: absolute;
-    top: 1290px;
-    left: 1107px;
-}
-
-#hey {
-    opacity: 0;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-}
-
-#hey1 {
-    opacity: 0;
-}
-
-div.hey {
-    opacity: 0;
-    width: 100px;
-    height: 100px;
-    background: red;
-    position: relative;
-    -webkit-animation: mymove 5s; /* Chrome, Safari, Opera */
-    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
-    animation: mymove 5s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-}
-
-div.hey1 {
+p.fade-in-effect {
     opacity: 0;
     position: relative;
-    -webkit-animation: mymove 4s; /* Chrome, Safari, Opera */
-    -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
-    animation: mymove 4s;
-    animation-delay: 4s;
+    -webkit-animation: mymove 3s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
+    animation: mymove 3s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
-/*    from {left: 0px; opacity: 0;}
-    to {left: 200px; opacity: 1;}*/
-
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
 @keyframes mymove {
-/*    from {left: 0px; opacity: 0;}
-    to {left: 200px; opacity: 1;}
-*/    
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
+.video-container-brand2, .video-container-brand3, .video-container-brand4, .video-container-brand5, .video-container-brand6, .video-container-brand7, .video-container-brand8 {
+    display: none;
+}
+
+/* video text stylying + positioning -*/ 
+
+#video1, #video2, #video3, #video4, #video5, #video6, #video7, #video8 {
+    /* centering absolutely positioned element */
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+#video-text-1, #video-text-2, #video-text-3, #video-text-4, #video-text-5, #video-text-6, #video-text-7, #video-text-8 {
+    opacity: 0;    
+    font-family: MillerBanner;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#video-text-1, #video-text-2, #video-text-3, #video-text-4, #video-text-5, #video-text-6, #video-text-7 {
+    text-align: left;
+}
+
+#video-text-2 {
+    padding-left: 87px;
+}
+
+#video-text-4 {
+    padding-left: 64px;
+}
+
+#video-text-5 {
+    padding-left: 26px;
+}
+
+#video-text-6 {
+    padding-left: 100px;
+}
+
+.line-in-video {
+    position:relative;
+    line-height:0em;
+    margin:10px auto;
+    background-color: black;
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+}
+
+.line-in-video-top {
+    position:relative;
+    display: inline-block;
+    margin:10px auto;
+    background-color: black;
+    /*width: 100%;*/
+    width: 1px;
+    height: 40px;
+    opacity: 0;
+}
+
+.video-text-msg {
+    display: inline-block;
+    position: relative;
+}
+
+.v-one {
+    margin: 400px 0 13px -12px;
+    width: 361px;
+}
+
+#line-one {
+    width: 316px;
+    margin-left: 0px;
+}
+
+.v-two {
+    margin: 264px 0 13px 620px;
+    width: 277px
+}
+
+#line-two {
+    width: 250px;
+    margin-left: 26px;
+}
+
+.v-three {
+    margin: 99px 0 13px -14px;
+    width: 217px;
+}
+
+#line-three {
+    width: 350px;
+}
+
+.v-four {
+    margin: 323px 0 13px 628px;
+    width: 260px;
+}
+
+#line-four {
+    width: 250px;
+    height: 1px;
+}
+
+.v-five {
+    margin: 307px 0 13px -45px;
+    width: 300px;
+}
+
+#line-five {
+    width: 246px;
+}
+
+.v-six {
+    margin: 318px 0 13px 564px;
+    width: 290px;
+}
+
+#line-six {
+    width: 300px;
+}
+
+.v-seven {
+    margin: 300px 0 13px -9px;
+    width: 195px;
+}
+
+#line-seven {
+    width: 315px;
+}
+
+/* last animation - animatio 8 */
+.v-eight-one {
+
+}
+
+#line-eight-1 {
+
+}
 
 
+
+/* buttons */
+.play-buttons {
+    width: 250px;
+    height: 21px;
+    margin: 0 auto;
+    padding-left: 14px;
+    margin-top: -54px;
+    /*background-color: yellow;*/
+}
+
+a.video-button {
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+}
+
+
+.circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('circle-icon.png');
+    background-size: Contain;
+    background-repeat: no-repeat;
+    margin-right: 4px;
+}
+
+.active-btn {
+    background-image: url('heart-icon.png');
+}
+
+
+.click-to-discover {
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin: 0 0 20px;
+    font-family: MillerBanner;
+}
+
+.click-to-discover > h4 {
+    font-size: 14px;
+}
+
+.video-text-deco {
+    font-family: MillerBanner;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+}
 

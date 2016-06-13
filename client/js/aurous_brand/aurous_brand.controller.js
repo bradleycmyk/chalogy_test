@@ -29,7 +29,7 @@ app.controller('AurousBrandController', function($scope, $http, $window, $locati
 	window.addEventListener('resize', checkScroll, false);
 
 	$(document).ready(function(){
-		var myVideo = $('#video2');
+		var myVideo = $('.video-play-pause');
 
 		$('.video-center').click(function(){
 			if (myVideo.get(0).paused) 
@@ -38,44 +38,174 @@ app.controller('AurousBrandController', function($scope, $http, $window, $locati
 		        myVideo.get(0).pause(); 
 		});
 
-		// $(".btn1").click(function(){
-	 //        $("p").fadeOut()
-	 //    });
-	    $(".btn2").click(function(){
-	        $("#fade").fadeIn();
+		$('#btn1').click(function(){
+			$('.video-container-brand2').css({"display":"none"});
+	    	$('.video-container-brand3').css({"display":"none"});
+	    	$('.video-container-brand4').css({"display":"none"});
+	    	$('.video-container-brand5').css({"display":"none"});
+	    	$('.video-container-brand6').css({"display":"none"});
+	    	$('.video-container-brand7').css({"display":"none"});
+	    	$('.video-container-brand8').css({"display":"none"});
+
+	      	$('#video-text-1').addClass('fade-in-effect');
+	      	$('.fading-effect').removeClass('fadingEffect');
+	      	$('.fading-effect').addClass('fadingEffect-to-left');
+	      	$('.line-in-video').css({ "opacity":"1"});
+	    	$('.video-container-brand1').css({"display":"block"});
+	    	$('#video1').get(0).play();
 	    });
+
+	    $('#btn2').click(function(){
+	    	$('.line-in-video').css({ "opacity":"0"});
+	    	$('.video-container-brand1').css({"display":"none"});
+	    	$('.video-container-brand3').css({"display":"none"});
+	    	$('.video-container-brand4').css({"display":"none"});
+	    	$('.video-container-brand5').css({"display":"none"});
+	    	$('.video-container-brand6').css({"display":"none"});
+	    	$('.video-container-brand7').css({"display":"none"});
+	    	$('.video-container-brand8').css({"display":"none"});
+
+	      	$('#video-text-2').addClass('fade-in-effect');
+	      	$('.fading-effect').removeClass('fadingEffect-to-left');
+	      	$('.fading-effect').addClass('fadingEffect');
+	      	$('.line-in-video').css({ "opacity":"1"});
+	    	$('.video-container-brand2').css({"display":"block"});
+	    	$('#video2').get(0).play();
+	    });
+
+        $('#btn3').click(function(){
+        	$('.line-in-video').css({ "opacity":"0"});
+        	$('.video-container-brand1').css({"display":"none"});
+	    	$('.video-container-brand2').css({"display":"none"});
+	    	$('.video-container-brand4').css({"display":"none"});
+	    	$('.video-container-brand5').css({"display":"none"});
+	    	$('.video-container-brand6').css({"display":"none"});
+	    	$('.video-container-brand7').css({"display":"none"});
+	    	$('.video-container-brand8').css({"display":"none"});
+
+	      	$('#video-text-3').addClass('fade-in-effect');
+	      	$('.fading-effect').removeClass('fadingEffect');
+	      	$('.fading-effect').addClass('fadingEffect-to-left');
+	      	$('.line-in-video').css({ "opacity":"1"});
+	    	$('.video-container-brand3').css({"display":"block"});
+	    	$('#video3').get(0).play();
+	    });
+
+	    $('#btn4').click(function(){
+	      	$('.line-in-video').css({ "opacity":"0"});
+	      	// $('.line-in-video').hide();
+        	$('.video-container-brand1').css({"display":"none"});
+	    	$('.video-container-brand2').css({"display":"none"});
+	    	$('.video-container-brand3').css({"display":"none"});
+	    	$('.video-container-brand5').css({"display":"none"});
+	      	$('.video-container-brand6').css({"display":"none"});
+	    	$('.video-container-brand7').css({"display":"none"});
+	    	$('.video-container-brand8').css({"display":"none"});
+
+	      	$('#video-text-4').addClass('fade-in-effect');
+	      	$('.fading-effect').removeClass('fadingEffect-to-left');
+	      	$('.fading-effect').removeClass('fadingEffect-to-top');
+	      	$('.fading-effect').addClass('fadingEffect');
+	      	$('.line-in-video').css({ "opacity":"1"});
+	      	// $('.line-in-video').show();
+	    	$('.video-container-brand4').css({"display":"block"});
+	    	$('#video4').get(0).play();
+	    });
+
+	    $('#btn5').click(function(){
+	    	$('.line-in-video').css({ "opacity":"0"});
+        	$('.video-container-brand1').css({"display":"none"});
+	    	$('.video-container-brand2').css({"display":"none"});
+	    	$('.video-container-brand3').css({"display":"none"});
+	    	$('.video-container-brand4').css({"display":"none"});
+	    	$('.video-container-brand6').css({"display":"none"});
+	    	$('.video-container-brand7').css({"display":"none"});
+	    	$('.video-container-brand8').css({"display":"none"});
+
+	      	$('#video-text-5').addClass('fade-in-effect');
+	      	$('.fading-effect').removeClass('fadingEffect');
+	      	$('.fading-effect').addClass('fadingEffect-to-left');
+	      	$('.line-in-video').css({ "opacity":"1"});
+	    	$('.video-container-brand5').css({"display":"block"});
+	    	$('#video5').get(0).play();
+	      	
+	    });
+
+	    $('#btn6').click(function(){
+	      	$('.line-in-video').css({ "opacity":"0"});
+        	$('.video-container-brand1').css({"display":"none"});
+	    	$('.video-container-brand2').css({"display":"none"});
+	    	$('.video-container-brand3').css({"display":"none"});
+	    	$('.video-container-brand4').css({"display":"none"});
+	    	$('.video-container-brand5').css({"display":"none"});
+	    	$('.video-container-brand7').css({"display":"none"});
+	    	$('.video-container-brand8').css({"display":"none"});
+
+	      	$('#video-text-6').addClass('fade-in-effect');
+	      	$('.fading-effect').removeClass('fadingEffect-to-left');
+	      	$('.fading-effect').addClass('fadingEffect');
+	      	$('.line-in-video').css({ "opacity":"1"});
+	    	$('.video-container-brand6').css({"display":"block"});
+	    	$('#video6').get(0).play();
+	    });
+
+	    $('#btn7').click(function(){
+	      	$('.line-in-video').css({ "opacity":"0"});
+        	$('.video-container-brand1').css({"display":"none"});
+	    	$('.video-container-brand2').css({"display":"none"});
+	    	$('.video-container-brand3').css({"display":"none"});
+	    	$('.video-container-brand4').css({"display":"none"});
+	    	$('.video-container-brand5').css({"display":"none"});
+	    	$('.video-container-brand6').css({"display":"none"});
+	    	$('.video-container-brand8').css({"display":"none"});
+
+	      	$('#video-text-7').addClass('fade-in-effect');
+	      	$('.fading-effect').removeClass('fadingEffect');
+	      	$('.fading-effect').addClass('fadingEffect-to-left');
+	      	$('.line-in-video').css({ "opacity":"1"});
+	    	$('.video-container-brand7').css({"display":"block"});
+	    	$('#video7').get(0).play();
+	    });
+
+	    $('#btn8').click(function(){
+	      	$('.line-in-video').css({ "opacity":"0"});
+        	$('.video-container-brand1').css({"display":"none"});
+	    	$('.video-container-brand2').css({"display":"none"});
+	    	$('.video-container-brand3').css({"display":"none"});
+	    	$('.video-container-brand4').css({"display":"none"});
+	    	$('.video-container-brand5').css({"display":"none"});
+	    	$('.video-container-brand6').css({"display":"none"});
+	    	$('.video-container-brand7').css({"display":"none"});
+
+	      	$('#video-text-8-1').addClass('fade-in-effect');
+	      	$('.fading-effect').removeClass('fadingEffect-to-left');
+	      	$('.fading-effect').removeClass('fadingEffect');
+	      	$('.fading-effect').addClass('fadingEffect-to-top');
+	      	$('.line-in-video').css({ "opacity":"1"});
+	    	$('.video-container-brand8').css({"display":"block"});
+	    	$('#video8').get(0).play();
+	    });
+	
 	})
+	
+	// adding active class to buttons 
 
-	$(function() { // Shorthand for $(document).ready(function() {
-		var myVideo3 = $('#video2');
-
-      $('p.a').hide().delay(5000).fadeIn(5200);
-      $('p.b').hide().delay(5200).fadeIn(6200);
-      $('p.c').delay(5000).css({"display":"block"});
-      $('#heybtn').click(function(){
-      	$('#hey').addClass('hey');
-      });
-
-      $('#btn1').click(function(){
-      	$('#hey1').addClass('hey1');
-      	$('#fadingEffect').addClass('fadingEffect');
-      	$('.text-in-video').css({ "opacity":"1"});
-      });
-
-      $('#btn2').click(function(){
-      	document.getElementById('videosource').src = "video/cha_04.mp4";
-      	document.getElementById('videosource2').src = "video/cha_04.ogg";
-      	myVideo3.get(0).play();
-      });
-
-       $('#btn3').click(function(){
-      	$('#videosource').get(0).src = "video/cha_02.mp4";
-      	$('#videosource2').get(0).src = "video/cha_02.ogg";
-      	myVideo3.get(0).play();
-      });
-
+	$('.circle').click(function(e) {
+	    e.preventDefault(); //prevent the link from being followed
+	    $('.circle').removeClass('active-btn');
+	    $(this).addClass('active-btn');
 	});
+                     
 
 
+
+    $scope.text1 = ["Sh-Polypeptide 55", "(PDGA-AA)", "Stimulates healthier looking skin and enhances skin's nautral rejuvenating power."];
+    $scope.text2 = ["Rh-Oligopeptide-2", "Strengthens skin's own resurfacing ability, promoting youthful, radiant skin."];
+    $scope.text3 = ["sh-Polypeptide 45", "(GM-CSF)", "Anti-inflammatory peptide stimulates healthy skin while minimizing the appearance of fine lines and wrinkles."];
+    $scope.text4 = ["RH-Polypeptide 8", "(FGF4)", "Promotes healthy skin while boosting firmness and building resiliency."];
+    $scope.text5 = ["EGF Rh-Oligopeptide 1", "Activates revitalization while reinforcing skin's natural barrier to protect the complexion."];
+    $scope.text6 = ["Rh-Polypeptide 9", "(VEGF)", "Stimulates youthful rejvenation while protecting the skin and fostering healing."];
+    $scope.text7 = ["Rh-Polypeptide 1", "Stimulates healthy skin growth, promoting younger-looking skin"];
+    $scope.text8 = ["sh-Polypeptide 45", "(GM-CSF)", "Rh-Oligopeptide-2", "Rh-Polypeptide 9", "(VEGF)", "RH-Polypeptide 8", "(FGF4)", "EGF Rh-Oligopeptide 1", "Sh-Polypeptide 55", "(PDGA-AA)", "Rh-Polypeptide 1"];
 	
 });
