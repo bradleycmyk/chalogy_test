@@ -7,11 +7,11 @@ video {
 }
 
 .video-cover {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 .video-center {
-	text-align: center;
+    text-align: center;
 }
 
 .fadingEffect {
@@ -19,11 +19,12 @@ video {
     top:0; bottom:0; right:0;
     width:100%;
     background:white;
+    /*opacity: 0;*/
 
-    -moz-animation: showHide 2s ease-in alternate infinite; /* Firefox */
+    -moz-animation: show 2s ease-in alternate infinite; /* Firefox */
     -webkit-animation: show 3s ease-in-out ; /* Safari and Chrome */
-    -ms-animation: showHide 2s ease-in alternate infinite; /* IE10 */
-    -o-animation: showHide 2s ease-in alternate infinite; /* Opera */
+    -ms-animation: show 2s ease-in alternate infinite; /* IE10 */
+    -o-animation: show 2s ease-in alternate infinite; /* Opera */
     animation: show 3s ease-in-out;
     -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
     animation-delay: 2s;
@@ -36,10 +37,10 @@ video {
     width:100%;
     background:white;
 
-    -moz-animation: showHide 2s ease-in alternate infinite; /* Firefox */
+    -moz-animation: show 2s ease-in alternate infinite; /* Firefox */
     -webkit-animation: show 3s ease-in-out ; /* Safari and Chrome */
-    -ms-animation: showHide 2s ease-in alternate infinite; /* IE10 */
-    -o-animation: showHide 2s ease-in alternate infinite; /* Opera */
+    -ms-animation: show 2s ease-in alternate infinite; /* IE10 */
+    -o-animation: show 2s ease-in alternate infinite; /* Opera */
     animation: show 3s ease-in-out;
     -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
     animation-delay: 2s;
@@ -52,30 +53,31 @@ video {
     60% {width:0%;}
     100% {width:0%;}
 }
-@-moz-keyframes sho { /* FF */
+@-moz-keyframes show { /* FF */
     0% {width:100%}
     40% {width:0%}
     60% {width:0%;}
-    100% {width:100%;}
+    100% {width:0%;}
 }
 @-ms-keyframes show { /* IE10 */
     0% {width:100%}
     40% {width:0%}
     60% {width:0%;}
-    100% {width:100%;}
+    100% {width:0%;}
 }
 @-o-keyframes show { /* Opera */
     0% {width:100%}
     40% {width:0%}
     60% {width:0%;}
-    100% {width:100%;}
+    100% {width:0%;}
 }
-@keyframes showHide {
+@keyframes show {
     0% {width:100%}
     40% {width:0%}
     60% {width:0%;}
-    100% {width:100%;}
+    100% {width:0%;}
 }
+
 
 p.fade-in-effect {
     opacity: 0;
@@ -119,11 +121,7 @@ p.fade-in-effect {
     font-style: italic;
 }
 
-#video-text-5, #video-text-6, #video-text-7 {
-    text-align: right;
-}
-
-#video-text-1, #video-text-2, #video-text-3, #video-text-4 {
+#video-text-1, #video-text-2, #video-text-3, #video-text-4, #video-text-5, #video-text-6, #video-text-7 {
     text-align: left;
 }
 
@@ -131,13 +129,36 @@ p.fade-in-effect {
     padding-left: 87px;
 }
 
+#video-text-4 {
+    padding-left: 64px;
+}
+
+#video-text-5 {
+    padding-left: 26px;
+}
+
+#video-text-6 {
+    padding-left: 100px;
+}
+
 .line-in-video {
     position:relative;
     line-height:0em;
     margin:10px auto;
     background-color: black;
-    /*width: 100%;*/
+    width: 100%;
     height: 1px;
+    opacity: 0;
+}
+
+.line-in-video-top {
+    position:relative;
+    display: inline-block;
+    margin:10px auto;
+    background-color: black;
+    /*width: 100%;*/
+    width: 1px;
+    height: 40px;
     opacity: 0;
 }
 
@@ -157,42 +178,67 @@ p.fade-in-effect {
 }
 
 .v-two {
-    margin: 264px 0 13px 607px;
+    margin: 264px 0 13px 620px;
     width: 277px
 }
 
 #line-two {
     width: 250px;
     margin-left: 26px;
-
 }
 
 .v-three {
-    margin: 107px 0 13px -32px;
+    margin: 99px 0 13px -14px;
+    width: 217px;
+}
+
+#line-three {
     width: 350px;
 }
 
 .v-four {
-    margin: 354px 0 13px -34px;
-    width: 350px;
+    margin: 323px 0 13px 628px;
+    width: 260px;
+}
+
+#line-four {
+    width: 250px;
+    height: 1px;
 }
 
 .v-five {
-    margin: 218px 0 13px 624px;
-    width: 250px;
+    margin: 307px 0 13px -45px;
+    width: 300px;
+}
+
+#line-five {
+    width: 246px;
 }
 
 .v-six {
-    margin: 274px 0 13px 545px;
+    margin: 318px 0 13px 564px;
+    width: 290px;
+}
+
+#line-six {
     width: 300px;
 }
 
 .v-seven {
-    margin: 373px 0 13px 494px;
-    width: 364px;
+    margin: 300px 0 13px -9px;
+    width: 195px;
 }
 
-.v-eight {
+#line-seven {
+    width: 315px;
+}
+
+/* last animation - animatio 8 */
+.v-eight-one {
+
+}
+
+#line-eight-1 {
 
 }
 
