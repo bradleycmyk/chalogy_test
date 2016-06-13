@@ -1,51 +1,51 @@
 //MillerBanner font
 //semibold
-@font-face {
-	font-family: 'MillerBanner';
-	src: url('fonts/MillerBanner-Semibold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
-//bold
-@font-face {
-	font-family: 'MillerBanner';
-	src: url('fonts/MillerBanner-Bold.ttf') format('truetype');
-	font-weight: bolder;
-	font-style: normal;
-}
-
-//italic
-@font-face {
-	font-family: 'MillerBanner';
-	src: url('fonts/MillerBanner-Italic.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
-}
-
-//light-italic
-@font-face {
-	font-family: 'MillerBanner';
-	src: url('fonts/MillerBanner-LightItalic.ttf') format('truetype');
-	font-weight: lighter;
-	font-style: italic;
-}
-
-//semibold-italic
-@font-face {
-	font-family: 'MillerBanner';
-	src: url('fonts/MillerBanner-SemiboldItalic.ttf') format('truetype');
-	font-weight: bold;
-	font-style: italic;
-}
-
-//regular
-@font-face {
-	font-family: 'MillerBanner';
-	src: url('fonts/MillerBanner-Roman.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+// @font-face {
+// 	font-family: 'MillerBanner';
+// 	src: url('fonts/MillerBanner-Semibold.ttf') format('truetype');
+// 	font-weight: bold;
+// 	font-style: normal;
+// }
+//
+// //bold
+// @font-face {
+// 	font-family: 'MillerBanner';
+// 	src: url('fonts/MillerBanner-Bold.ttf') format('truetype');
+// 	font-weight: bolder;
+// 	font-style: normal;
+// }
+//
+// //italic
+// @font-face {
+// 	font-family: 'MillerBanner';
+// 	src: url('fonts/MillerBanner-Italic.ttf') format('truetype');
+// 	font-weight: normal;
+// 	font-style: italic;
+// }
+//
+// //light-italic
+// @font-face {
+// 	font-family: 'MillerBanner';
+// 	src: url('fonts/MillerBanner-LightItalic.ttf') format('truetype');
+// 	font-weight: lighter;
+// 	font-style: italic;
+// }
+//
+// //semibold-italic
+// @font-face {
+// 	font-family: 'MillerBanner';
+// 	src: url('fonts/MillerBanner-SemiboldItalic.ttf') format('truetype');
+// 	font-weight: bold;
+// 	font-style: italic;
+// }
+//
+// //regular
+// @font-face {
+// 	font-family: 'MillerBanner';
+// 	src: url('fonts/MillerBanner-Roman.ttf') format('truetype');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
 
 //MinionPro font
 @font-face {
@@ -54,41 +54,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
-//WorkSans font
-
-//regular
-@font-face {
-	font-family: 'WorkSans-regular';
-	src: url('fonts/WorkSans-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-//bolder
-@font-face {
-	font-family: 'WorkSans';
-	src: url('fonts/WorkSans-Bold.ttf') format('truetype');
-	font-weight: bolder;
-	font-style: normal;
-}
-
-//light
-@font-face {
-	font-family: 'WorkSans';
-	src: url('fonts/WorkSans-Light.ttf') format('truetype');
-	font-weight: lighter;
-	font-style: normal;
-}
-
-//semibold
-@font-face {
-	font-family: 'WorkSans';
-	src: url('fonts/WorkSans-Medium.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
 
 
 html {
@@ -112,8 +77,9 @@ a {
 }
 
 p {
-	font-family: 'WorkSans-regular';
+	font-family: 'Work Sans';
 	font-size: 15px;
+	font-weight: 300;
 }
 
 .body-wrap {
@@ -123,6 +89,23 @@ p {
 	/*margin: 76px auto 0;*/
 }
 
+.miller {
+    font-family: "Miller Ban Reg";
+    font-style: Normal;
+    font-weight: Normal;
+}
+
+.milleritl {
+    font-family: "Miller Ban It";
+    font-style: Italic;
+    font-weight: Normal;
+}
+
+.millersemibold {
+    font-family: "Miller Ban Semi Bd";
+    font-style: Normal;
+    font-weight: Normal;
+}
 
 .anchor#top {
 	display: block;
@@ -337,7 +320,7 @@ p {
 }
 
 .emb {
-  font-family: MillerBanner;
+  // font-family: MillerBanner;
   font-size: 27px;
   line-height: 31px;
 }

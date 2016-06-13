@@ -5,8 +5,6 @@
 <div class="clean-and-clear"></div>
 
 <div class="aurous-body">
-
-
 	<div class="aurous-header">
 	    <div class="bread_crumb1 aurous_crumb1">
           <a href="aurous" ui-sref="aurous" class="upper">
@@ -86,7 +84,7 @@
 
 			<div class="col-sm-6">
 				<div class="aurproduct-desc">
-					<span id="auro-name">{{ product.name }}</span><br>
+					<span id="auro-name" class="millersemibold">{{ product.name }}</span><br>
 					<span id="auro-title">{{ product.title }}</span><br>
 					<span id="auro-title">{{ product.korean_title }}</span><br>
 					${{ product.price }}.00
@@ -102,7 +100,7 @@
 
 	<div class="container">
 		<hr class="aurous-recommendation mobile-hide">
-		<h1 class="text-center">OTHER RECOMMENDED PRODUCTS</h1>
+		<h1 class="text-center millersemibold">OTHER RECOMMENDED PRODUCTS</h1>
 
 		<div class="aurous_recommendedProd">
 			<div class="aurous_each" ng-repeat="recommendation in recommendations | limitTo: 4">

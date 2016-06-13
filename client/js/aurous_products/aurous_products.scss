@@ -45,7 +45,7 @@
 
 		a{
 		  color: #FFFFFF;
-		  font-family: WorkSans;
+		  font-family: 'Work Sans';
 		  font-size: 0.8em;
 		  letter-spacing: 1px;
 		}
@@ -83,7 +83,6 @@
 	text-align: center;
 	z-index: 22;
 	display: inline-block;
-	font-family: MillerBanner;
 	letter-spacing: 4px;
 	position: relative;
 }
@@ -102,7 +101,7 @@
 	margin: 0 auto;
 	margin-top: 10px;
 	padding: 0px 15px;
-	font-family: WorkSans;
+	font-family: 'Work Sans';
 	font-size: 15px;
 	letter-spacing: 1px;
 	font-weight: 900;
@@ -180,14 +179,14 @@
 
 .aurous-name-fromdb {
 	font-size: 30px;
-	font-family: MillerBanner;
+	// font-family: MillerBanner;
 	text-align: center;
 	text-transform: uppercase;
 }
 
 .aurous-title-fromdb {
 	font-size: 14px;
-	font-family: WorkSans;
+	font-family: 'Work Sans';
 	text-align: center;
 	letter-spacing: 0.9px;
 	text-transform: uppercase;
@@ -274,7 +273,7 @@
 	}
 
 	.aurous_text > .readmore {
-		font-family: WorkSans;
+		font-family: 'Work Sans';
 		font-size: 12px;
 	}
 
@@ -305,7 +304,7 @@
 	}
 
 	.aurous_text > .readmore {
-		font-family: WorkSans;
+		font-family: 'Work Sans';
 		font-size: 12px;
 	}
 

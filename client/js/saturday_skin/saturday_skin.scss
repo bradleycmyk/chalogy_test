@@ -1,76 +1,92 @@
 .saturday_home {
   position: relative;
   height: auto;
-  .extender {
 
-    .sat_hero {
+  a {
+    font-family: 'Work Sans';
+  }
 
-      .bread_crumb {
-        padding: 2em;
-        display: inline-block;
-        vertical-align: top;
+  .sat_hero {
+    .bread_crumb {
+      padding: 2em;
+      display: inline-block;
+      vertical-align: top;
 
-        a {
-          color: black;
-          font-family: WorkSans;
-          font-size: 13px;
-          text-decoration: none;
-        }
-
-        .caret {
-          fill: #A9A9A9;
-        }
+      a {
+        color: black;
+        // font-family: 'Work Sans';
+        font-size: 13px;
+        text-decoration: none;
       }
 
-      .dial {
-        vertical-align: top;
-        font-size: 2em;
+      .caret {
+        fill: #A9A9A9;
+      }
+    }
 
-        .dial_text {
-          font-family: MillerBanner;
+
+    .dial {
+      vertical-align: top;
+
+      .dial_text {
+        // font-family: MillerBanner;
+        display: block;
+        font-weight: bold;
+
+
+        .for {
           display: block;
-          -webkit-margin-before: 0.83em;
+       /*   -webkit-margin-before: 0.83em;
           -webkit-margin-after: 0.83em;
           -webkit-margin-start: 0px;
           -webkit-margin-end: 0px;
-          font-weight: bold;
+          font-weight: bold;*/
 
-          .for {
+
+          &::after {
+            content: '';
             display: block;
+
+
+            /*margin: 5px 0;
+            width: 140px;
+            border-top: 8px solid #000000;*/
+
           }
         }
       }
-
-      .sat_skin_title {
-        width: 885px;
-        margin: -17px 0 0 -245px;
-      }
-
-      .text_box {
-        p {
-          float: right;
-          margin: 0 0 0 0;
-        }
-
-        .long_text {
-          font-family: WorkSans;
-        }
-
-        .tagline {
-          font-family: MillerBanner-Semibold;
-          clear: both;
-          margin: 0;
-        }
-      }
     }
 
-    .sat_hero {
-      background-image: url('sat_skin_bg.jpg');
-      background-size: 100% 100% !important;
-      background-repeat: no-repeat;
-      position: relative;
+    .sat_skin_title {
+      width: 885px;
+      margin: -17px 0 0 -245px;
+    }
+
+    .text_box {
+      p {
+        float: right;
+        margin: 0 0 0 0;
+      }
+
+      .long_text {
+        font-family: 'Work Sans';
+      }
+
+      .tagline {
+        // font-family: MillerBanner-Semibold;
+        clear: both;
+        margin: 0;
+      }
     }
   }
+
+  .sat_hero {
+    background-image: url('sat_skin_bg.jpg');
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
 
   main {
 
@@ -81,18 +97,14 @@
       z-index: 2;
 
       h1 {
-        font-family: MillerBanner;
+        // font-family: MillerBanner;
         margin: 0;
         color: rgb(0, 209, 165);
         width: 9em;
       }
 
-      p {
-        font-family: WorkSans;
-      }
-
       a {
-        font-family: WorkSans;
+        // font-family: WorkSans;
         font-weight: bold;
         color: rgb(126, 126, 126);
         border: 10px solid #E5E5E5;
@@ -144,12 +156,12 @@
       }
 
       .long_text {
-        font-family: WorkSans;
+        // font-family: WorkSans;
         font-size: 15px;
       }
 
       .tagline {
-        font-family: MillerBanner-Semibold;
+        // font-family: MillerBanner-Semibold;
         font-size: 35px;
         clear: both;
         padding: 0.6em 1.3em 0.6em 0.7em;
@@ -216,12 +228,12 @@
       }
 
       .long_text {
-        font-family: WorkSans;
+        // font-family: WorkSans;
         font-size: 1.2vw;
       }
 
       .tagline {
-        font-family: MillerBanner-Semibold;
+        // font-family: MillerBanner-Semibold;
         font-size: 2.8vw;
         clear: both;
         padding: 1.5vw 0 0 4.7vw;

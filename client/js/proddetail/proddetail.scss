@@ -56,12 +56,12 @@
 
 .buttons a {
 	text-align: center;
-	font-family: WorkSans;
+	font-family: 'Work Sans';
     font-weight: bold;
     color: rgb(126, 126, 126);
     border: 10px solid #E5E5E5;
     padding: 10px 10px;
-    DISPLAY: BLOCK;
+    display: block;
     width: 180px;
     margin: 10px 0 0;
     font-size: 13px;
@@ -77,11 +77,12 @@
   margin: 10px 0 0;
   font-size: 13px;
   letter-spacing: 1px;
+  */
 
   &:hover {
 		color: rgb(0, 209, 165);
     border: 10px solid rgb(0, 209, 165);
-  }*/
+  }
 
 }
 

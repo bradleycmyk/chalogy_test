@@ -14,7 +14,7 @@
 
       a{
         color: #FFFFFF;
-        font-family: WorkSans;
+        font-family: 'Work Sans';
         font-size: 0.8em;
         letter-spacing: 1px;
       }
@@ -37,7 +37,7 @@
       font-weight: 100;
       font-size: 15px;
       margin: 40px 0 0 145px;
-      font-family: WorkSans;
+      font-family: 'Work Sans';
       letter-spacing: 2px;
       line-height: 1.5;
 
@@ -56,7 +56,7 @@
       margin: 260px 0 0 15px;
 
       .enrich_blurb {
-        font-family: MillerBanner;
+        // font-family: MillerBanner;
         text-align: center;
         display: inline-block;
         font-weight: 100;
@@ -206,7 +206,6 @@
 	  margin: 65px 0 0 45px;
 
 		.aur_title {
-      font-family: MillerBanner;
       font-size: 30px;
       width: 380px;
 			text-transform: uppercase;
@@ -216,10 +215,10 @@
 		}
 
 		.aur_long {
-			font-family: WorkSans;
+			// font-family: WorkSans;
 			text-align: center;
-			font-weight: 100;
-			font-size: 15px;
+			font-weight: 600;
+			// font-size: 15px;
 			line-height: 1.5;
       letter-spacing: 2px;
       // width: 502px;
@@ -227,14 +226,14 @@
 
 		.aur_all {
 			border: 1px solid #AA8A37;
-			font-family: WorkSans;
-			font-weight: 600;
+			font-family: 'Work Sans';
+			font-weight: 900;
 			letter-spacing: 1px;
-			font-size: 0.9em;
+			font-size: 15px;
 			margin: 20px 0 0 170px;
 			padding: 5px 10px;
 			display: block;
-			width: 135px;
+			width: 151px;
 			color: #000000;
 		}
 	}
