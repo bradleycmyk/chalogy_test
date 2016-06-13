@@ -1,3 +1,7 @@
+.aurous-body {
+	margin-top: -1px;
+}
+
 .aurous-header {
 	height: 188px;
 	background-image: url('aurous-banner-real.png');
@@ -124,10 +128,10 @@
 }
 
 .aurous_listing {
-	margin-right: 3%;
-	width: 47%;
-	margin-top: 18px;
-	margin-bottom: 67%;
+	margin-right: 4%;
+	width: 46%;
+	margin-top: 4%;
+	margin-bottom: 64%;
 	position: relative;
 	display: inline-block;
 
@@ -172,9 +176,10 @@
 	width: 80%;
 	color: white;
 	position: absolute;
-	top: 20vh;
+	top: 21vh;
 	left: 8%;
-	/*margin: 0 auto;*/
+	opacity: 1 !important;
+	font-weight: 600;
 }
 
 .aurous-name-fromdb {
@@ -182,6 +187,7 @@
 	// font-family: MillerBanner;
 	text-align: center;
 	text-transform: uppercase;
+	letter-spacing: 4px;
 }
 
 .aurous-title-fromdb {
@@ -192,12 +198,11 @@
 	text-transform: uppercase;
 }
 
-
 .aurous-ktitle-fromdb {
 	text-align: center;
 }
-// animation
 
+// animation
 #crossfade img {
   position:absolute;
   left:0;
@@ -205,6 +210,10 @@
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
+  -webkit-transform: translateZ(0px);
+  webkit-font-smoothing: subpixel-antialiase;
+  /*-webkit-font-smoothing:antialiased;*/
+  /*-webkit-backface-visibility:hidden; */
 }
 
 #crossfade img.top:hover {

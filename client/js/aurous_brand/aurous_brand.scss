@@ -31,6 +31,24 @@ video {
     animation-fill-mode: forwards;
 }
 
+.fadingEffect-8 {
+    position:absolute;
+    top:0; bottom:0; right:0;
+    width:100%;
+    background:white;
+    /*opacity: 0;*/
+
+    -moz-animation: showEight 2s ease-in alternate infinite; /* Firefox */
+    -webkit-animation: showEight 3s ease-in-out ; /* Safari and Chrome */
+    -ms-animation: showEight 2s ease-in alternate infinite; /* IE10 */
+    -o-animation: showEight 2s ease-in alternate infinite; /* Opera */
+    animation: showEight 3s ease-in-out;
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+
 .fadingEffect-to-left {
     position:absolute;
     top:0; bottom:0; left:0;
@@ -78,13 +96,46 @@ video {
     100% {width:0%;}
 }
 
+/* for animation 8 */
+@-webkit-keyframes showEight { /* Chrome, Safari */
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:0%;}
+}
+@-moz-keyframes showEight { /* FF */
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:0%;}
+}
+@-ms-keyframes showEight { /* IE10 */
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:0%;}
+}
+@-o-keyframes showEight { /* Opera */
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:0%;}
+}
+@keyframes showEight {
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:0%;}
+}
+
+
 
 p.fade-in-effect {
     opacity: 0;
     position: relative;
-    -webkit-animation: mymove 3s; /* Chrome, Safari, Opera */
+    -webkit-animation: mymove 4s; /* Chrome, Safari, Opera */
     -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
-    animation: mymove 3s;
+    animation: mymove 4s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
 }
@@ -99,6 +150,8 @@ p.fade-in-effect {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+
 
 .video-container-brand2, .video-container-brand3, .video-container-brand4, .video-container-brand5, .video-container-brand6, .video-container-brand7, .video-container-brand8 {
     display: none;
@@ -242,6 +295,39 @@ p.fade-in-effect {
 
 }
 
+.v-eight-two {
+    margin-top: 6px;
+    margin-left: 595px;
+    width: 295px;
+}
+
+#video-text-8-2 {
+    padding-left: 132px;
+}
+
+.v-eight-three {
+    margin-top: 112px;
+    margin-left: 632px;
+    width: 260px;
+    text-align: right;
+}
+
+#video-text-8-3 {
+    padding-left: 110px;
+}
+
+.v-eight-four {
+    margin-top: 54px;
+    margin-left: 527px;
+    width: 367px;
+    text-align: right;
+}
+
+#video-text-8-4 {
+    padding-left:  212px;
+}
+
+
 
 
 /* buttons */
@@ -249,7 +335,7 @@ p.fade-in-effect {
     width: 250px;
     height: 21px;
     margin: 0 auto;
-    padding-left: 14px;
+    padding-left: 8px;
     margin-top: -54px;
     /*background-color: yellow;*/
 }

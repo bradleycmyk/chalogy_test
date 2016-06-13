@@ -232,7 +232,7 @@ a.up-arrow {
   display: inline-block;
   position: relative;
   background: white;
-  color: grey;
+  /*color: grey;*/
   opacity: 0.8;
   text-decoration: none;
   padding-top: 12px;
@@ -257,7 +257,7 @@ a.up-arrow-about {
   display: inline-block;
   position: relative;
   background: white;
-  color: grey;
+  /*color: grey;*/
   opacity: 0.8;
   text-decoration: none;
   padding-top: 12px;
@@ -267,8 +267,8 @@ a.up-arrow-about:after {
   content: '';
   display: block;
   position: absolute;
-  // left: 35px;
-  left: 45%;
+  left: 43px;
+  /*left: 43%;*/
   top: 0;
   bottom: 100%;
   width: 0;
@@ -279,13 +279,20 @@ a.up-arrow-about:after {
   border-right: 5px solid transparent;
 }
 
+#aurous-bottom, #sat-skin-bottom {
+  margin-bottom: 3px;
+}
+
 
 // bold current page in navbar
 .selected {
   /*font-family: sans-serif;*/
   color: black !important;
+  display: inline-block;
+  pointer-events: none;
   /*font-weight: 600 !important;*/
 }
+
 
 // fade out the rest
 .notactive {

@@ -5,19 +5,27 @@ app.controller('SaturdayProductController', function($scope, $http, SaturdayFact
 		$scope.products = data;
 	})
 
-	// $scope.isActiveSat = function (route) {
- //    return ($window.location.href.split("5959/")[1].indexOf(route) > -1);
- //  };
+
 
   $scope.isActive = function (route) {
       return route == $window.location.href.split("5959/")[1];
     }
 
-  	$(document).ready(function(){
-  		if($(window).width() < 1205) {
-  			$('#max-width').removeClass('wrapper');
-  		} else {
-  			// $('#max-width').addClass('wrapper');
-  		}
-  	})
+	$(document).ready(function(){
+		if($(window).width() < 1205) {
+			$('#max-width').removeClass('wrapper');
+		} else {
+			// $('#max-width').addClass('wrapper');
+		}
+
+    // setTimeout(function() {
+    //    $rows.removeClass("pageLoad");
+    // }, 800);
+
+    setTimeout(function() {
+      $('#white-wrap').removeClass('white-wrap')
+    }, 500);
+	
+  })
+
 });

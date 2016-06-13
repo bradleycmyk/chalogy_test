@@ -18,11 +18,6 @@ app.controller('MainController', function($scope, $rootScope, $window){
 	    }
 	});
 
-	// $('li.dropdown a').click(function(e){
-	// 	e.preventDefault();
-	// 	$('li.dropdown a').removeClass('selected');
-	// 	$(this).addClass('selected');
-	// });
 	$scope.isActiveFor = function (route) {
 	    return ($window.location.href.split("5959/")[1].indexOf(route) > -1);
 	};
