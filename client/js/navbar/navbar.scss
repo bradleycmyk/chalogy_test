@@ -288,8 +288,11 @@ a.up-arrow-about:after {
 .selected {
   /*font-family: sans-serif;*/
   color: black !important;
+  display: inline-block;
+  pointer-events: none;
   /*font-weight: 600 !important;*/
 }
+
 
 // fade out the rest
 .notactive {

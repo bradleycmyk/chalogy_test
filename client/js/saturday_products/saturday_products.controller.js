@@ -24,7 +24,7 @@ app.controller('SaturdayProductController', function($scope, $http, SaturdayFact
 
     setTimeout(function() {
       $('#white-wrap').removeClass('white-wrap')
-    }, 450);
+    }, 500);
 	
   })
 
