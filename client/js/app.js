@@ -1,12 +1,12 @@
 var app = angular.module('Chalogy', ['ui.router', 'authHandler']);
 
-// can define controller for navigation bar here + deal with cookies 
+// can define controller for navigation bar here + deal with cookies
 
 app.controller('MainController', function($scope, $rootScope, $window){
 	$scope.loggedIn = sessionStorage.loggedinUser || undefined;
 
 	if(!$scope.loggedIn) {
-		// no change ? 
+		// no change ?
 	} else {
 		// do something - user is logged in
 	}
@@ -30,7 +30,9 @@ app.controller('MainController', function($scope, $rootScope, $window){
 		}
 
 	}
-	
+
+
+
 })
 
 app.config(function ($urlRouterProvider, $locationProvider) {

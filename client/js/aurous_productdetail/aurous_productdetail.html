@@ -84,10 +84,10 @@
 
 			<div class="col-sm-6">
 				<div class="aurproduct-desc">
-					<span id="auro-name" class="millersemibold">{{ product.name }}</span><br>
+					<span id="auro-name" class="miller">{{ product.name }}</span><br>
 					<span id="auro-title">{{ product.title }}</span><br>
 					<span id="auro-title">{{ product.korean_title }}</span><br>
-					${{ product.price }}.00
+					<span id="auro-price">${{ product.price }}.00</span>
 					<br><br>
 					<p>{{ product.size_ml}}ml/{{ product.size_oz }} Fl. Oz</p>
 					<p id="auro-desc">{{ product.description }}</p>
@@ -100,7 +100,7 @@
 
 	<div class="container">
 		<hr class="aurous-recommendation mobile-hide">
-		<h1 class="text-center millersemibold">OTHER RECOMMENDED PRODUCTS</h1>
+		<h1 class="text-center miller">OTHER RECOMMENDED PRODUCTS</h1>
 
 		<div class="aurous_recommendedProd">
 			<div class="aurous_each" ng-repeat="recommendation in recommendations | limitTo: 4">
@@ -111,3 +111,5 @@
 		</div>
 	</div>
 </div>
+
+<backtotop></backtotop>

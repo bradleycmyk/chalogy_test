@@ -2,6 +2,10 @@
   display: inline-block;
 }
 
+.entity {
+  font-family: 'Work Sans';
+}
+
 .about {
   width: 900px;
   margin: 60px auto 0;
@@ -53,6 +57,7 @@
         letter-spacing: 1px;
         display: block;
         margin: 0 0 7px;
+        width: 613px;
 
         .reg {
           font-size: 25px;

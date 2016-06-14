@@ -19,4 +19,10 @@ app.controller('ChaumController', function($scope, $http, $window, $location) {
     });
   })
 
+  // for carousel autoplay
+  $('#myCarousel').carousel({
+    interval: 3000,
+    cycle: true
+  });
+
 });

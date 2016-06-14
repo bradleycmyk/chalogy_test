@@ -24,7 +24,6 @@
       }
     }
 
-
     .dial {
       vertical-align: top;
 
@@ -115,6 +114,7 @@
 
         &:hover {
           border-color: rgb(0, 209, 165);
+          color: rgb(0, 209, 165) !important;
         }
       }
     }
@@ -151,7 +151,7 @@
       float: right;
 
       p {
-        width:  340px;
+        width:  341px;
         padding: 50px 35px 10px 20px;
         float: right;
         margin: 0 0 0 0;
