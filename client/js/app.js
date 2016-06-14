@@ -28,8 +28,12 @@ app.controller('MainController', function($scope, $rootScope, $window){
 		} else {
 			console.log("something is wrong");
 		}
-
 	}
+
+	// if($window.location.href.split("5959/")[1].indexOf("saturday-skin") > -1) {
+	// 	$('#body-wrap').addClass('white-wrapper');
+	// };
+
 	
 })
 

@@ -25,7 +25,7 @@ app.controller('ProdDetailCtrl', function($scope, $http, $state, $stateParams, p
 	$(document).ready(function(){
 		setTimeout(function() {
 	      $('#white-wrap-d').removeClass('white-wrap')
-	    }, 350);
+	    }, 250);
 	})
 
 });
