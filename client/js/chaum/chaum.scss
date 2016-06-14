@@ -89,11 +89,16 @@
       }
     }
 
+    .carousel-indicators.chaum-indicators {
+      bottom: -25px !important;
+    }
+
     .right-arr {
       display: inline-block;
       vertical-align: middle;
       width: 20px;
     }
+
   }
 
   .lower-ps {

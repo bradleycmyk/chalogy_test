@@ -1,12 +1,12 @@
 var app = angular.module('Chalogy', ['ui.router', 'authHandler']);
 
-// can define controller for navigation bar here + deal with cookies 
+// can define controller for navigation bar here + deal with cookies
 
 app.controller('MainController', function($scope, $rootScope, $window){
 	$scope.loggedIn = sessionStorage.loggedinUser || undefined;
 
 	if(!$scope.loggedIn) {
-		// no change ? 
+		// no change ?
 	} else {
 		// do something - user is logged in
 	}
@@ -29,11 +29,6 @@ app.controller('MainController', function($scope, $rootScope, $window){
 			console.log("something is wrong");
 		}
 	}
-
-	// if($window.location.href.split("5959/")[1].indexOf("saturday-skin") > -1) {
-	// 	$('#body-wrap').addClass('white-wrapper');
-	// };
-
 	
 })
 
