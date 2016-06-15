@@ -82,6 +82,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.fading-effect').addClass('fadingEffect-to-left');
       $('.line-in-video').css({ "opacity":"1"});
       $('.video-container-brand1').css({"display":"block"});
+      $('#video1').get(0).load();
       $('#video1').get(0).play();
     });
 
@@ -100,6 +101,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.fading-effect').addClass('fadingEffect');
       $('.line-in-video').css({ "opacity":"1"});
       $('.video-container-brand2').css({"display":"block"});
+      $('#video2').get(0).load();
       $('#video2').get(0).play();
     });
 
@@ -118,6 +120,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.fading-effect').addClass('fadingEffect-to-left');
       $('.line-in-video').css({ "opacity":"1"});
       $('.video-container-brand3').css({"display":"block"});
+      $('#video3').get(0).load();
       $('#video3').get(0).play();
     });
 
@@ -139,6 +142,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.line-in-video').css({ "opacity":"1"});
       // $('.line-in-video').show();
       $('.video-container-brand4').css({"display":"block"});
+      $('#video4').get(0).load();
       $('#video4').get(0).play();
     });
 
@@ -157,6 +161,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.fading-effect').addClass('fadingEffect-to-left');
       $('.line-in-video').css({ "opacity":"1"});
       $('.video-container-brand5').css({"display":"block"});
+      $('#video5').get(0).load();
       $('#video5').get(0).play();
         
     });
@@ -176,6 +181,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.fading-effect').addClass('fadingEffect');
       $('.line-in-video').css({ "opacity":"1"});
       $('.video-container-brand6').css({"display":"block"});
+      $('#video6').get(0).load();
       $('#video6').get(0).play();
     });
 
@@ -194,6 +200,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.fading-effect').addClass('fadingEffect-to-left');
       $('.line-in-video').css({ "opacity":"1"});
       $('.video-container-brand7').css({"display":"block"});
+      $('#video7').get(0).load();
       $('#video7').get(0).play();
     });
 
@@ -218,6 +225,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
 
       $('.line-in-video').css({ "opacity":"1"});
       $('.video-container-brand8').css({"display":"block"});
+      $('#video8').get(0).load();
       $('#video8').get(0).play();
     });
 

@@ -2,13 +2,22 @@ var app = angular.module('Chalogy', ['ui.router', 'authHandler']);
 
 // can define controller for navigation bar here + deal with cookies
 
-app.controller('MainController', function($scope, $rootScope, $window){
+app.controller('MainController', function($scope, $rootScope, $window, $state){
 	$scope.loggedIn = sessionStorage.loggedinUser || undefined;
 
-	if(!$scope.loggedIn) {
-		// no change ?
+	// if($scope.loggedIn == "undefined") {
+	// 	// no change ?
+	// 	$state.go("login");
+	// } else {
+	// 	// do something - user is logged in
+	// 	console.log("user is logged in! in main controller"); 
+	// }
+
+
+	if(sessionStorage.loggedinUser == undefined) {
+		$state.go('login');
 	} else {
-		// do something - user is logged in
+		console.log("who's logged in??");
 	}
 
 	$rootScope.$on('$stateChangeError', function(e, toState, toParams, fromState, fromParams, error){
