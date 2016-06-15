@@ -1,6 +1,6 @@
 [
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/daily-dew.png", "sat-product.png", "sat-product.png"],
 		"name": "Daily Dew",
 		"title": "Hydrating Essence Mist",
 		"korean_title": "하이드레이팅 에센스 미스트",
@@ -16,16 +16,16 @@
 		"recs": [
 			{
 				"name": "All Aglow",
-				"img": "sat-product.png"
+				"img": "sat_prod/all-aglow.png"
 			},
 			{
 				"name": "Featherweight",
-				"img": "sat-product.png"
+				"img": "sat_prod/featherweight.png"
 			}
 		]
 	},
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/freeze-frame.png", "sat-product.png", "sat-product.png"],
 		"name": "Freeze Frame",
 		"title": "Beauty Essence",
 		"korean_title": "뷰티 에센스",
@@ -41,16 +41,16 @@
 		"recs": [
 			{
 				"name": "All Aglow",
-				"img": "sat-product.png"
+				"img": "sat_prod/all-aglow.png"
 			},
 			{
 				"name": "Quench",
-				"img": "sat-product.png"
+				"img": "sat_prod/quench.png"
 			}
 		]
 	},
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/wide-awake.png", "sat-product.png", "sat-product.png"],
 		"name": "Wide Awake",
 		"title": "Brightening Eye Cream",
 		"korean_title": "브라이트닝 아이크림",
@@ -66,16 +66,16 @@
 		"recs": [
 			{
 				"name": "Freeze Frame",
-				"img": "sat-product.png"
+				"img": "sat_prod/freeze-frame.png"
 			},
 			{
 				"name": "Balancing Act",
-				"img": "sat-product.png"
+				"img": "sat_prod/balancing-act.png"
 			}
 		]
 	},
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/balancing-act.png", "sat-product.png", "sat-product.png"],
 		"name": "Balancing Act",
 		"title": "Skin-Smoothing Lotion",
 		"korean_title": "스킨 스무딩 로션",
@@ -91,16 +91,16 @@
 		"recs": [
 			{
 				"name": "Featherweight",
-				"img": "sat-product.png"
+				"img": "sat_prod/featherweight.png"
 			},
 			{
 				"name": "Rise + Shine",
-				"img": "sat-product.png"
+				"img": "sat_prod/rise-shine.png"
 			}
 		]
 	},
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/featherweight.png", "sat-product.png", "sat-product.png"],
 		"name": "Featherweight",
 		"title": "Daily Moisturizing Cream",
 		"korean_title": "데일리 모이스춰라이징 크림",
@@ -116,16 +116,16 @@
 		"recs": [
 			{
 				"name": "Daily Dew",
-				"img": "sat-product.png"
+				"img": "sat_prod/daily-dew.png"
 			},
 			{
 				"name": "Rise + Shine",
-				"img": "sat-product.png"
+				"img": "sat_prod/rise-shine.png"
 			}
 		]
 	},
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/rise-shine.png", "sat-product.png", "sat-product.png"],
 		"name": "Rise + Shine",
 		"title": "Purifying Cleanser",
 		"korean_title": "퓨리파잉 클렌저",
@@ -141,16 +141,16 @@
 		"recs": [
 			{
 				"name": "Daily Dew",
-				"img": "sat-product.png"
+				"img": "sat_prod/daily-dew.png"
 			},
 			{
 				"name": "Wide Awake",
-				"img": "sat-product.png"
+				"img": "sat_prod/wide-awake.png"
 			}
 		]
 	},
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/all-aglow.png", "sat-product.png", "sat-product.png"],
 		"name": "All Aglow",
 		"title": "Perfecting Cushion Compact",
 		"korean_title": "퍼펙팅 쿠션 컴팩트",
@@ -166,16 +166,16 @@
 		"recs": [
 			{
 				"name": "Featherweight",
-				"img": "sat-product.png"
+				"img": "sat_prod/featherweight.png"
 			},
 			{
 				"name": "Wide Awake",
-				"img": "sat-product.png"
+				"img": "sat_prod/wide-awake.png"
 			}
 		]
 	},
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/spotlight.png", "sat-product.png", "sat-product.png"],
 		"name": "Spotlight",
 		"title": "Brightening Mask",
 		"korean_title": "브라이트닝 마스크",
@@ -191,16 +191,16 @@
 		"recs": [
 			{
 				"name": "Rise + Shine",
-				"img": "sat-product.png"
+				"img": "sat_prod/rise-shine.png"
 			},
 			{
 				"name": "Daily Dew",
-				"img": "sat-product.png"
+				"img": "sat_prod/daily-dew.png"
 			}
 		]
 	},
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/quench.png", "sat-product.png", "sat-product.png"],
 		"name": "Quench",
 		"title": "Intense Hydration Mask",
 		"korean_title": "인텐스 하이드레이션 마스크",
@@ -216,11 +216,11 @@
 		"recs": [
 			{
 				"name": "All Aglow",
-				"img": "sat-product.png"
+				"img": "sat_prod/all-aglow.png"
 			},
 			{
 				"name": "Balancing Act",
-				"img": "sat-product.png"
+				"img": "sat_prod/balancing-act.png"
 			}
 		]
 	}
