@@ -19,8 +19,8 @@ a {
 	text-decoration: none !important;
 	color: black;
 
-	&:hover,
-	&:focus {
+	&:hover:not(.aurous-bread),
+	&:focus:not(.aurous-bread) {
 		text-decoration: none;
 		color: #000000 !important;
 	}
@@ -130,10 +130,6 @@ p {
 // rotate
 @mixin rotate($deg) {
   @include transform(rotate(#{$deg}deg));
-}
-
-.block {
-  display: block;
 }
 
 @mixin boxshadow($box-shadows) {
@@ -274,13 +270,26 @@ p {
 }
 
 .emb {
-  // font-family: MillerBanner;
   font-size: 27px;
   line-height: 31px;
 }
 
+.block {
+  display: block;
+}
 
+.entity {
+	font-family: sans-serif;
+	// margin: 0 0 0 -3px;
+}
 
+a.aurous-bread:hover {
+	color: #AA8A37 !important;
+}
+
+a.sat-bread:hover {
+	color: #A9A9A9 !important;
+}
 
 // Add your fractal Sass files below!
 @import 'navbar/navbar';
