@@ -62,7 +62,8 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
 
     $('.video-center').click(function(){
       if (myVideo.get(0).paused) 
-            myVideo.get(0).play(); 
+            myVideo.get(0).play();
+
         else 
             myVideo.get(0).pause(); 
     });
@@ -218,6 +219,12 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.line-in-video').css({ "opacity":"1"});
       $('.video-container-brand8').css({"display":"block"});
       $('#video8').get(0).play();
+    });
+
+      $('a').click(function () {
+        if ($(':animated').length) {
+            return false;
+        };
     });
   
   })

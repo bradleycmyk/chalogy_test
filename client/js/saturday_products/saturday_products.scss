@@ -17,15 +17,15 @@
     width: 100%;
     height: 155px;
     text-align: center;
-    /*background-image: url('SS_PinkBar.jpg');*/
+    background-image: url('SS_TopBar_final.jpg');
     background-repeat: no-repeat;
-    /*background-size: contain;*/
-      background-size: 100% 100%;
-    background-color: rgb(250, 214, 218);
+    background-size: contain;
+      /*background-size: 100% 100%;*/
+    /*background-color: rgb(250, 214, 218);*/
 }
 
 
-#sat-banner {
+.sat-banner {
     width: 1200px;
     margin: 0 auto;
     display: none;
@@ -156,12 +156,12 @@
         background-image: none;
         background-repeat: no-repeat;
         /*background-size: contain;*/
-        background-size: 100% 100%;
+        /*background-size: 100% 100%;*/
         background-color: rgb(250, 214, 218);
     }
 
-    #sat-banner {
-        /*display: block;*/
+    .sat-banner {
+        display: block;
     }
 }
 

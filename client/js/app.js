@@ -28,11 +28,8 @@ app.controller('MainController', function($scope, $rootScope, $window){
 		} else {
 			console.log("something is wrong");
 		}
-
 	}
-
-
-
+	
 })
 
 app.config(function ($urlRouterProvider, $locationProvider) {
