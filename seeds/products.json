@@ -25,27 +25,27 @@
 		]
 	},
 	{
-		"image": ["sat_prod/freeze-frame.png", "sat-product.png", "sat-product.png"],
-		"name": "Freeze Frame",
-		"title": "Beauty Essence",
-		"korean_title": "뷰티 에센스",
-		"price": 49.00,
+		"image": ["sat_prod/featherweight.png", "sat-product.png", "sat-product.png"],
+		"name": "Featherweight",
+		"title": "Daily Moisturizing Cream",
+		"korean_title": "데일리 모이스춰라이징 크림",
+		"price": 55.00,
 		"size_ml": 50,
 		"size_oz": 1.69,
-		"description": "Stop time in its tracks. Pomegranate extract infuses skin with rich moisture, boosting elasticity and firmness.\n\n",
+		"description": "This lightweight formula still packs a punch. Avocado protein extract strengthens skin’s own moisture barrier, sealing in hydration to protect and soften skin.\n\n",
 		"description2": "DERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
-		"who": ["Smoother, silkier, more supple skin texture", "Plumper, more resilient skin", "Increasing firmness", "Boosting skin's hydration", "Protecting against environmental damage", "24/7 anti-aging benefits", "All-in-one anti-aging, firming and moisture"],
-		"how": "Use morning and night. Warm product by emulsifying then press essence into the skin. Use a tapping motion for maximum absorption.",
+		"who": ["Improving skin's moisture barrier", "Enhancing skin's texture and tone", "Promoting maximum hydration"],
+		"how": "Pump twice to release cream. Swipe it onto fingers and tap cream into your skin in an outward motion.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
 		"category": "saturday-skin",
 		"recs": [
 			{
-				"name": "All Aglow",
-				"img": "sat_prod/all-aglow.png"
+				"name": "Daily Dew",
+				"img": "sat_prod/daily-dew.png"
 			},
 			{
-				"name": "Quench",
-				"img": "sat_prod/quench.png"
+				"name": "Rise + Shine",
+				"img": "sat_prod/rise-shine.png"
 			}
 		]
 	},
@@ -100,27 +100,27 @@
 		]
 	},
 	{
-		"image": ["sat_prod/featherweight.png", "sat-product.png", "sat-product.png"],
-		"name": "Featherweight",
-		"title": "Daily Moisturizing Cream",
-		"korean_title": "데일리 모이스춰라이징 크림",
-		"price": 55.00,
+		"image": ["sat_prod/freeze-frame.png", "sat-product.png", "sat-product.png"],
+		"name": "Freeze Frame",
+		"title": "Beauty Essence",
+		"korean_title": "뷰티 에센스",
+		"price": 49.00,
 		"size_ml": 50,
 		"size_oz": 1.69,
-		"description": "This lightweight formula still packs a punch. Avocado protein extract strengthens skin’s own moisture barrier, sealing in hydration to protect and soften skin.\n\n",
+		"description": "Stop time in its tracks. Pomegranate extract infuses skin with rich moisture, boosting elasticity and firmness.\n\n",
 		"description2": "DERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
-		"who": ["Improving skin's moisture barrier", "Enhancing skin's texture and tone", "Promoting maximum hydration"],
-		"how": "Pump twice to release cream. Swipe it onto fingers and tap cream into your skin in an outward motion.",
+		"who": ["Smoother, silkier, more supple skin texture", "Plumper, more resilient skin", "Increasing firmness", "Boosting skin's hydration", "Protecting against environmental damage", "24/7 anti-aging benefits", "All-in-one anti-aging, firming and moisture"],
+		"how": "Use morning and night. Warm product by emulsifying then press essence into the skin. Use a tapping motion for maximum absorption.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
 		"category": "saturday-skin",
 		"recs": [
 			{
-				"name": "Daily Dew",
-				"img": "sat_prod/daily-dew.png"
+				"name": "All Aglow",
+				"img": "sat_prod/all-aglow.png"
 			},
 			{
-				"name": "Rise + Shine",
-				"img": "sat_prod/rise-shine.png"
+				"name": "Quench",
+				"img": "sat_prod/quench.png"
 			}
 		]
 	},

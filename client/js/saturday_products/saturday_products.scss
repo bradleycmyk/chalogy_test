@@ -75,13 +75,16 @@
 
 .sat-prod-img {
     margin: 0 auto;
-    padding-left: 20%;
+    /*padding-left: 20%;*/
+
+    width: 100%;
+    padding-left: 0%;
 }
 
 .sat-prod-img img {
-    /*width: 100%;*/
-    width: 65%;
-    max-width: 170px;
+    width: 100%;
+    /*width: 65%;*/
+    max-width: 250px;
     height: auto;
 }
 
