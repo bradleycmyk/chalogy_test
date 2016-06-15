@@ -17,52 +17,6 @@
 - Cross Browser Fix
 */
 
-// @font-face {
-//   font-family: 'MillerBanner';
-//   src: url('fonts/MillerBanner-Semibold.ttf') format('truetype');
-// }
-//
-// @font-face {
-//   font-family: 'MinionPro';
-//   src: url('fonts/MinionPro-Regular.otf') format('opentype');
-// }
-//
-// @font-face {
-//   font-family: 'WorkSans';
-//   src: url('fonts/WorkSans-Regular.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: 'WorkSans';
-//   src: url('fonts/WorkSans-Bold.ttf') format('truetype');
-//   font-weight: bolder;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: 'WorkSans';
-//   src: url('fonts/WorkSans-Medium.ttf') format('truetype');
-//   font-weight: bold;
-//   font-style: normal;
-// }
-//
-//
-// @font-face {
-//   font-family: 'WorkSans';
-//   src: url('fonts/WorkSans-Light.ttf') format('truetype');
-//   font-weight: lighter;
-//   font-style: normal;
-// }
-
-/*html, div {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  font-family: 'Work Sans', sans-serif;
-}*/
-
 body {
   margin: 0;
   padding: 0;
@@ -245,24 +199,18 @@ a:focus {
       width: 852px;
       height: 308px;
 
-
       top: 133px;
       left: 150px;
 
       -webkit-clip-path: polygon(0 252px, 686px 0, 724px 34px, 753px 66px, 796px 126px, 836px 219px, 851px 308px, 70px 308px);
       clip-path: polygon(0 232px, 631px 0, 671px 34px, 700px 66px, 740px 126px, 768px 186px, 790px 282px, 63px 282px);
-
-
-
     }
 
     .circle-triangle-two {
       // width: 383px;
       // height: 311px;
-
-
-            width: 784px;
-            height: 458px;
+      width: 784px;
+      height: 458px;
       top: 441px;
       left: 221px;
       // -webkit-clip-path: polygon(0 0, 383px 310px, 383px 0px);
@@ -283,7 +231,6 @@ a:focus {
       z-index: 2;
       background-color: white;
       box-shadow: -60px 61px 81px #FFFFFF;
-
     }
 
     .ribbon-wrapper-blue {
@@ -304,10 +251,9 @@ a:focus {
         background-color: #414141;
         overflow: hidden;
 
-        font: bold 15px Sans-Serif;
+        font: bold 15px 'Work Sans';
         color: #FFFFFF;
         text-align: center;
-
 
         -webkit-box-shadow: 3px 18px 13px 0px #5C5C5C;
         -moz-box-shadow: 3px 18px 13px 0px #5C5C5C;
@@ -416,8 +362,6 @@ a:focus {
         color: #333;
         text-align: center;
 
-
-
         /* Rotations */
         -webkit-transform: rotate(-20.1deg);
         -moz-transform:    rotate(-20.1deg);
@@ -518,7 +462,7 @@ a:focus {
 
     p {
       text-transform: uppercase;
-      font-family: 'Work Sans';
+      font-family: 'Work Sans', sans-serif;
       width: 314px;
       margin: 0 auto;
       text-align: center;
@@ -532,12 +476,12 @@ a:focus {
       text-align: center;
       border: 1px solid black;
       width: 80px;
-      margin: 10px auto;
+      margin: 25px auto;
       padding: 4px 14px;
       font-size: 1.2em;
       text-transform: uppercase;
       color: black;
-      font-family: 'Work Sans';
+      font-family: 'Work Sans', sans-serif;
       text-decoration: none;
       font-weight: 600;
     }

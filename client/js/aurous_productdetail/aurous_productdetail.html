@@ -103,11 +103,17 @@
 		<h1 class="text-center miller">OTHER RECOMMENDED PRODUCTS</h1>
 
 		<div class="aurous_recommendedProd">
-			<div class="aurous_each" ng-repeat="recommendation in recommendations | limitTo: 4">
+			<div class="recommendations" ng-repeat="rec in product.recs">
+				<a href="/aurous/products/{{ rec.name }}">
+					<img id="aurousproduct_image" class="detail_photo" ng-src="{{ rec.img }}" width="250px;" alt="{{ rec.name }}" />
+				</a>
+			</div>
+
+			<!-- <div class="aurous_each" ng-repeat="recommendation in recommendations | limitTo: 4">
 				<a href="/aurous/products/{{ recommendation.name }}">
 					<img id="aurousproduct_image" ng-src="{{ recommendation.image[0] }}" alt="recommended products" width="250px;" />
 				</a>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
