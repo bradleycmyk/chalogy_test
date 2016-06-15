@@ -3,7 +3,7 @@
   color: #FFFFFF;
 	height: 1070px;
 
-  a:hover {
+  a:hover:not(.aurous-bread) {
     color: #FFFFFF !important;
   }
 
@@ -29,11 +29,6 @@
       }
     }
 
-    .aur_logo {
-      float: right;
-      margin: 30px 280px 60px 0;
-    }
-
     .aur_blurb {
       display: block;
       text-align: center;
@@ -52,7 +47,7 @@
 
       .enrich_blurb {
         text-align: center;
-        display: inline-block;
+        // display: inline-block;
         font-weight: 100;
         letter-spacing: 4px;
         color: #FFFFFF;
@@ -71,26 +66,8 @@
       }
     }
 
-    .cara_one, .cara_two, .cara_three {
-      background-repeat: no-repeat;
-      clear: both;
-    }
-
-    .cara_one {
-      background-image: url('aurous_home_tall.jpg');
-    }
-
-    .cara_two {
-      background-image: url('aurous_home_squat.jpg');
-    }
-
-    .cara_three {
-      background-image: url('aurous_home_tube.jpg');
-    }
-
     .carousel-indicators {
       width: 102px;
-      margin: 0 0 0 -53%;
       text-align: center;
       background-color: #000000;
 
@@ -110,67 +87,11 @@
   }
 }
 
-/*
-  Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
-  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
-  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
-  Inspired from:  http://codepen.io/Rowno/pen/Afykb
-*/
-.carousel-fade .carousel-inner .item {
-  opacity: 0;
-  transition-property: opacity;
-}
-
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
-
-// WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
-// Need to override the 3.3 new styles for modern browsers & apply opacity
-// CROSS-FADE BOOTSTRAP CAROUSEL
-@media all and (transform-3d), (-webkit-transform-3d) {
-  .carousel-fade .carousel-inner > .item.next,
-  .carousel-fade .carousel-inner > .item.active.right {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-
-  .carousel-fade .carousel-inner > .item.prev,
-  .carousel-fade .carousel-inner > .item.active.left {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-
-  .carousel-fade .carousel-inner > .item.next.left,
-  .carousel-fade .carousel-inner > .item.prev.right,
-  .carousel-fade .carousel-inner > .item.active {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
-
 .aur_main {
+  margin: 0 auto;
+
 	.leftie {
-	  display: inline-block;
+	  // display: inline-block;
 	  margin: 35px 0 0 75px;
 	  vertical-align: bottom;
 
@@ -231,6 +152,8 @@
 
     .aur_logo {
       width: 280px;
+      float: right;
+      margin: 30px 280px 60px 0;
     }
 
     .aur_blurb {
@@ -247,9 +170,10 @@
     }
 
     .hero_blurb {
-      margin: 260px 0 0 15px;
+      margin: 260px 0 0 22px;
 
       .enrich_blurb {
+        display: inline-block;
         letter-spacing: 4px;
         width: 470px;
         font-size: 30px;
@@ -272,17 +196,49 @@
       background-size: 758px;
       clear: both;
     }
+
+    .cara_one {
+      background-image: url('aurous_home_tall.jpg');
+    }
+
+    .cara_two {
+      background-image: url('aurous_home_squat.jpg');
+    }
+
+    .cara_three {
+      background-image: url('aurous_home_tube.jpg');
+    }
+
+    .carousel-indicators.aurous-home-desk {
+      margin: 0 0 0 -53%;
+      left: 39% !important;
+      width: 50% !important;
+      margin-left: 0;
+      bottom: -40px !important;
+    }
+  }
+
+  .aur_main {
+    width: 1200px;
+  }
+
+  .desktop {
+    &.carousel-inner {
+      display: block;
+    }
+
+    &.leftie {
+      display: inline-block;
+    }
+  }
+
+  .mobile-tablet {
+    display: none;
   }
 }
 
-@media screen and (max-width: 1199px) {
-  // .desktop {
-  //   display: block;
-  // }
-  //and (min-width: 768px)
-  // .mobile {
-  //   display: none;
-  // }
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .aur_hero {
     height: 95vw;
 
@@ -298,6 +254,8 @@
       }
 
       .aur_logo {
+        float: right;
+        margin: 30px 280px 60px 0;
         width: 23.4vw;
       }
 
@@ -318,6 +276,7 @@
         margin: 22vw 0 0 2vw;
 
         .enrich_blurb {
+          display: inline-block;
           letter-spacing: 4px;
           width: 470px;
           font-size: 2.5vw;
@@ -340,21 +299,148 @@
         background-size: 64vw;
         clear: both;
       }
+
+      .cara_one {
+        background-image: url('aurous_home_tall.jpg');
+      }
+
+      .cara_two {
+        background-image: url('aurous_home_squat.jpg');
+      }
+
+      .cara_three {
+        background-image: url('aurous_home_tube.jpg');
+      }
+    }
+  }
+
+  .desktop {
+    &.carousel-inner {
+      display: block;
+    }
+
+    &.leftie {
+      display: inline-block;
+    }
+  }
+
+  .mobile-tablet {
+    display: none;
+  }
+
+  .aur_main {
+    width: 100%;
+    margin: 0 auto;
+
+    .leftie {
+      width: 33.6%;
+      margin: 3vw 0 0 6.4vw;
+
+      img {
+        width:  100%;
+      }
+    }
+
+    .rightie {
+      width: 42%;
+      margin: 5vw 0 0 15vw;
+
+      .aur_title {
+        font-size: 2.5vw;
+      }
+
+      .aur_long {
+        font-size: 1.25vw;
+      }
+
+      .aur_all {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .aur_hero {
+    height: 1000px;
+
+    .wrapper {
+      width: 100%;
+      height: auto;
+      margin: 0;
+
+      .aur_logo {
+        float: none;
+        margin: 30px auto;
+        display: block;
+        width: 80%;
+      }
+
+      .aur_blurb {
+        width: 168px;
+        margin: 0 auto;
+      }
+
+      .hero_blurb {
+        img {
+          width: 100%;
+        }
+
+        .enrich_blurb {
+          display: block;
+        }
+
+        .read_more {
+          width: 140px;
+        }
+      }
     }
   }
 
   .aur_main {
-    width: 50vw;
-    margin: 0 auto 20px;
+    width: 90%;
+
+    .leftie {
+      width: 100%;
+      margin: 0;
+
+      img {
+        width: 43vw;
+        margin:  0 auto;
+        display: block;
+      }
+    }
+
+    .rightie {
+      display: block;
+      width: 100%;
+      margin: 65px 0 30px;
+
+      .aur_title {
+        font-size: 6vw;
+      }
+
+      .aur_long {
+        font-size: 14px;
+      }
+
+      .aur_all {
+        margin: 0 auto;
+      }
+
+    }
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile-tablet {
+    display: block;
+
+    .cara_one, .cara_two, .cara_three {
+      background-image: none;
+    }
   }
 }
-
-// @media screen and (max-width: 767px) {
-//   .desktop {
-//     display: none;
-//   }
-//
-//   .mobile {
-//     display: block;
-//   }
-// }

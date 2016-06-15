@@ -1,7 +1,7 @@
 app.controller('AurousController', function($scope, $http, $window, $location){
 
 	// for carousel autoplay
-	$('#myCarousel').carousel({
+	$('#myCarousel, #myCarousel2 ').carousel({
 		interval: 5000,
 		cycle: true
 	});

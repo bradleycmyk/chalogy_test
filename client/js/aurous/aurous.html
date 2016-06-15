@@ -7,7 +7,7 @@
   <div class="aur_hero">
     <div class="wrapper">
       <div class="bread_crumb aurous_crumb">
-        <a href="aurous" ui-sref="aurous" class="upper">
+        <a href="aurous" ui-sref="aurous" class="upper aurous-bread">
           Aurous
         </a>
 
@@ -16,7 +16,7 @@
         </svg>
 
 
-        <a href="/aurous/brand" ui-sref="aurous_brand" class="upper">
+        <a href="/aurous/brand" ui-sref="aurous_brand" class="upper aurous-bread">
           The Brand
         </a>
       </div>
@@ -31,7 +31,7 @@
 
       <div id="myCarousel" class="carousel carousel-fade slide desktop" data-ride="carousel">
     		<!-- Indicators -->
-		    <ol class="carousel-indicators">
+		    <ol class="carousel-indicators aurous-home-desk">
 		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		      <li data-target="#myCarousel" data-slide-to="1"></li>
 		      <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -79,22 +79,20 @@
             </div>
 		      </div>
 		    </div>
-			</div>
+      </div><!-- carousel @ 1200px-->
 
-      <!-- <div id="myCarousel" class="carousel carousel-fade slide mobile" data-ride="carousel">
-
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
+      <div id="myCarousel2" class="carousel carousel-fade slide mobile-tablet" data-ride="carousel">
+        <ol class="carousel-indicators aurous-home-mobile">
+          <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel2" data-slide-to="1"></li>
+          <li data-target="#myCarousel2" data-slide-to="2"></li>
         </ol>
 
-      
         <div class="carousel-inner" role="listbox">
           <div class="item active cara cara_one">
             <div class="hero_blurb">
 
-              <img src="" alt="" />
+              <img src="aurous_home_tall.jpg" alt="" />
 
               <h1 class="upper enrich_blurb miller">
                 Discover the</br>
@@ -111,7 +109,7 @@
           <div class="item cara cara_two">
             <div class="hero_blurb">
 
-              <img src="" alt="" />
+              <img src="aurous_home_squat.jpg" alt="" />
 
               <h1 class="upper enrich_blurb miller">
                 Youth,</br>
@@ -127,7 +125,7 @@
           <div class="item cara cara_three">
             <div class="hero_blurb">
 
-              <img src="" alt="" />
+              <img src="aurous_home_tube.jpg" alt="" />
 
               <h1 class="upper enrich_blurb miller">
                 Ageless beauty,</br>
@@ -140,12 +138,12 @@
             </div>
           </div>
         </div>
-      </div> -->
+			</div><!-- carousel @ <1199px -->
     </div>
   </div>
 
-  <main class="wrapper aur_main">
-    <div class="leftie">
+  <main class="aur_main">
+    <div class="leftie desktop">
       <img src="kate.jpg" class="kate" alt="" />
     </div>
 
@@ -156,12 +154,16 @@
       </h1>
 
       <p class='upper aur_long'>
-        We tend to talk abut skincare as a battle&mdash;fighting fine lines; combating dark circles; resisting wrinkles. But what if anti-aging were a truce rather than a war? Aurous helps women make peace with their skin, preserving their youth in favor of fighting aging. The breakthrough skincare line harnesses the power of CHA-7 ES COMPLEX&trade; to work with women&rsquo;s biology instead of against it, leveraging skin&rsquo;s own regeneration process to promote elasticity and radiance while preventing dullness and wrinkles.
+        We tend to talk about skincare as a battle&mdash;fighting fine lines; combating dark circles; resisting wrinkles. But what if anti-aging were a truce rather than a war? Aurous helps women make peace with their skin, preserving their youth in favor of fighting aging. The breakthrough skincare line harnesses the power of CHA-7 ES COMPLEX<!-- --><span class='entity'><!-- -->&trade;</span> to work with women&rsquo;s biology instead of against it, leveraging skin&rsquo;s own regeneration process to promote elasticity and radiance while preventing dullness and wrinkles.
       </p>
 
       <a href="/aurous/products" ui-sref="aurous_products" class="upper aur_all">
         The products
       </a>
+    </div>
+
+    <div class="leftie mobile-tablet">
+      <img src="kate.jpg" class="kate" alt="" />
     </div>
   </main>
 </div>  <!-- WRAPPER END -->

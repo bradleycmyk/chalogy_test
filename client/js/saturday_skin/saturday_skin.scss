@@ -78,7 +78,7 @@
   }
 
   .sat_hero {
-    background-image: url('sat_skin_bg.jpg');
+    background-image: url('sat_skin_bg2.jpg');
     background-size: 100% 100% !important;
     background-repeat: no-repeat;
     position: relative;
@@ -94,9 +94,10 @@
 
       h1 {
         // font-family: MillerBanner;
-        margin: 0;
+        margin: 0 0 10px 0;
         color: rgb(0, 209, 165);
         width: 9em;
+        line-height: 1;
       }
 
       a {
@@ -107,7 +108,7 @@
         padding: 10px 18px;
         display: block;
         width: 200px;
-        margin: 30px 0 0;
+        margin: 20px 0 0;
         font-size: 0.9em;
         letter-spacing: 1px;
 
@@ -135,15 +136,15 @@
     width: 1200px;
     margin: 0 auto;
 
-    .dial {
-      padding: 30px 0 0 60px;
-      display: inline-block;
-
-      .dial_text {
-        font-size: 65px;
-        color: #000000;
-      }
-    }
+    // .dial {
+    //   padding: 30px 0 0 60px;
+    //   display: inline-block;
+    //
+    //   .dial_text {
+    //     font-size: 65px;
+    //     color: #000000;
+    //   }
+    // }
 
     .text_box {
       margin: 491px 60px 0 0;
@@ -151,7 +152,7 @@
 
       p {
         width:  341px;
-        padding: 50px 35px 10px 20px;
+        padding: 40px 35px 10px 20px;
         float: right;
         margin: 0 0 0 0;
       }
@@ -165,7 +166,7 @@
         // font-family: MillerBanner-Semibold;
         font-size: 35px;
         clear: both;
-        padding: 0.6em 1.3em 0.6em 0.7em;
+        padding: 25px 1.3em 0.6em 0.7em;
         margin: 0;
       }
     }
