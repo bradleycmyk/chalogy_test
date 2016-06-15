@@ -38,6 +38,9 @@ var schema = new mongoose.Schema({
     },
     love : {
         type: Boolean
+    },
+    recs: {
+      type: [{String: String}]
     }
 });
 

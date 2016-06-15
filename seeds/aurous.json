@@ -10,7 +10,17 @@
 		"description": "African Walnut oil and Sunflower essential oils penetrate skin to strengthen, soothe and resurface for a vital, luminous finish.",
 		"tags": ["aurous", "clear", "clean", "youth", "beauty"],
 		"category": "aurous",
-		"love": "true"
+		"love": "true",
+		"recs": [
+			{
+				"name": "Youth Essence",
+				"img": "aurous01_01.png"
+			},
+			{
+				"name": "Radiance Infusion",
+				"img": "aurous02_02.png"
+			}
+		]
 	},
 	{
 		"image": ["aurous02_01.png", "aurous02_02.png", "aurous01_01.png"],
@@ -23,7 +33,17 @@
 		"description": "Balance and recharge skin with the energizing effects of Primrose extract, formulated to revitalize and renew. ",
 		"tags": ["aurous", "clear", "clean", "youth", "beauty"],
 		"category": "aurous",
-		"love": "true"
+		"love": "true",
+		"recs": [
+			{
+				"name": null,
+				"img": null
+			},
+			{
+				"name": null,
+				"img": null
+			}
+		]
 	},
 	{
 		"image": ["aurous03_01.png", "aurous01_01.png", "aurous01_01.png"],
@@ -36,7 +56,17 @@
 		"description": "Restore skin’s natural vitality with White Asparagus extract, known to brighten, replenish and promote a healthy glow.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty", "forever young"],
 		"category": "aurous",
-		"love": "true"
+		"love": "true",
+		"recs": [
+			{
+				"name": "Oasis",
+				"img": "aurous03_01.png"
+			},
+			{
+				"name": "Reawaken",
+				"img": "aurous01_02.png"
+			}
+		]
 	},
 	{
 		"image": ["aurous01_01.png", "aurous01_02.png", "aurous01_03.png"],
@@ -49,7 +79,17 @@
 		"description": "Sandthorn and Marronnier extracts prevent fine lines while brightening and smoothing for a refreshed, radiant appearance.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
 		"category": "aurous",
-		"love": "true"
+		"love": "true",
+		"recs": [
+			{
+				"name": "Time Erase",
+				"img": "aurous02_01.png"
+			},
+			{
+				"name": "The Crème",
+				"img": "aurous01_03.png"
+			}
+		]
 	},
 	{
 		"image": ["aurous01_01.png", "aurous01_02.png", "aurous01_03.png"],
@@ -62,7 +102,17 @@
 		"description": "Lupine and Echinacea extracts improve elasticity and increase resilience, leaving skin smooth, bright and replenished.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
 		"category": "aurous",
-		"love": "true"
+		"love": "true",
+		"recs": [
+			{
+				"name": "Reawaken",
+				"img": "aurous01_03.png"
+			},
+			{
+				"name": "Pure Renewal",
+				"img": "aurous02_01.png"
+			}
+		]
 	},
 	{
 		"image": ["aurous01_01.png", "aurous01_02.png", "aurous01_03.png"],
@@ -75,7 +125,17 @@
 		"description": "Reduce traces of time with this skin-evening lotion, formulated with Lady's mantle and mallows extracts to tighten and smooth for an ageless complexion.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
 		"category": "aurous",
-		"love": "true"
+		"love": "true",
+		"recs": [
+			{
+				"name": "Halo",
+				"img": "aurous01_01.png"
+			},
+			{
+				"name": "Rare Beauty",
+				"img": "aurous02_02.png"
+			}
+		]
 	},
 	{
 		"image": ["aurous01_01.png", "aurous01_02.png", "aurous01_03.png"],
@@ -88,7 +148,17 @@
 		"description": "Black tea's advanced antioxidant capabilities soften, smooth, hydrate and enhance luster while our proven proprietary peptide complex strengthens and fuels the generation of youthful skin.   Unique cream puff cushion encapsulates the foundation in an airtight seal for flawless application.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
 		"category": "aurous",
-		"love": "true"
+		"love": "true",
+		"recs": [
+			{
+				"name": "Pure Renewal",
+				"img": "aurous01_02.png"
+			},
+			{
+				"name": "Pure Balance",
+				"img": "aurous03_01.png"
+			}
+		]
 	},
 	{
 		"image": ["aurous01_01.png", "aurous01_02.png", "aurous01_03.png"],
@@ -101,7 +171,17 @@
 		"description": "Saponaria and willow extracts dissolve impurities and makeup residue, softening and cleansing without disrupting skin’s natural moisture.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
 		"category": "aurous",
-		"love": "true"
+		"love": "true",
+		"recs": [
+			{
+				"name": "Time Erase",
+				"img": "aurous01_01.png"
+			},
+			{
+				"name": "Reawaken",
+				"img": "aurous02_01.png"
+			}
+		]
 	},
 	{
 		"image": ["aurous01_01.png", "aurous01_02.png", "aurous01_03.png"],
@@ -114,7 +194,17 @@
 		"description": "Yarrow and Thyme extracts gently melt impurities while soothing and hydrating, leaving skin soft and supple.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
 		"category": "aurous",
-		"love": "true"
+		"love": "true",
+		"recs": [
+			{
+				"name": "Gilded Glow",
+				"img": "aurous01_01.png"
+			},
+			{
+				"name": "Radiance Infusion",
+				"img": "aurous02_01.png"
+			}
+		]
 	},
 	{
 		"image": ["aurous01_01.png", "aurous01_02.png", "aurous01_03.png"],
@@ -127,7 +217,17 @@
 		"description": "Sugarcane and Lemon whisk away dead skin with natural AHA and BHA as Calendula soothes skin. Vitamin C derived from Acerola extract reduces melanin accumulation and skin discoloration while brightening and evening the complexion.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
 		"category": "aurous",
-		"love": "true"
+		"love": "true",
+		"recs": [
+			{
+				"name": "Rare Beauty",
+				"img": "aurous03_01.png"
+			},
+			{
+				"name": "Reawaken",
+				"img": "aurous01_03.png"
+			}
+		]
 	},
 	{
 		"image": ["aurous01_01.png", "aurous01_02.png", "aurous01_03.png"],
@@ -140,6 +240,16 @@
 		"description": "Black Willow Bark and Orange extracts gently exfoliate, prepping skin to absorb Rose extract and natural acids formulated to hydrate, brighten and revitalize.",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
 		"category": "aurous",
-		"love": "true"
+		"love": "true",
+		"recs": [
+			{
+				"name": "Pure Renewal",
+				"img": "aurous02_02.png"
+			},
+			{
+				"name": "The Crème",
+				"img": "aurous01_03.png"
+			}
+		]
 	}
 ]

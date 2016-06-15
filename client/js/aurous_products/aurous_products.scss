@@ -64,6 +64,10 @@
 	margin-top: 40px;
 }
 
+.big-logo {
+	display: none;
+}
+
 .drops {
 	/*height: 1551px;*/
 
@@ -259,6 +263,59 @@
 		top: 19%;
 	}
 
+	.big-logo {
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 1575px) and (max-width: 1774px) {
+	.big-logo {
+		display: inline-block;
+		float: right;
+		width: 776px;
+		margin: 0 0 0 8.3vw;
+
+		.inner-logo-thing {
+			width: 213px;
+			margin: 0 auto;
+
+			img {
+				width: 213px;
+				display: block;
+				margin: 40px auto;
+			}
+		}
+	}
+
+	.aurous-banner {
+		background-image: none;
+	}
+}
+
+@media screen and (min-width: 1775px) {
+	.big-logo {
+		display: inline-block;
+		float: right;
+		width: 767px;
+		margin: 0 2.2vw 0 0;
+
+		.inner-logo-thing {
+			width: 213px;
+			margin: 0 auto;
+
+			img {
+				width: 213px;
+				display: block;
+				margin: 40px auto;
+			}
+		}
+
+	}
+
+	.aurous-banner {
+		background-image: none;
+	}
 }
 
 @media (min-width: 800px) and (max-width: 980px) {

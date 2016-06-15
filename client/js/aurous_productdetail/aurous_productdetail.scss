@@ -115,9 +115,13 @@ hr.aurous-recommendation {
 }
 
 .aurous_recommendedProd {
-	width: 86%;
+	width: 46%;
 	margin: 0 auto;
 	position: relative;
+
+	.recommendations {
+		width: 48% !important;
+	}
 }
 
 .text-center {
