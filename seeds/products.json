@@ -152,15 +152,16 @@
 	{
 		"image": ["sat_prod/all-aglow.png", "sat-product.png", "sat-product.png"],
 		"name": "All Aglow",
-		"title": "Perfecting Cushion Compact",
+		"title": "Perfecting Cushion Compact\nSPF 50/PA++",
 		"korean_title": "퍼펙팅 쿠션 컴팩트",
 		"price": 40.00,
 		"size_ml": 30,
 		"size_oz": 0.52,
-		"description": "High performance meets weightless coverage. Hydrating, cooling and brightening with a flawless semi-matte finish and an SPF 47/PA++ protection. Airtight cream puff cushion keeps the formula fresh.\n\n",
+		"description": "High performance meets weightless coverage. Hydrating, cooling and brightening with a flawless semi-matte finish and an SPF 50/PA++ protection. Airtight cream puff cushion keeps the formula fresh.\n\n",
 		"description2": "DERMATOLOGIST TESTED",
 		"who": ["Light to medium coverage", "Protecting skin from harmful UVA and UVB rays", "Cooling and brightening skin's overall appearance", "Skincare and makeup in one", "Fast and easy application with flawless finish"],
 		"how": "Use custom puff to gently tap the cushion, encouraging the foundation to come up. From the outside of the face in, gently press the puff against the skin until the desired amount of coverage is achieved.\n\nHOW TO REFILL THE PRODUCT:\n1. Press the bottom center with both thumbs.\n2. Push the bottom of the container up.\n3. Remove the inner container as it pops up.\n4. Press refill cushion into the compact case.",
+		"shade": "02 Linen",
 		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
 		"category": "saturday-skin",
 		"recs": [
