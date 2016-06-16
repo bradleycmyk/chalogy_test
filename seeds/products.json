@@ -1,6 +1,6 @@
 [
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/daily-dew.png", "sat-product.png", "sat-product.png"],
 		"name": "Daily Dew",
 		"title": "Hydrating Essence Mist",
 		"korean_title": "하이드레이팅 에센스 미스트",
@@ -16,91 +16,16 @@
 		"recs": [
 			{
 				"name": "All Aglow",
-				"img": "sat-product.png"
+				"img": "sat_prod/all-aglow.png"
 			},
 			{
 				"name": "Featherweight",
-				"img": "sat-product.png"
+				"img": "sat_prod/featherweight.png"
 			}
 		]
 	},
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
-		"name": "Freeze Frame",
-		"title": "Beauty Essence",
-		"korean_title": "뷰티 에센스",
-		"price": 49.00,
-		"size_ml": 50,
-		"size_oz": 1.69,
-		"description": "Stop time in its tracks. Pomegranate extract infuses skin with rich moisture, boosting elasticity and firmness.\n\n",
-		"description2": "DERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
-		"who": ["Smoother, silkier, more supple skin texture", "Plumper, more resilient skin", "Increasing firmness", "Boosting skin's hydration", "Protecting against environmental damage", "24/7 anti-aging benefits", "All-in-one anti-aging, firming and moisture"],
-		"how": "Use morning and night. Warm product by emulsifying then press essence into the skin. Use a tapping motion for maximum absorption.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
-		"category": "saturday-skin",
-		"recs": [
-			{
-				"name": "All Aglow",
-				"img": "sat-product.png"
-			},
-			{
-				"name": "Quench",
-				"img": "sat-product.png"
-			}
-		]
-	},
-	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
-		"name": "Wide Awake",
-		"title": "Brightening Eye Cream",
-		"korean_title": "브라이트닝 아이크림",
-		"price": 45.00,
-		"size_ml": 30,
-		"size_oz": 1.01,
-		"description": "Brighten up. Date Seed extract illuminates and refreshes the area around the eyes.\n\n",
-		"description2": "DERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
-		"who": ["Minimizing dark circles.", "Reducing puffiness", "Smoothing the appearance of fine lines and wrinkles"],
-		"how": "Apply cream to the tip of the ring finger. Dot in a 'c' formation to the under eye. Use a tapping motion for maximum absorption.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty", "forever young"],
-		"category": "saturday-skin",
-		"recs": [
-			{
-				"name": "Freeze Frame",
-				"img": "sat-product.png"
-			},
-			{
-				"name": "Balancing Act",
-				"img": "sat-product.png"
-			}
-		]
-	},
-	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
-		"name": "Balancing Act",
-		"title": "Skin-Smoothing Lotion",
-		"korean_title": "스킨 스무딩 로션",
-		"price": 45.00,
-		"size_ml": 120,
-		"size_oz": 4.05,
-		"description": "Find your center. Soothing magnolia vine extracts restore skin’s oil and water balance, hydrating and smoothing  for luminous skin.\n\n",
-		"description2": "DERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
-		"who": ["Brightening and smoothing skin", "Minimizing the appearance of small lines and wrinkles", "Retaining moisture", "Minimizing the appearance of pores"],
-		"how": "Place moisturizer into the palm of your hand. Using all four fingers apply in an outward circular motion tapping the moisturizer into skin.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
-		"category": "saturday-skin",
-		"recs": [
-			{
-				"name": "Featherweight",
-				"img": "sat-product.png"
-			},
-			{
-				"name": "Rise + Shine",
-				"img": "sat-product.png"
-			}
-		]
-	},
-	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/featherweight.png", "sat-product.png", "sat-product.png"],
 		"name": "Featherweight",
 		"title": "Daily Moisturizing Cream",
 		"korean_title": "데일리 모이스춰라이징 크림",
@@ -116,16 +41,91 @@
 		"recs": [
 			{
 				"name": "Daily Dew",
-				"img": "sat-product.png"
+				"img": "sat_prod/daily-dew.png"
 			},
 			{
 				"name": "Rise + Shine",
-				"img": "sat-product.png"
+				"img": "sat_prod/rise-shine.png"
 			}
 		]
 	},
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/wide-awake.png", "sat-product.png", "sat-product.png"],
+		"name": "Wide Awake",
+		"title": "Brightening Eye Cream",
+		"korean_title": "브라이트닝 아이크림",
+		"price": 45.00,
+		"size_ml": 30,
+		"size_oz": 1.01,
+		"description": "Brighten up. Date Seed extract illuminates and refreshes the area around the eyes.\n\n",
+		"description2": "DERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
+		"who": ["Minimizing dark circles.", "Reducing puffiness", "Smoothing the appearance of fine lines and wrinkles"],
+		"how": "Apply cream to the tip of the ring finger. Dot in a 'c' formation to the under eye. Use a tapping motion for maximum absorption.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty", "forever young"],
+		"category": "saturday-skin",
+		"recs": [
+			{
+				"name": "Freeze Frame",
+				"img": "sat_prod/freeze-frame.png"
+			},
+			{
+				"name": "Balancing Act",
+				"img": "sat_prod/balancing-act.png"
+			}
+		]
+	},
+	{
+		"image": ["sat_prod/balancing-act.png", "sat-product.png", "sat-product.png"],
+		"name": "Balancing Act",
+		"title": "Skin-Smoothing Lotion",
+		"korean_title": "스킨 스무딩 로션",
+		"price": 45.00,
+		"size_ml": 120,
+		"size_oz": 4.05,
+		"description": "Find your center. Soothing magnolia vine extracts restore skin’s oil and water balance, hydrating and smoothing  for luminous skin.\n\n",
+		"description2": "DERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
+		"who": ["Brightening and smoothing skin", "Minimizing the appearance of small lines and wrinkles", "Retaining moisture", "Minimizing the appearance of pores"],
+		"how": "Place moisturizer into the palm of your hand. Using all four fingers apply in an outward circular motion tapping the moisturizer into skin.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "saturday-skin",
+		"recs": [
+			{
+				"name": "Featherweight",
+				"img": "sat_prod/featherweight.png"
+			},
+			{
+				"name": "Rise + Shine",
+				"img": "sat_prod/rise-shine.png"
+			}
+		]
+	},
+	{
+		"image": ["sat_prod/freeze-frame.png", "sat-product.png", "sat-product.png"],
+		"name": "Freeze Frame",
+		"title": "Beauty Essence",
+		"korean_title": "뷰티 에센스",
+		"price": 49.00,
+		"size_ml": 50,
+		"size_oz": 1.69,
+		"description": "Stop time in its tracks. Pomegranate extract infuses skin with rich moisture, boosting elasticity and firmness.\n\n",
+		"description2": "DERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
+		"who": ["Smoother, silkier, more supple skin texture", "Plumper, more resilient skin", "Increasing firmness", "Boosting skin's hydration", "Protecting against environmental damage", "24/7 anti-aging benefits", "All-in-one anti-aging, firming and moisture"],
+		"how": "Use morning and night. Warm product by emulsifying then press essence into the skin. Use a tapping motion for maximum absorption.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "saturday-skin",
+		"recs": [
+			{
+				"name": "All Aglow",
+				"img": "sat_prod/all-aglow.png"
+			},
+			{
+				"name": "Quench",
+				"img": "sat_prod/quench.png"
+			}
+		]
+	},
+	{
+		"image": ["sat_prod/rise-shine.png", "sat-product.png", "sat-product.png"],
 		"name": "Rise + Shine",
 		"title": "Purifying Cleanser",
 		"korean_title": "퓨리파잉 클렌저",
@@ -141,16 +141,16 @@
 		"recs": [
 			{
 				"name": "Daily Dew",
-				"img": "sat-product.png"
+				"img": "sat_prod/daily-dew.png"
 			},
 			{
 				"name": "Wide Awake",
-				"img": "sat-product.png"
+				"img": "sat_prod/wide-awake.png"
 			}
 		]
 	},
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/all-aglow.png", "sat-product.png", "sat-product.png"],
 		"name": "All Aglow",
 		"title": "Perfecting Cushion Compact\nSPF 50/PA++",
 		"korean_title": "퍼펙팅 쿠션 컴팩트",
@@ -167,16 +167,16 @@
 		"recs": [
 			{
 				"name": "Featherweight",
-				"img": "sat-product.png"
+				"img": "sat_prod/featherweight.png"
 			},
 			{
 				"name": "Wide Awake",
-				"img": "sat-product.png"
+				"img": "sat_prod/wide-awake.png"
 			}
 		]
 	},
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/spotlight.png", "sat-product.png", "sat-product.png"],
 		"name": "Spotlight",
 		"title": "Brightening Mask",
 		"korean_title": "브라이트닝 마스크",
@@ -192,16 +192,16 @@
 		"recs": [
 			{
 				"name": "Rise + Shine",
-				"img": "sat-product.png"
+				"img": "sat_prod/rise-shine.png"
 			},
 			{
 				"name": "Daily Dew",
-				"img": "sat-product.png"
+				"img": "sat_prod/daily-dew.png"
 			}
 		]
 	},
 	{
-		"image": ["sat-product.png", "sat-product.png", "sat-product.png"],
+		"image": ["sat_prod/quench.png", "sat-product.png", "sat-product.png"],
 		"name": "Quench",
 		"title": "Intense Hydration Mask",
 		"korean_title": "인텐스 하이드레이션 마스크",
@@ -217,11 +217,11 @@
 		"recs": [
 			{
 				"name": "All Aglow",
-				"img": "sat-product.png"
+				"img": "sat_prod/all-aglow.png"
 			},
 			{
 				"name": "Balancing Act",
-				"img": "sat-product.png"
+				"img": "sat_prod/balancing-act.png"
 			}
 		]
 	}

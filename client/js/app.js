@@ -35,7 +35,7 @@ app.controller('MainController', function($scope, $rootScope, $window, $state){
 		if($window.location.href.split("5959/")[1].indexOf("about") > -1 || window.location.href.split("5959/")[1].indexOf("chaum") > -1 || window.location.href.split("5959/")[1].indexOf("cha-health-systems") > -1  ) {
 			return true;
 		} else {
-			console.log("something is wrong");
+			// console.log("something is wrong");
 		}
 	}
 	
