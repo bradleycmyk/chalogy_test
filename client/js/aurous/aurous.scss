@@ -210,11 +210,14 @@
     }
 
     .carousel-indicators.aurous-home-desk {
-      margin: 0 0 0 -53%;
-      left: 39% !important;
-      width: 50% !important;
-      margin-left: 0;
-      bottom: -40px !important;
+      width: 112px;
+      margin-left: 11%;
+      bottom: -50px;
+
+      //  margin: 0 0 0 -53%;
+      // left: 39% !important;
+      // margin-left: 0;
+      // bottom: -40px !important;
     }
   }
 
@@ -255,7 +258,7 @@
 
       .aur_logo {
         float: right;
-        margin: 30px 280px 60px 0;
+        margin: 30px 20vw 60px 0;
         width: 23.4vw;
       }
 
@@ -310,6 +313,12 @@
 
       .cara_three {
         background-image: url('aurous_home_tube.jpg');
+      }
+
+      .carousel-indicators.aurous-home-desk {
+        width: 112px;
+        margin-left: 11%;
+        bottom: -50px;
       }
     }
   }
@@ -370,21 +379,32 @@
       height: auto;
       margin: 0;
 
+      .bread_crumb.aurous_crumb {
+        display: block;
+      }
+
       .aur_logo {
         float: none;
         margin: 30px auto;
         display: block;
-        width: 80%;
+        width: 50%;
       }
 
       .aur_blurb {
-        width: 168px;
+        width: 108px;
         margin: 0 auto;
+        font-size: 15px;
+
+        &::before {
+          margin: 0 0 5px 0;
+        }
       }
 
       .hero_blurb {
         img {
-          width: 100%;
+          width: 80%;
+          display: block;
+          margin: 30px auto;
         }
 
         .enrich_blurb {
