@@ -6,8 +6,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
     cycle: true
   });
 
-
-    $scope.isActive = function (route) {
+  $scope.isActive = function (route) {
 	   return route == $window.location.href.split("5959/")[1];
 	};
 
@@ -24,6 +23,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       // parallax('inn-four', 0.05, 2255);
       // parallax('inn-five', 0.05, 2370);
     });
+
   })
 
 
@@ -49,7 +49,8 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
               if (visible > fraction) {
                   video.play();
               } else {
-                  video.pause();
+                  // video.pause();
+                  console.log("continue");
               }
       }
   }
@@ -59,6 +60,10 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
 
   $(document).ready(function(){
     var myVideo = $('.video-play-pause');
+
+    // if($(window).scrollTop() > 730) {
+    //   myVideo.get(0).play();
+    // }
 
     $('.video-center').click(function(){
       if (myVideo.get(0).paused) 
