@@ -184,6 +184,10 @@
 	left: 8%;
 	opacity: 1 !important;
 	font-weight: 600;
+
+	.pre-wrapped {
+		white-space: pre-wrap;
+	}
 }
 
 .aurous-name-fromdb {
@@ -201,6 +205,10 @@
 	text-align: center;
 	letter-spacing: 0.9px;
 	text-transform: uppercase;
+}
+
+.korean_title {
+	font-size: 12px;
 }
 
 .aurous-ktitle-fromdb {

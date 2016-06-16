@@ -139,8 +139,8 @@
 	},
 	{
 		"image": ["aurous01_01a.jpg", "aurous01_02.png", "aurous01_03a.jpg"],
-		"name": "Guilded Glow",
-		"title": "Flawless Coverage Cushion Foundation",
+		"name": "Gilded Glow",
+		"title": "Flawless Coverage Cushion Foundation SPF 50/PA+++",
 		"korean_title": "플로리스 커버리지 쿠션 컴팩트",
 		"price": 50.00,
 		"size_ml": 15,
@@ -209,7 +209,7 @@
 	{
 		"image": ["aurous01_01a.jpg", "aurous01_02.png", "aurous01_03a.jpg"],
 		"name": "Oasis",
-		"title": "Moisture Replenishing Ampule + Mask Duo",
+		"title": "Moisture Replenishing\nAmpule + Mask Duo",
 		"korean_title": "모이스춰 리플레니싱 앰플 + 마스크 듀오",
 		"price": 0.00,
 		"size_ml": 25,
@@ -232,7 +232,7 @@
 	{
 		"image": ["aurous01_01a.jpg", "aurous01_02.png", "aurous01_03a.jpg"],
 		"name": "Halo",
-		"title": "Luxe Brightening Ampule + Mask Duo",
+		"title": "Luxe Brightening\nAmpule + Mask Duo",
 		"korean_title": "럭스 브라이트닝 앰플 + 마스크 듀오",
 		"price": 0.00,
 		"size_ml": 25,

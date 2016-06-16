@@ -50,6 +50,10 @@ var schema = new mongoose.Schema({
     how: {
       type: String
     },
+    shade: {
+      type: String,
+      default: null
+    },
     tags: {
         type: [String]
     },

@@ -40,6 +40,9 @@
 					<p class="price_tag">${{ product.price }}.00</p>
 					<br>
 					<span class="product-description">{{product.size_ml}} ml/{{product.size_oz}} Fl. Oz.</span>
+					<div ng-if="product.shade">
+						<p class="product-description">Shade: {{product.shade}}</p>
+					</div>
 					<p class="product-description">{{ product.description }}</p>
 					<p class="product-description font14">{{ product.description2 }}</p>
 					<br class="mobile_hide">

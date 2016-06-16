@@ -1,5 +1,5 @@
 app.controller('AboutController', function($scope, $http, $window, $location) {
-  
+
   $(document).ready(function() {
     $(".rooted, .constant, .versatile").click(function() {
       if ($(this).children(".paragraph").css('display') == 'none') {
@@ -17,9 +17,9 @@ app.controller('AboutController', function($scope, $http, $window, $location) {
 
     $(window).scroll(function(e) {
       parallax('about-one', 0.7, 283);
-      parallax('about-two', 0.6, 660);
-      parallax('about-three', 0.5, 790);
-      parallax('about-four', 0.4, 1085);
+      parallax('about-two', 0.7, 660);
+      parallax('about-three', 0.7, 790);
+      parallax('about-four', 0.5, 1085);
     });
   })
 

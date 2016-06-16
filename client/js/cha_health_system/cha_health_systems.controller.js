@@ -3,6 +3,10 @@ app.controller('ChaHealthController', function($scope, $http, $window, $location
   var currentUrl = $window.location.href;
 	$scope.url = currentUrl;
 
+  $scope.trustUrl = function(url) {
+    return $sce.trustAsResourceUrl(url);
+  }
+
   $scope.isActive = function (route) {
     return route == $window.location.href.split("5959/")[1];
   };
@@ -17,7 +21,9 @@ app.controller('ChaHealthController', function($scope, $http, $window, $location
       parallax('chs-one', 0.2, 695);
       parallax('chs-two', 0.2, 900);
     });
-  })
+  });
+
+
 
 
   // for carousel autoplay
