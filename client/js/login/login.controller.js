@@ -1,5 +1,8 @@
 app.controller('loginController', function($scope, $http, $window, $location, AuthService, loginFactory) {
+
+    if(sessionStorage.loggedinUser)
 	
+    console.log("users: ", user);
 	$scope.userLogin = function(users){
         // loginFactory.checkUser(users).then(function(loggedin){
         // 	console.log("loggedin : ", loggedin);

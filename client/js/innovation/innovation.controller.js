@@ -1,5 +1,19 @@
 app.controller('InnovationController', function($scope, $http, $window, $location) {
 
+  if(sessionStorage.loggedinUser == undefined) {
+    // console.log("hello no one is logged");
+    if($window.location.href.split("5959/")[1] == "login") {
+      $('.login-pop').css({"display":"none"});
+      console.log("do nothing");
+    } else {
+      $('.login-pop').css({"display":"block"});
+    }
+  } else {
+    console.log("who's logged in??");
+    $('.login-pop').css({"display":"none"});
+  }
+
+
   // for carousel autoplay
   $('#myCarousel').carousel({
     interval: 5000,
@@ -59,18 +73,30 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
   window.addEventListener('resize', checkScroll, false);
 
   $(document).ready(function(){
+    
+    // first attach the flag in the onended event
+    // $('#video1').on('ended', function(){this.playedThrough = true;});
+
+    // $(window).scroll(function(){
+    //     var myVideo = document.getElementById("video1");
+
+    //     if($(window).scrollTop() > 300 && $(window).scrollTop() < 975){
+    //        // only if we didn't reached the end yet
+    //        if (!myVideo.playedThrough)
+    //           myVideo.play();
+    //     } else {
+    //        myVideo.pause();
+    //     }
+    // })
+
     var myVideo = $('.video-play-pause');
-
-    // if($(window).scrollTop() > 730) {
-    //   myVideo.get(0).play();
-    // }
-
-    $('.video-center').click(function(){
-      if (myVideo.get(0).paused) 
-            myVideo.get(0).play();
-
-        else 
-            myVideo.get(0).pause(); 
+    $('#play').click(function(){
+      
+      if (myVideo.get(0).paused) {
+         myVideo.get(0).play(); 
+      } else {
+         myVideo.get(0).pause(); 
+      }    
     });
 
     $('#btn1').click(function(){
