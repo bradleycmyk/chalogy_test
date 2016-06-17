@@ -38,6 +38,13 @@ app.controller('AurousBrandController', function($scope, $http, $window, $locati
 		        myVideo.get(0).pause(); 
 		});
 
+		$('#play').click(function(){
+			if (myVideo.get(0).paused) 
+		        myVideo.get(0).play(); 
+		    else 
+		        myVideo.get(0).pause(); 
+		})
+
 		$('#btn1').click(function(){
 			$('.video-container-brand2').css({"display":"none"});
 	    	$('.video-container-brand3').css({"display":"none"});

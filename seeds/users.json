@@ -8,5 +8,10 @@
 		"email": "test@test.com",
 		"password": "test",
 		"isAdmin": true
+	},
+	{
+		"email":"chalogy@test.com",
+		"password": "cha7",
+		"isAdmin": true
 	}
 ]

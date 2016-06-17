@@ -3,7 +3,8 @@ video {
 }
 
 .video-container-brand1, .video-container-brand2, .video-container-brand3, .video-container-brand4, .video-container-brand5, .video-container-brand6, .video-container-brand7, .video-container-brand8 {
-    height: 300px;
+    height: 540px;
+    background-color: white !important;
 }
 
 .video-cover {
@@ -43,8 +44,8 @@ video {
     -ms-animation: showEight 2s ease-in alternate infinite; /* IE10 */
     -o-animation: showEight 2s ease-in alternate infinite; /* Opera */
     animation: showEight 3s ease-in-out;
-    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
-    animation-delay: 2s;
+    -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -60,8 +61,8 @@ video {
     -ms-animation: show 2s ease-in alternate infinite; /* IE10 */
     -o-animation: show 2s ease-in alternate infinite; /* Opera */
     animation: show 3s ease-in-out;
-    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
-    animation-delay: 2s;
+    -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -134,9 +135,9 @@ p.fade-in-effect {
     opacity: 0;
     position: relative;
     -webkit-animation: mymove 4s; /* Chrome, Safari, Opera */
-    -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
     animation: mymove 4s;
-    animation-delay: 3s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
 }
 
@@ -328,16 +329,18 @@ p.fade-in-effect {
 }
 
 
+.video-play-pause {
+    background-color: white !important;
+}
 
 
 /* buttons */
 .play-buttons {
-    width: 250px;
+    width: 287px;
     height: 21px;
     margin: 0 auto;
     padding-left: 8px;
-    margin-top: -54px;
-    /*background-color: yellow;*/
+    margin-top: -47px;
 }
 
 a.video-button {
@@ -357,8 +360,20 @@ a.video-button {
     margin-right: 4px;
 }
 
+
+.play-btn {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('play-button.jpg');
+    background-size: Contain;
+    background-repeat: no-repeat;
+    margin-right: 4px;
+}
+
 .active-btn {
-    background-image: url('heart-icon.png');
+    /*background-image: url('heart-icon.png');*/
+    background-image: url('black-circle.png');
 }
 
 
