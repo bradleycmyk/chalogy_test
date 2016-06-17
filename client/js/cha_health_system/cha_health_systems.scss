@@ -76,13 +76,13 @@
       display: inline-block;
 
       .carousel-indicators.chs-indicators {
-        width: 100% !important;
+        width: 235px !important;
         position: relative;
         bottom: -25px !important;
-
-        // left: 12vw !important;
         top: 0;
-        margin-left: -35%;
+
+        /*margin-left: -35%;*/
+        margin-left: -8%;
 
         li {
           vertical-align: middle;
