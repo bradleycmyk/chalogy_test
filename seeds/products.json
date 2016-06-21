@@ -224,5 +224,247 @@
 				"img": "sat_prod/balancing-act.png"
 			}
 		]
+	},
+	{
+		"image": ["aurous01_01a.jpg", "aurous01_02.png", "aurous01_03a.jpg"],
+		"name": "Rare Beauty",
+		"title": ["Ultimate Oil Concentrate"],
+		"korean_title": "얼티밋 오일 컨센트레이트",
+		"price": 89.00,
+		"size_ml": 30,
+		"size_oz": 1.01,
+		"description": "African Walnut oil and Sunflower essential oils penetrate skin to strengthen, soothe and resurface for a vital, luminous finish.",
+		"tags": ["aurous", "clear", "clean", "youth", "beauty"],
+		"category": "aurous",
+		"recs": [
+			{
+				"name": "Timeless Tonic",
+				"img": "aurous01_01a.jpg"
+			},
+			{
+				"name": "Radiance Infusion",
+				"img": "aurous02_02.png"
+			}
+		]
+	},
+	{
+		"image": ["aurous02_01.png", "aurous02_02.png", "aurous01_01a.jpg"],
+		"name": "Timeless Tonic",
+		"title": "Vitalizing Softener",
+		"korean_title": "바이탈라이징 소프트너",
+		"price": 60.00,
+		"size_ml": 140,
+		"size_oz": 4.73,
+		"description": "Balance and recharge skin with the energizing effects of Primrose extract, formulated to revitalize and renew. ",
+		"tags": ["aurous", "clear", "clean", "youth", "beauty"],
+		"category": "aurous",
+		"recs": [
+			{
+				"name": "Rare Beauty",
+				"img": "aurous01_01a.jpg"
+			},
+			{
+				"name": "Reawaken",
+				"img": "aurous01_01a.jpg"
+			}
+		]
+	},
+	{
+		"image": ["aurous03_01a.jpg", "aurous01_01a.jpg", "aurous01_01a.jpg"],
+		"name": "Radiance Infusion",
+		"title": "Brightening Essence",
+		"korean_title": "브라이트닝 에센스",
+		"price": 120.00,
+		"size_ml": 45,
+		"size_oz": 1.52,
+		"description": "Restore skin’s natural vitality with White Asparagus extract, known to brighten, replenish and promote a healthy glow.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty", "forever young"],
+		"category": "aurous",
+		"recs": [
+			{
+				"name": "Oasis",
+				"img": "aurous03_01a.jpg"
+			},
+			{
+				"name": "Reawaken",
+				"img": "aurous01_02.png"
+			}
+		]
+	},
+	{
+		"image": ["aurous01_01a.jpg", "aurous01_02.png", "aurous01_03a.jpg"],
+		"name": "Reawaken",
+		"title": "Illuminating Eye Treatment",
+		"korean_title": "일루미네이팅 아이 트리트먼트",
+		"price": 110.00,
+		"size_ml": 30,
+		"size_oz": 1.01,
+		"description": "Sandthorn and Marronnier extracts prevent fine lines while brightening and smoothing for a refreshed, radiant appearance.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "aurous",
+		"recs": [
+			{
+				"name": "Time Erase",
+				"img": "aurous02_01.png"
+			},
+			{
+				"name": "The Crème",
+				"img": "aurous01_03a.jpg"
+			}
+		]
+	},
+	{
+		"image": ["aurous01_01a.jpg", "aurous01_02.png", "aurous01_03a.jpg"],
+		"name": "The Crème",
+		"title": "Revitalizing Infusion",
+		"korean_title": "리바이탈라이징 인퓨젼",
+		"price": 160.00,
+		"size_ml": 50,
+		"size_oz": 1.69,
+		"description": "Lupine and Echinacea extracts improve elasticity and increase resilience, leaving skin smooth, bright and replenished.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "aurous",
+		"recs": [
+			{
+				"name": "Reawaken",
+				"img": "aurous01_03a.jpg"
+			},
+			{
+				"name": "Pure Renewal",
+				"img": "aurous02_01.png"
+			}
+		]
+	},
+	{
+		"image": ["aurous01_01a.jpg", "aurous01_02.png", "aurous01_03a.jpg"],
+		"name": "Time Erase",
+		"title": "Smoothing Fluid",
+		"korean_title": "스무딩 플루이드",
+		"price": 65.00,
+		"size_ml": 130,
+		"size_oz": 4.39,
+		"description": "Reduce traces of time with this skin-evening lotion, formulated with Lady's mantle and mallows extracts to tighten and smooth for an ageless complexion.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "aurous",
+		"recs": [
+			{
+				"name": "Halo",
+				"img": "aurous01_01a.jpg"
+			},
+			{
+				"name": "Rare Beauty",
+				"img": "aurous02_02.png"
+			}
+		]
+	},
+	{
+		"image": ["aurous01_01a.jpg", "aurous01_02.png", "aurous01_03a.jpg"],
+		"name": "Gilded Glow",
+		"title": "Flawless Coverage Cushion Foundation SPF 50/PA+++",
+		"korean_title": "플로리스 커버리지 쿠션 컴팩트",
+		"price": 50.00,
+		"size_ml": 15,
+		"size_oz": 0.52,
+		"description": "Black tea's advanced antioxidant capabilities soften, smooth, hydrate and enhance luster while our proven proprietary peptide complex strengthens and fuels the generation of youthful skin.   Unique cream puff cushion encapsulates the foundation in an airtight seal for flawless application.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "aurous",
+		"recs": [
+			{
+				"name": "Pure Renewal",
+				"img": "aurous01_02.png"
+			},
+			{
+				"name": "Pure Balance",
+				"img": "aurous03_01a.jpg"
+			}
+		]
+	},
+	{
+		"image": ["aurous01_01a.jpg", "aurous01_02.png", "aurous01_03a.jpg"],
+		"name": "Pure Renewal",
+		"title": "Daily Hydrating gel Cleanser",
+		"korean_title": "데일리 하이드레이팅 젤 클렌저",
+		"price": 45.00,
+		"size_ml": 160,
+		"size_oz": 5.41,
+		"description": "Saponaria and willow extracts dissolve impurities and makeup residue, softening and cleansing without disrupting skin’s natural moisture.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "aurous",
+		"recs": [
+			{
+				"name": "Time Erase",
+				"img": "aurous01_01a.jpg"
+			},
+			{
+				"name": "Reawaken",
+				"img": "aurous02_01.png"
+			}
+		]
+	},
+	{
+		"image": ["aurous01_01a.jpg", "aurous01_02.png", "aurous01_03a.jpg"],
+		"name": "Pure Balance",
+		"title": "Gentle Cleansing Milk",
+		"korean_title": "젠틀 클렌징 밀크",
+		"price": 45.00,
+		"size_ml": 180,
+		"size_oz": 6.08,
+		"description": "Yarrow and Thyme extracts gently melt impurities while soothing and hydrating, leaving skin soft and supple.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "aurous",
+		"recs": [
+			{
+				"name": "Gilded Glow",
+				"img": "aurous01_01a.jpg"
+			},
+			{
+				"name": "Radiance Infusion",
+				"img": "aurous02_01.png"
+			}
+		]
+	},
+	{
+		"image": ["aurous01_01a.jpg", "aurous01_02.png", "aurous01_03a.jpg"],
+		"name": "Oasis",
+		"title": "Moisture Replenishing\nAmpule + Mask Duo",
+		"korean_title": "모이스춰 리플레니싱 앰플 + 마스크 듀오",
+		"price": 0.00,
+		"size_ml": 25,
+		"size_oz": 0.84,
+		"description": "Sugarcane and Lemon whisk away dead skin with natural AHA and BHA as Calendula soothes skin. Vitamin C derived from Acerola extract reduces melanin accumulation and skin discoloration while brightening and evening the complexion.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "aurous",
+		"recs": [
+			{
+				"name": "Rare Beauty",
+				"img": "aurous03_01a.jpg"
+			},
+			{
+				"name": "Reawaken",
+				"img": "aurous01_03a.jpg"
+			}
+		]
+	},
+	{
+		"image": ["aurous01_01a.jpg", "aurous01_02.png", "aurous01_03a.jpg"],
+		"name": "Halo",
+		"title": "Luxe Brightening\nAmpule + Mask Duo",
+		"korean_title": "럭스 브라이트닝 앰플 + 마스크 듀오",
+		"price": 0.00,
+		"size_ml": 25,
+		"size_oz": 0.84,
+		"description": "Black Willow Bark and Orange extracts gently exfoliate, prepping skin to absorb Rose extract and natural acids formulated to hydrate, brighten and revitalize.",
+		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"category": "aurous",
+		"recs": [
+			{
+				"name": "Pure Renewal",
+				"img": "aurous02_02.png"
+			},
+			{
+				"name": "The Crème",
+				"img": "aurous01_03a.jpg"
+			}
+		]
 	}
 ]

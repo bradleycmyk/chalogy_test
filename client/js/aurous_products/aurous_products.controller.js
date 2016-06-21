@@ -1,4 +1,4 @@
-app.controller('AurousProductsController', function($scope, $http, AurousFactory, $location, $window){
+app.controller('AurousProductsController', function($scope, $http, ProductFactory, $location, $window){
 
 	if(sessionStorage.loggedinUser == undefined) {
 		// console.log("hello no one is logged");
@@ -13,7 +13,7 @@ app.controller('AurousProductsController', function($scope, $http, AurousFactory
 		$('.login-pop').css({"display":"none"});
 	}
 
-	AurousFactory.getSkinCareDb().then(function(data){
+	ProductFactory.getSkinCareAurousDb().then(function(data){
 		console.log("returend data from aurous db: ", data);
 		$scope.products = data;
 	})

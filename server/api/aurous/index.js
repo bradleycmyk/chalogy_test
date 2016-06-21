@@ -4,12 +4,12 @@ var Aurous = require('./aurous.model');
 
 module.exports = router;
 
-router.get('/', function(req, res, next){
-	Aurous.find({}, function(err, products){
-		if (err) return next(err);
-		res.json(products);
-	});
-});
+// router.get('/', function(req, res, next){
+// 	Aurous.find({}, function(err, products){
+// 		if (err) return next(err);
+// 		res.json(products);
+// 	});
+// });
 
 // performing mongoDB full-text search 
 router.get('/search/:text', function(req, res, next){
@@ -46,7 +46,6 @@ router.get('/recommendation/:product', function(req, res, next){
 
 // remove item 
 router.post('/remove', function(req, res, next){
-    console.log("yes3");
     var title = req.body.title;
     Aurous.findOneAndRemove({ title: title }, function(err, prod){
         console.log("product removed in aurous product route");

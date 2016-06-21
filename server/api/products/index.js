@@ -4,11 +4,27 @@ var Product = require('./product.model');
 
 module.exports = router;
 
-router.get('/', function(req, res, next){
-	Product.find({}, function(err, products){
-		if (err) return next(err);
-		res.json(products);
-	});
+// router.get('/', function(req, res, next){
+// 	Product.find({}, function(err, products){
+// 		if (err) return next(err);
+// 		res.json(products);
+// 	});
+// });
+
+// get saturday skin products 
+router.get('/saturday', function(req, res, next){
+    Product.find({category: 'saturday-skin'}, function(err, products){
+        if (err) return next(err);
+        res.json(products);
+    });
+});
+
+// get entire aurous products 
+router.get('/aurous', function(req, res, next){
+    Product.find({category: 'aurous'}, function(err, products){
+        if (err) return next(err);
+        res.json(products);
+    });
 });
 
 // performing mongoDB full-text search 

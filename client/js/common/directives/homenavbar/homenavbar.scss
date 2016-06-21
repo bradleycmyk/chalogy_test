@@ -1,0 +1,151 @@
+.navigation-home {
+  width: 100%;
+  display: block;
+  padding-bottom: 0;
+
+  margin: 0 auto;
+  
+  margin-bottom: 0;
+  height: 120px;
+  margin-top: -15px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  z-index: 999;
+  margin-left: auto;
+  margin-right: auto;
+  /*box-shadow: 0 4px 4px -4px #BBBBBB;*/
+
+}
+
+.shadow-home {
+  box-shadow: 0 4px 4px -4px #BBBBBB;
+  max-width: 100%;
+}
+
+.navigation-home > .brand, .page-width-home > .brand {
+  padding-top: 35px;
+  padding-bottom: 5px;
+  width: 140px;
+  height: 43px;
+  margin-left: 50px;
+}
+
+.navigation-home > .middle-nav , .page-width-home > .middle-nav {
+  max-width: 600px;
+  min-width: 280px;
+  height: 55px;
+  margin: 0 auto;
+}
+
+.navigation-home > .middle-nav {
+  float: none;
+  top: 83px;
+  left: 293px;
+}
+
+.menu-mobile-home {
+  display: none;
+}
+
+#brand-logo {
+  display: block;
+  padding-top: 35px;
+  padding-bottom: 5px;
+  padding-left: -5px;
+  width: 140px;
+  height: 43px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  background-color: white;
+  z-index: 9999;
+}
+
+.textsearch-home {
+  display: inline-block;
+  position: relative;
+  float: right;
+  width: 190px;
+  height: 20px;
+  margin-top: -58px;
+}
+
+.clean-and-clear-home {
+  width: 100%;
+  height: 106px;
+  background-color: white;
+  clear: both;
+}
+
+#aurous-bottom-home, #sat-skin-bottom-home {
+  margin-bottom: 3px;
+}
+
+@media screen and (min-width: 1205px) {
+
+  .page-width-home {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .navigation-home > .brand {
+    float: none;
+    margin-left: 0;
+    position: absolute;
+    left: 40px;
+  }
+
+  .navigation-home > .middle-nav {
+    width: 600px;
+    min-width: 280px;
+    height: 55px;
+    margin: 0 auto;
+    float: none;
+    position: absolute;
+    top: 90px;
+    left: 293px;
+  }
+
+  .textsearch-home {
+    display: inline-block;
+    float: right;
+    width: 190px;
+    height: 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 940px) {
+
+  .navigation-home > .middle-nav {
+    max-width: 540px;
+  }
+
+  .textsearch-home {
+    margin-top: -100px;
+  }
+
+}
+
+
+@media screen and (max-width: 580px){
+  .navigation-home {
+    height: 95px;
+  }
+
+  .menu-mobile-home {
+      position: relative;
+      display: inline-block;
+      margin-top: -58px;
+      padding-left: 10px;
+      width: 80px;
+      height: 60px;
+  }
+
+  .menu-mobile-home a:hover {background-color: #f1f1f1}
+
+  .clean-and-clear-home {
+    height: 81px;
+  }
+}

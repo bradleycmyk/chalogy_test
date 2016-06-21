@@ -1,4 +1,4 @@
-app.controller('SaturdayProductController', function($scope, $http, SaturdayFactory, $window, $location) {
+app.controller('SaturdayProductController', function($scope, $http, ProductFactory, $window, $location) {
 
   if(sessionStorage.loggedinUser == undefined) {
     // console.log("hello no one is logged");
@@ -13,9 +13,13 @@ app.controller('SaturdayProductController', function($scope, $http, SaturdayFact
     $('.login-pop').css({"display":"none"});
   }
 
-	SaturdayFactory.getSkinCareDb().then(function(data){
-		$scope.products = data;
-	})
+	// SaturdayFactory.getSkinCareDb().then(function(data){
+	// 	$scope.products = data;
+	// })
+
+  ProductFactory.getSkinCareDb().then(function(data){
+    $scope.products = data;
+  })
 
   $scope.isActive = function (route) {
       return route == $window.location.href.split("5959/")[1];
@@ -28,18 +32,9 @@ app.controller('SaturdayProductController', function($scope, $http, SaturdayFact
 			// $('#max-width').addClass('wrapper');
 		}
 
-    // setTimeout(function() {
-    //    $rows.removeClass("pageLoad");
-    // }, 800);
-
     setTimeout(function() {
       $('#white-wrap').removeClass('white-wrap')
-    }, 250);
-
-    // setTimeout(function() {
-    //   $('#white-wrapper').removeClass('white-wrapper')
-    // }, 600);
-	
+    }, 250);	
   })
 
 });

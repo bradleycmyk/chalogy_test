@@ -3,7 +3,7 @@
 app.factory('SaturdayFactory', function($http) {
     return {
         getSkinCareDb: function() {
-            return $http.get('/api/products').then(function(response) {
+            return $http.get('/api/products/saturday').then(function(response) {
                 return response.data;
             });
         },
