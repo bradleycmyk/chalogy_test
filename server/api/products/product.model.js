@@ -5,6 +5,9 @@ var crypto = require('crypto'),
     // extend = require('mongoose-schema-extend');
 
 var schema = new mongoose.Schema({
+    category : {
+        type: String
+    },
     image: {
         type: [String],
         // required: true,
@@ -38,30 +41,25 @@ var schema = new mongoose.Schema({
     },
     description2: {
         type: String,
-        required: true
+        default: null
     },
-    // size: {
-    //     type: Number
-    //     // required: true
-    // },
     who: {
-      type: [String]
+      type: [String],
+      default: null
     },
     how: {
-      type: String
+      type: String,
+      default: null
     },
     shade: {
       type: String,
       default: null
     },
-    tags: {
-        type: [String]
-    },
-    category : {
-        type: String
-    },
     recs: {
       type: [{String: String}]
+    },
+    tags: {
+        type: [String]
     }
 });
 

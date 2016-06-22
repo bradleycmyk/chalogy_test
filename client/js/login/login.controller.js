@@ -1,4 +1,4 @@
-app.controller('loginController', function($scope, $http, $window, $location, AuthService, loginFactory) {
+app.controller('loginController', function($scope, $http, $window, $location, loginFactory) {
 
     if(sessionStorage.loggedinUser)
 	

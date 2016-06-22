@@ -1,6 +1,6 @@
 app.controller('ChaSevenController', function($scope, $http, $window, $location) {
 
-  	var currentUrl = $window.location.href;
+  var currentUrl = $window.location.href;
 	$scope.url = currentUrl;
 
   // for carousel autoplay

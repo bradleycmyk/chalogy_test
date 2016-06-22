@@ -6,7 +6,7 @@ var chalk = require('chalk');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 
-require('./authentication')(app);
+// require('./authentication')(app);
 
 var clientPath = path.join(__dirname, '../client');
 var buildPath = path.join(__dirname, '../client/build');    // for gulped files

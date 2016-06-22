@@ -1,0 +1,32 @@
+.back_to_top {
+	width: 95px;
+	margin: 20px auto;
+
+	a {
+		color: #000000;
+
+		h4 {
+			// font-family: MillerBanner;
+			font-weight: lighter;
+			font-style: italic;
+			font-size: 20px;
+		}
+	}
+
+	a:hover,
+	a:active {
+		color: #000000;
+	}
+
+	h4::before {
+		content: '';
+		display: block;
+		background-image: url('caret-top-8x.png');
+		background-repeat: no-repeat;
+		background-size: 18px;
+		background-position: 0;
+		height: 18px;
+		width: 18px;
+		margin: 0 auto;
+	}
+}

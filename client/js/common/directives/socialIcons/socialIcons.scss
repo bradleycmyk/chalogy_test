@@ -1,0 +1,33 @@
+#share-buttons {
+	margin-bottom: 10px;
+
+	img {
+		width: 25px;
+		padding-right: 5px;
+		border: 0;
+		box-shadow: 0;
+		display: inline;
+
+		//BRADLEY ADDED THIS
+		width: 30px;
+	}
+
+	.pinterest {
+		width: 27px;
+	}
+
+	.email {
+		width: 33px;
+	}
+}
+
+#share-buttons > a {
+	text-decoration: none;
+}
+
+.social-text {
+	font-size: 10px;
+	font-family: 'Work Sans';
+	font-weight: 700;
+	letter-spacing: 1px;
+}

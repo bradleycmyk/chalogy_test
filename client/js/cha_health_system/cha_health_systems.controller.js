@@ -1,24 +1,11 @@
 app.controller('ChaHealthController', function($scope, $http, $window, $location) {
 
-  if(sessionStorage.loggedinUser == undefined) {
-    // console.log("hello no one is logged");
-    if($window.location.href.split("5959/")[1] == "login") {
-      $('.login-pop').css({"display":"none"});
-      console.log("do nothing");
-    } else {
-      $('.login-pop').css({"display":"block"});
-    }
-  } else {
-    console.log("who's logged in??");
-    $('.login-pop').css({"display":"none"});
-  }
-
   var currentUrl = $window.location.href;
 	$scope.url = currentUrl;
 
-  $scope.trustUrl = function(url) {
-    return $sce.trustAsResourceUrl(url);
-  }
+  // $scope.trustUrl = function(url) {
+  //   return $sce.trustAsResourceUrl(url);
+  // }
 
   $scope.isActive = function (route) {
     return route == $window.location.href.split("5959/")[1];
@@ -35,9 +22,6 @@ app.controller('ChaHealthController', function($scope, $http, $window, $location
       parallax('chs-two', 0.2, 900);
     });
   });
-
-
-
 
   // for carousel autoplay
 	$('#myCarousel').carousel({

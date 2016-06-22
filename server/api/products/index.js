@@ -1,19 +1,40 @@
 var router = require('express').Router();
 var mongoose = require('mongoose');
 var Product = require('./product.model');
+var Page = require('./page.model');
 
 module.exports = router;
 
-router.get('/', function(req, res, next){
-	Product.find({}, function(err, products){
-		if (err) return next(err);
-		res.json(products);
-	});
+// Product factory 
+// get saturday skin products 
+router.get('/saturday', function(req, res, next){
+    Product.find({category: 'saturday-skin'}, function(err, products){
+        if (err) return next(err);
+        res.json(products);
+    });
+});
+
+// get entire aurous products 
+router.get('/aurous', function(req, res, next){
+    Product.find({category: 'aurous'}, function(err, products){
+        if (err) return next(err);
+        res.json(products);
+    });
+});
+
+// get one item - for product detail page 
+router.get('/:name', function(req, res, next){
+    var name = req.params.name;
+    Product.findOne({name: name}, function(err, product){
+        if (err) return next(err);
+        res.json(product);
+    });
 });
 
 // performing mongoDB full-text search 
-router.get('/:text', function(req, res, next){
+router.get('/search/:text', function(req, res, next){
 	var text = req.params.text;
+    console.log("Text in route: ", text);
 	Product.find(
         { $text : { $search : req.params.text } }, 
         { score : { $meta: "textScore" } }
@@ -25,23 +46,17 @@ router.get('/:text', function(req, res, next){
     });
 });
 
-// Product detail
-router.get('/saturday/:name', function(req, res, next){
-	var name = req.params.name;
-	Product.findOne({name: name}, function(err, products){
-		if (err) return next(err);
-		res.json(products);
-	});
-});
-
-// recommendation - get all except itself 
-router.get('/recommendation/:product', function(req, res, next){
-	var product = req.params.product;
-	Product.find( {name: { $ne: product } }, function(err, recommendations){
-		if (err) return next(err);
-		res.json(recommendations);
-	});
-
+router.get('/pages/:text', function(req, res, next){
+    var text = req.params.text;
+    Page.find(
+        { $text : { $search : req.params.text } }, 
+        { score : { $meta: "textScore" } }
+    )
+    .sort({ score : { $meta : 'textScore' } })
+    .exec(function(err, results) {
+        if(err) return next(err);
+        res.json(results);
+    });
 });
 
 
