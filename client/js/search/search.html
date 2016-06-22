@@ -9,15 +9,16 @@
 
 		<!-- original search commented out below --> 
 		<hr>
-		<h1>Pages</h1>
+		<h2>Pages</h2>
 		<br><br>
-		<div class="pages" ng-repeat="page in pages">
-			<a href="/{{ page.page_title }}" ui-sref="{{ page.page_title }}"><p class="page-title">{{ page.page_title }}</p></a>
+		<div class="pages" id="searchtext" ng-repeat="page in pages">
+			<a href="/{{ page.page_title }}" ui-sref="{{ page.page_title }}"><p class="page-title upper">{{ page.page_title }}</p></a><br>
+			<p>{{ page.description | limitTo: 300}}... <a href="/{{ page.page_title }}" ui-sref="{{ page.page_title }}" style="text-decoration: none !important; color:black !important;"><strong>Read More</strong></p></a>
 			<hr>
 		</div>
 
 		<br>
-		<h1>Products</h1>
+		<h2>Products</h2>
 		<div class="product" ng-repeat="product in products">
 			<div class="row">
 				<div class="col-sm-3 col-xs-12">
