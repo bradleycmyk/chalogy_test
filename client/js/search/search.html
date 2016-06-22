@@ -8,6 +8,16 @@
 		</div> -->
 
 		<!-- original search commented out below --> 
+		<hr>
+		<h1>Pages</h1>
+		<br><br>
+		<div class="pages" ng-repeat="page in pages">
+			<a href="/{{ page.page_title }}" ui-sref="{{ page.page_title }}"><p class="page-title">{{ page.page_title }}</p></a>
+			<hr>
+		</div>
+
+		<hr>
+		<h1>Products</h1>
 		<div class="product" ng-repeat="product in products">
 			<div class="row">
 				<div class="col-sm-3 col-xs-12">

@@ -1,6 +1,7 @@
 var router = require('express').Router();
 var mongoose = require('mongoose');
 var Product = require('./product.model');
+var Page = require('./page.model');
 
 module.exports = router;
 
@@ -42,6 +43,19 @@ router.get('/search/:text', function(req, res, next){
     .exec(function(err, results) {
         if(err) return next(err);
 		res.json(results);
+    });
+});
+
+router.get('/pages/:text', function(req, res, next){
+    var text = req.params.text;
+    Page.find(
+        { $text : { $search : req.params.text } }, 
+        { score : { $meta: "textScore" } }
+    )
+    .sort({ score : { $meta : 'textScore' } })
+    .exec(function(err, results) {
+        if(err) return next(err);
+        res.json(results);
     });
 });
 

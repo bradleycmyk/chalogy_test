@@ -29,6 +29,14 @@ app.factory('ProductFactory', function($http) {
             	console.log("searchDB function in factory returns response: ", response);
                 return response.data;
             });
+        },
+
+        // search pages 
+        searchPagesDb: function(keyword) {
+            return $http.get('api/products/pages/' + keyword).then(function(response) {
+                console.log("searchDB function in factory pages pages pages response: ", response);
+                return response.data;
+            });
         }
 
     };
