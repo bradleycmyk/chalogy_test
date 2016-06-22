@@ -1,19 +1,13 @@
-app.controller('HomeController', function($scope, $http, homeFactory, $window) {
-
-	homeFactory.getSkinCareDb().then(function(data){
-	  	$scope.products = data;
-	})
+app.controller('HomeController', function($scope, $http, $window) {
 
 	if(sessionStorage.loggedinUser == undefined) {
 		// console.log("hello no one is logged");
 		if($window.location.href.split("5959/")[1] == "login") {
 			$('.login-pop').css({"display":"none"});
-			console.log("do nothing");
 		} else {
 			$('.login-pop').css({"display":"block"});
 		}
 	} else {
-		console.log("who's logged in??");
 		$('.login-pop').css({"display":"none"});
 	}
 

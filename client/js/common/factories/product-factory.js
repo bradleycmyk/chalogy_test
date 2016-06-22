@@ -2,16 +2,31 @@
 
 app.factory('ProductFactory', function($http) {
     return {
-        getSkinCareDb: function() {
+        getSaturdaySkinProducts: function() {
             return $http.get('/api/products/saturday').then(function(response) {
                 console.log("in product factory");
                 return response.data;
             });
         },
 
-        getSkinCareAurousDb: function() {
+        getAurousProducts: function() {
             return $http.get('/api/products/aurous').then(function(response) {
                 console.log("in product factory");
+                return response.data;
+            });
+        },
+
+        // used in both aurous and sat-skin prod detail pages 
+        getOneItem: function(name){
+			return $http.get('api/products/' + name).then(function(response) {
+                return response.data;
+            });
+		},
+
+		// search
+		searchDb: function(text) {
+            return $http.get('api/products/search/' + text).then(function(response) {
+            	console.log("searchDB function in factory returns response: ", response);
                 return response.data;
             });
         }

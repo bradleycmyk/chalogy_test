@@ -13,7 +13,7 @@ var db = mongoose.connect(DATABASE_URI).connection;
 
 // require('./models/product');
 
-require('../api/aurous/aurous.model');
+// require('../api/aurous/aurous.model');
 require('../api/products/product.model');
 require('../api/user/user.model');
 
