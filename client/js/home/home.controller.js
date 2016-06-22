@@ -1,18 +1,5 @@
 app.controller('HomeController', function($scope, $http, $window) {
 
-	if(sessionStorage.loggedinUser == undefined) {
-		// console.log("hello no one is logged");
-		if($window.location.href.split("5959/")[1] == "login") {
-			$('.login-pop').css({"display":"none"});
-		} else {
-			$('.login-pop').css({"display":"block"});
-		}
-	} else {
-		$('.login-pop').css({"display":"none"});
-	}
-
-	
-
 	$(document).ready(function(){
 		function uncover(ribbon, delay, direction, amount) {
 			$('.ribbon-cover-' + ribbon).delay(delay).animate({

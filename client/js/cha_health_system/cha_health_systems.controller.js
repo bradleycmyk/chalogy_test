@@ -1,16 +1,5 @@
 app.controller('ChaHealthController', function($scope, $http, $window, $location) {
 
-  if(sessionStorage.loggedinUser == undefined) {
-    // console.log("hello no one is logged");
-    if($window.location.href.split("5959/")[1] == "login") {
-      $('.login-pop').css({"display":"none"});
-    } else {
-      $('.login-pop').css({"display":"block"});
-    }
-  } else {
-    $('.login-pop').css({"display":"none"});
-  }
-
   var currentUrl = $window.location.href;
 	$scope.url = currentUrl;
 

@@ -291,28 +291,13 @@ a.sat-bread:hover {
 	color: #A9A9A9 !important;
 }
 
-.login-pop {
-	display: none;
-	opacity:0.9;
-    background-color:#ccc;
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0px;
-    left:0px;
-    z-index:9999;
-}
-
-.to-login {
-	text-align: center;
-}
-
 
 // Add your fractal Sass files below!
 @import 'common/directives/navbar/navbar';
 @import 'common/directives/homenavbar/homenavbar';
 @import 'common/directives/socialIcons/socialIcons';
 @import 'common/directives/back_to_top/back_to_top';
+@import 'common/directives/login-popup/login_popup';
 @import 'common/directives/footers/footers';
 
 @import 'home/home';
