@@ -36,7 +36,7 @@
 		"description2": "DERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
 		"who": ["Improving skin's moisture barrier", "Enhancing skin's texture and tone", "Promoting maximum hydration"],
 		"how": "Pump twice to release cream. Swipe it onto fingers and tap cream into your skin in an outward motion.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"tags": ["saturday skin", "clear", "clean", "youth"],
 		"category": "saturday-skin",
 		"recs": [
 			{
@@ -61,7 +61,7 @@
 		"description2": "DERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
 		"who": ["Minimizing dark circles.", "Reducing puffiness", "Smoothing the appearance of fine lines and wrinkles"],
 		"how": "Apply cream to the tip of the ring finger. Dot in a 'c' formation to the under eye. Use a tapping motion for maximum absorption.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty", "forever young"],
+		"tags": ["saturday skin", "clear", "clean", "youth", "forever young"],
 		"category": "saturday-skin",
 		"recs": [
 			{
@@ -86,7 +86,7 @@
 		"description2": "DERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
 		"who": ["Brightening and smoothing skin", "Minimizing the appearance of small lines and wrinkles", "Retaining moisture", "Minimizing the appearance of pores"],
 		"how": "Place moisturizer into the palm of your hand. Using all four fingers apply in an outward circular motion tapping the moisturizer into skin.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"tags": ["saturday skin", "clear", "clean", "youth"],
 		"category": "saturday-skin",
 		"recs": [
 			{
@@ -111,7 +111,7 @@
 		"description2": "DERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
 		"who": ["Smoother, silkier, more supple skin texture", "Plumper, more resilient skin", "Increasing firmness", "Boosting skin's hydration", "Protecting against environmental damage", "24/7 anti-aging benefits", "All-in-one anti-aging, firming and moisture"],
 		"how": "Use morning and night. Warm product by emulsifying then press essence into the skin. Use a tapping motion for maximum absorption.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"tags": ["saturday skin", "clear", "clean", "youth"],
 		"category": "saturday-skin",
 		"recs": [
 			{
@@ -162,7 +162,7 @@
 		"who": ["Light to medium coverage", "Protecting skin from harmful UVA and UVB rays", "Cooling and brightening skin's overall appearance", "Skincare and makeup in one", "Fast and easy application with flawless finish"],
 		"how": "Use custom puff to gently tap the cushion, encouraging the foundation to come up. From the outside of the face in, gently press the puff against the skin until the desired amount of coverage is achieved.\n\nHOW TO REFILL THE PRODUCT:\n1. Press the bottom center with both thumbs.\n2. Push the bottom of the container up.\n3. Remove the inner container as it pops up.\n4. Press refill cushion into the compact case.",
 		"shade": "02 Linen",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"tags": ["saturday skin", "clear", "clean", "youth"],
 		"category": "saturday-skin",
 		"recs": [
 			{
@@ -212,7 +212,7 @@
 		"description2": "DERMATOLOGIST TESTED. NO PARABENS, SULFATES, SYNTHETIC FRAGRANCE OR SYNTHETIC COLOR.",
 		"who": ["Improving uneven skin tone and texture", "Restoring a radiant glow", "Deeply hydrating", "Prepping skin for flawless makeup application", "Providing a 911 moisture infusion"],
 		"how": "1. First cleanse and tone the face. Unfold mask.\n2. Remove one side of mesh. Apply mask to face. Remove second mesh. Smooth to contours of the face.\n3. Leave on for 20 minutes.\n4. Discard mask and gently tap remaining essence into the skin. Do not wash face.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"tags": ["saturday skin", "clear", "clean", "youth"],
 		"category": "saturday-skin",
 		"recs": [
 			{
@@ -234,7 +234,7 @@
 		"size_ml": 30,
 		"size_oz": 1.01,
 		"description": "African Walnut oil and Sunflower essential oils penetrate skin to strengthen, soothe and resurface for a vital, luminous finish.",
-		"tags": ["aurous", "clear", "clean", "youth", "beauty"],
+		"tags": ["aurous", "clear", "clean", "youth"],
 		"category": "aurous",
 		"recs": [
 			{
@@ -278,7 +278,7 @@
 		"size_ml": 45,
 		"size_oz": 1.52,
 		"description": "Restore skin’s natural vitality with White Asparagus extract, known to brighten, replenish and promote a healthy glow.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty", "forever young"],
+		"tags": ["saturday skin", "clear", "clean", "youth", "forever young"],
 		"category": "aurous",
 		"recs": [
 			{
@@ -300,7 +300,7 @@
 		"size_ml": 30,
 		"size_oz": 1.01,
 		"description": "Sandthorn and Marronnier extracts prevent fine lines while brightening and smoothing for a refreshed, radiant appearance.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"tags": ["saturday skin", "youth", "beauty"],
 		"category": "aurous",
 		"recs": [
 			{
@@ -388,7 +388,7 @@
 		"size_ml": 160,
 		"size_oz": 5.41,
 		"description": "Saponaria and willow extracts dissolve impurities and makeup residue, softening and cleansing without disrupting skin’s natural moisture.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"tags": ["saturday skin", "clear", "clean", "youth"],
 		"category": "aurous",
 		"recs": [
 			{
@@ -410,7 +410,7 @@
 		"size_ml": 180,
 		"size_oz": 6.08,
 		"description": "Yarrow and Thyme extracts gently melt impurities while soothing and hydrating, leaving skin soft and supple.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"tags": ["saturday skin", "clear", "clean"],
 		"category": "aurous",
 		"recs": [
 			{
@@ -454,7 +454,7 @@
 		"size_ml": 25,
 		"size_oz": 0.84,
 		"description": "Black Willow Bark and Orange extracts gently exfoliate, prepping skin to absorb Rose extract and natural acids formulated to hydrate, brighten and revitalize.",
-		"tags": ["saturday skin", "clear", "clean", "youth", "beauty"],
+		"tags": ["clean", "youth"],
 		"category": "aurous",
 		"recs": [
 			{
