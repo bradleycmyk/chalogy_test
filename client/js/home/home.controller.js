@@ -8,7 +8,7 @@ app.controller('HomeController', function($scope, $http, $window) {
 		if(!$("html").hasClass("touch")){
 		    /* background fix */
 		    $(".parallax").css("background-attachment", "fixed");
-
+		}
 		/* fix vertical when not overflow
 		call fullscreenFix() if .fullscreen content changes */
 		function fullscreenFix(){
@@ -92,7 +92,7 @@ app.controller('HomeController', function($scope, $http, $window) {
 		        }
 		    });
 		}
-		if(!$("html").hasClass("touch")){
+		if(!$("html").hasClass("touch")) {
 		    $(window).resize(parallaxPosition);
 		    //$(window).focus(parallaxPosition);
 		    $(window).scroll(parallaxPosition);
@@ -100,7 +100,7 @@ app.controller('HomeController', function($scope, $http, $window) {
 		}
 
 	})
-
+});
 
 
 	// $(document).ready(function(){
@@ -180,4 +180,3 @@ app.controller('HomeController', function($scope, $http, $window) {
 	// 	  $(".ribbon-green").toggleClass("green-changer");
 	// 	});
 	// })
-});
