@@ -99,13 +99,15 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.fading-effect').addClass('fadingEffect-to-left');
       $('.line-in-video').css({ "opacity":"1"});
       $('.video-container-brand1').css({"display":"block"});
+      $('.video-container-brand1').addClass("fade-out-effect");
       $('#video1').get(0).load();
       $('#video1').get(0).play();
     });
 
     $('#btn2').click(function(){
       $('.line-in-video').css({ "opacity":"0"});
-      $('.video-container-brand1').css({"display":"none"});
+      $('.video-container-brand1').addClass("realfadeout");
+      // $('.video-container-brand1').css({"display":"none"});
       $('.video-container-brand3').css({"display":"none"});
       $('.video-container-brand4').css({"display":"none"});
       $('.video-container-brand5').css({"display":"none"});
@@ -118,6 +120,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.fading-effect').addClass('fadingEffect');
       $('.line-in-video').css({ "opacity":"1"});
       $('.video-container-brand2').css({"display":"block"});
+       $('.video-container-brand2').addClass("fade-out-effect");
       $('#video2').get(0).load();
       $('#video2').get(0).play();
     });
@@ -136,7 +139,9 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.fading-effect').removeClass('fadingEffect');
       $('.fading-effect').addClass('fadingEffect-to-left');
       $('.line-in-video').css({ "opacity":"1"});
+
       $('.video-container-brand3').css({"display":"block"});
+      $('.video-container-brand3').addClass("fade-out-effect");
       $('#video3').get(0).load();
       $('#video3').get(0).play();
     });

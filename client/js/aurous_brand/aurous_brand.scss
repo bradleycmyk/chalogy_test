@@ -130,7 +130,6 @@ video {
 }
 
 
-
 p.fade-in-effect {
     opacity: 0;
     position: relative;
@@ -157,6 +156,52 @@ p.fade-in-effect {
 .video-container-brand2, .video-container-brand3, .video-container-brand4, .video-container-brand5, .video-container-brand6, .video-container-brand7, .video-container-brand8 {
     display: none;
 }
+
+.video-container-brand1, .video-container-brand2, .video-container-brand3 {
+    opacity: 0;
+}
+
+div.fade-out-effect {
+     /*opacity: 1;*/
+    position: relative;
+    -webkit-animation: fadeout 3s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation: fadeout 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeout {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+div.fade-out-effect2 {
+     /*opacity: 1;*/
+    position: relative;
+    -webkit-animation: realfadeout 1s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+    animation: realfadeout 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes realfadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes realfadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+
 
 /* video text stylying + positioning -*/ 
 
