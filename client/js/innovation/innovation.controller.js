@@ -1,6 +1,5 @@
-app.controller('InnovationController', function($scope, $http, $window, $location, $route) {
+app.controller('InnovationController', function($scope, $http, $window, $location) {
 
-  $route.reload();
   
   // for carousel autoplay
   $('#myCarousel').carousel({
@@ -39,100 +38,73 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
 
   // play video when it's 99% visible 
 
-  var videos = document.getElementsByTagName("video");
-  var fraction = 0.99;
+  // var videos = document.getElementsByTagName("video");
+  // var fraction = 0.99;
 
-  function checkScroll() {
+  // function checkScroll() {
 
-      for(var i = 0; i < videos.length; i++) {
-          var video = videos[i];
+  //     for(var i = 0; i < videos.length; i++) {
+  //         var video = videos[i];
 
-          var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
-              b = y + h, //bottom
-              visibleX, visibleY, visible;
+  //         var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+  //             b = y + h, //bottom
+  //             visibleX, visibleY, visible;
 
-              visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
-              visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+  //             visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+  //             visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
 
-              visible = visibleX * visibleY / (w * h);
+  //             visible = visibleX * visibleY / (w * h);
 
-              if (visible > fraction) {
-                  video.play();
-              } else {
-                  // video.pause();
-                  console.log("continue");
-              }
-      }
-  }
+  //             if (visible > fraction) {
+  //                 video.play();
+  //             } else {
+  //                 // video.pause();
+  //                 console.log("continue");
+  //             }
+  //     }
+  // }
 
-  window.addEventListener('scroll', checkScroll, false);
-  window.addEventListener('resize', checkScroll, false);
+  // window.addEventListener('scroll', checkScroll, false);
+  // window.addEventListener('resize', checkScroll, false);
 
   $(document).ready(function(){
     
-    // first attach the flag in the onended event
-    $('#video1').on('ended', function(){this.playedThrough = true;});
-
-    $(window).scroll(function(){
-        var myVideo = document.getElementById("video1");
-
-        if($(window).scrollTop() > 300 && $(window).scrollTop() < 975){
-           // only if we didn't reached the end yet
-           if (!myVideo.playedThrough)
-              myVideo.play();
-        } else {
-           myVideo.pause();
-        }
-    })
-
-    var myVideo = $('.video-play-pause');
-    $('#play').click(function(){
-      
-      if (myVideo.get(0).paused) {
-         myVideo.get(0).play(); 
-      } else {
-         myVideo.get(0).pause(); 
-      }    
-    });
+    var change = function() {
+        return $( ".video-play-pause" ).fadeIn().delay().fadeOut();
+    };
 
     $('#btn1').click(function(){
-      $('.video-container-brand2').css({"display":"none"});
-      $('.video-container-brand3').css({"display":"none"});
-      $('.video-container-brand4').css({"display":"none"});
-      $('.video-container-brand5').css({"display":"none"});
-      $('.video-container-brand6').css({"display":"none"});
-      $('.video-container-brand7').css({"display":"none"});
-      $('.video-container-brand8').css({"display":"none"});
-
+      $(".v-one").css({"display":"block"});
       $('#video-text-1').addClass('fade-in-effect');
       $('.fading-effect').removeClass('fadingEffect');
       $('.fading-effect').addClass('fadingEffect-to-left');
       $('.line-in-video').css({ "opacity":"1"});
-      $('.video-container-brand1').css({"display":"block"});
-      $('.video-container-brand1').addClass("fade-out-effect");
-      $('#video1').get(0).load();
-      $('#video1').get(0).play();
+      
+      $.when(change() ).done(function(){
+        $('#videosource').attr('src', 'video/cha_01.mp4');
+        $(".video-play-pause").fadeIn();
+        $(".video-play-pause").load();
+        $(".video-play-pause").play();
+      
+      });
     });
 
     $('#btn2').click(function(){
       $('.line-in-video').css({ "opacity":"0"});
-      $('.video-container-brand1').addClass("realfadeout");
-      // $('.video-container-brand1').css({"display":"none"});
-      $('.video-container-brand3').css({"display":"none"});
-      $('.video-container-brand4').css({"display":"none"});
-      $('.video-container-brand5').css({"display":"none"});
-      $('.video-container-brand6').css({"display":"none"});
-      $('.video-container-brand7').css({"display":"none"});
-      $('.video-container-brand8').css({"display":"none"});
-
+      $(".v-one").css({"display":"none"});
+      $(".v-two").css({"display":"block"});
       $('#video-text-2').addClass('fade-in-effect');
       $('.fading-effect').removeClass('fadingEffect-to-left');
       $('.fading-effect').addClass('fadingEffect');
       $('.line-in-video').css({ "opacity":"1"});
-      $('.video-container-brand2').css({"display":"block"});
-       $('.video-container-brand2').addClass("fade-out-effect");
-      $('#video2').get(0).load();
-      $('#video2').get(0).play();
+
+      $.when(change() ).done(function(){
+        $('#videosource').attr('src', 'video/cha_02.mp4');
+        $(".video-play-pause").fadeIn();
+        $(".video-play-pause").load();
+        $(".video-play-pause").play();
+      });
+     
     });
 
     $('#btn3').click(function(){

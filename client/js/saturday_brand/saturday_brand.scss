@@ -90,3 +90,109 @@
 .hero > div > h1 {
     font-size: 80px;
 }
+
+
+.posters {
+  width: 1050px;
+}
+
+#image-div {
+  display: none;
+}
+
+
+.video-text-msg {
+
+}
+
+.v-one, .v-two, .v-three, .v-four {
+  /*display: none !important;*/
+  color: black;
+  text-align: left;
+  font-size: 20px;
+}
+
+
+#video-text-1-1, #video-text-2-2, #video-text-3-3, #video-text-4-4, #video-text-5-5, #video-text-6-6, #video-text-7-7, #video-text-8-8 {
+    opacity: 0;    
+    font-family: MillerBanner;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+}
+
+#line-one {
+  width: 352px;
+  margin-left: 38px;
+  margin-top: 425px;
+}
+
+#video-text-1-1 {
+  margin-right: 279px;
+  margin-left: 38px;
+  text-align: left;
+  color: black;
+  width: 411px;
+  font-size: 20px;
+  font-style: italic;
+/*  font-family: WorkSans;*/
+}
+
+#line-two {
+  margin-top: 278px !important;
+  margin-left: 131px;
+  width: 280px;
+}
+
+#video-text-2-2 {
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  width: 221px;
+  margin-top: 17px;
+  margin-left: 225px;
+  font-style: italic;
+}
+
+#line-three {
+  opacity: 1;
+  margin-right: 297px;
+  width: 365px;
+  margin-top: 102px;
+}
+
+#video-text-3-3 {
+  width: 209px;
+  font-size: 20px;
+  font-style: italic;
+  margin-left: 69px;
+  margin-top: 10px;
+}
+
+
+#line-five {
+  opacity: 1;
+  margin-right: 383px;
+  width: 280px;
+  margin-top: 329px;
+}
+
+#video-text-5-5 {
+  text-align: left;
+  width: 282px;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+#line-seven {
+  margin-right: 338px;
+  opacity: 1;
+  margin-top: 319px;
+}
+
+#video-text-7-7 {
+  text-align: left;
+  margin-left: 80px;
+  width: 187px;
+  margin-top: 13px;
+}

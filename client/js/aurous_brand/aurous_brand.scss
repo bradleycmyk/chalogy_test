@@ -266,6 +266,10 @@ div.fade-out-effect2 {
     position: relative;
 }
 
+.v-one, .v-two, .v-three, .v-four, .v-five, .v-six, .v-seven {
+    display: none;
+}
+
 .v-one {
     margin: 400px 0 13px -12px;
     width: 361px;
@@ -440,4 +444,6 @@ a.video-button {
     font-style: normal;
     font-weight: bold;
 }
+
+
 
