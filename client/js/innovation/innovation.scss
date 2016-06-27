@@ -3,15 +3,16 @@
 }
 
 
-#section-1, #section-2, #section-3 {
+/*#section-1, #section-2, #section-3 {
 	width: 100% !important;
 	height: 100vh !important;
-}
+}*/
 
 .inn {
 	margin: 0 auto;
-	width: 975px;
+	width: 1050px;
 	color: #000000;
+	margin-top: 2%;
 
 	.inn-top {
 		width: 910px;
@@ -68,8 +69,9 @@
 	}
 
 	.gif {
-		width: 975px;
+		width: 1050px;
 		margin: 0 auto 15px;
+		margin-top: 25px;
 
 		h2 {
 			width: 910px;
