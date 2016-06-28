@@ -1,46 +1,77 @@
 app.controller('HomeController', function($scope, $http, $window) {
 
-	// play video when it's 99% visible 
+	// opacity control  
 
-  var videos = document.getElementsByClassName("content-b");
-  var fraction = 0.60;
+	var contents = document.getElementsByClassName("content-b");
+	var fraction = 0.60;
 
-  function checkScroll() {
+	function checkScroll() {
 
-      for(var i = 0; i < videos.length; i++) {
-          var video = videos[i];
+	    for(var i = 0; i < contents.length; i++) {
+	        var video = contents[i];
 
-          var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
-              b = y + h, //bottom
-              visibleX, visibleY, visible;
+	        var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+	            b = y + h, //bottom
+	            visibleX, visibleY, visible;
 
-              visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
-              visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+                visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+                visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
 
-              visible = visibleX * visibleY / (w * h);
+                visible = visibleX * visibleY / (w * h);
 
-              if (visible > .70) {
-                  video.style.opacity = "0.8";
-              } else if (visible > fraction) {
-        
-                  video.style.opacity = "0.6";
-              } else if (visible > 0.5){
-              	video.style.opacity = "0.5";
-              } else if (visible > 0.3) {
-              	video.style.opacity = "0.2"
-              } else {
-              	video.style.opacity = "0.1"
-              }
-      }
-  }
+            if (visible > .70) {
+	                video.style.opacity = "1";
+	            } else if (visible > 0.5) {
+	                video.style.opacity = "0.3";
+	            } else {
+	 	          	video.style.opacity = "0.1"
+	            }
+	        }  
+	    }
 
-  window.addEventListener('scroll', checkScroll, false);
-  window.addEventListener('resize', checkScroll, false);
+  	window.addEventListener('scroll', checkScroll, false);
+  	window.addEventListener('resize', checkScroll, false);
 
 
 
 
 	$(document).ready(function() {
+
+		// scrolling - also adding a class="test" here to each section 
+		var delay = false;
+
+		$('#home').on('mousewheel DOMMouseScroll', function(event) {
+		    event.preventDefault();
+		    if(delay) return;
+
+		    delay = true;
+		    setTimeout(function(){delay = false},500)
+
+		    var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+
+		  
+		    var a= document.getElementsByClassName('test');
+		    if(wd < 0) {
+		      for(var i = 0 ; i < a.length ; i++) {
+		        var t = a[i].getClientRects()[0].top;
+		        if(t >= 40) break;
+		      }
+		    }
+		    else {
+		      for(var i = a.length-1 ; i >= 0 ; i--) {
+		        var t = a[i].getClientRects()[0].top;
+		        if(t < -20) break;
+		      }
+		    }
+		    $('html,body').animate({
+		      scrollTop: a[i].offsetTop
+		    });
+    	  });
+		
+		// scrolling !! 		
+
+
+
 		/* detect touch */
 		if("ontouchstart" in window){
 		    document.documentElement.className = document.documentElement.className + " touch";

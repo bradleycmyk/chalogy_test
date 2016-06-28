@@ -15,9 +15,15 @@ body {
   color: #000000;
 }
 
-.fp-nav {
-	visibility: hidden !important;
+body, html {
+    margin:0;
+    padding:0;
+    /*overflow:hidden;*/
 }
+
+/*.fp-nav {
+	visibility: hidden !important;
+}*/
 
 a {
 	text-decoration: none !important;

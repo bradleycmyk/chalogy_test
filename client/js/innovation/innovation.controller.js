@@ -2,16 +2,101 @@
 
 app.controller('InnovationController', function($scope, $http, $window, $location) {
   $scope.isActive = function (route) {
-      return route == $window.location.href.split("5959/")[1];
-    };
-  
- //   $('#play1').click(function(){
-  //  document.getElementById("vid1").css({"display":"block"});
-  //  document.getElementById("vid1").load();
-  //  document.getElementById("vid1").play();
-  // });
+    return route == $window.location.href.split("5959/")[1];
+  };
 
-    $(document).ready(function(){
+
+  // play video 
+
+  // var videos = document.getElementsByTagName("video");
+  // var fraction = 0.99;
+
+  // function checkScroll() {
+
+  //     for(var i = 0; i < videos.length; i++) {
+  //         var video = videos[i];
+
+  //         var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+  //             b = y + h, //bottom
+  //             visibleX, visibleY, visible;
+
+  //             visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+  //             visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+  //             visible = visibleX * visibleY / (w * h);
+
+  //             if (visible > fraction) {
+  //                 video.play();
+  //             } else {
+  //                 video.pause();
+  //             }
+  //     }
+  // }
+
+  // window.addEventListener('scroll', checkScroll, false);
+  // window.addEventListener('resize', checkScroll, false);
+
+
+
+  
+  $(document).ready(function(){
+
+    var media = $('video').not("[autoplay='autoplay']");
+    var tolerancePixel = 40;
+
+    function checkMedia(){
+        // Get current browser top and bottom
+        var scrollTop = $(window).scrollTop() + tolerancePixel;
+        var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
+
+        //if ($(window).scrollTop() > $(window).height() - 10) {
+        media.each(function(index, el) {
+            var yTopMedia = $(this).offset().top;
+            var yBottomMedia = $(this).height() + yTopMedia;
+
+            if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){
+                $(this).get(0).play();
+            } else {
+                $(this).get(0).pause();
+            }
+        });
+
+        //}
+    }
+    $(document).on('scroll', checkMedia);
+
+
+    // scrolling to next div!!!
+    var delay = false;
+
+    $('#innovation').on('mousewheel DOMMouseScroll', function(event) {
+      event.preventDefault();
+      if(delay) return;
+
+      delay = true;
+      setTimeout(function(){delay = false},200)
+
+      var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+
+    
+      var a= document.getElementsByClassName('test');
+      if(wd < 0) {
+        for(var i = 0 ; i < a.length ; i++) {
+          var t = a[i].getClientRects()[0].top;
+          if(t >= 40) break;
+        }
+      }
+      else {
+        for(var i = a.length-1 ; i >= 0 ; i--) {
+          var t = a[i].getClientRects()[0].top;
+          if(t < -20) break;
+        }
+      }
+      $('html,body').animate({
+        scrollTop: a[i].offsetTop
+      });
+    });
+
 
     var effect = function() {
         return $( ".posters" ).fadeIn().delay().fadeOut(2000);
