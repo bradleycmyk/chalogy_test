@@ -44,7 +44,6 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
 
       var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
 
-    
       var a= document.getElementsByClassName('test');
       if(wd < 0) {
         for(var i = 0 ; i < a.length ; i++) {
@@ -221,9 +220,9 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.line-in-video').css({ "opacity":"0"});
       $('#image-div').css({"display":"none"});
       $('#video-text-5-5').addClass('fade-in-effect');
-          $('.fading-effect').removeClass('fadingEffect');
-          $('.fading-effect').addClass('fadingEffect-to-left');
-          $('.line-in-video').css({ "opacity":"1"});
+      $('.fading-effect').removeClass('fadingEffect');
+      $('.fading-effect').addClass('fadingEffect-to-left');
+      $('.line-in-video').css({ "opacity":"1"});
 
       $('#image-div').css({"display":"none"});
         $.when(changevideo() ).done(function(){

@@ -6,7 +6,7 @@
   padding-bottom: 0;
   margin-bottom: 0;
   /*height: 90px;*/
-  height: 93px;
+  height: 78px;
   /*margin-top: -15px;*/
   margin-top: -19px;
   position: relative;
@@ -27,11 +27,17 @@
 }
 
 .navigation > .brand, .page-width > .brand {
-  padding-top: 35px;
+/*  padding-top: 28px;*/
+  padding-top: 33px;
   padding-bottom: 5px;
   width: 140px;
   height: 43px;
-  margin-left: 50px;
+  margin-left: 40px;
+}
+
+#logo-navbar {
+  width: 118px;
+  height: 32px;
 }
 
 .navigation > .middle-nav, .page-width > .middle-nav {
@@ -39,6 +45,7 @@
   min-width: 280px;
   height: 55px;
   margin: 0 auto;
+  margin-top: -8px;
 }
 
 .navbar {

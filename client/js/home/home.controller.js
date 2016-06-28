@@ -35,6 +35,11 @@ app.controller('HomeController', function($scope, $http, $window) {
 
 	$(document).ready(function() {
 
+		// navigation fadein
+		$("#homenavigation").fadeIn("5000", function(){
+			console.log("on load");
+		});
+
 		// scrolling - also adding a class="test" here to each section 
 		var delay = false;
 
@@ -130,45 +135,75 @@ app.controller('HomeController', function($scope, $http, $window) {
 		backgroundResize();
 
 		/* set parallax background-position */
-		function parallaxPosition(e){
-		    var heightWindow = $(window).height();
-		    var topWindow = $(window).scrollTop();
-		    var bottomWindow = topWindow + heightWindow;
-		    var currentWindow = (topWindow + bottomWindow) / 2;
-		    $(".parallax").each(function(i){
-		        var path = $(this);
-		        var height = path.height();
-		        var top = path.offset().top;
-		        var bottom = top + height;
-		        // only when in range
-		        if(bottomWindow > top && topWindow < bottom){
-		            var imgW = path.data("resized-imgW");
-		            var imgH = path.data("resized-imgH");
-		            // min when image touch top of window
-		            var min = 0;
-		            // max when image touch bottom of window
-		            var max = - imgH + heightWindow;
-		            // overflow changes parallax
-		            var overflowH = height < heightWindow ? imgH - height : imgH - heightWindow; // fix height on overflow
-		            top = top - overflowH;
-		            bottom = bottom + overflowH;
-		            // value with linear interpolation
-		            var value = min + (max - min) * (currentWindow - top) / (bottom - top);
-		            // set background-position
-		            var orizontalPosition = path.attr("data-oriz-pos");
-		            orizontalPosition = orizontalPosition ? orizontalPosition : "50%";
-		            $(this).css("background-position", orizontalPosition + " " + value + "px");
-		        }
-		    });
-		}
-		if(!$("html").hasClass("touch")) {
-		    $(window).resize(parallaxPosition);
-		    //$(window).focus(parallaxPosition);
-		    $(window).scroll(parallaxPosition);
-		    parallaxPosition();
-		}
+		// function parallaxPosition(e){
+		//     var heightWindow = $(window).height();
+		//     var topWindow = $(window).scrollTop();
+		//     var bottomWindow = topWindow + heightWindow;
+		//     var currentWindow = (topWindow + bottomWindow) / 2;
+		//     $(".parallax").each(function(i){
+		//         var path = $(this);
+		//         var height = path.height();
+		//         var top = path.offset().top;
+		//         var bottom = top + height;
+		//         // only when in range
+		//         if(bottomWindow > top && topWindow < bottom){
+		//             var imgW = path.data("resized-imgW");
+		//             var imgH = path.data("resized-imgH");
+		//             // min when image touch top of window
+		//             var min = 0;
+		//             // max when image touch bottom of window
+		//             var max = - imgH + heightWindow;
+		//             // overflow changes parallax
+		//             var overflowH = height < heightWindow ? imgH - height : imgH - heightWindow; // fix height on overflow
+		//             top = top - overflowH;
+		//             bottom = bottom + overflowH;
+		//             // value with linear interpolation
+		//             var value = min + (max - min) * (currentWindow - top) / (bottom - top);
+		//             // set background-position
+		//             var orizontalPosition = path.attr("data-oriz-pos");
+		//             orizontalPosition = orizontalPosition ? orizontalPosition : "50%";
+		//             $(this).css("background-position", orizontalPosition + " " + value + "px");
+		//         }
+		//     });
+		// }
+		// if(!$("html").hasClass("touch")) {
+		//     $(window).resize(parallaxPosition);
+		//     //$(window).focus(parallaxPosition);
+		//     $(window).scroll(parallaxPosition);
+		//     parallaxPosition();
+		// }
 
-	})
+
+		// page indicators
+		$("#fisrtpage").click(function() {
+			 console.log("first button clicked");
+		    $('html,body').animate({ scrollTop: 0 }, "slow");
+		  
+		});
+
+		$("#secondp").click(function() {
+			 console.log("second button clicked");
+
+		    $('html,body').animate({
+		        scrollTop: $("#secondsec").offset().top},
+		        'slow');
+		});
+		$("#thirdp").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $("#thirdsec").offset().top},
+		        'slow');
+		});
+
+		$("#fourthp").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $("#fourthsec").offset().top},
+		        'slow');
+		});
+
+
+	}) // end of $(document).ready 
+
+
 });
 
 
