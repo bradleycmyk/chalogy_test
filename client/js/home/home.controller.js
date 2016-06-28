@@ -1,6 +1,6 @@
 app.controller('HomeController', function($scope, $http, $window) {
 
-	// opacity control  
+	// opacity control - text fade out 
 
 	var contents = document.getElementsByClassName("content-b");
 	var fraction = 0.60;
@@ -8,9 +8,9 @@ app.controller('HomeController', function($scope, $http, $window) {
 	function checkScroll() {
 
 	    for(var i = 0; i < contents.length; i++) {
-	        var video = contents[i];
+	        var content = contents[i];
 
-	        var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+	        var x = content.offsetLeft, y = content.offsetTop, w = content.offsetWidth, h = content.offsetHeight, r = x + w, //right
 	            b = y + h, //bottom
 	            visibleX, visibleY, visible;
 
@@ -20,19 +20,17 @@ app.controller('HomeController', function($scope, $http, $window) {
                 visible = visibleX * visibleY / (w * h);
 
             if (visible > .70) {
-	                video.style.opacity = "1";
+	                content.style.opacity = "1";
 	            } else if (visible > 0.5) {
-	                video.style.opacity = "0.3";
+	                content.style.opacity = "0.3";
 	            } else {
-	 	          	video.style.opacity = "0.1"
+	 	          	content.style.opacity = "0.1"
 	            }
 	        }  
 	    }
 
   	window.addEventListener('scroll', checkScroll, false);
   	window.addEventListener('resize', checkScroll, false);
-
-
 
 
 	$(document).ready(function() {
@@ -45,7 +43,7 @@ app.controller('HomeController', function($scope, $http, $window) {
 		    if(delay) return;
 
 		    delay = true;
-		    setTimeout(function(){delay = false},500)
+		    setTimeout(function(){delay = false}, 800)
 
 		    var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
 
@@ -65,7 +63,7 @@ app.controller('HomeController', function($scope, $http, $window) {
 		    }
 		    $('html,body').animate({
 		      scrollTop: a[i].offsetTop
-		    });
+		    }, 1000);
     	  });
 		
 		// scrolling !! 		
