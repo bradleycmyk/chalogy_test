@@ -1,5 +1,45 @@
 app.controller('HomeController', function($scope, $http, $window) {
 
+	// play video when it's 99% visible 
+
+  var videos = document.getElementsByClassName("content-b");
+  var fraction = 0.60;
+
+  function checkScroll() {
+
+      for(var i = 0; i < videos.length; i++) {
+          var video = videos[i];
+
+          var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+              b = y + h, //bottom
+              visibleX, visibleY, visible;
+
+              visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+              visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+              visible = visibleX * visibleY / (w * h);
+
+              if (visible > .70) {
+                  video.style.opacity = "0.8";
+              } else if (visible > fraction) {
+        
+                  video.style.opacity = "0.6";
+              } else if (visible > 0.5){
+              	video.style.opacity = "0.5";
+              } else if (visible > 0.3) {
+              	video.style.opacity = "0.2"
+              } else {
+              	video.style.opacity = "0.1"
+              }
+      }
+  }
+
+  window.addEventListener('scroll', checkScroll, false);
+  window.addEventListener('resize', checkScroll, false);
+
+
+
+
 	$(document).ready(function() {
 		/* detect touch */
 		if("ontouchstart" in window){

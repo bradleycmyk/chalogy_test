@@ -33,10 +33,17 @@ app.controller('SaturdayBrandController', function($scope, $http, $window, $loca
 			$(".v-seven").css({"display":"none"});
 			$(".v-eight").css({"display":"none"});
 
-			$("#vid1").css({"display":"block"});
-			$("#vid1").get(0).load();
-			$("#vid1").get(0).play();
-			$('#image-div').css({"display":"none"});
+			// $("#vid1").css({"display":"block"});
+			// $("#vid1").get(0).load();
+			// $("#vid1").get(0).play();
+			// $('#image-div').css({"display":"none"});
+
+			$.when(changevideo() ).done(function(){
+				$('#videosource1').attr('src', 'video/cha7es_full.mp4');
+				$("#vid1").fadeIn();
+				$("#vid1").get(0).load();
+				$("#vid1").get(0).play();
+			})
 		});
 	  	
 		$("#btn1-1").click(function(){
