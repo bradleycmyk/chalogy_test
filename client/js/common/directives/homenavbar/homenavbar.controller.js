@@ -66,9 +66,11 @@ app.controller('HomeNavBarController', function($scope, $http, $state, $statePar
 	      if(scrollTop0 > 120) {
 	        $(".navigation-home").css({"display":"none"});
 	        $(".navigation").css({"display":"block"});
+	  		$(".clean-and-clear").css({"height":"60px"});
 	      } else {
 	        $(".navigation-home").css({"display":"block"});
 	        $(".navigation").css({"display":"none"});
+	        $(".clean-and-clear").css({"height":"180px"});
 	      }
 	    }
 
