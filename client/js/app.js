@@ -16,7 +16,7 @@ app.controller('MainController', function($scope, $rootScope, $window, $state, $
 		}
 	}
 
-	$timeout(function() {console.log("set time out function called ")}, 2000);
+	// $timeout(function() {console.log("set time out function called ")}, 2000);
 
 	// $scope.isSecondPage = function () {
 	// 	if ($window.location.href.split("brand#")[1] == "secondPage") {
@@ -44,12 +44,12 @@ app.controller('MainController', function($scope, $rootScope, $window, $state, $
 	//     }
 	// });
 
-	window.onload = function () {
-	    if (! localStorage.justOnce) {
-	        localStorage.setItem("justOnce", "true");
-	        window.location.reload();
-	    }
-	}
+	// window.onload = function () {
+	//     if (! localStorage.justOnce) {
+	//         localStorage.setItem("justOnce", "true");
+	//         window.location.reload();
+	//     }
+	// }
 	
 })
 

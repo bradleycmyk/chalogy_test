@@ -47,7 +47,7 @@ app.controller('HomeNavBarController', function($scope, $http, $state, $statePar
 	    {
 	        container.css("display", "none");
 	        $("#callingsearch").css("margin-left", 158);
-	        $("#callingsearchs").css("margin-top", 4);
+	        $("#callingsearchs").css("margin-top", 7);
 	        // $(".brand").show();
 	    }
 	});

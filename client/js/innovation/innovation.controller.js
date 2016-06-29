@@ -7,6 +7,8 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
   
   $(document).ready(function(){
 
+
+    // video plays when it's visible
     var media = $('video').not("[autoplay='autoplay']");
     var tolerancePixel = 40;
 

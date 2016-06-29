@@ -32,12 +32,105 @@ app.controller('HomeController', function($scope, $http, $window) {
   	window.addEventListener('scroll', checkScroll, false);
   	window.addEventListener('resize', checkScroll, false);
 
-
 	$(document).ready(function() {
 
-		// navigation fadein
-		$("#homenavigation").fadeIn("5000", function(){
-			console.log("on load");
+		// add active-page class to page indicators 
+		var tolerancePixel = 40;
+
+		function activePage1(){
+			// get current browser top and bottom 
+			var scrollTop1 = $(window).scrollTop() + tolerancePixel;
+        	var scrollBottom1 = $(window).scrollTop() + $(window).height() - tolerancePixel;
+
+        	var yTopDot1 = 150;
+        	// var yTopDot = $("#first-dot").offset().top;
+        	var yBottomDot1 = $("#first-dot").height() + yTopDot1;
+
+        	if(scrollTop1 < yBottomDot1 && scrollBottom1 > yTopDot1) {
+        		$("#firstp").addClass("active-page");
+        	} else {
+        		$("#firstp").removeClass("active-page");
+        		// console.log("nothing happens");
+        	}
+        }
+
+		function activePage2(){
+			// get current browser top and bottom 
+			var scrollTop2 = $(window).scrollTop() + tolerancePixel;
+        	var scrollBottom2 = $(window).scrollTop() + $(window).height() - tolerancePixel;
+
+        	var yTopDot2 = $("#second-dot").offset().top;
+        	var yBottomDot2 = $("#second-dot").height() + yTopDot2;
+
+        	if(scrollTop2 < yBottomDot2 && scrollBottom2 > yTopDot2) {
+        		$("#secondp").addClass("active-page");
+        	} else {
+        		$("#secondp").removeClass("active-page");
+        		// console.log("nothing happens");
+        	}
+        }
+
+        function activePage3(){
+			// get current browser top and bottom 
+			var scrollTop3 = $(window).scrollTop() + tolerancePixel;
+        	var scrollBottom3 = $(window).scrollTop() + $(window).height() - tolerancePixel;
+
+        	var yTopDot3 = $("#third-dot").offset().top;
+        	var yBottomDot3 = $("#third-dot").height() + yTopDot3;
+
+        	if(scrollTop3 < yBottomDot3 && scrollBottom3 > yTopDot3) {
+        		$("#thirdp").addClass("active-page");
+        	} else {
+        		$("#thirdp").removeClass("active-page");
+        		// console.log("nothing happens");
+        	}
+        }
+
+        function activePage4(){
+			// get current browser top and bottom 
+			var scrollTop4 = $(window).scrollTop() + tolerancePixel;
+        	var scrollBottom4 = $(window).scrollTop() + $(window).height() - tolerancePixel;
+
+        	var yTopDot4 = $("#fourth-dot").offset().top;
+        	var yBottomDot4 = $("#fourth-dot").height() + yTopDot4;
+
+        	if(scrollTop4 < yBottomDot4 && scrollBottom4 > yTopDot4) {
+        		$("#fourthp").addClass("active-page");
+        	} else {
+        		$("#fourthp").removeClass("active-page");
+        		// console.log("nothing happens");
+        	}
+        }
+
+        $(document).on('scroll', activePage1);
+        $(document).on('scroll', activePage2);
+        $(document).on('scroll', activePage3);
+        $(document).on('scroll', activePage4);
+
+        // end of active page function 
+
+
+        // smooth scroll to next page on click (page indicators)
+
+		$(document).on("click", "#firstp", function(){
+			$('html,body').animate({
+		        scrollTop: $("#firstsection").offset().top},
+		        'slow');
+		});
+		$("#secondp").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $("#secondsec").offset().top},
+		        'slow');
+		});
+		$("#thirdp").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $("#thirdsec").offset().top},
+		        'slow');
+		});
+		$("#fourthp").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $("#fourthsec").offset().top},
+		        'slow');
 		});
 
 		// scrolling - also adding a class="test" here to each section 
@@ -66,12 +159,15 @@ app.controller('HomeController', function($scope, $http, $window) {
 		        if(t < -20) break;
 		      }
 		    }
-		    $('html,body').animate({
-		      scrollTop: a[i].offsetTop
-		    }, 1000);
+
+		    if(a.length){
+			    $('html,body').animate({
+			      scrollTop: a[i].offsetTop
+			    }, 1000);
+			}
     	  });
 		
-		// scrolling !! 		
+		// end of scrolling !! 		
 
 
 
@@ -134,6 +230,10 @@ app.controller('HomeController', function($scope, $http, $window) {
 		$(window).focus(backgroundResize);
 		backgroundResize();
 
+
+
+
+
 		/* set parallax background-position */
 		// function parallaxPosition(e){
 		//     var heightWindow = $(window).height();
@@ -174,34 +274,10 @@ app.controller('HomeController', function($scope, $http, $window) {
 		// }
 
 
-		// page indicators
-		$("#fisrtpage").click(function() {
-			 console.log("first button clicked");
-		    $('html,body').animate({ scrollTop: 0 }, "slow");
-		  
-		});
-
-		$("#secondp").click(function() {
-			 console.log("second button clicked");
-
-		    $('html,body').animate({
-		        scrollTop: $("#secondsec").offset().top},
-		        'slow');
-		});
-		$("#thirdp").click(function() {
-		    $('html,body').animate({
-		        scrollTop: $("#thirdsec").offset().top},
-		        'slow');
-		});
-
-		$("#fourthp").click(function() {
-		    $('html,body').animate({
-		        scrollTop: $("#fourthsec").offset().top},
-		        'slow');
-		});
 
 
-	}) // end of $(document).ready 
+
+	}); // end of $(document).ready 
 
 
 });

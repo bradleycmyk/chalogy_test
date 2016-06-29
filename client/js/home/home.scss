@@ -98,11 +98,22 @@ a:focus {
 
 .page-indicator {
   z-index: 9999;
-  width: 60px;
-  background-color: red;
+  width: 40px;
+  background-color: white;
   position: fixed;
   top: 50%;
   right: 0%;
+}
+
+.page-indicator > li {
+  margin-bottom: 5px;
+}
+
+#first-dot, #second-dot, #third-dot, #fourth-dot {
+  width: 1px;
+  height: 1px;
+  background-color: black;
+  opacity: 0;
 }
 
 div.first-page-fade-in {
@@ -124,6 +135,12 @@ div.first-page-fade-in {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+
+.active-page {
+  background-color: lightblue;
+}
+
 
 
 /* fullscreen setup */
