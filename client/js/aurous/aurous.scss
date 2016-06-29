@@ -8,11 +8,41 @@
   background: linear-gradient(45deg, rgba(3, 3,  3, 1) 0%, rgba(66, 65, 65, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#030303', endColorstr='#424141', GradientType=1 );
 
-  img {
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
+  background-image: url('aurous_main.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 0 0 15%;
+  display: inline-block;
+
+  .aurous_text_stuff {
+    margin: 10% 0 0 25%;
+    width: 250px;
+
+    .hero_logo {
+      width: 250px;
+      display: block;
+    }
+
+    .antidote, .coming {
+      color: #FFFFFF;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .antidote {
+      font-family: 'Work Sans';
+      font-weight: lighter;
+      font-size: 17px;
+    }
+
+    .coming {
+      font-size: 33px;
+    }
   }
+
+
 }
 
 .aur_hero {
