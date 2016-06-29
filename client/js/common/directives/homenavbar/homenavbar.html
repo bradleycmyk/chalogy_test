@@ -1,4 +1,3 @@
-
 <div class="navigation-home" role="navigation">
 
   <div class="page-width-home">
@@ -64,6 +63,101 @@
       </div>
   </div>
 </div>
+
+
+<!-- from navgation --> 
+<div class="navigation" role="navigation">
+  <div class="page-width">
+
+    <div class="brand"><a href="/" ui-sref="home"><img id="logo-navbar" src="logo/main_logo_navbar.png" alt="Brand"></a></div>
+
+    <!-- <div class="brand"><a href="/" ui-sref="home"><img src="http://www.cmykpluswhite.biz/web/images/brand-logo.png" alt="Brand"></a></div> -->
+
+    <div class="middle-nav">
+        <ul class="navbar">
+
+          <div class="col-xs-31">
+            <li class="dropdown" style="width: 50px;">
+              <a class="about-nav" href="/about" ui-sref="about" ng-class="{selected:isAbout()}">ABOUT</a>
+              <div class="dropdown-aboutcontent">
+               <a href="/about" class="inn-nav up-arrow-about" ui-sref="about" ng-class="{selected:isActive('about/')}">The Story</a>
+               <a href="/chaum" class="inn-cha-nav" ui-sref="chaum" ng-class="{selected:isActive('chaum')}">Chaum</a>
+               <a href="/cha-health-systems" class="inn-cha-nav" ui-sref="cha-health-systems" ng-class="{selected:isActive('cha-health-systems')}">CHA Health Systems</a>
+             </div>
+            </li>
+          </div>
+
+          <div class="col-xs-32">
+            <li class="dropdown center" style="width: 80px;">
+              <a href="/innovation" class="inn-nav" ui-sref="innovation" ng-class="{selected:isActiveFor('innovation/')}">INNOVATION</a>
+            </li>
+          </div>
+
+          <div class="col-xs-33">
+            <li class="dropdown center" style="width: 60px;">
+               <a href="aurous" ui-sref="aurous" ng-class="{selected:isActiveFor('aurous')}">AUROUS</a>
+            <!--    <div class="dropdown-aurouscontent">
+                <a href="/aurous" ui-sref="aurous" class="up-arrow" ng-class="{selected:isActive('aurous')}">THE BRAND</a>
+                <a href="/aurous/products" ui-sref="aurous_products" id="aurous-bottom" ng-class="{selected:isActive('aurous/products')}">THE PRODUCTS</a>
+              </div> -->
+            </li>
+          </div>
+
+        <div class="col-xs-34">
+          <li class="dropdown" style="width: 120px;">
+            <a href="/saturday-skin" ui-sref="saturday-skin" ng-class="{selected:isActiveFor('saturday-skin')}" >SATURDAY SKIN</a>
+            <div class="dropdown-content">
+              <a href="/saturday-skin" ui-sref="saturday-skin" class="up-arrow" ng-class="{selected:isActive('saturday-skin')}">THE BRAND</a>
+              <a href="/saturday-skin/products" ui-sref="saturday_products" id="sat-skin-bottom" ng-class="{selected:isActive('saturday-skin/products')}">THE PRODUCTS</a>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+     <div class="textsearch-test">
+      <input id="testingsearch" type="text" ng-model="text"><img id="callingsearchs" src="search1.png" width="13px;" height="18px;" />
+    </div>
+
+  </div>
+
+  <!-- mobile (width: 580px) navbar -->
+  <div class="menu-mobile" style="float:left;">
+    <button onclick="myFunction()" class="popup-btn"></button>
+      <div id="mobilePop" class="popup-content" style="left:0;">
+        <a href="/about" ui-sref="about">ABOUT</a>
+        <a href="/innovation" ui-sref="innovation">INNOVATION</a>
+        <a href="aurous" ui-sref="aurous">AUROUS</a>
+        <a href="/aurous/products" ui-sref="aurous_products">AUORUS PRODUCTS</a>
+        <a href="/saturday-skin" ui-sref="saturday-skin">SATURDAY SKIN</a>
+        <a href="/saturday-skin/products" ui-sref="saturday_products">SATURDAY SKIN PRODUCTS</a>
+      </div>
+  </div>
+</div>
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("mobilePop").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.popup-btn')) {
+
+    var dropdowns = document.getElementsByClassName("popup-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 
 <script>

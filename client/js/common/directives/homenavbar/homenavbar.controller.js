@@ -52,4 +52,28 @@ app.controller('HomeNavBarController', function($scope, $http, $state, $statePar
 	    }
 	});
 
+	$(document).ready(function(){
+		// var tolerancePixel1 = 40;
+
+	    function removenavbar(){
+	      // get current browser top and bottom 
+	      var scrollTop0 = $(window).scrollTop()
+
+	      var yTopDot11 = 150;
+	      // var yTopDot = $("#first-dot").offset().top;
+	      var yBottomDot11 = $("#ino-first-dot").height() + yTopDot11;
+
+	      if(scrollTop0 > 120) {
+	        $(".navigation-home").css({"display":"none"});
+	        $(".navigation").css({"display":"block"});
+	      } else {
+	        $(".navigation-home").css({"display":"block"});
+	        $(".navigation").css({"display":"none"});
+	      }
+	    }
+
+        $(document).on('scroll', removenavbar);
+
+	});
+
 });

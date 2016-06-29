@@ -19,6 +19,10 @@
   margin-right: auto;
 }
 
+.navigation {
+  display: none;
+}
+
 .shadow-home {
   box-shadow: 0 4px 4px -4px #BBBBBB;
   max-width: 100%;
@@ -135,15 +139,15 @@
 }
 
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 900px) {
 
-  .navigation-home > .middle-nav {
+/*  .navigation-home > .middle-nav {
     max-width: 540px;
-  }
+  }*/
 
-  .textsearch-home {
+/*  .textsearch-home {
     margin-top: -100px;
-  }
+  }*/
 
 }
 
