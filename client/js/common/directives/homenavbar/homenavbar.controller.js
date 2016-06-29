@@ -47,9 +47,35 @@ app.controller('HomeNavBarController', function($scope, $http, $state, $statePar
 	    {
 	        container.css("display", "none");
 	        $("#callingsearch").css("margin-left", 158);
-	        $("#callingsearchs").css("margin-top", 4);
+	        $("#callingsearchs").css("margin-top", 7);
 	        // $(".brand").show();
 	    }
+	});
+
+	$(document).ready(function(){
+		// var tolerancePixel1 = 40;
+
+	    function removenavbar(){
+	      // get current browser top and bottom 
+	      var scrollTop0 = $(window).scrollTop()
+
+	      var yTopDot11 = 150;
+	      // var yTopDot = $("#first-dot").offset().top;
+	      var yBottomDot11 = $("#ino-first-dot").height() + yTopDot11;
+
+	      if(scrollTop0 > 120) {
+	        $(".navigation-home").css({"display":"none"});
+	        $(".navigation").css({"display":"block"});
+	  		$(".clean-and-clear").css({"height":"60px"});
+	      } else {
+	        $(".navigation-home").css({"display":"block"});
+	        $(".navigation").css({"display":"none"});
+	        $(".clean-and-clear").css({"height":"180px"});
+	      }
+	    }
+
+        $(document).on('scroll', removenavbar);
+
 	});
 
 });
