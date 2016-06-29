@@ -99,14 +99,18 @@ a:focus {
 .page-indicator {
   z-index: 9999;
   width: 40px;
-  background-color: white;
+  /*background-color: white;*/
   position: fixed;
   top: 50%;
-  right: 0%;
+  right: 2%;
 }
 
 .page-indicator > li {
-  margin-bottom: 5px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 20px;
+  height: 20px;
+  /*background-color: white;*/
 }
 
 #first-dot, #second-dot, #third-dot, #fourth-dot {
