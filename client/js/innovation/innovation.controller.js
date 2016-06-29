@@ -389,11 +389,16 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       
     })
 
+    $(".play-btn").click(function(){
+      $('.circle').removeClass('active-btn');
+      $(this).addClass('active-btn');
+    })
 
     // adding active class to buttons 
     $('.circle').click(function(e) {
       e.preventDefault(); 
       $('.circle').removeClass('active-btn');
+      $('.play-btn').removeClass('active-btn');
       $(this).addClass('active-btn');
     });
   });
