@@ -95,22 +95,29 @@ a:focus {
     background-position:50% 50%\9 !important;
 }
 
-
 .page-indicator {
   z-index: 9999;
-  width: 40px;
+  width: 20px;
   /*background-color: white;*/
   position: fixed;
   top: 50%;
-  right: 2%;
+  right: 40px;
 }
 
-.page-indicator > li {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 20px;
-  height: 20px;
-  /*background-color: white;*/
+.page-indicator > div {
+  margin-top: 10px;
+  width: 10px;
+  height: 10px;
+}
+
+.bg1 {
+  background-image: url("buttons/circle_w_1.png");
+  background-size: contain;
+}
+
+.bg2 {
+  background-image: url("buttons/circle_w_2.png");
+  background-size: contain;
 }
 
 #first-dot, #second-dot, #third-dot, #fourth-dot {
@@ -141,12 +148,6 @@ div.first-page-fade-in {
 }
 
 
-.active-page {
-  background-color: lightblue;
-}
-
-
-
 /* fullscreen setup */
 // html, body {
 //     /* give this to all tags from html to .fullscreen */
@@ -168,7 +169,8 @@ div.first-page-fade-in {
 .content-b {
   display:table-cell;
   position:relative;
-	vertical-align:middle;
+	/*vertical-align:middle;*/
+  top: 20%;
 	text-align:center;
 
   p, h2, .home_links, .home_links a {
@@ -176,12 +178,13 @@ div.first-page-fade-in {
     // background-color: #FFFFFF;
     width: 400px;
     margin: 0 auto;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
   }
 
   h2 {
-    font-size: 36px;
-    width: 472px;
+    font-size: 27px;
+    width: 510px;
+    font-style: italic;
   }
 
   p {
@@ -190,6 +193,7 @@ div.first-page-fade-in {
 
   .margin-top-big {
     margin: 45px auto 0;
+    width: 760px;
   }
 
   .margin-top-small {
@@ -211,19 +215,19 @@ div.first-page-fade-in {
   }
 
   &.lax-one {
-    background-image: url('home/home_1.jpg');
+    background-image: url('about/chaum/chaum_3.jpg');
   }
 
   &.lax-two {
-    background-image: url('home/home_2.jpg');
+    background-image: url('about/chaum/chaum_2.jpg');
   }
 
   &.lax-three {
-    background-image: url('home/home_3.jpg');
+    background-image: url('about/chaum/chaum_1.jpg');
   }
 
   &.lax-four {
-    background-image: url('home/home_4.jpg');
+    background-image: url('about/chaum/chaum_4.jpg');
   }
 
   // &.lax-five {

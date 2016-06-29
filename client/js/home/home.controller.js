@@ -21,8 +21,10 @@ app.controller('HomeController', function($scope, $http, $window) {
 
             if (visible > .70) {
 	                content.style.opacity = "1";
-	            } else if (visible > 0.5) {
-	                content.style.opacity = "0.3";
+	            } else if (visible > 0.55) {
+	                content.style.opacity = "1";
+	            } else if (visible > 0.50) {
+	                content.style.opacity = "0.4";
 	            } else {
 	 	          	content.style.opacity = "0.1"
 	            }
@@ -47,10 +49,11 @@ app.controller('HomeController', function($scope, $http, $window) {
         	var yBottomDot1 = $("#first-dot").height() + yTopDot1;
 
         	if(scrollTop1 < yBottomDot1 && scrollBottom1 > yTopDot1) {
-        		$("#firstp").addClass("active-page");
+        		// $("#firstp").addClass("active-page");
+        		$("#firstp").removeClass('bg1').addClass("bg2");
         	} else {
-        		$("#firstp").removeClass("active-page");
-        		// console.log("nothing happens");
+        		// $("#firstp").removeClass("active-page");
+        		$("#firstp").removeClass('bg2').addClass("bg1");
         	}
         }
 
@@ -63,10 +66,11 @@ app.controller('HomeController', function($scope, $http, $window) {
         	var yBottomDot2 = $("#second-dot").height() + yTopDot2;
 
         	if(scrollTop2 < yBottomDot2 && scrollBottom2 > yTopDot2) {
-        		$("#secondp").addClass("active-page");
+        		// $("#secondp").addClass("active-page");
+        		$("#secondp").removeClass('bg1').addClass("bg2");
         	} else {
-        		$("#secondp").removeClass("active-page");
-        		// console.log("nothing happens");
+        		// $("#secondp").removeClass("active-page");
+        		$("#secondp").removeClass('bg2').addClass("bg1");
         	}
         }
 
@@ -79,9 +83,11 @@ app.controller('HomeController', function($scope, $http, $window) {
         	var yBottomDot3 = $("#third-dot").height() + yTopDot3;
 
         	if(scrollTop3 < yBottomDot3 && scrollBottom3 > yTopDot3) {
-        		$("#thirdp").addClass("active-page");
+        		// $("#thirdp").addClass("active-page");
+        		$("#thirdp").removeClass('bg1').addClass("bg2");
         	} else {
-        		$("#thirdp").removeClass("active-page");
+        		// $("#thirdp").removeClass("active-page");
+        		$("#thirdp").removeClass('bg2').addClass("bg1");
         		// console.log("nothing happens");
         	}
         }
@@ -95,10 +101,11 @@ app.controller('HomeController', function($scope, $http, $window) {
         	var yBottomDot4 = $("#fourth-dot").height() + yTopDot4;
 
         	if(scrollTop4 < yBottomDot4 && scrollBottom4 > yTopDot4) {
-        		$("#fourthp").addClass("active-page");
+        		// $("#fourthp").addClass("active-page");
+        		$("#fourthp").removeClass('bg1').addClass("bg2");
         	} else {
-        		$("#fourthp").removeClass("active-page");
-        		// console.log("nothing happens");
+        		// $("#fourthp").removeClass("active-page");
+        		$("#fourthp").removeClass('bg2').addClass("bg1");
         	}
         }
 
