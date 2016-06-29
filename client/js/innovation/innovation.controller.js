@@ -7,7 +7,6 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
   
   $(document).ready(function(){
 
-
     // video plays when it's visible
     var media = $('video').not("[autoplay='autoplay']");
     var tolerancePixel = 40;
@@ -32,6 +31,84 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
         //}
     }
     $(document).on('scroll', checkMedia);
+
+
+    // page indicator!! 
+
+    var tolerancePixel1 = 40;
+
+    function activePage1(){
+      // get current browser top and bottom 
+      var scrollTop11 = $(window).scrollTop() + tolerancePixel1;
+      var scrollBottom11 = $(window).scrollTop() + $(window).height() - tolerancePixel1;
+
+      var yTopDot11 = 150;
+      // var yTopDot = $("#first-dot").offset().top;
+      var yBottomDot11 = $("#ino-first-dot").height() + yTopDot11;
+
+      if(scrollTop11 < yBottomDot11 && scrollBottom11 > yTopDot11) {
+        $("#ino-firstp").addClass("active-page");
+      } else {
+        $("#ino-firstp").removeClass("active-page");
+        // console.log("nothing happens");
+      }
+    }
+
+    function activePage2(){
+      // get current browser top and bottom 
+      var scrollTop22 = $(window).scrollTop() + tolerancePixel1;
+      var scrollBottom22 = $(window).scrollTop() + $(window).height() - tolerancePixel1;
+
+      var yTopDot22 = $("#ino-second-dot").offset().top;
+      var yBottomDot22 = $("#ino-second-dot").height() + yTopDot22;
+
+      if(scrollTop22 < yBottomDot22 && scrollBottom22 > yTopDot22) {
+        $("#ino-secondp").addClass("active-page");
+      } else {
+        $("#ino-secondp").removeClass("active-page");
+        // console.log("nothing happens");
+      }
+    }
+
+    function activePage3(){
+      // get current browser top and bottom 
+      var scrollTop33 = $(window).scrollTop() + tolerancePixel1;
+      var scrollBottom33 = $(window).scrollTop() + $(window).height() - tolerancePixel1;
+
+      var yTopDot33 = $("#ino-third-dot").offset().top;
+      var yBottomDot33 = $("#ino-third-dot").height() + yTopDot33;
+
+      if(scrollTop33 < yBottomDot33 && scrollBottom33 > yTopDot33) {
+        $("#ino-thirdp").addClass("active-page");
+      } else {
+        $("#ino-thirdp").removeClass("active-page");
+        // console.log("nothing happens");
+      }
+    }
+
+    $(document).on('scroll', activePage1);
+    $(document).on('scroll', activePage2);
+    $(document).on('scroll', activePage3);
+
+    // end of active page function 
+
+    // smooth scroll to next page on click (page indicators)
+
+    $(document).on("click", "#ino-firstp", function(){
+      $('html,body').animate({
+            scrollTop: $("#ino-firstsection").offset().top},
+            'slow');
+    });
+    $("#ino-secondp").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#ino-secondsec").offset().top},
+            'slow');
+    });
+    $("#ino-thirdp").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#ino-thirdsec").offset().top},
+            'slow');
+    });
 
 
     // scrolling to next div!!!
