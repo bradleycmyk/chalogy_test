@@ -9,10 +9,10 @@
 }*/
 
 .inn {
-	margin: 0 auto;
+	margin: 0 auto 40px;
 	width: 1050px;
 	color: #000000;
-	margin-top: 2%;
+	// margin-top: 2%;
 
 	.inn-top {
 		width: 910px;
@@ -226,12 +226,12 @@ button.slick-prev {
 }
 
 .hept-inn-one {
-  top: 120px;
+  top: 240px;
   right: 80px;
 }
 
 .hept-inn-two {
-  top: 215px;
+  top: 365px;
   right: 0px;
 }
 
@@ -294,9 +294,9 @@ button.slick-prev {
 }
 .section{
     position: relative;
-	-webkit-box-sizing: border-box; 
-    -moz-box-sizing: border-box; 
-         box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
 }
 .custom-full1 {
   background: grey;
@@ -348,7 +348,7 @@ button.slick-prev {
 	border-width: 38.5px 34px 38.5px 0;
 	border-color: transparent #fff transparent transparent;
 }
-.controlArrow.next{  
+.controlArrow.next{
 	right:15px;
 	border-width: 38.5px 0 38.5px 34px;
 	border-color: transparent transparent transparent #fff;
