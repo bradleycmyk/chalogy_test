@@ -1,7 +1,7 @@
 .health-wrapper {
-  width: 1200px;
+  // width: 1200px;
+  // margin: 0 auto;
   overflow: hidden;
-  margin: 0 auto;
   background: white;
 }
 
@@ -9,12 +9,12 @@
 .chs {
   .chs_hero {
     background-image: url('dna2.jpg');
-    background-size: 1120px auto;
+    // background-size: 1120px auto;
     background-repeat: no-repeat;
-    background-position: -217px -237px;
-    width: 901px;
-    margin: 70px auto 0;
-    padding: 115px 0;
+    // background-position: -217px -237px;
+    // width: 901px;
+    // margin: 70px auto 0;
+    // padding: 115px 0;
 
     h4, h1 {
       color: #FFFFFF;
@@ -23,19 +23,18 @@
     }
 
     h4 {
+      // font-size: 17px;
+      // margin: 0;
     	font-family: 'Work Sans';
       font-weight: normal;
-      font-size: 17px;
       font-style: normal;
-      margin: 0;
     }
 
     h1 {
-      // font-family: MillerBanner;
+      // font-size: 70px;
+      // margin: 20px 0 0 0;
       font-weight: normal;
-      font-size: 70px;
       font-style: normal;
-      margin: 20px 0 0 0;
     }
   }
 
@@ -101,17 +100,74 @@
   }
 }
 
-.chs-hepts {
-  position: absolute;
-  z-index: 100;
+@media screen and (min-width: 600px) {
+  .health-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .chs {
+    .chs_hero {
+      background-size: 1120px auto;
+      background-position: -217px -237px;
+      width: 901px;
+      margin: 70px auto 0;
+      padding: 115px 0;
+
+      h4 {
+        font-size: 17px;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 70px;
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+
+  .chs-hepts {
+    position: absolute;
+    z-index: 100;
+    display: block;
+  }
+
+  .hept-chs-one {
+    top: 695px;
+    right: 0;
+  }
+
+  .hept-chs-two {
+    top: 900px;
+    left: 0px;
+  }
 }
 
-.hept-chs-one {
-  top: 695px;
-  right: 0;
-}
+@media screen and (max-width: 599px) {
 
-.hept-chs-two {
-  top: 900px;
-  left: 0px;
+  .health-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .chs {
+    .chs_hero {
+      background-size: cover;
+      width: 100%;
+      margin: 20px auto 0;
+      padding: 18% 0;
+
+      h4 {
+        font-size: 15px;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 45px;
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+  .chs-hepts {
+    display: none;
+  }
 }
