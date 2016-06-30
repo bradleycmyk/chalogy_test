@@ -36,7 +36,8 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 	    if (!container.is(e.target) // if the target of the click isn't the container...
 	        && container.has(e.target).length === 0) // ... nor a descendant of the container
 	    {
-	        container.addClass('fade-out-effect-input').removeClass('fade-in-effect-input');
+	        // container.addClass('fade-out-effect-input').removeClass('fade-in-effect-input');
+	        $("#testingsearch1").css({"opacity":"0"});
 	    }
 	});
 

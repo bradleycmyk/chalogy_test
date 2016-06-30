@@ -1,50 +1,47 @@
 .chaum-wrapper {
-  width: 1200px;
+  // width: 1200px;
   overflow: hidden;
-  margin: 0 auto;
+  // margin: 0 auto;
   background: white;
 }
-
 
 .chaum {
   color: #000000;
 
   h1, h3, h4 {
-    // font-family: MillerBanner;
     font-weight: bold;
   }
 
   h1 {
-    font-size: 102px;
+    // font-size: 102px;
+    // margin: 50px 0 50px 0;
     text-align: center;
-    margin: 50px 0 50px 0;
   }
 
   .pool-p {
-    display: inline-block;
-    width: 330px;
-    vertical-align: top;
-    margin: 0 0 0 35px;
+    // width: 330px;
+    // margin: 0 0 0 35px;
+    // display: inline-block;
 
     h4 {
-      font-size: 27px;
+      // font-size: 27px;
       margin: 0;
 
       &::after {
+        // width: 65px;
+        // border-top: 5px solid #000000;
+        // margin: 20px 0;
         content: '';
         display: block;
-        width: 65px;
-        border-top: 5px solid #000000;
-        margin: 20px 0;
       }
     }
   }
 
   .quote {
-    font-size: 30px;
+    // font-size: 30px;
+    // width: 795px;
+    // margin: 50px auto 0;
     position: relative;
-    width: 795px;
-    margin: 50px auto 0;
     font-weight: 100;
 
     &::before {
@@ -54,15 +51,15 @@
       border-left: 1px solid #000000;
       width: 25px;
       height: 25px;
-      position: absolute;
       top: -15px;
       left: -15px;
+      position: absolute;
     }
   }
 
   #myCarousel {
-    width: 837px;
-    margin: 30px 0 25px 181px;
+    // width: 837px;
+    // margin: 30px 0 25px 181px;
     font-size: 0;
     display: inline-block;
 
@@ -80,20 +77,20 @@
     }
 
     .carousel-inner {
-      width: 797px;
-      height: 444px;
+      // width: 797px;
+      // height: 444px;
       display: inline-block;
       vertical-align: middle;
 
       .cara_one, .cara_two {
-        width: 797px;
-        height: 444px;
+        // width: 797px;
+        // height: 444px;
         vertical-align: middle;
 
-        img {
-          width: 797px;
-          height: 444px;
-        }
+        // img {
+        //   width: 797px;
+        //   height: 444px;
+        // }
       }
     }
 
@@ -110,29 +107,29 @@
 
   }
 
-  .lower-ps {
-    width: 800px;
-    margin: 30px auto;
-
-    .left-ps {
-      margin: 0 30px 0 0;
-    }
-
-    .left-ps, .right-ps {
-      width: 350px;
-      display: inline-block;
-      vertical-align: top;
-
-      p {
-        margin: 0 0 20px 0;
-      }
-    }
-  }
+  // .lower-ps {
+  //   width: 800px;
+  //   margin: 30px auto;
+  //
+  //   .left-ps {
+  //     margin: 0 30px 0 0;
+  //   }
+  //
+  //   .left-ps, .right-ps {
+  //     width: 350px;
+  //     display: inline-block;
+  //     vertical-align: top;
+  //
+  //     p {
+  //       margin: 0 0 20px 0;
+  //     }
+  //   }
+  // }
 }
 
 .chaum-banner {
   width: 100%;
-  height: 285px;
+  // height: 285px;
   background-color: #A9A9A9;
   background-image: url('proteins.jpg');
   background-repeat: no-repeat;
@@ -140,27 +137,203 @@
   display: inline-block;
 
   h3 {
-    font-family: MillerBanner;
-    font-style: italic;
+    // font-size: 37px;
+    // margin: 100px 0;
+    // font-family: MillerBanner;
+    // font-style: italic;
     color: #FFFFFF;
-    font-size: 37px;
     text-align: center;
-    margin: 100px 0;
     vertical-align: middle;
   }
 }
 
-.hepts {
-  position: absolute;
-  z-index: 100;
+// .hepts {
+//   position: absolute;
+//   z-index: 100;
+// }
+//
+// .hept-chaum-one {
+//   top: 1100px;
+//   right: 0;
+// }
+//
+// .hept-chaum-two {
+//   top: 1410px;
+//   left: 0px;
+// }
+
+@media screen and (min-width: 600px) {
+  .chaum-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 102px;
+      margin: 50px 0;
+    }
+
+    .pool-p {
+      display: inline-block;
+      width: 330px;
+      margin: 0 0 0 35px;
+      vertical-align: top;
+    }
+
+    h4 {
+      font-size: 27px;
+
+      &::after {
+        width: 65px;
+        border-top: 5px solid #000000;
+        margin: 20px 0;
+      }
+    }
+
+    .quote {
+      font-size: 30px;
+      width: 795px;
+      margin: 50px auto 0;
+    }
+
+    #myCarousel {
+      width: 837px;
+      margin: 30px 0 25px 181px;
+
+      .carousel-inner {
+        width: 797px;
+        height: 444px;
+
+        .cara_one, .cara_two {
+          width: 797px;
+          height: 444px;
+          vertical-align: middle;
+
+          img {
+            width: 797px;
+            height: 444px;
+          }
+        }
+      }
+    }
+
+    .lower-ps {
+      width: 800px;
+      margin: 30px auto;
+
+      .left-ps {
+        margin: 0 30px 0 0;
+      }
+
+      .left-ps, .right-ps {
+        width: 350px;
+        display: inline-block;
+        vertical-align: top;
+
+        p {
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+  }
+
+  .chaum-banner {
+    height: 285px;
+
+    h3 {
+      font-size: 37px;
+      margin: 100px 0;
+    }
+  }
+
+  .hepts {
+    display: block;
+    position: absolute;
+    z-index: 100;
+  }
+
+  .hept-chaum-one {
+    top: 1100px;
+    right: 0;
+  }
+
+  .hept-chaum-two {
+    top: 1410px;
+    left: 0px;
+  }
 }
 
-.hept-chaum-one {
-  top: 1100px;
-  right: 0;
-}
+@media screen and (max-width: 599px) {
+  .chaum-wrapper {
+    width: 100%;
+    margin: 0 auto;
 
-.hept-chaum-two {
-  top: 1410px;
-  left: 0px;
+    h1 {
+      font-size: 50px;
+      margin: 20px 0;
+    }
+
+    .pool-img {
+      width: 100%;
+      margin: 0 0 20px;
+    }
+
+    .pool-p {
+      width: 80%;
+      margin: 20px auto 35px;
+    }
+
+    h4 {
+      font-size: 28px;
+
+      &::after {
+        width: 30px;
+        border-top: 5px solid #000000;
+        margin: 10px 0;
+      }
+    }
+
+    .quote {
+      font-size: 21px;
+      width: 80%;
+      margin: 20px auto 0;
+    }
+
+    #myCarousel {
+      width: 100%;
+      margin: 30px 0 25px 0;
+
+      .carousel-inner,
+      .carousel-inner .cara_one,
+      .carousel-inner .cara_two,
+      .carousel-inner .cara_one img,
+      .carousel-inner .cara_two img {
+        width: 100%;
+        height: calc(100vw / 1.80);
+      }
+    }
+
+    .lower-ps {
+      width: 80%;
+      margin: 20px auto 40px;
+
+      .left-ps, .right-ps {
+        p {
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+  }
+
+  .chaum-banner {
+    height: 50vw;
+
+    h3 {
+      font-size: 24px;
+      margin: 19% 0;
+    }
+  }
+
+  .hepts {
+    display: none;
+  }
 }
