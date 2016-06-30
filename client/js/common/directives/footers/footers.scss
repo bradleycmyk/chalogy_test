@@ -16,20 +16,10 @@ footer {
   letter-spacing: 1px;
   background-color: #FFFFFF;
   width: 100%;
-  // margin: 20px 60px;
-
-  .left {
-    float: left;
-    vertical-align: top;
-  }
-
-  .right {
-    float: right;
-  }
 
   .footer-top {
     .left {
-      margin: $top-bottom 0 $top-bottom $left-right;
+      // margin: $top-bottom 0 $top-bottom $left-right;
 
       .icons {
         a {
@@ -45,7 +35,7 @@ footer {
     }
 
     .right {
-      margin: $top-bottom $left-right $top-bottom 0;
+      // margin: $top-bottom $left-right $top-bottom 0;
 
       form {
         // margin-top: 3px;
@@ -103,14 +93,6 @@ footer {
         margin: 0 $left-right 0 0;
       }
     }
-
-    .left {
-      margin: 0 0 $top-bottom $left-right;
-    }
-
-    .right {
-      margin: 0 $left-right $top-bottom 0;
-    }
   }
 }
 
@@ -130,11 +112,74 @@ footer {
    color: #333333;
 }
 
+//
+// @media screen and (max-width: 1035px) {
+//   .footer-right {
+//     display: block;
+//     width: 90%;
+//     margin: 0 auto;
+//   }
+// }
 
-@media screen and (max-width: 1035px) {
-  .footer-right {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
+@media screen and (min-width: 600px) {
+  .left {
+    float: left;
+    vertical-align: top;
+  }
+
+  .right {
+    float: right;
+  }
+  .footer-top {
+    .left {
+      margin: $top-bottom 0 $top-bottom $left-right;
+    }
+
+    .right {
+      margin: $top-bottom $left-right $top-bottom 0;
+    }
+  }
+
+
+  .footer-bottom {
+    .left {
+      margin: 0 0 $top-bottom $left-right;
+    }
+
+    .right {
+      margin: 0 $left-right $top-bottom 0;
+    }
+  }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 599px){
+  footer {
+    .footer-top, .footer-bottom {
+      .left, .right {
+        display: block;
+        margin: 20px auto;
+        float: none;
+      }
+    }
+
+    .footer-top {
+      .left {
+        width: 166px;
+      }
+      .right {
+        width: 321px;
+      }
+    }
+
+    .footer-bottom {
+      .left {
+        width: 224px;
+      }
+
+      .right {
+        width: 242px;
+      }
+    }
   }
 }
