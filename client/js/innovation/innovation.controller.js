@@ -407,7 +407,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
     $(".play-btn1").click(function(){
       $('.circle1').removeClass('active-btn1');
       $('.heptagon1').removeClass('heptagon_bg');
-      $(this).addClass('active-btn1');
+      $(this).removeClass('play_bg');
     })
 
     // adding active class to buttons 

@@ -1,0 +1,65 @@
+<!-- navbar test -->
+<div id="scrollable-div">
+    <div id="top-logo-logo"><a ui-sref="home"><img id="top-logo" src="logo/main_logo.png" alt="Brand"></a></div>
+</div>
+<div id="fixed-nav-div">
+    <div id="fixed-nav-body">
+        <div class="first-part" id="nav-menu-menu"><a ui-sref="home" style="padding-left: 40px;"><img id="btm-brand-logo" src="logo/main_logo_navbar.png" alt="Brand"></a></div>
+
+        <div class="second-part" style="border-bottom: 1px solid #e5e5e5 !important; ">
+            <div class="col-xs-31">
+                <li class="dropdown" style="width: 50px; list-style: none;">
+                  <a class="about-nav" href="/about" ui-sref="about" ng-class="{selected:isAbout()}" >ABOUT</a>
+                  <div class="dropdown-aboutcontent">
+                   <a href="/about" class="inn-nav up-arrow-about" ui-sref="about" ng-class="{selected:isActive('about/')}">The Story</a>
+                   <a href="/chaum" class="inn-cha-nav" ui-sref="chaum" ng-class="{selected:isActive('chaum')}">Chaum</a>
+                   <a href="/cha-health-systems" class="inn-cha-nav" ui-sref="cha-health-systems" ng-class="{selected:isActive('cha-health-systems')}">CHA Health Systems</a>
+                 </div>
+                </li>
+              </div>
+
+              <div class="col-xs-32">
+                <li class="dropdown center" style="width: 82px; list-style: none;">
+                  <a href="/innovation" class="inn-nav" ui-sref="innovation" ng-class="{selected:isActiveFor('innovation/')}" >INNOVATION</a>
+                </li>
+              </div>
+
+              <div class="col-xs-33">
+                <li class="dropdown center" style="width: 56px; padding-left:4px; list-style: none;">
+                   <a href="aurous" ui-sref="aurous" ng-class="{selected:isActiveFor('aurous')}" style="list-style: none;">AUROUS</a>
+                <!--    <div class="dropdown-aurouscontent">
+                    <a href="/aurous" ui-sref="aurous" class="up-arrow" ng-class="{selected:isActive('aurous')}">THE BRAND</a>
+                    <a href="/aurous/products" ui-sref="aurous_products" id="aurous-bottom" ng-class="{selected:isActive('aurous/products')}">THE PRODUCTS</a>
+                  </div> -->
+                </li>
+              </div>
+
+            <div class="col-xs-34">
+              <li class="dropdown" style="width: 160px; padding-left:5px; list-style: none;">
+                <a href="/saturday-skin" ui-sref="saturday-skin" ng-class="{selected:isActiveFor('saturday-skin')}" style="list-style: none;">SATURDAY SKIN</a>
+                <div class="dropdown-content">
+                  <a href="/saturday-skin" ui-sref="saturday-skin" class="up-arrow" ng-class="{selected:isActive('saturday-skin')}">THE BRAND</a>
+                  <a href="/saturday-skin/products" ui-sref="saturday_products" id="sat-skin-bottom" ng-class="{selected:isActive('saturday-skin/products')}">THE PRODUCTS</a>
+                </div>
+              </li>
+            </div>
+        </div>
+        
+        <div class="third-part" style="border-bottom: 1px solid #e5e5e5 !important; ">
+            <input id="testingsearch1" type="text" ng-model="text"><img id="callingsearchs1" src="search1.png" width="13px;" height="18px;" />
+        </div>
+
+       
+    </div>
+    <!-- <hr style="margin-top: 2px;"> -->
+</div>
+
+
+
+
+<!-- end nav bar --> 
+
+
+
+
+

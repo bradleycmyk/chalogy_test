@@ -1,0 +1,214 @@
+/* navigation bar */
+
+#scrollable-div {
+	width: 100%;
+	height: 120px;
+	background-color: white;
+}
+
+#top-logo-logo {
+	width: 224px;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 26px;
+}
+
+#top-logo {
+  	width: 236px;
+  	height: 64px;
+}
+
+#fixed-nav-div {
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	border-bottom: 1px solid #e5e5e5 !important; 
+	z-index: 9999;
+
+}
+
+#fixed-nav-body {
+	max-width: 1200px;
+	width: 100%;
+	text-align: center;
+	height: 60px;
+	margin: 0 auto;
+	background-color: white;
+	border-bottom: 1px solid #e5e5e5 !important; 
+}
+
+
+.posi{
+    position:fixed;
+    margin-top: 0;
+    top:0;
+    /*z-index: 9999 !important;*/
+}
+
+
+/* fixed nav bar styling */
+
+#nav-menu-menu {
+	opacity: 0;
+	float: left;
+}
+
+#first-part, #second-part, #third-part {
+	display: inline-block;
+}
+
+.first-part {
+	width: 118px;
+	height: 60px;
+	float: left;
+}
+
+#btm-brand-logo {
+	width: 118px;
+  	height: 32px;
+  	margin-top: 14px;
+}
+
+.second-part {
+	display: inline-block;
+	margin: 0 auto;
+	width: 552px;
+	height: 60px;
+	background-color: white;
+	font-size: 13px;
+    font-family: 'Work Sans';
+    padding-top: 21px;
+    padding-left: 47px;
+}
+
+.second-part > li {
+	list-style: none;
+}
+
+.third-part {
+	float: right;
+	height: 60px;
+	width: 200px;
+	background-color: white;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+#testingsearch1 {
+    width: 155px;
+    margin-top: 15px;
+    opacity: 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#callingsearchs1 {
+    height: 15px;
+    width: 13px;
+    padding-left: 2px;
+    margin-right: 20px;
+}
+
+  
+ul.nav-menu {
+	list-style: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0 auto;
+}
+
+#center-nav {
+	width: 512px;
+	margin: 0 auto;
+}
+
+div.fade-in-effect-logo {
+    position: relative;
+    -webkit-animation: fadeinlogo 2s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation: fadeinlogo 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeinlogo {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeinlogo {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+div.fade-out-effect-logo {
+    position: relative;
+    -webkit-animation: fadeoutlogo 2s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+    animation: fadeoutlogo 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeoutlogo {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fadeoutlogo {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+input.fade-out-effect-input{
+    position: relative;
+    -webkit-animation: fadeoutinput 1s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+    animation: fadeoutinput 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeoutinput {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fadeoutinput {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+input.fade-in-effect-input {
+    position: relative;
+    -webkit-animation: fadeininput 1s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+    animation: fadeininput 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeininput {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeininput {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/* hahahahahahahaha end nav **/
+
