@@ -1,5 +1,5 @@
 .search {
-	margin-top: 20px; 
+	margin-top: 20px;
 	margin-left: 25px;
 }
 
@@ -60,15 +60,23 @@ input:focus{
 }
 
 .alert-msg {
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 	text-align: center;
 	margin-bottom: 30px;
 	display: none;
-}
 
-.alert-msg img {
-	width: 100%;
+	ul {
+		list-style-type: disc;
+		width: 35%;
+		margin: 0 auto;
+
+		li {
+			font-family: 'Work Sans';
+			font-size: 18px;
+			font-weight: 400;
+		}
+	}
 }
 
 .left-align {
@@ -77,6 +85,7 @@ input:focus{
 	font-family: WorkSans;
 	font-size: 20px;
 }
+
 .giphy {
 	display: none;
 
@@ -97,9 +106,35 @@ input:focus{
 }
 
 .search-result-title {
-    font-style: italic;
-    font-weight: lighter;
-    font-size: 27px;
-    font-family: "Miller Ban It";
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 27px;
+  font-family: "Miller Ban It";
+}
 
+.search-product-title {
+	text-align: left;
+}
+
+.pages_results {
+	.pages_results_padding{
+		padding: 0 40px;
+
+		p {
+			color: #000000;
+		}
+
+		.page-title {
+			font-size: 18px;
+			margin: 20px 0 -1px;
+			font-family: 'Work Sans';
+			font-weight: 400;
+		}
+
+		p:not(.page-title) {
+			font-size: 15px;
+			font-family: 'Work Sans';
+			margin: 10px 0 0 0;
+		}
+	}
 }

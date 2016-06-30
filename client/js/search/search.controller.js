@@ -7,32 +7,70 @@ app.controller('searchController', function($scope, ProductFactory, $state, $sta
 	$scope.suggestion = ["Make sure all words are spelled correctly.", "Try different keywords.", "Try more general keywords"];
 	$scope.imgurl = "search-again.jpg";
 
-	// product search 
+
+	//function for decoding HTML entities that are present in JSON data
+	function decodeHtml(html) {
+			//creates dummy textarea element
+	    var txt = document.createElement("textarea");
+
+			//sets HTML in dummy as the passed variable
+	    txt.innerHTML = html;
+
+			//returns the dummy element, which will automagically evaluate the HTML entities to their proper symbols
+	    return txt.value;
+	}
+
+
+	// product search
 	if (text == ""){
 		console.log("do nothing");
 	} else {
 		ProductFactory.searchDb(text).then(function(saturdayData) {
-		
 			if(saturdayData.length === 0) {
-				$(".alert-msg").css({"display":"block"});
-				$(".giphy").show();
+				$(".products_results").css({"display":"none"});
+				ProductFactory.searchPagesDb(keyword).then(function(pages) {
+					if(pages.length === 0) {
+						$(".pages_results").css({"display":"none"});
+						$('.alert-msg').css({'display':'block'});
+					}
+				})
 			}
+
+			//loop through all of the returned PRODUCTS and apply the decoding function to the JSON
+			for (var j in saturdayData) {
+				saturdayData[j].description = decodeHtml(saturdayData[j].description);
+			}
+
 			$scope.products = saturdayData;
 		})
 	}
 
-	// page search 
+	// page search
 	if (keyword == ""){
 		console.log("no keywords");
 	} else {
 		ProductFactory.searchPagesDb(keyword).then(function(pages) {
+			if(pages.length === 0) {
+				$(".pages_results").css({"display":"none"});
+				ProductFactory.searchDb(text).then(function(saturdayData) {
+					if(saturdayData.length === 0) {
+						$(".products_results").css({"display":"none"});
+						$('.alert-msg').css({'display':'block'});
+					}
+				})
+			}
+
+			//loop through all of the returned PAGES and apply the decoding function to the JSON
+			for (var i in pages) {
+				pages[i].description = decodeHtml(pages[i].description);
+			}
+
 			$scope.pages = pages;
 		})
 	}
 
 
-	// highligting search text !! 
-
+	// highligting search text !!
 	$(document).ready(function(){
 
 	    function highlightSearchWord() {
@@ -52,6 +90,3 @@ app.controller('searchController', function($scope, ProductFactory, $state, $sta
 	})
 
 });
-
-
-
