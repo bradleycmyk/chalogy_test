@@ -1,3 +1,17 @@
+/*** logo *** - scrollable part */
+/*#logo-navbar {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 26px;
+  width: 236px;
+  margin: 0 auto;
+  height: 120px;
+}
+#nav-brand-logo {
+  width: 236px;
+  height: 64px;
+}*/
+
 /* ------------ navigation + dropdown ---------------------> */
 
 .navigation, .shadow {
@@ -9,7 +23,7 @@
   height: 78px;
   /*margin-top: -15px;*/
   margin-top: -19px;
-  position: relative;
+  /*position: relative;*/
   background-color: white;
   position: fixed;
   top: 0;
@@ -42,7 +56,8 @@
 }
 
 .navigation > .middle-nav, .page-width > .middle-nav {
-  max-width: 600px;
+  /*max-width: 600px;*/
+  max-width: 512px;
   min-width: 280px;
   height: 55px;
   margin: 0 auto;
