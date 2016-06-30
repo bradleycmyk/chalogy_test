@@ -201,10 +201,19 @@ div.first-page-fade-in {
   }
 
   .home_links {
-    margin: 15px auto 0;
+    margin: 35px auto 0;
+    width: 415px;
 
     a {
-      font-weight: 600;
+      font-weight: 400;
+      border: 1px solid #E5E5E5;
+      padding: 10px 40px;
+      font-size: 15px;
+    }
+
+    .short_link_name {
+      padding: 10px 69px;
+      margin: 0 10px 0 0;
     }
   }
 }
