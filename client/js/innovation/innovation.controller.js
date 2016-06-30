@@ -389,6 +389,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       
     })
 
+    // buttons !!!
     $(".play-btn").click(function(){
       $('.circle').removeClass('active-btn');
       $(this).addClass('active-btn');
@@ -401,6 +402,30 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.play-btn').removeClass('active-btn');
       $(this).addClass('active-btn');
     });
+
+
+    $(".play-btn1").click(function(){
+      $('.circle1').removeClass('active-btn1');
+      $('.heptagon1').removeClass('heptagon_bg');
+      $(this).addClass('active-btn1');
+    })
+
+    // adding active class to buttons 
+    $('.circle1').click(function(e) {
+      e.preventDefault(); 
+      $('.circle1').removeClass('active-btn1');
+      $('.play-btn1').addClass('play_bg');
+      $('.heptagon1').removeClass('heptagon_bg');
+      $(this).addClass('active-btn1');
+    });
+
+    $('.heptagon1').click(function(){
+      $('.circle1').removeClass('active-btn1');
+      $('.play-btn1').addClass('play_bg');
+      $(this).addClass('heptagon_bg');
+    });
+
+
   });
 
     $scope.text1 = ["Sh-Polypeptide 55", "(PDGA-AA)", "Stimulates healthier looking skin and enhances skin's nautral rejuvenating power."];

@@ -383,48 +383,6 @@ div.fade-out-effect2 {
 }
 
 
-/* buttons */
-.play-buttons {
-    width: 287px;
-    height: 21px;
-    margin: 0 auto;
-    padding-left: 8px;
-  /*  margin-top: -100px;*/
-}
-
-a.video-button {
-    width: 20px;
-    height: 20px;
-    margin-left: 2px;
-}
-
-
-.circle {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('circle-icon.png');
-    background-size: Contain;
-    background-repeat: no-repeat;
-    margin-right: 4px;
-}
-
-
-.play-btn {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('play-button.jpg');
-    background-size: Contain;
-    background-repeat: no-repeat;
-    margin-right: 4px;
-}
-
-.active-btn {
-    /*background-image: url('heart-icon.png');*/
-    background-image: url('black-circle.png');
-}
-
 
 .click-to-discover {
     font-size: 15px;

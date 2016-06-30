@@ -41,8 +41,6 @@ app.controller('HomeController', function($scope, $http, $window) {
 
 		function activePage1(){
 			// get current browser top and bottom 
-			// var scrollTop1 = $("#home").scrollTop() + tolerancePixel;
-   //      	var scrollBottom1 = $("#home").scrollTop() + $("#home").height() - tolerancePixel;
 
         	var scrollTop1 = $(window).scrollTop() + tolerancePixel;
         	var scrollBottom1 = $(window).scrollTop() + $(window).height() - tolerancePixel;
@@ -52,18 +50,13 @@ app.controller('HomeController', function($scope, $http, $window) {
         	var yBottomDot1 = $("#first-dot").height() + yTopDot1;
 
         	if(scrollTop1 < yBottomDot1 && scrollBottom1 > yTopDot1) {
-        		// $("#firstp").addClass("active-page");
         		$("#firstp").removeClass('bg1').addClass("bg2");
         	} else {
-        		// $("#firstp").removeClass("active-page");
         		$("#firstp").removeClass('bg2').addClass("bg1");
         	}
         }
 
 		function activePage2(){
-			// get current browser top and bottom 
-			// var scrollTop2 = $("#home").scrollTop() + tolerancePixel;
-   //      	var scrollBottom2 = $("#home").scrollTop() + $("#home").height() - tolerancePixel;
 
         	var scrollTop2 = $(window).scrollTop() + tolerancePixel;
         	var scrollBottom2 = $(window).scrollTop() + $(window).height() - tolerancePixel;
@@ -72,18 +65,13 @@ app.controller('HomeController', function($scope, $http, $window) {
         	var yBottomDot2 = $("#second-dot").height() + yTopDot2;
 
         	if(scrollTop2 < yBottomDot2 && scrollBottom2 > yTopDot2) {
-        		// $("#secondp").addClass("active-page");
         		$("#secondp").removeClass('bg1').addClass("bg2");
         	} else {
-        		// $("#secondp").removeClass("active-page");
         		$("#secondp").removeClass('bg2').addClass("bg1");
         	}
         }
 
         function activePage3(){
-			// get current browser top and bottom 
-			// var scrollTop3 = $("#home").scrollTop() + tolerancePixel;
-   //      	var scrollBottom3 = $("#home").scrollTop() + $("#home").height() - tolerancePixel;
 
         	var scrollTop3 = $(window).scrollTop() + tolerancePixel;
         	var scrollBottom3 = $(window).scrollTop() + $(window).height() - tolerancePixel;
@@ -92,19 +80,13 @@ app.controller('HomeController', function($scope, $http, $window) {
         	var yBottomDot3 = $("#third-dot").height() + yTopDot3;
 
         	if(scrollTop3 < yBottomDot3 && scrollBottom3 > yTopDot3) {
-        		// $("#thirdp").addClass("active-page");
         		$("#thirdp").removeClass('bg1').addClass("bg2");
         	} else {
-        		// $("#thirdp").removeClass("active-page");
         		$("#thirdp").removeClass('bg2').addClass("bg1");
-        		// console.log("nothing happens");
         	}
         }
 
         function activePage4(){
-			// get current browser top and bottom 
-			// var scrollTop4 = $("#home").scrollTop() + tolerancePixel;
-   //      	var scrollBottom4 = $("#home").scrollTop() + $("#home").height() - tolerancePixel;
 
         	var scrollTop4 = $(window).scrollTop() + tolerancePixel;
         	var scrollBottom4 = $(window).scrollTop() + $(window).height() - tolerancePixel;
@@ -113,10 +95,8 @@ app.controller('HomeController', function($scope, $http, $window) {
         	var yBottomDot4 = $("#fourth-dot").height() + yTopDot4;
 
         	if(scrollTop4 < yBottomDot4 && scrollBottom4 > yTopDot4) {
-        		// $("#fourthp").addClass("active-page");
         		$("#fourthp").removeClass('bg1').addClass("bg2");
         	} else {
-        		// $("#fourthp").removeClass("active-page");
         		$("#fourthp").removeClass('bg2').addClass("bg1");
         	}
         }
@@ -125,12 +105,6 @@ app.controller('HomeController', function($scope, $http, $window) {
         $(document).on('scroll', activePage2);
         $(document).on('scroll', activePage3);
         $(document).on('scroll', activePage4);
-
-        // $("#home").on('scroll', activePage1);
-        // $("#home").on('scroll', activePage2);
-        // $("#home").on('scroll', activePage3);
-        // $("#home").on('scroll', activePage4);
-
 
         // end of active page function 
 
