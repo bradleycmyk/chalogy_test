@@ -41,7 +41,10 @@ app.controller('HomeController', function($scope, $http, $window) {
 
 		function activePage1(){
 			// get current browser top and bottom 
-			var scrollTop1 = $(window).scrollTop() + tolerancePixel;
+			// var scrollTop1 = $("#home").scrollTop() + tolerancePixel;
+   //      	var scrollBottom1 = $("#home").scrollTop() + $("#home").height() - tolerancePixel;
+
+        	var scrollTop1 = $(window).scrollTop() + tolerancePixel;
         	var scrollBottom1 = $(window).scrollTop() + $(window).height() - tolerancePixel;
 
         	var yTopDot1 = 150;
@@ -59,7 +62,10 @@ app.controller('HomeController', function($scope, $http, $window) {
 
 		function activePage2(){
 			// get current browser top and bottom 
-			var scrollTop2 = $(window).scrollTop() + tolerancePixel;
+			// var scrollTop2 = $("#home").scrollTop() + tolerancePixel;
+   //      	var scrollBottom2 = $("#home").scrollTop() + $("#home").height() - tolerancePixel;
+
+        	var scrollTop2 = $(window).scrollTop() + tolerancePixel;
         	var scrollBottom2 = $(window).scrollTop() + $(window).height() - tolerancePixel;
 
         	var yTopDot2 = $("#second-dot").offset().top;
@@ -76,7 +82,10 @@ app.controller('HomeController', function($scope, $http, $window) {
 
         function activePage3(){
 			// get current browser top and bottom 
-			var scrollTop3 = $(window).scrollTop() + tolerancePixel;
+			// var scrollTop3 = $("#home").scrollTop() + tolerancePixel;
+   //      	var scrollBottom3 = $("#home").scrollTop() + $("#home").height() - tolerancePixel;
+
+        	var scrollTop3 = $(window).scrollTop() + tolerancePixel;
         	var scrollBottom3 = $(window).scrollTop() + $(window).height() - tolerancePixel;
 
         	var yTopDot3 = $("#third-dot").offset().top;
@@ -94,7 +103,10 @@ app.controller('HomeController', function($scope, $http, $window) {
 
         function activePage4(){
 			// get current browser top and bottom 
-			var scrollTop4 = $(window).scrollTop() + tolerancePixel;
+			// var scrollTop4 = $("#home").scrollTop() + tolerancePixel;
+   //      	var scrollBottom4 = $("#home").scrollTop() + $("#home").height() - tolerancePixel;
+
+        	var scrollTop4 = $(window).scrollTop() + tolerancePixel;
         	var scrollBottom4 = $(window).scrollTop() + $(window).height() - tolerancePixel;
 
         	var yTopDot4 = $("#fourth-dot").offset().top;
@@ -113,6 +125,12 @@ app.controller('HomeController', function($scope, $http, $window) {
         $(document).on('scroll', activePage2);
         $(document).on('scroll', activePage3);
         $(document).on('scroll', activePage4);
+
+        // $("#home").on('scroll', activePage1);
+        // $("#home").on('scroll', activePage2);
+        // $("#home").on('scroll', activePage3);
+        // $("#home").on('scroll', activePage4);
+
 
         // end of active page function 
 
