@@ -50,6 +50,34 @@
     }
 
     .text_box {
+      // margin: 491px 60px 0 0;
+      width: 400px;
+      padding: 40px 30px 0px 30px;
+      float: right;
+      background-color: #FFFFFF;
+
+      .long_text {
+        font-size: 15px;
+        margin: 0 10px 18px 10px;
+      }
+
+      .tagline {
+        font-size: 35px;
+        margin: 0 10px 20px;
+      }
+
+      .pink_bar {
+        height: 10px;
+        width: 340px;
+        background-color: #eac4cd;
+        margin: 0px auto;
+        display: block;
+        clear: both;
+        text-align: center;
+      }
+    }
+
+    .text_box {
 
       .long_text {
         font-family: 'Work Sans';
@@ -57,7 +85,7 @@
 
       .tagline {
         clear: both;
-        margin: 0;
+        // margin: 0;
       }
     }
   }
@@ -68,29 +96,39 @@
     background-repeat: no-repeat;
     position: relative;
 
-    .white-things {
-      // margin: 0 60px 0;
-      // width: 400px;
-      clear: both;
-      float: right;
+    // .pink_bar {
+    //   height: 10px;
+    //   width: 340px;
+    //   background-color: #eac4cd;
+    //   margin: 0px auto;
+    //   display: block;
+    //   clear: both;
+    //   text-align: center;
+    // }
 
-      .white {
-        background-color: #FFFFFF;
-        height: 10px;
-        width: 20px;
-        margin: 0;
-        padding: 0;
-      }
-
-      .w-one {
-        float: left;
-      }
-
-      .w-two{
-        float: right;
-      }
-
-    }
+    // .white-things {
+    //   // margin: 0 60px 0;
+    //   // width: 400px;
+    //   clear: both;
+    //   float: right;
+    //
+    //   .white {
+    //     background-color: #FFFFFF;
+    //     height: 10px;
+    //     width: 20px;
+    //     margin: 0;
+    //     padding: 0;
+    //   }
+    //
+    //   .w-one {
+    //     float: left;
+    //   }
+    //
+    //   .w-two{
+    //     float: right;
+    //   }
+    //
+    // }
   }
 
 
@@ -162,25 +200,35 @@
     .text_box {
       margin: 491px 60px 0 0;
       width: 400px;
-      padding: 40px 40px 10px 40px;
+      padding: 40px 30px 0px 30px;
       float: right;
       background-color: #FFFFFF;
 
       .long_text {
         font-size: 15px;
-        margin: 0 0 2vw 0;
+        margin: 0 10px 18px 10px;
       }
 
       .tagline {
         font-size: 35px;
-        margin: 0;
+        margin: 0 10px 20px;
+      }
+
+      .pink_bar {
+        height: 10px;
+        width: 340px;
+        background-color: #eac4cd;
+        margin: 0px auto;
+        display: block;
+        clear: both;
+        text-align: center;
       }
     }
-
-    .white-things {
-      margin: 0 60px 0;
-      width: 400px;
-    }
+    //
+    // .white-things {
+    //   margin: 0 60px 0;
+    //   width: 400px;
+    // }
   }
 
   .sat_hero {
@@ -232,25 +280,28 @@
     .bread_crumb {
       padding: 1.7vw 0 0 3.3vw;
     }
-
+    //
     .text_box {
-      width: 33.4vw;
-      background-color: #FFFFFF;
-      margin: 42.4% 5vw 0 0;
-      float: right;
-      padding: 3vw 4vw 1vw 4vw;
-
-      .long_text {
-        margin: 0 0 2vw 0;
-        font-size: 1.2vw;
-      }
-
-      .tagline {
-        font-size: 2.8vw;
-        clear: both;
-        margin: 0;
-      }
+    //   width: 33.4vw;
+    //   background-color: #FFFFFF;
+      margin: 0 5vw 0 0;
+      margin-top: calc(100vw * 0.41);
+    //   float: right;
+    //   padding: 3vw 4vw 1vw 4vw;
+    //
+    //   .long_text {
+    //     margin: 0 0 2vw 0;
+    //     font-size: 1.2vw;
+    //   }
+    //
+    //   .tagline {
+    //     font-size: 2.8vw;
+    //     clear: both;
+    //     margin: 0;
+    //   }
     }
+
+
 
     .white-things {
       margin: 0 5vw 0;
