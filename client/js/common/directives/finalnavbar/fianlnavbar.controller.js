@@ -4,6 +4,7 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 	// search 
 	$("#callingsearchs1").click(function(){
 		$("#testingsearch1").removeClass('fade-out-effect-input').addClass("fade-in-effect-input").focus();
+		// $("#testingsearch1").css({"border-bottom":"1px"});
 
 		var text = $("#testingsearch1").val();
 		if (text == ""){
@@ -37,7 +38,8 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 	        && container.has(e.target).length === 0) // ... nor a descendant of the container
 	    {
 	        // container.addClass('fade-out-effect-input').removeClass('fade-in-effect-input');
-	        $("#testingsearch1").css({"opacity":"0"});
+	        // $("#testingsearch1").css({"opacity":"0"});
+	        // $("#testingsearch1").css({"border-bottom":"0px"});
 	    }
 	});
 
@@ -49,10 +51,14 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 		function fixnavbar() {
 			$(window).scroll(function () {
 			    if( $(window).scrollTop() > $('#fixed-nav-div').offset().top && !($('#fixed-nav-div').hasClass('posi'))) {
+			    	$(".shift-fix").css({"display":"block"});
 			    	$('#fixed-nav-div').addClass('posi');
 			    	$("#nav-menu-menu").css({"opacity": "1"});
+
+
 			    	// $("#nav-menu-menu").removeClass('fade-out-effect-logo').addClass('fade-in-effect-logo');
 			    } else if ( $(window).scrollTop() < 120 ){
+			    	$(".shift-fix").css({"display":"none"});
 			    	$('#fixed-nav-div').removeClass('posi');
 			    	$("#nav-menu-menu").css({"opacity": "0"});
 			    	// $("#nav-menu-menu").addClass('fade-out-effect-logo').removeClass('fade-in-effect-logo');

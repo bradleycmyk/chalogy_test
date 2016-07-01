@@ -68,7 +68,7 @@
   /*margin-left: 60px;*/
   margin-left: 40px;
 }
-
+/*
 .col-xs-31 {
   width: 20%;
   display: inline-block;
@@ -88,7 +88,7 @@
   width: 22%;
   display: inline-block;
 }
-
+*/
 ul {
   width: 100%;
   list-style-type: none;
@@ -115,15 +115,15 @@ li a {
   color: black;
 }
 
-li.dropdown > a{
+/*li.dropdown > a{
   opacity: 0.8;
   color: grey;
 }
-
+*/
 
 /* for dropdown */
 
-.dropdown {
+/*.dropdown {
   position: relative;
   z-index: 9999;
 }
@@ -174,7 +174,7 @@ ul.navbar li.dropdown {
     display: block;
     text-transform: uppercase;
 
-}
+}*/
 
 /*.dropdown-content a {
     color: black;
@@ -182,7 +182,7 @@ ul.navbar li.dropdown {
     display: block;
 }*/
 
-.dropdown-aurouscontent a:hover, .dropdown-content a:hover, .dropdown-innovationcontent a:hover, .dropdown-aboutcontent a:hover {background-color: white; z-index: 9999;}
+/*.dropdown-aurouscontent a:hover, .dropdown-content a:hover, .dropdown-innovationcontent a:hover, .dropdown-aboutcontent a:hover {background-color: white; z-index: 9999;}
 .dropdown-content a:hover {background-color: white; z-index: 9999;}
 
 .dropdown:hover .dropdown-aurouscontent,
@@ -208,7 +208,7 @@ ul.navbar li.dropdown {
 
 .dropdown:hover .dropbtn {
     z-index: 9999;
-}
+}*/
 
 /** dropdown end **/
 
@@ -251,11 +251,10 @@ input:focus{
 
 
 /* up arrow testing */
-a.up-arrow {
+/*a.up-arrow {
   display: inline-block;
   position: relative;
   background: white;
-  /*color: grey;*/
   opacity: 0.8;
   text-decoration: none;
   padding-top: 12px;
@@ -280,7 +279,6 @@ a.up-arrow-about {
   display: inline-block;
   position: relative;
   background: white;
-  /*color: grey;*/
   opacity: 0.8;
   text-decoration: none;
   padding-top: 12px;
@@ -291,7 +289,6 @@ a.up-arrow-about:after {
   display: block;
   position: absolute;
   left: 43px;
-  /*left: 43%;*/
   top: 0;
   bottom: 100%;
   width: 0;
@@ -300,7 +297,7 @@ a.up-arrow-about:after {
   border-top: 5px solid black;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-}
+}*/
 
 #aurous-bottom, #sat-skin-bottom {
   margin-bottom: 3px;
