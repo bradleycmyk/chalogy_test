@@ -148,8 +148,8 @@ div.first-page-fade-in {
 }
 
 .down-arrow {
-  width: 30px;
-  height: 15px;
+  width: 76px;
+  height: 39px;
   margin-top: 20px;
 }
 
@@ -261,6 +261,77 @@ div.first-page-fade-in {
     height:auto;
     min-height:100%;
 }
+
+
+
+/*** fade in and out ***/
+#fade-in-test {
+  opacity: 0;
+}
+
+#second-content, #third-content, #fourth-content {
+  opacity: 0;
+}
+
+div.fade-in-effect-test {
+    position: relative;
+    -webkit-animation: fadeintest 3s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation: fadeintest 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeintest {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeintest {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+div.fade-out-effect-test {
+    position: relative;
+    -webkit-animation: fadeouttest 2s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+    animation: fadeouttest 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeouttest {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fadeouttest {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -3,7 +3,7 @@ app.controller('searchController', function($scope, ProductFactory, $state, $sta
 	var text = $stateParams.text;
 	var keyword = $stateParams.text;
 
-	$scope.alertmsg = "WE ARE SORRY. There are no items to match your search, please rephrase and try again.";
+	$scope.alertmsg = "We are sorry. There are no items to match your search, please rephrase and try again.";
 	$scope.suggestion = ["Make sure all words are spelled correctly.", "Try different keywords.", "Try more general keywords"];
 	$scope.imgurl = "search-again.jpg";
 
