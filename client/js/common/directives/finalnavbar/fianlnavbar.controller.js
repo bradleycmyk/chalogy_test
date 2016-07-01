@@ -1,7 +1,7 @@
 'use strict'
 app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $state, $stateParams) {
 
-	// search 
+	// search
 	$("#callingsearchs1").click(function(){
 		$("#testingsearch1").removeClass('fade-out-effect-input').addClass("fade-in-effect-input").focus();
 		// $("#testingsearch1").css({"border-bottom":"1px"});
@@ -15,6 +15,10 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 		$("#testingsearch1").val("");
 
 	});
+
+	$("#testingsearch1").blur(function() {
+		$("#testingsearch1").addClass('fade-out-effect-input').removeClass("fade-in-effect-input");
+	})
 
 	$(document).keypress(function(event) {
 	    var keycode = (event.keyCode ? event.keyCode : event.which);
@@ -43,10 +47,10 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 	    }
 	});
 
-	// end of search 
+	// end of search
 
 	$(document).ready(function(){
-		
+
 		// fixed navbar after scrolling !!
 		function fixnavbar() {
 			$(window).scroll(function () {
@@ -64,14 +68,10 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 			    	// $("#nav-menu-menu").addClass('fade-out-effect-logo').removeClass('fade-in-effect-logo');
 			    }
 			});
-		} 
+		}
 		$(document).on('scroll', fixnavbar);
 
-		
+
 	});
-	
+
 });
-
-
-
-
