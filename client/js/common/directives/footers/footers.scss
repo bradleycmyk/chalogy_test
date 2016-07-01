@@ -1,5 +1,6 @@
 $left-right: 40px;
-$top-bottom: 15px;
+$top: 20px;
+$bottom: 10px;
 
 footer:before {
   content: '';
@@ -19,7 +20,7 @@ footer {
 
   .footer-top {
     .left {
-      // margin: $top-bottom 0 $top-bottom $left-right;
+      // margin: $top 0 $top $left-right;
 
       .icons {
         a {
@@ -35,7 +36,7 @@ footer {
     }
 
     .right {
-      // margin: $top-bottom $left-right $top-bottom 0;
+      // margin: $top $left-right $top 0;
 
       form {
         // margin-top: 3px;
@@ -132,24 +133,28 @@ footer {
   }
   .footer-top {
     .left {
-      margin: $top-bottom 0 $top-bottom $left-right;
+      margin: $top 0 $bottom $left-right;
     }
 
     .right {
-      margin: $top-bottom $left-right $top-bottom 0;
+      margin: $top $left-right $bottom 0;
     }
   }
 
 
   .footer-bottom {
     .left {
-      margin: 0 0 $top-bottom $left-right;
+      margin: 0 0 20px $left-right;
     }
 
     .right {
-      margin: 0 $left-right $top-bottom 0;
+      margin: 0 $left-right 20px 0;
     }
   }
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 0;
 }
 
 
