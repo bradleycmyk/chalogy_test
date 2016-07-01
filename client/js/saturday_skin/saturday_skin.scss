@@ -8,7 +8,6 @@
 
   .sat_hero {
     .bread_crumb {
-      padding: 2em;
       display: inline-block;
       vertical-align: top;
 
@@ -40,7 +39,6 @@
             margin: 5px 0;
             width: 54%;
             border-top: 8px solid #000000;
-            // width: 140px;
           }
         }
       }
@@ -52,10 +50,6 @@
     }
 
     .text_box {
-      p {
-        float: right;
-        margin: 0 0 0 0;
-      }
 
       .long_text {
         font-family: 'Work Sans';
@@ -75,10 +69,10 @@
     position: relative;
 
     .white-things {
+      // margin: 0 60px 0;
+      // width: 400px;
       clear: both;
       float: right;
-      width: 400px;
-      margin: 0 60px 0;
 
       .white {
         background-color: #FFFFFF;
@@ -151,6 +145,10 @@
     width: 1200px;
     margin: 0 auto;
 
+    .bread_crumb {
+      padding: 20px 0 0 40px;
+    }
+
     // .dial {
     //   padding: 30px 0 0 60px;
     //   display: inline-block;
@@ -163,26 +161,25 @@
 
     .text_box {
       margin: 491px 60px 0 0;
+      width: 400px;
+      padding: 40px 40px 10px 40px;
       float: right;
       background-color: #FFFFFF;
 
-      p {
-        width:  400px;
-        padding: 40px 40px 20px 40px;
-        float: right;
-        margin: 0 0 0 0;
-      }
-
       .long_text {
         font-size: 15px;
+        margin: 0 0 2vw 0;
       }
 
       .tagline {
         font-size: 35px;
-        clear: both;
-        padding: 0 40px 20px 40px;
         margin: 0;
       }
+    }
+
+    .white-things {
+      margin: 0 60px 0;
+      width: 400px;
     }
   }
 
@@ -232,29 +229,32 @@
       }
     }
 
-    .text_box {
-      margin: 42% 0 0 0;
-      float: right;
+    .bread_crumb {
+      padding: 1.7vw 0 0 3.3vw;
+    }
 
-      p {
-        width:  35vw;
-        padding: 3em 3em 2em 2vw;
-        float: right;
-        margin: 0 0 0 0;
-      }
+    .text_box {
+      width: 33.4vw;
+      background-color: #FFFFFF;
+      margin: 42.4% 5vw 0 0;
+      float: right;
+      padding: 3vw 4vw 1vw 4vw;
 
       .long_text {
-        // font-family: WorkSans;
+        margin: 0 0 2vw 0;
         font-size: 1.2vw;
       }
 
       .tagline {
-        // font-family: MillerBanner-Semibold;
         font-size: 2.8vw;
         clear: both;
-        padding: 1.5vw 0 0 4.7vw;
         margin: 0;
       }
+    }
+
+    .white-things {
+      margin: 0 5vw 0;
+      width: 33.4vw;
     }
   }
 
