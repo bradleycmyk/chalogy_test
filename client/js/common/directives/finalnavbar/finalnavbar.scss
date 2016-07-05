@@ -129,7 +129,7 @@ input:focus{
     height: 15px;
     width: 15px;
     padding-left: 2px;
-    margin-right: 30px;
+    margin-right: 40px;
 }
   
 ul.nav-menu {
@@ -233,6 +233,10 @@ input.fade-in-effect-input {
     to {opacity: 1;}
 }
 
+
+.menu-mobile1, .mobile-logo1, .third-part-mobile {
+  display: none;
+}
 
 /* hahahahahahahaha end nav **/
 
@@ -367,7 +371,8 @@ a.up-arrow:after {
   content: '';
   display: block;
   position: absolute;
-  left: 48px;
+  left: 47px;
+  /*left: 48px;*/
   top: 0;
   bottom: 100%;
   width: 0;
@@ -392,7 +397,7 @@ a.up-arrow-about:after {
   content: '';
   display: block;
   position: absolute;
-  left: 43px;
+  left: 44px;
   /*left: 43%;*/
   top: 0;
   bottom: 100%;
@@ -402,6 +407,21 @@ a.up-arrow-about:after {
   border-top: 5px solid black;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
+}
+
+/* indicate current page in navigation */
+.selected {
+  color: black !important;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.show-popup {
+  display: block !important;
+}
+
+.hide-popup {
+  display: none !important;
 }
 
 
@@ -424,12 +444,120 @@ a.up-arrow-about:after {
     margin-right: 15px;
 }
 
-}
-
-@media screen and (max-width: 964px){ 
-
 .second-part {
     width: 420px;
 }
+
+}
+
+@media screen and (max-width: 750px){ 
+
+#scrollable-div, #fixed-nav-div {
+  display: none;
+}
+
+.mobile-menu {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 9999;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.menu-mobile1 {
+  position: relative;
+  display: inline-block;
+  padding-left: 4px;
+  padding-top: 4px;
+  width: 80px;
+  height: 60px;
+}
+
+.popup-btn1 {
+  background-color: white;
+  width: 45px;
+  height: 40px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  background-image: url("menu-22.png");
+  background-repeat: no-repeat;
+}
+
+.popup-btn1:hover, .popup-btn1:focus {
+    background-color: white;
+    outline: none;
+}
+
+.popup-content1 {
+  display: none;
+  position: absolute;
+  margin-top: 18px;
+  background-color: rgba(25, 28, 59, 0.9);
+  /*min-width: 300px;*/
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  z-index: 9999;
+  text-align: center;
+}
+
+.popup-content1 a {
+  color: rgba(173, 216, 230, 0.9);
+  font-family: WorkSans;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 20px 16px;
+  text-decoration: none;
+  border-top: 1px solid rgba(173, 216, 230, 0.4);
+  display: block;
+}
+
+.popup-content-search {
+  display: none;
+  position: absolute;
+  margin-top: 24px;
+  background-color: rgba(25, 28, 59, 0.9);
+  width: 100vw;
+  height: 160px;
+  /*overflow: auto;*/
+  z-index: 999;
+  text-align: center;
+
+  color: rgba(173, 216, 230, 0.9);
+  font-family: WorkSans;
+  font-weight: 700;
+}
+
+
+.menu-mobile1 a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+.mobile-logo1 {
+  display: block;
+  /*margin-left: 42%;*/
+  margin: 0 auto;
+  width: 118px;
+}
+
+.mobile-menu {
+  text-align: center;
+}
+
+.third-part-mobile {
+  display: inline-block;
+  float: right;
+  height: 30px;
+  width: 40px;
+  background-color: white;
+  margin-top: -30px;
+}
+
+.close-button {
+  z-index: 9999;
+}
+
 
 }

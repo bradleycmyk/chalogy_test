@@ -304,15 +304,13 @@ a.up-arrow-about:after {
 }
 
 
-// bold current page in navbar
-.selected {
-  /*font-family: sans-serif;*/
+// indicate current page in navbar
+/*.selected {
   color: black !important;
   display: inline-block;
   pointer-events: none;
-  /*font-weight: 600 !important;*/
 }
-
+*/
 
 // fade out the rest
 .notactive {
@@ -393,7 +391,7 @@ a.up-arrow-about:after {
     margin: 0 auto !important;
   }
 
-/*  .middle-nav {
+  .middle-nav {
     display: none;
   }
 
@@ -404,7 +402,7 @@ a.up-arrow-about:after {
       padding-left: 10px;
       width: 80px;
       height: 60px;
-  }*/
+  }
 
   .popup-btn {
     background-color: white;
