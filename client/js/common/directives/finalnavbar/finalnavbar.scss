@@ -443,10 +443,19 @@ a.up-arrow-about:after {
 
 }
 
-@media screen and (max-width: 740px){ 
+@media screen and (max-width: 750px){ 
 
 #scrollable-div, #fixed-nav-div {
   display: none;
+}
+
+.mobile-menu {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 9999;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .menu-mobile1 {

@@ -59,18 +59,15 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 			    	$('#fixed-nav-div').addClass('posi');
 			    	$("#nav-menu-menu").css({"opacity": "1"});
 
-
-			    	// $("#nav-menu-menu").removeClass('fade-out-effect-logo').addClass('fade-in-effect-logo');
 			    } else if ( $(window).scrollTop() < 120 ){
 			    	$(".shift-fix").css({"display":"none"});
 			    	$('#fixed-nav-div').removeClass('posi');
 			    	$("#nav-menu-menu").css({"opacity": "0"});
-			    	// $("#nav-menu-menu").addClass('fade-out-effect-logo').removeClass('fade-in-effect-logo');
 			    }
 			});
 		}
-		$(document).on('scroll', fixnavbar);
 
+		$(document).on('scroll', fixnavbar);
 
 	});
 
