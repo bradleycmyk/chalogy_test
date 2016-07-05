@@ -91,9 +91,9 @@
   }
 
   .sat_hero {
-    background-image: url('ss_main.jpg');
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat;
+    // background-image: url('ss_main.jpg');
+    // background-size: 100% 100% !important;
+    // background-repeat: no-repeat;
     position: relative;
 
     // .pink_bar {
@@ -149,15 +149,15 @@
 
       a {
         // font-family: WorkSans;
+        width: 200px;
+        // margin: 20px 0 0;
+        padding: 10px 18px;
+        font-size: 0.9em;
         font-weight: bold;
+        letter-spacing: 1px;
         color: rgb(126, 126, 126);
         border: 10px solid #E5E5E5;
-        padding: 10px 18px;
         display: block;
-        width: 200px;
-        margin: 20px 0 0;
-        font-size: 0.9em;
-        letter-spacing: 1px;
 
         &:hover {
           border-color: rgb(0, 209, 165);
@@ -182,10 +182,17 @@
   .sat_hero {
     width: 1200px;
     margin: 0 auto;
+    background-image: url('ss_main.jpg');
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
 
     .bread_crumb {
       margin: 15px 0 0;
       padding: 0 0 0 40px;
+    }
+
+    .mobile {
+      display: none;
     }
 
     // .dial {
@@ -251,6 +258,10 @@
       p {
         font-size: 15px;
       }
+
+      a {
+        margin: 20px 0 0;
+      }
     }
 
     .rightie {
@@ -264,9 +275,16 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and(min-width: 600px) and (max-width: 1199px) {
   .sat_hero {
     width: 100%;
+    background-image: url('ss_main.jpg');
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+
+    .mobile {
+      display: none;
+    }
 
     .dial {
       padding: 1.6% 0 0 2%;
@@ -331,6 +349,12 @@
       p {
         font-size: 1.3vw;
       }
+
+
+      a {
+        width: 200px;
+        margin: 20px 0 0;
+      }
     }
 
     .rightie {
@@ -338,6 +362,55 @@
 
       .three_drops {
         width: 32vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .sat_hero {
+    height: auto;
+    background: none;
+    width: 100%;
+
+    .mobile {
+      display: block;
+      img {
+        width: 100vw;
+      }
+    }
+  }
+
+  main {
+    .leftie {
+      display: block;
+      width: 100%;
+      padding: 20px;
+
+      h1 {
+        width: 100%;
+        font-size: 9.1vw;
+      }
+
+      p {
+        margin: 20px 0;
+        font-size: 15px;
+      }
+
+      a {
+        margin: 20px auto 0;
+      }
+
+    }
+
+    .rightie {
+      display: block;
+      width: 100%;
+
+      .three_drops {
+        width: 250px;
+        display: block;
+        margin: 20px auto;
       }
     }
   }
