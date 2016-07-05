@@ -234,6 +234,10 @@ input.fade-in-effect-input {
 }
 
 
+.menu-mobile1, .mobile-logo1 {
+  display: none;
+}
+
 /* hahahahahahahaha end nav **/
 
 .shift-fix {
@@ -405,6 +409,14 @@ a.up-arrow-about:after {
   border-right: 5px solid transparent;
 }
 
+/* indicate current page in navigation */
+.selected {
+  color: black !important;
+  display: inline-block;
+  pointer-events: none;
+}
+
+
 
 @media screen and (max-width: 964px){ 
 
@@ -425,12 +437,79 @@ a.up-arrow-about:after {
     margin-right: 15px;
 }
 
-}
-
-@media screen and (max-width: 964px){ 
-
 .second-part {
     width: 420px;
+}
+
+}
+
+@media screen and (max-width: 740px){ 
+
+#scrollable-div, #fixed-nav-div {
+  display: none;
+}
+
+.menu-mobile1 {
+    position: relative;
+    display: inline-block;
+    padding-left: 10px;
+    width: 80px;
+    height: 60px;
+}
+
+.popup-btn1 {
+  background-color: white;
+  width: 45px;
+  height: 40px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  background-image: url("menu-22.png");
+  background-repeat: no-repeat;
+}
+
+.popup-btn1:hover, .popup-btn1:focus {
+    background-color: white;
+    outline: none;
+}
+
+.popup-content1 {
+    display: none;
+    position: absolute;
+    margin-top: 13px;
+    background-color: rgba(25, 28, 59, 0.9);
+    /*min-width: 300px;*/
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    z-index: 9999;
+    text-align: center;
+}
+
+.popup-content1 a {
+    color: rgba(173, 216, 230, 0.9);
+    font-family: WorkSans;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 20px 16px;
+    text-decoration: none;
+    border-top: 1px solid rgba(173, 216, 230, 0.4);
+    display: block;
+}
+
+.menu-mobile1 a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+.mobile-logo1 {
+  display: block;
+  /*margin-left: 42%;*/
+  margin: 0 auto;
+  width: 118px;
+}
+
+.mobile-menu {
+  text-align: center;
 }
 
 }
