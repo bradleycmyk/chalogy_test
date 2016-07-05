@@ -248,6 +248,7 @@ div.first-page-fade-in {
 
   &.lax-four {
     background-image: url('about/chaum/chaum_4.jpg');
+    /*background-image: url('http://images.apple.com/v/music/b/images/heros/connect-small.gif');*/
   }
 
   // &.lax-five {
@@ -255,7 +256,11 @@ div.first-page-fade-in {
   // }
 }
 
-
+/*#fourth-sec {
+  background-color: rgba(0, 0, 255, 0.8);
+  z-index: 9999;
+}
+*/
 .fullscreen.overflow,
 .fullscreen.overflow .content-a {
     height:auto;
@@ -273,6 +278,14 @@ div.first-page-fade-in {
   opacity: 0;
 }
 
+#second-content, #third-content {
+  top: 180px;
+}
+
+#fourth-content {
+  top: 132px;
+}
+
 div.fade-in-effect-test {
     position: relative;
     -webkit-animation: fadeintest 3s; /* Chrome, Safari, Opera */
@@ -284,13 +297,13 @@ div.fade-in-effect-test {
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes fadeintest {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {color: white; opacity: 0;}
+    to {color: red; opacity: 1;}
 }
 
 @keyframes fadeintest {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {color: white; opacity: 0;}
+    to {color: white; opacity: 1;}
 }
 
 div.fade-out-effect-test {
