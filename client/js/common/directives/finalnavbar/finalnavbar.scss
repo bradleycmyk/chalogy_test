@@ -234,7 +234,7 @@ input.fade-in-effect-input {
 }
 
 
-.menu-mobile1, .mobile-logo1 {
+.menu-mobile1, .mobile-logo1, .third-part-mobile {
   display: none;
 }
 
@@ -416,6 +416,13 @@ a.up-arrow-about:after {
   pointer-events: none;
 }
 
+.show-popup {
+  display: block !important;
+}
+
+.hide-popup {
+  display: none !important;
+}
 
 
 @media screen and (max-width: 964px){ 
@@ -483,28 +490,45 @@ a.up-arrow-about:after {
 }
 
 .popup-content1 {
-    display: none;
-    position: absolute;
-    margin-top: 13px;
-    background-color: rgba(25, 28, 59, 0.9);
-    /*min-width: 300px;*/
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
-    z-index: 9999;
-    text-align: center;
+  display: none;
+  position: absolute;
+  margin-top: 18px;
+  background-color: rgba(25, 28, 59, 0.9);
+  /*min-width: 300px;*/
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  z-index: 9999;
+  text-align: center;
 }
 
 .popup-content1 a {
-    color: rgba(173, 216, 230, 0.9);
-    font-family: WorkSans;
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding: 20px 16px;
-    text-decoration: none;
-    border-top: 1px solid rgba(173, 216, 230, 0.4);
-    display: block;
+  color: rgba(173, 216, 230, 0.9);
+  font-family: WorkSans;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 20px 16px;
+  text-decoration: none;
+  border-top: 1px solid rgba(173, 216, 230, 0.4);
+  display: block;
 }
+
+.popup-content-search {
+  display: none;
+  position: absolute;
+  margin-top: 24px;
+  background-color: rgba(25, 28, 59, 0.9);
+  width: 100vw;
+  height: 160px;
+  /*overflow: auto;*/
+  z-index: 999;
+  text-align: center;
+
+  color: rgba(173, 216, 230, 0.9);
+  font-family: WorkSans;
+  font-weight: 700;
+}
+
 
 .menu-mobile1 a:hover {background-color: #f1f1f1}
 
@@ -520,5 +544,19 @@ a.up-arrow-about:after {
 .mobile-menu {
   text-align: center;
 }
+
+.third-part-mobile {
+  display: inline-block;
+  float: right;
+  height: 30px;
+  width: 40px;
+  background-color: white;
+  margin-top: -30px;
+}
+
+.close-button {
+  z-index: 9999;
+}
+
 
 }

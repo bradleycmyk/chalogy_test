@@ -3,6 +3,11 @@
 	margin-left: 25px;
 }
 
+#search-container {
+	width:1142px; 
+	margin:0 auto;
+}
+
 .testing {
 	border: none;
 	border-bottom: 2px solid;
@@ -139,4 +144,21 @@ input:focus{
 			margin: 10px 0 0 0;
 		}
 	}
+}
+
+
+@media screen and (max-width: 1140px){ 
+
+#search-container {
+	width: 95%; 
+	margin:0 auto;
+}
+
+}
+
+
+@media screen and (max-width: 750px) {
+.search-result-title {
+	margin-top: 40px;
+}
 }

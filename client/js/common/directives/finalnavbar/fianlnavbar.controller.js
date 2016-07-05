@@ -69,6 +69,23 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 
 		$(document).on('scroll', fixnavbar);
 
+
+		$(".third-part-mobile").click(function(e){
+			e.preventDefault();
+			$("#search-popup").toggleClass('show-popup');
+			$('#mobile-search').focus();
+		});
+
+		$(".close-button").click(function(e){
+			e.preventDefault();
+			console.log("getting clicks????");
+			// $(this).parent().css("display", "none");
+			// $("#search-popup").removeClass("show-popup");
+			$(".popup-content-search").hide();
+		});
+
+
+	
 	});
 
 });
