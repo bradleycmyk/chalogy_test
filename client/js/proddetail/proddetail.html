@@ -112,10 +112,11 @@
 		</div>
 
 		<!-- recommendations -->
-		<div class="panel_fluid" ng-show="tab === 3">
+		<div class="panel" ng-show="tab === 3">
 	      <div class="recommendations" ng-repeat="rec in product.recs">
 	          <a href="/saturday-skin/products/{{ rec.name }}">
 	            <img class="detail_photo" ng-src="{{ rec.img }}" width="185px;" alt="{{ rec.name }}" />
+	            <p id="prodname-recommendation">{{ rec.name}}</p>
 	          </a>
 	      </div>
 

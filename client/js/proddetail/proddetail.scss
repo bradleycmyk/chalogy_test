@@ -100,19 +100,24 @@
 }
 
 .recommendations {
-	margin-left: 1%;
+  margin-left: 5%;
   margin-right: 1%;
   margin-top: 20px;
   margin-bottom: 3vh;
-  width: 18%;
+  width: 42%;
   position: relative;
   display: inline-block;
   background-color: white;
-  padding-left: 3%;
+  padding-left: 4%;
   padding-right: 3%;
     &:hover {
         box-shadow: 0 0 4px #fff;
     }
+}
+
+#prodname-recommendation {
+	padding-left: 25%;
+    padding-top: 2%;
 }
 
 .product-title, .product-description, .how-to-use {
@@ -193,8 +198,9 @@
 
 @media only screen and (max-width: 769px) {
 	.prodimg {
-		width: 150px;
-		margin: 0 auto;
+	    width: 250px;
+	    margin: 0 auto;
+	    margin-top: 35px;
 	}
 
 	.prod-dsc {
