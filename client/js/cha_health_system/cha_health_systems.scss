@@ -100,11 +100,12 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
   .health-wrapper {
     width: 1200px;
     margin: 0 auto;
   }
+
   .chs {
     .chs_hero {
       background-size: 1120px auto;
@@ -121,6 +122,91 @@
       h1 {
         font-size: 70px;
         margin: 20px 0 0 0;
+      }
+    }
+  }
+
+  .chs-hepts {
+    position: absolute;
+    z-index: 100;
+    display: block;
+  }
+
+  .hept-chs-one {
+    top: 695px;
+    right: 0;
+  }
+
+  .hept-chs-two {
+    top: 900px;
+    left: 0px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+  .health-wrapper {
+    width: 98vw;
+    margin: 0 auto;
+  }
+
+  .chs {
+    .chs_hero {
+      background-size: 1120px auto;
+      background-position: -217px -237px;
+      width: 77%;
+      margin: 70px auto 0;
+      padding: 9vw 0;
+
+      h4 {
+        font-size: 17px;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 70px;
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+
+  .chs-text {
+    .chs-text-top {
+      img {
+        width: 50.5vw;
+      }
+
+      .top-right {
+        width: 34.2vw;
+        margin: 40px 0 0 35px;
+
+        p.emb {
+          font-size: 2.2vw;
+          line-height: 2.8vw;
+        }
+
+        p:not(.emb) {
+          font-size: 1.25vw;
+        }
+      }
+    }
+
+    .chs-text-bottom {
+      width: 72vw;
+
+      .bottom-right {
+        width: 30.5vw;
+        font-size: 1.25vw;
+        margin: 0 40px 0 0;
+      }
+
+      #myCarousel {
+        width: 34vw;
+        margin: 0;
+        float: none;
+
+        .carousel-indicators.chs-indicators {
+          margin-left: -38%;
+        }
       }
     }
   }
