@@ -200,7 +200,7 @@
 	}
 
 	.header-container {
-		width: 1200px;
+		width: 100%;
 		margin: 0 auto;
 		overflow: auto;
 
@@ -753,43 +753,49 @@ a.video-button1 {
 
 @media screen and (max-width: 1010px) {
 
+.hero {
+  display: none !important;
+}
+
 .inn {
 	width: 756px;
 }
 
 .inn .inn-top {
-    width: 756px;
+  width: 756px;
 }
 
 .inn .inn-top img {
-    width: 345px;
-    vertical-align: top;
+  width: 345px;
+  vertical-align: top;
 }
 
 .inn .inn-top .inn-top-right {
-    width: 370px;
+  width: 370px;
 }
 
 .inn .inn-top .inn-top-right .black-box {
-    background-color: #000000;
-    padding: 40px 0 40px 20px;
-    margin: 55px 0 0;
+  background-color: #000000;
+  padding: 40px 0 40px 20px;
+  margin: 55px 0 0;
 }
 
 .sg-banner .header-container {
-    width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: auto;
 }
 
 .inn .inn-bottom .inn-bottom-bottom img {
-    vertical-align: top;
-    width: 340px;
+  vertical-align: top;
+  width: 340px;
 }
 
 .inn .inn-bottom .inn-bottom-bottom .inn-bottom-right {
-    margin: 15px 0 0 25px;
-    width: 330px;
-    display: inline-block;
-    position: relative;
+  margin: 15px 0 0 25px;
+  width: 330px;
+  display: inline-block;
+  position: relative;
 }
 
 }
