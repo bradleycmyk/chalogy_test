@@ -162,7 +162,117 @@
 //   left: 0px;
 // }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+  .chaum-wrapper {
+    width: 98vw;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 8.5vw;
+      margin: 50px 0;
+    }
+
+    .pool-img {
+      width: 60vw;
+    }
+
+
+    .pool-p {
+      display: inline-block;
+      width: 27vw;
+      margin: 0 0 0 35px;
+      vertical-align: top;
+
+      h4 {
+        font-size: 2.2vw;
+
+        &::after {
+          width: 65px;
+          border-top: 5px solid #000000;
+          margin: 20px 0;
+        }
+      }
+
+      p {
+        font-size: 1.2vw;
+      }
+    }
+
+    .quote {
+      font-size: 2.5vw;
+      width: 67vw;
+      margin: 50px auto 0;
+    }
+
+    #myCarousel {
+      width: 71vw;
+      margin: 30px 0 25px 15vw;
+
+      .carousel-inner {
+        width: 66.7vw;
+        height: auto;
+
+        .cara_one, .cara_two {
+          width: 66.7vw;
+          height: auto;
+          vertical-align: middle;
+
+          img {
+            width: 797px;
+            height: 444px;
+          }
+        }
+      }
+    }
+
+    .lower-ps {
+      width: 63vw;
+      margin: 30px auto;
+
+      .left-ps {
+        margin: 0 2% 0 0;
+      }
+
+      .left-ps, .right-ps {
+        width: 48%;
+        display: inline-block;
+        vertical-align: top;
+
+        p {
+          font-size: 1.3vw;
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+  }
+
+  .chaum-banner {
+    height: auto;
+
+    h3 {
+      font-size: 3vw;
+      margin: 10vw 0;
+    }
+  }
+
+  .hepts {
+    display: block;
+    position: absolute;
+    z-index: 100;
+  }
+
+  .hept-chaum-one {
+    top: 1100px;
+    right: 0;
+  }
+
+  .hept-chaum-two {
+    top: 1410px;
+    left: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .chaum-wrapper {
     width: 1200px;
     margin: 0 auto;
@@ -261,6 +371,7 @@
     left: 0px;
   }
 }
+
 
 @media screen and (max-width: 599px) {
   .chaum-wrapper {
