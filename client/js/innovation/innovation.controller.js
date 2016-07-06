@@ -195,7 +195,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
           $('.line-in-video').css({ "opacity":"1"});
 
       $.when(changevideo() ).done(function(){
-        $('#videosource1').attr('src', 'video/cha_01.mp4');
+        $('#videosource1').attr('src', 'video/cha7es_01.mp4');
         $("#vid1").fadeIn(1500);
         $("#vid1").get(0).load();
         $("#vid1").get(0).play();
@@ -223,7 +223,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
 
       $('#image-div').css({"display":"none"});
       $.when(changevideo() ).done(function(){
-        $('#videosource1').attr('src', 'video/cha_02.mp4');
+        $('#videosource1').attr('src', 'video/cha7es_02.mp4');
         $("#vid1").fadeIn(1500);
         $("#vid1").get(0).load();
         $("#vid1").get(0).play();
@@ -251,7 +251,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       
       $('#image-div').css({"display":"none"});
       $.when(changevideo() ).done(function(){
-        $('#videosource1').attr('src', 'video/cha_03.mp4');
+        $('#videosource1').attr('src', 'video/cha7es_03.mp4');
         $("#vid1").fadeIn(1500);
         $("#vid1").get(0).load();
         $("#vid1").get(0).play();
@@ -279,7 +279,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
 
       $('#image-div').css({"display":"none"});
       $.when(changevideo() ).done(function(){
-        $('#videosource1').attr('src', 'video/cha7es_4th.mp4');
+        $('#videosource1').attr('src', 'video/cha7es_04.mp4');
         $("#vid1").fadeIn(1500);
         $("#vid1").get(0).load();
         $("#vid1").get(0).play();
@@ -306,7 +306,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
 
       $('#image-div').css({"display":"none"});
         $.when(changevideo() ).done(function(){
-          $('#videosource1').attr('src', 'video/cha_05.mp4');
+          $('#videosource1').attr('src', 'video/cha7es_05.mp4');
           $("#vid1").fadeIn(1500);
           $("#vid1").get(0).load();
           $("#vid1").get(0).play();
@@ -327,7 +327,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       
       $('#image-div').css({"display":"none"});
         $.when(changevideo() ).done(function(){
-          $('#videosource1').attr('src', 'video/cha7es_6th.mp4');
+          $('#videosource1').attr('src', 'video/cha7es_06.mp4');
           $("#vid1").fadeIn(1500);
           $("#vid1").get(0).load();
           $("#vid1").get(0).play();
@@ -354,7 +354,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
 
       $('#image-div').css({"display":"none"});
         $.when(changevideo() ).done(function(){
-          $('#videosource1').attr('src', 'video/cha_07.mp4');
+          $('#videosource1').attr('src', 'video/cha7es_07.mp4');
           $("#vid1").fadeIn(1500);
           $("#vid1").get(0).load();
           $("#vid1").get(0).play();
