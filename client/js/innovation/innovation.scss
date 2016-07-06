@@ -200,7 +200,7 @@
 	}
 
 	.header-container {
-		width: 1200px;
+		width: 100%;
 		margin: 0 auto;
 		overflow: auto;
 
@@ -514,7 +514,7 @@ a.video-button1 {
 }
 
 #video-text-1-1, #video-text-2-2, #video-text-3-3, #video-text-4-4, #video-text-5-5, #video-text-6-6, #video-text-7-7, #video-text-8-8 {
-    opacity: 0;    
+    opacity: 0;
     font-family: MillerBanner;
     font-size: 20px;
     font-style: italic;
@@ -778,6 +778,14 @@ a.video-button1 {
 
 .sg-banner .header-container {
     width: 100%;
+}
+
+.inn {
+	width: 100%;
+}
+
+.inn .inn-bottom .inn-bottom-bottom {
+	width: 93%;
 }
 
 .inn .inn-bottom .inn-bottom-bottom img {
