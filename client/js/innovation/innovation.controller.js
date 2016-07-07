@@ -1,11 +1,22 @@
-'use strict'
-
 app.controller('InnovationController', function($scope, $http, $window, $location) {
   $scope.isActive = function (route) {
     return route == $window.location.href.split("5959/")[1];
   };
   
   $(document).ready(function(){
+
+    // parallax
+    function parallax(page, speed, top) {
+      var scrolled = $(window).scrollTop();
+      $('.hept-' + page).css('top', (scrolled * speed) + top + 'px');
+    }
+
+    $(window).scroll(function(e) {
+      parallax('inn-one', 0.7, 283);
+      parallax('inn-two', 0.7, 660);
+      parallax('inn-three', 0.7, 790);
+      parallax('inn-four', 0.5, 1085);
+    });
 
     // video plays when it's visible
     var media = $('video').not("[autoplay='autoplay']");

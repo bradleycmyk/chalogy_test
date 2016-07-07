@@ -15,8 +15,6 @@ app.controller('MainController', function($scope, $rootScope, $window, $state, $
 			// console.log("something is wrong");
 		}
 	}
-
-	
 })
 
 app.config(function ($urlRouterProvider, $locationProvider) {
