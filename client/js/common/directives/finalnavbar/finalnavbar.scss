@@ -413,7 +413,7 @@ a.up-arrow-about:after {
 .selected {
   color: black !important;
   display: inline-block;
-  pointer-events: none;
+  /*pointer-events: none;*/ /*prevent click*/ 
 }
 
 .show-popup {
