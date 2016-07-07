@@ -95,6 +95,7 @@
     }
 
     .carousel-indicators.chaum-indicators {
+      width: 77px;
       bottom: -25px !important;
       // margin-left: 9.3%;
     }
@@ -222,6 +223,11 @@
             height: 444px;
           }
         }
+
+      }
+
+      .carousel-indicators {
+        margin-left: 29%;
       }
     }
 
@@ -323,6 +329,11 @@
             height: 444px;
           }
         }
+
+      }
+
+      .carousel-indicators {
+        margin-left: 36%;
       }
     }
 
@@ -420,6 +431,11 @@
       .carousel-inner .cara_two img {
         width: 100%;
         height: calc(100vw / 1.80);
+      }
+
+      .carousel-indicators {
+        right: 20px;
+        left: inherit;
       }
     }
 
