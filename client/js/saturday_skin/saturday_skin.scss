@@ -51,24 +51,24 @@
 
     .text_box {
       // margin: 491px 60px 0 0;
-      width: 400px;
-      padding: 40px 30px 0px 30px;
-      float: right;
+      // width: 400px;
+      // padding: 40px 30px 0px 30px;
+      // float: right;
       background-color: #FFFFFF;
 
-      .long_text {
-        font-size: 15px;
-        margin: 0 10px 18px 10px;
-      }
-
-      .tagline {
-        font-size: 35px;
-        margin: 0 10px 20px;
-      }
+      // .long_text {
+      //   // font-size: 15px;
+      //   // margin: 0 10px 18px 10px;
+      // }
+      //
+      // .tagline {
+      //   font-size: 35px;
+      //   margin: 0 10px 20px;
+      // }
 
       .pink_bar {
         height: 10px;
-        width: 340px;
+        // width: 340px;
         background-color: #eac4cd;
         margin: 0px auto;
         display: block;
@@ -134,7 +134,7 @@
 
   main {
     .leftie {
-      display: inline-block;
+      // display: inline-block;
       vertical-align: top;
       position: relative;
       z-index: 2;
@@ -249,7 +249,7 @@
 
     .leftie {
       width: 580px;
-
+      display: inline-block;
 
       h1 {
         font-size: 65px;
@@ -281,6 +281,8 @@
     background-image: url('ss_main.jpg');
     background-size: 100% 100% !important;
     background-repeat: no-repeat;
+    height: 66vw;
+    position: relative;
 
     .mobile {
       display: none;
@@ -301,26 +303,24 @@
     }
     //
     .text_box {
-    //   width: 33.4vw;
+      width: 33.4vw;
     //   background-color: #FFFFFF;
       margin: 0 5vw 0 0;
       margin-top: calc(100vw * 0.41);
-    //   float: right;
-    //   padding: 3vw 4vw 1vw 4vw;
-    //
-    //   .long_text {
-    //     margin: 0 0 2vw 0;
-    //     font-size: 1.2vw;
-    //   }
-    //
-    //   .tagline {
-    //     font-size: 2.8vw;
-    //     clear: both;
-    //     margin: 0;
-    //   }
+      float: right;
+      padding: 2.4vw 2vw 1vw 2vw;
+
+      .long_text {
+        margin: 0 0 2vw 0;
+        font-size: 1.2vw;
+      }
+
+      .tagline {
+        font-size: 2.8vw;
+        clear: both;
+        margin: 0;
+      }
     }
-
-
 
     .white-things {
       margin: 0 5vw 0;
@@ -328,12 +328,6 @@
     }
   }
 
-  .sat_hero {
-    background-image: url('sat_skin_bg.jpg');
-    background-repeat: no-repeat;
-    height: 66vw;
-    position: relative;
-  }
 
   main {
     width: 90%;
@@ -341,6 +335,7 @@
 
     .leftie {
       width: 49vw;
+      display: inline-block;
 
       h1 {
         font-size: 5.5vw;
@@ -375,8 +370,30 @@
 
     .mobile {
       display: block;
+
       img {
         width: 100vw;
+      }
+    }
+
+    .text_box {
+      width: 85%;
+      padding: 0;
+      float: none;
+      margin: 20px auto;
+
+      .mobile {
+        text-align: center;
+      }
+
+      .tagline {
+        font-size: 36px;
+        clear: both;
+        margin: 0;
+      }
+
+      .pink_bar {
+        width: 100%;
       }
     }
   }
@@ -384,8 +401,9 @@
   main {
     .leftie {
       display: block;
-      width: 100%;
-      padding: 20px;
+      width: 85%;
+      // padding: 20px;
+      margin: 0 auto;
 
       h1 {
         width: 100%;
