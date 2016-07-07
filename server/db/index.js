@@ -34,3 +34,5 @@ module.exports = startDbPromise;
 
 
 
+// var DATABASE_URI = "mongodb://localhost:27017/" + dbName;
+// var DATABASE_URI = "mongodb://sean0723:CHLtpghks10@ds015194.mlab.com:15194/heroku_rdfcwkb7";

@@ -21,7 +21,7 @@
     background-image: url('SS_TopBar_final.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-      /*background-size: 100% 100%;*/
+    /*background-size: 100% 100%;*/
     /*background-color: rgb(250, 214, 218);*/
 }
 
@@ -192,9 +192,9 @@
         /*padding-top: 10px;*/
     }
 
-    .height-fix {
+  /*  .height-fix {
         height: 0px;
-    }
+    }*/
 
 }
 
@@ -202,10 +202,10 @@
     .clean-and-clear {
         height: 108px;
     }
-
+/*
     .height-fix {
         height: 30px;
-    }
+    }*/
 }
 
 @media screen and (max-width: 769px) {
@@ -221,6 +221,10 @@
 
     .sat_link {
         margin-top: -55px;
+    }
+
+    .sat-prod-text {
+        padding-left: 5%;
     }
 }
 
