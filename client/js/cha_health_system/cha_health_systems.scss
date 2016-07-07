@@ -9,8 +9,8 @@
 .chs {
   .chs_hero {
     background-image: url('dna2.jpg');
-    // background-size: 1120px auto;
     background-repeat: no-repeat;
+    // background-size: 1120px auto;
     // background-position: -217px -237px;
     // width: 901px;
     // margin: 70px auto 0;
@@ -23,29 +23,29 @@
     }
 
     h4 {
-      // font-size: 17px;
-      // margin: 0;
-    	font-family: 'Work Sans';
+      font-family: 'Work Sans';
       font-weight: normal;
       font-style: normal;
+      // font-size: 17px;
+      // margin: 0;
     }
 
     h1 {
-      // font-size: 70px;
-      // margin: 20px 0 0 0;
       font-weight: normal;
       font-style: normal;
+      // font-size: 70px;
+      // margin: 20px 0 0 0;
     }
   }
 
   .chs-text {
-    margin: -35px 0 0 0;
+    // margin: -35px 0 0 0;
 
     .top-right {
       width: 410px;
       display: inline-block;
       vertical-align: middle;
-      margin: 0 0 0 35px;
+      // margin: 0 0 0 35px;
     }
   }
 
@@ -107,6 +107,14 @@
   }
 
   .chs {
+    .mobile {
+      display: none;
+    }
+    //
+    // .desktop {
+    //   display: block;
+    // }
+
     .chs_hero {
       background-size: 1120px auto;
       background-position: -217px -237px;
@@ -122,6 +130,15 @@
       h1 {
         font-size: 70px;
         margin: 20px 0 0 0;
+      }
+    }
+
+    .chs-text {
+        margin: -35px 0 0 0;
+      .chs-text-top {
+        .top-right {
+          margin: 0 0 0 35px;
+        }
       }
     }
   }
@@ -150,6 +167,14 @@
   }
 
   .chs {
+    .mobile {
+      display: none;
+    }
+
+    // .desktop {
+    //   display: block;
+    // }
+
     .chs_hero {
       background-size: 1120px auto;
       background-position: -217px -237px;
@@ -170,6 +195,7 @@
   }
 
   .chs-text {
+      margin: -35px 0 0 0;
     .chs-text-top {
       img {
         width: 50.5vw;
@@ -229,7 +255,6 @@
 }
 
 @media screen and (max-width: 599px) {
-
   .health-wrapper {
     width: 100%;
     margin: 0 auto;
@@ -252,7 +277,53 @@
         margin: 10px 0 0 0;
       }
     }
+
+    .chs-text {
+      margin: 20px 0 0;
+
+      .chs-text-top {
+        .desktop {
+          display: none;
+        }
+
+        .mobile {
+          display: block;
+          width: 100%;
+        }
+
+        .top-right {
+          width: 85%;
+          display: block;
+          margin: 0 auto 20px;
+
+          p.emb {
+            font-size: 20px;
+            line-height: 27px;
+          }
+        }
+      }
+
+      .chs-text-bottom {
+        width: 100%;
+
+        .bottom-right {
+          width: 85%;
+          display: block;
+          margin: 0 auto 20px;
+        }
+
+        #myCarousel {
+          width: 100%;
+          display: block;
+
+          .chs-indicators {
+            margin: 0 0 0 -124px;
+          }
+        }
+      }
+    }
   }
+  
   .chs-hepts {
     display: none;
   }
