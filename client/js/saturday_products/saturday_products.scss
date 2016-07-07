@@ -209,11 +209,6 @@
 }
 
 @media screen and (max-width: 769px) {
-    .prodcut-grid-item-inner {
-        height: 350px;
-        margin: 0 auto;
-        /*font-size: 13px;*/
-    }
 
     .product-list {
         margin-top: -55px;
@@ -223,9 +218,15 @@
         margin-top: -55px;
     }
 
-    .sat-prod-text {
+/*    .sat-prod-text {
         padding-left: 5%;
     }
+
+    .prodcut-grid-item-inner {
+        height: 350px;
+        margin: 0 auto;
+    }
+*/
 }
 
 

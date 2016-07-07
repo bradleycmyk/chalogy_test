@@ -465,6 +465,15 @@ a.up-arrow-about:after {
   display: none;
 }
 
+#callingsearchs1 {
+  margin-right: 15px;
+  height: 18px;
+  width: 15px;
+  padding-left: 2px;
+  margin-top: 3px;
+  padding-top: 3px;
+}
+
 .mobile-menu {
   height: 60px;
   width: 100%;
@@ -486,10 +495,12 @@ a.up-arrow-about:after {
 .popup-btn1 {
   background-color: white;
   width: 45px;
-  height: 40px;
+  height: 45px;
   font-size: 12px;
   border: none;
   cursor: pointer;
+  background-position: 80% 93%;
+  background-size: 36px;
   background-image: url("menu-22.png");
   background-repeat: no-repeat;
 }
@@ -502,43 +513,53 @@ a.up-arrow-about:after {
 .popup-content1 {
   display: none;
   position: absolute;
-  margin-top: 13px;
-  background-color: rgba(25, 28, 59, 0.9);
+  margin-top: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  /*background-color: rgba(25, 28, 59, 0.9);*/
   /*min-width: 300px;*/
   width: 100vw;
   height: 100vh;
   overflow: auto;
   z-index: 9999;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .popup-content1 a {
-  color: rgba(173, 216, 230, 0.9);
-  font-family: WorkSans;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 20px 16px;
+  /*color: rgba(173, 216, 230, 0.9);*/
+  /*font-family: WorkSans;*/
+  /*font-weight: 700;*/
+  /*letter-spacing: 1px;*/
+  padding: 19px 16px;
   text-decoration: none;
   border-top: 1px solid rgba(173, 216, 230, 0.4);
   display: block;
+
+  opacity: 0.8;
+  color: grey;
+  font-size: 13px;
+  font-family: 'Work Sans';
 }
 
 .popup-content-search {
   display: none;
   position: absolute;
-  margin-top: 24px;
-  background-color: rgba(25, 28, 59, 0.9);
-  width: 100vw;
-  height: 160px;
-  /*overflow: auto;*/
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0 !important;
+  right: 0 !important;
+  margin-top: -38px;
+  background-color: white;
+  /*background-color: rgba(25, 28, 59, 0.9);*/
+  height: 59px;
+  padding-top: 17px;
   z-index: 999;
   text-align: center;
 
-  color: rgba(173, 216, 230, 0.9);
+  color: black;
   font-family: WorkSans;
   font-weight: 700;
 }
-
 
 .menu-mobile1 a:hover {background-color: #f1f1f1}
 
@@ -549,10 +570,6 @@ a.up-arrow-about:after {
   /*margin-left: 42%;*/
   margin: 0 auto;
   width: 118px;
-}
-
-.mobile-menu {
-  text-align: center;
 }
 
 .third-part-mobile {
@@ -568,5 +585,15 @@ a.up-arrow-about:after {
   z-index: 9999;
 }
 
+#mobile-menu-about {
+  /*padding-left: 50%;*/
+}
+
+
+.x-icon {
+  background-image: url('icons/close-icon.png');
+  background-position: 55% 72%;
+  background-size: 25px;
+}
 
 }
