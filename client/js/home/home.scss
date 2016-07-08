@@ -149,6 +149,10 @@ div.first-page-fade-in {
 //     height:100%;
 // }
 
+.home_link_to_brands:hover {
+  color: #FFFFFF !important;
+}
+
 .fullscreen,
 .content-a {
     width:100%;
@@ -162,10 +166,21 @@ div.first-page-fade-in {
 }
 
 .content-a.gradient {
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0.78) 0%, rgba(255,255,255,0) 100%);
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.78) 0%,rgba(255,255,255,0) 100%);
-  background: linear-gradient(to bottom,  rgba(0,0,0,0.78) 0%,rgba(255,255,255,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7000000', endColorstr='#00ffffff',GradientType=0 );
+  // background: -moz-linear-gradient(top,  rgba(0,0,0,0.78) 0%, rgba(255,255,255,0) 100%);
+  // background: -webkit-linear-gradient(top,  rgba(0,0,0,0.78) 0%,rgba(255,255,255,0) 100%);
+  // background: linear-gradient(to bottom,  rgba(0,0,0,0.78) 0%,rgba(255,255,255,0) 100%);
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7000000', endColorstr='#00ffffff',GradientType=0 );
+
+  // background: -moz-linear-gradient(top,  rgba(2,2,2,0.82) 0%, rgba(255,255,255,0.02) 53%, rgba(255,255,255,0) 54%);
+  // background: -webkit-linear-gradient(top,  rgba(2,2,2,0.82) 0%,rgba(255,255,255,0.02) 53%,rgba(255,255,255,0) 54%);
+  // background: linear-gradient(to bottom,  rgba(2,2,2,0.82) 0%,rgba(255,255,255,0.02) 53%,rgba(255,255,255,0) 54%);
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1020202', endColorstr='#00ffffff',GradientType=0 );
+
+  background: -moz-linear-gradient(top,  rgba(2,2,2,0.86) 0%, rgba(255,255,255,0) 50%);
+  background: -webkit-linear-gradient(top,  rgba(2,2,2,0.86) 0%,rgba(255,255,255,0) 50%);
+  background: linear-gradient(to bottom,  rgba(2,2,2,0.86) 0%,rgba(255,255,255,0) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db020202', endColorstr='#00ffffff',GradientType=0 );
+
   -webkit-animation: fadeintest 4s; /* Chrome, Safari, Opera */
   -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
   animation: fadeintest 4s;

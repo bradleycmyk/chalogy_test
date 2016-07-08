@@ -29,8 +29,8 @@ a {
 	text-decoration: none !important;
 	color: black;
 
-	&:hover:not(.aurous-bread),
-	&:focus:not(.aurous-bread) {
+	&:hover:not(.aurous-bread, .home_link_to_brands),
+	&:focus:not(.aurous-bread, .home_link_to_brands) {
 		text-decoration: none;
 		color: #000000 !important;
 	}
@@ -158,6 +158,10 @@ p {
   border-radius: #{$border-radiuss}px;
 }
 
+input {
+	border-radius: none;
+}
+
 // input:-webkit-autofill {
 //   @include boxshadow(0 0 0 1000px #F2F2F2 inset !important);
 // }
@@ -168,9 +172,15 @@ p {
 	and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
 	Inspired from:  http://codepen.io/Rowno/pen/Afykb
 */
+.carousel-inner {
+	background-color: #FFFFFF !important;
+}
+
+
 .carousel-fade .carousel-inner .item {
 	opacity: 0;
 	transition-property: opacity;
+	background-color: #FFFFFF;
 }
 
 .carousel-fade .carousel-inner .active {
