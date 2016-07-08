@@ -169,6 +169,9 @@ div.first-page-fade-in {
   top: 120px;
 	text-align:center;
 
+  -webkit-transform: translateZ(0px);
+  webkit-font-smoothing: subpixel-antialiase;
+
   p, h2, .home_links, .home_links a {
     color: #FFFFFF;
     // background-color: #FFFFFF;
@@ -216,7 +219,7 @@ div.first-page-fade-in {
 }
 
 .parallax {
-  &.lax-one, &.lax-two, &.lax-three, &.lax-four {
+  &.lax-one, &.lax-two, &.lax-three, &.lax-four, &.lax-one-1, &.lax-two-2, &.lax-three-3, &.lax-four-4  {
     height: 100vh;
   }
 
@@ -225,20 +228,35 @@ div.first-page-fade-in {
   }
 
   &.lax-two {
-    background-image: url('about/chaum/chaum_2.jpg');
+    background-image: url('about/chaum/chaum_2.jpg')
+
   }
 
   &.lax-three {
-    background-image: url('about/chaum/chaum_1.jpg');
+    background-image: url('about/chaum/chaum_1_1.jpg');
   }
 
   &.lax-four {
+    background-image: url('about/chaum/chaum_4_1.jpg');
+  }
+
+   &.lax-one-1 {
+    background-image: url('about/chaum/chaum_3.jpg');
+  }
+
+  &.lax-two-2 {
+    background-image: url('about/chaum/chaum_2.jpg');
+  }
+
+  &.lax-three-3 {
+    background-image: url('about/chaum/chaum_1.jpg');
+  }
+
+  &.lax-four-4 {
     background-image: url('about/chaum/chaum_4.jpg');
-    /*background-image: url('http://images.apple.com/v/music/b/images/heros/connect-small.gif');*/
   }
 
 }
-
 
 .fullscreen.overflow,
 .fullscreen.overflow .content-a {
@@ -250,7 +268,7 @@ div.first-page-fade-in {
 
 /*** fade in and out ***/
 #fade-in-test {
-  opacity: 0;
+  /*opacity: 0;*/
 }
 
 #second-content, #third-content, #fourth-content {

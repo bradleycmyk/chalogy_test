@@ -1,5 +1,14 @@
 app.controller('HomeController', function($scope, $http, $window) {
 
+	$.preloadImages = function() {
+	  for (var i = 0; i < arguments.length; i++) {
+	    $("<img />").attr("src", arguments[i]);
+	  }
+	}
+
+	$.preloadImages("about/chaum/chaum_1.jpg","about/chaum/chaum_4.jpg");
+
+
 	// opacity control - text fade out 
 
 	// var contents = document.getElementsByClassName("content-b");
@@ -37,6 +46,7 @@ app.controller('HomeController', function($scope, $http, $window) {
 	// fade in test 
 	window.onload = function() {
 	  document.getElementById('fade-in-test').className = 'fade-in-effect-test';
+	  // document.getElementById('first-content-1').className = "fade-in-effect-test";
 	};
 
 	$(document).ready(function() {
@@ -56,6 +66,8 @@ app.controller('HomeController', function($scope, $http, $window) {
 
         	if(scrollTop1 < yBottomDot1 && scrollBottom1 > yTopDot1) {
         		$("#firstp").removeClass('bg1').addClass("bg2");
+        		$("#fade-in-test").addClass("fade-in-effect-test");
+        		// $('#first-content').addClass('fade-in-effect-test');
         	} else {
         		$("#firstp").removeClass('bg2').addClass("bg1");
         	}
@@ -71,11 +83,13 @@ app.controller('HomeController', function($scope, $http, $window) {
 
         	if(scrollTop2 < yBottomDot2 && scrollBottom2 > yTopDot2) {
         		$("#secondp").removeClass('bg1').addClass("bg2");
-        		$('#fade-in-test').removeClass('fade-in-effect-test');
         		$('#second-content').removeClass('fade-out-effect-test').addClass('fade-in-effect-test');
+        		// $("#fulltwo").removeClass('lax-two').addClass('lax-two-2');
+        		// $("#fulltwo").addClass("gradient");
         	} else {
         		$("#secondp").removeClass('bg2').addClass("bg1");
         		$('#second-content').addClass('fade-out-effect-test');
+        		// $("#fulltwo").removeClass('lax-two-2').addClass('lax-two');
         	}
         }
 
@@ -90,10 +104,15 @@ app.controller('HomeController', function($scope, $http, $window) {
         	if(scrollTop3 < yBottomDot3 && scrollBottom3 > yTopDot3) {
         		$("#thirdp").removeClass('bg1').addClass("bg2");
         		$('#third-content').removeClass('fade-out-effect-test').addClass('fade-in-effect-test');
+        		setTimeout(function(){
+        			$("#fullthree").removeClass('lax-three').addClass('lax-three-3');
+        		}, 800);
+        		
 
         	} else {
         		$("#thirdp").removeClass('bg2').addClass("bg1");
         		$('#third-content').addClass('fade-out-effect-test');
+        		$("#fullthree").removeClass('lax-three-3').addClass('lax-three');
 
         	}
         }
@@ -109,9 +128,14 @@ app.controller('HomeController', function($scope, $http, $window) {
         	if(scrollTop4 < yBottomDot4 && scrollBottom4 > yTopDot4) {
         		$("#fourthp").removeClass('bg1').addClass("bg2");
         		$('#fourth-content').removeClass('fade-out-effect-test').addClass('fade-in-effect-test');
+        		setTimeout(function(){
+        			$("#fullfour").removeClass('lax-four').addClass('lax-four-4');
+        		}, 800);
+        		
         	} else {
         		$("#fourthp").removeClass('bg2').addClass("bg1");
         		$('#fourth-content').removeClass('fade-in-effect-test').addClass('fade-out-effect-test');
+        		$("#fullfour").removeClass('lax-four-4').addClass('lax-four');
         	}
         }
 
