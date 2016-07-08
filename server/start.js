@@ -21,3 +21,18 @@ startDb
     console.log('I\'m out!');
     process.kill(1);
   });
+
+
+// Start the server
+// startDb
+//   .then(function() {
+//     app = require('./app');
+//     app.listen(process.env.PORT || 5959, function(){
+//       console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+//     });
+//   })
+//   .catch(function(err) {
+//     console.log('Problem starting up!', chalk.red(err.message));
+//     console.log('I\'m out!');
+//     process.kill(1);
+//   });

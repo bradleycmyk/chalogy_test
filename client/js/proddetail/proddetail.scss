@@ -128,7 +128,6 @@
 	font-size: 14px;
 }
 
-
 .is-ideal-for {
 	margin-left: 12px;
 	font-family: 'Work Sans';
@@ -161,10 +160,28 @@
 	display: none;
 }
 
+.detail_photo {
+    max-width: 315px;
+    width: 100%;
+    height: auto;
+}
+
+
+@media only screen and (min-width: 993px) and (max-width: 1040px)  {
+	.prodimg {
+		margin-left: -35px;
+		width: 300px;
+	}
+}
+
+
+
 @media only screen and (min-width: 769px) and (max-width: 992px)  {
 	.prodimg {
-		width: 220px;
-	    margin-left: 10%;
+	/*	width: 220px;
+	    margin-left: 10%;*/
+	    margin-left: -35px;
+		width: 300px;
 	}
 
 	.prod-dsc {

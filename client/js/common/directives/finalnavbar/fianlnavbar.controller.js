@@ -84,8 +84,16 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 			$(".popup-content-search").hide();
 		});
 
+		$('.popup-btn1').click(function(){
+			console.log("menu clicked!!!!");
+			$(this).toggleClass("x-icon");
+		})
 
-	
 	});
+
+	$("#mobile-search").blur(function() {
+		// $("#mobile-search").addClass('fade-out-effect-input').removeClass("fade-in-effect-input");
+		// $("#mobile-search").fadeIn().fadeOut();
+	})
 
 });
