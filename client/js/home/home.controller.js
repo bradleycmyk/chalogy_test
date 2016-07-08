@@ -1,6 +1,6 @@
 app.controller('HomeController', function($scope, $http, $window) {
 
-	// opacity control - text fade out 
+	// opacity control - text fade out
 
 	// var contents = document.getElementsByClassName("content-b");
 	// var fraction = 0.60;
@@ -28,24 +28,24 @@ app.controller('HomeController', function($scope, $http, $window) {
 	//             } else {
 	//  	          	content.style.opacity = "0.1"
 	//             }
-	//         }  
+	//         }
 	//     }
 
  //  	window.addEventListener('scroll', checkScroll, false);
  //  	window.addEventListener('resize', checkScroll, false);
 
-	// fade in test 
+	// fade in test
 	window.onload = function() {
 	  document.getElementById('fade-in-test').className = 'fade-in-effect-test';
 	};
 
 	$(document).ready(function() {
 
-		// add active-page class to page indicators 
+		// add active-page class to page indicators
 		var tolerancePixel = 40;
 
 		function activePage1(){
-			// get current browser top and bottom 
+			// get current browser top and bottom
 
         	var scrollTop1 = $(window).scrollTop() + tolerancePixel;
         	var scrollBottom1 = $(window).scrollTop() + $(window).height() - tolerancePixel;
@@ -56,8 +56,10 @@ app.controller('HomeController', function($scope, $http, $window) {
 
         	if(scrollTop1 < yBottomDot1 && scrollBottom1 > yTopDot1) {
         		$("#firstp").removeClass('bg1').addClass("bg2");
+						$('.lax-one .content-a').addClass('gradient');
         	} else {
         		$("#firstp").removeClass('bg2').addClass("bg1");
+						$('.lax-one .content-a').removeClass('gradient');
         	}
         }
 
@@ -73,9 +75,11 @@ app.controller('HomeController', function($scope, $http, $window) {
         		$("#secondp").removeClass('bg1').addClass("bg2");
         		$('#fade-in-test').removeClass('fade-in-effect-test');
         		$('#second-content').removeClass('fade-out-effect-test').addClass('fade-in-effect-test');
+						$('.lax-two .content-a').addClass('gradient');
         	} else {
         		$("#secondp").removeClass('bg2').addClass("bg1");
         		$('#second-content').addClass('fade-out-effect-test');
+						$('.lax-two .content-a').removeClass('gradient');
         	}
         }
 
@@ -90,11 +94,11 @@ app.controller('HomeController', function($scope, $http, $window) {
         	if(scrollTop3 < yBottomDot3 && scrollBottom3 > yTopDot3) {
         		$("#thirdp").removeClass('bg1').addClass("bg2");
         		$('#third-content').removeClass('fade-out-effect-test').addClass('fade-in-effect-test');
-
+						$('.lax-three .content-a').addClass('gradient');
         	} else {
         		$("#thirdp").removeClass('bg2').addClass("bg1");
         		$('#third-content').addClass('fade-out-effect-test');
-
+						$('.lax-three .content-a').removeClass('gradient');
         	}
         }
 
@@ -109,9 +113,11 @@ app.controller('HomeController', function($scope, $http, $window) {
         	if(scrollTop4 < yBottomDot4 && scrollBottom4 > yTopDot4) {
         		$("#fourthp").removeClass('bg1').addClass("bg2");
         		$('#fourth-content').removeClass('fade-out-effect-test').addClass('fade-in-effect-test');
+						$('.lax-four .content-a').addClass('gradient');
         	} else {
         		$("#fourthp").removeClass('bg2').addClass("bg1");
         		$('#fourth-content').removeClass('fade-in-effect-test').addClass('fade-out-effect-test');
+						$('.lax-four .content-a').removeClass('gradient');
         	}
         }
 
@@ -120,7 +126,7 @@ app.controller('HomeController', function($scope, $http, $window) {
         $(document).on('scroll', activePage3);
         $(document).on('scroll', activePage4);
 
-        // end of active page function 
+        // end of active page function
 
 
         // smooth scroll to next page on click (page indicators)
@@ -146,7 +152,7 @@ app.controller('HomeController', function($scope, $http, $window) {
 		        'slow');
 		});
 
-		// scrolling - also adding a class="test" here to each section 
+		// scrolling - also adding a class="test" here to each section
 		var delay = false;
 
 		$('#home').on('mousewheel DOMMouseScroll', function(event) {
@@ -158,7 +164,7 @@ app.controller('HomeController', function($scope, $http, $window) {
 
 		    var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
 
-		  
+
 		    var a= document.getElementsByClassName('test');
 		    if(wd < 0) {
 		      for(var i = 0 ; i < a.length ; i++) {
@@ -179,8 +185,8 @@ app.controller('HomeController', function($scope, $http, $window) {
 			    }, 1000);
 			}
     	  });
-		
-		// end of scrolling !! 		
+
+		// end of scrolling !!
 
 
 
@@ -290,7 +296,7 @@ app.controller('HomeController', function($scope, $http, $window) {
 
 
 
-	}); // end of $(document).ready 
+	}); // end of $(document).ready
 
 
 });
