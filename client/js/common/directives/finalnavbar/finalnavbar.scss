@@ -438,9 +438,16 @@ a.up-arrow-about:after {
 }
 
 .col-1-sub {
-  width: 110px;
+  width: 120px;
+  height: 13px;
   float: right;
   text-align: left;
+}
+
+.col-1-sub:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 @media screen and (max-width: 964px){ 
@@ -494,6 +501,10 @@ a.up-arrow-about:after {
   background-color: white;
   z-index: 9999;
   border-bottom: 1px solid #e5e5e5;
+}
+
+#mobile-menu-satprod {
+  border-bottom: 1px solid rgba(173, 216, 230, 0.4);
 }
 
 .menu-mobile1 {
