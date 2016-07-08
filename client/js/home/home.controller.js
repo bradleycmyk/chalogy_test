@@ -159,10 +159,19 @@ app.controller('HomeController', function($scope, $http, $window) {
         // smooth scroll to next page on click (page indicators)
 
 		$(document).on("click", "#firstp", function(){
-			$('html,body').animate({
-		        scrollTop: $("#firstsection").offset().top},
+		$('html,body').animate({
+	        scrollTop: $("#firstsection").offset().top},
+	        'slow');
+		});
+
+		
+
+		$("#clickable-downarrow").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $("#secondsec").offset().top},
 		        'slow');
 		});
+
 		$("#secondp").click(function() {
 		    $('html,body').animate({
 		        scrollTop: $("#secondsec").offset().top},
