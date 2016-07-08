@@ -29,8 +29,8 @@ a {
 	text-decoration: none !important;
 	color: black;
 
-	&:hover:not(.aurous-bread),
-	&:focus:not(.aurous-bread) {
+	&:hover:not(.aurous-bread, .home_link_to_brands),
+	&:focus:not(.aurous-bread, .home_link_to_brands) {
 		text-decoration: none;
 		color: #000000 !important;
 	}
@@ -156,6 +156,10 @@ p {
   -ms-border-radius: #{$border-radiuss}px;
   -o-border-radius: #{$border-radiuss}px;
   border-radius: #{$border-radiuss}px;
+}
+
+input {
+	border-radius: none;
 }
 
 // input:-webkit-autofill {
