@@ -251,12 +251,12 @@ div.first-page-fade-in {
   }
 
   &.lax-one {
-    background-image: url('home/chaum_1_1.jpg');
+    background-image: url('home/chaum_1.jpg');
   }
 
   &.lax-two {
     /*background-image: url('about/chaum/chaum_2.jpg')*/
-        background-image: url('home/chaum_2_1.jpg');
+        background-image: url('home/chaum_2.jpg');
   }
 /*
   &.lax-three {
@@ -284,11 +284,11 @@ div.first-page-fade-in {
   }
 */
   &.lax-three {
-    background-image: url('home/chaum_3_1.jpg');
+    background-image: url('home/chaum_3.jpg');
   }
 
   &.lax-four {
-    background-image: url('home/chaum_4_1.jpg');
+    background-image: url('home/chaum_4.jpg');
     /*background-image: url('http://images.apple.com/v/music/b/images/heros/connect-small.gif');*/
   }
 }
@@ -356,6 +356,16 @@ div.fade-out-effect-test {
   to {opacity: 0;}
 }
 
+#clickable-downarrow2, #clickable-downarrow3 {
+  display: none;
+}
+
+@media screen and (min-width: 581px) and (max-width: 769px) {
+  #clickable-downarrow2, #clickable-downarrow3 {
+    display: block;
+  }
+
+}
 
 
 @media screen and (max-width: 580px) {

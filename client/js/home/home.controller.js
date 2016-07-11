@@ -164,8 +164,6 @@ app.controller('HomeController', function($scope, $http, $window) {
 	        'slow');
 		});
 
-		
-
 		$("#clickable-downarrow").click(function() {
 		    $('html,body').animate({
 		        scrollTop: $("#secondsec").offset().top},
@@ -177,11 +175,25 @@ app.controller('HomeController', function($scope, $http, $window) {
 		        scrollTop: $("#secondsec").offset().top},
 		        'slow');
 		});
+
+		$("#clickable-downarrow2").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $("#thirdsec").offset().top},
+		        'slow');
+		});
+
 		$("#thirdp").click(function() {
 		    $('html,body').animate({
 		        scrollTop: $("#thirdsec").offset().top},
 		        'slow');
 		});
+
+		$("#clickable-downarrow3").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $("#fourthsec").offset().top},
+		        'slow');
+		});
+
 		$("#fourthp").click(function() {
 		    $('html,body').animate({
 		        scrollTop: $("#fourthsec").offset().top},
