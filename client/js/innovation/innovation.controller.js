@@ -75,11 +75,6 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $(".v-seven").css({"display":"none"});
       $(".v-eight").css({"display":"none"});
 
-      // $("#vid1").css({"display":"block"});
-      // $("#vid1").get(0).load();
-      // $("#vid1").get(0).play();
-      // $('#image-div').css({"display":"none"});
-
       $.when(changevideo() ).done(function(){
         $('#videosource1').attr('src', 'video/cha7es_full.mp4');
         $("#vid1").fadeIn(2000);
@@ -179,15 +174,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $(".v-six").css({"display":"none"});
       $(".v-seven").css({"display":"none"});
       $(".v-eight").css({"display":"none"});
-      
-      // $(".v-four").css({"display":"block"});
-
-      // $('.line-in-video').css({ "opacity":"0"});
-      // $('#image-div').css({"display":"none"});
-      // $('#video-text-3-3').addClass('fade-in-effect');
-   //       $('.fading-effect').removeClass('fadingEffect');
-   //       $('.fading-effect').addClass('fadingEffect-to-left');
-   //       $('.line-in-video').css({ "opacity":"1"});
+    
 
       $('#image-div').css({"display":"none"});
       $.when(changevideo() ).done(function(){
@@ -284,12 +271,6 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       
       $(".v-seven").css({"display":"none"});
 
-      // $("#vid1").css({"display":"none"});
-      // $('#image-div').css({"display":"block"});
-      // $.when(effect() ).done(function(){
-      //  $('#video-poster').attr('src', 'video/poster-1.png')
-      //  $(".posters").fadeIn();
-      // })
 
       $('#image-div').css({"display":"none"});
       $.when(changevideo() ).done(function(){
@@ -300,21 +281,6 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       })
       
     })
-
-    // buttons !!!
-    // $(".play-btn").click(function(){
-    //   $('.circle').removeClass('active-btn');
-    //   $(this).addClass('active-btn');
-    // })
-
-    // // adding active class to buttons 
-    // $('.circle').click(function(e) {
-    //   e.preventDefault(); 
-    //   $('.circle').removeClass('active-btn');
-    //   $('.play-btn').removeClass('active-btn');
-    //   $(this).addClass('active-btn');
-    // });
-
 
     $(".play-btn1").click(function(){
       $('.circle1').removeClass('active-btn1');
