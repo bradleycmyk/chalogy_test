@@ -219,7 +219,8 @@ div.first-page-fade-in {
 
   .margin-top-big {
     margin: 45px auto 0;
-    width: 760px;
+    width: 580px;
+    /*width: 760px;*/
   }
 
   .margin-top-small {
@@ -357,7 +358,28 @@ div.fade-out-effect-test {
 
 
 
+@media screen and (max-width: 580px) {
+  .content-b h2 {
+    font-size: 23px;
+    width: 90%;
+    font-style: italic;
+  }
 
+  .content-b .margin-top-big {
+    width: 90%;
+    font-size: 13px;
+  }
+
+  .content-b .home_links {
+    margin: 35px auto 0;
+    width: 350px;
+  }
+
+  .content-b .home_links .short_link_name {
+    padding: 10px 33px;
+  }
+
+}
 
 
 
