@@ -154,6 +154,10 @@ input:focus{
 	margin:0 auto;
 }
 
+.alert-msg ul {
+	width: 80%;
+}
+
 }
 
 
@@ -161,4 +165,21 @@ input:focus{
 .search-result-title {
 	margin-top: 40px;
 }
+}
+
+
+@media screen and (max-width: 580px) {
+	.alert-msg {
+		width: 90%;
+		text-align: left;
+
+		h1 {
+			font-size: 31px;
+		}
+
+		ul {
+			width: 100%;
+		}
+	}
+
 }
