@@ -102,7 +102,7 @@
     <img onclick="myFunction2()" id="callingsearchs2" src="search1.png"  />
     <div id="search-popup" class="popup-content-search" style="left:0;">
       <div class="search-content">
-        <input id="mobile-search" type="text" ng-model="text" ></input>
+        <input id="mobile-search" type="text" ng-model="text"></input>
       </div>
     </div>
   </div>        
@@ -125,7 +125,7 @@ function myFunction2() {
 
 window.onclick = function(event) {
 
-  if (!event.target.matches('.popup-btn1') && !event.target.matches('#callingsearchs2')) {
+  if (!event.target.matches('.popup-btn1') && !event.target.matches('#callingsearchs2') && !event.target.matches('#search-popup')) {
     var dropdowns = document.getElementsByClassName("popup-content1");
     var mobilepopup = document.getElementById("search-popup");
 
