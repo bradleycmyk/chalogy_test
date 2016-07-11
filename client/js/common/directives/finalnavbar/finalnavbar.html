@@ -99,14 +99,11 @@
   <div class="mobile-logo1"><a ui-sref="home"><img id="btm-brand-logo" src="logo/main_logo_navbar.png" alt="Brand"></a></div>
   
   <div class="third-part-mobile">
-    <img id="callingsearchs1" src="search1.png"  />
-
+    <img onclick="myFunction2()" id="callingsearchs2" src="search1.png"  />
     <div id="search-popup" class="popup-content-search" style="left:0;">
-  
       <div class="search-content">
         <input id="mobile-search" type="text" ng-model="text" ></input>
       </div>
-      
     </div>
   </div>        
 
@@ -120,12 +117,18 @@ function myFunction() {
     document.getElementById("mobilePop1").classList.toggle("show");
 }
 
+function myFunction2() {
+    document.getElementById("search-popup").classList.toggle("show");
+}
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.popup-btn1')) {
 
+window.onclick = function(event) {
+
+  if (!event.target.matches('.popup-btn1') && !event.target.matches('#callingsearchs2')) {
     var dropdowns = document.getElementsByClassName("popup-content1");
+    var mobilepopup = document.getElementById("search-popup");
+
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
@@ -133,10 +136,33 @@ window.onclick = function(event) {
         openDropdown.classList.remove('show');
       }
     }
-    // document.getElementsByClassName("popup-btn1").
+
+    if( mobilepopup.classList.contains('show')){
+      mobilepopup.classList.remove('show');
+    }    
+
     $(".popup-btn1").removeClass("x-icon");
   }
 }
+
+
+// window.onclick = function(event) {
+//   if (!event.target.matches('.popup-btn1')) {
+
+//     var dropdowns = document.getElementsByClassName("popup-content1");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+
+//     // document.getElementsByClassName("popup-btn1").
+//     $(".popup-btn1").removeClass("x-icon");
+//   }
+// }
+
 
 // window.onclick = function(e) {
 //     if(!e.target.matches('.third-part-mobile')) {

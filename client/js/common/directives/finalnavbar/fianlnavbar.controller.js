@@ -16,6 +16,21 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 
 	});
 
+	$("#callingsearchs2").click(function(){
+		$("#testingsearch2").removeClass('fade-out-effect-input').addClass("fade-in-effect-input").focus();
+		// $("#testingsearch1").css({"border-bottom":"1px"});
+
+		var text = $("#testingsearch1").val();
+		if (text == ""){
+			console.log("do nothing");
+		} else {
+        	$state.go("search", {text: text});
+		}
+		$("#testingsearch1").val("");
+
+	});
+
+
 	$("#testingsearch1").blur(function() {
 		$("#testingsearch1").addClass('fade-out-effect-input').removeClass("fade-in-effect-input");
 	})
@@ -72,7 +87,7 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 
 		$(".third-part-mobile").click(function(e){
 			e.preventDefault();
-			$("#search-popup").toggleClass('show-popup');
+			// $("#search-popup").toggleClass('show-popup');
 			$('#mobile-search').focus();
 		});
 
@@ -87,13 +102,15 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 		$('.popup-btn1').click(function(){
 			console.log("menu clicked!!!!");
 			$(this).toggleClass("x-icon");
-		})
+		});
 
 	});
 
-	$("#mobile-search").blur(function() {
-		// $("#mobile-search").addClass('fade-out-effect-input').removeClass("fade-in-effect-input");
-		// $("#mobile-search").fadeIn().fadeOut();
-	})
+	
+
+	// $("#callingsearchs1").blur(function() {
+	// 	$("#search-popup").addClass('fade-out-effect-input').removeClass("fade-in-effect-input");
+	// 	$("#search-popup").removeClass("show-popup");
+	// })
 
 });

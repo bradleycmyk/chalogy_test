@@ -489,6 +489,11 @@ a.up-arrow-about:after {
 
 @media screen and (max-width: 750px){ 
 
+  #mobile-search {
+    border: none;
+    border-bottom: 1px solid;
+  }
+
   .clean-and-clear2 {
     display: block;
   }
@@ -580,7 +585,7 @@ a.up-arrow-about:after {
     margin-top: -38px;
     background-color: white;
     height: 59px;
-    padding-top: 17px;
+    padding-top: 20px;
     z-index: 999;
     text-align: center;
 
@@ -605,6 +610,7 @@ a.up-arrow-about:after {
     float: right;
     height: 30px;
     width: 40px;
+    padding-top: 2px;
     background-color: white;
     margin-top: -30px;
   }
