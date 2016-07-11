@@ -256,7 +256,7 @@
   }
 
   .about {
-    width: 98vw;
+    width: 83vw;
     margin: 60px auto 0;
     color: #000000;
 
@@ -264,19 +264,19 @@
       vertical-align: top;
       position: relative;
       z-index: 2;
-      width: 41vw;
+      width: 33vw;
     }
 
     .vision, .science, .beauty {
       h3 {
-        font-size: 3.6vw;
-        line-height: 33px;
+        font-size: 2.6vw;
+        line-height: 23px;
         margin: 0 0 0 5px;
       }
 
       h2 {
-        font-size: 10.3vw;
-        line-height: 96px;
+        font-size: 6vw;
+        line-height: 63px;
         margin: 0;
 
         &::after {
@@ -297,7 +297,7 @@
 
       p {
         // font-family: WorkSans;
-        // font-size: 15px;
+        font-size: 1.2vw;
         font-weight: lighter;
         // font-style: normal;
         // width: 51.1vw;
@@ -308,6 +308,7 @@
           // letter-spacing: 1px;
           display: block;
           margin: 0 0 7px;
+          font-size: 2.2vw;
 
           .reg {
             font-size: 20px;
@@ -318,29 +319,33 @@
     }
 
     .vision {
-      width: 50.1vw;
+      width: 45.1vw;
       display: inline-block;
       vertical-align: top;
-      margin: 0 -600px 34px 34px;
+      margin: 0 -490px 34px 34px;
     }
 
     .creamy {
-      margin-top: 440px;
+      margin-top: 330px;
       display: inline-block;
       position: relative;
       z-index: 0;
-      width: 67.5vw;
+      width: 51.5vw;
     }
 
     .science {
-      margin: -130px 0 60px 50px;
+      margin: -110px 0 40px 70px;
       position: relative;
       z-index: 2;
       width: 600px;
     }
 
+    .snek {
+      width: 39vw;
+    }
+
     .beauty {
-      width: 41.1vw;
+      width: 40.1vw;
       display: inline-block;
       vertical-align: top;
       margin: 0 0 0 20px;
