@@ -274,11 +274,36 @@
 
 @media only screen and (max-width: 480px) {
 	.product_detail_buttons {
-		width: 95%;
+		width: 90%;
 	}
 
 	.panel{
 		width: 95%;
 		padding-left: 0;
+	}
+
+	.buttons a {
+		text-align: center;
+		font-family: 'Work Sans';
+	  	font-weight: bold;
+	  	color: rgb(126, 126, 126);
+	  	border: 8px solid #E5E5E5;
+	  	padding: 1px 1px;
+	  	display: block;
+	  	width: 118px;
+	  	margin: 0px;
+	  	font-size: 10px;
+	  	letter-spacing: 1px;
+
+	  	&:hover {
+			color: rgb(0, 209, 165) !important;
+	    	border: 8px solid rgb(0, 209, 165);
+	  	}
+
+	}
+
+	.col-xs-4 {
+		padding: 0px;
+		margin: 0px;
 	}
 }
