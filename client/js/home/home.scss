@@ -358,6 +358,8 @@ div.fade-out-effect-test {
 
 #clickable-downarrow2, #clickable-downarrow3 {
   display: none;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 581px) and (max-width: 769px) {
