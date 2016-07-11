@@ -226,7 +226,7 @@
         height: 10px;
         width: 340px;
         background-color: #eac4cd;
-        margin: 0px auto;
+        margin: 15px auto 0;
         display: block;
         clear: both;
         text-align: center;
@@ -304,11 +304,14 @@
     //
     .text_box {
       width: 33.4vw;
+      padding: 2.4vw 2vw 0 2vw;
+      position: absolute;
+      bottom: 0;
+      right: 4vw;
     //   background-color: #FFFFFF;
-      margin: 0 5vw 0 0;
-      margin-top: calc(100vw * 0.43);
-      float: right;
-      padding: 2.4vw 2vw 1vw 2vw;
+      // margin: 0 5vw 0 0;
+      // margin-top: calc(100vw * 0.43);
+      // float: right;
 
       .long_text {
         margin: 0 0 2vw 0;
