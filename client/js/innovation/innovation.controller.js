@@ -38,15 +38,13 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
                 $(this).get(0).pause();
             }
         });
-
-        //}
     }
+
     $(document).on('scroll', checkMedia);
 
 
     // adding controls attributes to video if screensize is less than 1050px 
     function addControls(){
-
       var actual_width = window.innerWidth;
       if(actual_width < 1050) {
           var video = document.getElementById('vid1');
@@ -55,6 +53,20 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
     }
     addControls();
     $(window).on('resize', addControls);
+
+
+    // replace poster image when screen width is less than 780px
+    function replacePoster(){
+      var actual_width = window.innerWidth;
+      if(actual_width < 780) {
+          var video = document.getElementById('vid1');
+          $('#vid1').attr('poster', 'video/poster-1.png');
+      }
+    }
+    replacePoster();
+    $(window).on('resize', replacePoster);
+
+
 
     var effect = function() {
         return $( ".posters" ).fadeIn().delay().fadeOut(2000);

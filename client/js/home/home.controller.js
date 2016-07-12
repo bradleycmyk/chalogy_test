@@ -181,6 +181,12 @@ app.controller('HomeController', function($scope, $http, $window) {
 		        'slow');
 		});
 
+		$("#clickable-uparrow2").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $("#firstsection").offset().top},
+		        'slow');
+		});
+
 		$("#thirdp").click(function() {
 		    $('html,body').animate({
 		        scrollTop: $("#thirdsec").offset().top},
@@ -193,11 +199,24 @@ app.controller('HomeController', function($scope, $http, $window) {
 		        'slow');
 		});
 
+		$("#clickable-uparrow3").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $("#secondsec").offset().top},
+		        'slow');
+		});
+
 		$("#fourthp").click(function() {
 		    $('html,body').animate({
 		        scrollTop: $("#fourthsec").offset().top},
 		        'slow');
 		});
+
+		$("#clickable-uparrow4").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $("#thirdsec").offset().top},
+		        'slow');
+		});
+
 
 		// scrolling - also adding a class="test" here to each section
 		var delay = false;

@@ -141,6 +141,12 @@ div.first-page-fade-in {
   margin-top: 20px;
 }
 
+.up-arrow {
+  width: 76px;
+  height: 39px;
+  margin-bottom: 20px;
+}
+
 
 
 /* fullscreen setup */
@@ -355,8 +361,14 @@ div.fade-out-effect-test {
   margin-top: 20px;
 }
 
+#clickable-uparrow2, #clickable-uparrow3 {
+  display: none;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 581px) and (max-width: 769px) {
-  #clickable-downarrow2, #clickable-downarrow3 {
+  #clickable-downarrow2, #clickable-downarrow3, #clickable-uparrow2, #clickable-uparrow3 {
     display: block;
   }
 
@@ -369,7 +381,7 @@ div.fade-out-effect-test {
 @media screen and (max-width: 580px) {
   .content-b {
     h2 {
-      font-size: 23px;
+      font-size: 20px;
       width: 90%;
       font-style: italic;
     }
@@ -377,6 +389,7 @@ div.fade-out-effect-test {
     .margin-top-big {
       width: 86%;
       font-size: 13px;
+      margin-top: 0;
     }
 
     .home_links {
@@ -392,8 +405,25 @@ div.fade-out-effect-test {
     }
   }
 
+  #clickable-downarrow2, #clickable-downarrow3, #clickable-uparrow2, #clickable-uparrow3 {
+    display: block;
+  }
 
+  .page-indicator {
+    right: 15px;
+  }
 
+  .content-b {
+    top: 70px;
+  }
+
+  #second-content, #third-content {
+    top: 70px;
+  }
+
+  #fourth-content {
+    top: 72px;
+  }
 
 }
 
@@ -406,6 +436,10 @@ div.fade-out-effect-test {
 
   .content-b .home_links .short_link_name {
     padding: 10px 10px;
+  }
+
+  .page-indicator {
+    right: 15px;
   }
 
 }
