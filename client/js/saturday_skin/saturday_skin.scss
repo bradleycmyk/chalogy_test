@@ -371,8 +371,15 @@
     background: none;
     width: 100%;
 
+    .bread_crumb {
+      margin: 20px;
+    }
+
     .mobile {
       display: block;
+      position: relative;
+      z-index: 0;
+      margin: 0 0 -40px;
 
       img {
         width: 100vw;
@@ -380,10 +387,12 @@
     }
 
     .text_box {
-      width: 85%;
-      padding: 0;
+      padding: 20px;
       float: none;
-      margin: 20px auto;
+      margin: 0 20px 20px;
+      background-color: #FFFFFF;
+      position: relative;
+      z-index: 1;
 
       .mobile {
         text-align: center;
@@ -404,9 +413,8 @@
   main {
     .leftie {
       display: block;
-      width: 85%;
       // padding: 20px;
-      margin: 0 auto;
+      margin: 0 40px;
 
       h1 {
         width: 100%;
@@ -424,15 +432,20 @@
 
     }
 
-    .rightie {
+    .ss-mobile {
       display: block;
       width: 100%;
+      margin: 20px 0;
 
-      .three_drops {
-        width: 250px;
-        display: block;
-        margin: 20px auto;
-      }
+      // .three_drops {
+      //   width: 250px;
+      //   display: block;
+      //   margin: 20px auto;
+      // }
+    }
+
+    .ss-desktop {
+      display: none;
     }
   }
 }
