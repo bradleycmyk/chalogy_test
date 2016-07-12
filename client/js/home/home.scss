@@ -166,16 +166,6 @@ div.first-page-fade-in {
 }
 
 .content-a.gradient {
-  // background: -moz-linear-gradient(top,  rgba(0,0,0,0.78) 0%, rgba(255,255,255,0) 100%);
-  // background: -webkit-linear-gradient(top,  rgba(0,0,0,0.78) 0%,rgba(255,255,255,0) 100%);
-  // background: linear-gradient(to bottom,  rgba(0,0,0,0.78) 0%,rgba(255,255,255,0) 100%);
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7000000', endColorstr='#00ffffff',GradientType=0 );
-
-  // background: -moz-linear-gradient(top,  rgba(2,2,2,0.82) 0%, rgba(255,255,255,0.02) 53%, rgba(255,255,255,0) 54%);
-  // background: -webkit-linear-gradient(top,  rgba(2,2,2,0.82) 0%,rgba(255,255,255,0.02) 53%,rgba(255,255,255,0) 54%);
-  // background: linear-gradient(to bottom,  rgba(2,2,2,0.82) 0%,rgba(255,255,255,0.02) 53%,rgba(255,255,255,0) 54%);
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1020202', endColorstr='#00ffffff',GradientType=0 );
-
   background: -moz-linear-gradient(top,  rgba(2,2,2,0.86) 0%, rgba(255,255,255,0) 50%);
   background: -webkit-linear-gradient(top,  rgba(2,2,2,0.86) 0%,rgba(255,255,255,0) 50%);
   background: linear-gradient(to bottom,  rgba(2,2,2,0.86) 0%,rgba(255,255,255,0) 50%);
@@ -202,9 +192,12 @@ div.first-page-fade-in {
   p, h2, .home_links, .home_links a {
     color: #FFFFFF;
     // background-color: #FFFFFF;
-    width: 400px;
     margin: 0 auto;
     /*text-transform: uppercase;*/
+  }
+
+  p, h2 {
+    width: 400px;
   }
 
   h2 {
@@ -229,7 +222,7 @@ div.first-page-fade-in {
 
   .home_links {
     margin: 35px auto 0;
-    width: 415px;
+    // width: 415px;
 
     a {
       font-weight: 400;
@@ -367,29 +360,40 @@ div.fade-out-effect-test {
     display: block;
   }
 
+  .home_links {
+    width: 415px;
+  }
 }
 
 
 @media screen and (max-width: 580px) {
-  .content-b h2 {
-    font-size: 23px;
-    width: 90%;
-    font-style: italic;
+  .content-b {
+    h2 {
+      font-size: 23px;
+      width: 90%;
+      font-style: italic;
+    }
+
+    .margin-top-big {
+      width: 86%;
+      font-size: 13px;
+    }
+
+    .home_links {
+      margin: 35px auto 0;
+      // width: 350px;
+
+      .short_link_name {
+        padding: 10px 33px;
+        width: 50%;
+        display: block;
+        margin: 40px auto;
+      }
+    }
   }
 
-  .content-b .margin-top-big {
-    width: 90%;
-    font-size: 13px;
-  }
 
-  .content-b .home_links {
-    margin: 35px auto 0;
-    width: 350px;
-  }
 
-  .content-b .home_links .short_link_name {
-    padding: 10px 33px;
-  }
 
 }
 

@@ -203,6 +203,10 @@
       font-size: 2.5vw;
       width: 67vw;
       margin: 50px auto 0;
+
+      .chaum-desktop {
+        display: block;
+      }
     }
 
     #myCarousel {
@@ -309,6 +313,10 @@
       font-size: 30px;
       width: 795px;
       margin: 50px auto 0;
+
+      .chaum-desktop {
+        display: block;
+      }
     }
 
     #myCarousel {
@@ -415,9 +423,13 @@
     }
 
     .quote {
-      font-size: 21px;
+      font-size: 20px;
       width: 80%;
       margin: 20px auto 0;
+
+      .chaum-desktop {
+        display: none;
+      }
     }
 
     #myCarousel {
