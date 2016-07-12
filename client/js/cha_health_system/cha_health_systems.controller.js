@@ -21,6 +21,17 @@ app.controller('ChaHealthController', function($scope, $http, $window, $location
       parallax('chs-one', 0.2, 695);
       parallax('chs-two', 0.2, 900);
     });
+
+    $.mobile.loading().hide();
+    
+    $("#myCarousel").swiperight(function() {  
+      $(this).carousel('prev'); 
+    });  
+    
+    $("#myCarousel").swipeleft(function() {  
+     $(this).carousel('next');  
+    });  
+
   });
 
   // for carousel autoplay

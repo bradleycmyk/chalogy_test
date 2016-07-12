@@ -15,6 +15,11 @@ app.controller('MainController', function($scope, $rootScope, $window, $state, $
 			// console.log("something is wrong");
 		}
 	}
+
+	$(document).ready(function(){
+	    $.mobile.loading().hide();
+	});
+
 })
 
 app.config(function ($urlRouterProvider, $locationProvider) {
