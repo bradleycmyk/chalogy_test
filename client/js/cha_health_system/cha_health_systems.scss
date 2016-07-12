@@ -42,7 +42,7 @@
     // margin: -35px 0 0 0;
 
     .top-right {
-      width: 410px;
+      // width: 410px;
       display: inline-block;
       vertical-align: middle;
       // margin: 0 0 0 35px;
@@ -50,14 +50,14 @@
   }
 
   .chs-text-bottom {
-    width: 900px;
-    margin: 40px auto 0;
+    // width: 900px;
+    // margin: 40px auto 0;
 
     .bottom-right {
-      width: 366px;
+      // width: 366px;
       display: inline-block;
       vertical-align: top;
-      margin: 0 80px 0 40px;
+      // margin: 0 80px 0 40px;
       position: relative;
 
       a {
@@ -137,7 +137,19 @@
         margin: -35px 0 0 0;
       .chs-text-top {
         .top-right {
+          width: 410px;
           margin: 0 0 0 35px;
+        }
+      }
+
+      .chs-text-bottom {
+        width: 900px;
+        margin: 40px auto 0;
+
+        .bottom-right {
+          width: 366px;
+          margin: 0 80px 0 40px;
+
         }
       }
     }
@@ -292,9 +304,9 @@
         }
 
         .top-right {
-          width: 85%;
+          // width: 85%;
           display: block;
-          margin: 0 auto 20px;
+          margin: 0 40px 40px;
 
           p.emb {
             font-size: 20px;
@@ -307,9 +319,9 @@
         width: 100%;
 
         .bottom-right {
-          width: 85%;
+          // width: 85%;
           display: block;
-          margin: 0 auto 20px;
+          margin: 40px 40px 20px;
         }
 
         #myCarousel {
