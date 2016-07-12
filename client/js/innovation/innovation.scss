@@ -441,14 +441,15 @@ a.video-button1 {
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1010px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
 .inn-animation, .gif, .mask {
-  width: 752px;
+   width: 752px;
 }
 
 .inn-animation .gif {
   width: 752px;
+  /*width: 83vw;*/
 }
 
 .mask video {
@@ -464,7 +465,6 @@ a.video-button1 {
 .hero > div {
   width: 600px;
 }
-
 
 .mask {
   min-height: 570px;
