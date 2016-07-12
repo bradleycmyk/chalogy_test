@@ -540,8 +540,8 @@ a.up-arrow-about:after {
     font-size: 12px;
     border: none;
     cursor: pointer;
-    background-position: 80% 93%;
-    background-size: 36px;
+    background-position: 57% 69%;
+    background-size: 32px;
     /*background-image: url("menu-22.png");*/
     background-image: url("icons/mobile-menu-icon.png");
     background-repeat: no-repeat;
@@ -555,7 +555,7 @@ a.up-arrow-about:after {
   .popup-content1 {
     display: none;
     position: absolute;
-    margin-top: 8px;
+    margin-top: 6px;
     background-color: rgba(255, 255, 255, 1);
     width: 100vw;
     height: 100vh;
@@ -583,7 +583,7 @@ a.up-arrow-about:after {
     margin-left: auto;
     left: 0 !important;
     right: 0 !important;
-    margin-top: -38px;
+    margin-top: -44px;
     background-color: white;
     height: 59px;
     padding-top: 20px;
@@ -614,6 +614,18 @@ a.up-arrow-about:after {
     padding-top: 2px;
     background-color: white;
     margin-top: -30px;
+  }
+
+  #callingsearchs2 {
+    background-color: white;
+    width: 20px;
+    height: 23px;
+    border: none;
+    cursor: pointer;
+    background-image: url("search1.png");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 50% 50%;
   }
 
   .close-button {

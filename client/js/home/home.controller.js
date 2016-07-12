@@ -71,11 +71,11 @@ app.controller('HomeController', function($scope, $http, $window) {
         		$("#fade-in-test").addClass("fade-in-effect-test");
         		// $('#first-content').addClass('fade-in-effect-test');
 
-						$('.lax-one .content-a').addClass('gradient');
+						// $('.lax-one .content-a').addClass('gradient');
 
         	} else {
         		$("#firstp").removeClass('bg2').addClass("bg1");
-						$('.lax-one .content-a').removeClass('gradient');
+						// $('.lax-one .content-a').removeClass('gradient');
         	}
         }
 
@@ -91,11 +91,11 @@ app.controller('HomeController', function($scope, $http, $window) {
         		$("#secondp").removeClass('bg1').addClass("bg2");
         		$('#second-content').removeClass('fade-out-effect-test').addClass('fade-in-effect-test');
 
-						$('.lax-two .content-a').addClass('gradient');
+						// $('.lax-two .content-a').addClass('gradient');
         	} else {
         		$("#secondp").removeClass('bg2').addClass("bg1");
         		$('#second-content').addClass('fade-out-effect-test');
-						$('.lax-two .content-a').removeClass('gradient');
+						// $('.lax-two .content-a').removeClass('gradient');
         	}
         }
 
@@ -114,12 +114,12 @@ app.controller('HomeController', function($scope, $http, $window) {
         		// setTimeout(function(){
         		// 	$("#fullthree").removeClass('lax-three').addClass('lax-three-3');
         		// }, 800);
-        		$('.lax-three .content-a').addClass('gradient');
+        		// $('.lax-three .content-a').addClass('gradient');
 
         	}  else {
         		$("#thirdp").removeClass('bg2').addClass("bg1");
         		$('#third-content').addClass('fade-out-effect-test');
-						$('.lax-three .content-a').removeClass('gradient');
+						// $('.lax-three .content-a').removeClass('gradient');
         	}
         }
 
@@ -137,14 +137,13 @@ app.controller('HomeController', function($scope, $http, $window) {
         		// setTimeout(function(){
         		// 	$("#fullfour").removeClass('lax-four').addClass('lax-four-4');
         		// }, 800);
-        		$('.lax-four .content-a').addClass('gradient');
+        		// $('.lax-four .content-a').addClass('gradient');
         		
         	} else {
         		$("#fourthp").removeClass('bg2').addClass("bg1");
         		$('#fourth-content').removeClass('fade-in-effect-test').addClass('fade-out-effect-test');
         		$("#fullfour").removeClass('lax-four-4').addClass('lax-four');
-        								$('.lax-four .content-a').removeClass('gradient');
-
+        								// $('.lax-four .content-a').removeClass('gradient');
         	}
         }
 

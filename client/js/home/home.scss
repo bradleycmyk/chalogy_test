@@ -394,6 +394,18 @@ div.fade-out-effect-test {
 }
 
 
+@media screen and (max-width: 400px) {
+  .content-b .home_links {
+    margin: 35px auto 0;
+    width: 320px;
+  }
+
+  .content-b .home_links .short_link_name {
+    padding: 10px 10px;
+  }
+
+}
+
 
 
 
