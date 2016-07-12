@@ -17,7 +17,19 @@ app.controller('ChaumController', function($scope, $http, $window, $location) {
       parallax('chaum-one', 0.5, 695);
       parallax('chaum-two', 0.3, 1050);
     });
-  })
+
+    $.mobile.loading().hide();
+    
+    $("#myCarousel").swiperight(function() {  
+      $(this).carousel('prev'); 
+    });  
+    
+    $("#myCarousel").swipeleft(function() {  
+     $(this).carousel('next');  
+    });  
+
+
+  });
 
   // for carousel autoplay
   $('#myCarousel').carousel({
@@ -26,3 +38,4 @@ app.controller('ChaumController', function($scope, $http, $window, $location) {
   });
 
 });
+

@@ -441,7 +441,8 @@ a.video-button1 {
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1010px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
 
 	.inn-animation, .gif, .mask {
 	  width: 752px;
@@ -465,11 +466,9 @@ a.video-button1 {
 	  width: 600px;
 	}
 
-
-	.mask {
-	  min-height: 570px;
-	}
-
+  .mask {
+    min-height: 570px;
+  }
 
 	.play-buttons1 {
 	  width: 349px;

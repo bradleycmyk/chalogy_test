@@ -542,7 +542,8 @@ a.up-arrow-about:after {
     cursor: pointer;
     background-position: 80% 93%;
     background-size: 36px;
-    background-image: url("menu-22.png");
+    /*background-image: url("menu-22.png");*/
+    background-image: url("icons/mobile-menu-icon.png");
     background-repeat: no-repeat;
   }
 
@@ -624,9 +625,10 @@ a.up-arrow-about:after {
   }
 
   .x-icon {
-    background-image: url('icons/close-icon.png');
-    background-position: 55% 72%;
-    background-size: 25px;
+    background-image: url('icons/mobile-menu-close.png');
+    /*background-image: url('icons/close-icon.png');*/
+    background-position: 80% 72%;
+    background-size: 33px;
   }
 
 }

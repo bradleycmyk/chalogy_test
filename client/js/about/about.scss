@@ -249,6 +249,7 @@
 
   .about-mobile {
     display: block;
+    line-height: 24px;
   }
 
   .cream {
@@ -257,6 +258,7 @@
 
   .about {
     width: 83vw;
+    /*width: 87vw;*/
     margin: 60px auto 0;
     color: #000000;
 
@@ -308,7 +310,7 @@
           // letter-spacing: 1px;
           display: block;
           margin: 0 0 7px;
-          font-size: 2.2vw;
+          font-size: 2.1vw;
 
           .reg {
             font-size: 20px;
@@ -334,7 +336,7 @@
     }
 
     .science {
-      margin: -110px 0 40px 70px;
+      margin: -110px 0 40px 60px;
       position: relative;
       z-index: 2;
       width: 600px;
