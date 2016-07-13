@@ -179,6 +179,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+
+  .ss-mobile {
+    display: none;
+  }
   .sat_hero {
     width: 1200px;
     margin: 0 auto;
@@ -276,6 +280,10 @@
 }
 
 @media screen and(min-width: 600px) and (max-width: 1199px) {
+  .ss-mobile {
+    display: none;
+  }
+
   .sat_hero {
     width: 100%;
     background-image: url('ss_main.jpg');
