@@ -94,6 +94,9 @@
 	}
 
 	.inn-bottom {
+		width: 910px;
+		margin: 0 auto 40px;
+
 		.inn-bottom-bottom {
 			margin: 0 auto;
 
@@ -102,8 +105,10 @@
 			}
 
 			.inn-bottom-right {
-				display: inline-block;
-				position: relative;
+			    margin: 15px 0 0 25px;
+			    width: 430px;
+			    display: inline-block;
+			    position: relative;
 
 				&::before {
 					content: '';
@@ -507,6 +512,7 @@ a.video-button1 {
 		}
 
 		.inn-bottom {
+			width: 100%;
 			.inn-bottom-bottom {
 				width: 77vw;
 
