@@ -54,7 +54,6 @@
 
       .pink_bar {
         height: 10px;
-        // width: 340px;
         background-color: #eac4cd;
         margin: 0px auto;
         display: block;
@@ -122,29 +121,41 @@
   }
 }
 
-.ss-mobile {
-  display: none;
-}
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .ss-mobile {
     display: none;
   }
 
   .sat_hero {
-    width: 1200px;
-    margin: 0 auto;
     background-image: url('ss_main.jpg');
     background-size: 100% 100% !important;
     background-repeat: no-repeat;
 
+    .mobile {
+      display: none;
+    }
+  }
+
+  main {
+
+    .leftie {
+      display: inline-block;
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+  .sat_hero {
+    width: 1200px;
+    margin: 0 auto;
+    height: 797px;
+
     .bread_crumb {
       margin: 15px 0 0;
       padding: 0 0 0 40px;
-    }
-
-    .mobile {
-      display: none;
     }
 
     .text_box {
@@ -152,7 +163,6 @@
       width: 400px;
       padding: 40px 30px 0px 30px;
       float: right;
-      background-color: #FFFFFF;
 
       .long_text {
         font-size: 15px;
@@ -165,19 +175,10 @@
       }
 
       .pink_bar {
-        height: 10px;
         width: 340px;
-        background-color: #eac4cd;
         margin: 15px auto 0;
-        display: block;
-        clear: both;
-        text-align: center;
       }
     }
-  }
-
-  .sat_hero {
-    height: 797px;
   }
 
   main {
@@ -186,7 +187,6 @@
 
     .leftie {
       width: 580px;
-      display: inline-block;
 
       h1 {
         font-size: 65px;
@@ -210,43 +210,18 @@
       }
     }
   }
-
-  .ss-mobile {
-    display: none;
-  }
 }
 
-@media screen and(min-width: 600px) and (max-width: 1199px) {
-  .ss-mobile {
-    display: none;
-  }
-
+@media screen and(min-width: 768px) and (max-width: 1199px) {
   .sat_hero {
     width: 100%;
-    background-image: url('ss_main.jpg');
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat;
     height: 66vw;
     position: relative;
-
-    .mobile {
-      display: none;
-    }
-
-    .dial {
-      padding: 1.6% 0 0 2%;
-      font-size: 2vw;
-      display: inline-block;
-
-      .dial_text {
-        font-size: 3.5vw;
-      }
-    }
 
     .bread_crumb {
       padding: 1.7vw 0 0 3.3vw;
     }
-    //
+
     .text_box {
       width: 33.4vw;
       padding: 2.4vw 2vw 0 2vw;
@@ -261,7 +236,6 @@
 
       .tagline {
         font-size: 2.8vw;
-        clear: both;
         margin: 0 0 11px 0;
       }
     }
@@ -278,7 +252,6 @@
 
     .leftie {
       width: 49vw;
-      display: inline-block;
 
       h1 {
         font-size: 5.5vw;
@@ -303,13 +276,9 @@
       }
     }
   }
-
-  .ss-mobile {
-    display: none;
-  }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 767px) {
   .sat_hero {
     height: auto;
     background: none;
@@ -334,7 +303,6 @@
       padding: 20px;
       float: none;
       margin: 0 20px 20px;
-      background-color: #FFFFFF;
       position: relative;
       z-index: 1;
 
@@ -344,7 +312,6 @@
 
       .tagline {
         font-size: 36px;
-        clear: both;
         margin: 0;
       }
 
@@ -357,7 +324,6 @@
   main {
     .leftie {
       display: block;
-      // padding: 20px;
       margin: 0 40px;
 
       h1 {

@@ -1,8 +1,8 @@
 .health-wrapper {
   overflow: hidden;
   background: white;
+  margin: 0 auto;
 }
-
 
 .chs {
   .chs_hero {
@@ -78,12 +78,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .health-wrapper {
-    width: 1200px;
-    margin: 0 auto;
-  }
-
+@media screen and (min-width: 768px) {
   .chs {
     .mobile {
       display: none;
@@ -92,9 +87,7 @@
     .chs_hero {
       background-size: 1120px auto;
       background-position: -217px -237px;
-      width: 901px;
       margin: 70px auto 0;
-      padding: 115px 0;
 
       h4 {
         font-size: 17px;
@@ -146,102 +139,99 @@
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .health-wrapper {
-    width: 98vw;
-    margin: 0 auto;
+    width: 1200px;
   }
 
   .chs {
-    .mobile {
-      display: none;
-    }
-
     .chs_hero {
-      background-size: 1120px auto;
-      background-position: -217px -237px;
-      width: 77%;
-      margin: 70px auto 0;
-      padding: 9vw 0;
-
-      h4 {
-        font-size: 17px;
-        margin: 0;
-      }
-
-      h1 {
-        font-size: 70px;
-        margin: 20px 0 0 0;
-      }
+      width: 901px;
+      padding: 115px 0;
     }
-  }
 
-  .chs-text {
-      margin: -35px 0 0 0;
-    .chs-text-top {
-      img {
-        width: 50.5vw;
+    .chs-text {
+      .chs-text-top {
+        .top-right {
+          width: 410px;
+          margin: 0 0 0 35px;
+        }
       }
 
-      .top-right {
-        width: 31.2vw;
-        margin: 40px 0 0 35px;
+      .chs-text-bottom {
+        width: 900px;
+        margin: 40px auto 0;
 
-        p.emb {
-          font-size: 2.2vw;
-          line-height: 2.8vw;
-        }
+        .bottom-right {
+          width: 366px;
+          margin: 0 80px 0 40px;
 
-        p:not(.emb) {
-          font-size: 1.25vw;
         }
       }
     }
-
-    .chs-text-bottom {
-      width: 75.6vw;
-      margin: 0 auto;
-      margin-top: 38px;
-
-      .bottom-right {
-        width: 30.5vw;
-        font-size: 1.25vw;
-        margin: 0 40px 0 0;
-      }
-
-      #myCarousel {
-        width: 34vw;
-        margin: 0;
-        float: right;
-
-        .carousel-indicators.chs-indicators {
-          margin-left: -39%;
-        }
-      }
-    }
-  }
-
-  .chs-hepts {
-    position: absolute;
-    z-index: 100;
-    display: block;
-  }
-
-  .hept-chs-one {
-    top: 695px;
-    right: 0;
-  }
-
-  .hept-chs-two {
-    top: 900px;
-    left: 0px;
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .health-wrapper {
+    width: 98vw;
+  }
+
+  .chs {
+    .chs_hero {
+      width: 77%;
+      padding: 9vw 0;
+    }
+
+    .chs-text {
+      .chs-text-top {
+        img {
+          width: 50.5vw;
+        }
+
+        .top-right {
+          width: 31.2vw;
+          margin: 40px 0 0 35px;
+
+          p.emb {
+            font-size: 2.2vw;
+            line-height: 2.8vw;
+          }
+
+          p:not(.emb) {
+            font-size: 1.25vw;
+          }
+        }
+      }
+
+      .chs-text-bottom {
+        width: 75.6vw;
+        margin: 0 auto;
+        margin-top: 38px;
+
+        .bottom-right {
+          width: 30.5vw;
+          font-size: 1.25vw;
+          margin: 0 40px 0 0;
+        }
+
+        #myCarousel {
+          width: 34vw;
+          margin: 0;
+          float: right;
+
+          .carousel-indicators.chs-indicators {
+            margin-left: -39%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
   .health-wrapper {
     width: 100%;
-    margin: 0 auto;
   }
 
   .chs {

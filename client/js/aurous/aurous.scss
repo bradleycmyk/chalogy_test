@@ -41,8 +41,6 @@
       font-size: 33px;
     }
   }
-
-
 }
 
 .aur_hero {
@@ -187,60 +185,48 @@
 	}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 767px) {
+  .aurous_text_stuff {
+    margin: 10% 0 0 25%;
+    width: 250px;
+  }
+
   .wrapper {
     .bread_crumb.aurous_crumb {
       margin: 30px 50px;
-
-      a{
-        font-size: 13px;
-      }
     }
 
     .aur_logo {
-      width: 280px;
       float: right;
-      margin: 30px 280px 60px 0;
     }
 
     .aur_blurb {
-      width: 225px;
-      font-size: 15px;
       margin: 40px 0 0 145px;
       letter-spacing: 2px;
       line-height: 1.5;
 
       &::before {
-        width: 125px;
         margin: 0 auto 20px;
       }
     }
 
     .hero_blurb {
-      margin: 260px 0 0 22px;
 
       .enrich_blurb {
         display: inline-block;
         letter-spacing: 4px;
         width: 470px;
-        font-size: 30px;
       }
 
       .read_more {
-        width: 151px;
         margin: 0 auto;
         padding: 3px 15px;
-        font-size: 15px;
-        letter-spacing: 2px;
         font-weight: bold;
       }
     }
 
     .cara_one, .cara_two, .cara_three {
-      height: 760px;
       background-repeat: no-repeat;
-      background-position: 400px 0px;
-      background-size: 758px;
       clear: both;
     }
 
@@ -260,16 +246,7 @@
       width: 112px;
       margin-left: 11%;
       bottom: -50px;
-
-      //  margin: 0 0 0 -53%;
-      // left: 39% !important;
-      // margin-left: 0;
-      // bottom: -40px !important;
     }
-  }
-
-  .aur_main {
-    width: 1200px;
   }
 
   .desktop {
@@ -287,18 +264,53 @@
   }
 }
 
-@media screen and (min-width: 767px) {
-  .aurous_text_stuff {
-    margin: 10% 0 0 25%;
-    width: 250px;
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    .bread_crumb.aurous_crumb {
+      a{
+        font-size: 13px;
+      }
+    }
 
-    .hero_logo {
-      width: 250px;
-      display: block;
+    .aur_logo {
+      margin: 30px 280px 60px 0;
+      width: 280px;
+    }
+
+    .aur_blurb {
+      width: 225px;
+      font-size: 15px;
+
+      &::before {
+        width: 125px;
+      }
+    }
+
+    .hero_blurb {
+      margin: 260px 0 0 22px;
+
+      .enrich_blurb {
+        font-size: 30px;
+      }
+
+      .read_more {
+        width: 151px;
+        font-size: 15px;
+        letter-spacing: 2px;
+      }
+    }
+
+    .cara_one, .cara_two, .cara_three {
+      height: 760px;
+      background-position: 400px 0px;
+      background-size: 758px;
     }
   }
-}
 
+  .aur_main {
+    width: 1200px;
+  }
+}
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .aur_hero {
@@ -308,8 +320,6 @@
       width: 100%;
 
       .bread_crumb.aurous_crumb {
-        margin: 30px 50px;
-
         a{
           font-size: 1.1vw;
         }
@@ -318,19 +328,14 @@
       .aur_logo {
         float: right;
         margin: 30px 20vw 60px 0;
-        width: 23.4vw;
       }
 
       .aur_blurb {
         width: 18.5vw;
         font-size: 1.2vw;
-        margin: 40px 0 0 145px;
-        letter-spacing: 2px;
-        line-height: 1.5;
 
         &::before {
           width: 53%;
-          margin: 0 auto 20px;
         }
       }
 
@@ -338,62 +343,22 @@
         margin: 22vw 0 0 2vw;
 
         .enrich_blurb {
-          display: inline-block;
-          letter-spacing: 4px;
-          width: 470px;
           font-size: 2.5vw;
         }
 
         .read_more {
           width: 11.9vw;
-          margin: 0 auto;
-          padding: 3px 15px;
           font-size: 1.2vw;
           letter-spacing: 1px;
-          font-weight: bold;
         }
       }
 
       .cara_one, .cara_two, .cara_three {
         height: 64vw;
-        background-repeat: no-repeat;
         background-position: 34vw 0px;
         background-size: 64vw;
-        clear: both;
-      }
-
-      .cara_one {
-        background-image: url('aurous_home_tall.jpg');
-      }
-
-      .cara_two {
-        background-image: url('aurous_home_squat.jpg');
-      }
-
-      .cara_three {
-        background-image: url('aurous_home_tube.jpg');
-      }
-
-      .carousel-indicators.aurous-home-desk {
-        width: 112px;
-        margin-left: 11%;
-        bottom: -50px;
       }
     }
-  }
-
-  .desktop {
-    &.carousel-inner {
-      display: block;
-    }
-
-    &.leftie {
-      display: inline-block;
-    }
-  }
-
-  .mobile-tablet {
-    display: none;
   }
 
   .aur_main {
