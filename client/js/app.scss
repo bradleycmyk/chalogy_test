@@ -16,14 +16,9 @@ body {
 }
 
 body, html {
-    margin:0;
-    padding:0;
-    /*overflow:hidden;*/
+  margin:0;
+  padding:0;
 }
-
-/*.fp-nav {
-	visibility: hidden !important;
-}*/
 
 a {
 	text-decoration: none !important;
@@ -47,28 +42,25 @@ p {
 }
 
 .body-wrap {
-	/*max-width: 1950px;*/
 	margin: 0 auto;
-	/*margin-top: 10px;*/
-	/*margin: 76px auto 0;*/
 }
 
 .miller {
-    font-family: "Miller Ban Reg";
-    font-style: Normal;
-    font-weight: Normal;
+  font-family: "Miller Ban Reg";
+  font-style: Normal;
+  font-weight: Normal;
 }
 
 .milleritl {
-    font-family: "Miller Ban It";
-    font-style: Italic;
-    font-weight: Normal;
+  font-family: "Miller Ban It";
+  font-style: Italic;
+  font-weight: Normal;
 }
 
 .millersemibold {
-    font-family: "Miller Ban Semi Bd";
-    font-style: Normal;
-    font-weight: Normal;
+  font-family: "Miller Ban Semi Bd";
+  font-style: Normal;
+  font-weight: Normal;
 }
 
 .anchor#top {
@@ -161,7 +153,6 @@ p {
 input {
 	border-radius: none;
 }
-
 
 /*
 	Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
@@ -269,8 +260,6 @@ input {
 				width: 100%;
 				text-align: center;
 				height: 78%;
-				// padding: 20px;
-				font-family: MillerBanner;
 				font-weight: 100;
 				text-transform: uppercase;
 			}
@@ -297,7 +286,6 @@ input {
 
 .entity {
 	font-family: sans-serif;
-	// margin: 0 0 0 -3px;
 }
 
 a.aurous-bread:hover {
@@ -306,7 +294,6 @@ a.aurous-bread:hover {
 
 a.sat-bread:hover {
 	color: black !important;
-	/*color: #A9A9A9 !important;*/
 }
 
 

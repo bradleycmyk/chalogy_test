@@ -9,25 +9,19 @@
 }
 
 .header-unit {
-    height: auto;
-    width:100%;
-    /*overflow: hidden;*/
-    position:absolute;
-    margin-left:auto;
-    margin-right:auto;
+  height: auto;
+  width:100%;
+  position:absolute;
+  margin-left:auto;
+  margin-right:auto;
 
-}
-video {
-    /*position: absolute;*/
-    /*z-index: 1;*/
 }
 
 video.fillWidth {
-    width: 100%;
-    min-height: 100%;
+  width: 100%;
+  min-height: 100%;
 }
 .video-container-login {
-    width:100%;
-    /*overflow: hidden;*/
-    background-size:cover;
+  width:100%;
+  background-size:cover;
 }

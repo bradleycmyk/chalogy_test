@@ -19,14 +19,14 @@ app.controller('ChaHealthController', function($scope, $http, $window, $location
     });
 
     $.mobile.loading().hide();
-    
-    $("#myCarousel").swiperight(function() {  
-      $(this).carousel('prev'); 
-    });  
-    
-    $("#myCarousel").swipeleft(function() {  
-     $(this).carousel('next');  
-    });  
+
+    $("#myCarousel").swiperight(function() {
+      $(this).carousel('prev');
+    });
+
+    $("#myCarousel").swipeleft(function() {
+     $(this).carousel('next');
+    });
 
   });
 

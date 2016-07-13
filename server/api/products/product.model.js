@@ -1,8 +1,6 @@
 'use strict';
 var crypto = require('crypto'),
     mongoose = require('mongoose')
-    // unique = require('mongoose-unique-validator'),
-    // extend = require('mongoose-schema-extend');
 
 var schema = new mongoose.Schema({
     category : {

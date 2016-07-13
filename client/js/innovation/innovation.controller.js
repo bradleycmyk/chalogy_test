@@ -2,7 +2,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
   $scope.isActive = function (route) {
     return route == $window.location.href.split("5959/")[1];
   };
-  
+
   $(document).ready(function(){
 
     // parallax
@@ -42,7 +42,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
     $(document).on('scroll', checkMedia);
 
 
-    // adding controls attributes to video if screensize is less than 1050px 
+    // adding controls attributes to video if screensize is less than 1050px
     function addControls(){
       var actual_width = window.innerWidth;
       if(actual_width < 1050) {
@@ -93,7 +93,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
         $("#vid1").get(0).play();
       })
     });
-      
+
     $("#btn1-1").click(function(){
       $(".v-two").css({"display":"none"});
       $(".v-three").css({"display":"none"});
@@ -102,15 +102,15 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $(".v-six").css({"display":"none"});
       $(".v-seven").css({"display":"none"});
       $(".v-eight").css({"display":"none"});
-      
+
       $(".v-one").css({"display":"block"});
-      
+
       $('.line-in-video').css({ "opacity":"0"});
       $('#image-div').css({"display":"none"});
       $('#video-text-1-1').addClass('fade-in-effect');
-          $('.fading-effect').removeClass('fadingEffect');
-          $('.fading-effect').addClass('fadingEffect-to-left');
-          $('.line-in-video').css({ "opacity":"1"});
+      $('.fading-effect').removeClass('fadingEffect');
+      $('.fading-effect').addClass('fadingEffect-to-left');
+      $('.line-in-video').css({ "opacity":"1"});
 
       $.when(changevideo() ).done(function(){
         $('#videosource1').attr('src', 'video/cha7es_01.mp4');
@@ -128,16 +128,16 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $(".v-six").css({"display":"none"});
       $(".v-seven").css({"display":"none"});
       $(".v-eight").css({"display":"none"});
-      
+
       $(".v-two").css({"display":"block"});
 
       $('.line-in-video').css({ "opacity":"0"});
       $('#image-div').css({"display":"none"});
       $('#video-text-2-2').addClass('fade-in-effect');
-          $('.fading-effect').removeClass('fadingEffect-to-left');
-          $('.fading-effect').addClass('fadingEffect');
-          $('.line-in-video').css({ "opacity":"1"});
-      
+      $('.fading-effect').removeClass('fadingEffect-to-left');
+      $('.fading-effect').addClass('fadingEffect');
+      $('.line-in-video').css({ "opacity":"1"});
+
 
       $('#image-div').css({"display":"none"});
       $.when(changevideo() ).done(function(){
@@ -148,7 +148,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       })
 
     })
-    
+
     $("#btn3-1").click(function(){
       $(".v-one").css({"display":"none"});
       $(".v-two").css({"display":"none"});
@@ -157,16 +157,16 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $(".v-six").css({"display":"none"});
       $(".v-seven").css({"display":"none"});
       $(".v-eight").css({"display":"none"});
-      
+
       $(".v-three").css({"display":"block"});
 
       $('.line-in-video').css({ "opacity":"0"});
       $('#image-div').css({"display":"none"});
       $('#video-text-3-3').addClass('fade-in-effect');
-          $('.fading-effect').removeClass('fadingEffect');
-          $('.fading-effect').addClass('fadingEffect-to-left');
-          $('.line-in-video').css({ "opacity":"1"});
-      
+      $('.fading-effect').removeClass('fadingEffect');
+      $('.fading-effect').addClass('fadingEffect-to-left');
+      $('.line-in-video').css({ "opacity":"1"});
+
       $('#image-div').css({"display":"none"});
       $.when(changevideo() ).done(function(){
         $('#videosource1').attr('src', 'video/cha7es_03.mp4');
@@ -185,7 +185,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $(".v-six").css({"display":"none"});
       $(".v-seven").css({"display":"none"});
       $(".v-eight").css({"display":"none"});
-    
+
 
       $('#image-div').css({"display":"none"});
       $.when(changevideo() ).done(function(){
@@ -204,7 +204,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $(".v-six").css({"display":"none"});
       $(".v-seven").css({"display":"none"});
       $(".v-eight").css({"display":"none"});
-      
+
       $(".v-five").css({"display":"block"});
 
       $('.line-in-video').css({ "opacity":"0"});
@@ -222,7 +222,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
           $("#vid1").get(0).play();
       })
 
-      
+
     })
 
     $("#btn6-1").click(function(){
@@ -234,7 +234,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $(".v-six").css({"display":"none"});
       $(".v-seven").css({"display":"none"});
       $(".v-eight").css({"display":"none"});
-      
+
       $('#image-div').css({"display":"none"});
         $.when(changevideo() ).done(function(){
           $('#videosource1').attr('src', 'video/cha7es_06.mp4');
@@ -252,7 +252,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $(".v-five").css({"display":"none"});
       $(".v-six").css({"display":"none"});
       $(".v-eight").css({"display":"none"});
-      
+
       $(".v-seven").css({"display":"block"});
 
       $('.line-in-video').css({ "opacity":"0"});
@@ -279,7 +279,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $(".v-fix").css({"display":"none"});
       $(".v-six").css({"display":"none"});
       $(".v-eight").css({"display":"none"});
-      
+
       $(".v-seven").css({"display":"none"});
 
 
@@ -290,7 +290,7 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
         $("#vid1").get(0).load();
         $("#vid1").get(0).play();
       })
-      
+
     })
 
     $(".play-btn1").click(function(){
@@ -299,9 +299,9 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $(this).removeClass('play_bg');
     })
 
-    // adding active class to buttons 
+    // adding active class to buttons
     $('.circle1').click(function(e) {
-      e.preventDefault(); 
+      e.preventDefault();
       $('.circle1').removeClass('active-btn1');
       $('.play-btn1').addClass('play_bg');
       $('.heptagon1').removeClass('heptagon_bg');
@@ -313,8 +313,6 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
       $('.play-btn1').addClass('play_bg');
       $(this).addClass('heptagon_bg');
     });
-
-
   });
 
     $scope.text1 = ["Sh-Polypeptide 55", "(PDGA-AA)", "Stimulates healthier looking skin and enhances skin's nautral rejuvenating power."];
@@ -325,7 +323,4 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
     $scope.text6 = ["Rh-Polypeptide 9", "(VEGF)", "Stimulates youthful rejvenation while protecting the skin and fostering healing."];
     $scope.text7 = ["Rh-Polypeptide 1", "Stimulates healthy skin growth, promoting younger-looking skin"];
     $scope.text8 = ["sh-Polypeptide 45", "(GM-CSF)", "Rh-Oligopeptide-2", "Rh-Polypeptide 9", "(VEGF)", "RH-Polypeptide 8", "(FGF4)", "EGF Rh-Oligopeptide 1", "Sh-Polypeptide 55", "(PDGA-AA)", "Rh-Polypeptide 1"];
-
-  
 });
-

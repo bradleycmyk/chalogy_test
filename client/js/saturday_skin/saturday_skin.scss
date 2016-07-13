@@ -69,7 +69,6 @@
 
       .tagline {
         clear: both;
-        // margin: 0;
       }
     }
   }
@@ -121,15 +120,15 @@
   }
 }
 
-  .ss-mobile {
-    display: none;
-  }
+.ss-mobile {
+  display: none;
+}
 
 @media screen and (min-width: 1200px) {
-
   .ss-mobile {
     display: none;
   }
+
   .sat_hero {
     width: 1200px;
     margin: 0 auto;
@@ -271,7 +270,6 @@
     }
   }
 
-
   main {
     width: 90%;
     margin: 5vw auto;
@@ -308,9 +306,6 @@
     display: none;
   }
 }
-
-
-
 
 @media screen and (max-width: 599px) {
   .sat_hero {
@@ -376,7 +371,6 @@
       a {
         margin: 20px auto 0;
       }
-
     }
 
     .ss-mobile {

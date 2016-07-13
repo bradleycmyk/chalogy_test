@@ -60,14 +60,6 @@
 				color: #FFFFFF;
 				padding: 40px 35px 90px;
 
-				h3 {
-					font-family: MillerBanner;
-				}
-
-				p, a {
-					font-family: WorkSans;
-				}
-
 				a {
 					text-transform: uppercase;
 					color: #FFFFFF;
@@ -84,7 +76,6 @@
 	.complex {
 		h2 {
 			border: 1px solid #000000;
-			font-family: MillerBanner;
 			width: 100%;
 			text-align: center;
 			padding: 20px 0 16px;
@@ -109,10 +100,7 @@
 		}
 
 		p {
-			// width: 200px;
-			// margin: 0 auto;
 			text-align: center;
-			font-family: MillerBanner;
 			font-style: italic;
 			font-size: 14px;
 		}
@@ -145,5 +133,4 @@
 	max-width: 1200px;
 	height: auto;
 }
-
 

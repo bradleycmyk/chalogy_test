@@ -35,21 +35,10 @@
 
 }
 
-/*.aurousproduct_detail {
-	width: 100%;
-}*/
-
 .aurproduct-desc {
 	width: 70%;
 	text-align: center;
-	/*margin-left: -10px;*/
 	margin-top: 70px;
-}
-
-#myCarousel {
-/*	width: 90%;
-	margin: 0 auto;
-	margin-top: -90px;*/
 }
 
 .aligner {
@@ -99,13 +88,10 @@
 	background-color: black !important;
 	width: 10px !important;
 	height: 10px !important;
-	// margin: 1px 1px 1px 0!important;
 }
 
 .carousel_photo {
 	width: 100%;
-	/*width: 500px;*/
-	/*height: 660px;*/
 }
 
 hr.aurous-recommendation {
@@ -127,7 +113,6 @@ hr.aurous-recommendation {
 
 .text-center {
 	text-align: center;
-	// font-family: MillerBanner;
 	font-weight: 100;
 	letter-spacing: 4px;
 	font-size: 2.3em;
@@ -140,10 +125,10 @@ hr.aurous-recommendation {
     margin-top: 1vh;
     margin-bottom: 3vh;
     width: 20%;
-    /*position: relative;*/
     display: inline-block;
-    &:hover {
-        box-shadow: 0 0 4px #fff;
+
+		&:hover {
+    	box-shadow: 0 0 4px #fff;
     }
 }
 

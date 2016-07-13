@@ -3,7 +3,6 @@ app.controller('HomeController', function($scope, $http, $window) {
 	// fade in test
 	window.onload = function() {
 	  document.getElementById('fade-in-test').className = 'fade-in-effect-test';
-	  // document.getElementById('first-content-1').className = "fade-in-effect-test";
 	};
 
 	$(document).ready(function() {
@@ -24,12 +23,8 @@ app.controller('HomeController', function($scope, $http, $window) {
         		$("#firstp").removeClass('bg1').addClass("bg2");
 
         		$("#fade-in-test").addClass("fade-in-effect-test");
-        		// $('#first-content').addClass('fade-in-effect-test');
-				// $('.lax-one .content-a').addClass('gradient');
-
         	} else {
         		$("#firstp").removeClass('bg2').addClass("bg1");
-				// $('.lax-one .content-a').removeClass('gradient');
         	}
         }
 
@@ -44,11 +39,9 @@ app.controller('HomeController', function($scope, $http, $window) {
         	if(scrollTop2 < yBottomDot2 && scrollBottom2 > yTopDot2) {
         		$("#secondp").removeClass('bg1').addClass("bg2");
         		$('#second-content').removeClass('fade-out-effect-test').addClass('fade-in-effect-test');
-				// $('.lax-two .content-a').addClass('gradient');
         	} else {
         		$("#secondp").removeClass('bg2').addClass("bg1");
         		$('#second-content').addClass('fade-out-effect-test');
-				// $('.lax-two .content-a').removeClass('gradient');
         	}
         }
 
@@ -63,12 +56,9 @@ app.controller('HomeController', function($scope, $http, $window) {
         	if(scrollTop3 < yBottomDot3 && scrollBottom3 > yTopDot3) {
         		$("#thirdp").removeClass('bg1').addClass("bg2");
         		$('#third-content').removeClass('fade-out-effect-test').addClass('fade-in-effect-test');
-        		// $('.lax-three .content-a').addClass('gradient');
-
         	}  else {
         		$("#thirdp").removeClass('bg2').addClass("bg1");
         		$('#third-content').addClass('fade-out-effect-test');
-				// $('.lax-three .content-a').removeClass('gradient');
         	}
         }
 
@@ -83,13 +73,10 @@ app.controller('HomeController', function($scope, $http, $window) {
         	if(scrollTop4 < yBottomDot4 && scrollBottom4 > yTopDot4) {
         		$("#fourthp").removeClass('bg1').addClass("bg2");
         		$('#fourth-content').removeClass('fade-out-effect-test').addClass('fade-in-effect-test');
-        		// $('.lax-four .content-a').addClass('gradient');
-        		
         	} else {
         		$("#fourthp").removeClass('bg2').addClass("bg1");
         		$('#fourth-content').removeClass('fade-in-effect-test').addClass('fade-out-effect-test');
         		$("#fullfour").removeClass('lax-four-4').addClass('lax-four');
-        								// $('.lax-four .content-a').removeClass('gradient');
         	}
         }
 
@@ -97,12 +84,10 @@ app.controller('HomeController', function($scope, $http, $window) {
         $(document).on('scroll', activePage2);
         $(document).on('scroll', activePage3);
         $(document).on('scroll', activePage4);
-
         // end of active page function
 
 
         // smooth scroll to next page on click (page indicators)
-
 		$(document).on("click", "#firstp", function(){
 		$('html,body').animate({
 	        scrollTop: $("#firstsection").offset().top},
@@ -259,11 +244,6 @@ app.controller('HomeController', function($scope, $http, $window) {
 		$(window).resize(backgroundResize);
 		$(window).focus(backgroundResize);
 		backgroundResize();
-
 	}); // end of $(document).ready
-
-
 });
 
-
-	

@@ -22,12 +22,11 @@ app.controller('SaturdayProductController', function($scope, $http, ProductFacto
 		if($(window).width() < 1205) {
 			$('#max-width').removeClass('wrapper');
 		} else {
-			// $('#max-width').addClass('wrapper');
 		}
 
     setTimeout(function() {
       $('#white-wrap').removeClass('white-wrap')
-    }, 250);	
+    }, 250);
   })
 
 });

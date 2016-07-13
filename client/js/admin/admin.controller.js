@@ -30,10 +30,4 @@ app.controller('AdminController', function($scope, $http, AdminFactory, $state, 
 		AdminFactory.removeAurousItem(title).then(function(data){
 		});
 	};
-	
-
 });
-
-
-
-
