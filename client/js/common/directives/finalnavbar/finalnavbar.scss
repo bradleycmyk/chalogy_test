@@ -41,9 +41,7 @@
     position:fixed;
     margin-top: 0;
     top:0;
-    /*z-index: 9999 !important;*/
 }
-
 
 /* fixed nav bar styling */
 #nav-menu-menu {
@@ -392,7 +390,6 @@ a.up-arrow-about:after {
   display: block;
   position: absolute;
   left: 44px;
-  /*left: 43%;*/
   top: 0;
   bottom: 100%;
   width: 0;
@@ -424,7 +421,6 @@ a.up-arrow-about:after {
   display: none;
 }
 
-
 .menu-col-1, .menu-col-2 {
   display: inline-block;
   width: 49%;
@@ -443,8 +439,9 @@ a.up-arrow-about:after {
   display: table;
 }
 
-@media screen and (max-width: 964px){ 
 
+/*for ipad */ 
+@media screen and (min-width: 768px) and (max-width: 964px){ 
   .dropdown-aurouscontent a, .dropdown-content a, .dropdown-aboutcontent a {
       padding: 10px 14px;
   }
@@ -465,10 +462,7 @@ a.up-arrow-about:after {
   .second-part {
       width: 420px;
   }
-}
 
-
-@media screen and (min-width: 751px) and (max-width: 964px){ 
   #dropdown-about {
     padding-left: 0px;
   }
@@ -487,7 +481,8 @@ a.up-arrow-about:after {
 
 }
 
-@media screen and (max-width: 750px){ 
+/* moblie menu */
+@media screen and (max-width: 767px){ 
 
   #mobile-search {
     border: none;
@@ -542,7 +537,6 @@ a.up-arrow-about:after {
     cursor: pointer;
     background-position: 57% 69%;
     background-size: 32px;
-    /*background-image: url("menu-22.png");*/
     background-image: url("icons/mobile-menu-icon.png");
     background-repeat: no-repeat;
   }
@@ -601,7 +595,6 @@ a.up-arrow-about:after {
 
   .mobile-logo1 {
     display: block;
-    /*margin-left: 42%;*/
     margin: 0 auto;
     width: 118px;
   }
@@ -632,13 +625,8 @@ a.up-arrow-about:after {
     z-index: 9999;
   }
 
-  #mobile-menu-about {
-    /*padding-left: 50%;*/
-  }
-
   .x-icon {
     background-image: url('icons/mobile-menu-close.png');
-    /*background-image: url('icons/close-icon.png');*/
     background-position: 80% 72%;
     background-size: 33px;
   }

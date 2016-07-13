@@ -139,18 +139,9 @@
 	position: relative;
 	display: inline-block;
 
-/*	margin-right: 1%;
-	width: 48%;
-	margin-top: 18px;
-	margin-bottom: 1vh;
-	position: relative;
-	display: inline-block;
-*/
 }
 
 .aurous_link {
-    // margin-top: 15px;
-    // padding-left: 5px;
     display: inline-block;
     vertical-align: top;
     color: white;
@@ -225,8 +216,7 @@
   transition: opacity 1s ease-in-out;
   -webkit-transform: translateZ(0px);
   webkit-font-smoothing: subpixel-antialiase;
-  /*-webkit-font-smoothing:antialiased;*/
-  /*-webkit-backface-visibility:hidden; */
+
 }
 
 #crossfade img.top:hover {
@@ -237,22 +227,6 @@
 	visibility: hidden;
 }
 
-
-/*.readmore-in-aurous {
-	display: block;
-    color: white;
-    border: 1px solid #AA8A37;
-    width: 135px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0px 15px;
-    font-family: WorkSans;
-    font-size: 0.8em;
-    letter-spacing: 1px;
-    font-weight: bold;
-}
-
-*/
 @media screen and (min-width: 1205px){
 	.aurous-header {
 		background-image: none;

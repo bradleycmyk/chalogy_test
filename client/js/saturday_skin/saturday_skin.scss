@@ -50,25 +50,9 @@
     }
 
     .text_box {
-      // margin: 491px 60px 0 0;
-      // width: 400px;
-      // padding: 40px 30px 0px 30px;
-      // float: right;
       background-color: #FFFFFF;
-
-      // .long_text {
-      //   // font-size: 15px;
-      //   // margin: 0 10px 18px 10px;
-      // }
-      //
-      // .tagline {
-      //   font-size: 35px;
-      //   margin: 0 10px 20px;
-      // }
-
       .pink_bar {
         height: 10px;
-        // width: 340px;
         background-color: #eac4cd;
         margin: 0px auto;
         display: block;
@@ -91,56 +75,17 @@
   }
 
   .sat_hero {
-    // background-image: url('ss_main.jpg');
-    // background-size: 100% 100% !important;
-    // background-repeat: no-repeat;
     position: relative;
-
-    // .pink_bar {
-    //   height: 10px;
-    //   width: 340px;
-    //   background-color: #eac4cd;
-    //   margin: 0px auto;
-    //   display: block;
-    //   clear: both;
-    //   text-align: center;
-    // }
-
-    // .white-things {
-    //   // margin: 0 60px 0;
-    //   // width: 400px;
-    //   clear: both;
-    //   float: right;
-    //
-    //   .white {
-    //     background-color: #FFFFFF;
-    //     height: 10px;
-    //     width: 20px;
-    //     margin: 0;
-    //     padding: 0;
-    //   }
-    //
-    //   .w-one {
-    //     float: left;
-    //   }
-    //
-    //   .w-two{
-    //     float: right;
-    //   }
-    //
-    // }
   }
 
 
   main {
     .leftie {
-      // display: inline-block;
       vertical-align: top;
       position: relative;
       z-index: 2;
 
       h1 {
-        // font-family: MillerBanner;
         margin: 0 0 10px 0;
         color: rgb(0, 209, 165);
         width: 9em;
@@ -148,9 +93,7 @@
       }
 
       a {
-        // font-family: WorkSans;
         width: 200px;
-        // margin: 20px 0 0;
         padding: 10px 18px;
         font-size: 0.9em;
         font-weight: bold;
@@ -203,16 +146,6 @@
       display: none;
     }
 
-    // .dial {
-    //   padding: 30px 0 0 60px;
-    //   display: inline-block;
-    //
-    //   .dial_text {
-    //     font-size: 65px;
-    //     color: #000000;
-    //   }
-    // }
-
     .text_box {
       margin: 491px 60px 0 0;
       width: 400px;
@@ -240,11 +173,6 @@
         text-align: center;
       }
     }
-    //
-    // .white-things {
-    //   margin: 0 60px 0;
-    //   width: 400px;
-    // }
   }
 
   .sat_hero {
@@ -324,10 +252,6 @@
       position: absolute;
       bottom: 0;
       right: 4vw;
-    //   background-color: #FFFFFF;
-      // margin: 0 5vw 0 0;
-      // margin-top: calc(100vw * 0.43);
-      // float: right;
 
       .long_text {
         margin: 0 0 2vw 0;
@@ -459,12 +383,6 @@
       display: block;
       width: 100%;
       margin: 20px 0;
-
-      // .three_drops {
-      //   width: 250px;
-      //   display: block;
-      //   margin: 20px auto;
-      // }
     }
 
     .ss-desktop {
@@ -472,21 +390,3 @@
     }
   }
 }
-
-
-// @media screen and (max-width: 747px) {
-//   .wrapper {
-//     width: 100% !important;
-//
-//     .dial {
-//       padding: 0 0 0 22%;
-//       font-size: 2vw;
-//       display: block;
-//
-//       .dial_text {
-//         font-size: 3.5vw;
-//         margin: 0;
-//       }
-//     }
-//   }
-// }

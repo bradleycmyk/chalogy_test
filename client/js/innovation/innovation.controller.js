@@ -27,7 +27,6 @@ app.controller('InnovationController', function($scope, $http, $window, $locatio
         var scrollTop = $(window).scrollTop() + tolerancePixel;
         var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
 
-        //if ($(window).scrollTop() > $(window).height() - 10) {
         media.each(function(index, el) {
             var yTopMedia = $(this).offset().top;
             var yBottomMedia = $(this).height() + yTopMedia;

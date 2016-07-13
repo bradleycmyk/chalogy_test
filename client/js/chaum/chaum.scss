@@ -1,7 +1,5 @@
 .chaum-wrapper {
-  // width: 1200px;
   overflow: hidden;
-  // margin: 0 auto;
   background: white;
 }
 
@@ -13,24 +11,13 @@
   }
 
   h1 {
-    // font-size: 102px;
-    // margin: 50px 0 50px 0;
     text-align: center;
   }
 
   .pool-p {
-    // width: 330px;
-    // margin: 0 0 0 35px;
-    // display: inline-block;
-
     h4 {
-      // font-size: 27px;
       margin: 0;
-
       &::after {
-        // width: 65px;
-        // border-top: 5px solid #000000;
-        // margin: 20px 0;
         content: '';
         display: block;
       }
@@ -38,9 +25,6 @@
   }
 
   .quote {
-    // font-size: 30px;
-    // width: 795px;
-    // margin: 50px auto 0;
     position: relative;
     font-weight: 100;
 
@@ -58,8 +42,6 @@
   }
 
   #myCarousel {
-    // width: 837px;
-    // margin: 30px 0 25px 181px;
     font-size: 0;
     display: inline-block;
 
@@ -77,20 +59,11 @@
     }
 
     .carousel-inner {
-      // width: 797px;
-      // height: 444px;
       display: inline-block;
       vertical-align: middle;
 
       .cara_one, .cara_two {
-        // width: 797px;
-        // height: 444px;
         vertical-align: middle;
-
-        // img {
-        //   width: 797px;
-        //   height: 444px;
-        // }
       }
     }
 
@@ -107,25 +80,6 @@
     }
 
   }
-
-  // .lower-ps {
-  //   width: 800px;
-  //   margin: 30px auto;
-  //
-  //   .left-ps {
-  //     margin: 0 30px 0 0;
-  //   }
-  //
-  //   .left-ps, .right-ps {
-  //     width: 350px;
-  //     display: inline-block;
-  //     vertical-align: top;
-  //
-  //     p {
-  //       margin: 0 0 20px 0;
-  //     }
-  //   }
-  // }
 }
 
 .chaum-banner {
@@ -138,30 +92,12 @@
   display: inline-block;
 
   h3 {
-    // font-size: 37px;
-    // margin: 100px 0;
-    // font-family: MillerBanner;
-    // font-style: italic;
     color: #FFFFFF;
     text-align: center;
     vertical-align: middle;
   }
 }
 
-// .hepts {
-//   position: absolute;
-//   z-index: 100;
-// }
-//
-// .hept-chaum-one {
-//   top: 1100px;
-//   right: 0;
-// }
-//
-// .hept-chaum-two {
-//   top: 1410px;
-//   left: 0px;
-// }
 
 @media screen and (min-width: 600px) and (max-width: 1199px) {
   .chaum-wrapper {

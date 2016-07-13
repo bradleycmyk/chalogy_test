@@ -1,18 +1,10 @@
 <!-- <login></login> -->
 
 <div class="white-wrap" id="white-wrap-d">
-<!-- <div class="shadow"> -->
-	<!-- <navbar></navbar> -->
-  <!-- <homenavbar></homenavbar> -->
   <finalnavbar></finalnavbar>
-	
-<!-- </div> -->
-<!-- <div class="clean-and-clear"></div> -->
-
 <div class="sat_image clear">
 	<img class="sat-banner" src="SS_TopBar_final.jpg" alt="saturday skin banner" />
 </div>
-<!-- <div class="sat-image-test"></div> -->
 
 <div class="max-width clear">
     <div class="sat_link">
@@ -36,7 +28,6 @@
 				</div>
 			</div>
 			<div class="col-sm-6">
-				<!-- <br><br><br> -->
 				<div class="prod-dsc">
 					<p class="product-name">{{ product.name }}</p>
 					<p class="product-title">{{ product.title }}</p>
@@ -72,24 +63,6 @@
 				FANS ALSO LOVE
 			</a>
 		</div>
-
-<!-- 		<div class="row buttons">
-			<div class="col-xs-4" ng-class="{ active:tab === 1}" >
-				<a href ng-click="selectTab(1)">
-					IS IDEAL FOR
-				</a>
-			</div>
-			<div class="col-xs-4" ng-class="{ active:tab === 2}">
-				<a href ng-click="selectTab(2)">
-					 HOW TO USE
-				</a>
-			</div>
-			<div class="col-xs-4" ng-class="{ active:tab === 3}">
-				<a href ng-click="selectTab(3)">
-					FANS ALSO LOVE
-				</a>
-			</div>
-		</div> -->
 	</div>
 
 	<!-- tab content -->
@@ -101,27 +74,9 @@
 		</div>
 
 		<div class="panel number2" ng-show="tab === 2">
-			<!-- <p class="margin_top">how to use</p> -->
-	    <!--   <div class="div_web"> -->
 	          <div class='how-to-use'>
 	          	<p>{{product.how}}</p>
 	          </div>
-	      <!-- </div> -->
-
-			<!-- video -->
-			<!-- <div class="div_web">
-			    <div class='embed-container'>
-			        <iframe src="https://player.vimeo.com/video/162845048?autoplay=1&loop=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-			        </iframe>
-			    </div>
-			</div>
-
-			<div class="div_mobile">
-			    <div class='embed-container'>
-			        <iframe src="https://player.vimeo.com/video/162845048?autoplay=1&loop=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-			        </iframe>
-			    </div>
-			</div> -->
 		</div>
 
 		<!-- recommendations -->
@@ -132,16 +87,8 @@
 	            <p id="prodname-recommendation">{{ rec.name}}</p>
 	          </a>
 	      </div>
-
-      <!-- <div class="recommendations" ng-repeat="recommendation in recommendations  | limitTo: 5">
-				<a href="/saturday-skin/products/{{ recommendation.name }}">
-					<img class="detail_photo" ng-src="{{ recommendation.image[0]}}" width="185px;" alt="{{ recommendation.name }}" />
-				</a>
-			</div> -->
 		</div>
 	</div>
-
-<!-- carousel prcatice with multiple images -->
 
 </div>
 </div>

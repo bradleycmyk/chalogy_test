@@ -68,25 +68,4 @@ app.controller('searchController', function($scope, ProductFactory, $state, $sta
 			$scope.pages = pages;
 		})
 	}
-
-
-	// highligting search text !!
-	// $(document).ready(function(){
-
-	//     function highlightSearchWord() {
-	// 	    var text = $stateParams.text;
-	// 	    var query = new RegExp("(\\b" + text + "\\b)", "gim");
-
-	// 	    for(var i = 0; i < $(".pages").length; i++) {
-	// 	    	var e = $(".pages")[i].innerHTML;
-	// 	    	var enew = e.replace(/(<span>|<\/span>)/igm, "");
-	// 		    $(".pages")[i].innerHTML = enew;
-	// 		    var newe = enew.replace(query, "<span>$1</span>");
-	// 		    $(".pages")[i].innerHTML = newe;
-	// 	    }
-	// 	}
-	// 	setTimeout(highlightSearchWord, 1500);
-
-	// })
-
 });

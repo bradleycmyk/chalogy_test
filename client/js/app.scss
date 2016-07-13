@@ -162,9 +162,6 @@ input {
 	border-radius: none;
 }
 
-// input:-webkit-autofill {
-//   @include boxshadow(0 0 0 1000px #F2F2F2 inset !important);
-// }
 
 /*
 	Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
@@ -314,8 +311,6 @@ a.sat-bread:hover {
 
 
 // Add your fractal Sass files below!
-@import 'common/directives/navbar/navbar';
-@import 'common/directives/homenavbar/homenavbar';
 @import 'common/directives/finalnavbar/finalnavbar';
 @import 'common/directives/socialIcons/socialIcons';
 @import 'common/directives/back_to_top/back_to_top';

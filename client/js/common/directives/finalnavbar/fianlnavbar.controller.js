@@ -4,11 +4,9 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 	// search
 	$("#callingsearchs1").click(function(){
 		$("#testingsearch1").removeClass('fade-out-effect-input').addClass("fade-in-effect-input").focus();
-		// $("#testingsearch1").css({"border-bottom":"1px"});
 
 		var text = $("#testingsearch1").val();
 		if (text == ""){
-			console.log("do nothing");
 		} else {
         	$state.go("search", {text: text});
 		}
@@ -18,16 +16,13 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 
 	$("#callingsearchs2").click(function(){
 		$("#testingsearch2").removeClass('fade-out-effect-input').addClass("fade-in-effect-input").focus();
-		// $("#testingsearch1").css({"border-bottom":"1px"});
 
 		var text = $("#testingsearch1").val();
 		if (text == ""){
-			console.log("do nothing");
 		} else {
         	$state.go("search", {text: text});
 		}
 		$("#testingsearch1").val("");
-
 	});
 
 
@@ -40,7 +35,6 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 	    if(keycode == '13') {
 	    	var text = $("#testingsearch1").val();
 	    	if (text == ""){
-			console.log("do nothing");
 			} else {
 	        	$state.go("search", {text: text});
 			}
@@ -56,9 +50,7 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 	    if (!container.is(e.target) // if the target of the click isn't the container...
 	        && container.has(e.target).length === 0) // ... nor a descendant of the container
 	    {
-	        // container.addClass('fade-out-effect-input').removeClass('fade-in-effect-input');
-	        // $("#testingsearch1").css({"opacity":"0"});
-	        // $("#testingsearch1").css({"border-bottom":"0px"});
+	        
 	    }
 	});
 
@@ -87,15 +79,12 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 
 		$(".third-part-mobile").click(function(e){
 			e.preventDefault();
-			// $("#search-popup").toggleClass('show-popup');
 			$('#mobile-search').focus();
 		});
 
 		$(".close-button").click(function(e){
 			e.preventDefault();
 			console.log("getting clicks????");
-			// $(this).parent().css("display", "none");
-			// $("#search-popup").removeClass("show-popup");
 			$(".popup-content-search").hide();
 		});
 
@@ -107,10 +96,5 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 	});
 
 	
-
-	// $("#callingsearchs1").blur(function() {
-	// 	$("#search-popup").addClass('fade-out-effect-input').removeClass("fade-in-effect-input");
-	// 	$("#search-popup").removeClass("show-popup");
-	// })
 
 });

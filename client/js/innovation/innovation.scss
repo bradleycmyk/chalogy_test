@@ -4,9 +4,7 @@
 
 .inn {
 	margin: 0 auto 40px;
-	// width: 1050px;
 	color: #000000;
-	// margin-top: 2%;
 
 	.inn-top {
 		width: 910px;
@@ -97,8 +95,7 @@
 
 	.inn-bottom {
 		.inn-bottom-bottom {
-			// width: 900px;
-			// margin: 0 auto;
+			margin: 0 auto;
 
 			img {
 				vertical-align: top;
@@ -126,16 +123,10 @@
 	}
 }
 
-
-// #extra-padding {
-//   padding-right: 34px;
-// }
-
 .inn-animation {
 	margin: 0 auto 40px;
 	width: 1050px;
 	color: #000000;
-	// margin-top: 2%;
 
 	.gif {
 		width: 1050px;
@@ -173,7 +164,7 @@
 
 .sg-banner {
 	width: 100%;
-	// margin: 0 0 40px;
+	margin: 0 0 40px;
 	display: inline-block;
 	color: #FFFFFF;
 	background-image: url("MOS-detail_01.jpg");
@@ -231,8 +222,6 @@
 .fb-share-button {
 	width: 50px !important;
 	height: 50px !important;
-/*	background-color: green;
-	display: none !important;*/
 }
 
 .responsive-image {
@@ -282,7 +271,6 @@
     height: 21px;
     margin: 0 auto;
     padding-left: 8px;
-  /*  margin-top: -100px;*/
 }
 
 a.video-button {
@@ -314,7 +302,6 @@ a.video-button {
 }
 
 .active-btn {
-  /*background-image: url('heart-icon.png');*/
   background-image: url('black-circle.png');
 }
 
@@ -355,7 +342,6 @@ a.video-button1 {
 }
 
 .active-btn1 {
-  /*background-image: url('heart-icon.png');*/
   background-image: url('black-circle.png');
 }
 
@@ -409,9 +395,7 @@ a.video-button1 {
 }
 
 .hero {
-  /*background-color: white;*/
   display: none;
-  /*display: table;*/
   min-height: 420px;
   min-width: 100%;
   color: #fff;
@@ -440,33 +424,36 @@ a.video-button1 {
   display: none;
 }
 
+.inn-mobile {
+	display: none;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	.inn-animation, .gif, .mask {
-	  width: 752px;
+	  	width: 752px;
 	}
 
 	.inn-animation .gif {
-	  width: 752px;
+	  	width: 752px;
 	}
 
 	.mask video {
-	  width: 752px;
-	  height: 423px;
+	  	width: 752px;
+	  	height: 423px;
 	}
 
 	.inn-animation .gif h2 {
-	  width: 63vw;
-	  font-size: 4vw;
+	  	width: 63vw;
+	  	font-size: 4vw;
 	}
 
 	.hero > div {
-	  width: 600px;
+		width: 600px;
 	}
 
-  .mask {
-    min-height: 500px;
-  }
+	.mask {
+	    min-height: 500px;
+	}
 
 	.play-buttons1 {
 	  width: 349px;
@@ -538,7 +525,7 @@ a.video-button1 {
 
 				.inn-bottom-right {
 					margin: 15px 0 0 25px;
-					width: 31vw;
+					width: 37vw;
 
 					p {
 						font-size: 1.2vw;
@@ -563,43 +550,6 @@ a.video-button1 {
 		}
 	}
 }
-
-@media screen and (min-width: 768px) {
-	.inn-desktop {
-		display: inline-block;
-	}
-
-	.inn-mobile {
-		display: none;
-	}
-
-	.inn {
-		/*width: 1050px;*/
-		.inn-bottom {
-			.inn-bottom-bottom {
-				/*width: 900px;*/
-				width: 83%;
-				margin: 0 auto;
-
-				.inn-bottom-right {
-					margin: 15px 0 0 25px;
-					/*width: 430px;*/
-					width: 53%;
-				}
-			}
-		}
-	}
-
-	#extra-padding {
-	  padding-right: 34px;
-	}
-
-	.sg-banner {
-		margin: 0 0 40px;
-	}
-
-}
-
 
 
 @media screen and (max-width: 767px) {
