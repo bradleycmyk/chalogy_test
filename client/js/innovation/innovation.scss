@@ -574,15 +574,17 @@ a.video-button1 {
 	}
 
 	.inn {
-		width: 1050px;
+		/*width: 1050px;*/
 		.inn-bottom {
 			.inn-bottom-bottom {
-				width: 900px;
+				/*width: 900px;*/
+				width: 83%;
 				margin: 0 auto;
 
 				.inn-bottom-right {
 					margin: 15px 0 0 25px;
-					width: 430px;
+					/*width: 430px;*/
+					width: 53%;
 				}
 			}
 		}
@@ -655,11 +657,13 @@ a.video-button1 {
   .inn-animation .gif h2 {
     width: 100%;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 27px;
     font-style: italic;
     text-transform: capitalize;
     text-align: center;
     border-bottom: 1px solid #000000;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 
   .mask {

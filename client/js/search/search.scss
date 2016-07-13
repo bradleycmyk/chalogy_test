@@ -181,5 +181,15 @@ input:focus{
 			width: 100%;
 		}
 	}
+}
 
+@media screen and (max-width: 500px) {
+	.alert-msg h1 {
+		font-size: 20px;
+	}
+
+	.left-align {
+		margin-left: 15px;
+		font-size: 14px;
+	}
 }

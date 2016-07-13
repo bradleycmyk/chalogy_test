@@ -59,7 +59,21 @@
 
 	<!-- buttons -->
 	<div class="product_detail_buttons">
-		<div class="row buttons">
+		<div class="buttons">
+			<a href ng-click="selectTab(1)" ng-class="{ active:tab === 1}">
+				IS IDEAL FOR
+			</a>
+	
+			<a href ng-click="selectTab(2)" ng-class="{ active:tab === 2}">
+				 HOW TO USE
+			</a>
+
+			<a href ng-click="selectTab(3)" ng-class="{ active:tab === 3}">
+				FANS ALSO LOVE
+			</a>
+		</div>
+
+<!-- 		<div class="row buttons">
 			<div class="col-xs-4" ng-class="{ active:tab === 1}" >
 				<a href ng-click="selectTab(1)">
 					IS IDEAL FOR
@@ -75,8 +89,7 @@
 					FANS ALSO LOVE
 				</a>
 			</div>
-		</div>
-		<!-- end of button -->
+		</div> -->
 	</div>
 
 	<!-- tab content -->

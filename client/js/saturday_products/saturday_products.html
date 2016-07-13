@@ -1,48 +1,45 @@
 <!-- <login></login> -->
 
 <div class="white-wrap" id="white-wrap">
-<!-- <div class="shadow"> -->
-	<!-- <navbar></navbar> -->
-  <!-- <homenavbar></homenavbar> -->
-  <finalnavbar></finalnavbar>
-	
-<!-- </div> -->
-<!-- <div class="clean-and-clear" id="github-test"></div> -->
+ 
+    <finalnavbar></finalnavbar>
 
-<div class="sat-product-body clear">
-	<div class="sat_image">
-		<img class="sat-banner" src="SS_TopBar_final.jpg" alt="saturday skin banner" />
-	</div>
-
-	<div id="max-width" class="max-width clear">
-	    <div class="sat_link">
-			<a href="/saturday-skin" ui-sref="saturday-skin" class="upper sat-bread" style="color: grey; opacity: 0.8;">Saturday Skin</a>
-			<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
-			<path class='caret' d="M0 0v8l4-4-4-4z" transform="translate(2)" />
-			</svg>
-			<a href="/saturday-skin/products" ui-sref="saturday_products" class="upper sat-bread">The Products</a>
+	<div class="sat-product-body clear">
+		<div class="sat_image">
+			<img class="sat-banner" src="SS_TopBar_final.jpg" alt="saturday skin banner" />
 		</div>
+		<div class="mobile-helper"></div>
+		<!-- <div class="sat_image_mobile"></div> -->
 
-		<div class="product-list">
-			<div class="product-listing" ng-repeat="product in products">
-				<div class="sat-prod-img">
-					<a href="/saturday-skin/products/{{ product.name }}">
-						<img class="saturday_image" ng-src="{{ product.image[0] }}" alt="product picture" />
-					</a>
-				</div>
-				<div class="sat-prod-text">
-					<p class="product-name">{{ product.name }}</p>
-					<p class="product-title height-fix">{{ product.title }}</p>
-	        		<p class="product-ktitle">{{ product.korean_title }}</p>
-					<div class="gray-line"></div>
-					<p class="price_tag">${{ product.price }}.00</p>
+		<div id="max-width" class="max-width clear">
+		    <div class="sat_link">
+				<a href="/saturday-skin" ui-sref="saturday-skin" class="upper sat-bread" style="color: grey; opacity: 0.8;">Saturday Skin</a>
+				<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+				<path class='caret' d="M0 0v8l4-4-4-4z" transform="translate(2)" />
+				</svg>
+				<a href="/saturday-skin/products" ui-sref="saturday_products" class="upper sat-bread">The Products</a>
+			</div>
+
+			<div class="product-list">
+				<div class="product-listing" ng-repeat="product in products">
+					<div class="sat-prod-img">
+						<a href="/saturday-skin/products/{{ product.name }}">
+							<img class="saturday_image" ng-src="{{ product.image[0] }}" alt="product picture" />
+						</a>
+					</div>
+					<div class="sat-prod-text">
+						<p class="product-name">{{ product.name }}</p>
+						<p class="product-title height-fix">{{ product.title }}</p>
+		        		<p class="product-ktitle">{{ product.korean_title }}</p>
+						<div class="gray-line"></div>
+						<p class="price_tag">${{ product.price }}.00</p>
+					</div>
 				</div>
 			</div>
 		</div>
-
+		
+		<br>
 	</div>
-	<br>
-</div>
 </div>
 
 <backtotop></backtotop>

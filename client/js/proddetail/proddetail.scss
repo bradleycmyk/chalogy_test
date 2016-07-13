@@ -1,3 +1,4 @@
+
 .sat-image-test {
     position: relative;
     display: block;
@@ -29,17 +30,19 @@
 }
 
 .product_detail_buttons {
-	width: 56%;
+	width: 100%;
 	margin: 0 auto;
 	border: none;
 	position: relative;
+	text-align: center;
 }
 
 .panel {
 	width: 56%;
+	padding-left: 30px;
 	min-height: 180px;
 	margin: 0 auto;
-	padding-left: 30px;
+
 }
 
 .panel_fluid {
@@ -61,7 +64,7 @@
   color: rgb(126, 126, 126);
   border: 10px solid #E5E5E5;
   padding: 10px 10px;
-  display: block;
+  display: inline-block;
   width: 180px;
   margin: 10px 0 0;
   font-size: 13px;
@@ -73,6 +76,26 @@
     border: 10px solid rgb(0, 209, 165);
   }
 
+}
+
+.buttons a {
+	text-align: center;
+	font-family: 'Work Sans';
+  font-weight: bold;
+  color: rgb(126, 126, 126);
+  border: 10px solid #E5E5E5;
+  padding: 10px 10px;
+  display: block;
+  // width: 180px;
+  margin: 10px 0 0;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-left: 30px;
+
+  &:hover {
+		color: rgb(0, 209, 165) !important;
+    border: 10px solid rgb(0, 209, 165);
+  }
 }
 
 .prodimg {
@@ -180,7 +203,6 @@
 }
 
 
-
 @media only screen and (min-width: 769px) and (max-width: 992px)  {
 	.prodimg {
 	/*	width: 220px;
@@ -195,15 +217,14 @@
 
 	.buttons {
 		margin-top: 25px;
+		text-align: center;
 	}
 
 	.buttons a {
 	    border: 10px solid #E5E5E5;
 	    padding: 5px 10px;
-	    /*padding: 10px 20px;*/
-	    DISPLAY: BLOCK;
+	    display: inline-block;
 	    width: 150px;
-	    /*width: 190px;*/
 	    margin: 5px 0 0;
 	    font-size: 11px;
 	}
@@ -231,17 +252,19 @@
 
 		.buttons {
 		margin-top: 25px;
+		text-align: center;
 	}
 
 	.buttons a {
 	    border: 10px solid #E5E5E5;
 	    padding: 2px 4px;
 	    /*padding: 10px 20px;*/
-	    DISPLAY: BLOCK;
-	    width: 130px;
-	    /*width: 190px;*/
+	    display: inline-block;
+	    width: 160px;
 	    margin: 2px 0 0;
-	    font-size: 10px;
+	    margin-right: 2.5%;
+	    margin-left: 2.5%;
+	    font-size: 13px;
 	}
 
 	.product_detail {
@@ -249,7 +272,7 @@
 	}
 
 	.product_detail_buttons {
-		width: 80%;
+		width: 100%;
 	}
 
 	.panel{
@@ -272,14 +295,30 @@
 
 }
 
+
+@media only screen and (max-width: 600px) {
+	.buttons a {
+	    width: 140px;
+	    margin: 2px 0 0;
+	    margin-right: 1.5%;
+	    margin-left: 1.5%;
+	    font-size: 11px;
+	}
+}
+
 @media only screen and (max-width: 480px) {
 	.product_detail_buttons {
-		width: 90%;
+		width: 100%;
+		text-align: center;
 	}
 
 	.panel{
-		width: 95%;
+		width: 90%;
 		padding-left: 0;
+	}
+
+	.buttons {
+		text-align: center;
 	}
 
 	.buttons a {
@@ -289,7 +328,7 @@
 	  	color: rgb(126, 126, 126);
 	  	border: 8px solid #E5E5E5;
 	  	padding: 1px 1px;
-	  	display: block;
+	  	display: inline-block;
 	  	width: 118px;
 	  	margin: 0px;
 	  	font-size: 10px;
@@ -305,5 +344,15 @@
 	.col-xs-4 {
 		padding: 0px;
 		margin: 0px;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 362px) {
+	.buttons a {
+		width: 103px;
+		letter-spacing: 0px;
 	}
 }
