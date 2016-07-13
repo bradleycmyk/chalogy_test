@@ -95,6 +95,8 @@
 
 	.inn-bottom {
 		.inn-bottom-bottom {
+			margin: 0 auto;
+
 			img {
 				vertical-align: top;
 			}
@@ -160,6 +162,7 @@
 
 .sg-banner {
 	width: 100%;
+	margin: 0 0 40px;
 	display: inline-block;
 	color: #FFFFFF;
 	background-image: url("MOS-detail_01.jpg");
@@ -413,32 +416,36 @@ a.video-button1 {
   display: none;
 }
 
+.inn-mobile {
+	display: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	.inn-animation, .gif, .mask {
-	  width: 752px;
+	  	width: 752px;
 	}
 
 	.inn-animation .gif {
-	  width: 752px;
+	  	width: 752px;
 	}
 
 	.mask video {
-	  width: 752px;
-	  height: 423px;
+	  	width: 752px;
+	  	height: 423px;
 	}
 
 	.inn-animation .gif h2 {
-	  width: 63vw;
-	  font-size: 4vw;
+	  	width: 63vw;
+	  	font-size: 4vw;
 	}
 
 	.hero > div {
-	  width: 600px;
+		width: 600px;
 	}
 
-  .mask {
-    min-height: 500px;
-  }
+	.mask {
+	    min-height: 500px;
+	}
 
 	.play-buttons1 {
 	  width: 349px;
@@ -510,7 +517,7 @@ a.video-button1 {
 
 				.inn-bottom-right {
 					margin: 15px 0 0 25px;
-					width: 31vw;
+					width: 37vw;
 
 					p {
 						font-size: 1.2vw;
@@ -535,40 +542,6 @@ a.video-button1 {
 		}
 	}
 }
-
-@media screen and (min-width: 768px) {
-	.inn-desktop {
-		display: inline-block;
-	}
-
-	.inn-mobile {
-		display: none;
-	}
-
-	.inn {
-		.inn-bottom {
-			.inn-bottom-bottom {
-				width: 83%;
-				margin: 0 auto;
-
-				.inn-bottom-right {
-					margin: 15px 0 0 25px;
-					width: 53%;
-				}
-			}
-		}
-	}
-
-	#extra-padding {
-	  padding-right: 34px;
-	}
-
-	.sg-banner {
-		margin: 0 0 40px;
-	}
-
-}
-
 
 
 @media screen and (max-width: 767px) {

@@ -1,6 +1,7 @@
 'use strict';
-var crypto = require('crypto'),
-    mongoose = require('mongoose')
+var crypto = require('crypto');
+var mongoose = require('mongoose');
+
 
 var schema = new mongoose.Schema({
     image: {

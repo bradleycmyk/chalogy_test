@@ -1,11 +1,4 @@
 app.controller('HomeController', function($scope, $http, $window) {
-	$.preloadImages = function() {
-	  for (var i = 0; i < arguments.length; i++) {
-	    $("<img />").attr("src", arguments[i]);
-	  }
-	}
-
-	$.preloadImages("about/chaum/chaum_1.jpg","about/chaum/chaum_4.jpg");
 
 	// fade in test
 	window.onload = function() {
@@ -66,7 +59,6 @@ app.controller('HomeController', function($scope, $http, $window) {
         	}  else {
         		$("#thirdp").removeClass('bg2').addClass("bg1");
         		$('#third-content').addClass('fade-out-effect-test');
-						// $('.lax-three .content-a').removeClass('gradient');
         	}
         }
 
@@ -193,6 +185,7 @@ app.controller('HomeController', function($scope, $http, $window) {
 
 		// end of scrolling !!
 
+
 		/* detect touch */
 		if("ontouchstart" in window){
 		    document.documentElement.className = document.documentElement.className + " touch";
@@ -253,3 +246,4 @@ app.controller('HomeController', function($scope, $http, $window) {
 		backgroundResize();
 	}); // end of $(document).ready
 });
+
