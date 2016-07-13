@@ -5,12 +5,9 @@
 .aurous-header {
 	height: 188px;
 	background-image: url('aurous-banner-real.png');
-	/*background-repeat: repeat;  for width > 1200*/
 	background-repeat: no-repeat;
 	width: 100%;
 	background-size: contain;
-	/*max-width: 1200px;*/
-	/*margin: 0 auto;*/
 }
 
 .aurous-header-fix {
@@ -69,7 +66,6 @@
 }
 
 .drops {
-	/*height: 1551px;*/
 
 	background-image: url('drops.png');
 	background-repeat: no-repeat;
@@ -77,11 +73,8 @@
 	max-width: 1200px;
 	margin: 0 auto;
 	background-size: contain;
-
-	//BRADLEY ADDED THIS
 	height: 3434px;
 }
-
 
 .aurous_text {
 	width: 24%;
@@ -107,7 +100,6 @@
 	width: 151px;
 	text-align: center;
 	margin: 0 auto;
-	// margin-top: 10px;
 	padding: 3px 15px;
 	font-family: 'Work Sans';
 	font-size: 15px;
@@ -122,7 +114,7 @@
 	display: inline-block;
 }
 
-/* for auorus prod detail layout */
+/* for aurous prod detail layout */
 .aurous_product {
 	display: inline-block;
 	position: absolute;
@@ -138,19 +130,9 @@
 	margin-bottom: 64%;
 	position: relative;
 	display: inline-block;
-
-/*	margin-right: 1%;
-	width: 48%;
-	margin-top: 18px;
-	margin-bottom: 1vh;
-	position: relative;
-	display: inline-block;
-*/
 }
 
 .aurous_link {
-    // margin-top: 15px;
-    // padding-left: 5px;
     display: inline-block;
     vertical-align: top;
     color: white;
@@ -159,10 +141,6 @@
 .aurous_image_hover {
 	width: 100%;
 	height: auto;
-
-	&:hover {
-		// background-color: black;
-  }
 }
 
 .aurous_link a {
@@ -192,7 +170,6 @@
 
 .aurous-name-fromdb {
 	font-size: 30px;
-	// font-family: MillerBanner;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 4px;
@@ -225,8 +202,6 @@
   transition: opacity 1s ease-in-out;
   -webkit-transform: translateZ(0px);
   webkit-font-smoothing: subpixel-antialiase;
-  /*-webkit-font-smoothing:antialiased;*/
-  /*-webkit-backface-visibility:hidden; */
 }
 
 #crossfade img.top:hover {
@@ -237,22 +212,6 @@
 	visibility: hidden;
 }
 
-
-/*.readmore-in-aurous {
-	display: block;
-    color: white;
-    border: 1px solid #AA8A37;
-    width: 135px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0px 15px;
-    font-family: WorkSans;
-    font-size: 0.8em;
-    letter-spacing: 1px;
-    font-weight: bold;
-}
-
-*/
 @media screen and (min-width: 1205px){
 	.aurous-header {
 		background-image: none;
@@ -319,7 +278,6 @@
 				margin: 40px auto;
 			}
 		}
-
 	}
 
 	.aurous-banner {
@@ -358,7 +316,6 @@
 }
 
 @media (min-width: 663px) and (max-width: 800px) {
-
 	.drops {
 		height: 1000px;
 	}

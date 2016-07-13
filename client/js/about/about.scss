@@ -1,118 +1,3 @@
-// .cream {
-//   display: inline-block;
-// }
-//
-// .about {
-//   width: 900px;
-//   margin: 60px auto 0;
-//   color: #000000;
-//
-//   .shhh {
-//     vertical-align: top;
-//     position: relative;
-//     z-index: 2;
-//   }
-//
-//   .vision, .science, .beauty {
-//     h3 {
-//       font-size: 32px;
-//       line-height: 33px;
-//       margin: 0 0 0 5px;
-//     }
-//
-//     h2 {
-//       font-size: 92px;
-//       line-height: 96px;
-//       margin: 0;
-//
-//       &::after {
-//         content: '';
-//         display: block;
-//         border-top: 5px solid black;
-//         width: 50px;
-//         margin: 0 0 20px;
-//       }
-//     }
-//
-//     h3, h2 {
-//       font-style: italic;
-//       text-transform: uppercase;
-//       font-weight: bold;
-//     }
-//
-//     p {
-//       font-weight: lighter;
-//
-//       .emb {
-//         font-style: italic;
-//         font-weight: lighter;
-//         display: block;
-//         margin: 0 0 7px;
-//         width: 613px;
-//
-//         .reg {
-//           font-size: 20px;
-//           vertical-align: text-bottom;
-//         }
-//       }
-//     }
-//   }
-//
-//   .vision {
-//     width: 480px;
-//     display: inline-block;
-//     vertical-align: top;
-//     margin: 0 -600px 34px 34px;
-//   }
-//
-//   .creamy {
-//     margin-top: 420px;
-//     display: inline-block;
-//     position: relative;
-//     z-index: 0;
-//   }
-//
-//   .science {
-//     margin: -130px 0 60px 50px;
-//     position: relative;
-//     z-index: 2;
-//     width: 600px;
-//   }
-//
-//   .beauty {
-//     width: 460px;
-//     display: inline-block;
-//     vertical-align: top;
-//     margin: 0 0 0 40px;
-//   }
-// }
-//
-// .about-hepts {
-//   position: absolute;
-//   z-index: 100;
-// }
-//
-// .hept-about-one {
-//   top: 283px;
-//   right: 0;
-// }
-//
-// .hept-about-two {
-//   top: 660px;
-//   left: 15px;
-// }
-//
-// .hept-about-three {
-//   top: 790px;
-//   left: 0;
-// }
-//
-// .hept-about-four {
-//   top: 1085px;
-//   right: 0;
-// }
-
-
 .about {
   color: #000000;
 
@@ -139,10 +24,6 @@
   .about-desktop {
     display: inline-block;
   }
-  //
-  // .about-desktop.shhh {
-  //   display: inline-block;
-  // }
 
   .about-mobile {
     display: none;
@@ -150,7 +31,6 @@
 }
 
 @media screen and (min-width: 900px) {
-
   .cream {
     display: inline-block;
   }
@@ -189,22 +69,17 @@
       }
 
       h3, h2 {
-        // font-family: MillerBanner;
         font-style: italic;
         text-transform: uppercase;
         font-weight: bold;
       }
 
       p {
-        // font-family: WorkSans;
-        // font-size: 15px;
         font-weight: lighter;
-        // font-style: normal;
 
         .emb:not(.about-mobile) {
           font-style: italic;
           font-weight: lighter;
-          // letter-spacing: 1px;
           display: block;
           margin: 0 0 7px;
           width: 613px;
@@ -226,7 +101,6 @@
 
     .creamy {
       margin-top: 440px;
-      // display: inline-block;
       position: relative;
       z-index: 0;
     }
@@ -273,22 +147,12 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 899px) {
-  // .about-desktop {
-  //   display: block;
-  // }
-  //
-  // .about-mobile {
-  //   display: block;
-  //   line-height: 24px;
-  // }
-
   .cream {
     display: inline-block;
   }
 
   .about {
     width: 83vw;
-    /*width: 87vw;*/
     margin: 60px auto 0;
     color: #000000;
 
@@ -321,23 +185,18 @@
       }
 
       h3, h2 {
-        // font-family: MillerBanner;
         font-style: italic;
         text-transform: uppercase;
         font-weight: bold;
       }
 
       p {
-        // font-family: WorkSans;
         font-size: 1.2vw;
         font-weight: lighter;
-        // font-style: normal;
-        // width: 51.1vw;
 
         .emb:not(.about-desktop) {
           font-style: italic;
           font-weight: lighter;
-          // letter-spacing: 1px;
           display: block;
           margin: 0 0 14px;
           font-size: 2.1vw;
@@ -415,19 +274,13 @@
 
   .wrapper:not(.about) {
     width: 320px;
-    // height: 1258px;
     margin: 115px auto;
-    /*margin: 0 auto;*/
 
     position: relative;
     z-index: 90;
 
     background: white;
     overflow: hidden;
-
-    /*-webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
-    -moz-box-shadow:    0px 0px 8px rgba(0,0,0,0.3);
-    box-shadow:         0px 0px 8px rgba(0,0,0,0.3);*/
   }
   .wrapper.about {
     width: 100%;
@@ -472,7 +325,6 @@
           font-size: 18px;
           width: 100%;
           line-height: 1.4;
-          // margin: 0 0 5px;
         }
       }
     }

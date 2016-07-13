@@ -1,22 +1,3 @@
-/*** imported from chalogy-nav ***/
-
-/* CSS
-/* Section 1
-- Base Styles, HTML5 Elements, Typography, Links and Buttons, Icon
-
-/* Section 2
-- Grid system, Lists, Helpers
-
-/* Section 3
-- Navigation, Footer, Homepage, Product Page, Product Detail Page
-
-/* Section 4
-- Media Query - Desktop : 1200px; Tablet : 800px; Mobile : min 320px; and more
-
-/* Section 5
-- Cross Browser Fix
-*/
-
 body {
   margin: 0;
   padding: 0;
@@ -56,9 +37,7 @@ a:focus {
 } /* IE < 8 */
 
 .wrapper {
-  // width: 1200px;
   overflow: hidden;
-  /*margin: 55px auto 0;*/
   margin: 0 auto;
   background: white;
 }
@@ -75,13 +54,10 @@ a:focus {
   text-transform: uppercase;
 }
 
-/* background setup */
 .background {
-    background-repeat:no-repeat;
-    /* custom background-position */
-    background-position:50% 50%;
-    /* ie8- graceful degradation */
-    background-position:50% 50%\9 !important;
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+  background-position:50% 50%\9 !important;
 }
 
 .page-indicator {
@@ -126,13 +102,13 @@ div.first-page-fade-in {
 }
 
 @-webkit-keyframes show {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 @keyframes show {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 .down-arrow {
@@ -146,14 +122,6 @@ div.first-page-fade-in {
   height: 39px;
   margin-bottom: 20px;
 }
-
-
-
-/* fullscreen setup */
-// html, body {
-//     /* give this to all tags from html to .fullscreen */
-//     height:100%;
-// }
 
 .home_link_to_brands:hover {
   color: #FFFFFF !important;
@@ -187,8 +155,6 @@ div.first-page-fade-in {
 .content-b {
   display:table-cell;
   position:relative;
-	/*vertical-align:middle;*/
-  /*top: 20%;*/
   top: 120px;
 	text-align:center;
 
@@ -197,9 +163,7 @@ div.first-page-fade-in {
 
   p, h2, .home_links, .home_links a {
     color: #FFFFFF;
-    // background-color: #FFFFFF;
     margin: 0 auto;
-    /*text-transform: uppercase;*/
   }
 
   p, h2 {
@@ -219,7 +183,6 @@ div.first-page-fade-in {
   .margin-top-big {
     margin: 45px auto 0;
     width: 580px;
-    /*width: 760px;*/
   }
 
   .margin-top-small {
@@ -228,7 +191,6 @@ div.first-page-fade-in {
 
   .home_links {
     margin: 35px auto 0;
-    // width: 415px;
 
     a {
       font-weight: 400;
@@ -254,41 +216,15 @@ div.first-page-fade-in {
   }
 
   &.lax-two {
-    /*background-image: url('about/chaum/chaum_2.jpg')*/
         background-image: url('home/chaum_2.jpg');
   }
-/*
-  &.lax-three {
-    background-image: url('about/chaum/chaum_1_1.jpg');
-  }
 
-  &.lax-four {
-    background-image: url('about/chaum/chaum_4_1.jpg');
-  }
-
-   &.lax-one-1 {
-    background-image: url('about/chaum/chaum_3.jpg');
-  }
-
-  &.lax-two-2 {
-    background-image: url('about/chaum/chaum_2.jpg');
-  }
-
-  &.lax-three-3 {
-    background-image: url('about/chaum/chaum_1.jpg');
-  }*/
-
-/*  &.lax-four-4 {
-    background-image: url('about/chaum/chaum_4.jpg');
-  }
-*/
   &.lax-three {
     background-image: url('home/chaum_3.jpg');
   }
 
   &.lax-four {
     background-image: url('home/chaum_4.jpg');
-    /*background-image: url('http://images.apple.com/v/music/b/images/heros/connect-small.gif');*/
   }
 }
 
@@ -299,10 +235,6 @@ div.first-page-fade-in {
 }
 
 /*** fade in and out ***/
-#fade-in-test {
-  /*opacity: 0;*/
-}
-
 #second-content, #third-content, #fourth-content {
   opacity: 0;
 }
@@ -394,7 +326,6 @@ div.fade-out-effect-test {
 
     .home_links {
       margin: 35px auto 0;
-      // width: 350px;
 
       .short_link_name {
         padding: 10px 33px;
@@ -424,9 +355,7 @@ div.fade-out-effect-test {
   #fourth-content {
     top: 72px;
   }
-
 }
-
 
 @media screen and (max-width: 400px) {
   .content-b .home_links {

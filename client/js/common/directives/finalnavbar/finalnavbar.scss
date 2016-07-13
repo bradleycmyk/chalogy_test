@@ -1,5 +1,4 @@
 /* navigation bar */
-
 #scrollable-div {
 	width: 100%;
 	height: 120px;
@@ -14,15 +13,15 @@
 }
 
 #top-logo {
-  	width: 236px;
-  	height: 64px;
+	width: 236px;
+	height: 64px;
 }
 
 #fixed-nav-div {
 	width: 100%;
 	height: 60px;
 	background-color: white;
-	border-bottom: 1px solid #e5e5e5 !important; 
+	border-bottom: 1px solid #e5e5e5 !important;
 	z-index: 9999;
 
 }
@@ -34,16 +33,14 @@
 	height: 60px;
 	margin: 0 auto;
 	background-color: white;
-	border-bottom: 1px solid #e5e5e5 !important; 
+	border-bottom: 1px solid #e5e5e5 !important;
 }
 
 .posi{
-    position:fixed;
-    margin-top: 0;
-    top:0;
-    /*z-index: 9999 !important;*/
+  position:fixed;
+  margin-top: 0;
+  top:0;
 }
-
 
 /* fixed nav bar styling */
 #nav-menu-menu {
@@ -73,10 +70,10 @@
 	width: 552px;
 	height: 60px;
 	font-size: 13px;
-    font-family: 'Work Sans';
-    padding-top: 21px;
-    padding-left: 47px;
-    border-bottom: 1px solid #e5e5e5 !important;
+  font-family: 'Work Sans';
+  padding-top: 21px;
+  padding-left: 47px;
+  border-bottom: 1px solid #e5e5e5 !important;
 }
 
 .second-part > li {
@@ -108,29 +105,29 @@
 	height: 60px;
 	width: 200px;
 	background-color: white;
-    border-bottom: 1px solid #e5e5e5 !important; 
+  border-bottom: 1px solid #e5e5e5 !important;
 }
 
 input:focus{
-    outline: none;
+  outline: none;
 }
 
 #testingsearch1 {
-    width: 145px;
-    margin-top: 15px;
-    opacity: 0;
-    border: none;
-    border-bottom: 1px solid black;
+  width: 145px;
+  margin-top: 15px;
+  opacity: 0;
+  border: none;
+  border-bottom: 1px solid black;
 }
 
 #callingsearchs1 {
-    height: 15px;
-    width: 15px;
-    padding-left: 2px;
-    margin-right: 40px;
-    margin-top: 5px;
+  height: 15px;
+  width: 15px;
+  padding-left: 2px;
+  margin-right: 40px;
+  margin-top: 5px;
 }
-  
+
 ul.nav-menu {
 	list-style: none;
 	list-style-type: none;
@@ -153,85 +150,84 @@ li.dropdown > a{
 }
 
 div.fade-in-effect-logo {
-    position: relative;
-    -webkit-animation: fadeinlogo 2s; /* Chrome, Safari, Opera */
-    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
-    animation: fadeinlogo 2s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+  position: relative;
+  -webkit-animation: fadeinlogo 2s; /* Chrome, Safari, Opera */
+  -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+  animation: fadeinlogo 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes fadeinlogo {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 @keyframes fadeinlogo {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 div.fade-out-effect-logo {
-    position: relative;
-    -webkit-animation: fadeoutlogo 2s; /* Chrome, Safari, Opera */
-    -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
-    animation: fadeoutlogo 2s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
+  position: relative;
+  -webkit-animation: fadeoutlogo 2s; /* Chrome, Safari, Opera */
+  -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+  animation: fadeoutlogo 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes fadeoutlogo {
-    from {opacity: 1;}
-    to {opacity: 0;}
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 
 @keyframes fadeoutlogo {
-    from {opacity: 1;}
-    to {opacity: 0;}
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 
 input.fade-out-effect-input{
-    position: relative;
-    -webkit-animation: fadeoutinput 1s; /* Chrome, Safari, Opera */
-    -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
-    animation: fadeoutinput 1s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
+  position: relative;
+  -webkit-animation: fadeoutinput 1s; /* Chrome, Safari, Opera */
+  -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+  animation: fadeoutinput 1s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes fadeoutinput {
-    from {opacity: 1;}
-    to {opacity: 0;}
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 
 @keyframes fadeoutinput {
-    from {opacity: 1;}
-    to {opacity: 0;}
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 
 input.fade-in-effect-input {
-    position: relative;
-    -webkit-animation: fadeininput 1s; /* Chrome, Safari, Opera */
-    -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
-    animation: fadeininput 1s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
+  position: relative;
+  -webkit-animation: fadeininput 1s; /* Chrome, Safari, Opera */
+  -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+  animation: fadeininput 1s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes fadeininput {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 @keyframes fadeininput {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
-
 
 .menu-mobile1, .mobile-logo1, .third-part-mobile {
   display: none;
@@ -240,15 +236,15 @@ input.fade-in-effect-input {
 /* hahahahahahahaha end nav **/
 
 .shift-fix {
-    width: 100%;
-    height: 60px;
-    background-color: white;
-    display: none;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: none;
 }
 
 .about-nav, .saturday-skin-nav {
-    height: 22px;
-    display: inline-block;
+  height: 22px;
+  display: inline-block;
 }
 
 /* for dropdown */
@@ -295,61 +291,72 @@ ul.navbar li.dropdown {
 }
 
 .dropdown-aurouscontent a, .dropdown-content a, .dropdown-aboutcontent a {
-    color: grey;
-    opacity: 0.8;
-    padding: 4px 14px;
-    display: block;
-    text-transform: uppercase;
+  color: grey;
+  opacity: 0.8;
+  padding: 4px 14px;
+  display: block;
+  text-transform: uppercase;
 }
 
-.dropdown-aurouscontent a:hover, .dropdown-content a:hover, .dropdown-innovationcontent a:hover, .dropdown-aboutcontent a:hover {background-color: white; z-index: 9999;}
-.dropdown-content a:hover {background-color: white; z-index: 9999;}
+.dropdown-aurouscontent a:hover,
+.dropdown-content a:hover,
+.dropdown-innovationcontent a:hover,
+.dropdown-aboutcontent a:hover {
+	background-color: white; z-index: 9999;
+}
+
+.dropdown-content a:hover {
+	background-color: white; z-index: 9999;
+}
 
 .dropdown:hover .dropdown-aurouscontent,
 .dropdown:hover .dropdown-content,
 .dropdown:hover .dropdown-innovationcontent {
-    display: block;
-    background-color: white;
-    z-index: 9999;
+  display: block;
+  background-color: white;
+  z-index: 9999;
 }
 
-.dropdown:hover .dropdown-aurouscontent, .dropdown:hover .dropdown-content, .dropdown:hover .dropdown-innovationcontent, .dropdown:hover .dropdown-aboutcontent {
+.dropdown:hover .dropdown-aurouscontent,
+.dropdown:hover .dropdown-content,
+.dropdown:hover .dropdown-innovationcontent,
+.dropdown:hover .dropdown-aboutcontent {
   display: block;
   background-color: white;
   z-index: 9999;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
-    background-color: white;
-    z-index: 9999;
+  display: block;
+  background-color: white;
+  z-index: 9999;
 }
 
 .dropdown:hover .dropbtn {
-    z-index: 9999;
+  z-index: 9999;
 }
 
 #dropdown-about {
-    width: 50px; 
-    list-style: none;
-    padding-left: 2px;
+  width: 50px;
+  list-style: none;
+  padding-left: 2px;
 }
 
 #dropdown-innovation {
-    width: 82px; 
-    list-style: none;
+  width: 82px;
+  list-style: none;
 }
 
 #dropdown-aurous {
-    width: 56px; 
-    padding-left:4px; 
-    list-style: none;
+  width: 56px;
+  padding-left:4px;
+  list-style: none;
 }
 
 #dropdown-satskin {
-    width: 160px; 
-    padding-left:5px; 
-    list-style: none;
+  width: 160px;
+  padding-left:5px;
+  list-style: none;
 }
 
 /* up arrow testing */
@@ -381,7 +388,6 @@ a.up-arrow-about {
   display: inline-block;
   position: relative;
   background: white;
-  /*color: grey;*/
   opacity: 0.8;
   text-decoration: none;
   padding-top: 12px;
@@ -392,7 +398,6 @@ a.up-arrow-about:after {
   display: block;
   position: absolute;
   left: 44px;
-  /*left: 43%;*/
   top: 0;
   bottom: 100%;
   width: 0;
@@ -407,7 +412,6 @@ a.up-arrow-about:after {
 .selected {
   color: black !important;
   display: inline-block;
-  /*pointer-events: none;*/ /*prevent click*/ 
 }
 
 .show-popup {
@@ -443,32 +447,30 @@ a.up-arrow-about:after {
   display: table;
 }
 
-@media screen and (max-width: 964px){ 
-
+@media screen and (max-width: 964px){
   .dropdown-aurouscontent a, .dropdown-content a, .dropdown-aboutcontent a {
-      padding: 10px 14px;
+    padding: 10px 14px;
   }
 
   .second-part {
-      width: 450px;
+    width: 450px;
   }
 
   #testingsearch1 {
-      width: 130px;
-      margin-left: 35px;
+    width: 130px;
+    margin-left: 35px;
   }
 
   #callingsearchs1 {
-      margin-right: 15px;
+    margin-right: 15px;
   }
 
   .second-part {
-      width: 420px;
+    width: 420px;
   }
 }
 
-
-@media screen and (min-width: 751px) and (max-width: 964px){ 
+@media screen and (min-width: 751px) and (max-width: 964px){
   #dropdown-about {
     padding-left: 0px;
   }
@@ -478,17 +480,15 @@ a.up-arrow-about:after {
     list-style: none;
     padding-left: 6px;
   }
-  
+
   #dropdown-aurous {
     width: 56px;
     padding-left: 15px;
     list-style: none;
   }
-
 }
 
-@media screen and (max-width: 750px){ 
-
+@media screen and (max-width: 750px){
   #mobile-search {
     border: none;
     border-bottom: 1px solid;
@@ -542,14 +542,13 @@ a.up-arrow-about:after {
     cursor: pointer;
     background-position: 57% 69%;
     background-size: 32px;
-    /*background-image: url("menu-22.png");*/
     background-image: url("icons/mobile-menu-icon.png");
     background-repeat: no-repeat;
   }
 
   .popup-btn1:hover, .popup-btn1:focus {
-      background-color: white;
-      outline: none;
+    background-color: white;
+    outline: none;
   }
 
   .popup-content1 {
@@ -595,13 +594,16 @@ a.up-arrow-about:after {
     font-weight: 700;
   }
 
-  .menu-mobile1 a:hover {background-color: #f1f1f1}
+  .menu-mobile1 a:hover {
+		background-color: #f1f1f1
+	}
 
-  .show {display:block;}
+  .show {
+		display:block;
+	}
 
   .mobile-logo1 {
     display: block;
-    /*margin-left: 42%;*/
     margin: 0 auto;
     width: 118px;
   }
@@ -632,13 +634,8 @@ a.up-arrow-about:after {
     z-index: 9999;
   }
 
-  #mobile-menu-about {
-    /*padding-left: 50%;*/
-  }
-
   .x-icon {
     background-image: url('icons/mobile-menu-close.png');
-    /*background-image: url('icons/close-icon.png');*/
     background-position: 80% 72%;
     background-size: 33px;
   }

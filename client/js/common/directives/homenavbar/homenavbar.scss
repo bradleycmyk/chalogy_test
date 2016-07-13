@@ -2,21 +2,11 @@
   width: 100%;
   display: block;
   padding-bottom: 0;
-
   margin: 0 auto;
-
-  margin-bottom: 0;
   height: 180px;
-  margin-top: 0px;
-
-/*  height: 120px;
-  margin-top: -15px;*/
-
   background-color: rgba(255, 255, 255, 1);
   position: fixed;
   z-index: 999;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .navigation {
@@ -55,28 +45,15 @@
 }
 
 #brand-logo {
-/*  display: block;
-  padding-top: 21px;
-  margin-bottom: 45px;
-  padding-bottom: 5px;
+  display: block;
+  padding-top: 32px;
+  padding-left: 31px;
+  padding-bottom: 23px;
   width: 264px;
-  height: 43px;
-  margin: 0 auto;*/
-/*  margin-bottom: 45px;
-  padding-top: 21px;*/
-/*  background-color: rgba(255, 255, 255, 0);
-  z-index: 9999;*/
-
-    display: block;
-    padding-top: 32px;
-    padding-left: 31px;
-      /*padding-top: 21px;*/
-    padding-bottom: 23px;
-    width: 264px;
-    height: 135px;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0);
-    z-index: 9999;
+  height: 135px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 9999;
 }
 
 #home-brand-logo {
@@ -105,7 +82,6 @@
 }
 
 @media screen and (min-width: 1205px) {
-
   .page-width-home {
     width: 1200px;
     margin: 0 auto;
@@ -135,43 +111,13 @@
     width: 190px;
     height: 20px;
   }
-
 }
-
-
-
-
-@media screen and (max-width: 900px) {
-
-/*  .navigation-home > .middle-nav {
-    max-width: 540px;
-  }*/
-
-/*  .textsearch-home {
-    margin-top: -100px;
-  }*/
-
-}
-
 
 @media screen and (max-width: 580px){
   .navigation-home {
-    /*height: 95px;*/
     height: 180px;
-
   }
 
-/*  .menu-mobile-home {
-      position: relative;
-      display: inline-block;
-      margin-top: -58px;
-      padding-left: 10px;
-      width: 80px;
-      height: 60px;
-  }
-
-  .menu-mobile-home a:hover {background-color: #f1f1f1}
-*/
   .clean-and-clear-home {
     height: 81px;
   }

@@ -4,9 +4,7 @@
 
 .inn {
 	margin: 0 auto 40px;
-	// width: 1050px;
 	color: #000000;
-	// margin-top: 2%;
 
 	.inn-top {
 		width: 910px;
@@ -97,16 +95,11 @@
 
 	.inn-bottom {
 		.inn-bottom-bottom {
-			// width: 900px;
-			// margin: 0 auto;
-
 			img {
 				vertical-align: top;
 			}
 
 			.inn-bottom-right {
-				// margin: 15px 0 0 25px;
-				// width: 430px;
 				display: inline-block;
 				position: relative;
 
@@ -126,16 +119,10 @@
 	}
 }
 
-
-// #extra-padding {
-//   padding-right: 34px;
-// }
-
 .inn-animation {
 	margin: 0 auto 40px;
 	width: 1050px;
 	color: #000000;
-	// margin-top: 2%;
 
 	.gif {
 		width: 1050px;
@@ -173,7 +160,6 @@
 
 .sg-banner {
 	width: 100%;
-	// margin: 0 0 40px;
 	display: inline-block;
 	color: #FFFFFF;
 	background-image: url("MOS-detail_01.jpg");
@@ -199,8 +185,6 @@
 		width: 100%;
 		margin: 0 auto;
 		overflow: auto;
-
-
 
 		img {
 			width: 197px;
@@ -231,8 +215,6 @@
 .fb-share-button {
 	width: 50px !important;
 	height: 50px !important;
-/*	background-color: green;
-	display: none !important;*/
 }
 
 .responsive-image {
@@ -278,43 +260,41 @@
 
 /* buttons */
 .play-buttons {
-    width: 287px;
-    height: 21px;
-    margin: 0 auto;
-    padding-left: 8px;
-  /*  margin-top: -100px;*/
+  width: 287px;
+  height: 21px;
+  margin: 0 auto;
+  padding-left: 8px;
 }
 
 a.video-button {
-    width: 20px;
-    height: 20px;
-    margin-left: 2px;
+  width: 20px;
+  height: 20px;
+  margin-left: 2px;
 }
 
 
 .circle {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('circle-icon.png');
-    background-size: Contain;
-    background-repeat: no-repeat;
-    margin-right: 4px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('circle-icon.png');
+  background-size: Contain;
+  background-repeat: no-repeat;
+  margin-right: 4px;
 }
 
 
 .play-btn {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('play-button.jpg');
-    background-size: Contain;
-    background-repeat: no-repeat;
-    margin-right: 4px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('play-button.jpg');
+  background-size: Contain;
+  background-repeat: no-repeat;
+  margin-right: 4px;
 }
 
 .active-btn {
-  /*background-image: url('heart-icon.png');*/
   background-image: url('black-circle.png');
 }
 
@@ -355,23 +335,22 @@ a.video-button1 {
 }
 
 .active-btn1 {
-  /*background-image: url('heart-icon.png');*/
   background-image: url('black-circle.png');
 }
 
 .heptagon1 {
 	display: inline-block;
-    width: 10px;
-    height: 10px;
+  width: 10px;
+  height: 10px;
 	background-image: url('buttons/heptagon_b_1.png');
-    background-size: Contain;
-    background-repeat: no-repeat;
+  background-size: Contain;
+  background-repeat: no-repeat;
 }
 
 .heptagon_bg {
 	background-image: url('buttons/heptagon_b_2.png');
-    background-size: Contain;
-    background-repeat: no-repeat;
+  background-size: Contain;
+  background-repeat: no-repeat;
 }
 
 /* video size and position */
@@ -384,7 +363,6 @@ a.video-button1 {
   background-color: white;
   width: 960px;
   margin: 0 auto;
-  /*padding-top: 30px;*/
 }
 
 .mask video {
@@ -393,9 +371,6 @@ a.video-button1 {
   left: 50%;
   top: 42%;
   /* The following will size the video to fit the full container. Not necessary, just nice.* - originally min-width and max-width were set to 100% */
-/*    min-width: 100%;
-  min-height: 100%;*/
-
   min-width: 400px;
   min-height: 400px;
   width: 960px;
@@ -409,9 +384,7 @@ a.video-button1 {
 }
 
 .hero {
-  /*background-color: white;*/
   display: none;
-  /*display: table;*/
   min-height: 420px;
   min-width: 100%;
   color: #fff;
@@ -439,7 +412,6 @@ a.video-button1 {
 #image-div {
   display: none;
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	.inn-animation, .gif, .mask {
@@ -574,16 +546,13 @@ a.video-button1 {
 	}
 
 	.inn {
-		/*width: 1050px;*/
 		.inn-bottom {
 			.inn-bottom-bottom {
-				/*width: 900px;*/
 				width: 83%;
 				margin: 0 auto;
 
 				.inn-bottom-right {
 					margin: 15px 0 0 25px;
-					/*width: 430px;*/
 					width: 53%;
 				}
 			}
@@ -705,7 +674,6 @@ a.video-button1 {
   #extra-padding {
     font-size: 22px;
   }
-
 }
 
 @media screen and (max-width: 580px) {

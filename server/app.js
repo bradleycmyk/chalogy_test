@@ -6,7 +6,6 @@ var chalk = require('chalk');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 
-// require('./authentication')(app);
 
 var clientPath = path.join(__dirname, '../client');
 var buildPath = path.join(__dirname, '../client/build');    // for gulped files
@@ -25,8 +24,8 @@ app.use(express.static(nodePath));
 app.use(express.static(imagePath));
 
 
-/* 
-Provides a 404 for times 
+/*
+Provides a 404 for times
 Credit to `fsg` module for this one!
 */
 app.use(function (req, res, next) {
@@ -44,7 +43,7 @@ app.use(function (req, res, next) {
 // Look up all route files/folders from directory
 var directories = fs.readdirSync(path.join(__dirname, '/api/'));
 
-// Require each route dynamically 
+// Require each route dynamically
 directories.forEach(function(dir) {
   // Prepend /api/ to all api routes
   app.use('/api/' + dir + '/', require('./api/' + dir));
@@ -72,4 +71,3 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
-

@@ -1,6 +1,4 @@
 .health-wrapper {
-  // width: 1200px;
-  // margin: 0 auto;
   overflow: hidden;
   background: white;
 }
@@ -10,11 +8,6 @@
   .chs_hero {
     background-image: url('dna2.jpg');
     background-repeat: no-repeat;
-    // background-size: 1120px auto;
-    // background-position: -217px -237px;
-    // width: 901px;
-    // margin: 70px auto 0;
-    // padding: 115px 0;
 
     h4, h1 {
       color: #FFFFFF;
@@ -26,38 +19,25 @@
       font-family: 'Work Sans';
       font-weight: normal;
       font-style: normal;
-      // font-size: 17px;
-      // margin: 0;
     }
 
     h1 {
       font-weight: normal;
       font-style: normal;
-      // font-size: 70px;
-      // margin: 20px 0 0 0;
     }
   }
 
   .chs-text {
-    // margin: -35px 0 0 0;
-
     .top-right {
-      // width: 410px;
       display: inline-block;
       vertical-align: middle;
-      // margin: 0 0 0 35px;
     }
   }
 
   .chs-text-bottom {
-    // width: 900px;
-    // margin: 40px auto 0;
-
     .bottom-right {
-      // width: 366px;
       display: inline-block;
       vertical-align: top;
-      // margin: 0 80px 0 40px;
       position: relative;
 
       a {
@@ -88,8 +68,6 @@
         position: relative;
         bottom: -25px !important;
         top: 0;
-
-        /*margin-left: -35%;*/
         margin-left: -8%;
 
         li {
@@ -110,10 +88,6 @@
     .mobile {
       display: none;
     }
-    //
-    // .desktop {
-    //   display: block;
-    // }
 
     .chs_hero {
       background-size: 1120px auto;
@@ -182,10 +156,6 @@
     .mobile {
       display: none;
     }
-
-    // .desktop {
-    //   display: block;
-    // }
 
     .chs_hero {
       background-size: 1120px auto;
@@ -306,7 +276,6 @@
         }
 
         .top-right {
-          // width: 85%;
           display: block;
           margin: 0 40px 40px;
 
@@ -321,7 +290,6 @@
         width: 100%;
 
         .bottom-right {
-          // width: 85%;
           display: block;
           margin: 40px 40px 20px;
         }

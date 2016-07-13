@@ -2,7 +2,6 @@ app.controller('HomeNavBarController', function($scope, $http, $state, $statePar
 
 	$("#callingsearchs").click(function(){
 		$("#testingsearch").fadeIn(2000).css("display","inline-block").focus();
-		// $(".brand").hide();
 		$("#callingsearch").css("margin-left", 10);
 		$("#callingsearchs").css("margin-top", -40);
 
@@ -53,14 +52,11 @@ app.controller('HomeNavBarController', function($scope, $http, $state, $statePar
 	});
 
 	$(document).ready(function(){
-		// var tolerancePixel1 = 40;
-
 	    function removenavbar(){
-	      // get current browser top and bottom 
+	      // get current browser top and bottom
 	      var scrollTop0 = $(window).scrollTop()
 
 	      var yTopDot11 = 150;
-	      // var yTopDot = $("#first-dot").offset().top;
 	      var yBottomDot11 = $("#ino-first-dot").height() + yTopDot11;
 
 	      if(scrollTop0 > 120) {

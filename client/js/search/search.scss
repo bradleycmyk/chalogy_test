@@ -4,7 +4,7 @@
 }
 
 #search-container {
-	width:1142px; 
+	width:1142px;
 	margin:0 auto;
 }
 
@@ -40,8 +40,6 @@ input:focus{
 #testsearch {
 	border: none;
 	border-bottom: 1px solid;
-	/*display: none;*/
-	/*opacity: 0;*/
 }
 
 #callsearch {
@@ -85,7 +83,6 @@ input:focus{
 }
 
 .left-align {
-	/*text-align: left;*/
 	margin-left: 30px;
 	margin-bottom: 10px;
 	font-family: WorkSans;
@@ -125,8 +122,6 @@ input:focus{
 
 .pages_results {
 	.pages_results_padding{
-		/*padding: 0 40px;*/
-
 		p {
 			color: #000000;
 		}
@@ -147,10 +142,9 @@ input:focus{
 }
 
 
-@media screen and (max-width: 1140px){ 
-
+@media screen and (max-width: 1140px){
 	#search-container {
-		width: 95%; 
+		width: 95%;
 		margin:0 auto;
 	}
 
