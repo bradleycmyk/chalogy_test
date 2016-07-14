@@ -425,6 +425,13 @@ a.video-button1 {
 	display: none;
 }
 
+// @media screen and (min-width: 1024px) {
+// 	// .inn .inn-bottom {
+// 	// 	width: 910px;
+// 	//
+// 	// }
+// }
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	.inn-animation, .gif, .mask {
 	  	width: 752px;
@@ -635,20 +642,31 @@ a.video-button1 {
 		}
 	}
 
-  .inn .inn-bottom .inn-bottom-bottom {
-    width: 100%;
-    margin: 0 auto;
-  }
+  .inn {
+		width: 100%;
 
-  .inn-bottom-bottom img {
-    width: 100%;
-  }
+		.inn-bottom {
+			width: 100%;
 
-  .inn .inn-bottom .inn-bottom-bottom .inn-bottom-right {
-    margin: 40px;
-    display: inline-block;
-    position: relative;
-  }
+			.inn-bottom-bottom {
+				margin: 0 auto;
+				width: 100%;
+
+				.inn-bottom-right {
+					width: auto;
+					margin: 40px;
+					display: inline-block;
+					position: relative;
+				}
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+
+	}
 
   #extra-padding {
     font-size: 22px;
