@@ -24,8 +24,8 @@ a {
 	text-decoration: none !important;
 	color: black;
 
-	&:hover:not(.aurous-bread, .home_link_to_brands),
-	&:focus:not(.aurous-bread, .home_link_to_brands) {
+	&:hover,
+	&:focus {
 		text-decoration: none;
 		color: #000000 !important;
 	}
