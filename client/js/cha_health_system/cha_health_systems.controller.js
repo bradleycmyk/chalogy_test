@@ -27,7 +27,6 @@ app.controller('ChaHealthController', function($scope, $http, $window, $location
     $("#myCarousel").swipeleft(function() {
      $(this).carousel('next');
     });
-
   });
 
   // for carousel autoplay

@@ -19,16 +19,14 @@ app.controller('ChaumController', function($scope, $http, $window, $location) {
     });
 
     $.mobile.loading().hide();
-    
-    $("#myCarousel").swiperight(function() {  
-      $(this).carousel('prev'); 
-    });  
-    
-    $("#myCarousel").swipeleft(function() {  
-     $(this).carousel('next');  
-    });  
 
+    $("#myCarousel").swiperight(function() {
+      $(this).carousel('prev');
+    });
 
+    $("#myCarousel").swipeleft(function() {
+     $(this).carousel('next');
+    });
   });
 
   // for carousel autoplay
@@ -36,6 +34,4 @@ app.controller('ChaumController', function($scope, $http, $window, $location) {
     interval: 3000,
     cycle: true
   });
-
 });
-
