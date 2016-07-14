@@ -63,12 +63,15 @@
       display: inline-block;
       float: right;
 
+      .carousel-inner {
+        // margin-bottom: 16px;
+      }
+
       .carousel-indicators.chs-indicators {
-        width: 235px !important;
-        position: relative;
-        bottom: -25px !important;
-        top: 0;
-        margin-left: -8%;
+        width: 212px !important;
+        // bottom: -15px;
+        // right: 0;
+        left: auto;
 
         li {
           vertical-align: middle;
@@ -116,8 +119,18 @@
         .bottom-right {
           width: 366px;
           margin: 0 80px 0 40px;
-
         }
+      }
+    }
+
+    #myCarousel {
+      .carousel-inner {
+        margin-bottom: 16px;
+      }
+
+      .carousel-indicators.chs-indicators {
+        bottom: -15px;
+        right: 0;
       }
     }
   }
@@ -219,10 +232,6 @@
           width: 34vw;
           margin: 0;
           float: right;
-
-          .carousel-indicators.chs-indicators {
-            margin-left: -39%;
-          }
         }
       }
     }
@@ -267,7 +276,7 @@
 
         .top-right {
           display: block;
-          margin: 0 40px 40px;
+          margin: 0 37px 40px;
 
           p.emb {
             font-size: 20px;
@@ -281,15 +290,21 @@
 
         .bottom-right {
           display: block;
-          margin: 40px 40px 20px;
+          margin: 40px 37px 20px;
         }
 
         #myCarousel {
           width: 100%;
           display: block;
 
-          .chs-indicators {
-            margin: 0 0 0 -124px;
+          .carousel-inner {
+            margin-bottom: 26px;
+            height: calc(100vw / 1.80);
+          }
+
+          .carousel-indicators.chs-indicators {
+            bottom: -10px;
+            right: 40px;
           }
         }
       }
