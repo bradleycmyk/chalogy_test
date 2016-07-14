@@ -226,6 +226,17 @@
 }
 
 
+@media only screen and (max-width: 767px) {
+	.prodimg {
+	    margin-top: 0;
+	}
+
+	.product_detail {
+	    width: 80%;
+	    margin-top: -30px;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	.buttons a {
     width: 140px;
