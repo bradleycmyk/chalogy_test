@@ -33,6 +33,15 @@ app.factory('AdminFactory', function($http) {
                 console.log("yes2");
                 return response.data;
             });
+        },
+        fetchPhotos: function(callback) {
+
+            var endPoint = "https://api.instagram.com/v1/tags/howiflirt/media/recent?access_token=ACCESS-TOKEN";
+
+            return $http.jsonp(endPoint).success(function(response) {
+                callback(response.data);
+                // return response.data;
+            });
         }
 
     };
