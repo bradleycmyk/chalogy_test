@@ -354,6 +354,13 @@ div.fade-out-effect-test {
   #fourth-content {
     top: 72px;
   }
+
+  .parallax {
+    &.lax-two {
+      background-image: url('home/chaum_2.jpg');
+      background-position: 35% 50%;
+    }
+  }
 }
 
 @media screen and (max-width: 400px) {
