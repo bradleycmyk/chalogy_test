@@ -101,7 +101,12 @@
             $('.subscribe-modal-outer').show();
             $('body').css({
               'overflow': 'hidden'
-            })
+            });
+            $('input:-webkit-autofill').css({
+              '-webkit-box-shadow': '0 0 0 1000px #CCCCCC inset'
+            });
+            $('.email').val('');
+
           }
         }
       });
