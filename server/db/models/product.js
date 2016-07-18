@@ -32,6 +32,10 @@ var schema = new mongoose.Schema({
     },
     tag: {
         type: [String]
+    },
+    prod_id: {
+      type: [String],
+      default: null
     }
 });
 
