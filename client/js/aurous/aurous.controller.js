@@ -17,6 +17,7 @@ app.controller('AurousController', function($scope, $http, $window, $location, A
 	// $scope.getPhoto =function () {
 	// 	AdminFactory.fetchPhotos(function(data){
 	// 		console.log("Data: ", data);
+  //    #scope.pics = data;
 	// 	})
 	// }
 
