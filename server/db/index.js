@@ -4,8 +4,10 @@ var chalk = require('chalk');
 var dbName = "chalogy"
 var DATABASE_URI = "mongodb://localhost:27017/" + dbName;
 // var DATABASE_URI = "mongodb://sean0723:CHLtpghks10@ds015194.mlab.com:15194/heroku_rdfcwkb7";
+// var DATABASE_URI = "mongodb://sean-cpw:chltpghks10@ds023885-a0.mlab.com:23885,ds023885-a1.mlab.com:23885/chalogylive?replicaSet=rs-ds023885"
 var mongoose = require('mongoose');
 var db = mongoose.connect(DATABASE_URI).connection;
+
 
 // Require our models -- these should register the model into mongoose
 // so the rest of the application can simply call mongoose.model('Product')

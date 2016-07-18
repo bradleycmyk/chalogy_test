@@ -18,15 +18,21 @@
   		<a class="upper sat-bread">{{ product.name }}</a>
   	</div>
 
+  	<!-- shopify testing-->
+<!--   	<div class="clear"></div><br>
+  	<img id="imagetest" />
+	<div id="buttontest"></div>
+	<div id="buttontest2"></div>
+	<button class="buy-button" onclick="attachOnVariantSelectListeners()">Add To Cart</button>
+	<hr> -->
+	<!-- shopify end -->
+
 
 	<div class="product_detail">
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="prodimg">
 					<img class="detail_photo" ng-src="{{ product.image[0] }}" alt="product image"  />
-				</div>
-				<div class="social">
-					<social-icons></social-icons>
 				</div>
 			</div>
 			<div class="col-sm-6">
@@ -36,6 +42,7 @@
           <p class="product-ktitle">{{ product.korean_title }}</p>
 					<div class="gray-line"></div>
 					<p class="price_tag">${{ product.price }}.00</p>
+					<div id="checkouturl"><a href="{{product.checkouturl}}"><button id="checkout">BUY NOW</button></a></div>
 					<br>
 					<span class="product-description">{{product.size_ml}} ml/{{product.size_oz}} Fl. Oz.</span>
 					<div ng-if="product.shade">
@@ -93,6 +100,7 @@
 
           </div>
           <!-- .cart end -->
+					<social-icons></social-icons>
 				</div>
 			</div>
 		</div>
