@@ -599,6 +599,7 @@ a.video-button1 {
 			vertical-align: top;
 			margin: 0 auto;
 			width: 100%;
+			margin-top: -40px;
 		}
   }
 
@@ -619,6 +620,7 @@ a.video-button1 {
     border-bottom: 1px solid #000000;
     padding-left: 38px;
     padding-right: 38px;
+    padding-bottom: 20px;
   }
 
   .mask {
@@ -682,6 +684,10 @@ a.video-button1 {
 
 	.mask video {
 		min-height: 350px;
+	}
+
+	.inn .inn-top .inn-top-right .black-box .black-box-p {
+	    padding: 0 0px 0 0;
 	}
 }
 
