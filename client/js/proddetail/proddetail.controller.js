@@ -35,7 +35,11 @@ app.controller('ProdDetailCtrl', function($scope, $http, $state, $stateParams, P
 		//   console.log("cart: ",cart);
 		//   // do something with updated cart
 		// });
-	
+
+	$scope.attachOnVariantSelectListeners = function() {
+		
+	}
+
 	$(document).ready(function(){
 
 		setTimeout(function() {
@@ -45,14 +49,14 @@ app.controller('ProdDetailCtrl', function($scope, $http, $state, $stateParams, P
 		$(function() { 
 
 	  	var shopClient = ShopifyBuy.buildClient({
-		  apiKey: 'f7558dd14f7c9c3289b1bd175989fd5f',
-		  domain: 'www.designplusshop.com/',
+		  apiKey: 'd5571acc165495201f358c5e44e4d912',
+		  domain: 'chalogy.myshopify.com/',
 		  appId: '6'
 		});
 
 	  	// fetch products
 	  	var imgsrc;
-		shopClient.fetchProduct(1552109444)
+		shopClient.fetchProduct(7013809921)
 		  .then(function (product) {
 		    console.log(product);
 		    imgsrc = product.images[0].src; 
