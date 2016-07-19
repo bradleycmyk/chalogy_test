@@ -23,7 +23,8 @@
 				"img": "sat_prod/featherweight.png"
 			}
 		],
-		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f"
+		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
+		"prod_id": "7013749441"
 	},
 	{
 		"image": ["sat_prod/featherweight.png", "sat-product.png", "sat-product.png"],
@@ -49,7 +50,8 @@
 				"img": "sat_prod/rise-shine.png"
 			}
 		],
-		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f"
+		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
+		"prod_id": "7013762113"
 	},
 	{
 		"image": ["sat_prod/wide-awake.png", "sat-product.png", "sat-product.png"],
@@ -75,7 +77,8 @@
 				"img": "sat_prod/balancing-act.png"
 			}
 		],
-		"checkouturl" : "https://www.designplusshop.com//cart/?api_key=f7558dd14f7c9c3289b1bd175989fd5f&_ga=1.192190895.467326270.1468610270"
+		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
+		"prod_id": "7013774913"
 	},
 	{
 		"image": ["sat_prod/balancing-act.png", "sat-product.png", "sat-product.png"],
@@ -100,7 +103,9 @@
 				"name": "Rise + Shine",
 				"img": "sat_prod/rise-shine.png"
 			}
-		]
+		],
+		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
+		"prod_id": "7013783681"
 	},
 	{
 		"image": ["sat_prod/freeze-frame.png", "sat-product.png", "sat-product.png"],
@@ -125,7 +130,9 @@
 				"name": "Quench",
 				"img": "sat_prod/quench.png"
 			}
-		]
+		],
+		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
+		"prod_id": "7013792961"
 	},
 	{
 		"image": ["sat_prod/rise-shine.png", "sat-product.png", "sat-product.png"],
@@ -150,7 +157,9 @@
 				"name": "Wide Awake",
 				"img": "sat_prod/wide-awake.png"
 			}
-		]
+		],
+		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
+		"prod_id": "7013800577"
 	},
 	{
 		"image": ["sat_prod/all-aglow.png", "sat-product.png", "sat-product.png"],
@@ -176,7 +185,9 @@
 				"name": "Wide Awake",
 				"img": "sat_prod/wide-awake.png"
 			}
-		]
+		],
+		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
+		"prod_id": "7013809921"
 	},
 	{
 		"image": ["sat_prod/spotlight.png", "sat-product.png", "sat-product.png"],
@@ -201,7 +212,9 @@
 				"name": "Daily Dew",
 				"img": "sat_prod/daily-dew.png"
 			}
-		]
+		],
+		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
+		"prod_id": "7013817729"
 	},
 	{
 		"image": ["sat_prod/quench.png", "sat-product.png", "sat-product.png"],
@@ -226,7 +239,9 @@
 				"name": "Balancing Act",
 				"img": "sat_prod/balancing-act.png"
 			}
-		]
+		],
+		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
+		"prod_id": "7013825729"
 	}
 
 ]

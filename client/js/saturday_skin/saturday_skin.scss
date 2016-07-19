@@ -62,13 +62,13 @@
     }
 
     .text_box {
-
       .long_text {
         font-family: 'Work Sans';
       }
 
       .tagline {
         clear: both;
+        text-align: center;
       }
     }
   }
@@ -76,7 +76,6 @@
   .sat_hero {
     position: relative;
   }
-
 
   main {
     .leftie {
@@ -137,7 +136,6 @@
   }
 
   main {
-
     .leftie {
       display: inline-block;
     }
