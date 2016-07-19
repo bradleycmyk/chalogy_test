@@ -1,5 +1,257 @@
-<div style="height: 2000px; background-color:lightblue;">
-<navbar><navbar>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-hello 
-</div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <style type="text/css">
+  .enter-email::-webkit-input-placeholder {
+    font-size: 11px;
+    text-align: center;
+  }
+  
+  .enter-email:-moz-placeholder {
+    font-size: 11px;
+    text-align: center;
+  }
+  
+  .enter-email::-moz-placeholder {
+    font-size: 11px;
+    text-align: center;
+  }
+  
+  .enter-email:-ms-input--placeholder {
+    font-size: 11px;
+    text-align: center;
+  }
+  
+  .mobile-enter-email::-webkit-input-placeholder {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .mobile-enter-email:-moz-placeholder {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .mobile-enter-email::-moz-placeholder {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .mobile-enter-email:-ms-input--placeholder {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .plaque {
+    width: 503px;
+    height: 245px;
+  }
+  
+  .mobile-email-signup-content {
+    width: 195px;
+    height: 211px;
+    font-size: 10px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    float: right;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: black;
+    opacity: 0.5;
+    cursor: auto;
+    display: none;
+  }
+  
+  .email-signup-block {
+    margin-right: 5px;
+  }
+  
+  .email-signup-img {
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 4px;
+  }
+  
+  .sub-title {
+    font-size: 12px;
+  }
+  
+  @media screen and (max-width: 767px)and (orientation: portrait) {
+    .email-signup-content {
+      display: none;
+    }
+    .mobile-email-signup-content {
+      width: 100%;
+      max-width: 503px;
+      display: block;
+    }
+    .plaque {
+      width: 100%;
+      max-width: 503px;
+      height: 210px;
+    }
+    .title img {
+      width: 169px;
+    }
+    .sub-title {
+      font-size: 10px;
+    }
+    .sub-title-img {
+      margin: 0;
+    }
+    .sub-title-img img {
+      width: 275px;
+    }
+    .overlay,
+    .mobile-email-signup-content {
+      display: none;
+    }
+    .email-signup-block,
+    .email-signup-img {
+      margin: 0;
+    }
+    .email-signup-img {
+      padding: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 767px)and (orientation: landscape) {
+    .email-signup-content {
+      display: none;
+    }
+    .plaque,
+    .mobile-email-signup-content {
+      width: 370px;
+      height: 240px;
+      max-width: 503px;
+      display: block;
+    }
+    .overlay,
+    .mobile-email-signup-content {
+      display: none;
+    }
+    .email-signup-img {
+      padding: 8px;
+    }
+    .email-signup-block,
+    .email-signup-img {
+      margin: 0;
+    }
+    .sub-title {
+      font-size: 10px;
+    }
+  }
+  </style>
+  <script>
+  $(document).ready(function() {
+    $(".email-signup-block").click(function() {
+      if ($(window).width() <= 767) {
+        $(".overlay, .mobile-email-signup-content").css("display", "block");
+      }
+	  else {
+	    $(".overlay, .mobile-email-signup-content").css("display", "none");
+	  }
+    });
+    $(".overlay").click(function() {
+      if ($(window).width() <= 767) {
+        $(".overlay, .mobile-email-signup-content").css("display", "none");
+      }
+    });
+  });
+  </script>
+</head>
+
+<body style="margin: 0px auto;font-family:arial">
+  <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+  <!-- Add your site or application content here -->
+  <div class="overlay"></div>
+  <div class="mobile-email-signup-content" style="">
+    <p style="font-weight:bold;padding: 0;margin: 0;font-size: 18px;padding-top: 23px;">SIGN ME UP!</p>
+    <p style="padding: 0;margin: 0;font-size: 16px;">I'D LIKE TO RECEIVE INFORMATION
+      <br/>ABOUT FLIRT COSMETICS PRODUCTS,
+      <br/>OFFERS, EVENTS, AND MORE.</p>
+    <input type="text" class="mobile-enter-email" placeholder="ENTER EMAIL HERE" style="text-align: center;border: 1px solid;width: 263px;margin: 8px 0;height: 32px;padding: 0 15px;" />
+    <button style="background: black;color: #ffffff;border: none;width: 295px;;font-size: 17px;padding: 5px 0;height: 40px;">SUBMIT</button>
+  </div>
+  <div class="container" style="font-family:arial">
+    <div class="wrapper">
+      <div class="main">
+        <div class="main-content" style="background-size:cover;background:url('images/flirt_background.gif') no-repeat; height: 100%; width:100%; position:absolute;background-repeat: repeat;">
+          <div class="email-signup-block" style="float: right;">
+            <div class="email-signup-img" style="background-color: #ffffff;"><img src="images/mail.png" /></div>
+          </div>
+          <div class="email-signup-content" style="width: 196px;height: auto;font-size: 10px;background-color: #ffffff;text-align: center;float:right;position: relative;top: 44px;left: 55px;padding: 15px 5px 10px;">
+            <p style="font-weight:bold;padding: 0;margin: 0;">SIGN ME UP!</p>
+            <p style="padding: 0;margin: 0;">I'D LIKE TO RECEIVE INFORMATION
+              <br/>ABOUT FLIRT COSMETICS PRODUCTS,
+              <br/>OFFERS, EVENTS, AND MORE.</p>
+            <input type="text" class="enter-email" placeholder="ENTER EMAIL HERE" style="border: 1px solid;width: 165px;text-align: center;
+			margin: 5px 0;padding: 0 10px;" />
+            <button style="background: black;color: #ffffff;border: none;width: 186px;font-size: 11px;padding: 5px 0;">SUBMIT</button>
+          </div>
+          <div class="plaque" style="color:#fff; background-color: #000; text-align:center; z-index: 9999; border:1px solid #fff;  position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+            <div class="title" style="margin-top: 16px;margin-left: 7px;"><img src="images/title.png" /></div>
+            <p class="sub-title" style="margin:0px auto; text-align:center;text-transform:uppercase;width: 345px;font-weight: bold;">Nothing to see here... Yet!
+              <br/>We've Burned the beauty playbook and are busy
+              <br/>Rewriting the rules. Stay tuned.
+            </p>
+            <div class="sub-title-img" style="margin-top: 15px;"><img src="images/sub.png" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+  window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+  </script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+  (function(b, o, i, l, e, r) {
+    b.GoogleAnalyticsObject = l;
+    b[l] || (b[l] =
+      function() {
+        (b[l].q = b[l].q || []).push(arguments)
+      });
+    b[l].l = +new Date;
+    e = o.createElement(i);
+    r = o.getElementsByTagName(i)[0];
+    e.src = '//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e, r)
+  }(window, document, 'script', 'ga'));
+  ga('create', 'UA-XXXXX-X');
+  ga('send', 'pageview');
+  </script>
+</body>
+
+</html>
