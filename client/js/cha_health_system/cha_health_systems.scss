@@ -303,8 +303,11 @@
           }
 
           .carousel-indicators.chs-indicators {
-            bottom: -10px;
-            right: 40px;
+            bottom: 0;
+            right: inherit;
+            left: inherit;
+            position: relative;
+            margin: -10px auto 0;
           }
         }
       }
