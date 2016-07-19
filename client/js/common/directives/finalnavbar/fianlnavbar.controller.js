@@ -89,6 +89,8 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 		$('.popup-btn1').click(function(){
 			console.log("menu clicked!!!!");
 			$(this).toggleClass("x-icon");
+			$('body').toggleClass('not-scrolling');
+			$('.popup-content1').toggleClass('scrolling');
 		});
 
 	});

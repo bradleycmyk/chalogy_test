@@ -3,6 +3,10 @@ app.controller('ProdDetailCtrl', function($scope, $http, $state, $stateParams, P
     var name = $stateParams.name;
 	$scope.name = $stateParams.name;
 
+  ProductFactory.getOneItem($stateParams.name).then(function(data){
+    $scope.product = data;
+    // console.log($scope.product.checkouturl);
+  })
 
 	// for tab manipulation
 	$scope.tab;
