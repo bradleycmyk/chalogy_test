@@ -30,6 +30,10 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 		$("#testingsearch1").addClass('fade-out-effect-input').removeClass("fade-in-effect-input");
 	})
 
+	$("#mobile-search").blur(function() {
+		$("#mobile-search").addClass('show').removeClass("show");
+	})
+
 	$(document).keypress(function(event) {
 	    var keycode = (event.keyCode ? event.keyCode : event.which);
 	    if(keycode == '13') {
