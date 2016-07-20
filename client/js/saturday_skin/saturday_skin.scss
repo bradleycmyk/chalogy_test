@@ -156,10 +156,13 @@
     }
 
     .text_box {
-      margin: 491px 60px 0 0;
+      // margin: 491px 60px 0 0;
       width: 400px;
       padding: 40px 30px 0px 30px;
       float: right;
+      position: absolute;
+      bottom: 0;
+      right: 60px;
 
       .long_text {
         font-size: 15px;
