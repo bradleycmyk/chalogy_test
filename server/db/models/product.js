@@ -33,9 +33,11 @@ var schema = new mongoose.Schema({
     tag: {
         type: [String]
     },
+    checkouturl: {
+      type: String
+    },
     prod_id: {
-      type: [String],
-      default: null
+      type: String
     }
 });
 

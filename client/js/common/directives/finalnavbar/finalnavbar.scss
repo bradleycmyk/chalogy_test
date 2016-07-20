@@ -448,8 +448,8 @@ a.up-arrow-about:after {
 
 
 
-/*for ipad */ 
-@media screen and (min-width: 768px) and (max-width: 964px){ 
+/*for ipad */
+@media screen and (min-width: 768px) and (max-width: 964px){
 
   .dropdown-aurouscontent a, .dropdown-content a, .dropdown-aboutcontent a {
     padding: 10px 14px;
@@ -492,7 +492,7 @@ a.up-arrow-about:after {
 
 
 /* moblie menu */
-@media screen and (max-width: 767px){ 
+@media screen and (max-width: 767px){
 
   #mobile-search {
     border: none;
@@ -563,9 +563,19 @@ a.up-arrow-about:after {
     background-color: rgba(255, 255, 255, 1);
     width: 100vw;
     height: 100vh;
-    overflow: auto;
+    // overflow: auto;
     z-index: 9999;
+		overflow-y: scroll;
+	  -webkit-overflow-scrolling:touch; // mobile safari
   }
+
+	.scrolling {
+		overflow-y: scroll;
+	}
+
+	.not-scrolling {
+		overflow: hidden;
+	}
 
   .popup-content1 a {
     padding: 19px 16px;

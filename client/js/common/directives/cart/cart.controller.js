@@ -1,9 +1,10 @@
 app.controller('CartController', function($scope, $http, $state, $stateParams, ProductFactory, $window) {
-  $scope.prod_id;
 
   ProductFactory.getOneItem($stateParams.name).then(function(data){
     $scope.product = data;
     $scope.prod_id = $scope.product.prod_id;
+    console.log($scope.prod_id);
+
 
     $(function() {
 
