@@ -30,7 +30,7 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 		$("#testingsearch1").addClass('fade-out-effect-input').removeClass("fade-in-effect-input");
 	});
 
-	$("body").click(function() {
+	$("body").on("touchend", function() {
 		$("#testingsearch1").addClass('fade-out-effect-input').removeClass("fade-in-effect-input");
 	});
 
