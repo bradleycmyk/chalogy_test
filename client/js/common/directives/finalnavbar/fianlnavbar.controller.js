@@ -28,7 +28,12 @@ app.controller('FinalNavBarController', function($scope, $http, AdminFactory, $s
 
 	$("#testingsearch1").blur(function() {
 		$("#testingsearch1").addClass('fade-out-effect-input').removeClass("fade-in-effect-input");
-	})
+	});
+
+	$("#testingsearch1").focusout(function() {
+		$("#testingsearch1").addClass('fade-out-effect-input').removeClass("fade-in-effect-input");
+	});
+
 
 	$(document).keypress(function(event) {
 	    var keycode = (event.keyCode ? event.keyCode : event.which);
