@@ -9,7 +9,7 @@
         <img src="icons/pinterest.png" class="pinterest" alt="Pinterest" />
     </a>
     <!-- Facebook -->
-    <a href="http://www.facebook.com/sharer.php?u={{ url }}" target="_blank">
+    <a href="javascript:fbshareCurrentPage()" target="_blank">
         <img src="icons/facebook.png" alt="Facebook" />
     </a>
     <!-- Email -->
@@ -17,3 +17,10 @@
         <img src="icons/email.svg" class="email" alt="Email" />
     </a>
 </div>
+
+<script language="javascript">
+    function fbshareCurrentPage()
+    {window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '',
+    'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+    return false; }
+</script>
