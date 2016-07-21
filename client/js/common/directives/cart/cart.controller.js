@@ -11,8 +11,8 @@ app.controller('CartController', function($scope, $http, $state, $stateParams, P
       /* Build new ShopifyBuy client
       ============================================================ */
       var client = ShopifyBuy.buildClient({
-        apiKey: 'd5571acc165495201f358c5e44e4d912',
-        domain: 'chalogy.myshopify.com',
+        apiKey: '5c011ca4368127ae9e0e3f4bb7ce2f53',
+        domain: 'chalogyshop.myshopify.com',
         appId: '6'
       });
 
