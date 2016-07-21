@@ -24,7 +24,7 @@
 			}
 		],
 		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5",
-		"prod_id": "7013749441"
+		"prod_id": "7623273475"
 	},
 	{
 		"image": ["sat_prod/featherweight.png", "sat-product.png", "sat-product.png"],
@@ -51,7 +51,7 @@
 			}
 		],
 		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
-		"prod_id": "7013762113"
+		"prod_id": "7623274243"
 	},
 	{
 		"image": ["sat_prod/wide-awake.png", "sat-product.png", "sat-product.png"],
@@ -78,7 +78,7 @@
 			}
 		],
 		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
-		"prod_id": "7013774913"
+		"prod_id": "7623276035"
 	},
 	{
 		"image": ["sat_prod/balancing-act.png", "sat-product.png", "sat-product.png"],
@@ -105,7 +105,7 @@
 			}
 		],
 		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
-		"prod_id": "7013783681"
+		"prod_id": "7623273155"
 	},
 	{
 		"image": ["sat_prod/freeze-frame.png", "sat-product.png", "sat-product.png"],
@@ -132,7 +132,7 @@
 			}
 		],
 		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
-		"prod_id": "7013792961"
+		"prod_id": "7623274563"
 	},
 	{
 		"image": ["sat_prod/rise-shine.png", "sat-product.png", "sat-product.png"],
@@ -159,7 +159,7 @@
 			}
 		],
 		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
-		"prod_id": "7013800577"
+		"prod_id": "7623275267"
 	},
 	{
 		"image": ["sat_prod/all-aglow.png", "sat-product.png", "sat-product.png"],
@@ -187,7 +187,7 @@
 			}
 		],
 		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
-		"prod_id": "7013809921"
+		"prod_id": "7623272707"
 	},
 	{
 		"image": ["sat_prod/spotlight.png", "sat-product.png", "sat-product.png"],
@@ -214,7 +214,7 @@
 			}
 		],
 		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
-		"prod_id": "7013817729"
+		"prod_id": "7623275843"
 	},
 	{
 		"image": ["sat_prod/quench.png", "sat-product.png", "sat-product.png"],
@@ -241,7 +241,7 @@
 			}
 		],
 		"checkouturl": "https://www.designplusshop.com//cart/5507639108:1?api_key=f7558dd14f7c9c3289b1bd175989fd5f",
-		"prod_id": "7013825729"
+		"prod_id": "7623274691"
 	}
 
 ]
