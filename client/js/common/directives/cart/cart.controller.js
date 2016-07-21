@@ -3,8 +3,6 @@ app.controller('CartController', function($scope, $http, $state, $stateParams, P
   ProductFactory.getOneItem($stateParams.name).then(function(data){
     $scope.product = data;
     $scope.prod_id = $scope.product.prod_id;
-    console.log($scope.prod_id);
-
 
     $(function() {
 
@@ -189,6 +187,9 @@ app.controller('CartController', function($scope, $http, $state, $stateParams, P
       /* Update product variant quantity in cart
       ============================================================ */
       function updateQuantity(fn, variantId) {
+        // console.log(cart.lineItems);
+        // console.log(product.id);
+
         var variant = product.variants.filter(function (variant) {
           return (variant.id === variantId);
         })[0];
@@ -220,9 +221,15 @@ app.controller('CartController', function($scope, $http, $state, $stateParams, P
       ============================================================ */
       function fieldQuantityHandler(evt) {
         var variantId = parseInt($(this).closest('.cart-item').attr('data-variant-id'), 10);
+        console.log($(this).closest('.cart-item').attr('data-variant-id'));
+
         var variant = product.variants.filter(function (variant) {
+          console.log(product);
+          console.log("variantId:" + variantId);
+          console.log(product.selectedVariant.id);
           return (variant.id === variantId);
         })[0];
+        // console.log(variant);
         var cartLineItem = findCartItemByVariantId(variant.id);
         var quantity = evt.target.value;
         if (cartLineItem) {
@@ -263,9 +270,12 @@ app.controller('CartController', function($scope, $http, $state, $stateParams, P
       /* Find Cart Line Item By Variant Id
       ============================================================ */
       function findCartItemByVariantId(variantId) {
-        return cart.lineItems.filter(function (item) {
+        var thing = cart.lineItems.filter(function (item) {
+          console.log(item.title + ': ' + item.variant_id);
           return (item.variant_id === variantId);
         })[0];
+        console.log(thing);
+        return thing;
       }
 
       /* Determine action for variant adding/updating/removing
