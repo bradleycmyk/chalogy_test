@@ -163,12 +163,39 @@ footer {
 
     .footer-bottom {
       .left {
-        width: 236px;
+        width: 310px;
+        /*width: 236px;*/
+        .terms {
+          margin: 0 5px 0 5px;
+        }
       }
 
       .right {
         width: 242px;
       }
     }
+
+/*
+    .footer-bottom {
+      clear: both;
+
+      .left, .right {
+        p {
+          display: inline-block;
+        }
+
+        p, a {
+          font-size: 10px;
+          font-weight: 400;
+        }
+
+        .terms {
+          color: #000000;
+          margin: 0 $left-right 0 5px;
+        }
+      }
+    }*/
+
+
   }
 }
