@@ -127,9 +127,17 @@ function myFunction2() {
     document.getElementById("search-popup").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.popup-btn1') && !event.target.matches('#callingsearchs2') && !event.target.matches('#search-popup')) {
+var hideKeyboard = function() {
+ document.activeElement.blur();
+ var inputs = document.querySelectorAll('input');
+ for(var i=0; i < inputs.length; i++) {
+  inputs[i].blur();
+ }
+};
+
+
+$(window).on('click', function(event){
+   if (!event.target.matches('.popup-btn1') && !event.target.matches('#callingsearchs2') && !event.target.matches('#search-popup')) {
     var dropdowns = document.getElementsByClassName("popup-content1");
     var mobilepopup = document.getElementById("search-popup");
 
@@ -147,7 +155,40 @@ window.onclick = function(event) {
 
     $(".popup-btn1").removeClass("x-icon");
   }
-}
+})
+
+$(window).on('touchstart', function(event){
+   if (!event.target.matches('.popup-btn1') && !event.target.matches('#callingsearchs2') && !event.target.matches('#search-popup')) {
+    
+    if( mobilepopup.classList.contains('show')){
+      mobilepopup.classList.remove('show');
+    }
+
+    $(".popup-btn1").removeClass("x-icon");
+  }
+})
+
+// Close the dropdown if the user clicks outside of it
+// window.onclick = function(event) {
+//   if (!event.target.matches('.popup-btn1') && !event.target.matches('#callingsearchs2') && !event.target.matches('#search-popup')) {
+//     var dropdowns = document.getElementsByClassName("popup-content1");
+//     var mobilepopup = document.getElementById("search-popup");
+
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+
+//     if( mobilepopup.classList.contains('show')){
+//       mobilepopup.classList.remove('show');
+//     }
+
+//     $(".popup-btn1").removeClass("x-icon");
+//   }
+// }
 
 </script>
 <!-- end nav bar -->
