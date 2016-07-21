@@ -18,6 +18,7 @@ body {
 body, html {
   margin:0;
   padding:0;
+  overflow: scroll !important;
 }
 
 a {
@@ -336,3 +337,4 @@ a.sat-bread:hover {
 @import 'proddetail/proddetail';
 @import 'login/login';
 @import 'admin/admin';
+@import 'terms_of_service/terms';

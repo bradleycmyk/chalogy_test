@@ -1,9 +1,38 @@
 app.controller('HomeController', function($scope, $http, $window) {
 
 	// fade in test
-	window.onload = function() {
-	  document.getElementById('fade-in-test').className = 'fade-in-effect-test';
-	};
+	// window.onload = function() {
+	//   document.getElementById('fade-in-test').className = 'fade-in-effect-test';
+	// };
+
+
+	// var videos = document.getElementsByTagName("video");
+	// var fraction = 0.99;
+
+	// function checkScroll() {
+
+	//     for(var i = 0; i < videos.length; i++) {
+	//         var video = videos[i];
+
+	//         var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+	//             b = y + h, //bottom
+	//             visibleX, visibleY, visible;
+
+	//             visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+	//             visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+	//             visible = visibleX * visibleY / (w * h);
+
+	//             if (visible > fraction) {
+	//                 video.play();
+	//             } else {
+	//                 video.pause();
+	//             }
+	//     }
+	// }
+
+	// window.addEventListener('scroll', checkScroll, false);
+	// window.addEventListener('resize', checkScroll, false);
 
 	$(document).ready(function() {
 
@@ -84,6 +113,82 @@ app.controller('HomeController', function($scope, $http, $window) {
         $(document).on('scroll', activePage2);
         $(document).on('scroll', activePage3);
         $(document).on('scroll', activePage4);
+
+  //       function activePage1(){
+		// 	// get current browser top and bottom
+
+  //       	var scrollTop1 = $("#home").scrollTop() + tolerancePixel;
+  //       	var scrollBottom1 = $("#home").scrollTop() + $("#home").height() - tolerancePixel;
+
+  //       	var yTopDot1 = 150;
+  //       	var yBottomDot1 = $("#first-dot").height() + yTopDot1;
+
+  //       	if(scrollTop1 < yBottomDot1 && scrollBottom1 > yTopDot1) {
+  //       		$("#firstp").removeClass('bg1').addClass("bg2");
+
+  //       		$("#fade-in-test").addClass("fade-in-effect-test");
+  //       	} else {
+  //       		$("#firstp").removeClass('bg2').addClass("bg1");
+  //       	}
+  //       }
+
+		// function activePage2(){
+
+  //       	var scrollTop2 = $("#home").scrollTop() + tolerancePixel;
+  //       	var scrollBottom2 = $("#home").scrollTop() + $("#home").height() - tolerancePixel;
+
+  //       	var yTopDot2 = $("#second-dot").offset().top;
+  //       	var yBottomDot2 = $("#second-dot").height() + yTopDot2;
+
+  //       	if(scrollTop2 < yBottomDot2 && scrollBottom2 > yTopDot2) {
+  //       		$("#secondp").removeClass('bg1').addClass("bg2");
+  //       		$('#second-content').removeClass('fade-out-effect-test').addClass('fade-in-effect-test');
+  //       	} else {
+  //       		$("#secondp").removeClass('bg2').addClass("bg1");
+  //       		$('#second-content').addClass('fade-out-effect-test');
+  //       	}
+  //       }
+
+  //       function activePage3(){
+
+  //       	var scrollTop3 = $("#home").scrollTop() + tolerancePixel;
+  //       	var scrollBottom3 = $("#home").scrollTop() + $("#home").height() - tolerancePixel;
+
+  //       	var yTopDot3 = $("#third-dot").offset().top;
+  //       	var yBottomDot3 = $("#third-dot").height() + yTopDot3;
+
+  //       	if(scrollTop3 < yBottomDot3 && scrollBottom3 > yTopDot3) {
+  //       		$("#thirdp").removeClass('bg1').addClass("bg2");
+  //       		$('#third-content').removeClass('fade-out-effect-test').addClass('fade-in-effect-test');
+  //       	}  else {
+  //       		$("#thirdp").removeClass('bg2').addClass("bg1");
+  //       		$('#third-content').addClass('fade-out-effect-test');
+  //       	}
+  //       }
+
+  //       function activePage4(){
+
+  //       	var scrollTop4 = $("#home").scrollTop() + tolerancePixel;
+  //       	var scrollBottom4 = $("#home").scrollTop() + $("#home").height() - tolerancePixel;
+
+  //       	var yTopDot4 = $("#fourth-dot").offset().top;
+  //       	var yBottomDot4 = $("#fourth-dot").height() + yTopDot4;
+
+  //       	if(scrollTop4 < yBottomDot4 && scrollBottom4 > yTopDot4) {
+  //       		$("#fourthp").removeClass('bg1').addClass("bg2");
+  //       		$('#fourth-content').removeClass('fade-out-effect-test').addClass('fade-in-effect-test');
+  //       	} else {
+  //       		$("#fourthp").removeClass('bg2').addClass("bg1");
+  //       		$('#fourth-content').removeClass('fade-in-effect-test').addClass('fade-out-effect-test');
+  //       		$("#fullfour").removeClass('lax-four-4').addClass('lax-four');
+  //       	}
+  //       }
+
+  //       $("#home").on('scroll', activePage1);
+  //       $("#home").on('scroll', activePage2);
+  //       $("#home").on('scroll', activePage3);
+  //       $("#home").on('scroll', activePage4);
+
         // end of active page function
 
 
@@ -182,6 +287,38 @@ app.controller('HomeController', function($scope, $http, $window) {
 			    }, 1000);
 			}
     	  });
+
+
+		// $('#home').on('mousewheel DOMMouseScroll', function(event) {
+		//     event.preventDefault();
+		//     if(delay) return;
+
+		//     delay = true;
+		//     setTimeout(function(){delay = false}, 800)
+
+		//     var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+
+
+		//     var a= document.getElementsByClassName('test');
+		//     if(wd < 0) {
+		//       for(var i = 0 ; i < a.length ; i++) {
+		//         var t = a[i].getClientRects()[0].top;
+		//         if(t >= 40) break;
+		//       }
+		//     }
+		//     else {
+		//       for(var i = a.length-1 ; i >= 0 ; i--) {
+		//         var t = a[i].getClientRects()[0].top;
+		//         if(t < -20) break;
+		//       }
+		//     }
+
+		//     if(a.length){
+		// 	    $('html,body').animate({
+		// 	      scrollTop: a[i].offsetTop
+		// 	    }, 1000);
+		// 	}
+  //   	  });
 
 		// end of scrolling !!
 
