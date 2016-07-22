@@ -194,7 +194,7 @@ app.controller('CartController', function($scope, $http, $state, $stateParams, P
           return (variant.id === variantId);
         })[0];
         var quantity;
-        var cartLineItem = findCartItemByVariantId(variant.id);
+        var cartLineItem = findCartItemByVariantId(variantId);
         if (cartLineItem) {
           quantity = fn(cartLineItem.quantity);
           updateVariantInCart(cartLineItem, quantity);
@@ -230,7 +230,7 @@ app.controller('CartController', function($scope, $http, $state, $stateParams, P
           return (variant.id === variantId);
         })[0];
         // console.log(variant);
-        var cartLineItem = findCartItemByVariantId(variant.id);
+        var cartLineItem = findCartItemByVariantId(variantId);
         var quantity = evt.target.value;
         if (cartLineItem) {
           updateVariantInCart(cartLineItem, quantity);
