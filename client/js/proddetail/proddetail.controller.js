@@ -5,7 +5,7 @@ app.controller('ProdDetailCtrl', function($scope, $http, $state, $stateParams, P
 
   ProductFactory.getOneItem($stateParams.name).then(function(data){
     $scope.product = data;
-    // console.log($scope.product.checkouturl);
+    $scope.prod_id = $scope.product.prod_id;
   })
 
 	// for tab manipulation

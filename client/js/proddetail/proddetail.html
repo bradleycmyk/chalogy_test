@@ -43,7 +43,9 @@
 					<div class="gray-line"></div>
 					<p class="price_tag">${{ product.price }}.00</p>
 
-          <cart></cart>
+
+          <button class="buy-button js-prevent-cart-listener">Add to bag</button>
+          <!-- <cart></cart> -->
 					<br>
 					<span class="product-description">{{product.size_ml}} ml/{{product.size_oz}} Fl. Oz.</span>
 					<div ng-if="product.shade">
