@@ -18,7 +18,7 @@ body {
 body, html {
   margin:0;
   padding:0;
-  overflow: scroll !important;
+  /*overflow: scroll !important;*/
 }
 
 a {
@@ -309,6 +309,12 @@ a.aurous-bread:hover {
 
 a.sat-bread:hover {
 	color: black !important;
+}
+
+@media screen and (max-width: 767px){
+	body, html {
+	  overflow: scroll !important;
+	}
 }
 
 
