@@ -5,11 +5,11 @@ app.controller('MainController', function($scope, $rootScope, $window, $state, $
 	$scope.loggedIn = sessionStorage.loggedinUser || undefined;
 
 	$scope.isActiveFor = function (route) {
-	    return ($window.location.href.split("5959/")[1].indexOf(route) > -1);
+	    return ($window.location.href.split(".com/")[1].indexOf(route) > -1);
 	};
 
 	$scope.isAbout = function () {
-		if($window.location.href.split("5959/")[1].indexOf("about") > -1 || window.location.href.split("5959/")[1].indexOf("chaum") > -1 || window.location.href.split("5959/")[1].indexOf("cha-health-systems") > -1  ) {
+		if($window.location.href.split(".com/")[1].indexOf("about") > -1 || window.location.href.split(".com/")[1].indexOf("chaum") > -1 || window.location.href.split(".com/")[1].indexOf("cha-health-systems") > -1  ) {
 			return true;
 		} else {
 			// console.log("something is wrong");
