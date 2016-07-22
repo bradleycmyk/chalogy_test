@@ -60,14 +60,17 @@ $color-border-primary: #00d1a5;
   font-weight: 600;
 }
 
-.btn {
+.shopify-btn {
   color: white;
-  font-size: 16px;
+  font-family: 'Work Sans';
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
   background: $color-primary;
   padding: 10px 5px;
   border-width: 1px;
   border-style: solid;
-  border-radius: 3px;
   border-color: $color-border-primary;
   cursor: pointer;
   transition: all 200ms ease;
@@ -81,10 +84,9 @@ $color-border-primary: #00d1a5;
 
   &:hover,
   &:focus {
-    background: $color-primary-hover;
+    background: $color-primary;
   }
 }
-
 
 .btn--test {
   position: absolute;
@@ -93,10 +95,8 @@ $color-border-primary: #00d1a5;
   transform: translate(-50%);
 }
 
-
 .btn--cart-tab {
   padding: 5px 11px;
-  border-radius: 3px 0 0 3px;
   position: fixed;
   right: 0;
   top: 50%;
@@ -135,9 +135,8 @@ $color-border-primary: #00d1a5;
   height: 100%;
   right: 0;
   top: 0;
-  z-index: 3;
+  z-index: 10000;
   background: white;
-  border-radius: 1px;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
   transform: translateX(100%);
   transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
@@ -151,6 +150,10 @@ $color-border-primary: #00d1a5;
 .cart-section {
   position: relative;
   padding: 20px;
+}
+
+.shoppingbag {
+  width: 20px;
 }
 
 .cart-section--top {
